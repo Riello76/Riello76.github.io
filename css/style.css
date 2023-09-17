@@ -227,10 +227,11 @@ h1 {
     #body-cv{
         flex-direction: column;
     }
-    .central-cv-div {
+   .central-cv-div {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: left;
     }
     #body-profile{
         font-size: 17px;
