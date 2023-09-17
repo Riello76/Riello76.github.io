@@ -223,7 +223,9 @@ h1 {
 @media (max-width: 600px) {
     body{
         flex-direction: column;
-  
+    }
+    #body-cv{
+        flex-direction: column;
     }
     .central-cv-div {
         display: flex;
