@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curriculum</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body id="body-cv">
+        <img class="logo" src="/icons/LOGO.png" alt="Logo Icon" width="100px" height="100px">
+        <h1><span style="color: rgb(255, 127, 39);">C</span><span style="color: rgb(0, 168, 243);">urriculum</span></h1>
+        <!--Header-->
+
+        <!--Curriculum Buttons-->
+        <div class="central-cv-div">
+
+                <button id="btn1" class="dropbtn-profile cv-btn"><span
+                                style="color: rgb(255, 127, 39);">P</span>rofile</button>
+                <button class="dropbtn-work cv-btn"><span style="color: rgb(255, 127, 39);">W</span>ork <span
+                                style="color: rgb(255, 127, 39);">E</span>xperience</button>
+                <button class="dropbtn-skills cv-btn"><span style="color: rgb(255, 127, 39);">K</span>ey <span
+                                style="color: rgb(255, 127, 39);">S</span>kills</button>
+                <button class="dropbtn-education cv-btn"><span
+                                style="color: rgb(255, 127, 39);">E</span>ducation</button>
+                <button class="dropbtn-hobbies cv-btn"><span style="color: rgb(255, 127, 39);">H</span>obbies</button>
+                <button class="dropbtn-channels cv-btn"><span style="color: rgb(255, 127, 39);">C</span>hannels</button>
+                <button class="dropbtn-about cv-btn"><span style="color: rgb(255, 127, 39);">M</span>ore <span
+                                style="color: rgb(255, 127, 39);">A</span>bout <span
+                                style="color: rgb(255, 127, 39);">M</span>e</button>
+         <iframe id="frame1" src="Profile.html" frameborder="0"></iframe>
+                                
+        </div>
+
+       
+
+<script>
+ //your iframe ID
+var iframe = document.getElementById("frame1");
+
+// your button ID
+const button = document.getElementById("btn1");
+button.addEventListener("click", function() {
+
+  if (iframe.style.display === "block") {
+    iframe.style.display = "none";
+  } else {
+    iframe.style.display = "block";
+  }
+});
+</script>
+
+
+
+</body>
+
+</html>
