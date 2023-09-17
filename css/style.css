@@ -227,11 +227,9 @@ h1 {
     #body-cv{
         flex-direction: column;
     }
-   .central-cv-div {
-        display: flex;
+    .central-cv-div {
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: left;
+        flex-wrap: wrap;  
     }
     #body-profile{
         font-size: 17px;
@@ -239,15 +237,17 @@ h1 {
     #frame1{
         position: relative;
         display: flex;
-       
+    }
+    .cv-btn{
+        width: 100%;
     }
     #my-name{
         font-size: 50px;
     }
 
     h1 {
-        font-size: 38px;
-        text-align: left;
+        font-size: 50px;
+        text-align: center;
     }
 
     .link-cv {
@@ -256,15 +256,12 @@ h1 {
     }
 
     .logo {
-        width: 60px;
-        height: 60px;
+        position: relative;
+        top: 30px;
+        width: 80px;
+        height: 80px;
+        align-self: center;
     }
-
-    .cv-div {
-        -webkit-flex-direction: column;
-        flex-direction: column;
-    }
-
     .btn {
         position: relative;
     }
