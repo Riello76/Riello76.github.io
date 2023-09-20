@@ -55,6 +55,7 @@ body {
 }
 /*Homepage Start*/
 #my-name {
+    top:20px;
     font-size: 100px;
     color: rgb(42, 37, 37);
 }
