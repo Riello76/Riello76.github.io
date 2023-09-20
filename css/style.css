@@ -348,6 +348,9 @@ a {
     #body-profile,#body-work-experience,#body-key-skills,#body-education,#body-hobbies,#body-more-about-me {
         font-size: 17px;
     }
+     #frame-profile,#frame-education,#frame-work-experience,#frame-key-skills,#frame-hobbies,#frame-more-about-me{
+         z-index: 0;
+    }
     .social-icons{
         width: 30px;
         height: 30px;
@@ -356,6 +359,7 @@ a {
     .cv-btn {
         width: 100%;
         font-size: 90%;
+         z-index: 1;
     }
 
     #my-name {
