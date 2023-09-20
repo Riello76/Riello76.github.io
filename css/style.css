@@ -217,7 +217,7 @@ h1 {
     bottom: 20%;
     height: 400px;
     width: 100%;
-    
+    display: none;
 }
 /*Curriculum Informations End*/
 @media (max-width: 600px) {
