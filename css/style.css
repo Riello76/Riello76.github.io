@@ -1,0 +1,430 @@
+body {
+    /*homepage body*/
+    background-image: linear-gradient(to top right, blue, orange);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#body-cv {
+    /*cv page body*/
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+#body-profile {
+    /*profile page body*/
+    background: rgb(42, 37, 37);
+    color: white;
+    font-size: 25px;
+}
+
+#body-work-experience {
+    background: rgb(42, 37, 37);
+    color: white;
+    font-size: 25px;
+}
+
+#body-key-skills {
+    background: rgb(42, 37, 37);
+    color: white;
+    font-size: 25px;
+}
+
+#body-education {
+    background: rgb(42, 37, 37);
+    color: white;
+    font-size: 25px;
+}
+
+#body-hobbies {
+    flex-direction: column;
+    background: rgb(42, 37, 37);
+    color: white;
+    font-size: 25px;
+}
+#body-more-about-me{
+    background: rgb(42, 37, 37);
+    color: white;
+    font-size: 25px;
+}
+/*Homepage Start*/
+#my-name {
+    font-size: 100px;
+    color: rgb(42, 37, 37);
+}
+
+.link-cv {
+    position: relative;
+    float: left;
+    top: 50%;
+    color: rgb(42, 37, 37);
+    background-color: transparent;
+    font-size: 80px;
+    text-shadow: 0px 0px 30px white;
+    animation: click 2s infinite;
+}
+
+@keyframes click {
+    50% {
+        text-shadow: 0px 0px 10px red
+    }
+}
+
+/*contacts start*/
+#contacts-div {
+    position: fixed;
+    color: gold;
+    display: inline-flex;
+    align-items: center;
+    bottom: 5px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.mailto {
+    background-image: url(/icons/mail.png);
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 70%;
+}
+
+.mailto:hover,
+.whatsapp:hover,
+.telegram:hover,
+.phone:hover {
+    box-shadow: 0px 0px 20px rgb(255, 127, 39);
+    ;
+}
+
+.mail-text {
+    opacity: 0%;
+}
+
+.whatsapp {
+    background-image: url(/icons/whatsapp.png);
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 70%;
+}
+
+.telegram {
+    background-image: url(/icons/telegram.png);
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 70%;
+}
+
+.phone {
+    background-image: url(/icons/phone.png);
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 70%;
+}
+
+/*contacts end*/
+
+/*Homepage End*/
+
+/*Social Network Buttons Start*/
+
+.btn {
+
+    background-color: transparent;
+    display: inline-flex;
+    background-color: transparent;
+    align-items: center;
+    bottom: 0;
+    position: absolute;
+}
+
+.btn-Twitch {
+    background-image: url(/icons/purple-twitch-logo-png-18.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-color: rgb(118, 18, 212);
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.btn-Trovo {
+    background-image: url(/icons/trovo.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-color: rgb(9, 3, 14);
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.btn-Youtube {
+    background-image: url(/icons/youtube.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: rgb(249, 248, 250);
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.btn-Discord {
+    background-image: url(/icons/discord.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: RGB(140, 158, 255);
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.btn-Linkedin {
+    background-image: url(/icons/linkedn.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: RGB(39, 151, 207);
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+    color: transparent;
+}
+
+/*Social Network Buttons Start*/
+
+/*Curriculum Informations Start*/
+
+/*header*/
+h1 {
+    font-size: 80px;
+    bottom: 50px;
+    position: relative;
+    text-align: center;
+}
+
+a {
+    /*HyperLink*/
+    color: chartreuse;
+    text-decoration: none;
+}
+
+.central-cv-div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cv-btn {
+    background-color: rgb(44, 38, 38);
+    color: rgb(0, 168, 243);
+    width: 200px;
+    height: 50px;
+    font-size: larger;
+}
+
+.cv-btn:hover {
+    box-shadow: 0px 0px 30px white;
+}
+
+#frame-profile {
+    /*proflile iframe*/
+    position: absolute;
+    bottom: 20%;
+    height: 400px;
+    width: 100%;
+    display: none;
+}
+
+#frame-work-experience {
+    /*work experience iframe*/
+    position: absolute;
+    bottom: 20%;
+    height: 400px;
+    width: 100%;
+    display: none;
+}
+
+#frame-key-skills {
+    /*key skills iframe*/
+    position: absolute;
+    bottom: 20%;
+    height: 400px;
+    width: 100%;
+    display: none;
+}
+
+#frame-education {
+    /*education iframe*/
+    position: absolute;
+    bottom: 20%;
+    height: 400px;
+    width: 100%;
+    display: none;
+}
+
+#frame-hobbies {
+    /*hobbies iframe*/
+    position: absolute;
+    bottom: 20%;
+    height: 400px;
+    width: 100%;
+    display: none;
+}
+#frame-more-about-me{
+     /*more about me iframe*/
+    position: absolute;
+    bottom: 20%;
+    height: 400px;
+    width: 100%;
+    display: none;
+}
+#div-social-icons {
+    position: relative;
+    left: 15px;
+    bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.social-icons {
+    position: relative;
+    top: 50px;
+    width: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.social-icons:hover {
+    box-shadow: 0px 0px 20px white;
+}
+
+@media (max-width: 600px) {
+    body {/*home body page*/
+        flex-direction: column;
+    }
+
+    #body-cv {/*curriculum body page*/
+        flex-direction: column;
+    }
+       
+    .central-cv-div {
+        /*curriculum buttons div*/
+        flex-direction: row;
+     }
+
+    #body-profile,#body-work-experience,#body-key-skills,#body-education,#body-hobbies,#body-more-about-me {
+        font-size: 17px;
+    }
+    .social-icons{
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+    }
+    .cv-btn {
+        width: 100%;
+        font-size: 90%;
+    }
+
+    #my-name {
+        font-size: 50px;
+    }
+
+    h1 {
+        font-size: 50px;
+        text-align: center;
+        top: 20px;
+    }
+
+    .link-cv {
+        font-size: 50px;
+        left: 120px;
+    }
+
+    .logo {
+        position: relative;
+        top: 30px;
+        width: 80px;
+        height: 80px;
+        align-self: center;
+    }
+
+    .btn {
+        position: relative;
+    }
+
+    .btn-Discord,
+    .btn-Linkedin,
+    .btn-Trovo,
+    .btn-Twitch,
+    .btn-Youtube {
+        width: 100%;
+        height: 80%;
+    }
+
+    .btn-h2 {
+        font-size: 15px;
+    }
+}@media (orientation: landscape) {
+    #body-cv {
+       display: flex;
+      }
+      h1{
+        position: relative;
+        bottom: 160px;
+      }
+      .central-cv-div {
+        position: relative;
+        bottom: 200px;
+      }
+      #frame-profile,#frame-education,#frame-work-experience,#frame-key-skills,#frame-hobbies,#frame-more-about-me{
+         position: fixed;
+         top: 180px;
+         width: 100%;
+         height: 300px;
+         
+      }
+      #body-hobbies,#body-profile,#body-work-experience,#body-key-skills,#body-education,#body-more-about-me{
+        font-size: 17px;
+      }
+      .social-icons{
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+    }
+    .cv-btn {
+        width: 100%;
+        font-size: 90%;
+    }
+  }
+  
