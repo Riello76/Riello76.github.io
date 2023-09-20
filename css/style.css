@@ -406,7 +406,8 @@ a {
         flex-direction: column;
       }
       h1{
-        opacity: 0%;
+       position: relative;
+        bottom: 160px;
       }
       .central-cv-div {
         position: relative;
