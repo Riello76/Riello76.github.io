@@ -331,7 +331,7 @@ a {
     box-shadow: 0px 0px 20px white;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 860px) {
   /* Responsive styles for smartphones and tablets */
 
   body {
@@ -365,9 +365,8 @@ a {
   #frame-hobbies,
   #frame-more-about-me {
     z-index: 0;
-      font-size:17px;
-    bottom: 20%;
-      height:50%;
+      position:relative;
+    bottom: 10%;
   }
 
   .social-icons {
