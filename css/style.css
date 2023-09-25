@@ -332,105 +332,120 @@ a {
 }
 
 @media (max-width: 860px) {
-    body {/*home body page*/
-        flex-direction: column;
-    }
+  /* Responsive styles for smartphones and tablets */
 
-    #body-cv {/*curriculum body page*/
-        flex-direction: column;
-    }
-       
-    .central-cv-div {
-        /*curriculum buttons div*/
-        flex-direction: row;
-     }
-
-    #body-profile,#body-work-experience,#body-key-skills,#body-education,#body-hobbies,#body-more-about-me {
-        font-size: 17px;
-    }
-    #frame-profile,#frame-education,#frame-work-experience,#frame-key-skills,#frame-hobbies,#frame-more-about-me{
-         z-index: 0;
-    }
-    .social-icons{
-        width: 30px;
-        height: 30px;
-        margin-left: 20px;
-    }
-    .cv-btn {
-        width: 100%;
-        font-size: 90%;
-        z-index: 1;
-    }
-
-    #my-name {
-        font-size: 50px;
-    }
-
-    h1 {
-        font-size: 50px;
-        text-align: center;
-        top: 20px;
-    }
-
-    .link-cv {
-        font-size: 50px;
-        left: 120px;
-    }
-
-    .logo {
-        position: relative;
-        top: 30px;
-        width: 80px;
-        height: 80px;
-        align-self: center;
-    }
-
-    .btn {
-        position: relative;
-    }
-
-    .btn-Discord,
-    .btn-Linkedin,
-    .btn-Trovo,
-    .btn-Twitch,
-    .btn-Youtube {
-        width: 100%;
-        height: 80%;
-    }
-
-    .btn-h2 {
-        font-size: 15px;
-    }
-}@media (orientation: landscape) {
-    #body-cv {
-       display: flex;
-      }
-      h1{
-        position: relative;
-        bottom: 160px;
-      }
-      .central-cv-div {
-        position: relative;
-        bottom: 200px;
-      }
-      #frame-profile,#frame-education,#frame-work-experience,#frame-key-skills,#frame-hobbies,#frame-more-about-me{
-         position: fixed;
-         top: 180px;
-         width: 100%;
-         height: 300px;
-         
-      }
-      #body-hobbies,#body-profile,#body-work-experience,#body-key-skills,#body-education,#body-more-about-me{
-        font-size: 17px;
-      }
-      .social-icons{
-        width: 30px;
-        height: 30px;
-        margin-left: 20px;
-    }
-    .cv-btn {
-        width: 100%;
-        font-size: 90%;
-    }
+  body {
+    /* home body page */
+    flex-direction: column;
   }
-  
+
+  #body-cv {
+    /* curriculum body page */
+    flex-direction: column;
+  }
+
+  .central-cv-div {
+    /* curriculum buttons div */
+    flex-direction: row;
+  }
+
+  #body-profile,
+  #body-work-experience,
+  #body-key-skills,
+  #body-education,
+  #body-hobbies,
+  #body-more-about-me {
+    font-size: 17px;
+  }
+
+  #frame-profile,
+  #frame-education,
+  #frame-work-experience,
+  #frame-key-skills,
+  #frame-hobbies,
+  #frame-more-about-me {
+    z-index: 0;
+  }
+
+  .social-icons {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+  }
+
+  .cv-btn {
+    width: 100%;
+    font-size: 90%;
+    z-index: 1;
+  }
+
+  #my-name {
+    font-size: 50px;
+  }
+
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    top: 20px;
+  }
+
+  .link-cv {
+    font-size: 50px;
+    left: 120px;
+  }
+
+  .logo {
+    position: relative;
+    top: 30px;
+    width: 80px;
+    height: 80px;
+    align-self: center;
+  }
+
+  .btn {
+    position: relative;
+  }
+
+  .btn-Discord,
+  .btn-Linkedin,
+  .btn-Trovo,
+  .btn-Twitch,
+  .btn-Youtube {
+    width: 100%;
+    height: 80%;
+  }
+
+  .btn-h2 {
+    font-size: 15px;
+  }
+}
+
+@media (orientation: landscape) {
+  /* Responsive styles for landscape mode */
+
+  #body-cv {
+    display: flex;
+  }
+
+  h1 {
+    position: relative;
+    bottom: 160px;
+  }
+
+  .central-cv-div {
+    position: relative;
+    bottom: 200px;
+  }
+
+  #frame-profile,
+  #frame-education,
+  #frame-work-experience,
+  #frame-key-skills,
+  #frame-hobbies,
+  #frame-more-about-me {
+    position: fixed;
+    top: 180px;
+    width: 100%;
+    height: 300px;
+  }
+}
