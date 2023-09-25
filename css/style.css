@@ -366,7 +366,7 @@ a {
   #frame-more-about-me {
     z-index: 0;
       position:relative;
-    bottom: 5px;
+    top: 10px;
   }
 
   .social-icons {
