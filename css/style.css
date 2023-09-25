@@ -347,6 +347,7 @@ a {
   .central-cv-div {
     /* curriculum buttons div */
     flex-direction: row;
+      width:100%;
   }
 
   #body-profile,
@@ -365,7 +366,7 @@ a {
   #frame-hobbies,
   #frame-more-about-me {
     z-index: 0;
-      position:relative;
+      position:fixed;
     top: 10px;
   }
 
