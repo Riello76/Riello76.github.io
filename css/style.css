@@ -365,6 +365,7 @@ a {
   #frame-hobbies,
   #frame-more-about-me {
     z-index: 0;
+      font-size:17px;
     bottom: 20%;
   }
 
