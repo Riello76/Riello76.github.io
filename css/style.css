@@ -1,0 +1,164 @@
+/*body profiles start*/
+body {
+    background-image: linear-gradient(to top right, blue, orange);
+    background-attachment: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#body-cv {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+#body-profile {
+    background: rgb(42, 37, 37);
+    color: white;
+    font-size: 25px;
+}
+
+#body-work-experience {
+    background: rgb(42, 37, 37);
+    color: white;
+    font-size: 25px;
+}
+
+#body-key-skills {
+    background: rgb(42, 37, 37);
+    color: white;
+    font-size: 25px;
+}
+
+#body-education {
+    background: rgb(42, 37, 37);
+    color: white;
+    font-size: 25px;
+}
+
+#body-hobbies {
+    flex-direction: column;
+    background: rgb(42, 37, 37);
+    color: white;
+    font-size: 25px;
+}
+
+#body-more-about-me {
+    background: rgb(42, 37, 37);
+    color: white;
+    font-size: 25px;
+}
+/*body profiles end*/
+.social-icons{
+    width: 30px;
+    height: 30px;
+}
+
+.card-body {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+.btn-secondary{
+    background-color: rgb(44, 38, 38);
+    color: rgb(0, 168, 243);
+}
+#paragrafo3{
+    font-size: 15px;
+}
+.container-fluid{
+    text-shadow: 0px 0px 2px whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+a{
+    color: white;
+}
+#logo{
+    border-radius: 40px;
+    animation: logo 5s infinite;
+}
+@keyframes logo{
+    0% {
+        box-shadow: 0px 0px 30px rgb(0, 168, 243);
+    }
+    25% {
+        box-shadow: 0px 0px 20px rgb(255, 127, 39);
+    }
+    50% {
+        box-shadow: 0px 0px 30px rgb(0, 168, 243);
+    }
+    75% {
+        box-shadow: 0px 0px 20px rgb(255, 127, 39);
+    }
+    100% {
+        box-shadow: 0px 0px 30px rgb(0, 168, 243);
+    }
+}
+/*contacts start*/
+#contacts-div {
+    position: fixed;
+   bottom: 5px;
+    right: 10px; /* Distanza dal bordo destro */
+    color: gold;
+    display: inline-flex;;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.mailto {
+    background-image: url(/icons/mail.png);
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 70%;
+}
+
+.mailto:hover,
+.whatsapp:hover,
+.telegram:hover,
+.phone:hover {
+    box-shadow: 0px 0px 20px rgb(255, 127, 39);
+    ;
+}
+
+.mail-text {
+    opacity: 0%;
+}
+
+.whatsapp {
+    background-image: url(/icons/whatsapp.png);
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 70%;
+}
+
+.telegram {
+    background-image: url(/icons/telegram.png);
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 70%;
+}
+
+.phone {
+    background-image: url(/icons/phone.png);
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 70%;
+}
+
+/*contacts end*/
