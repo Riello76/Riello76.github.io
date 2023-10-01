@@ -160,35 +160,5 @@ h3 {
     height: 35px;
     border-radius: 70%;
 }
-/* max widht 368px */
-@media (min-width: 368px) {
-    /* Aggiungi qui i tuoi stili per schermi più grandi */
-    #logo {
-        width: 100px;
-        height: 100px;
-    }
 
-    .btn-group {
-        /* Styles for buttons in the navbar when the screen is larger than 368px */
-        margin-top: 20px;
-    }
-
-}
-
-/* Styles for devices with width less than or equal to 368px */
-@media (max-width: 368px) {
-    
-    #logo {
-  
-        width: 60px;
-        height: 60px;
-    }
-
-    .btn-group {
-    
-        margin-top: 10px;
-    }
-
-
-}
 
