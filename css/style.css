@@ -160,26 +160,23 @@ h3 {
     height: 35px;
     border-radius: 70%;
 }
-
-/*contacts end*/
-/* Stili per dispositivi con larghezza maggiore di 768px */
-@media (min-width: 768px) {
+/* max widht 368px */
+@media (min-width: 368px) {
     /* Aggiungi qui i tuoi stili per schermi più grandi */
     #logo {
-        /* Esempio di stili per il logo */
         width: 100px;
         height: 100px;
     }
 
     .btn-group {
-        /* Styles for buttons in the navbar when the screen is larger than 768px */
+        /* Styles for buttons in the navbar when the screen is larger than 368px */
         margin-top: 20px;
     }
 
- 
+}
 
-/* Styles for devices with width less than or equal to768px */
-@media (max-width: 768px) {
+/* Styles for devices with width less than or equal to 368px */
+@media (max-width: 368px) {
     
     #logo {
   
@@ -194,3 +191,4 @@ h3 {
 
 
 }
+
