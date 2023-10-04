@@ -1,0 +1,53 @@
+/* Media query to adapt the layout for smartphones */
+@media screen and (max-width: 740px) {
+    body {
+        flex-direction: column;
+        /* Arrange columns in a single column */
+    }
+
+    /* Adjust column width for smaller screens */
+    .navbar,
+    .bg-dark,
+    .border-bottom,
+    .container-fluid,
+    .border-body,
+    .btn-group,
+    .collapse,
+    .btn,
+    .btn-secondary,
+    .btn-sm {
+        width: 100%;
+        /* Occupy full width on smaller screens */
+        max-width: none;
+        /* Remove maximum width to allow columns to expand fully on smaller devices */
+    }
+
+    .gasp {
+        font-size: 40px;
+    }
+
+    .gaspcnt {
+        font-size: 25px;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .bnt-cont {
+        width: 30px;
+        height: 30px;
+    }
+
+    p,
+    .card,
+    .card-body {
+        width: 18em;
+        word-wrap: break-word;
+        text-align: left;
+    }
+
+    #paragraph3 {
+        font-size: 14px;
+        word-wrap: break-word;
+        text-align: left;
+    }
+}
