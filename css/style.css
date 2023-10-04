@@ -52,6 +52,10 @@ body {
 
 /*body profiles end*/
 /*curriculum elements start*/
+#div-social-icons{
+    display: flex;
+    justify-content: space-around;
+}
 .social-icons {
     width: 30px;
     height: 30px;
