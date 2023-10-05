@@ -26,11 +26,6 @@
         font-size: 40px;
     }
 
-    .gaspcnt {
-        font-size: 25px;
-        position: relative;
-        bottom: 5px;
-    }
 
     .bnt-cont {
         width: 30px;
@@ -38,13 +33,14 @@
     }
 
     p,
-    .card,
-    .card-body {
+    .card{
         width: 18em;
         word-wrap: break-word;
         text-align: left;
     }
-
+    .card-body {
+        max-inline-size: 100%;
+    }
     #paragraph3 {
         font-size: 14px;
         word-wrap: break-word;
