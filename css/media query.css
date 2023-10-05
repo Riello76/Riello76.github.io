@@ -1,5 +1,5 @@
 /* Media query to adapt the layout for smartphones */
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 320px) {
     body {
         flex-direction: column;
         /* Arrange columns in a single column */
@@ -21,19 +21,24 @@
         max-width: none;
         /* Remove maximum width to allow columns to expand fully on smaller devices */
     }
-
+    #logo{
+        position: relative;
+        left: 120px;
+        width: 50px;
+        height: 50px;
+    }
     .gasp {
-        font-size: 40px;
+        position: relative;
+        top: 30px;
+        right: 10px;
+        font-size: 30px;
     }
-
-
-    .bnt-cont {
-        width: 30px;
-        height: 30px;
+    #date-time{
+        position: relative;
+        top: 10px;
     }
-
     p,
-    .card{
+    .card {
         width: 18em;
         word-wrap: break-word;
         text-align: left;
@@ -41,13 +46,42 @@
     .card-body {
         max-inline-size: 100%;
     }
+    
     #paragraph3 {
         font-size: 14px;
         word-wrap: break-word;
         text-align: left;
     }
     #date-time{
-        font-size: 20px;
-        width: 87%;
+        font-size: 17px;
+        width: auto;  
     }
+}
+@media screen and (orientation: landscape) and (max-width:658px){
+ /* Styles to apply in landscape orientation */
+ body {
+    flex-direction: column;
+}
+.container-fluid{
+    flex-direction: column-reverse;
+}
+#logo{
+    position: relative;
+    right: 120px;
+    width: 60px;
+    height: 60px;
+    bottom: 60px;
+}
+.gasp{
+    position: relative;
+    right: 30px;
+    font-size: 50px;
+}
+}
+.card-body{
+    max-inline-size: 100%;
+}
+.container-fluid{
+    position: relative;
+    height: 50%;
 }
