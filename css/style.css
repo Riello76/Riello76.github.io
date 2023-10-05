@@ -1,6 +1,6 @@
 /*body profiles start*/
 body {
-    background-image: linear-gradient(to bottom right, rgb(0, 168, 243), rgb(255, 127, 39));
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 127, 39));
     background-attachment: fixed;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -51,56 +51,7 @@ body {
 }
 
 /*body profiles end*/
-/*curriculum elements start*/
-.navbar{
-    background-color:rgb(44, 37, 37) ;
-}
-#div-social-icons{
-    display: flex;
-    justify-content: space-around;
-}
-.social-icons {
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-}
-#date-time {
-    font-size: 24px;
-    color: rgb(0, 168, 243);
-    margin-left: auto;
-    padding: 15px;
-}
-
-.social-icons:hover {
-    box-shadow: 0px 0px 20px rgb(255, 127, 39)
-}
-
-.btn-secondary {
-    --bs-btn-hover-color: rgb(0, 168, 243);
-    --bs-btn-hover-bg: rgb(42, 37, 37);
-    --bs-btn-hover-border-color: rgb(255, 127, 39);
-    width: 100px;
-    height: 30px;
-    background-color: rgb(44, 37, 37);
-    color: rgb(0, 168, 243);
-
-}
-
-.btn-group {
-    display: block;
-}
-
-/*hiperlink color and hover*/
-a {
-    color: white;
-}
-
-a:hover {
-    color: rgb(251, 247, 3);
-
-}
-
-/*curriculum elements end*/
+/*Header elements start*/
 #logo {
     border-radius: 50px;
     animation: logo 5s infinite;
@@ -127,6 +78,63 @@ a:hover {
         box-shadow: 0px 0px 30px rgb(0, 168, 243);
     }
 }
+#date-time {
+    font-size: 24px;
+    color: rgb(0, 168, 243);
+    margin-left: auto;
+    padding: 15px;
+    text-shadow: -1px 1px 3px ;
+}
+/* home title*/
+.gasp{
+    text-shadow: -2px 1px 3px ;
+    
+}
+/*Header elements end*/
+/*curriculum elements start*/
+#div-social-icons{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar{
+    background-color:rgb(44, 37, 37) ;
+}
+.social-icons {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.social-icons:hover {
+    box-shadow: 0px 0px 20px rgb(255, 127, 39)
+}
+
+.btn-secondary {
+    --bs-btn-hover-color: rgb(0, 168, 243);
+    --bs-btn-hover-bg: rgb(42, 37, 37);
+    --bs-btn-hover-border-color: rgb(255, 127, 39);
+    width: 100px;
+    height: 30px;
+    background-color: rgb(44, 37, 37);
+    color: rgb(0, 168, 243);
+    text-shadow: -1px 1px 2px ;
+}
+
+.btn-group {
+    display: block;
+}
+
+/*hiperlink color and hover*/
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(251, 247, 3);
+
+}
+
+/*curriculum elements end*/
 
 /*contacts start*/
 #contacts-div {
