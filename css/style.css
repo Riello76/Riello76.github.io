@@ -52,6 +52,9 @@ body {
 
 /*body profiles end*/
 /*curriculum elements start*/
+.navbar{
+    background-color:rgb(44, 37, 37) ;
+}
 #div-social-icons{
     display: flex;
     justify-content: space-around;
