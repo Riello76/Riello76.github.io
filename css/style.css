@@ -110,12 +110,14 @@ body {
 .social-icons:hover {
     box-shadow: 0px 0px 20px rgb(255, 127, 39)
 }
-
+.card-body{
+    left: 1px;
+}
 .btn-secondary {
     --bs-btn-hover-color: rgb(0, 168, 243);
     --bs-btn-hover-bg: rgb(42, 37, 37);
     --bs-btn-hover-border-color: rgb(255, 127, 39);
-    width: 100px;
+    width: 91px;
     height: 30px;
     background-color: rgb(44, 37, 37);
     color: rgb(0, 168, 243);
@@ -196,4 +198,5 @@ a:hover {
 }
 
 /*contacts end*/
+
 
