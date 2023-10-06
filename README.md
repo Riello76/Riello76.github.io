@@ -4,3 +4,4 @@ This is my very big work, I want improve this portfolio overtime :)
 03/04/2023 Bootstrap is good but not for me now, I need more info and experience.
 04/10/2023 Added a media query file and date and hour on homepage.
 05/10/2013 Added a JS folder and file, fixed some media query problem.Changed some details like background color and media queries.
+06/10/2023 Added alternative homepage, need click on an book img.
