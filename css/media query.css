@@ -1,0 +1,58 @@
+/* Media query to adapt the layout for smartphones */
+@media screen  and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        /* Arrange columns in a single column */
+    }
+
+    /* Adjust column width for smaller screens */
+    .border-bottom,
+    .border-body,
+    .collapse,
+    .btn,
+    .btn-secondary,
+    .btn-sm {
+        width: 100%;
+        /* Occupy full width on smaller screens */
+        max-width: none;
+        /* Remove maximum width to allow columns to expand fully on smaller devices */
+    }
+   header{
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+   }
+   #logo{
+    width: 50px;
+   }
+    .btn-group{
+      
+        flex-direction: column;
+    }
+    p,
+    .card {
+        position: relative;
+        width: 18em;
+        word-wrap: break-word;
+        text-align: left;
+    }
+    .card-body {
+        max-inline-size: 100%;
+    }
+    
+    #paragraph3 {
+        font-size: 14px;
+        word-wrap: break-word;
+        text-align: left;
+    }
+    .work-progress {
+     width: 95%;
+     margin-right: 3%;
+    
+    }
+
+  
+}
+@media screen and (orientation: landscape) and (max-width:658px){
+ /* Styles to apply in landscape orientation */
+}
