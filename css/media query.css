@@ -20,9 +20,11 @@
     width: 50px;
    }
     .btn-group{
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;  
     }
+      .btn-secondary{
+    margin-bottom: 2%;
+   }
     p,
     .card {
         position: relative;
