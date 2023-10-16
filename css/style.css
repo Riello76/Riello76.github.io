@@ -62,7 +62,7 @@ body {
 }
 
 .btn-secondary:hover {
-    box-shadow: 0px 0px 20px red;
+    box-shadow: 0px 0px 20px rgb(255, 127, 39);
 }
 
 .btn-group {
