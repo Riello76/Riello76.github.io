@@ -6,3 +6,4 @@ This is my very big work, I want improve this portfolio overtime :)
 05/10/2013 Added a JS folder and file, fixed some media query problem.Changed some details like background color and media queries.
 06/10/2023 Added alternative homepage, need click on an book img.
 12/10/2023 Added 2 new buttons (Wireframes) and (Homepages) and a video for the work in progress with Filmora.and the first homepage for a company of pumpling and heating.
+16/102023  New styles for the UI, my first experiments with GIMP.
