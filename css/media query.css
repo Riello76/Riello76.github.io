@@ -19,12 +19,13 @@
    #logo{
     width: 50px;
    }
-    .btn-group{
-        flex-wrap: wrap;  
-    }
-      .btn-secondary{
+   .btn-secondary{
     margin-bottom: 2%;
    }
+    .btn-group{
+        flex-wrap: wrap;
+        
+    }
     p,
     .card {
         position: relative;
@@ -34,6 +35,7 @@
     }
     .card-body {
         max-inline-size: 100%;
+        left: 1%;
     }
     
     #paragraph3 {
