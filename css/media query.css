@@ -9,26 +9,17 @@
     .border-bottom,
     .border-body,
     .collapse,
-    .cv-button {
+    .btn,
+    .btn-secondary,
+    .btn-sm {
         width: 100%;
         /* Occupy full width on smaller screens */
         max-width: none;
         /* Remove maximum width to allow columns to expand fully on smaller devices */
     }
-   
-#header-div{
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column-reverse;
-   }
    #logo{
-    width: 70px;
-    height: 70px;
+    width: 50px;
    }
-   #title{
-    width: 70%;
-    height: 50%;
-  }
     .btn-group{
       
         flex-direction: column;
@@ -36,7 +27,7 @@
     p,
     .card {
         position: relative;
-        width: 18em;
+        width: 100%;
         word-wrap: break-word;
         text-align: left;
     }
@@ -45,7 +36,8 @@
     }
     
     #paragraph3 {
-        font-size: 14px;
+        position: relative;
+        width: 100%;
         word-wrap: break-word;
         text-align: left;
     }
