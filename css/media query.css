@@ -17,8 +17,14 @@
         /* Remove maximum width to allow columns to expand fully on smaller devices */
     }
    #logo{
-    width: 50px;
+    display: none;
    }
+   #header-div{
+    justify-content: space-around;
+   }
+  #page-title{
+    margin-left: 10%;
+  }
    .btn-secondary{
     margin-bottom: 2%;
    }
