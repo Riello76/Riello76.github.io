@@ -15,14 +15,16 @@
         max-width: none;
         /* Remove maximum width to allow columns to expand fully on smaller devices */
     }
-   #logo{
-    display: none;
-   }
-   #header-div{
-    justify-content: space-around;
+    
+    #logo {
+        width: 15vw;
+    }
+   #head-div{
+   display: flex;
    }
   #page-title{
-    margin-left: 10%;
+    width: 100%;
+
   }
    .btn-secondary{
     margin-bottom: 2%;
