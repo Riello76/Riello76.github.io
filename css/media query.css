@@ -8,9 +8,8 @@
     /* Adjust column width for smaller screens */
     .border-bottom,
     .border-body,
-    .collapse,
-    .btn-secondary,
-    .btn-sm {
+    .collapse
+    {
         width: 100%;
         /* Occupy full width on smaller screens */
         max-width: none;
@@ -27,6 +26,8 @@
   }
    .btn-secondary{
     margin-bottom: 2%;
+    width: 100px;
+
    }
 
     .btn-group{
