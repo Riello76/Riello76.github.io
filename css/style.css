@@ -6,24 +6,28 @@ body {
 }
 
 /*Header elements start*/
-#header-div {
+#head-div {
+    position: relative;
     display: flex;
-
+    align-items: center;
+    justify-content: center;
+    
 }
 
 #logo {
-    margin-top: 5%;
-    margin-right: 5%;
-    width: 250px;
-    float: right;
+    position: absolute;
+    top: 11vw;
+    right: 46vw;
+    transform: translateX(50%); 
+    max-width: 100%; 
+    width: 10%;
 }
 
 #page-title {
+    max-width: 100%;
     width: 80%;
 }
 
-
-/*Header elements end*/
 /*curriculum elements start*/
 .btn-secondary {
     --bs-btn-hover-color: rgb(0, 168, 243);
