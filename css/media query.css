@@ -2,7 +2,9 @@
 @media screen and (max-width: 768px) {
     body {
         flex-direction: column;
-        /* Arrange columns in a single column */
+        height: 100vh;
+        background-position: center;
+
     }
 
     /* Adjust column width for smaller screens */
@@ -10,9 +12,8 @@
     .border-body,
     .collapse {
         width: 100%;
-        /* Occupy full width on smaller screens */
         max-width: none;
-        /* Remove maximum width to allow columns to expand fully on smaller devices */
+
     }
 
     #head-div {
@@ -28,12 +29,13 @@
         top: 17vw;
         left: 52vw;
     }
-.btn-secondary{
-    width:21vw;
-    background-size: cover;
-    margin-bottom: 2%;
-    
-}
+
+    .btn-secondary {
+        width: 21vw;
+        background-size: cover;
+        margin-bottom: 2%;
+    }
+
     .btn-group {
         flex-wrap: wrap;
     }
