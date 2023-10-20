@@ -15,10 +15,7 @@
         max-width: none;
         /* Remove maximum width to allow columns to expand fully on smaller devices */
     }
-    
-    #logo {
-        width: 15vw;
-    }
+  
    #head-div{
    display: flex;
    }
