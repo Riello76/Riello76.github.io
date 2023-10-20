@@ -1,10 +1,14 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-image: url(/img/pexels-photo-8389135.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
-   
+    height: 100vh;
+    width: 100%;
 }
 
 /*Header elements start*/
@@ -13,7 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+  
 }
 #page-title {
     max-width: 100%;
@@ -49,12 +53,8 @@ body {
 .btn-group {
     display: flex;
     justify-content: space-around;
-    background-color: black;
     margin-top: 5vw;
    
-}
-.collapse{
-    background-color: black;
 }
 #div-social-icons {
     display: flex;
