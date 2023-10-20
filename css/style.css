@@ -1,8 +1,10 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: darkslategray;
+    background-color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+   
 }
 
 /*Header elements start*/
@@ -15,7 +17,14 @@ body {
 }
 #page-title {
     max-width: 100%;
-    width: 50%;
+    width: 50vw;
+   
+}
+#logo{
+    position: absolute;
+    width: 9vw;
+    left: 48vw;
+    top: 5vw;
 }
 
 /*curriculum elements start*/
@@ -34,15 +43,19 @@ body {
     border-radius: 50%;
 }
 .btn-secondary:hover {
-    box-shadow: 0px 0px 20px rgb(255, 127, 39);
+    box-shadow: 0px 0px 20px white;
 }
 
 .btn-group {
     display: flex;
     justify-content: space-around;
-
+    background-color: black;
+    margin-top: 5vw;
+   
 }
-
+.collapse{
+    background-color: black;
+}
 #div-social-icons {
     display: flex;
     justify-content: space-around;
@@ -53,19 +66,18 @@ body {
     height: 30px;
     border-radius: 30px;
 }
-
+.card-body{
+    background-color: black;
+}
 .card {
     position: absolute;
-
+    left: 30%;
 }
-
-
+li{
+    color: white;
+}
 .social-icons:hover {
     box-shadow: 0px 0px 20px rgb(255, 127, 39)
-}
-
-.card{
-    left: 30%;
 }
 
 /*hiperlink color and hover*/
