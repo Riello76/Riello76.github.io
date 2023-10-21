@@ -49,6 +49,7 @@ h1 {
 #nav-div {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .nav-btn {
@@ -61,7 +62,7 @@ h1 {
     justify-content: center;
     margin-bottom: 2%;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0px 0px 10px white;
 }
 
 .nav-btn:hover {
@@ -73,6 +74,7 @@ h1 {
 /*-------------------------------------------------------------------------------------------------------*/
 /*headline content start*/
 #headline-div {
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: #001F3F;
@@ -92,11 +94,10 @@ h1 {
 #hdln-btn {
     background-color: #1b91c1;
     color: #FFFFFF;
-    text-shadow: 0px 0px 20px white;
     height: 30px;
-    width: 50%;
-    border-bottom-left-radius: 60%;
-    border-top-right-radius: 60%;
+    width: 60%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
     cursor: pointer;
 }
 
@@ -108,19 +109,31 @@ h1 {
 /*headline content end*/
 /*-------------------------------------------------------------------------------------------------------*/
 /*reviews content start*/
-.web-rated{
-    color:  #FFFFFF;
+.web-rated {
+    width: 100%;
+    color: #FFFFFF;
     font-size: 22px;
     display: flex;
     justify-content: space-around;
     margin-bottom: 2%;
 }
-.web-content{
+
+.web-content {
     display: flex;
     align-items: center;
     border-radius: 30%;
-    box-shadow: 0px 0px 10px ;
+    box-shadow: 0px 0px 10px;
 }
+
+.img-webcont {
+    width: 120px;
+    height: 50px;
+}
+
+.p-webcont {
+    margin-right: 10px;
+}
+
 #rvws-div {
     background-color: #001F3F;
     color: #FFFFFF;
@@ -128,6 +141,10 @@ h1 {
     flex-wrap: wrap;
     margin-bottom: 2%;
     box-shadow: 0px 0px 20px white;
+}
+
+.p-services {
+    margin-top: 2%;
 }
 
 .rating {
