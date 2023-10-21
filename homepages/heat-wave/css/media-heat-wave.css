@@ -12,7 +12,7 @@
     #caption,
     #footer-content {
         width: 100%;
-        /* Set width to 100% */
+    
     }
 
     h1 {
@@ -89,7 +89,6 @@
     body {
         width: 100%;
         font-size: 18px;
-        margin-bottom: 20px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -103,17 +102,18 @@
     }
 
     #logo {
-        width: 100px;
+        width: 90px;
         height: auto;
         margin: 10px;
     }
 
     #callUs {
         font-size: 16px;
+        margin-left: 5%;
     }
 /*header content end*/
     #nav-div {
-        flex-direction: column;
+        margin-right: 5px;
         margin-bottom: 5px;
     }
 
@@ -122,31 +122,70 @@
         margin-bottom: 10px;
     }
 
-    #headline-div {
-        width: 100%;
-        font-size: 13px;
-        text-align: center;
-        margin-left: 1%;
-        margin-right: 1%;
-    }
 
     .rating {
         font-size: 20px;
         margin-bottom: 10px;
     }
-
+    #headline-div{
+        margin-left: 5px;
+    }
+    #hdln-btn{
+     margin-bottom: 5%;
+    }
+    h3,h4{
+        font-size: 13px;
+    }
     #subHeadline-div,
     #second-subHead-div {
         text-align: center;
         font-size: 13px;
     }
-    
-    .review {
-        width: 100%;
-        margin-bottom: 20px;
-        font-size: 13px;
+    #rvws-div{
+        flex-direction: column;
     }
+    .review {
+        width: 90%;
+        margin-bottom: 5px;
+        font-size: 13px;
+        margin-left: 5%;
+    }
+    .web-rated{
+        display: flex;
+        height: 60px;
+        max-width: 100vw;
+        flex-direction: row;
+    }
+    .web-content{
+        position: relative;
+      height: 50px;
+      margin-top: 2%;
+      width: 150px;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .img-webcont{
+        position: absolute;
+        bottom: 30%;
+        width: 100px;
+        height: 40px;
+    }
+    .p-webcont{
+        font-size: 13px;
+        margin-left: 5%;
+        position: absolute;
+        top: 60%;
+     
+    }
+    #subHeadline-div{
+        width: 97%;
+        margin-left: 2%;
+    }
+    .p-services {
+        width: 80%;
+        margin-left: 10%;
 
+    }
     .services {
         width: 100%;
         max-width: none;
@@ -162,25 +201,24 @@
     }
 
     .image {
-        width: 100%;
-        margin-right: 0;
+        width: 90%;
+        margin-left: 5%;
     }
 
     #caption {
-        width: 100%;
-        text-align: center;
+        width:90vw;
         font-size: 12px;
     }
 
     #footer-content {
-        font-size: 12px;
+       max-width: 98vw;
+        
     }
-
+    
     #footer-links {
-        display: flex;
-        flex-wrap: wrap;
         font-size: 9px;
-        margin-left: 4%;
+        justify-content: space-evenly;
+  
     }
 
     #footer-links a {
@@ -195,4 +233,6 @@
     #copyright {
         font-size: 10px;
     }
+ 
 }
+
