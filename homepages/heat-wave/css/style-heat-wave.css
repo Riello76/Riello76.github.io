@@ -20,7 +20,6 @@ body {
 h1 {
     position: relative;
     font-size: 60px;
-    text-shadow: -2px 1px 10px #1c91c1;
     -webkit-text-stroke: 1px #FFFFFF;
 }
 
@@ -38,7 +37,7 @@ h1 {
     width: 400px;
     margin-right: 15px;
     font-size: 20px;
-    color: #1c91c1;
+    color: white;
     box-shadow: 0px 0px 10px white;
     border-radius: 10%;
 }
@@ -78,7 +77,7 @@ h1 {
     display: flex;
     flex-direction: column;
     background-color: #001F3F;
-    color: #1c91c1;
+    color: white;
     word-wrap: break-word;
     text-align: center;
     width: 30%;
@@ -99,6 +98,7 @@ h1 {
     border-bottom-left-radius: 50%;
     border-top-right-radius: 50%;
     cursor: pointer;
+    margin-bottom: 2%;
 }
 
 #hdln-btn:hover,
@@ -119,19 +119,23 @@ h1 {
 }
 
 .web-content {
+    width: 250px;
     display: flex;
     align-items: center;
     border-radius: 30%;
     box-shadow: 0px 0px 10px;
+    
 }
 
 .img-webcont {
-    width: 120px;
+    margin-left: 10%;
+    width: 100px;
     height: 50px;
 }
 
 .p-webcont {
-    margin-right: 10px;
+    font-size: 20px;
+    
 }
 
 #rvws-div {
@@ -145,6 +149,9 @@ h1 {
 
 .p-services {
     margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
 }
 
 .rating {
@@ -196,15 +203,9 @@ h1 {
 }
 
 .image {
-    margin-right: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.image,
-#caption {
-    margin: 3%;
 }
 
 #caption {
@@ -217,14 +218,13 @@ h1 {
 /*-------------------------------------------------------------------------------------------------------*/
 /*footer content start*/
 /* Style for the footer */
-footer {
+#footer-content{
     background-color: #001F3F;
     color: #FFFFFF;
     padding: 2px;
     text-align: center;
     max-height: 100px;
     overflow: hidden;
-    position: fixed;
     bottom: 0;
     width: 100%;
     border: 1px solid #ccc;
