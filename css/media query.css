@@ -15,12 +15,14 @@
     #paragraph-div{
       width: 70vw;
       height: 55vh;
-      margin-left: 10%;
+      margin-left: 22%;
       font-size: 15px;
     }
 
     .btn-secondary {
-      width: 90px;
+      width: 100px;
     }
-    
+    #footer-div{
+      justify-content: space-around;
+    }
 }
