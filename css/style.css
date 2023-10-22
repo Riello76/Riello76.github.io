@@ -1,4 +1,5 @@
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     background-image: url(/img/pexels-photo-8389135.jpeg);
@@ -17,14 +18,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  
+
 }
+
 #page-title {
     max-width: 100%;
     width: 50vw;
-   
+
 }
-#logo{
+
+#logo {
     position: absolute;
     width: 9vw;
     left: 48vw;
@@ -38,69 +41,124 @@ body {
     --bs-btn-hover-border-color: rgb(255, 127, 39);
     width: 120px;
     height: 40px;
-    background-image: url(/img/BGbuttons.gif);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    color: rgb(0, 168, 243);
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
     text-shadow: -1px -1px 1px;
     border-radius: 50%;
 }
+
 .btn-secondary:hover {
     box-shadow: 0px 0px 20px white;
 }
 
 .btn-group {
+    position: absolute;
+    top: 30%;
     display: flex;
-    justify-content: space-around;
-    margin-top: 5vw;
-   
+    flex-direction: column;
 }
+
 #div-social-icons {
     display: flex;
+    position: relative;
     justify-content: space-around;
+    bottom: 20px;
 }
 
 .social-icons {
+    position: relative;
     width: 30px;
     height: 30px;
     border-radius: 30px;
+    bottom: 22%;
 }
-.card-body{
-    background-color: black;
+
+.social-icons:hover {
+    box-shadow: 0px 0px 20px rgb(255, 127, 39);
 }
+
+.a-link {
+    text-align: center;
+}
+
 .card {
     position: absolute;
     left: 30%;
 }
-li{
+
+li {
     color: white;
 }
-.social-icons:hover {
-    box-shadow: 0px 0px 20px rgb(255, 127, 39)
+
+#contacts-div {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 /*hiperlink color and hover*/
 a {
-    color: white;
+    color: rgb(0, 168, 243);
 }
 
 a:hover {
-    color: rgb(251, 247, 3);
+    color: rgb(255, 127, 39);
 
 }
-#paragraph3 {
- 
-    width: 100%;
-    word-wrap: break-word;
-    text-align: left;
+
+#paragraph-div {
+    position: absolute;
+    left: 10%;
+    width: 40%;
+    height: 50%;
+    top: 30%;
+    overflow: auto;
 }
+
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    word-wrap: break-word;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.25rem;
+    color: white;
+}
+
+.card-body {
+    flex: content;
+    padding: 1.25rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+.collapse {
+    display: block;
+    visibility: visible;
+}
+
+.p-collapse {
+    max-width: 100%;
+    word-wrap: break-word;
+    background-color: transparent;
+    color: white;
+}
+
 /*curriculum elements end*/
 
 /*contacts start*/
-#contacts-div {
+#footer-div {
+    width: 100vw;
+    height: 50px;
+    position: absolute;
     display: flex;
-    justify-content: space-around;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .mailto {
@@ -116,13 +174,14 @@ a:hover {
 .mailto:hover,
 .whatsapp:hover,
 .telegram:hover,
-.phone:hover {
+.phone:hover,
+.linkedin:hover {
     box-shadow: 0px 0px 20px rgb(255, 127, 39);
     ;
 }
 
 .mail-text {
-    opacity: 0%;
+    opacity: 0;
 }
 
 .whatsapp {
@@ -133,6 +192,7 @@ a:hover {
     width: 35px;
     height: 35px;
     border-radius: 70%;
+    border: none;
 }
 
 .telegram {
@@ -143,22 +203,33 @@ a:hover {
     width: 35px;
     height: 35px;
     border-radius: 70%;
+    border: none;
 }
 
 .phone {
     background-image: url(/icons/phone.png);
     background-size: cover;
     background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: calc();
     cursor: pointer;
     width: 35px;
     height: 35px;
     border-radius: 70%;
+    border: none;
+}
+
+.linkedin {
+    background-image: url(/icons/linkedn.png);
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: calc();
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 70%;
+    border: none;
 }
 
 /*contacts end*/
-.work-progress {
-    margin-top: 5%;
-    margin-right: 5%;
-    width: 20%;
-    float: right;
-}
