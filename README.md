@@ -8,3 +8,4 @@ This is my very big work, I want improve this portfolio overtime :)
 12/10/2023 Added 2 new buttons (Wireframes) and (Homepages) and a video for the work in progress with Filmora.and the first homepage for a company of pumpling and heating.
 16/102023  New styles for the UI, my first experiments with GIMP.
 19/10/2023 After GIMP I started with Blender, now the homepage have 3D images and animations.
+22/10/2023 Homepage new style, new buttons position and added footer and new trasparent icons.
