@@ -15,14 +15,18 @@
     #paragraph-div{
       width: 70vw;
       height: 55vh;
-      margin-left: 22%;
+      margin-left: 80px;
       font-size: 15px;
     }
-
+    .card{
+      width: 55vw;
+      
+    }
     .btn-secondary {
       width: 100px;
     }
     #footer-div{
+      width: 100%;
       justify-content: space-around;
     }
 }
