@@ -153,9 +153,8 @@ a:hover {
 
 /*contacts start*/
 #footer-div {
-    width: 100vw;
-    height: 50px;
     position: absolute;
+    width: 100vw;
     display: flex;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -178,10 +177,6 @@ a:hover {
 .linkedin:hover {
     box-shadow: 0px 0px 20px rgb(255, 127, 39);
     ;
-}
-
-.mail-text {
-    opacity: 0;
 }
 
 .whatsapp {
