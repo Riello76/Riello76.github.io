@@ -1,74 +1,26 @@
 /* Media query to adapt the layout for smartphones */
-@media screen and (max-width: 768px) {
-    body {
-        flex-direction: column;
-        height: 100vh;
-        background-position: center;
-
+@media screen  and (max-width: 768px) {
+    body{
+      position: relative;
+      flex-direction: column;
     }
-
-    /* Adjust column width for smaller screens */
-    .border-bottom,
-    .border-body,
-    .collapse {
-        width: 100%;
-        max-width: none;
-
+    #page-title{
+      width: 100vw;
     }
-
-    #head-div {
-        display: flex;
+    #logo{
+      width: 20vw;
+      top: 28%;
+      left: 45%;
     }
-
-    #page-title {
-        width: 100%;
-    }
-
-    #logo {
-        position: absolute;
-        top: 17vw;
-        left: 52vw;
+    #paragraph-div{
+      width: 70vw;
+      height: 55vh;
+      margin-left: 10%;
+      font-size: 15px;
     }
 
     .btn-secondary {
-        width: 24vw;
-        background-size: cover;
-        margin-bottom: 2%;
+      width: 90px;
     }
-
-    .btn-group {
-        flex-wrap: wrap;
-    }
-
-    p,
-    .card {
-        position: relative;
-        width: 100%;
-        word-wrap: break-word;
-        text-align: left;
-    }
-
-    .card-body {
-        max-inline-size: 100%;
-        left: 1%;
-    }
-
-    #paragraph3 {
-        position: relative;
-        width: 100%;
-        word-wrap: break-word;
-        text-align: left;
-    }
-
-    .work-progress {
-        width: 30vw;
-        margin-right: 3%;
-
-    }
-
-
-}
-
-@media screen and (orientation: landscape) and (max-width:658px) {
-    /* Styles to apply in landscape orientation */
+    
 }
