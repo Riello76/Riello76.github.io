@@ -24,14 +24,13 @@ body {
 #page-title {
     max-width: 100%;
     width: 50vw;
-
 }
 
 #logo {
     position: absolute;
-    width: 9vw;
-    left: 48vw;
-    top: 5vw;
+    width: 20vw;
+    left: 42vw;
+    top: 10vw;
 }
 
 /*curriculum elements start*/
