@@ -181,8 +181,8 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 70%;
   
 }
@@ -193,8 +193,8 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 70%;
 }
 
@@ -213,8 +213,8 @@ a:hover {
     background-size: contain;
     background-color: transparent;
     cursor: pointer;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 70%;
     border: none;
 }
@@ -226,8 +226,8 @@ a:hover {
     background-position: center;
 background-repeat: no-repeat;
     cursor: pointer;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 70%;
     border: none;
 }
@@ -239,8 +239,8 @@ background-repeat: no-repeat;
     background-repeat: no-repeat;
    background-position: center;
     cursor: pointer;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 70%;
     border: none;
 }
@@ -252,8 +252,8 @@ background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 70%;
     border: none;
 }
