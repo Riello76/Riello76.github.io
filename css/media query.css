@@ -1,32 +1,94 @@
 /* Media query to adapt the layout for smartphones */
-@media screen  and (max-width: 768px) {
-    body{
-      position: relative;
-      flex-direction: column;
-    }
-    #page-title{
-      width: 100vw;
-    }
-    #logo{
-      width: 20vw;
-      top: 28%;
-      left: 45%;
-    }
-    #paragraph-div{
-      width: 70vw;
-      height: 55vh;
-      margin-left: 80px;
-      font-size: 15px;
-    }
-    .card{
-      width: 55vw;
-      
-    }
-    .btn-secondary {
-      width: 100px;
-    }
-    #footer-div{
-      width: 100%;
-      justify-content: space-around;
-    }
+@media screen and (max-width: 768px) {
+  body {
+    position: relative;
+    flex-direction: column;
+  }
+
+  #page-title {
+    width: 100vw;
+  }
+
+  #logo {
+    width: 20vw;
+    top: 28%;
+    left: 45%;
+  }
+
+  #paragraph-div {
+    width: 70vw;
+    height: 55vh;
+    margin-left: 80px;
+    font-size: 15px;
+  }
+
+  .card {
+    width: 55vw;
+
+  }
+
+  .btn-secondary {
+    width: 100px;
+  }
+
+  #footer-div {
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  body {
+    position: relative;
+    flex-direction: row;
+    height: 500px;
+  }
+
+  #head-div {
+    width: 100vw;
+    height: 45vh;
+  }
+
+  #page-title {
+    width: 70vw;
+  }
+
+  #logo {
+    width: 10vw;
+    top: 40%;
+    left: 47%;
+  }
+
+  #paragraph-div {
+    width: 70vw;
+    height: 70vh;
+    margin-left: 8%;
+    margin-top: 13%;
+    font-size: 15px;
+  }
+
+  .card {
+    width: 70vw;
+
+  }
+
+  .btn-group {
+    width: 98%;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .btn-secondary {
+    margin-top: 6%;
+    width: 100px;
+    height: 30px;
+    border-radius: 0;
+
+  }
+
+  #footer-div {
+    position: fixed;
+  }
 }
