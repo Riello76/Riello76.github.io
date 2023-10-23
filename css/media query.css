@@ -1,5 +1,5 @@
 /* Media query to adapt the layout for smartphones */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
   body {
     position: relative;
     flex-direction: column;
@@ -38,7 +38,7 @@
   }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (max-width:768px) and (orientation: landscape) {
   body {
     position: relative;
     flex-direction: row;
