@@ -21,6 +21,14 @@ body {
 
 }
 
+.moon {
+    position: absolute;
+    width: 30vw;
+    top: 50%;
+    left: 70%;
+    opacity: 50%;
+}
+
 #page-title {
     max-width: 100%;
     width: 50vw;
@@ -38,12 +46,13 @@ body {
     --bs-btn-hover-color: rgb(0, 168, 243);
     --bs-btn-hover-bg: rgb(42, 37, 37);
     --bs-btn-hover-border-color: rgb(255, 127, 39);
-    width: 120px;
+    width: 100px;
     height: 40px;
     background-color: rgba(0, 0, 0, 0.5);
     color: rgba(255, 255, 255, 0.7);
     text-shadow: -1px -1px 1px;
     border-radius: 50%;
+    margin-bottom: 5%;
 }
 
 .btn-secondary:hover {
@@ -64,25 +73,30 @@ body {
     justify-content: space-around;
     bottom: 20px;
 }
-.twitch-icon{
+
+.twitch-icon {
     border-bottom-right-radius: 50%;
     width: 25px;
     height: 20px;
 }
-.trovo-icon{
+
+.trovo-icon {
     width: 20px;
     height: 20px;
     border-radius: 30%;
 }
-.youtube-icon{
+
+.youtube-icon {
     width: 25px;
     height: 15px;
 }
-.discord-icon{
+
+.discord-icon {
     border-radius: 45%;
     width: 25px;
     height: 20px;
 }
+
 .a-link {
     text-align: center;
 }
@@ -114,10 +128,10 @@ a:hover {
 
 #paragraph-div {
     position: absolute;
-    left: 10%;
-    width: 40%;
+    left: 7%;
+    width: 20%;
     height: 50%;
-    top: 40%;
+    top: 41%;
     overflow: auto;
 }
 
@@ -161,40 +175,54 @@ a:hover {
 #footer-div {
     position: absolute;
     width: 100vw;
+    height: 35px;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 #footer-icons {
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 100%;
 }
-.homepages{
-    background-image: url(/icons/homepage2.png);
-    background-size: contain;
-    background-color: transparent;
+
+.a-footer {
+    text-decoration: none;
+    color: white;
+    width: 130px;
+    text-align: center;
+    border-radius: 10%;
+
+}
+
+.a-footer:hover {
+    color: white;
+}
+
+.homepages {
+    background-image: url(/icons/homepage.png);
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
-    cursor: pointer;
-    width: 30px;
+    background-color: transparent;
+    width: 150px;
     height: 30px;
-    border-radius: 70%;
-  
+    cursor: pointer;
 }
+
 .mailto {
-    background-image: url(/icons/mail.png);
-    background-size: contain;
-    background-color: transparent;
+    background-image: url(/icons/email.png);
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-color: transparent;
     cursor: pointer;
-    width: 30px;
+    width: 150px;
     height: 30px;
-    border-radius: 70%;
 }
 
 .mailto:hover,
@@ -202,59 +230,54 @@ a:hover {
 .telegram:hover,
 .phone:hover,
 .linkedin:hover,
-.social-icons:hover,.homepages:hover {
+.social-icons:hover,
+.homepages:hover {
     box-shadow: 0px 0px 20px white;
     ;
 }
 
 .whatsapp {
-    background-image: url(/icons/whatsapp2.png);
-    background-size: contain;
+    background-image: url(/icons/whatsapp.png);
     background-color: transparent;
     cursor: pointer;
-    width: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
     height: 30px;
-    border-radius: 70%;
-    border: none;
 }
 
 .telegram {
-    background-image: url(/icons/telegram2.png);
-    background-size: contain;
+    background-image: url(/icons/telegram.png);
     background-color: transparent;
-    background-position: center;
-background-repeat: no-repeat;
     cursor: pointer;
-    width: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
     height: 30px;
-    border-radius: 70%;
-    border: none;
 }
 
 .phone {
     background-image: url(/icons/phone.png);
-    background-size: cover;
     background-color: transparent;
-    background-repeat: no-repeat;
-   background-position: center;
     cursor: pointer;
-    width: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
     height: 30px;
-    border-radius: 70%;
-    border: none;
 }
 
 .linkedin {
-    background-image: url(/icons/linkedn2.png);
-    background-size: contain;
+    background-image: url(/icons/linkedn.png);
     background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
     cursor: pointer;
-    width: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
     height: 30px;
-    border-radius: 70%;
-    border: none;
 }
 
 /*contacts end*/
