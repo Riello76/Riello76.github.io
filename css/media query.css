@@ -15,6 +15,9 @@
     top: 35%;
     left: 34%;
   }
+  .moon{
+    top: 100%;
+  }
   #paragraph-div {
     width: 60vw;
     height: 40vh;
@@ -29,7 +32,39 @@
   .btn-secondary {
     width: 100px;
   }
-
+  .a-footer{
+    font-size: 60%;
+  }
+  .homepages {
+    background-image: url('/icons/homepage2.png');
+    width: 30px;
+  }
+  
+  .mailto {
+    background-image: url('/icons/mail.png');
+    width: 30px;
+  
+  }
+  
+  .whatsapp {
+    background-image: url('/icons/whatsapp2.png');
+    width: 30px;
+  }
+  
+  .telegram {
+    background-image: url('/icons/telegram2.png');
+    width: 30px;
+  }
+  
+  .phone {
+    background-image: url('/icons/phone2.png');
+    width: 30px;
+  }
+  
+  .linkedin {
+    background-image: url('/icons/linkedn2.png');
+    width: 30px;
+  }
   #footer-div {
     position: fixed;
     width: 100%;
