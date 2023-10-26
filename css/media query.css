@@ -4,64 +4,71 @@
     position: relative;
     flex-direction: column;
   }
+
   #head-div {
     height: 70%;
   }
+
   #page-title {
-   width: 100vw;
-   height: 30vh;
+    width: 100vw;
+    height: 30vh;
   }
-  .moon{
+
+  .moon {
     top: 10%;
     left: 30%;
   }
-  #paragraph-div {
+
+  #div-cv {
+    bottom: 20%;
+    margin-left: 35%;
+    position: relative;
+
+  }
+
+  .paragraph-cv {
+    margin-left: 5%;
     width: 60vw;
-    height: 40vh;
-    margin-left: 30%;
-    font-size: 13px;
-    text-align: left;
+    color: white;
     overflow: auto;
+    height: 300px;
   }
-   .p-collapse{
-    width: 40vw;
-   }
-  .btn-secondary {
-    width: 100px;
-  }
-  .a-footer{
+
+  .a-footer {
     font-size: 60%;
   }
+
   .homepages {
     background-image: url('/icons/homepage2.png');
     width: 30px;
   }
-  
+
   .mailto {
     background-image: url('/icons/mail.png');
     width: 30px;
-  
+
   }
-  
+
   .whatsapp {
     background-image: url('/icons/whatsapp2.png');
     width: 30px;
   }
-  
+
   .telegram {
     background-image: url('/icons/telegram2.png');
     width: 30px;
   }
-  
+
   .phone {
     background-image: url('/icons/phone2.png');
     width: 30px;
   }
-  
+
   .linkedin {
     background-image: url('/icons/linkedn2.png');
     width: 30px;
   }
+
   #footer-div {
     position: fixed;
     width: 100%;
@@ -72,7 +79,7 @@
 @media screen and (max-width:768px) and (orientation: landscape) {
   body {
     position: relative;
-    flex-direction: row;
+    flex-direction: column;
     height: 500px;
   }
 
@@ -84,21 +91,23 @@
   #page-title {
     width: 90vw;
   }
-  .moon{
+
+  .moon {
     top: 3%;
     left: 80%;
   }
-  #paragraph-div {
-    width: 70vw;
-    height: 70vh;
-    margin-left: 10vw;
-    margin-top: 6vw;
-    font-size: 15px;
-  }
-  
-  .card {
-    width: 60vw;
 
+  #div-cv {
+    position: absolute;
+    top: 14%;
+    height: 50px;
+  }
+
+  .paragraph-cv {
+    height: 150px;
+    width: 80vw;
+    margin-top: 4%;
+    font-size: 12px;
   }
 
   .btn-group {
@@ -109,7 +118,7 @@
 
   }
 
-  .btn-secondary {
+  .button-cv {
     margin-top: 6%;
     width: 100px;
     height: 30px;
