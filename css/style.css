@@ -16,9 +16,8 @@ body {
 #head-div {
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
-
+    align-items: baseline;
+    height: 20vh;
 }
 
 .moon {
@@ -30,16 +29,11 @@ body {
 }
 
 #page-title {
-    max-width: 100%;
     width: 50vw;
 }
 
-
 /*curriculum elements start*/
-.btn-secondary {
-    --bs-btn-hover-color: rgb(0, 168, 243);
-    --bs-btn-hover-bg: rgb(42, 37, 37);
-    --bs-btn-hover-border-color: rgb(255, 127, 39);
+.button-cv {
     width: 100px;
     height: 40px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -49,7 +43,7 @@ body {
     margin-bottom: 5%;
 }
 
-.btn-secondary:hover {
+.button-cv:hover {
     box-shadow: 0px 0px 20px white;
 }
 
@@ -59,6 +53,19 @@ body {
     left: 1%;
     display: flex;
     flex-direction: column;
+}
+#div-cv{
+    margin-top: 170px;
+    margin-left: 5%;
+    position: relative;
+    
+}
+.paragraph-cv{
+    margin-left: 5%;
+    width: 30vw;
+    color: white;
+    overflow: auto;
+    height: 300px;
 }
 
 #div-social-icons {
@@ -95,11 +102,6 @@ body {
     text-align: center;
 }
 
-.card {
-    position: absolute;
-    left: 30%;
-}
-
 li {
     color: white;
 }
@@ -118,49 +120,6 @@ a {
 a:hover {
     color: rgb(255, 127, 39);
 
-}
-
-#paragraph-div {
-    position: absolute;
-    left: 7%;
-    width: 20%;
-    height: 50%;
-    top: 41%;
-    overflow: auto;
-}
-
-.card {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    max-width: 70vw;
-    word-wrap: break-word;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 0.25rem;
-    color: white;
-}
-
-.card-body {
-    flex: content;
-    padding: 1.25rem;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-.collapse {
-    display: block;
-    visibility: visible;
-}
-
-.p-collapse {
-    max-width: 100%;
-    word-wrap: break-word;
-    background-color: transparent;
-    color: white;
 }
 
 /*curriculum elements end*/
