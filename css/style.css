@@ -33,6 +33,10 @@ body {
 }
 
 /*curriculum elements start*/
+#profile, #experience, #education, #skills, #hobbies, #about-me {
+    display: none;
+}
+
 .button-cv {
     width: 100px;
     height: 40px;
