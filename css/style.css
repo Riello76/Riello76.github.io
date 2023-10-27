@@ -23,6 +23,8 @@ body {
 .moon {
     position: absolute;
     width: 20vw;
+      left: 50%;
+    top: 30%;
     opacity: 50%;
 }
 
