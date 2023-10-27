@@ -3,6 +3,7 @@
   body {
     position: relative;
     flex-direction: column;
+
   }
 
   #head-div {
@@ -14,38 +15,59 @@
     width: 95vw;
     height: 20vh;
   }
-
   .moon {
+    width: 50vw;
     top: 15%;
     left: 30%;
   }
+  /*-------------------------*/
+  .btn-group {
+    top: 95vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 30px;
+  }
 
+  .button-cv {
+    width: 16vw;
+    height: 30px;
+    font-size: 0.5em;
+    border-radius: 0;
+  }
+  /*-------------------------*/
   #div-cv {
-    bottom: 20%;
-    margin-left: 35%;
+    width: 97vw;
+    bottom: 12%;
     position: relative;
-
+    height: 300px;
+    margin-left: 2%;
+    bottom: 6%;
   }
 
   .paragraph-cv {
-    margin-left: 5%;
-    width: 60vw;
+    width: 97vw;
     color: white;
     overflow: auto;
-    height: 300px;
+    height: 170px;
+    margin-top:5%;
+    font-size: 0.7em;
   }
 
-  .a-footer {
-    font-size: 60%;
+  .social-icons {
+    width: 20px;
+    height: 15px;
   }
-
+  #contact-icons a {
+    width: 20px;
+    height: 20px;
+}
   .homepages {
     background-image: url('/icons/homepage2.png');
     width: 30px;
   }
 
   .mailto {
-    background-image: url('/icons/mail.png');
+    background-image: url('/icons/mail2.png');
     width: 30px;
 
   }
@@ -69,19 +91,14 @@
     background-image: url('/icons/linkedn2.png');
     width: 30px;
   }
-
-  #footer-div {
-    position: fixed;
-    width: 100%;
-    justify-content: space-around;
-  }
 }
 
 @media screen and (max-width:768px) and (orientation: landscape) {
   body {
     position: relative;
     flex-direction: column;
-    height: 500px;
+    
+
   }
 
   #head-div {
@@ -90,31 +107,33 @@
   }
 
   #page-title {
-    width: 70vw;
+    margin-top: 10vh;
+    width: 80vw;
   }
 
   .moon {
     width: 30vw;
-    top: 3%;
+    margin-top: 4%;
     left: 70%;
   }
-
+  /*-------------------------*/
   #div-cv {
     position: absolute;
     top: 14%;
-    height: 50px;
+    height: 150px;
+    width: 80vw;
   }
 
   .paragraph-cv {
     height: 150px;
     width: 80vw;
-    margin-top: 4%;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .btn-group {
+    height: 50px;
     width: 98%;
-    top: 25vw;
+    top: 77vh;
     flex-direction: row;
     justify-content: space-between;
 
@@ -125,10 +144,12 @@
     width: 100px;
     height: 30px;
     border-radius: 0;
-
+    font-size: 1em;
   }
 
-  #footer-div {
-    position: fixed;
+  .social-icons {
+    width: 30px;
+    height: 20px;
   }
+
 }
