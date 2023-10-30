@@ -33,7 +33,7 @@ a:hover {
 
 }
 
-@media screen and (max-width: 768px) and (orientation: portrait) {
+@media screen and (max-width: 846px) and (orientation: portrait) {
     #btn-nav-div {
         width: 100vw;
         font-size: 0.8em;
@@ -47,7 +47,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width:768px) and (orientation: landscape) {
+@media screen and (max-width:846px) and (orientation: landscape) {
     #btn-nav-div {
         width: 100vw;
         top: 94vh;
@@ -57,6 +57,6 @@ a:hover {
     .btns-nav {
         width: 80px;
         height: 15px;
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
 }
