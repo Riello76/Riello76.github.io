@@ -1,5 +1,5 @@
 /* Media query to adapt the layout for smartphones */
-@media screen and (max-width: 768px) and (orientation: portrait) {
+@media screen and (max-width: 846px) and (orientation: portrait) {
   body {
     position: relative;
     flex-direction: column;
@@ -94,7 +94,7 @@
   }
 }
 
-@media screen and (max-width:768px) and (orientation: landscape) {
+@media screen and (max-width:846px) and (orientation: landscape) {
   body {
     position: relative;
     flex-direction: column;
@@ -118,11 +118,11 @@
   /*-------------------------*/
   #div-cv, .paragraph-cv {
     position: absolute;
-    bottom: 7%;
+    bottom: 15%;
     left: 2%;
     width: 77vw;
     height: 220px;
-    font-size: 13px;
+    font-size: 11px;
   }
   .btn-group {
     top: 25%;
@@ -133,7 +133,7 @@
   }
 
   .button-cv {
-    width: 90px;
+    width: 100px;
     height: 30px;
     border-radius: 0;
     font-size: 0.8em;
