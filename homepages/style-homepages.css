@@ -42,7 +42,10 @@ a:hover {
     }
 
     .btns-nav {
-        background-size: cover;
+        background-image: url(/img/bg-btn-nav-small.jpeg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
         width: 80px;
         height: 23px;
         font-size: 0.7em;
