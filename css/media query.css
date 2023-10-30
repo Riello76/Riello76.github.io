@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) and (orientation: portrait) {
+@media screen and (max-width: 846px) and (orientation: portrait) {
     body {
         background-image: url(/img/background1-small.jpeg);
         background-size: cover;
@@ -9,7 +9,7 @@
     
   
 }
-@media screen and (max-width:768px) and (orientation: landscape) {
+@media screen and (max-width:846px) and (orientation: landscape) {
     #btn-nav-div{
         display: flex;
         justify-content: space-around;
