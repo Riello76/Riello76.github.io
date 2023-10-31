@@ -17,7 +17,7 @@ body {
     justify-content: center;
     width: 280px;
     height: 52px;
-    background-image: url(/img/bg-btn-nav.jpeg);
+    background-image: url(/img/bg-btn-nav.jpeg.svg);
     background-size: cover;
     color: rgba(255, 255, 255, 0.7);
     text-shadow: -1px -1px 1px;
@@ -61,6 +61,10 @@ a:hover {
     }
 
     .btns-nav {
+        background-image: url(/img/bg-btn-nav-small.jpeg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
         width: 100px;
         height: 20px;
         font-size: 0.7em;
