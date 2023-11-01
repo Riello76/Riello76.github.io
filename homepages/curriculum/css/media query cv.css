@@ -1,4 +1,4 @@
-/* Media query to adapt the layout for smartphones */
+
 @media screen and (max-width: 846px) and (orientation: portrait) {
   body {
     position: relative;
@@ -23,7 +23,7 @@
   }
   /*-------------------------*/
   .btn-group {
-    width: 98vw;
+    width: 96vw;
     flex-direction: row;
     justify-content: space-between;
     height: 20px;
@@ -110,14 +110,15 @@
   }
 
   #page-title {
-    margin-top: 10vh;
-    width: 80vw;
+    margin-left: 20%;
+    width: 470px;
+    height: 200px;
   }
 
   .moon {
     width: 30vw;
     margin-top: 4%;
-    left: 70%;
+    left: 50%;
   }
   /*-------------------------*/
   #div-cv, .paragraph-cv {
