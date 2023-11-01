@@ -1,0 +1,10 @@
+@media screen and (max-width: 846px) and (orientation: portrait) {
+    #logo {
+        width: 150px;
+        height: 105px;
+    }
+
+}
+
+
+@media screen and (max-width:846px) and (orientation: landscape) {}
