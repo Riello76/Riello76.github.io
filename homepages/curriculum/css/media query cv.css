@@ -1,0 +1,154 @@
+/* Media query to adapt the layout for smartphones */
+@media screen and (max-width: 846px) and (orientation: portrait) {
+  body {
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  #head-div {
+    height: 20%;
+    justify-content: center;
+  }
+
+  #page-title {
+    width: 95vw;
+    height: 20vh;
+  }
+  .moon {
+    width: 50vw;
+    top: 15%;
+    left: 30%;
+  }
+  /*-------------------------*/
+  .btn-group {
+    width: 98vw;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20px;
+    z-index: 1;
+  }
+
+  .button-cv {
+    width: 16vw;
+    height: 20px;
+    font-size: 0.5em;
+    border-radius: 0;
+  }
+  /*-------------------------*/
+  #div-cv {
+    display: flex;
+    width: 96vw;
+    height: 40vh;
+    bottom: 15%;
+    margin-left: 2%;
+    align-items: end;
+  }
+
+  .paragraph-cv {
+    width: 96vw;
+    height: 40vh;
+    color: white;
+    overflow: auto;
+    height: 340px;
+    margin-top:3%;
+    font-size: 1em;
+   word-break: break-all;
+   
+  }
+
+  .social-icons {
+    width: 20px;
+    height: 15px;
+  }
+  #contact-icons a {
+    width: 20px;
+    height: 20px;
+}
+  .homepages {
+    background-image: url('/homepages/curriculum/icons/homepage2.png');
+    width: 30px;
+  }
+
+  .mailto {
+    background-image: url('/homepages/curriculum/icons/mail2.png');
+    width: 30px;
+
+  }
+
+  .whatsapp {
+    background-image: url('/homepages/curriculum/icons/whatsapp2.png');
+    width: 30px;
+  }
+
+  .telegram {
+    background-image: url('/homepages/curriculum/icons/telegram2.png');
+    width: 30px;
+  }
+
+  .phone {
+    background-image: url('/homepages/curriculum/icons/phone2.png');
+    width: 30px;
+  }
+
+  .linkedin {
+    background-image: url('/homepages/curriculum/icons/linkedn2.png');
+    width: 30px;
+  }
+}
+
+@media screen and (max-width:846px) and (orientation: landscape) {
+  body {
+    position: relative;
+    flex-direction: column;
+  }
+
+  #head-div {
+    width: 80vw;
+    height: 90vh;
+  }
+
+  #page-title {
+    margin-top: 10vh;
+    width: 80vw;
+  }
+
+  .moon {
+    width: 30vw;
+    margin-top: 4%;
+    left: 70%;
+  }
+  /*-------------------------*/
+  #div-cv, .paragraph-cv {
+    position: absolute;
+    bottom: 15%;
+    left: 2%;
+    width: 77vw;
+    height: 220px;
+    font-size: 1em;
+  }
+  .btn-group {
+    top: 25%;
+    height: 50px;
+    width: 20%;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  .button-cv {
+    width: 100px;
+    height: 30px;
+    border-radius: 0;
+    font-size: 0.8em;
+  }
+
+  .social-icons {
+    width: 20px;
+    height: 17px;
+  }
+  #contact-icons a {
+    width: 20px;
+    height: 20px;
+}
+}
