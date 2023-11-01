@@ -24,10 +24,6 @@ body {
     background-position: center;
     background-size: 83.5px;
 }
-.btns-nav:hover{
-   box-shadow: 0px 0px 20px white;
-   transform: scale(1.1);
-}
 #home-btn{
     background-image: url(/icons/btn-home-icon.png);
 }
