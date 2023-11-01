@@ -43,7 +43,6 @@
     height: 40vh;
     bottom: 15%;
     margin-left: 2%;
-    align-items: end;
   }
 
   .paragraph-cv {
@@ -53,9 +52,9 @@
     overflow: auto;
     height: 340px;
     margin-top:3%;
-    font-size: 1em;
-   word-break: break-all;
-   
+    font-size: 0.9em;
+    word-spacing: 1px;
+    text-align: left;
   }
 
   .social-icons {
