@@ -69,23 +69,17 @@ body {
     position: absolute;
     margin-top: 40vh;
     margin-left: 15%;
-    height: 500px;
-    width: 30vw;
-
+    height: 40vh;
+    width: 60vw;
 }
 
 .paragraph-cv {
-    width: 30vw;
+    width: 45vw;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     overflow: auto;
-    height: 500px;
-    font-size: 25px;
-    text-align: center;
-}
-
-.paragraph-cv ul {
-    text-align: left;
+    height: 35vh;
+    font-size: 20px;
 }
 
 #div-social-icons {
@@ -98,7 +92,7 @@ body {
 
 .social-icons {
     width: 45px;
-    height: 40px;
+    height: 35px;
 }
 #contact-icons {
     display: flex;
