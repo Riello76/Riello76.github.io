@@ -8,7 +8,7 @@ body {
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    top: 86vh;
+    bottom: 100px;
 }
 
 
@@ -47,7 +47,7 @@ a:hover {
     #btn-nav-div {
         width: 100vw;
         height: 23px;
-        top: 92vh;
+        top: 90vh;
     }
 
     .btns-nav {
@@ -63,7 +63,7 @@ a:hover {
     #btn-nav-div {
         width: 99.8vw;
         height: 26px;
-        top: 84vh;
+        top: 80vh;
     }
 
     .btns-nav {
