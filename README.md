@@ -10,3 +10,4 @@ This is my very big work, I want improve this portfolio overtime :)
 19/10/2023 After GIMP I started with Blender, now the homepage have 3D images and animations.
 22/10/2023 Homepage new style, new buttons position and added footer and new trasparent icons.
 23/10/2023 Fixed the media query, now is for portrait and landscape orientations.
+01/11/2023 Added new style to the homepage anche a new tree of connections.
