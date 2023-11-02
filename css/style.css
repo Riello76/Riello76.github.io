@@ -29,7 +29,7 @@ body{
     height:80px;
     cursor: pointer;
     background-repeat: no-repeat;
-    border-radius: 50%;
+    border:none;
     background-position: center;
     background-size: 83.5px;
 }
@@ -71,6 +71,7 @@ a:hover {
         background-repeat: no-repeat;
         width: 55px;
         height: 55px;
+     
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
