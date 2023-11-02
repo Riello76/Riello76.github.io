@@ -29,7 +29,7 @@ body{
     height:80px;
     cursor: pointer;
     background-repeat: no-repeat;
-    border:none;
+    border-radius:50%;
     background-position: center;
     background-size: 83.5px;
 }
