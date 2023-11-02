@@ -36,6 +36,7 @@ body{
 .btns-nav:hover{
    box-shadow: 0px 0px 20px white;
    transform: scale(1.1);
+    outline: none;
 }
 #home-btn{
     background-image: url(/icons/btn-home-icon.webp);
