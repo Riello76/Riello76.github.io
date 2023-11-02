@@ -16,7 +16,7 @@ body {
     justify-content: center;
     width: 310px;
     height: 300px;
-    margin-right: 3px;
+    font-size: 1.1em;
 }
 
 .img-prj {
@@ -81,6 +81,13 @@ a:hover {
 }
 
 @media screen and (max-width: 846px) and (orientation: portrait) {
+    #projects-div {
+        justify-content: center;
+        
+    }
+    #project1,#project2{
+        margin-bottom: 5%;
+    }
     #btn-nav-div {
         width: 100vw;
         height: 23px;
@@ -96,6 +103,9 @@ a:hover {
     }
 }
 @media screen and (max-width:846px) and (orientation: landscape) {
+    #projects-div {
+       justify-content: space-around;
+    }
     #btn-nav-div {
         width: 99.8vw;
         height: 26px;
