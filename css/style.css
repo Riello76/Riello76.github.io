@@ -52,7 +52,7 @@ a:hover {
 
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 767px) and (orientation: portrait) {
     body {
         background-image: url(/img/background1-small.webp);
         height: 100vh;
@@ -73,7 +73,7 @@ a:hover {
         height: 55px;
     }
 }
-@media screen and (min-width: 501px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     
 }
 body {
