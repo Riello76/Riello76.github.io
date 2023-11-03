@@ -80,7 +80,7 @@ a:hover {
 
 }
 
-@media screen and (max-width: 846px) and (orientation: portrait) {
+@media screen and (max-width: 767px) and (orientation: portrait) {
     #projects-div {
         justify-content: center;
         
