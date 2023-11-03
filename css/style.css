@@ -1,5 +1,6 @@
 body{
-    background-color: black;
+    background-color: black;
+
     height: 100%;
     width: 100%;
     color: gold;
@@ -52,8 +53,7 @@ a:hover {
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
     body {
-        background-image: url(/img/background1-small.webp);
-        background-position: center;
+        background-color: black;
         height: 100vh;
         width: 100%;
     }
@@ -98,9 +98,7 @@ a:hover {
 @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     
 body {
-        background-image: url(/img/background1-medium.webp);
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-color: black;
         height: 100vh;
         width: 100%;
     }
