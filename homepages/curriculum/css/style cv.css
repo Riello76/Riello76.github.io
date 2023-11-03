@@ -241,7 +241,7 @@ a:hover {
 
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 767px) and (orientation: portrait) {
   body {
     position: relative;
     flex-direction: column;
@@ -267,9 +267,9 @@ a:hover {
 
   /*-------------------------*/
   .btn-group {
+    top: 25%;
     width: 96vw;
     flex-direction: row;
-    justify-content: space-between;
     height: 20px;
     z-index: 1;
   }
@@ -286,7 +286,7 @@ a:hover {
     display: flex;
     width: 96vw;
     height: 40vh;
-    bottom: 15%;
+    bottom: 30%;
     margin-left: 2%;
   }
 
@@ -346,7 +346,7 @@ a:hover {
   #btn-nav-div {
     width: 100vw;
     height: 23px;
-    top: 80vh;
+    top: 90vh;
   }
 
   .btns-nav {
@@ -358,56 +358,7 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 501px) and (max-width: 1023px) {
-  .btn-group {
-    width: 100px;
-    flex-direction: column;
-    z-index: 1;
-  }
-
-  .button-cv {
-    width: 130px;
-    height: 50px;
-    font-size: 1em;
-
-  }
-
-  #div-cv {
-    position: absolute;
-    margin-top: 40vh;
-    margin-left: 30%;
-    height: 40vh;
-    width: 60vw;
-  }
-
-  .paragraph-cv {
-    width: 45vw;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    overflow: auto;
-    height: 35vh;
-    font-size: 15px;
-  }
-
-  .social-icons {
-    width: 35px;
-    height: 25px;
-  }
-
-  #contact-icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-
-  #contact-icons a {
-    width: 30px;
-    height: 60px;
-  }
-}
-
-@media screen and (max-width:868px) and (orientation: landscape) {
+@media screen and (max-width:846px) and (orientation: landscape) {
   body {
     position: relative;
     flex-direction: column;
@@ -445,13 +396,13 @@ a:hover {
     position: absolute;
     top: 0;
     height: 50px;
-    width: 97%;
+    width: 96%;
     flex-direction: row;
   }
 
   .button-cv {
     width: 90%;
-    height: 30px;
+    height: 20px;
     border-radius: 0;
     font-size: 0.8em;
   }
