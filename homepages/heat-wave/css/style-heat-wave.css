@@ -278,20 +278,20 @@ p {
    transform: scale(1.1);
 }
 #home-btn{
-    background-image: url(/icons/btn-home-icon.webp);
+    background-image: url(/icons/btn-home-icon-trasparent.webp);
 }
 #curriculum-btn{
-    background-image: url(/icons/btn-cv-icon.webp);
+    background-image: url(/icons/btn-cv-icon-trasparent.webp);
 }
 #projects-btn{
-    background-image: url(/icons/btn-projects-icon.webp);
+    background-image: url(/icons/btn-projects-icon-trasparent.webp);
 }
 
 a:hover {
     color: rgb(255, 127, 39);
 
 }
-@media screen and (max-width: 767px) and (orientation: portrait) {
+@media screen and (max-width: 846px) and (orientation: portrait) {
     #header-div {
         justify-content: center;
         text-align: center;
@@ -371,7 +371,7 @@ a:hover {
     #btn-nav-div {
         width: 100vw;
         height: 23px;
-        top: 80vh;
+        top: 90vh;
     }
 
     .btns-nav {
