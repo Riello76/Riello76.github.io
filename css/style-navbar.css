@@ -1,0 +1,118 @@
+#btn-nav-div {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 100px;
+}
+.hidden {
+    display: none;
+}
+
+
+.btns-nav {
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height:80px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    background-size: 83.5px;
+}
+.btns-nav:hover{
+   box-shadow: 0px 0px 20px white;
+   transform: scale(1.1);
+}
+#home-btn{
+    background-image: url(/icons/btn-menu-icon.webp);
+    z-index: 2;
+}
+#home-btn-back{
+    background-image: url(/icons/btn-home-icon-trasparent.webp);
+    position: absolute;
+    top: -140px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1; 
+}
+#curriculum-btn {
+    background-image: url(/icons/btn-cv-icon-trasparent.webp);
+    position: absolute;
+    top: -70px; 
+    left: 46%; 
+    transform: translateX(-50%); 
+    z-index: 1; 
+}
+
+#projects-btn {
+    background-image: url(/icons/btn-projects-icon-trasparent.webp);
+    position: absolute;
+    top: -70px; 
+    left: 54%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    #btn-nav-div {
+        width: 100vw;
+        height: 23px;
+        top: 80vh;
+    }
+
+    .btns-nav {
+        background-size: 55px;
+        background-position-x: 0;
+        background-repeat: no-repeat;
+        width: 55px;
+        height: 55px;
+    }
+    #home-btn{
+        margin-left: 50%;
+    }
+    #home-btn-back{
+        margin-left: 40%;
+        top: 2%;
+    }
+    #curriculum-btn{
+        margin-left: 119px;
+       top: -60px;
+    }
+    #projects-btn{
+        margin-left: 25px;
+        top: 2%;
+    }
+
+}
+@media screen and (max-width:846px) and (orientation: landscape){
+    #btn-nav-div {
+        width: 100vw;
+        height: 23px;
+        top: 80vh;
+    }
+
+    .btns-nav {
+        background-size: 55px;
+        background-position-x: 0;
+        background-repeat: no-repeat;
+        width: 55px;
+        height: 55px;
+    }
+    #home-btn{
+        margin-left: 50%;
+    }
+    #home-btn-back{
+        margin-left: 32%;
+        top: 2%;
+    }
+    #curriculum-btn{
+        margin-left: 247px;
+       top: -60px;
+    }
+    #projects-btn{
+        margin-left: 115px;
+        top: 2%;
+    }
+}
