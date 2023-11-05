@@ -70,18 +70,17 @@
         height: 55px;
     }
     #home-btn{
-        margin-left: 50%;
+        margin-left: 44%;
     }
     #home-btn-back{
         margin-left: 40%;
         top: 2%;
     }
     #curriculum-btn{
-        margin-left: 119px;
-       top: -60px;
+        margin-left: 84px;
+       top: -58px;
     }
     #projects-btn{
-        margin-left: 25px;
         top: 2%;
     }
 
@@ -101,18 +100,18 @@
         height: 55px;
     }
     #home-btn{
-        margin-left: 50%;
+        margin-left: 65%;
     }
     #home-btn-back{
-        margin-left: 32%;
+        margin-left: 42%;
         top: 2%;
     }
     #curriculum-btn{
-        margin-left: 247px;
+        margin-left: 235px;
        top: -60px;
     }
     #projects-btn{
-        margin-left: 115px;
+        margin-left: 120px;
         top: 2%;
     }
 }
