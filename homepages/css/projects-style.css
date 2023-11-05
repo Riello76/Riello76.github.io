@@ -8,12 +8,14 @@ body {
     margin: 0;
     padding: 0;
 }
-#title{
+
+#title {
     position: relative;
     margin-top: 2%;
     width: 50%;
     left: 30%;
 }
+
 #projects-div {
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +26,7 @@ body {
     top: 20%;
 }
 
-#project1{
+#project1 {
     background-image: url(/homepages/img/bg-ntc-board1.webp);
     background-size: 100% 100%;
     display: flex;
@@ -36,7 +38,8 @@ body {
     right: 20%;
     border-bottom-left-radius: 30%;
 }
-#project1 p{
+
+#project1 p {
     position: relative;
     display: flex;
     top: 50px;
@@ -44,23 +47,26 @@ body {
     height: 100px;
     word-wrap: break-word;
 }
+
 #project1 a {
     position: relative;
     top: 140px;
     left: 160px;
 }
-#project2{
-background-image: url(/homepages/img/bg-ntc-board2.webp);
-background-size: 100% 100%;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-width: 460px;
-height: 400px;
-font-size: 1em;
-margin-right: 20%;
+
+#project2 {
+    background-image: url(/homepages/img/bg-ntc-board2.webp);
+    background-size: 100% 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 460px;
+    height: 400px;
+    font-size: 1em;
+    margin-right: 20%;
 }
-#project2 p{
+
+#project2 p {
     position: relative;
     display: flex;
     top: 60px;
@@ -69,12 +75,14 @@ margin-right: 20%;
     transform: rotate(-10deg);
     word-wrap: break-word;
 }
+
 #project2 a {
     position: relative;
     top: 160px;
     left: 160px;
     transform: rotate(-10deg);
 }
+
 .img-prj {
     position: absolute;
     margin-top: 30%;
@@ -83,9 +91,11 @@ margin-right: 20%;
     border-radius: 50%;
     animation: HWlogo 3s infinite;
 }
-.img-prj:hover{
+
+.img-prj:hover {
     transform: scale(1.1);
 }
+
 @keyframes HWlogo {
     0% {
         box-shadow: 0px 0px 15px red;
@@ -94,10 +104,12 @@ margin-right: 20%;
     50% {
         box-shadow: 0px 0px 20px rgb(51, 0, 255);
     }
+
     100% {
         box-shadow: 0px 0px 15px red;
     }
 }
+
 #btn-nav-div {
     position: fixed;
     width: 100vw;
@@ -112,24 +124,28 @@ margin-right: 20%;
     align-items: center;
     justify-content: center;
     width: 80px;
-    height:80px;
+    height: 80px;
     cursor: pointer;
     background-repeat: no-repeat;
     border-radius: 50%;
     background-position: center;
     background-size: 83.5px;
 }
-.btns-nav:hover{
-   box-shadow: 0px 0px 20px white;
-   transform: scale(1.1);
+
+.btns-nav:hover {
+    box-shadow: 0px 0px 20px white;
+    transform: scale(1.1);
 }
-#home-btn{
+
+#home-btn {
     background-image: url(/icons/btn-home-icon-trasparent.webp);
 }
-#curriculum-btn{
+
+#curriculum-btn {
     background-image: url(/icons/btn-cv-icon-trasparent.webp);
 }
-#projects-btn{
+
+#projects-btn {
     background-image: url(/icons/btn-projects-icon-trasparent.webp);
 }
 
@@ -139,43 +155,53 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
-    #title{
-       top: 50px;
-       width: 250px;
+    #title {
+        top: 200px;
+        width: 220px;
     }
+
     #projects-div {
-        top: 130px;
+        top: 40px;
+        height: 400px;
     }
-    #project1,#project2{
+
+    #project1,
+    #project2 {
         margin-bottom: 5%;
         width: 200px;
         height: 200px;
     }
-    #project1 p{
+
+    #project1 p {
         font-size: 0.5em;
         width: 130px;
         right: 20px;
         top: 20px;
     }
-    #project2 p{
+
+    #project2 p {
         font-size: 0.5em;
         top: 30px;
         width: 100px;
     }
-    #project1{
+
+    #project1 {
         background-size: 150px;
         background-repeat: no-repeat;
     }
-    #project1 img{
+
+    #project1 img {
         width: 40px;
         right: 60px;
         top: -40px;
     }
-    #project2 img{
+
+    #project2 img {
         width: 40px;
         right: 50px;
         top: -50px;
     }
+
     #btn-nav-div {
         width: 100vw;
         height: 23px;
@@ -190,43 +216,53 @@ a:hover {
         height: 55px;
     }
 }
+
 @media screen and (max-width:846px) and (orientation: landscape) {
-   #projects-div {
+    #projects-div {
+        display:flex ;
+        flex-direction: column;
         top: 60px;
         height: 190px;
-        border: 1px solid red;
+        width: 400px;
     }
-    #project1,#project2{
-        margin-bottom: 5%;
-        width: 200px;
-        height: 200px;
+
+    #project1,
+    #project2 {
+        width: 180px;
+        height: 180px;
     }
-    #project1 p{
+
+    #project1 p {
         font-size: 0.5em;
         width: 130px;
         right: 20px;
         top: 20px;
     }
-    #project2 p{
+
+    #project2 p {
         font-size: 0.5em;
         top: 30px;
         width: 100px;
     }
-    #project1{
+
+    #project1 {
         background-size: 150px;
         background-repeat: no-repeat;
     }
-    #project1 img{
+
+    #project1 img {
         width: 40px;
         right: 60px;
         top: -40px;
         z-index: 1;
     }
-    #project2 img{
+
+    #project2 img {
         width: 40px;
         right: 50px;
         top: -50px;
     }
+
     #btn-nav-div {
         width: 100vw;
         height: 23px;
@@ -240,5 +276,5 @@ a:hover {
         width: 55px;
         height: 55px;
     }
-    
+
 }
