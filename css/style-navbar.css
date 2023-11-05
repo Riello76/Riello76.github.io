@@ -69,6 +69,12 @@
         width: 55px;
         height: 55px;
     }
+    #home-btn,#home-btn-back,#curriculum-btn,#projects-btn{
+        width:40px;
+        height:40px;
+        background-size: contain;
+        background-position: center;
+    }
     #home-btn{
         margin-left: 44%;
     }
@@ -98,6 +104,12 @@
         background-repeat: no-repeat;
         width: 55px;
         height: 55px;
+    }
+    #home-btn,#home-btn-back,#curriculum-btn,#projects-btn{
+        width:40px;
+        height:40px;
+        background-size: contain;
+        background-position: center;
     }
     #home-btn{
         margin-left: 65%;
