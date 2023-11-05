@@ -1,44 +1,13 @@
-body {
+body{
+    display: flex;
+    flex-wrap: wrap;
     background-color: black;
-    color: chartreuse;
+    color: white;
     margin: 0;
-    padding: 0;
 }
-
-#projects-div {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#project1,#project2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 310px;
-    height: 300px;
-    font-size: 1.1em;
-}
-
-.img-prj {
-    margin-top: 10px;
-    width: 100px;
-    border-radius: 50%;
-    animation: HWlogo 3s infinite;
-}
-.img-prj:hover{
-    transform: scale(1.1);
-}
-@keyframes HWlogo {
-    0% {
-        box-shadow: 0px 0px 15px red;
-    }
-
-    50% {
-        box-shadow: 0px 0px 20px gold;
-    }
-    100% {
-        box-shadow: 0px 0px 15px red;
-    }
+#logo{
+    width: 300px;
+    height: 210px;
 }
 #btn-nav-div {
     position: fixed;
@@ -66,13 +35,13 @@ body {
    transform: scale(1.1);
 }
 #home-btn{
-    background-image: url(/icons/btn-home-icon.webp);
+    background-image: url(/icons/btn-home-icon-trasparent.webp);
 }
 #curriculum-btn{
-    background-image: url(/icons/btn-cv-icon.webp);
+    background-image: url(/icons/btn-cv-icon-trasparent.webp);
 }
 #projects-btn{
-    background-image: url(/icons/btn-projects-icon.webp);
+    background-image: url(/icons/btn-projects-icon-trasparent.webp);
 }
 
 a:hover {
@@ -81,17 +50,14 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
-    #projects-div {
-        justify-content: center;
-        
-    }
-    #project1,#project2{
-        margin-bottom: 5%;
+    #logo {
+        width: 150px;
+        height: 105px;
     }
     #btn-nav-div {
         width: 100vw;
         height: 23px;
-        top: 80vh;
+        top: 90vh;
     }
 
     .btns-nav {
@@ -101,11 +67,11 @@ a:hover {
         width: 55px;
         height: 55px;
     }
+
 }
+
+
 @media screen and (max-width:846px) and (orientation: landscape) {
-    #projects-div {
-       justify-content: space-around;
-    }
     #btn-nav-div {
         width: 99.8vw;
         height: 26px;
