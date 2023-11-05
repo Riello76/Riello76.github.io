@@ -32,7 +32,7 @@
 #home-btn-back{
     background-image: url(/icons/btn-home-icon-trasparent.webp);
     position: absolute;
-    top: -140px; 
+    top: -100px; 
     left: 50%; 
     transform: translateX(-50%); 
     z-index: 1; 
@@ -40,7 +40,7 @@
 #curriculum-btn {
     background-image: url(/icons/btn-cv-icon-trasparent.webp);
     position: absolute;
-    top: -70px; 
+    top: -50px; 
     left: 46%; 
     transform: translateX(-50%); 
     z-index: 1; 
@@ -49,7 +49,7 @@
 #projects-btn {
     background-image: url(/icons/btn-projects-icon-trasparent.webp);
     position: absolute;
-    top: -70px; 
+    top: -50px; 
     left: 54%;
     transform: translateX(-50%);
     z-index: 1;
