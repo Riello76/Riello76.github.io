@@ -256,7 +256,7 @@ p {
     position: fixed;
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+   justify-content: space-evenly;
     bottom: 100px;
 }
 
