@@ -225,15 +225,15 @@ a:hover {
 }
 
 #home-btn {
-  background-image: url(/icons/btn-home-icon.webp);
+  background-image: url(/icons/btn-home-icon-trasparent.webp);
 }
 
 #curriculum-btn {
-  background-image: url(/icons/btn-cv-icon.webp);
+  background-image: url(/icons/btn-cv-icon-trasparent.webp);
 }
 
 #projects-btn {
-  background-image: url(/icons/btn-projects-icon.webp);
+  background-image: url(/icons/btn-projects-icon-trasparent.webp);
 }
 
 a:hover {
