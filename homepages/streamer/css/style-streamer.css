@@ -23,7 +23,6 @@ header img {
     right: 20vw;
     flex-direction: column;
     font-size: 0.9vw;
-    border: 1px solid red;
 }
 #login-div h2{
     text-align: center;
