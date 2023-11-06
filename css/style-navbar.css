@@ -83,8 +83,7 @@
         top: 2%;
     }
     #curriculum-btn{
-        margin-left: 84px;
-       top: -58px;
+        margin-left:26%;
     }
     #projects-btn{
         top: 2%;
@@ -115,15 +114,14 @@
         margin-left: 65%;
     }
     #home-btn-back{
-        margin-left: 42%;
+        margin-left: 41%;
         top: 2%;
     }
     #curriculum-btn{
-        margin-left: 235px;
-       top: -60px;
+        margin-left: 36.3%;
     }
     #projects-btn{
-        margin-left: 120px;
+        margin-left: 20%;
         top: 2%;
     }
 }
