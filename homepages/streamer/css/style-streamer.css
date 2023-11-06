@@ -1,89 +1,81 @@
-body{
+body {
     display: flex;
     flex-wrap: wrap;
     background-color: black;
     color: white;
     margin: 0;
 }
-#logo{
-    width: 300px;
-    height: 210px;
+
+header {
+    display: flex;
 }
-#btn-nav-div {
-    position: fixed;
+
+header img {
+    width: 100vw;
+}
+
+#login-div {
+    position: relative;
     width: 100vw;
     display: flex;
-    justify-content: space-evenly;
-    bottom: 100px;
+    right: 20vw;
+    flex-direction: column;
+    font-size: 0.9vw;
 }
-
-
-.btns-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height:80px;
-    cursor: pointer;
+.btns-login{
+    background-image: url(/homepages/streamer/img/bg-btn.webp);
+    background-size: 140px 80px;
     background-repeat: no-repeat;
-    border-radius: 50%;
-    background-position: center;
-    background-size: 83.5px;
+    color: white;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    font-size: 0.8vw;
+    cursor: pointer;
+    animation: btn-streamer 3s infinite;
 }
-.btns-nav:hover{
-   box-shadow: 0px 0px 20px white;
-   transform: scale(1.1);
-}
-#home-btn{
-    background-image: url(/icons/btn-home-icon-trasparent.webp);
-}
-#curriculum-btn{
-    background-image: url(/icons/btn-cv-icon-trasparent.webp);
-}
-#projects-btn{
-    background-image: url(/icons/btn-projects-icon-trasparent.webp);
+input {
+    background-color: transparent;
+    color: white;
 }
 
-a:hover {
-    color: rgb(255, 127, 39);
+#btn-streamer-div {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
 
 }
 
-@media screen and (max-width: 767px) and (orientation: portrait) {
-    #logo {
-        width: 150px;
-        height: 105px;
-    }
-    #btn-nav-div {
-        width: 100vw;
-        height: 23px;
-        top: 90vh;
-    }
-
-    .btns-nav {
-        background-size: 55px;
-        background-position-x: 0;
-        background-repeat: no-repeat;
-        width: 55px;
-        height: 55px;
+.btn-streamer {
+    width: 6vw;
+    color: white;
+    display: inline-block;
+    font-size: 0.9vw;
+    text-decoration: none;
+    text-align: center;
+    background-image: url(/homepages/streamer/img/bg-btn.webp);
+    background-size: 100%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    animation: btn-streamer 3s infinite;
+}
+.btn-streamer:hover,.btns-login:hover{
+    transform: scale(1.1);
+}
+@keyframes btn-streamer {
+    0% {
+        box-shadow: 0px 0px 1px white
     }
 
-}
-
-
-@media screen and (max-width:846px) and (orientation: landscape) {
-    #btn-nav-div {
-        width: 99.8vw;
-        height: 26px;
-        top: 80vh;
+    50% {
+        box-shadow: 0px 0px 5px white
     }
 
-    .btns-nav {
-        background-size: 55px;
-        background-position-x: 0;
-        background-repeat: no-repeat;
-        width: 55px;
-        height: 55px;
+    100% {
+        box-shadow: 0px 0px 1px white
     }
-    
 }
+
+@media screen and (max-width: 767px) and (orientation: portrait) {}
+
+
+@media screen and (max-width:846px) and (orientation: landscape) {}
