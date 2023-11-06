@@ -8,7 +8,7 @@ body {
 
 header {
     display: flex;
-    margin-bottom: 1vh;
+    margin-bottom: 3vh;
 }
 
 header img {
@@ -85,7 +85,16 @@ input:hover{
 }
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
-  
+    #login-div {
+        width: 20vw;
+    }
+    .btns-login-group{
+        display: flex;
+        flex-direction: row;
+    }
+    .btns-login{
+        width: 10vw;
+    }
     input {
         width: 20vw;
         max-height: 0.5vh;
@@ -98,6 +107,8 @@ input:hover{
 }
 
 
-@media screen and (max-width:846px) and (orientation: landscape) {
-
+@media screen and (max-width:767px) and (orientation: landscape) {
+    input{
+        width: 18vw;
+    }
 }
