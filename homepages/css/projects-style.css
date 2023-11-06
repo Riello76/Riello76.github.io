@@ -175,6 +175,7 @@ a:hover {
     #project1 p {
         font-size: 0.5em;
         width: 130px;
+        height: 70px;
         right: 20px;
         top: 20px;
     }
