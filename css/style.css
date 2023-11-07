@@ -16,7 +16,7 @@ body{
 
 a:hover {
     color: rgb(255, 127, 39);
-
+    
 }
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
