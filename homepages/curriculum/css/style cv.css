@@ -301,19 +301,7 @@ a:hover {
     width: 30px;
   }
 
-  #btn-nav-div {
-    width: 100vw;
-    height: 23px;
-    top: 80vh;
-  }
 
-  .btns-nav {
-    background-size: 55px;
-    background-position-x: 0;
-    background-repeat: no-repeat;
-    width: 55px;
-    height: 55px;
-  }
 }
 
 @media screen and (max-width:846px) and (orientation: landscape) {
@@ -375,17 +363,4 @@ a:hover {
     height: 20px;
   }
 
-  #btn-nav-div {
-    width: 99.8vw;
-    height: 26px;
-    top: 80vh;
-  }
-
-  .btns-nav {
-    background-size: 55px;
-    background-position-x: 0;
-    background-repeat: no-repeat;
-    width: 55px;
-    height: 55px;
-  }
 }
