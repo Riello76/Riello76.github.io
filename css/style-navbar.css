@@ -1,0 +1,111 @@
+#btn-nav-div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    align-items: end;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 29vw;
+    height:39vh;
+    gap: 1rem;
+    
+}
+#home-btn,
+#home-btn-back,
+#curriculum-btn,
+#projects-btn {
+    width: 8vw;
+    height: 7vh;
+}
+.hidden {
+    display: none;
+}
+.btns-nav {
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    margin-right: 15vw;
+    margin-bottom: 10vh;
+}
+
+#home-btn {
+    background-image: url(/icons/btn-menu-icon.webp);
+   
+}
+
+#home-btn-back {
+    background-image: url(/icons/btn-home-icon-trasparent.webp);
+    position: absolute;
+    margin-right: 10vw;
+}
+
+#curriculum-btn {
+    background-image: url(/icons/btn-cv-icon-trasparent.webp);
+    bottom: 5vw;
+    position: absolute;
+}
+
+#projects-btn {
+    background-image: url(/icons/btn-projects-icon-trasparent.webp);
+    position: absolute;
+    right: 6vw;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    #home-btn {
+        background-image: url(/icons/btn-menu-icon.webp);
+       
+    }
+    
+    #home-btn-back {
+        background-image: url(/icons/btn-home-icon-trasparent.webp);
+        position: absolute;
+        margin-right: 5vw;
+    }
+    
+    #curriculum-btn {
+        background-image: url(/icons/btn-cv-icon-trasparent.webp);
+        bottom: 11vw;
+        position: absolute;
+    }
+    
+    #projects-btn {
+        background-image: url(/icons/btn-projects-icon-trasparent.webp);
+        position: absolute;
+        right: 11vw;
+    }
+    
+
+  
+}
+
+@media screen and (min-width:768px) {
+    #home-btn {
+        background-image: url(/icons/btn-menu-icon.webp);
+       
+    }
+    
+    #home-btn-back {
+        background-image: url(/icons/btn-home-icon-trasparent.webp);
+        position: absolute;
+        margin-right: 9vw;
+    }
+    
+    #curriculum-btn {
+        background-image: url(/icons/btn-cv-icon-trasparent.webp);
+        bottom: 6vw;
+        position: absolute;
+    }
+    
+    #projects-btn {
+        background-image: url(/icons/btn-projects-icon-trasparent.webp);
+        position: absolute;
+        right: 7vw;
+    }
+    
+
+}
