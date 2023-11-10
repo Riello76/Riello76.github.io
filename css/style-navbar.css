@@ -38,7 +38,7 @@
 
 #home-btn {
     background-image: url(/icons/btn-menu-icon.webp);
-    position: absolute;
+    position: fixed;
 }
 
 #home-btn-back {
