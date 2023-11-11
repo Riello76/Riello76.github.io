@@ -59,7 +59,7 @@
     right: 6vw;
 }
 
-@media screen and (max-width: 320px) and (orientation:portrait) {
+@media screen and (max-width: 360px) and (orientation:portrait) {
     #menu-btn,
     #home-btn-back,
     #curriculum-btn,
