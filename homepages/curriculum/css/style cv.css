@@ -207,7 +207,7 @@ a:hover {
 /*curriculum elements end*/
 
 
-@media screen and (max-width: 320px) and (orientation: portrait) {
+@media screen and (max-width: 360px) and (orientation: portrait) {
   #page-title{
     width: 90vw;
     left: 5vw;
@@ -566,7 +566,7 @@ a:hover {
     .paragraph-cv {
       width: 50vw;
       overflow: auto;
-      height: 35vh;
+      height: 43vh;
       font-size: 1.5em;
     }
    
