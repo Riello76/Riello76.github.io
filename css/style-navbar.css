@@ -33,8 +33,11 @@
     margin-right: 15vw;
     margin-bottom: 10vh;
     background-size: 9vw 16vh;
+    transition: transform 0.3s ease-in-out;
 }
-
+.btns-nav:hover{
+    transform: scale(1.2);
+}
 
 #menu-btn {
     background-image: url(/icons/btn-menu-icon.webp);
