@@ -52,7 +52,7 @@ body {
 }
 @media screen and (min-width: 1025px) {
     body {
-        background-size: 100vw;
+        background-size: 90vw;
         background-position-y: -11vh;
         background-position-x: -10vw;
     }
