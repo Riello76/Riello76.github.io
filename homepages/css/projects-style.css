@@ -52,7 +52,7 @@ body {
 p {
     width: 93vw;
     height: 15vh;
-    font-size: 0.9em;
+    font-size: 0.6em;
 }
 
 @media screen and (min-width: 361px) and (max-width:425px) and (orientation:portrait){
@@ -61,7 +61,7 @@ p {
     }
     
     p {
-       font-size: 0.9em;
+       font-size: 0.6em;
     }
 }
 @media screen and (min-width: 426px) and (max-width:768px) and (orientation:portrait) {
@@ -74,7 +74,7 @@ p {
     }
     
     p {
-       font-size: 0.9em;
+       font-size: 0.6em;
     }
 
 
@@ -89,7 +89,7 @@ p {
     }
     
     p {
-       font-size: 0.9em;
+       font-size: 0.6em;
     }
 
 }
@@ -113,7 +113,7 @@ p {
     }
     
     p {
-       font-size: 0.9em;
+       font-size: 0.6em;
        width: 45vw;
     }
 }
@@ -136,7 +136,7 @@ p {
     }
     
     p {
-       font-size: 0.9em;
+       font-size: 0.6em;
        width: 45vw;
     }
 }
@@ -160,7 +160,7 @@ p {
     }
     
     p {
-       font-size: 0.9em;
+       font-size: 0.6em;
        width: 45vw;
     }
 
@@ -187,7 +187,7 @@ p {
     }
     
     p {
-       font-size: 0.9em;
+       font-size: 0.6em;
        width: 30vw;
     }
 
@@ -213,7 +213,7 @@ p {
     }
     
     p {
-       font-size: 0.9em;
+       font-size: 0.6em;
        width: 30vw;
     }
 
