@@ -65,7 +65,7 @@ body {
 #div-cv {
   position: absolute;
   text-align: center;
-  top: 34vh;
+  top: 38vh;
   left: 10vw;
   height: 40vh;
   width: 60vw;
@@ -235,7 +235,7 @@ a:hover {
   }
   #div-cv{
     width: 99vw;
-    bottom: 30vh;
+    bottom: 36vh;
     left: 0;
   }
   #div-cv p{
