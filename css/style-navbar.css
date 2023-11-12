@@ -1,13 +1,14 @@
 #btn-nav-div {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     align-items: end;
     display: flex;
     flex-direction: row-reverse;
-    width: 30vw;
-    height: 39vh;
+    width: 45vw;
+    height: 20vh;
     gap: 1rem;
+    z-index: 10;
 }
 
 #menu-btn,
@@ -34,14 +35,14 @@
     margin-bottom: 10vh;
     background-size: 9vw 16vh;
     transition: transform 0.3s ease-in-out;
+
 }
 .btns-nav:hover{
-    transform: scale(1.2);
+    transform: scale(1.2);                                               
 }
 
 #menu-btn {
     background-image: url(/icons/btn-menu-icon.webp);
-    position: fixed;
 }
 
 #home-btn-back {
@@ -52,7 +53,7 @@
 
 #curriculum-btn {
     background-image: url(/icons/btn-cv-icon-trasparent.webp);
-    bottom: 5vw;
+    bottom: 6vw;
     position: absolute;
 }
 
@@ -68,13 +69,12 @@
     #curriculum-btn,
     #projects-btn {
         width: 14vw;
-        height: 11vh;
+        height: 9vh;
         background-size: cover;
-
     }
 
-    #home-btn-back {
-        margin-right: 1vw;
+    #home-btn-back{
+        right: -8vw;
     }
 
     #curriculum-btn {
@@ -92,20 +92,20 @@
     #curriculum-btn,
     #projects-btn {
         width: 15vw;
-        height: 12vh;
+        height: 11vh;
         background-size: cover;
 
     }
-    #home-btn-back {
-        left: 15vw;
+    #home-btn-back{
+        right: -9vw;
     }
 
     #curriculum-btn {
-        bottom: 15vw;
+        bottom: 16vw;
     }
 
     #projects-btn {
-        right: 14vw;
+        right: 15vw;
     }
 
 }
@@ -122,7 +122,7 @@
     }
 
     #home-btn-back {
-        margin-right: 4vw;
+       right: -4vw;
     }
 
     #curriculum-btn {
@@ -145,8 +145,53 @@
         background-size: cover;
 
     }
+    #home-btn-back{
+        right: -1vw;
+    }
+    #curriculum-btn {
+        bottom: 7vw;
+    }
+
+    #projects-btn {
+        right: 7vw;
+    }
+
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation:portrait){
+    #menu-btn,
+    #home-btn-back,
+    #curriculum-btn,
+    #projects-btn {
+        width: 8vw;
+        height: 12vh;
+        background-size: cover;
+
+    }
     #home-btn-back {
-        left: 12vw;
+       right: -2vw;
+    }
+
+    #curriculum-btn {
+        bottom: 8vw;
+    }
+
+    #projects-btn {
+        right: 8vw;
+    }
+
+}
+@media screen and (min-width: 770px) and (max-width: 1024px) and (orientation:landscape){
+    #menu-btn,
+    #home-btn-back,
+    #curriculum-btn,
+    #projects-btn {
+        width: 8vw;
+        height: 12vh;
+        background-size: cover;
+
+    }
+    #home-btn-back {
+        right: -1vw;
     }
 
     #curriculum-btn {
@@ -158,49 +203,43 @@
     }
 
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation:landscape){
-    #menu-btn,
-    #home-btn-back,
-    #curriculum-btn,
-    #projects-btn {
-        width: 8vw;
-        height: 15vh;
-        background-size: cover;
-
-    }
-    #home-btn-back {
-        left: 15vw;
-    }
-
-    #curriculum-btn {
-        bottom: 8vw;
-    }
-
-    #projects-btn {
-        right: 8vw;
-    }
-
-}
 @media screen and (min-width: 1025px){
     #menu-btn,
     #home-btn-back,
     #curriculum-btn,
     #projects-btn {
         width: 8vw;
-        height: 15vh;
+        height: 10vh;
         background-size: cover;
 
     }
-    #home-btn-back {
-        left: 15vw;
-    }
 
     #curriculum-btn {
-        bottom: 8vw;
+        bottom: 6vw;
     }
 
     #projects-btn {
-        right: 8vw;
+        right: 6vw;
+    }
+
+}
+@media screen and (min-width: 1440px){
+    #menu-btn,
+    #home-btn-back,
+    #curriculum-btn,
+    #projects-btn {
+        width: 7vw;
+        height: 10vh;
+        background-size: cover;
+
+    }
+
+    #curriculum-btn {
+        bottom: 6vw;
+    }
+
+    #projects-btn {
+        right: 6vw;
     }
 
 }
