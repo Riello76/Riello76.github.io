@@ -54,7 +54,7 @@ p {
     height: 15vh;
 }
 
-@media screen and (min-width: 361px) and (max-width:425px) and (orientation:portrait){
+@media screen and (min-width: 320px) and (max-width:425px) and (orientation:portrait){
     .img-prj {
         width: 10vw;
     }
