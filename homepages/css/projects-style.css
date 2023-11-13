@@ -52,7 +52,6 @@ body {
 p {
     width: 93vw;
     height: 15vh;
-    font-size: 0.6em;
 }
 
 @media screen and (min-width: 361px) and (max-width:425px) and (orientation:portrait){
@@ -61,7 +60,7 @@ p {
     }
     
     p {
-       font-size: 0.6em;
+       font-size: 1.1em;
     }
 }
 @media screen and (min-width: 426px) and (max-width:768px) and (orientation:portrait) {
@@ -69,12 +68,12 @@ p {
         font-size: 2em;
     }
     .img-prj {
-        width: 10vw;
+        width: 7vw;
         height: 6vh;
     }
     
     p {
-       font-size: 0.6em;
+       font-size: 1.3em;
     }
 
 
@@ -89,7 +88,7 @@ p {
     }
     
     p {
-       font-size: 0.6em;
+       font-size: 1.3em;
     }
 
 }
@@ -113,7 +112,7 @@ p {
     }
     
     p {
-       font-size: 0.6em;
+       font-size: 1em;
        width: 45vw;
     }
 }
@@ -130,13 +129,13 @@ p {
        width: 46vw;
     }
     .img-prj {
-        top: 2vh;
-        width: 6vw;
-        height: 7vh;
+        top: 3vh;
+        width: 7vw;
+        height: 9vh;
     }
     
     p {
-       font-size: 0.6em;
+       font-size: 1.3em;
        width: 45vw;
     }
 }
@@ -160,7 +159,7 @@ p {
     }
     
     p {
-       font-size: 0.6em;
+       font-size: 1.5em;
        width: 45vw;
     }
 
@@ -187,7 +186,7 @@ p {
     }
     
     p {
-       font-size: 0.6em;
+       font-size: 1.6em;
        width: 30vw;
     }
 
@@ -196,7 +195,7 @@ p {
 @media screen and (min-width: 2560px)  {
 
     #title{
-        font-size: 3em;
+        font-size: 5em;
     }
     #projects-div{
         display: flex;
@@ -218,4 +217,5 @@ p {
     }
 
 
+}
 }
