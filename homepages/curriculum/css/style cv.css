@@ -11,9 +11,11 @@ body {
   width: 100vw;
   box-sizing: border-box;
 }
+
 * {
   box-sizing: border-box;
 }
+
 /*Header elements start*/
 .moon {
   position: absolute;
@@ -26,7 +28,7 @@ body {
 #page-title {
   position: absolute;
   top: 10vh;
-  width: 40vw;
+  width: 50vw;
   left: 20vw;
 }
 
@@ -51,11 +53,10 @@ body {
 
 .button-cv {
   width: 7vw;
-  height: 5vh;
+  height: 4vh;
   background-color: rgba(0, 0, 0, 0.5);
   color: chartreuse;
-  text-shadow: -1px -1px 1px;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .button-cv:hover {
@@ -70,25 +71,29 @@ body {
   height: 40vh;
   width: 60vw;
 }
+
 #div-cv ul li {
   text-align: left;
   color: aqua;
 }
-#div-cv p{
+
+#div-cv p {
   text-align: left;
   margin-left: 1vw;
 }
-span{
+
+span {
   color: yellow;
-  
+
 }
+
 .paragraph-cv {
   width: 45vw;
   color: aqua;
   background-color: rgba(0, 0, 0, 0.5);
   overflow: auto;
   height: 37vh;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 #div-social-icons {
@@ -208,40 +213,44 @@ a:hover {
 
 
 @media screen and (max-width: 360px) and (orientation: portrait) {
-  #page-title{
+  #page-title {
     width: 90vw;
     left: 5vw;
   }
-  .moon{
+
+  .moon {
     width: 25vw;
     top: 2vh;
     left: 20vw;
   }
+
   .btn-group {
-    position: fixed;
+    position: sticky;
     width: 100vw;
     top: 25vh;
-    left: 2vw;
     flex-direction: row;
     gap: 0rem;
   }
-  
+
   .button-cv {
-   width: 16.2vw;
-   height: 3vh;
-   border-radius: 0;
-   font-size: 0.5em;
+    width: 16.2vw;
+    height: 3vh;
+    border-radius: 0;
+    font-size: 0.5em;
 
   }
-  #div-cv{
+
+  #div-cv {
     width: 99vw;
-    bottom: 36vh;
+    top: 30vh;
     left: 0;
   }
-  #div-cv p{
+
+  #div-cv p {
     margin-left: 3vw;
     margin-right: 3vw;
   }
+
   .paragraph-cv {
     width: 99vw;
     background-color: rgba(0, 0, 0, 0.5);
@@ -249,19 +258,19 @@ a:hover {
     height: 40vh;
     font-size: 0.8em;
   }
- 
+
   .social-icons {
     width: 6vw;
     height: 2vh;
   }
-  
+
   #contact-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
   }
-  
+
   #contact-icons a {
     width: 6vw;
     height: 4vh;
@@ -269,10 +278,11 @@ a:hover {
 }
 
 @media screen and (max-width:640px) and (orientation: landscape) {
-#page-title{
-  width: 50vw;
-  top: 0;
-}
+  #page-title {
+    width: 50vw;
+    top: 0;
+  }
+
   .moon {
     width: 30vw;
     left: 70vw;
@@ -314,16 +324,19 @@ a:hover {
   }
 
 }
+
 @media screen and (min-width: 361px) and (max-width:425px) and (orientation:portrait) {
-  #page-title{
+  #page-title {
     width: 90vw;
     left: 5vw;
   }
-  .moon{
+
+  .moon {
     width: 25vw;
     top: 2vh;
     left: 20vw;
   }
+
   .btn-group {
     position: absolute;
     width: 98vw;
@@ -332,323 +345,347 @@ a:hover {
     flex-direction: row;
     gap: 0rem;
   }
-  
+
   .button-cv {
-   width: 16.2vw;
-   height: 3vh;
-   border-radius: 0;
-   font-size: 0.6em;
+    width: 16.2vw;
+    height: 3vh;
+    border-radius: 0;
+    font-size: 0.6em;
 
   }
-  #div-cv{
+
+  #div-cv {
     width: 99vw;
-    bottom: 30vh;
+    top: 30vh;
     left: 0;
   }
+
   .paragraph-cv {
     width: 99vw;
     overflow: auto;
     height: 40vh;
     font-size: 0.8em;
   }
- 
+
   .social-icons {
     width: 5vw;
     height: 2vh;
   }
-  
+
   #contact-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
   }
-  
+
   #contact-icons a {
     width: 6vw;
     height: 4vh;
   }
 }
+
 @media screen and (max-width:768px) and (orientation: landscape) {
-  #page-title{
+  #page-title {
     width: 50vw;
     top: 0;
   }
-    .moon {
-      width: 30vw;
-      left: 70vw;
-    }
-  
-    #div-cv{
-      bottom: 40vh;
-      left:17vw
-    }
-    .paragraph-cv {
-      margin: 0;
-      top: 17vh;
-      left: 17vw;
-      width: 50vw;
-      height: 62vh;
-      font-size: 0.9em;
-    }
-  
-    .btn-group {
-      top: 20vh;
-      height: 5vh;
-      width: 15vw;
-      flex-direction: column;
-    }
-  
-    .button-cv {
-      width: 90%;
-      height: 20px;
-      border-radius: 0;
-      font-size: 0.7em;
-    }
-  
-    .social-icons {
-      width: 20px;
-      height: 17px;
-    }
-  
-    #contact-icons a {
-      width: 20px;
-      height: 20px;
-    }
-  
+
+  .moon {
+    width: 30vw;
+    left: 70vw;
   }
-  @media screen and (min-width: 426px) and (max-width:768px) and (orientation:portrait) {
-    #page-title{
-      top: 2vh;
-      width: 70vw;
-      left: 5vw;
-    }
-    .moon{
-      width: 25vw;
-      top: 60vh;
-      left: 20vw;
-    }
-    .btn-group {
-      position: absolute;
-      width: 100vw;
-      top: 25vh;
-      left: 0;
-      flex-direction: row;
-      font-size: 1.5em;
-      z-index: 1;
-    }
-    
-    .button-cv {
-     width: 16.2vw;
-     height: 3vh;
-     border-radius: 0;
-     font-size: 0.5em;
-  
-    }
-    #div-cv{
-      width: 99vw;
-      bottom: 30vh;
-      left: 0;
-    }
-    .paragraph-cv {
-      width: 99vw;
-      overflow: auto;
-      height: 40vh;
-      font-size: 1em;
-    }
-   
-    .social-icons {
-      width: 4vw;
-      height: 3vh;
-    }
-    
-    #contact-icons {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-    }
-    
-    #contact-icons a {
-      width: 4vw;
-      height: 4vh;
-    }
+
+  #div-cv {
+    top: 20vh;
+    left: 19vw
   }
-  @media screen and (min-width: 769px) and (max-width:1024px) and (orientation:portrait) {
-    #page-title{
-      top: 4vh;
-      width: 80vw;
-      left: 6vw;
-    }
-    .moon{
-      width: 25vw;
-      top: 20vh;
-      left: 70vw;
-    }
-    .btn-group {
-      position: absolute;
-      width: 17vw;
-      top: 30vh;
-      left: 2vw;
-      flex-direction: column;
-      font-size: 1.5em;
-      z-index: 1;
-    }
-    
-    .button-cv {
-     width: 19vw;
-     height: 4vh;
-     border-radius: 0;
-     font-size: 0.7em;
-  
-    }
-    #div-cv{
-      width: 50vw;
-      left: 23vh;
-      bottom: 10vh;
-      height:60vh;
-    }
-    .paragraph-cv {
-      width: 70vw;
-      overflow: auto;
-      height: 32vh;
-      font-size: 1.2em;
-    }
-   
-    .social-icons {
-      width:3vw;
-      height:2vh;
-    }
-    
-    #contact-icons {
-      position: relative;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-    }
-    
-    #contact-icons a {
-      width:3vw;
-      height:3vh;
-    }
+
+  .paragraph-cv {
+    margin: 0;
+    top: 17vh;
+    left: 17vw;
+    width: 50vw;
+    height: 62vh;
+    font-size: 0.9em;
   }
-  @media screen and (min-width: 768px) and (max-width:1024px) and (orientation:landscape) {
-    #page-title{
-      top: 4vh;
-      width: 50vw;
-      left: 20vw;
-    }
-    .moon{
-      width: 25vw;
-      top: 30vh;
-      left: 70vw;
-    }
-    .btn-group {
-      position: absolute;
-      width: 17vw;
-      top: 30vh;
-      left: 2vw;
-      flex-direction: column;
-      font-size: 1.5em;
-      z-index: 1;
-    }
-    
-    .button-cv {
-     width: 16.2vw;
-     height: 5vh;
-     border-radius: 0;
-     font-size: 0.6em;
-  
-    }
-    #div-cv{
-      width: 50vw;
-      left: 25vh;
-      bottom: 10vh;
-      height:60vh;
-    }
-    .paragraph-cv {
-      width: 50vw;
-      overflow: auto;
-      height: 40vh;
-      font-size: 1em;
-    }
-   
-    .social-icons {
-      width:3vw;
-      height:3vh;
-    }
-    
-    #contact-icons {
-      position: relative;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-    }
-    
-    #contact-icons a {
-      width:3vw;
-      height:3vh;
-    }
+
+  .btn-group {
+    top: 20vh;
+    height: 60vh;
+    width: 16vw;
+    flex-direction: column;
   }
-  @media screen and (min-width: 1025px) and (max-width:1440) and (orientation:portrait) {
-    #page-title{
-      top: 0;
-      width: 60vw;
-      left: 5vw;
-    }
-    .moon{
-      width: 25vw;
-      top: 10vh;
-      left: 70vw;
-    }
-    .btn-group {
-      position: absolute;
-      width: 100vw;
-      top: 35vh;
-      left: 2vw;
-      flex-direction: column;
-      font-size: 1.5em;
-      z-index: 1;
-      gap: 2rem;
-    }
-    
-    .button-cv {
-     width: 10vw;
-     height: 4vh;
-     border-radius: 50vw;
-     font-size: 1em;
-  
-    }
-    #div-cv{
-      width: 50vw;
-      bottom: 30vh;
-      left: 30vh;
-      bottom: 30vh ;
-      height: 35vh;
-    }
-    .paragraph-cv {
-      width: 50vw;
-      overflow: auto;
-      height: 43vh;
-      font-size: 1.5em;
-    }
-   
-    .social-icons {
-      width: 2vw;
-      height: 3vh;
-    }
-    
-    #contact-icons {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-    }
-    
-    #contact-icons a {
-      width: 3vw;
-      height: 3vh;
-    }
+
+  .button-cv {
+    width: 15vw;
+    height: 15vh;
+    border-radius: 0;
+    font-size: 0.7em;
   }
+
+  .social-icons {
+    width: 20px;
+    height: 17px;
+  }
+
+  #contact-icons a {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+@media screen and (min-width: 426px) and (max-width:768px) and (orientation:portrait) {
+  #page-title {
+    top: 2vh;
+    width: 70vw;
+    left: 5vw;
+  }
+
+  .moon {
+    width: 25vw;
+    top: 60vh;
+    left: 20vw;
+  }
+
+  .btn-group {
+    position: absolute;
+    width: 100vw;
+    top: 25vh;
+    left: 0;
+    flex-direction: row;
+    font-size: 1.5em;
+    z-index: 1;
+  }
+
+  .button-cv {
+    width: 16.2vw;
+    height: 3vh;
+    border-radius: 0;
+    font-size: 0.5em;
+
+  }
+
+  #div-cv {
+    width: 99vw;
+    bottom: 30vh;
+    left: 0;
+  }
+
+  .paragraph-cv {
+    width: 99vw;
+    overflow: auto;
+    height: 40vh;
+    font-size: 1em;
+  }
+
+  .social-icons {
+    width: 4vw;
+    height: 3vh;
+  }
+
+  #contact-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  #contact-icons a {
+    width: 4vw;
+    height: 4vh;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) and (orientation:portrait) {
+  #page-title {
+    top: 4vh;
+    width: 80vw;
+    left: 6vw;
+  }
+
+  .moon {
+    width: 25vw;
+    top: 20vh;
+    left: 70vw;
+  }
+
+  .btn-group {
+    position: absolute;
+    width: 17vw;
+    top: 30vh;
+    left: 2vw;
+    flex-direction: column;
+    font-size: 1.5em;
+    z-index: 1;
+  }
+
+  .button-cv {
+    width: 19vw;
+    height: 4vh;
+    border-radius: 0;
+    font-size: 0.7em;
+
+  }
+
+  #div-cv {
+    width: 50vw;
+    left: 23vh;
+    bottom: 10vh;
+    height: 60vh;
+  }
+
+  .paragraph-cv {
+    width: 70vw;
+    overflow: auto;
+    height: 32vh;
+    font-size: 1.2em;
+  }
+
+  .social-icons {
+    width: 3vw;
+    height: 2vh;
+  }
+
+  #contact-icons {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  #contact-icons a {
+    width: 3vw;
+    height: 3vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) and (orientation:landscape) {
+  #page-title {
+    top: 4vh;
+    width: 50vw;
+    left: 20vw;
+  }
+
+  .moon {
+    width: 25vw;
+    top: 30vh;
+    left: 70vw;
+  }
+
+  .btn-group {
+    position: absolute;
+    width: 17vw;
+    top: 30vh;
+    left: 2vw;
+    flex-direction: column;
+    font-size: 1.5em;
+    z-index: 1;
+  }
+
+  .button-cv {
+    width: 16.2vw;
+    height: 6vh;
+    border-radius: 0;
+    font-size: 0.6em;
+
+  }
+
+  #div-cv {
+    width: 50vw;
+    left: 45vh;
+    top: 30vh;
+    height: 60vh;
+  }
+
+  .paragraph-cv {
+    width: 50vw;
+    overflow: auto;
+    height: 60vh;
+    font-size: 1em;
+  }
+
+  .social-icons {
+    width: 3vw;
+    height: 4vh;
+  }
+
+  #contact-icons {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  #contact-icons a {
+    width: 5vw;
+    height: 5vh;
+  }
+}
+
+@media screen and (min-width:2560px) {
+  #page-title {
+    top: 4vh;
+    width: 50vw;
+    left: 20vw;
+  }
+
+  .moon {
+    width: 25vw;
+    top: 30vh;
+    left: 70vw;
+  }
+
+  .btn-group {
+    position: absolute;
+    width: 17vw;
+    top: 27vh;
+    left: 2vw;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  .button-cv {
+    width: 16.2vw;
+    height: 9vh;
+    border-radius: 0;
+    font-size: 3em;
+    border-radius: 50vw;
+    box-shadow: -10px 5px 2px chartreuse;
+  }
+
+  #div-cv {
+    width: 50vw;
+    left: 45vh;
+    top: 27vh;
+    height: 60vh;
+  }
+
+  .paragraph-cv {
+    width: 50vw;
+    overflow: auto;
+    height: 65vh;
+    font-size: 2.8em;
+  }
+
+  .social-icons {
+    width: 3vw;
+    height: 4vh;
+  }
+
+  #contact-icons {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  #contact-icons a {
+    width: 5vw;
+    height: 5vh;
+  }
+}
