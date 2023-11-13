@@ -52,7 +52,7 @@ body {
 p {
     width: 93vw;
     height: 15vh;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 @media screen and (min-width: 361px) and (max-width:425px) and (orientation:portrait){
@@ -113,7 +113,7 @@ p {
     }
     
     p {
-       font-size: 1em;
+       font-size: 0.8em;
        width: 45vw;
     }
 }
@@ -136,7 +136,7 @@ p {
     }
     
     p {
-       font-size: 1.3em;
+       font-size: 1em;
        width: 45vw;
     }
 }
