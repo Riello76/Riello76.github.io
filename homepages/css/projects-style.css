@@ -52,6 +52,7 @@ body {
 p {
     width: 93vw;
     height: 15vh;
+    font-size: 0.9em;
 }
 
 @media screen and (min-width: 361px) and (max-width:425px) and (orientation:portrait){
