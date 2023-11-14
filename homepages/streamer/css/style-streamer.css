@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+header {
+    display: flex;
+    margin-bottom: 3vh;
+}
+
+header img {
+    width: 100vw;
+}
+#logo-div{
+    position: absolute;
+    display: flex;
+}
+.logo{
+    position: absolute;
+    width: 10vw;
+    transform: rotate(15deg);
+}
+.logo2{
+    position: absolute;
+    width: 15vw;
+}
+#login-div {
+    position:absolute;
+    max-width: 90vw;
+    max-height: 25vh;
+    display: flex;
+    right: 5vw;
+    top: 10%;
+    flex-direction: column;
+    font-size: 0.9vw;
+}
+.btns-login{
+    background-image: url(/homepages/streamer/img/bg-btn.webp);
+    height: 2vh;
+    width: 4vw;
+    color: white;
+    border: none;
+    font-size: 0.7vw;
+    cursor: pointer;
+    border-radius: 50vw;
+}
+.btns-login-group{
+    display: flex;
+}
+input {
+    width: 12vw;
+    max-height: 2vh;
+    background-color: transparent;
+    color: white;
+}
+input:hover{
+    box-shadow: 0px 0px 10px white;
+}
+#btn-streamer-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100vw;
+    gap: 1rem;
+}
+
+.btn-streamer {
+    width: 5vw;
+    height: 10vh;
+    color: white;
+    display: inline-block;
+    border-radius: 50vw;
+}
+#btn-home{
+    background-image: url(/homepages/streamer/img/btn-round-home.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#btn-twitch{
+    background-image: url(/homepages/streamer/img/btn-round-twitch.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#btn-youtube{
+    background-image: url(/homepages/streamer/img/btn-round-youtube.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#btn-trovo{
+    background-image: url(/homepages/streamer/img/btn-round-trovo.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#btn-discord{
+    background-image: url(/homepages/streamer/img/btn-round-discord.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#btn-facebook{
+    background-image: url(/homepages/streamer/img/btn-round-facebook.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#btn-tiktok{
+    background-image: url(/homepages/streamer/img/btn-round-tiktok.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#btn-instagram{
+    background-image: url(/homepages/streamer/img/btn-round-instagram.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#btn-biography{
+    background-image: url(/homepages/streamer/img/btn-round-biography.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn-streamer:hover,.btns-login:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width: 360px) and (orientation: portrait) {
+
+
+}
+@media screen and (max-width:767px) and (orientation: landscape) {
+  
+}
