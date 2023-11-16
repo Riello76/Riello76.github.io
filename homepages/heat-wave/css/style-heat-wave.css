@@ -6,85 +6,63 @@ body {
     height: 100vh;
 }
 
-/*-------------------------------------------------------------------------------------------------------*/
-/*header content start*/
 #header-div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    font-size: 25px;
+    width: 100vw;
+    justify-content: space-evenly;
     color: #1c91c1;
     margin-bottom: 2%;
     margin-top: 2%;
 }
 
 h1 {
-    position: relative;
-    font-size: 60px;
-    -webkit-text-stroke: 1px #FFFFFF;
+    font-size: 6em;
 }
 
 #logo {
-    width: 160px;
-    height: 150px;
-    margin-left: 2%;
     border-radius: 50%;
 }
 
 
 #callUs {
     text-align: center;
-    width: 400px;
-    margin-right: 15px;
-    font-size: 20px;
+    font-size: 2em;
     color: white;
     box-shadow: 0px 0px 10px white;
     border-radius: 10%;
 }
 
-/*header content end*/
-/*-------------------------------------------------------------------------------------------------------*/
-/*navbar content start*/
 #nav-div {
     display: flex;
     flex-wrap: wrap;
-    width: 99%;
-    margin-left: 8px;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 2%;
 }
 
 .nav-btn {
-    flex: 1;
+    width: 15%;
     background-color: #01172c;
     color: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2%;
+    font-size: 2em;
     cursor: pointer;
     box-shadow: 0px 0px 5px white;
 }
 
 .nav-btn:hover {
-    background-color: #01172c;
+    transform: scale(1.1);
 }
-
-
-/*navbar content end*/
-/*-------------------------------------------------------------------------------------------------------*/
-/*headline content start*/
 #headline-div {
     position: relative;
-    display: flex;
-    flex-direction: column;
     background-color: #01172c;
     color: white;
-    word-wrap: break-word;
     text-align: center;
     width: 30%;
-    margin-bottom: 2%;
+    margin-top: 3%;
     margin-left: 6%;
-    font-size: 20px;
+    margin-bottom: 3%;
+    font-size: 1.8em;
     border-bottom-left-radius: 20%;
     border-top-right-radius: 20%;
     box-shadow: 0px 0px 20px white;
@@ -94,8 +72,8 @@ h1 {
 #hdln-btn {
     background-color: #01172c;
     color: #FFFFFF;
-    height: 30px;
     width: 60%;
+    font-size: 0.9em;
     border-bottom-left-radius: 50%;
     border-top-right-radius: 50%;
     cursor: pointer;
@@ -106,40 +84,30 @@ h1 {
 .nav-btn:hover {
     box-shadow: 0px 0px 20px white;
 }
-
-/*headline content end*/
-/*-------------------------------------------------------------------------------------------------------*/
-/*reviews content start*/
 .web-rated {
     width: 100%;
     color: #FFFFFF;
-    font-size: 22px;
     display: flex;
     justify-content: space-around;
     margin-bottom: 2%;
 }
 
 .web-content {
-    width: 240px;
+    width: 20%;
+    height: 10%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     border-radius: 30%;
     box-shadow: 0px 0px 10px;
-    
 }
 
 .img-webcont {
-    margin-left: 8%;
-    width: 90px;
-    height: 60px;
+  width: 30%;
 }
-
 .p-webcont {
-    font-size: 18px;
-    margin-left: 14%;
+    font-size: 3em;
 }
-
 #rvws-div {
     width: 99%;
     background-color: #01172c;
@@ -160,12 +128,10 @@ h1 {
 
 .rating {
     text-align: center;
-    font-size: 24px;
     margin-bottom: 10px;
     word-wrap: break-word;
 }
 
-/* Style the stars in the rating */
 .rating::before {
     content: '⭐';
     margin-right: 5px;
@@ -174,33 +140,29 @@ h1 {
 
 .review {
     flex: 1;
+    font-size: 2em;
     border: 1px solid #ccc;
     padding-bottom: 1%;
     text-align: center;
 }
-
-/*reviews content end*/
-/*-------------------------------------------------------------------------------------------------------*/
-/*sub-headline content start*/
 #subHeadline-div {
     color: #FFFFFF;
     margin-bottom: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
 }
-
 .services {
     background-color: #01172c;
-    max-width: 600px;
+    width: 30%;
     max-height: 585px;
     word-wrap: break-word;
-    font-size: 14px;
+    font-size: 2em;
     margin-left: 2%;
     border-radius: 10%;
     text-align: center;
     box-shadow: 0px 0px 10px white;
+    overflow: auto;
 }
 
 .services :not(p) {
@@ -209,27 +171,23 @@ h1 {
 .image {
     display: flex;
     flex-direction: column;
+
     align-items: center;
     border: 1px solid white;
     box-shadow: 0px 0px 10px white;
 }
 
 #caption {
-    width: 600px;
+    width: 800px;
+    font-size: 2em;
     word-wrap: break-word;
     text-align: center;
 }
 
-/*sub-headline content end*/
-/*-------------------------------------------------------------------------------------------------------*/
-/*footer content start*/
-/* Style for the footer */
-#footer-content{
-    background-color: #01172c;
+#footer-div{
     color: #FFFFFF;
     text-align: center;
-    margin-left: 8px;
-    width: 98vw;
+    width: 100vw;
     border: 1px solid #ccc;
     box-shadow: 0px 0px 20px white;
 }
@@ -237,6 +195,7 @@ h1 {
 #contact-info,
 p {
     margin: 0;
+    font-size: 1.8em;
 }
 
 #footer-links a {
@@ -248,259 +207,700 @@ p {
 #footer-links a:hover {
     text-decoration: underline;
 }
-
-
-/*footer content end*/
-/*-------------------------------------------------------------------------------------------------------*/
-#btn-nav-div {
-    position: fixed;
-    display: flex;
-    bottom: 9px;
-   
-}
-a:hover {
-    color: rgb(255, 127, 39);
-
-}
-@media screen and (max-width: 846px) and (orientation: portrait) {
-    #header-div {
-        justify-content: center;
-        text-align: center;
+@media screen and (max-width:320px){
+    #header-div{
+        flex-direction: column;
+        align-items: center;
     }
-
     h1 {
-        font-size: 30px;
+        font-size: 1.3em;
+        
     }
-    #callUs{
-        margin-left: 5%;
-        margin-bottom: 5%;
-    }
-   
-    #nav-div {
-        flex-direction: column;
-        width: 90vw;
-        margin-left: 5%;
-        margin-bottom: 5%;
-    }
-    .services {
-        max-width: 600px;
-        max-height: 690px;
-        margin-bottom: 3%;
-        margin-left: 0;
-    }
-
-    .btn-cp {
-        margin-top: 3%;
-    }
-
-    #headline-div {
-        width: 95%;
-        margin-left: 3%;
-        margin-bottom: 5%;
-
-    }
-    .web-content{
-        width: 30%;
-        flex-direction: column;
-        margin-bottom: 5%;
-    }
-    .img-webcont{
-        margin-right: 25px;
-    }
-    .web-content,.p-webcont{
-        height: 20%;
-        font-size: 0.8em;
-    }
-    #rvws-div{
-        width: 95%;
-        margin-left: 3%;
-        margin-bottom: 5%;
-    }
-    #subHeadline-div{
-        width: 95%;
-        margin-left: 3%;
-        margin-bottom: 5%;
-    }
-    .image,
-    #caption {
-        width: 95%;
-        margin-left: 2%;
-        margin-bottom: 5%;
-    }
-
-    #footer-links {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 14px;
-        margin-left: 4%;
-    }
-
-    #footer-links a {
-        margin-right: 0;
-        color: gold;
-    }
- 
-}
-
-@media screen and (max-width:846px) and (orientation: landscape) {
-    #header-div {
-        width: 100%;
-        font-size: 24px;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    h1{
-        font-size: 50px;
-    }
+    
     #logo {
-        width: 150px;
-        height: auto;
-        margin: 10px;
+        width: 20%;
+        height: 20%;
     }
-
     #callUs {
-        width: 50%;
-        height: 25%;
-        font-size: 16px;
-        margin-left: 2%;
-        font-size: 0.6em;
-        margin-bottom: 5%;
+       font-size: 1em;
     }
-
-    /*header content end*/
     #nav-div {
-        margin-right: 2%;
-        margin-bottom: 5%;
+       height: 14%;
+       width: 96vw;
+       font-size: 0.3em;
     }
-
+    
     .nav-btn {
-        width: 100%;
-        margin-bottom: 10px;
+       width: 100%;
+       height: 20%;
+    
     }
-    .rating {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
     #headline-div {
-        width: 50%;
-        margin-left: 25%;
+        width: 90vw;
+        top: 45px;
+        font-size: 1em;
     }
-
+    
     #hdln-btn {
-        margin-bottom: 5%;
+      
     }
-
-    h3,
-    h4 {
-        font-size: 13px;
+    
+    .web-rated {
+        position:relative ;
+        top: 50px;
+        width: 99vw;
+        height: 50px;
+        margin-bottom: 2%;
+        font-size: 0.2em;
+    }
+    
+    .web-content {
+       width: 40%;
+       height: 60%;
+    }
+    
+    .img-webcont {
+      width: 40%;
+      height: 100%;
+    }
+    #rvws-div {
+        position: relative;
+        top: 50px;
+        width: 94vw;
+        font-size: 0.3em;
     }
     #subHeadline-div {
-        width: 95%;
-        margin-left: 2%;
-    }
-
-    #subHeadline-div,
-    #second-subHead-div {
-        text-align: center;
-        font-size: 13px;
-    }
-
-    #rvws-div {
-        width: 100vw;
-        flex-direction: column;
-    }
-
-    .review {
-        width: 90%;
-        margin-bottom: 5px;
-        font-size: 13px;
-        margin-left: 5%;
-    }
-
-    .web-rated {
-        display: flex;
-        height: 60px;
-        max-width: 100vw;
-        flex-direction: row;
-    }
-
-    .web-content {
         position: relative;
-        height: 50px;
-        margin-top: 2%;
-        width: 150px;
-        justify-content: center;
-        flex-direction: column;
+        top: 50px;
+        width: 96vw;
     }
-
-    .img-webcont {
-        position: absolute;
-        bottom: 30%;
-        width: 100px;
-        height: 40px;
-        margin-right: 10%;
-    }
-
-    .p-webcont {
-        font-size: 13px;
-        margin-left: 5%;
-        position: absolute;
-        top: 60%;
-    }
-
-    .p-services {
-        width: 80%;
-        margin-left: 10%;
-    }
-
     .services {
         width: 100%;
-        max-width: none;
-        max-height: none;
-        margin-bottom: 5%;
-        margin-left: 0;
+        font-size: 0.6em;
     }
-
-    .btn-cp {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .image {
-        width: 90%;
-        margin-left: 5%;
-    }
-
-    #caption {
-        font-size: 12px;
-        text-align: center;
-    }
-
-    #footer-content{
-        height: 50px;
-        margin-bottom: 20px;
-    }
-    #footer-links {
-        font-size: 15px;
-        justify-content: space-between;
-
-    }
-
-    #footer-links a {
-        margin-right: 5%;
-        color: gold;
-    }
-
-    #contact-info {
-        font-size: 15px;
-    }
-
-    #copyright {
-        font-size: 15px;
-    }
- 
     
+    .image {
+        position: relative;
+        top: 50px;
+        height: 80%;
+        width: 100%;
+        left: 2%;
+    }
+    
+    #caption {
+        position: relative;
+        top: 50px;
+        width: 300px;
+        height: 130px;
+        font-size: 0.8em;
+        left: 2%;
+    }
+    
+    #footer-div{
+        position: relative;
+        top: 150px;
+        width: 100vw;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 20px white;
+    }
+    
+    #contact-info,
+    p {
+        font-size: 0.8em;
+    }
+}
+@media screen and (min-width:321px) and  (max-width:375px){
+    #header-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 1.3em;
+        
+    }
+    
+    #logo {
+        width: 20%;
+        height: 20%;
+    }
+    #callUs {
+       font-size: 1em;
+    }
+    #nav-div {
+       height: 14%;
+       width: 96vw;
+       font-size: 0.3em;
+    }
+    
+    .nav-btn {
+       width: 100%;
+       height: 20%;
+    
+    }
+    #headline-div {
+        width: 90vw;
+        top: 45px;
+        font-size: 1em;
+    }
+    
+    .web-rated {
+        position:relative ;
+        top: 50px;
+        width: 99vw;
+        height: 50px;
+        margin-bottom: 2%;
+        font-size: 0.2em;
+    }
+    
+    .web-content {
+       width: 40%;
+       height: 60%;
+    }
+    
+    .img-webcont {
+      width: 40%;
+      height: 100%;
+    }
+    #rvws-div {
+        position: relative;
+        top: 50px;
+        width: 94vw;
+        font-size: 0.3em;
+    }
+    #subHeadline-div {
+        position: relative;
+        top: 50px;
+        width: 96vw;
+    }
+    .services {
+        width: 100%;
+        font-size: 0.6em;
+    }
+    
+    .image {
+        position: relative;
+        top: 50px;
+        height: 80%;
+        width: 100%;
+        left: 2%;
+    }
+    
+    #caption {
+        position: relative;
+        top: 50px;
+        width: 300px;
+        height: 130px;
+        font-size: 0.8em;
+        left: 2%;
+    }
+    
+    #footer-div{
+        position: relative;
+        top: 150px;
+        width: 100vw;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 20px white;
+    }
+    
+    #contact-info,
+    p {
+        font-size: 0.8em;
+    }
+}
+@media screen and (min-width:376px) and  (max-width:425px){
+    #header-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 1.3em;
+        
+    }
+    
+    #logo {
+        width: 20%;
+        height: 20%;
+    }
+    #callUs {
+       font-size: 1em;
+    }
+    #nav-div {
+       height: 14%;
+       width: 96vw;
+       font-size: 0.3em;
+    }
+    
+    .nav-btn {
+       width: 100%;
+       height: 20%;
+    
+    }
+    #headline-div {
+        width: 90vw;
+        top: 45px;
+        font-size: 1em;
+    }
+    
+    .web-rated {
+        position:relative ;
+        top: 50px;
+        width: 99vw;
+        height: 50px;
+        margin-bottom: 2%;
+        font-size: 0.2em;
+    }
+    
+    .web-content {
+       width: 40%;
+       height: 60%;
+    }
+    
+    .img-webcont {
+      width: 40%;
+      height: 100%;
+    }
+    #rvws-div {
+        position: relative;
+        top: 50px;
+        width: 94vw;
+        font-size: 0.3em;
+    }
+    #subHeadline-div {
+        position: relative;
+        top: 50px;
+        width: 96vw;
+    }
+    .services {
+        width: 100%;
+        font-size: 0.6em;
+    }
+    
+    .image {
+        position: relative;
+        top: 50px;
+        height: 80%;
+        width: 100%;
+        left: 2%;
+    }
+    
+    #caption {
+        position: relative;
+        top: 50px;
+        width: 300px;
+        height: 130px;
+        font-size: 0.8em;
+        left: 2%;
+    }
+    
+    #footer-div{
+        position: relative;
+        top: 150px;
+        width: 100vw;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 20px white;
+    }
+    
+    #contact-info,
+    p {
+        font-size: 0.8em;
+    }
+}
+@media screen and (min-width:426px) and  (max-width:768px){
+    #header-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 1.3em;
+        
+    }
+    
+    #logo {
+        width: 20%;
+        height: 20%;
+    }
+    #callUs {
+       font-size: 1em;
+    }
+    #nav-div {
+       height: 14%;
+       width: 96vw;
+       font-size: 0.3em;
+    }
+    
+    .nav-btn {
+       width: 100%;
+       height: 20%;
+    
+    }
+    #headline-div {
+        width: 90vw;
+        top: 45px;
+        font-size: 1em;
+    }
+    
+    .web-rated {
+        position:relative ;
+        top: 50px;
+        width: 99vw;
+        height: 50px;
+        margin-bottom: 2%;
+        font-size: 0.2em;
+    }
+    
+    .web-content {
+       width: 40%;
+       height: 60%;
+    }
+    
+    .img-webcont {
+      width: 40%;
+      height: 100%;
+    }
+    #rvws-div {
+        position: relative;
+        top: 50px;
+        width: 94vw;
+        font-size: 0.3em;
+    }
+    #subHeadline-div {
+        position: relative;
+        top: 50px;
+        width: 96vw;
+    }
+    .services {
+        width: 100%;
+        font-size: 0.6em;
+    }
+    
+    .image {
+        position: relative;
+        top: 50px;
+        height: 80%;
+        width: 100%;
+        left: 2%;
+    }
+    
+    #caption {
+        position: relative;
+        top: 50px;
+        width: 300px;
+        height: 130px;
+        font-size: 0.8em;
+        left: 2%;
+    }
+    
+    #footer-div{
+        position: relative;
+        top: 150px;
+        width: 100vw;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 20px white;
+    }
+    
+    #contact-info,
+    p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width:769px) and  (max-width:1024px){
+    #header-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 1.3em;
+        
+    }
+    
+    #logo {
+        width: 20%;
+        height: 20%;
+    }
+    #callUs {
+       font-size: 1em;
+    }
+    #nav-div {
+       height: 14%;
+       width: 96vw;
+       font-size: 0.3em;
+    }
+    
+    .nav-btn {
+       width: 100%;
+       height: 20%;
+    
+    }
+    #headline-div {
+        width: 90vw;
+        top: 45px;
+        font-size: 1em;
+    }
+    
+    .web-rated {
+        position:relative ;
+        top: 50px;
+        width: 99vw;
+        height: 50px;
+        margin-bottom: 2%;
+        font-size: 0.2em;
+    }
+    
+    .web-content {
+       width: 40%;
+       height: 60%;
+    }
+    
+    .img-webcont {
+      width: 40%;
+      height: 100%;
+    }
+    #rvws-div {
+        position: relative;
+        top: 50px;
+        width: 94vw;
+        font-size: 0.3em;
+    }
+    #subHeadline-div {
+        position: relative;
+        top: 50px;
+        width: 96vw;
+    }
+    .services {
+        width: 100%;
+        font-size: 0.6em;
+    }
+    
+    .image {
+        position: relative;
+        top: 50px;
+        height: 80%;
+        width: 100%;
+        left: 2%;
+    }
+    
+    #caption {
+        position: relative;
+        top: 50px;
+        width: 300px;
+        height: 130px;
+        font-size: 0.8em;
+        left: 2%;
+    }
+    
+    #footer-div{
+        position: relative;
+        top: 150px;
+        width: 100vw;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 20px white;
+    }
+    
+    #contact-info,
+    p {
+        font-size: 0.8em;
+    }
+}
+@media screen and (min-width:1025px) and  (max-width:1440px){
+    #header-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 1.3em;
+        
+    }
+    
+    #logo {
+        width: 20%;
+        height: 20%;
+    }
+    #callUs {
+       font-size: 1em;
+    }
+    #nav-div {
+       height: 14%;
+       width: 96vw;
+       font-size: 0.3em;
+    }
+    
+    .nav-btn {
+       width: 100%;
+       height: 20%;
+    
+    }
+    #headline-div {
+        width: 90vw;
+        top: 45px;
+        font-size: 1em;
+    }
+    
+    .web-rated {
+        position:relative ;
+        top: 50px;
+        width: 99vw;
+        height: 50px;
+        margin-bottom: 2%;
+        font-size: 0.2em;
+    }
+    
+    .web-content {
+       width: 40%;
+       height: 60%;
+    }
+    
+    .img-webcont {
+      width: 40%;
+      height: 100%;
+    }
+    #rvws-div {
+        position: relative;
+        top: 50px;
+        width: 94vw;
+        font-size: 0.3em;
+    }
+    #subHeadline-div {
+        position: relative;
+        top: 50px;
+        width: 96vw;
+    }
+    .services {
+        width: 100%;
+        font-size: 0.6em;
+    }
+    
+    .image {
+        position: relative;
+        top: 50px;
+        height: 80%;
+        width: 100%;
+        left: 2%;
+    }
+    
+    #caption {
+        position: relative;
+        top: 50px;
+        width: 300px;
+        height: 130px;
+        font-size: 0.8em;
+        left: 2%;
+    }
+    
+    #footer-div{
+        position: relative;
+        top: 150px;
+        width: 100vw;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 20px white;
+    }
+    
+    #contact-info,
+    p {
+        font-size: 0.8em;
+    }
+}
+@media screen and (min-width:1441px) and (max-width:2560px){
+    #header-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 1.3em;
+        
+    }
+    
+    #logo {
+        width: 20%;
+        height: 20%;
+    }
+    #callUs {
+       font-size: 1em;
+    }
+    #nav-div {
+       height: 14%;
+       width: 96vw;
+       font-size: 0.3em;
+    }
+    
+    .nav-btn {
+       width: 100%;
+       height: 20%;
+    
+    }
+    #headline-div {
+        width: 90vw;
+        top: 45px;
+        font-size: 1em;
+    }
+    
+    .web-rated {
+        position:relative ;
+        top: 50px;
+        width: 99vw;
+        height: 50px;
+        margin-bottom: 2%;
+        font-size: 0.2em;
+    }
+    
+    .web-content {
+       width: 40%;
+       height: 60%;
+    }
+    
+    .img-webcont {
+      width: 40%;
+      height: 100%;
+    }
+    #rvws-div {
+        position: relative;
+        top: 50px;
+        width: 94vw;
+        font-size: 0.3em;
+    }
+    #subHeadline-div {
+        position: relative;
+        top: 50px;
+        width: 96vw;
+    }
+    .services {
+        width: 100%;
+        font-size: 0.6em;
+    }
+    
+    .image {
+        position: relative;
+        top: 50px;
+        height: 80%;
+        width: 100%;
+        left: 2%;
+    }
+    
+    #caption {
+        position: relative;
+        top: 50px;
+        width: 300px;
+        height: 130px;
+        font-size: 0.8em;
+        left: 2%;
+    }
+    
+    #footer-div{
+        position: relative;
+        top: 150px;
+        width: 100vw;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 20px white;
+    }
+    
+    #contact-info,
+    p {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 767px) and (orientation: landscape){
+    
+}
+@media screen and (min-width: 768px) and (max-width:1024px) and (orientation: landscape){
+   
 }
