@@ -1,7 +1,4 @@
 body {
-  position: relative;
-  display: flex;
-  flex-direction: column;
   background-image: url(/homepages/curriculum/img/bg-cv.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,69 +6,70 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
+  color: chartreuse;
   box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/*Header elements start*/
-.moon {
-  position: absolute;
-  left: 60vw;
-  top: 30vh;
-  width: 20vw;
-  opacity: 50%;
+header {
+  width: 99vw;
 }
 
 #page-title {
-  position: absolute;
-  top: 10vh;
-  width: 50vw;
-  left: 20vw;
+  width: 50%;
 }
 
-/*curriculum elements start*/
-#profile,
-#experience,
-#education,
-#skills,
-#hobbies,
-#about-me {
-  display: none;
+.moon {
+  width: 20%;
 }
 
 .btn-group {
   position: absolute;
-  top: 38vh;
-  left: 2vw;
+  top: 40%;
+  left: 1%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  width: 98%;
+  height: 10%;
   gap: 1rem;
 }
 
-.button-cv {
-  width: 7vw;
-  height: 4vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: chartreuse;
-  font-size: 1.1em;
+.btn-group button {
+  min-width: 5%;
+  min-height: 50%;
+
 }
 
-.button-cv:hover {
-  box-shadow: 0px 0px 20px white;
+.btn-cv {
+  font-size: 2em;
+  background-color: transparent;
+  color: chartreuse;
+  box-shadow: 0px 0px 10px chartreuse;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.btn-cv:hover {
+  color: red;
+  box-shadow: 0px 0px 10px red;
+  background-color: black;
+  transform: scale(1.1);
 }
 
 #div-cv {
   position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 40%;
+  font-size: 2em;
+  left: 1%;
+  overflow: auto;
   text-align: center;
-  top: 38vh;
-  left: 10vw;
-  height: 40vh;
-  width: 60vw;
 }
 
+.paragraph-cv {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 #div-cv ul li {
   text-align: left;
   color: aqua;
@@ -87,27 +85,18 @@ span {
 
 }
 
-.paragraph-cv {
-  width: 45vw;
-  color: aqua;
-  background-color: rgba(0, 0, 0, 0.5);
-  overflow: auto;
-  height: 37vh;
-  font-size: 1.2em;
-}
-
 #div-social-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  bottom: 20px;
-  height: 40px;
+  position: relative;
 }
 
 .social-icons {
   width: 2vw;
   height: 3vh;
 }
+
 
 #contact-icons {
   display: flex;
@@ -179,513 +168,498 @@ span {
   cursor: pointer;
 }
 
-.twitch-icon {
-  border-bottom-right-radius: 50%;
-}
+@media screen and (max-width:320px) {
+  header {
+    width: 99vw;
+  }
 
-.trovo-icon {
-  border-radius: 30%;
-}
-
-.discord-icon {
-  border-radius: 45%;
-}
-
-.a-link {
-  text-align: center;
-}
-
-li {
-  color: white;
-}
-
-/*hiperlink color and hover*/
-a {
-  color: rgb(0, 168, 243);
-}
-
-a:hover {
-  color: rgb(255, 127, 39);
-
-}
-
-/*curriculum elements end*/
-
-
-@media screen and (max-width: 360px) and (orientation: portrait) {
   #page-title {
-    width: 90vw;
-    left: 5vw;
-  }
-
-  .moon {
-    width: 25vw;
-    top: 2vh;
-    left: 20vw;
-  }
-
-  .btn-group {
-    position: sticky;
-    width: 100vw;
-    top: 25vh;
-    flex-direction: row;
-    gap: 0rem;
-  }
-
-  .button-cv {
-    width: 16.2vw;
-    height: 3vh;
-    border-radius: 0;
-    font-size: 0.5em;
-
-  }
-
-  #div-cv {
-    width: 99vw;
-    top: 30vh;
-    left: 0;
-  }
-
-  #div-cv p {
-    margin-left: 3vw;
-    margin-right: 3vw;
-  }
-
-  .paragraph-cv {
-    width: 99vw;
-    background-color: rgba(0, 0, 0, 0.5);
-    overflow: auto;
-    height: 40vh;
-    font-size: 0.8em;
-  }
-
-  .social-icons {
-    width: 6vw;
-    height: 2vh;
-  }
-
-  #contact-icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
   }
 
-  #contact-icons a {
-    width: 6vw;
-    height: 4vh;
-  }
-}
-
-@media screen and (max-width:640px) and (orientation: landscape) {
-  #page-title {
-    width: 50vw;
-    top: 0;
-  }
-
   .moon {
-    width: 30vw;
-    left: 70vw;
-  }
-
-  /*-------------------------*/
-  #div-cv,
-  .paragraph-cv {
-    margin: 0;
-    top: 17vh;
-    left: 17vw;
-    width: 60vw;
-    height: 62vh;
-    font-size: 0.9em;
+    width: 50%;
   }
 
   .btn-group {
-    top: 17vh;
-    height: 5vh;
-    width: 15vw;
-    flex-direction: column;
+    top: 30%;
+    height: 5%;
+    gap: 0;
   }
 
-  .button-cv {
+  .btn-group button {
+    width: 19%;
+  }
+
+  .btn-cv {
+    background-color: black;
+    font-size: 0.5em;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  #div-cv {
+    top: 36%;
+    width: 99%;
+    height: 40%;
+    font-size: 0.9em;
+  }
+
+  .social-icons {
+    width: 7vw;
+
+  }
+
+  #contact-icons a {
+    width: 7vw;
+  }
+}
+
+@media screen and (min-width:321px) and (max-width:375px) {
+  header {
+    width: 99vw;
+  }
+
+  #page-title {
+    width: 100%;
+  }
+
+  .moon {
+    width: 50%;
+  }
+
+  .btn-group {
+    top: 35%;
+    height: 5%;
+    gap: 0;
+  }
+
+  .btn-group button {
+    width: 19%;
+  }
+
+  .btn-cv {
+    background-color: black;
+    font-size: 0.6em;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  #div-cv {
+    top: 40%;
+    width: 99%;
+    height: 40%;
+    font-size: 0.9em;
+  }
+
+  .social-icons {
+    width: 7vw;
+  }
+
+  #contact-icons a {
+    width: 7vw;
+  }
+}
+
+@media screen and (min-width:376px) and (max-width:425px) {
+  header {
+    width: 99vw;
+  }
+
+  #page-title {
+    width: 100%;
+  }
+
+  .moon {
+    width: 50%;
+  }
+
+  .btn-group {
+    top: 35%;
+    height: 5%;
+    gap: 0;
+  }
+
+  .btn-group button {
+    width: 19%;
+  }
+
+  .btn-cv {
+    background-color: black;
+    font-size: 0.7em;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  #div-cv {
+    top: 40%;
+    width: 99%;
+    height: 40%;
+    font-size: 0.9em;
+  }
+
+  .social-icons {
+    width: 7vw;
+  }
+
+  #contact-icons a {
+    width: 7vw;
+  }
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+  header {
+    width: 100vw;
+  }
+
+  #page-title {
     width: 90%;
-    height: 20px;
-    border-radius: 0;
-    font-size: 0.8em;
-  }
-
-  .social-icons {
-    width: 20px;
-    height: 17px;
-  }
-
-  #contact-icons a {
-    width: 20px;
-    height: 20px;
-  }
-
-}
-
-@media screen and (min-width: 361px) and (max-width:425px) and (orientation:portrait) {
-  #page-title {
-    width: 90vw;
-    left: 5vw;
   }
 
   .moon {
-    width: 25vw;
-    top: 2vh;
-    left: 20vw;
+    width: 30%;
   }
 
   .btn-group {
-    position: absolute;
-    width: 98vw;
-    top: 25vh;
-    left: 1.5vw;
-    flex-direction: row;
-    gap: 0rem;
-  }
-
-  .button-cv {
-    width: 16.2vw;
-    height: 3vh;
-    border-radius: 0;
-    font-size: 0.6em;
-
-  }
-
-  #div-cv {
-    width: 99vw;
-    top: 30vh;
+    flex-direction: column;
+    align-items: start;
     left: 0;
+    top: 35%;
+    height: 5%;
+    gap: 1rem;
   }
 
-  .paragraph-cv {
-    width: 99vw;
-    overflow: auto;
-    height: 40vh;
-    font-size: 0.8em;
+  .btn-group button {
+    width: 19%;
   }
 
-  .social-icons {
-    width: 5vw;
-    height: 2vh;
-  }
-
-  #contact-icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-
-  #contact-icons a {
-    width: 6vw;
-    height: 4vh;
-  }
-}
-
-@media screen and (max-width:768px) and (orientation: landscape) {
-  #page-title {
-    width: 50vw;
-    top: 0;
-  }
-
-  .moon {
-    width: 30vw;
-    left: 70vw;
-  }
-
-  #div-cv {
-    top: 20vh;
-    left: 19vw
-  }
-
-  .paragraph-cv {
-    margin: 0;
-    top: 17vh;
-    left: 17vw;
-    width: 50vw;
-    height: 62vh;
+  .btn-cv {
+    position: relative;
+    background-color: black;
+    left: 3%;
     font-size: 0.9em;
+    border-radius: 20%;
+    box-shadow: none;
   }
 
-  .btn-group {
-    top: 20vh;
-    height: 60vh;
-    width: 16vw;
-    flex-direction: column;
+  #div-cv {
+    top: 33%;
+    width: 50%;
+    height: 50%;
+    font-size: 1em;
+    left: 25%;
   }
-
-  .button-cv {
-    width: 15vw;
-    height: 15vh;
-    border-radius: 0;
-    font-size: 0.7em;
-  }
-
+  
   .social-icons {
-    width: 20px;
-    height: 17px;
+    width: 4vw;
   }
 
   #contact-icons a {
-    width: 20px;
-    height: 20px;
+    width: 4vw;
   }
-
 }
 
-@media screen and (min-width: 426px) and (max-width:768px) and (orientation:portrait) {
-  #page-title {
-    top: 2vh;
-    width: 70vw;
-    left: 5vw;
-  }
-
-  .moon {
-    width: 25vw;
-    top: 60vh;
-    left: 20vw;
-  }
-
-  .btn-group {
-    position: absolute;
+@media screen and (min-width:769px) and (max-width:1024px) and (orientation:portrait) {
+  header {
     width: 100vw;
-    top: 25vh;
-    left: 0;
-    flex-direction: row;
-    font-size: 1.5em;
-    z-index: 1;
   }
 
-  .button-cv {
-    width: 16.2vw;
-    height: 3vh;
-    border-radius: 0;
-    font-size: 0.5em;
-
-  }
-
-  #div-cv {
-    width: 99vw;
-    bottom: 30vh;
-    left: 0;
-  }
-
-  .paragraph-cv {
-    width: 99vw;
-    overflow: auto;
-    height: 40vh;
-    font-size: 1em;
-  }
-
-  .social-icons {
-    width: 4vw;
-    height: 3vh;
-  }
-
-  #contact-icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-
-  #contact-icons a {
-    width: 4vw;
-    height: 4vh;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width:1024px) and (orientation:portrait) {
   #page-title {
-    top: 4vh;
-    width: 80vw;
-    left: 6vw;
+    width: 80%;
   }
 
   .moon {
-    width: 25vw;
-    top: 20vh;
-    left: 70vw;
+    width: 30%;
   }
 
   .btn-group {
-    position: absolute;
-    width: 17vw;
-    top: 30vh;
-    left: 2vw;
     flex-direction: column;
-    font-size: 1.5em;
-    z-index: 1;
+    align-items: start;
+    left: 0;
+    top: 35%;
+    height: 5%;
+    gap: 1rem;
   }
 
-  .button-cv {
-    width: 19vw;
-    height: 4vh;
-    border-radius: 0;
-    font-size: 0.7em;
+  .btn-group button {
+    width: 20%;
+  }
 
+  .btn-cv {
+    position: relative;
+    background-color: black;
+    left: 3%;
+    font-size: 1em;
+    border-radius: 20%;
+    box-shadow: none;
   }
 
   #div-cv {
-    width: 50vw;
-    left: 23vh;
-    bottom: 10vh;
-    height: 60vh;
+    top: 33%;
+    width: 50%;
+    height: 50%;
+    font-size: 1em;
+    left: 25%;
+  }
+  
+  .social-icons {
+    width: 3vw;
   }
 
-  .paragraph-cv {
-    width: 70vw;
-    overflow: auto;
-    height: 32vh;
+  #contact-icons a {
+    width: 3vw;
+  }
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px) {
+  header {
+    width: 100vw;
+  }
+
+  #page-title {
+    width: 70%;
+  }
+
+  .moon {
+    width: 20%;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    align-items: start;
+    left: 0;
+    top: 35%;
+    height: 9%;
+    gap: 1rem;
+  }
+
+  .btn-group button {
+    width: 20%;
+  }
+
+  .btn-cv {
+    position: relative;
+    background-color: black;
+    left: 3%;
+    font-size: 1.3em;
+    border-radius: 20%;
+   
+  }
+
+  #div-cv {
+    top: 33%;
+    width: 50%;
+    height: 50%;
     font-size: 1.2em;
+    left: 25%;
   }
-
+  
   .social-icons {
-    width: 3vw;
-    height: 2vh;
-  }
-
-  #contact-icons {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+    width: 2vw;
   }
 
   #contact-icons a {
-    width: 3vw;
-    height: 3vh;
+    width: 2vw;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width:1024px) and (orientation:landscape) {
+@media screen and (min-width:1441px) and (max-width:2560px) {
+  header {
+    width: 100vw;
+  }
+
   #page-title {
-    top: 4vh;
-    width: 50vw;
-    left: 20vw;
+    width: 65%;
   }
 
   .moon {
-    width: 25vw;
-    top: 30vh;
-    left: 70vw;
+    width: 20%;
   }
 
   .btn-group {
-    position: absolute;
-    width: 17vw;
-    top: 30vh;
-    left: 2vw;
     flex-direction: column;
-    font-size: 1.5em;
-    z-index: 1;
+    align-items: start;
+    left: 0;
+    top: 35%;
+    height: 9%;
+    gap: 1rem;
   }
 
-  .button-cv {
-    width: 16.2vw;
-    height: 6vh;
-    border-radius: 0;
-    font-size: 0.6em;
+  .btn-group button {
+    width: 20%;
+  }
 
+  .btn-cv {
+    position: relative;
+    background-color: black;
+    left: 3%;
+    font-size: 2em;
+    border-radius: 20%;
+   
   }
 
   #div-cv {
-    width: 50vw;
-    left: 45vh;
-    top: 30vh;
-    height: 60vh;
+    top: 33%;
+    width: 50%;
+    height: 50%;
+    font-size: 2em;
+    left: 25%;
+  }
+  
+  .social-icons {
+    width: 2vw;
   }
 
-  .paragraph-cv {
-    width: 50vw;
-    overflow: auto;
-    height: 60vh;
+  #contact-icons a {
+    width: 2vw;
+  }
+}
+@media screen and (min-width:2561px) {
+  header {
+    width: 100vw;
+  }
+
+  #page-title {
+    width: 60%;
+  }
+
+  .moon {
+    width: 20%;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    align-items: start;
+    left: 0;
+    top: 45%;
+    height: 9%;
+    gap: 1rem;
+  }
+
+  .btn-group button {
+    width: 20%;
+  }
+
+  .btn-cv {
+    position: relative;
+    background-color: black;
+    left: 3%;
+    font-size: 2em;
+    border-radius: 20%;
+   
+  }
+
+  #div-cv {
+    top: 43%;
+    width: 30%;
+    height: 50%;
+    font-size: 2em;
+    left: 25%;
+  }
+  
+  .social-icons {
+    width: 2vw;
+  }
+
+  #contact-icons a {
+    width: 2vw;
+  }
+}
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  header {
+    width: 99vw;
+  }
+
+  #page-title {
+    width: 70%;
+  }
+
+  .moon {
+    width: 20%;
+  }
+
+  .btn-group {
+    top: 45%;
+    height: 15%;
+    gap: 0;
+  }
+
+  .btn-group button {
+    width: 19%;
+  }
+
+  .btn-cv {
+    background-color: black;
+    font-size: 0.7em;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  #div-cv {
+    top: 45%;
+    width: 40%;
+    height: 40%;
+    font-size: 0.8em;
+  }
+
+  .social-icons {
+    width: 2vw;
+
+  }
+
+  #contact-icons a {
+    width: 2vw;
+  }
+}
+
+@media screen and (min-width: 769px) and  (max-width:1024px) and (orientation: landscape) {
+  header {
+    width: 100vw;
+  }
+
+  #page-title {
+    width: 70%;
+  }
+
+  .moon {
+    width: 20%;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    align-items: start;
+    left: 0;
+    top: 35%;
+    height: 10%;
+    gap: 1rem;
+  }
+
+  .btn-group button {
+    width: 19%;
+  }
+
+  .btn-cv {
+    position: relative;
+    background-color: black;
+    left: 3%;
     font-size: 1em;
-  }
-
-  .social-icons {
-    width: 3vw;
-    height: 4vh;
-  }
-
-  #contact-icons {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-
-  #contact-icons a {
-    width: 5vw;
-    height: 5vh;
-  }
-}
-
-@media screen and (min-width:2560px) {
-  #page-title {
-    top: 4vh;
-    width: 50vw;
-    left: 20vw;
-  }
-
-  .moon {
-    width: 25vw;
-    top: 30vh;
-    left: 70vw;
-  }
-
-  .btn-group {
-    position: absolute;
-    width: 17vw;
-    top: 27vh;
-    left: 2vw;
-    flex-direction: column;
-    z-index: 1;
-  }
-
-  .button-cv {
-    width: 16.2vw;
-    height: 9vh;
-    border-radius: 0;
-    font-size: 3em;
-    border-radius: 50vw;
-    box-shadow: -10px 5px 2px chartreuse;
+    border-radius: 20%;
+    box-shadow: none;
   }
 
   #div-cv {
-    width: 50vw;
-    left: 45vh;
-    top: 27vh;
-    height: 60vh;
+    top: 35%;
+    width: 40%;
+    height: 50%;
+    font-size: 1em;
+    left: 25%;
   }
-
-  .paragraph-cv {
-    width: 50vw;
-    overflow: auto;
-    height: 65vh;
-    font-size: 2.8em;
-  }
-
+  
   .social-icons {
     width: 3vw;
-    height: 4vh;
-  }
-
-  #contact-icons {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
   }
 
   #contact-icons a {
-    width: 5vw;
-    height: 5vh;
+    width: 3vw;
   }
 }
