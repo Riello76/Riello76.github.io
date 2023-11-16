@@ -1,0 +1,226 @@
+body {
+    background-color: darkgreen;
+    margin: 0;
+}
+
+* {
+    color: white;
+    text-shadow: -1px -6px 3px black;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 20%;
+}
+
+#title {
+    font-size: 5em;
+}
+
+#projects-div {
+    display: grid;
+    grid-template-areas:
+    "project1 project2";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+    font-size: 3em;
+    gap: 1rem;
+}
+
+.projects:nth-child(1) {
+    grid-area: project1;
+    width: 100%;
+    border: 1px solid green;
+}
+
+.projects:nth-child(2) {
+    grid-area: project2;
+    width: 100%;
+    border: 1px solid green;
+}
+.img-prj {
+    width: 10%;
+}
+@media screen and (max-width:320px){
+    #title {
+        font-size: 1.6em;
+    }
+    #projects-div {
+        font-size: 0.9em;
+    }
+    .projects:nth-child(1) {
+        grid-area: project1;
+        width: 100%;
+    }
+    
+    .projects:nth-child(2) {
+        grid-area: project2;
+        width: 100%;
+    }
+    .img-prj {
+        width: 30%;
+    }
+}
+@media screen and (min-width:321px) and  (max-width:375px){
+    #title {
+        font-size: 1.8em;
+    }
+    #projects-div {
+        font-size: 1em;
+    }
+    .projects:nth-child(1) {
+        grid-area: project1;
+        width: 100%;
+    }
+    
+    .projects:nth-child(2) {
+        grid-area: project2;
+        width: 100%;
+    }
+    .img-prj {
+        width: 30%;
+    }
+}
+@media screen and (min-width:376px) and  (max-width:425px){
+    #title {
+        font-size: 1.9em;
+    }
+    #projects-div {
+        font-size: 1.1em;
+    }
+    .projects:nth-child(1) {
+        grid-area: project1;
+        width: 100%;
+    }
+    
+    .projects:nth-child(2) {
+        grid-area: project2;
+        width: 100%;
+    }
+    .img-prj {
+        width: 30%;
+    }
+}
+@media screen and (min-width:426px) and  (max-width:768px){
+    #title {
+        font-size: 2em;
+    }
+    #projects-div {
+        font-size: 1.3em;
+    }
+    .projects:nth-child(1) {
+        grid-area: project1;
+        width: 100%;
+    }
+    
+    .projects:nth-child(2) {
+        grid-area: project2;
+        width: 100%;
+    }
+    .img-prj {
+        width: 20%;
+    }
+}
+@media screen and (min-width:769px) and  (max-width:1024px){
+    #title {
+        font-size: 2.3em;
+    }
+    #projects-div {
+        font-size: 1.5em;
+    }
+    .projects:nth-child(1) {
+        grid-area: project1;
+        width: 100%;
+    }
+    
+    .projects:nth-child(2) {
+        grid-area: project2;
+        width: 100%;
+    }
+    .img-prj {
+        width: 20%;
+    }
+}
+@media screen and (min-width:1025px) and  (max-width:1440px){
+    #title {
+        font-size: 2.5em;
+    }
+    #projects-div {
+        font-size: 1.5em;
+    }
+    .projects:nth-child(1) {
+        grid-area: project1;
+        width: 100%;
+    }
+    
+    .projects:nth-child(2) {
+        grid-area: project2;
+        width: 100%;
+    }
+    .img-prj {
+        width: 17%;
+    }
+}
+@media screen and (min-width:1441px) and (max-width:2560px){
+    #title {
+        font-size: 5em;
+    }
+    #projects-div {
+        font-size: 3em;
+    }
+    .projects:nth-child(1) {
+        grid-area: project1;
+        width: 100%;
+    }
+    
+    .projects:nth-child(2) {
+        grid-area: project2;
+        width: 100%;
+    }
+    .img-prj {
+        width: 15%;
+    }
+}
+@media screen and (max-width: 767px) and (orientation: landscape){
+    #title {
+        font-size: 1.9em;
+    }
+    #projects-div {
+        font-size: 0.8em;
+    }
+    .projects:nth-child(1) {
+        grid-area: project1;
+        width: 100%;
+    }
+    
+    .projects:nth-child(2) {
+        grid-area: project2;
+        width: 100%;
+    }
+    .img-prj {
+        width: 15%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1024) and (orientation: landscape){
+    #title {
+        font-size: 1.9em;
+    }
+    #projects-div {
+        font-size: 0.8em;
+    }
+    .projects:nth-child(1) {
+        grid-area: project1;
+        width: 100%;
+    }
+    
+    .projects:nth-child(2) {
+        grid-area: project2;
+        width: 100%;
+    }
+    .img-prj {
+        width: 15%;
+    }
+}
