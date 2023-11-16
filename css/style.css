@@ -7,8 +7,7 @@ body {
 }
 main{
    position: absolute;
-   width: 99%;
-   top: 30%;
+   width: 80%;
 }
 main img{
     width: 99%;
@@ -41,7 +40,7 @@ main img{
         height: 100%;
      }
 }
-@media screen and (min-width: 768px) and (orientation: landscape){
+@media screen and (min-width: 768px) and (max-width:1024) and (orientation: landscape){
     main{
         top: 0;
         width: 80%;
