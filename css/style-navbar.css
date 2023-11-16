@@ -15,8 +15,11 @@
 .btns-nav {
     background-repeat: no-repeat;
     background-size: contain;
+    transition: transform 0.3s;
 }
-
+.btns-nav:hover{
+    transform: scale(1.2);
+}
 .btns-nav:nth-child(1) {
     grid-area: menu;
 }
