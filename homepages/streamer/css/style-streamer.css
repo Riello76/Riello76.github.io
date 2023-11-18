@@ -2,11 +2,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     background-color: black;
-
+    margin: 0;
 }
 header {
-    width: 100%;
+    width: 100vw;
     position: relative;
+    
 }
 
 header img {
@@ -22,11 +23,10 @@ header img {
 .btn-streamer {
     width: 5%;
     height: 2%;
-    opacity: 0;
+   
     font-weight: bold;
-    font-size: 3em;
-    text-shadow: 5px 5px 5px black;
-    border-radius: 50vw;
+   
+    font-size: 1.3vw;
 }
 #btn-home{
     position: absolute;
