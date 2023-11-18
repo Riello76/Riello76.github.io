@@ -23,9 +23,7 @@ header img {
 .btn-streamer {
     width: 5%;
     height: 2%;
-   
-    font-weight: bold;
-   
+    opacity: 0;
     font-size: 1.3vw;
 }
 #btn-home{
