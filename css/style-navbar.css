@@ -72,9 +72,14 @@
 
     .btns-nav {
         width: 100%;
-        background-size: 120%;
+        background-size: 130%;
         background-position: center;
     }
+    #curriculum-btn {
+        position: relative;
+        margin-bottom: 1%;
+    }
+    
 }
 
 @media screen and (min-width:321px) and (max-width:375px) {
@@ -85,8 +90,12 @@
 
     .btns-nav {
         width: 100%;
-        background-size: 120%;
+        background-size: 130%;
         background-position: center;
+    }
+    #curriculum-btn {
+        position: relative;
+        margin-bottom: 20%;
     }
 }
 
@@ -98,8 +107,12 @@
 
     .btns-nav {
         width: 100%;
-        background-size: 130%;
+        background-size: 110%;
         background-position: center;
+    }
+    #curriculum-btn {
+        position: relative;
+        margin-bottom: 20%;
     }
 }
 
@@ -111,8 +124,12 @@
 
     .btns-nav {
         width: 100%;
-        background-size: 120%;
+        background-size: 110%;
         background-position: center;
+    }
+    #curriculum-btn {
+        position: relative;
+        margin-bottom: 20%;
     }
 }
 
@@ -127,9 +144,9 @@
         background-size: 150%;
         background-position: center;
     }
-    .btns-nav:nth-child(3) {
+    #curriculum-btn {
         position: relative;
-        top: 15%;
+        margin-top: 90%;
     }
 }
 
