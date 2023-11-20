@@ -22,60 +22,52 @@ header img {
     position: absolute;
     display: flex;
     width: 93%;
-    bottom: 17%;
+    bottom: 15%;
 }
 
 .btn-streamer {
     width: 5%;
     height: 2%;
     opacity: 0;
-    font-size: 1.3vw;
+    font-size: 1.9vw;
 }
 #btn-home{
     position: absolute;
     left: 1%;
-    width: 6%;
 }
 #btn-twitch{
     position: absolute;
-    left: 10%;
-    width: 8%
+    left: 9%;
 }
 #btn-youtube{
     position: absolute;
-    left: 21%;
-    width: 10%;
+    left: 20%;
 }
 #btn-trovo{
     position: absolute;
-    left: 33%;
-    width: 8%;
+    left: 32%;
 }
 #btn-discord{
     position: absolute;
-    left: 43%;
-    width: 9%;
+    left: 42%;
 }
 #btn-facebook{
     position: absolute;
-    left: 55%;
-    width: 11%;
+    left: 54%;
 }
 #btn-tiktok{
     position: absolute;
-    left: 69%;
+    left: 68%;
     width: 8%;
 }
 
 #btn-instagram{
     position: absolute;
     left: 80%;
-    width: 12%;
 }
 #btn-biography{
     position: absolute;
     left: 95%;
-    width: 12%;
 }
 main{
     width: 100vw;
@@ -177,6 +169,10 @@ main{
 }
 
 @media screen and (max-width: 767px) and (orientation: landscape) {
+   
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) and (orientation: landscape) {
    
 }
 
