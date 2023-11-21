@@ -1,0 +1,149 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+* {
+    text-decoration: none;
+}
+
+header {
+    width: 100vw;
+    position: relative;
+}
+
+header img {
+    width: 100%;
+}
+
+#btn-streamer-div {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+}
+
+
+.btn-streamer {
+    width: 100%;
+    height: 70px;
+    transition: transform 0.3s ease
+}
+.btn-streamer:hover{
+    transform: scaleX(1.2) scaleY(0.8);
+}
+#btn-home {
+    background-image: url(/homepages/streamer/img/btn-home.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#btn-twitch {
+    background-image: url(/homepages/streamer/img/btn-twitch.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#btn-youtube {
+    background-image: url(/homepages/streamer/img/btn-youtube.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#btn-trovo {
+    background-image: url(/homepages/streamer/img/btn-trovo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#btn-discord {
+    background-image: url(/homepages/streamer/img/btn-discord.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#btn-facebook {
+    background-image: url(/homepages/streamer/img/btn-facebook.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#btn-tiktok {
+    background-image: url(/homepages/streamer/img/btn-titok.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#btn-instagram {
+    background-image: url(/homepages/streamer/img/btn-instagram.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#btn-biography {
+    background-image: url(/homepages/streamer/img/btn-biography.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/homepages/streamer/img/bg-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 320px) {
+    header img {
+        position: relative;
+       top: 10%;
+    }
+    #btn-streamer-div {
+        flex-wrap: wrap;
+        width: 100vw;
+        top: 8vh;
+        justify-content: center;
+    }
+    
+    
+    .btn-streamer {
+        width: 30%;
+        height: 25px;
+        margin: 4px;
+        box-shadow: 0px 0px 1px grey;
+    }
+   
+}
+
+@media screen and (min-width:321px) and (max-width:375px) {}
+
+@media screen and (min-width:376px) and (max-width:425px) {}
+
+@media screen and (min-width:426px) and (max-width:768px) {}
+
+@media screen and (min-width:769px) and (max-width:1024px) {}
+
+@media screen and (min-width:1025px) and (max-width:1440px) {}
+
+@media screen and (min-width:1441px) and (max-width:2560px) {}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {}
+
+@media screen and (min-width: 768px) and (max-width:1024px) and (orientation: landscape) {}
