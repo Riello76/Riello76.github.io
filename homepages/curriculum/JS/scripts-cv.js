@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var content = document.getElementById(buttonId);
 
         button.addEventListener('click', function() {
-            hideAll();
-            content.style.display = 'block';
+            toggleContent(content);
         });
 
         // Hide content initially
@@ -30,4 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Additional code for other buttons and toggling can remain the same
+
+    function toggleContent(content) {
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+        } else {
+            hideAll();
+            content.style.display = 'block';
+        }
+    }
 });
