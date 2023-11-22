@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
 document.getElementById('menu-btn').addEventListener('click', function() {
     toggleButtonsVisibility();
 });
