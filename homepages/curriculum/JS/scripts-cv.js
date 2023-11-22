@@ -13,29 +13,28 @@ document.addEventListener('DOMContentLoaded', function() {
         content.style.display = 'none';
     });
 
-    function hideAll() {
-        buttons.forEach(function(buttonId) {
-            var content = document.getElementById(buttonId);
-            content.style.display = 'none';
-        });
-    }
-
     var curriculumBtn = document.getElementById('curriculum-btn');
     var btnGroup = document.querySelector('.btn-group');
 
     curriculumBtn.addEventListener('click', function(event) {
         event.preventDefault(); 
         btnGroup.classList.toggle('show-buttons'); 
+        hideAllExcept(null); // Close content when curriculumBtn is clicked
     });
 
     // Additional code for other buttons and toggling can remain the same
 
     function toggleContent(content) {
-        if (content.style.display === 'block') {
-            content.style.display = 'none';
-        } else {
-            hideAll();
-            content.style.display = 'block';
-        }
+        hideAllExcept(content);
+        content.style.display = content.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function hideAllExcept(exceptContent) {
+        buttons.forEach(function(buttonId) {
+            var content = document.getElementById(buttonId);
+            if (content !== exceptContent) {
+                content.style.display = 'none';
+            }
+        });
     }
 });
