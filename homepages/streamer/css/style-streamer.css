@@ -31,10 +31,12 @@ header img {
 .btn-streamer {
     width: 100%;
     height: 70px;
-    transition: transform 0.3s ease
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    
 }
 .btn-streamer:hover{
-    transform: scaleX(1.1) scaleY(0.8);
+    transform: scaleX(0.9) scaleY(0.8);
 }
 #btn-home {
     background-image: url(/homepages/streamer/img/btn-home.svg);
