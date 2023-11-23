@@ -44,23 +44,23 @@
 
 
 #menu-btn {
-    background-image: url(/icons/btn-menu-icon.webp);
+    background-image: url(/icons/btn-menu.svg);
 
 }
 
 
 #home-btn-back {
-    background-image: url(/icons/btn-home-icon-trasparent.webp);
+    background-image: url(/icons/btn-home.svg);
 
 }
 
 #curriculum-btn {
-    background-image: url(/icons/btn-cv-icon-trasparent.webp);
+    background-image: url(/icons/btn-curriculum.svg);
 
 }
 
 #projects-btn {
-    background-image: url(/icons/btn-projects-icon-trasparent.webp);
+    background-image: url(/icons/btn-projects.svg);
 
 }
 
@@ -72,7 +72,7 @@
 
     .btns-nav {
         width: 100%;
-        background-size: 100%;
+        background-size: 130%;
         background-position: center;
     }
     #curriculum-btn {
@@ -90,7 +90,7 @@
 
     .btns-nav {
         width: 100%;
-        background-size: 100%;
+        background-size: 130%;
         background-position: center;
     }
     #curriculum-btn {
@@ -107,7 +107,7 @@
 
     .btns-nav {
         width: 100%;
-        background-size: 100%;
+        background-size: 110%;
         background-position: center;
     }
     #curriculum-btn {
@@ -124,7 +124,7 @@
 
     .btns-nav {
         width: 100%;
-        background-size: 130%;
+        background-size: 110%;
         background-position: center;
     }
     #curriculum-btn {
