@@ -1,0 +1,202 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+* {
+    text-decoration: none;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+}
+
+header img {
+    width: 100%;
+}
+
+#btn-streamer-div {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    top: 30%;
+}
+
+
+.btn-streamer {
+    width: 100%;
+    height: 70px;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    
+}
+.btn-streamer:hover{
+    transform: scaleX(0.9) scaleY(0.8);
+}
+#btn-home {
+    background-image: url(/homepages/streamer/img/btn-home.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#btn-twitch {
+    background-image: url(/homepages/streamer/img/btn-twitch.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#btn-youtube {
+    background-image: url(/homepages/streamer/img/btn-youtube.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#btn-trovo {
+    background-image: url(/homepages/streamer/img/btn-trovo.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#btn-discord {
+    background-image: url(/homepages/streamer/img/btn-discord.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#btn-facebook {
+    background-image: url(/homepages/streamer/img/btn-facebook.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#btn-tiktok {
+    background-image: url(/homepages/streamer/img/btn-tiktok.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#btn-instagram {
+    background-image: url(/homepages/streamer/img/btn-instagram.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#btn-biography {
+    background-image: url(/homepages/streamer/img/btn-biography.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/homepages/streamer/img/bg-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 320px) {
+    #btn-streamer-div {
+        flex-wrap: wrap;
+        width: 100vw;
+        top: 8vh;
+        justify-content: center;
+    }
+    
+    
+    .btn-streamer {
+        width: 30%;
+        height: 25px;
+        margin: 4px;
+        box-shadow: 0px 0px 1px grey;
+    }
+    .btn-streamer:hover{
+        box-shadow: 0px 0px 5px white;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:375px) {
+    
+    #btn-streamer-div {
+        flex-wrap: wrap;
+        width: 100vw;
+        top: 10vh;
+        justify-content: center;
+    }
+    
+    
+    .btn-streamer {
+        width: 30%;
+        height: 25px;
+        margin: 4px;
+        box-shadow: 0px 0px 1px grey;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:425px) {
+    #btn-streamer-div {
+        flex-wrap: wrap;
+        width: 100vw;
+        top: 10vh;
+        justify-content: center;
+    }
+    
+    
+    .btn-streamer {
+        width: 30%;
+        height: 25px;
+        margin: 4px;
+        box-shadow: 0px 0px 1px grey;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+    #btn-streamer-div {
+        top: 13vh;
+        width: 100vw;
+    }
+    
+    
+    .btn-streamer {
+        width: 100%;
+        height: 70px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {}
+
+@media screen and (min-width:1025px) and (max-width:1440px) {}
+
+@media screen and (min-width:1441px) and (max-width:2560px) {}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    #btn-streamer-div {
+        top: 26vh;
+        width: 100vw;
+    }
+    
+    
+    .btn-streamer {
+        width: 100%;
+        height: 70px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) and (orientation: landscape) {}
