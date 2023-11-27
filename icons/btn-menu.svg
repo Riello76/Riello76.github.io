@@ -25,9 +25,9 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      showguides="true"
-     inkscape:zoom="1.0356019"
-     inkscape:cx="29.934282"
-     inkscape:cy="203.74624"
+     inkscape:zoom="1.4645623"
+     inkscape:cx="203.13237"
+     inkscape:cy="191.18341"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
@@ -48,10 +48,10 @@
        inkscape:menu-tooltip="Soft bevel, slightly depressed middle"
        style="color-interpolation-filters:sRGB;"
        id="filter52"
-       x="-0.38971365"
-       y="-0.38971367"
-       width="1.7794273"
-       height="1.7794273">
+       x="-0.40519166"
+       y="-0.40519168"
+       width="1.8103833"
+       height="1.8103834">
       <feGaussianBlur
          stdDeviation="5.8788731"
          in="SourceAlpha"
@@ -119,15 +119,15 @@
      id="layer1">
     <path
        id="path1"
-       style="opacity:1;mix-blend-mode:normal;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.617;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill;filter:url(#filter52)"
+       style="opacity:1;mix-blend-mode:normal;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.61725092;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:stroke markers fill;filter:url(#filter52);stroke-dasharray:none"
        d="M 109.95248,56.86216 A 42.273724,42.273724 0 0 1 67.678758,99.135878 42.273724,42.273724 0 0 1 25.405034,56.86216 42.273724,42.273724 0 0 1 67.678758,14.588436 42.273724,42.273724 0 0 1 109.95248,56.86216 Z"
-       transform="matrix(0.71640055,0,0,0.71640055,18.410549,25.409755)" />
+       transform="matrix(0.71640055,0,0,0.71640055,17.660735,25.409755)" />
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.893736;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
        id="rect2"
        width="30.77463"
        height="4.3942571"
-       x="-81.628151"
+       x="-80.878334"
        y="56.191654"
        ry="2.1971285"
        transform="scale(-1,1)" />
@@ -136,7 +136,7 @@
        id="rect2-5"
        width="30.77463"
        height="4.3942571"
-       x="-81.782364"
+       x="-81.032547"
        y="62.596992"
        ry="2.1971285"
        transform="scale(-1,1)" />
@@ -145,18 +145,66 @@
        id="rect2-0"
        width="30.77463"
        height="4.3942571"
-       x="-81.84153"
+       x="-81.091713"
        y="69.002319"
        ry="2.1971285"
        transform="scale(-1,1)" />
     <text
        xml:space="preserve"
        id="text264"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.1111px;line-height:94.42%;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.524;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.708145;paint-order:stroke markers fill"
-       transform="rotate(-128.24746,66.078692,65.800252)"
-       inkscape:transform-center-x="-8.1755998"
-       inkscape:transform-center-y="41.644461"><textPath
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.1111px;line-height:94.42%;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.524;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.708145;paint-order:stroke markers fill"
+       transform="rotate(-128.8525,65.570959,64.689582)"
+       inkscape:transform-center-x="-8.6044427"
+       inkscape:transform-center-y="41.468761"><textPath
          xlink:href="#path1"
          id="textPath264">MENU</textPath></text>
+    <ellipse
+       style="opacity:0;fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1.875;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path2"
+       cx="31.253649"
+       cy="52.264946"
+       rx="5.0583944"
+       ry="8.1846533" />
+    <ellipse
+       style="opacity:0;fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.875;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path3"
+       cx="32.969891"
+       cy="53.745438"
+       rx="8.7618608"
+       ry="8.2198906" />
+    <ellipse
+       style="opacity:0;fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.875;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path4"
+       cx="28.995438"
+       cy="77.592155"
+       rx="8.7618608"
+       ry="10.749087" />
+    <ellipse
+       style="opacity:0;fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.875;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path5"
+       cx="27.369526"
+       cy="79.940697"
+       rx="13.097628"
+       ry="12.916971" />
+    <ellipse
+       style="opacity:0;fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.875;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path6"
+       cx="13.910583"
+       cy="55.913322"
+       rx="6.3229928"
+       ry="8.5812044" />
+    <ellipse
+       style="opacity:0;fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.875;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path7"
+       cx="22.130474"
+       cy="51.848541"
+       rx="7.8585768"
+       ry="9.9361315" />
+    <circle
+       style="opacity:0;fill:#f6f6f6;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.875;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill;fill-opacity:1"
+       id="path8"
+       cx="37.84763"
+       cy="74.520981"
+       r="28.634123" />
   </g>
 </svg>
