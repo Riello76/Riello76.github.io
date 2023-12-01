@@ -8,7 +8,6 @@ body {
     text-decoration: none;
     text-align: center;
     box-sizing: border-box;
-    margin: 0;
 }
 
 header {
@@ -22,158 +21,100 @@ header {
 
 #projects-div {
     display: grid;
-    grid-template-areas:
-    "project1 project2";
+    grid-template-areas: "project1 project2";
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100%;
-    font-size: 3em;
+    font-size: 2em;
     gap: 1rem;
+    min-width: 20rem;
+    min-height: 20rem;
 }
 
-.projects:nth-child(1) {
-    grid-area: project1;
+.projects {
     width: 100%;
-    border: 1px solid green;
+    background-image: url(/homepages/img/notice-board.webp);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: -5px -5px 20px black;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
 }
 
-.projects:nth-child(2) {
-    grid-area: project2;
-    width: 100%;
-    border: 1px solid green;
+.projects a {
+    display: flex;
+    justify-content: center;
 }
 
-@media screen and (max-width:320px){
+.projects p {
+    width: 90%;
+}
+@media screen and (max-width: 320px) and (orientation:portrait) {
     #projects-div {
-        font-size: 0.9em;
+        font-size: 13px;
     }
-    .projects:nth-child(1) {
-        grid-area: project1;
-        width: 100%;
-    }
-    
-    .projects:nth-child(2) {
-        grid-area: project2;
-        width: 100%;
-    }
+}
 
-}
-@media screen and (min-width:321px) and  (max-width:375px){
+@media screen and (min-width: 321px) and (max-width: 375px) and (orientation:portrait) {
     #projects-div {
-        font-size: 1em;
+        font-size: 13px;
     }
-    .projects:nth-child(1) {
-        grid-area: project1;
-        width: 100%;
-    }
-    
-    .projects:nth-child(2) {
-        grid-area: project2;
-        width: 100%;
-    }
-  
 }
-@media screen and (min-width:376px) and  (max-width:425px){
+
+@media screen and (min-width: 376px) and (max-width: 425px) and (orientation:portrait) {
     #projects-div {
-        font-size: 1.1em;
+        font-size: 13px;
     }
-    .projects:nth-child(1) {
-        grid-area: project1;
-        width: 100%;
-    }
-    
-    .projects:nth-child(2) {
-        grid-area: project2;
-        width: 100%;
-    }
-   
 }
-@media screen and (min-width:426px) and  (max-width:768px){
+
+@media screen and (min-width: 426px) and (max-width: 768px) and (orientation:portrait) {
     #projects-div {
-        font-size: 1.3em;
+        font-size: 15px;
     }
-    .projects:nth-child(1) {
-        grid-area: project1;
-        width: 100%;
-    }
-    
-    .projects:nth-child(2) {
-        grid-area: project2;
-        width: 100%;
-    }
-  
 }
-@media screen and (min-width:769px) and  (max-width:1024px){
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation:portrait) {
     #projects-div {
-        font-size: 1.5em;
+        font-size: 20px;
     }
-    .projects:nth-child(1) {
-        grid-area: project1;
-        width: 100%;
-    }
-    
-    .projects:nth-child(2) {
-        grid-area: project2;
-        width: 100%;
-    }
- 
 }
-@media screen and (min-width:1025px) and  (max-width:1440px){
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) and (orientation:portrait) {
     #projects-div {
-        font-size: 1.5em;
+        font-size: 50px;
     }
-    .projects:nth-child(1) {
-        grid-area: project1;
-        width: 100%;
-    }
-    
-    .projects:nth-child(2) {
-        grid-area: project2;
-        width: 100%;
-    }
-  
 }
-@media screen and (min-width:1441px) and (max-width:2560px){
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
     #projects-div {
-        font-size: 2em;
+        font-size: 35px;
     }
-    .projects:nth-child(1) {
-        grid-area: project1;
-        width: 100%;
-    }
-    
-    .projects:nth-child(2) {
-        grid-area: project2;
-        width: 100%;
-    }
-  
 }
-@media screen and (max-width: 767px) and (orientation: landscape){
+@media screen and (min-width: 2561px) {
     #projects-div {
-        font-size: 0.8em;
+        font-size: 50px;
     }
-    .projects:nth-child(1) {
-        grid-area: project1;
+    .projects{
         width: 100%;
+        height: 100%;
     }
-    
-    .projects:nth-child(2) {
-        grid-area: project2;
-        width: 100%;
-    }
- 
 }
-@media screen and (min-width: 768px) and (max-width:1024) and (orientation: landscape){
+@media screen and (max-width: 767px) and (orientation: landscape) {
     #projects-div {
-        font-size: 0.8em;
+        font-size: 13px;
     }
-    .projects:nth-child(1) {
-        grid-area: project1;
+    .projects{
         width: 100%;
+        height: 50%;
     }
-    
-    .projects:nth-child(2) {
-        grid-area: project2;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #projects-div {
+        font-size: 20px;
+    }
+    .projects{
         width: 100%;
+        height: 80%;
     }
- 
 }
