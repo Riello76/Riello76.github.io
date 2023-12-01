@@ -51,7 +51,7 @@ header {
 }
 @media screen and (max-width: 320px) and (orientation:portrait) {
     #projects-div {
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
@@ -101,7 +101,7 @@ header {
 }
 @media screen and (max-width: 767px) and (orientation: landscape) {
     #projects-div {
-        font-size: 13px;
+        font-size: 12px;
     }
     .projects{
         width: 100%;
