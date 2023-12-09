@@ -10,36 +10,37 @@ body {
   box-sizing: border-box;
 }
 
+* {
+  text-align: center;
+}
+
 header {
   width: 99vw;
 }
 
 #page-title {
-  width: 50%;
+  width: 70%;
 }
 
 .moon {
-  width: 20%;
+  width: 25%;
 }
 
 .btn-group {
-  position: absolute;
-  top: 40%;
-  left: 1%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 98%;
-  height: 10%;
-  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
 }
 
 .btn-cv {
-  font-size: 2em;
   background-image: url(/homepages/curriculum/icons/bg-btn-cv.svg);
   background-position: center;
   background-size: cover;
   color: chartreuse;
+  font-size: 100%;
+  width: 10rem;
+  height: 1.5rem;
   box-shadow: 0px 0px 10px chartreuse;
   border-radius: 50%;
   transition: transform 0.3s;
@@ -52,33 +53,42 @@ header {
 }
 
 #div-cv {
-  position: absolute;
-  top: 50%;
-  width: 35%;
-  height: 40%;
-  font-size: 2em;
-  left: 1%;
   overflow: auto;
-  text-align: center;
+  width: 100%;
+  height: 50vh;
+}
+
+#div-cv::-webkit-scrollbar {
+  width: 12px;
+}
+
+#div-cv::-webkit-scrollbar-thumb {
+  background-color: chartreuse;
+}
+
+#div-cv::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
 .paragraph-cv {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.paragraph-cv a{
+
+.paragraph-cv a {
   color: white;
 }
-.paragraph-cv a:hover{
+
+.paragraph-cv a:hover {
   color: rgb(16, 102, 128);
 }
+
 #div-cv ul li {
   text-align: left;
   color: chartreuse;
 }
 
 #div-cv p {
-  text-align: left;
-  margin-left: 1vw;
+  width: 100%;
 }
 
 span {
@@ -88,18 +98,18 @@ span {
 
 #div-social-icons {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  position: relative;
+  justify-content: space-evenly;
 }
 
-
+.social-icons {
+  width: 15%;
+}
 
 #contact-icons {
   display: flex;
   justify-content: space-around;
   width: 99%;
-  height: 6vh;
+  height: 50px;
 }
 
 #contact-icons a {
@@ -107,549 +117,51 @@ span {
   width: 100%;
 }
 
-.homepages {
-  background-image: url(/homepages/curriculum/icons/homepage2.png);
+.a-contact {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
   cursor: pointer;
+}
+
+.homepages {
+  background-image: url(/homepages/curriculum/icons/homepage2.png);
 }
 
 .mailto {
   background-image: url(/homepages/curriculum/icons/mail2.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  cursor: pointer;
 }
 
 .whatsapp {
   background-image: url(/homepages/curriculum/icons/whatsapp2.png);
-  background-color: transparent;
-  cursor: pointer;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  cursor: pointer;
 }
 
 .telegram {
   background-image: url(/homepages/curriculum/icons/telegram2.png);
-  background-color: transparent;
-  cursor: pointer;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  cursor: pointer;
 }
 
 .phone {
   background-image: url(/homepages/curriculum/icons/phone2.png);
-  background-color: transparent;
-  cursor: pointer;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  cursor: pointer;
 }
 
 .linkedin {
   background-image: url(/homepages/curriculum/icons/linkedn2.png);
-  background-color: transparent;
-  cursor: pointer;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  cursor: pointer;
 }
 
-@media screen and (max-width:320px) {
-  header {
-    width: 99vw;
-  }
-
+@media screen and (max-width:768px) and (orientation:landscape) {
   #page-title {
-    width: 100%;
-  }
-
-  .moon {
     width: 50%;
   }
-
-  .btn-group {
-    top: 30%;
-    height: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0;
-  }
-
-  .btn-cv {
-    font-size: 0.7em;
-    border-radius: 0;
-    box-shadow: none;
-    width: 33.3%;
-  }
-
-  #div-cv {
-    top: 36%;
-    width: 99%;
-    height: 40%;
-    font-size: 0.9em;
-  }
-
-  .social-icons {
-    width: 7vw;
-
-  }
-
-  #contact-icons a {
-    width: 9vw;
+  .moon{
+    width: 15%;
   }
 }
-
-@media screen and (min-width:321px) and (max-width:375px) {
-  header {
-    width: 99vw;
-  }
-
+@media screen and (max-width:1024px) and (orientation:landscape) {
   #page-title {
-    width: 100%;
-  }
-
-  .moon {
     width: 50%;
   }
-
-  .btn-group {
-    top: 30%;
-    height: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0;
-  }
-
-  .btn-cv {
-    font-size: 0.7em;
-    border-radius: 0;
-    box-shadow: none;
-    width: 33.3%;
-  }
-
-
-  #div-cv {
-    top: 40%;
-    width: 99%;
-    height: 40%;
-    font-size: 0.9em;
-  }
-
-  .social-icons {
-    width: 7vw;
-  }
-
-  #contact-icons a {
-    width: 7vw;
-  }
-}
-
-@media screen and (min-width:376px) and (max-width:425px) {
-  header {
-    width: 99vw;
-  }
-
-  #page-title {
-    width: 100%;
-  }
-
-  .moon {
-    width: 50%;
-  }
-
-  .btn-group {
-    top: 30%;
-    height: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0;
-  }
-
-  .btn-cv {
-    font-size: 0.8em;
-    border-radius: 0;
-    box-shadow: none;
-    width: 33.3%;
-  }
-
-  #div-cv {
-    top: 40%;
-    width: 99%;
-    height: 40%;
-    font-size: 0.9em;
-  }
-
-  .social-icons {
-    width: 7vw;
-  }
-
-  #contact-icons a {
-    width: 7vw;
-  }
-}
-
-@media screen and (min-width:426px) and (max-width:768px) {
-  header {
-    width: 100vw;
-  }
-
-  #page-title {
-    width: 70%;
-  }
-
-  .moon {
-    width: 20%;
-  }
-
-  .btn-group {
-    flex-direction: column;
-    align-items: start;
-    left: 0;
-    top: 45%;
-    height: 5%;
-    gap: 0;
-  }
-
-  .btn-group button {
-    width: 19%;
-  }
-
-  .btn-cv {
-    position: relative;
-    left: 3%;
-    font-size: 0.9em;
-    border-radius: 20%;
-    box-shadow: none;
-  }
-
-  #div-cv {
-    top: 38%;
-    width: 50%;
-    height: 50%;
-    font-size: 1em;
-    left: 25%;
-  }
-  
-  .social-icons {
-    width: 4vw;
-  }
-
-  #contact-icons a {
-    width: 4vw;
-  }
-}
-
-@media screen and (min-width:769px) and (max-width:1024px) and (orientation:portrait) {
-  header {
-    width: 100vw;
-  }
-
-  #page-title {
-    width: 80%;
-  }
-
-  .moon {
-    width: 30%;
-  }
-
-  .btn-group {
-    flex-direction: column;
-    align-items: start;
-    left: 0;
-    top: 35%;
-    height: 5%;
-    gap: 1rem;
-  }
-
-  .btn-group button {
-    width: 20%;
-  }
-
-  .btn-cv {
-    position: relative;
-    background-color: black;
-    left: 3%;
-    font-size: 1em;
-    border-radius: 20%;
-    box-shadow: none;
-  }
-
-  #div-cv {
-    top: 33%;
-    width: 50%;
-    height: 50%;
-    font-size: 1em;
-    left: 25%;
-  }
-  
-  .social-icons {
-    width: 4vw;
-  }
-
-  #contact-icons a {
-    width: 3vw;
-  }
-}
-
-@media screen and (min-width:1025px) and (max-width:1440px) {
-  header {
-    width: 100vw;
-  }
-
-  #page-title {
-    width: 70%;
-  }
-
-  .moon {
-    width: 20%;
-  }
-
-  .btn-group {
-    flex-direction: column;
-    align-items: start;
-    left: 0;
-    top: 35%;
-    height: 9%;
-    gap: 1rem;
-  }
-
-  .btn-group button {
-    width: 20%;
-  }
-
-  .btn-cv {
-    position: relative;
-    left: 3%;
-    font-size: 1.3em;
-    border-radius: 20%;
-   
-  }
-
-  #div-cv {
-    top: 33%;
-    width: 50%;
-    height: 50%;
-    font-size: 1.2em;
-    left: 25%;
-  }
-  
-  .social-icons {
-    width: 2.5vw;
-  }
-
-  #contact-icons a {
-    width: 2vw;
-  }
-}
-
-@media screen and (min-width:1441px) and (max-width:2560px) {
-  header {
-    width: 100vw;
-  }
-
-  #page-title {
-    width: 65%;
-  }
-
-  .moon {
-    width: 20%;
-  }
-
-  .btn-group {
-    flex-direction: column;
-    align-items: start;
-    left: 0;
-    height: 9%;
-    gap: 1rem;
-  }
-
-  .btn-group button {
-    width: 20%;
-  }
-
-  .btn-cv {
-    position: relative;
-    left: 3%;
-    font-size: 2em;
-    border-radius: 20%;
-   
-  }
-
-  #div-cv {
-    top: 38%;
-    width: 50%;
-    height: 50%;
-    font-size: 1.5em;
-    left: 25%;
-  }
-  
-  .social-icons {
-    width: 2vw;
-  }
-
-  #contact-icons a {
-    width: 2vw;
-  }
-}
-@media screen and (min-width:2561px) {
-  header {
-    width: 100vw;
-  }
-
-  #page-title {
-    width: 60%;
-  }
-
-  .moon {
-    width: 20%;
-  }
-
-  .btn-group {
-    flex-direction: column;
-    align-items: start;
-    left: 0;
-    top: 45%;
-    height: 9%;
-    gap: 1rem;
-  }
-
-  .btn-group button {
-    width: 20%;
-  }
-
-  .btn-cv {
-    position: relative;
-    background-color: black;
-    left: 3%;
-    font-size: 2em;
-    border-radius: 20%;
-   
-  }
-
-  #div-cv {
-    top: 43%;
-    width: 30%;
-    height: 50%;
-    font-size: 2em;
-    left: 25%;
-  }
-  
-  .social-icons {
-    width: 2vw;
-  }
-
-  #contact-icons a {
-    width: 2vw;
-  }
-}
-@media screen and (max-width: 767px) and (orientation: landscape) {
-  header {
-    width: 99vw;
-  }
-
-  #page-title {
-    width: 70%;
-  }
-
-  .moon {
-    width: 20%;
-  }
-
-  .btn-group {
-    top: 45%;
-    height: 15%;
-    gap: 0;
-  }
-
-  .btn-group button {
-    width: 19%;
-  }
-
-  .btn-cv {
-    background-color: black;
-    font-size: 0.7em;
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  #div-cv {
-    top: 45%;
-    width: 40%;
-    height: 40%;
-    font-size: 0.8em;
-  }
-
-  .social-icons {
-    width: 3vw;
-  }
-  
-#div-social-icons{
-  position: relative;
-  bottom: 10px;
-}
-  #contact-icons a {
-    width: 5vw;
-  }
-}
-
-@media screen and (min-width: 769px) and  (max-width:1024px) and (orientation: landscape) {
-  header {
-    width: 100vw;
-  }
-
-  #page-title {
-    width: 70%;
-  }
-
-  .moon {
-    width: 20%;
-  }
-
-  .btn-group {
-    flex-direction: column;
-    align-items: start;
-    left: 0;
-    top: 45%;
-    height: 10%;
-    gap:0;
-  }
-
-  .btn-group button {
-    width: 19%;
-  }
-
-  .btn-cv {
-    position: relative;
-    left: 3%;
-    font-size: 0.8em;
-    border-radius: 20%;
-    box-shadow: none;
-  }
-
-  #div-cv {
-    top: 38%;
-    width: 40%;
-    height: 50%;
-    font-size: 0.9em;
-    left: 25%;
-  }
-  
-  .social-icons {
-    width: 3vw;
-  }
-
-  #contact-icons a {
-    width: 3vw;
+  .moon{
+    width: 15%;
   }
 }
