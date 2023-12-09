@@ -169,3 +169,19 @@ span {
     width: 15%;
   }
 }
+@media screen and (min-width:2560px) {
+  #page-title {
+    width: 60%;
+  }
+  .moon{
+    width: 20%;
+  }
+  .btn-cv{
+    width: 15rem;
+    height: 3rem;
+    font-size: 2em;
+  }
+  #div-cv{
+    font-size: 2em;
+  }
+}
