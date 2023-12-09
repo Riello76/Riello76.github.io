@@ -55,7 +55,7 @@ header {
 #div-cv {
   overflow: auto;
   width: 100%;
-  height: 50vh;
+  height: 45vh;
 }
 
 #div-cv::-webkit-scrollbar {
@@ -98,11 +98,11 @@ span {
 
 #div-social-icons {
   display: flex;
-  justify-content: space-evenly;
+
 }
 
 .social-icons {
-  width: 15%;
+  width: 13%;
   border-radius: 50%;
   transition: transform 0.3s;
 }
