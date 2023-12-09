@@ -1,9 +1,13 @@
 body {
     background-color: rgb(4, 43, 18);
+    display: flex;
+    flex-direction: column;
     margin: 0;
 }
 
 * {
+    justify-content: center;
+    align-items: center;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -21,24 +25,21 @@ header {
 
 #projects-div {
     display: grid;
-    grid-template-areas: "project1 project2";
+    grid-template-areas: "project1 project2"
+                         "project3";
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100%;
-    font-size: 2em;
     gap: 1rem;
-    min-width: 20rem;
-    min-height: 20rem;
+    border: 1px solid red;
 }
 
 .projects {
-    width: 100%;
     background-image: url(/homepages/img/notice-board.webp);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     box-shadow: -5px -5px 20px black;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .projects a {
@@ -49,76 +50,13 @@ header {
 .projects p {
     width: 90%;
 }
-.projects3 {
-  
- 
-}
-@media screen and (max-width: 320px) and (orientation:portrait) {
+@media screen and (max-width:320px) {
     #projects-div {
-        font-size: 13px;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
-
-@media screen and (min-width: 321px) and (max-width: 375px) and (orientation:portrait) {
+@media screen and (max-width:425px) {
     #projects-div {
-        font-size: 13px;
-    }
-}
-
-@media screen and (min-width: 376px) and (max-width: 425px) and (orientation:portrait) {
-    #projects-div {
-        font-size: 13px;
-    }
-}
-
-@media screen and (min-width: 426px) and (max-width: 768px) and (orientation:portrait) {
-    #projects-div {
-        font-size: 15px;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation:portrait) {
-    #projects-div {
-        font-size: 20px;
-    }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1440px) and (orientation:portrait) {
-    #projects-div {
-        font-size: 50px;
-    }
-}
-
-@media screen and (min-width: 1441px) and (max-width: 2560px) {
-    #projects-div {
-        font-size: 35px;
-    }
-}
-@media screen and (min-width: 2561px) {
-    #projects-div {
-        font-size: 50px;
-    }
-    .projects{
-        width: 100%;
-        height: 100%;
-    }
-}
-@media screen and (max-width: 767px) and (orientation: landscape) {
-    #projects-div {
-        font-size: 13px;
-    }
-    .projects{
-        width: 100%;
-        height: 50%;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    #projects-div {
-        font-size: 20px;
-    }
-    .projects{
-        width: 100%;
-        height: 80%;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
