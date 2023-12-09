@@ -23,7 +23,7 @@ header {
 }
 
 .moon {
-  width: 25%;
+  width: 22%;
 }
 
 .btn-group {
@@ -72,8 +72,8 @@ header {
 
 .paragraph-cv {
   background-color: rgba(0, 0, 0, 0.5);
+  width: 99%;
 }
-
 .paragraph-cv a {
   color: white;
 }
