@@ -23,7 +23,7 @@
 }
 
 .btns-nav:hover {
-    transform: scale(1.2);
+    transform: scale(0.9);
 }
 
 .btns-nav:nth-child(1) {
