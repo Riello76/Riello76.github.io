@@ -32,7 +32,6 @@ header {
     grid-template-columns: 32% 32% 32%;
     grid-template-rows: 100%;
     gap: 1rem;
-    border: 1px solid red;
 }
 
 .projects {
