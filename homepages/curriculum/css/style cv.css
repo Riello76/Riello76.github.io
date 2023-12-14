@@ -1,0 +1,187 @@
+body {
+  background-image: url(/homepages/curriculum/img/bg-cv.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  color: chartreuse;
+  box-sizing: border-box;
+}
+
+* {
+  text-align: center;
+}
+
+header {
+  width: 99vw;
+}
+
+#page-title {
+  width: 70%;
+}
+
+.moon {
+  width: 22%;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
+}
+
+.btn-cv {
+  background-image: url(/homepages/curriculum/icons/bg-btn-cv.svg);
+  background-position: center;
+  background-size: cover;
+  color: chartreuse;
+  font-size: 100%;
+  width: 10rem;
+  height: 1.5rem;
+  box-shadow: 0px 0px 10px chartreuse;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.btn-cv:hover,.social-icons:hover,#contact-icons a:hover {
+  color: red;
+  box-shadow: 0px 0px 10px red;
+  transform: scale(0.9);
+}
+
+#div-cv {
+  overflow: auto;
+  width: 100%;
+  height: 45vh;
+}
+
+#div-cv::-webkit-scrollbar {
+  width: 12px;
+}
+
+#div-cv::-webkit-scrollbar-thumb {
+  background-color: chartreuse;
+}
+
+#div-cv::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.paragraph-cv {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 99%;
+}
+.paragraph-cv a {
+  color: white;
+}
+
+.paragraph-cv a:hover {
+  color: rgb(16, 102, 128);
+}
+
+#div-cv ul li {
+  text-align: left;
+  color: chartreuse;
+}
+
+#div-cv p {
+  width: 100%;
+}
+
+span {
+  color: yellow;
+
+}
+
+#div-social-icons {
+  display: flex;
+
+}
+
+.social-icons {
+  width: 13%;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+#contact-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 99%;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+#contact-icons a {
+  height: 99%;
+  width: 3%;
+  border-radius: 50%;
+}
+
+.a-contact {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.homepages {
+  background-image: url(/homepages/curriculum/icons/homepage2.png);
+}
+
+.mailto {
+  background-image: url(/homepages/curriculum/icons/mail2.png);
+}
+
+.whatsapp {
+  background-image: url(/homepages/curriculum/icons/whatsapp2.png);
+}
+
+.telegram {
+  background-image: url(/homepages/curriculum/icons/telegram2.png);
+}
+
+.phone {
+  background-image: url(/homepages/curriculum/icons/phone2.png);
+}
+
+.linkedin {
+  background-image: url(/homepages/curriculum/icons/linkedn2.png);
+}
+
+@media screen and (max-width:768px) and (orientation:landscape) {
+  #page-title {
+    width: 50%;
+  }
+  .moon{
+    width: 15%;
+  }
+}
+@media screen and (max-width:1024px) and (orientation:landscape) {
+  #page-title {
+    width: 50%;
+  }
+  .moon{
+    width: 15%;
+  }
+}
+@media screen and (min-width:2560px) {
+  #page-title {
+    width: 60%;
+  }
+  .moon{
+    width: 20%;
+  }
+  .btn-cv{
+    width: 15rem;
+    height: 3rem;
+    font-size: 2em;
+  }
+  #div-cv{
+    font-size: 2em;
+  }
+}
