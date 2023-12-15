@@ -12,7 +12,7 @@ header{
    display: flex;
 }
 header img{
-   min-width: 40%;
+   width: 40%;
 }
 #main-div{
    display: flex;
