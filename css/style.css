@@ -13,36 +13,36 @@ body {
 
 @media screen and (max-width:320px) and (orientation:portrait) {
   body{
-   background-size: 100%;
+   background-size: 150%;
   }
 }
 
 @media screen and (min-width:321px) and (max-width:425px) and (orientation:portrait) {
    body{
-      background-size: 100%;
+      background-size: 150%;
      }
 }
 
 @media screen and (min-width:426px) and (max-width:768px) and (orientation:portrait) {
    body{
-      background-size: 100%;
+      background-size: 150%;
      }
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) and (orientation:portrait) {
    body{
-      background-size: 100%;
+      background-size: 150%;
      }
 }
 
 @media screen and (max-width:768px) and (orientation:landscape) {
    body{
-      background-size: 100%;
+      background-size: 150%;
      }
 }
 
 @media screen and (max-width:1024px) and (orientation:landscape) {
    body{
-      background-size: 100%;
+      background-size: 150%;
      }
 }
