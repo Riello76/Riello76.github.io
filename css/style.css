@@ -46,3 +46,8 @@ body {
       background-size: 150%;
      }
 }
+@media screen and (max-width:1440px) and (orientation:landscape) {
+   body{
+      background-size: 150%;
+     }
+}
