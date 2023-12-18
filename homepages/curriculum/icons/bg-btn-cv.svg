@@ -24,8 +24,8 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      inkscape:zoom="0.73228114"
-     inkscape:cx="324.32898"
-     inkscape:cy="196.64578"
+     inkscape:cx="323.64619"
+     inkscape:cy="197.32858"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
@@ -323,6 +323,76 @@
          operator="atop"
          id="feComposite1205" />
     </filter>
+    <filter
+       inkscape:label="Button"
+       inkscape:menu="Bevels"
+       inkscape:menu-tooltip="Soft bevel, slightly depressed middle"
+       style="color-interpolation-filters:sRGB;"
+       id="filter6"
+       x="-0.15478432"
+       y="-0.30856677"
+       width="1.3095686"
+       height="1.6171335">
+      <feGaussianBlur
+         stdDeviation="2.3"
+         in="SourceAlpha"
+         result="result0"
+         id="feGaussianBlur1" />
+      <feMorphology
+         in="SourceAlpha"
+         radius="6.6"
+         result="result1"
+         id="feMorphology1" />
+      <feGaussianBlur
+         stdDeviation="8.9"
+         in="result1"
+         id="feGaussianBlur3" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.3 0"
+         result="result91"
+         id="feColorMatrix4" />
+      <feComposite
+         in="result0"
+         operator="out"
+         result="result2"
+         in2="result91"
+         id="feComposite4" />
+      <feGaussianBlur
+         stdDeviation="1.7"
+         result="result4"
+         id="feGaussianBlur4" />
+      <feDiffuseLighting
+         surfaceScale="10"
+         id="feDiffuseLighting4">
+        <feDistantLight
+           azimuth="225"
+           elevation="45"
+           id="feDistantLight4" />
+      </feDiffuseLighting>
+      <feBlend
+         in2="SourceGraphic"
+         mode="multiply"
+         id="feBlend4" />
+      <feComposite
+         in2="SourceAlpha"
+         operator="in"
+         result="result3"
+         id="feComposite5" />
+      <feSpecularLighting
+         in="result4"
+         surfaceScale="5"
+         specularExponent="17.9"
+         id="feSpecularLighting5">
+        <feDistantLight
+           azimuth="225"
+           elevation="45"
+           id="feDistantLight5" />
+      </feSpecularLighting>
+      <feComposite
+         in2="result3"
+         operator="atop"
+         id="feComposite6" />
+    </filter>
   </defs>
   <g
      inkscape:label="Livello 1"
@@ -333,7 +403,7 @@
        style="opacity:0;fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:3.29999;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke markers fill"
        d="M -0.7262727,-0.7796518 H 508.72627 V 80.154652 H -0.7262727 Z" />
     <rect
-       style="opacity:1;mix-blend-mode:normal;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill;filter:url(#filter1205)"
+       style="opacity:1;mix-blend-mode:normal;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill;filter:url(#filter6)"
        id="rect1202"
        width="157.38028"
        height="78.945633"
