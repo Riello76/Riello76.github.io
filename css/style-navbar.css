@@ -49,22 +49,24 @@
 
 #menu-btn {
     background-image: url(/icons/btn-menu.svg);
-
 }
-
 
 #home-btn-back {
     background-image: url(/icons/btn-home.svg);
-
 }
 
 #curriculum-btn {
     background-image: url(/icons/btn-curriculum.svg);
-
 }
 
 #projects-btn {
     background-image: url(/icons/btn-projects.svg);
-
 }
 
+@media screen and (min-width:2560px) {
+    #btn-nav-div {
+        width: 400px;
+        height: 300px;
+    }
+    
+}
