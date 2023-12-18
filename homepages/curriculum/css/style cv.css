@@ -6,7 +6,7 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
-  color: chartreuse;
+  color: #80ff00;
   box-sizing: border-box;
 }
 
@@ -129,27 +129,27 @@ span {
 }
 
 .homepages {
-  background-image: url(/homepages/curriculum/icons/homepage2.png);
+  background-image: url(/homepages/curriculum/icons/homepage.svg);
 }
 
 .mailto {
-  background-image: url(/homepages/curriculum/icons/mail2.png);
+  background-image: url(/homepages/curriculum/icons/mail.svg);
 }
 
 .whatsapp {
-  background-image: url(/homepages/curriculum/icons/whatsapp2.png);
+  background-image: url(/homepages/curriculum/icons/whatsapp.svg);
 }
 
 .telegram {
-  background-image: url(/homepages/curriculum/icons/telegram2.png);
+  background-image: url(/homepages/curriculum/icons/telegram.svg);
 }
 
 .phone {
-  background-image: url(/homepages/curriculum/icons/phone2.png);
+  background-image: url(/homepages/curriculum/icons/phone.svg);
 }
 
 .linkedin {
-  background-image: url(/homepages/curriculum/icons/linkedn2.png);
+  background-image: url(/homepages/curriculum/icons/linkedn.svg);
 }
 
 @media screen and (max-width:768px) and (orientation:landscape) {
