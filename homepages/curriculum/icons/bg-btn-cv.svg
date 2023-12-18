@@ -324,15 +324,15 @@
          id="feComposite1205" />
     </filter>
     <filter
-       inkscape:label="Button"
+       inkscape:label="Dark Glass"
        inkscape:menu="Bevels"
-       inkscape:menu-tooltip="Soft bevel, slightly depressed middle"
+       inkscape:menu-tooltip="Illuminated glass effect with light coming from beneath"
        style="color-interpolation-filters:sRGB;"
        id="filter6"
-       x="-0.15478432"
-       y="-0.30856677"
-       width="1.3095686"
-       height="1.6171335">
+       x="-0.23103275"
+       y="-0.46057011"
+       width="1.4620655"
+       height="1.9211402">
       <feGaussianBlur
          stdDeviation="2.3"
          in="SourceAlpha"
@@ -391,7 +391,71 @@
       <feComposite
          in2="result3"
          operator="atop"
-         id="feComposite6" />
+         id="feComposite6"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix6" />
+      <feBlend
+         id="feBlend6"
+         in2="fbSourceGraphic"
+         result="result1"
+         mode="screen"
+         in="fbSourceGraphic" />
+      <feGaussianBlur
+         id="feGaussianBlur6"
+         stdDeviation="2"
+         result="result6" />
+      <feComposite
+         id="feComposite7"
+         operator="xor"
+         in="result6"
+         in2="result1"
+         result="result7" />
+      <feComposite
+         id="feComposite8"
+         result="result4"
+         in="result7"
+         operator="xor"
+         in2="result7" />
+      <feGaussianBlur
+         id="feGaussianBlur8"
+         result="result3"
+         stdDeviation="3"
+         in="result4" />
+      <feSpecularLighting
+         id="feSpecularLighting8"
+         result="result5"
+         specularExponent="55"
+         specularConstant="1.5"
+         surfaceScale="6"
+         in="result3">
+        <fePointLight
+           id="fePointLight8"
+           z="20000"
+           y="-8000"
+           x="-5000" />
+      </feSpecularLighting>
+      <feComposite
+         id="feComposite9"
+         in="result3"
+         k3="1"
+         k2="1.5"
+         operator="arithmetic"
+         in2="fbSourceGraphic"
+         result="result92" />
+      <feComposite
+         id="feComposite10"
+         in="result5"
+         operator="atop"
+         in2="result92"
+         result="result93" />
+      <feBlend
+         id="feBlend10"
+         mode="multiply"
+         in2="result93" />
     </filter>
   </defs>
   <g
