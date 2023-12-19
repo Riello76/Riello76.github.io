@@ -62,7 +62,12 @@
 #projects-btn {
     background-image: url(/icons/btn-projects.svg);
 }
-
+@media screen and (min-width:1440px) and (max-width:2560px){
+    #btn-nav-div {
+        width: 350px;
+        height: 250px;
+    }
+}
 @media screen and (min-width:2560px) {
     #btn-nav-div {
         width: 400px;
