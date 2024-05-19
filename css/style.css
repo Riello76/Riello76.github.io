@@ -11,6 +11,11 @@ body {
    position: absolute;
    top: 0;
 }
+h1{
+   font-size: 200px;
+  color: #FFA500;
+
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
    .logo {
       right: 0;
