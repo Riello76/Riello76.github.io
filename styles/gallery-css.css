@@ -357,7 +357,7 @@ ul::-webkit-scrollbar-thumb {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .header-grid {
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 33% 33% 33%;
     margin-bottom: 2em;
   }
   .header-col-1 {
