@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="../style/graphics.css">
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header-grid">
+    <div class="header-col-1">
+        <img tabindex="1" class="logo" src="/images/logo.svg" alt="Logo" title="Logo">
+    </div>
+    <div class="header-col-2">
+        <img tabindex="2" class="title" src="/images/title.svg" alt="Title" title="Page title">
+    </div>
+    <!-- Navigation buttons -->
+    <nav class="header-col-3 nav-buttons">
+        <button tabindex="3" aria-label="Home - Link to Home Page" class="button home-btn home-btn-active" data-url="/index.html"></button>
+        <button tabindex="4" aria-label="CV - Link to Curriculum Page" class="button cv-btn cv-btn-active" data-url="/pages/curriculum/curriculum.html"></button>
+        <button tabindex="5" aria-label="Gallery - Link to Gallery Page" class="button gallery-btn gallery-btn-active" data-url="/pages/gallery/gallery.html"></button>
+        <button tabindex="6" aria-label="Websites - Link to Websites Page" class="button websites-btn websites-btn-active" data-url="/pages/websites/websites.html"></button>
+    </nav>
+</header>
+    </header>
+    <!-- Main content -->
+    <main class="main-grid">
+        <section>
+            <h2>section 1</h2>
+          
+            <div>
+                <img src="../icons/right-arrow.svg" alt="right arrow icon">
+                <img src="../icons/left-arrow.svg" alt="left arrow icon">
+                <img src="../icons/download.svg" alt="download icon">
+                <img src="../icons/lens.svg" alt="lens icon">
+                <img src="../icons/mail.svg" alt="mail icon">
+                <img src="../icons/linkedIn.svg" alt="linkedIn icon">
+                <img src="../icons/github.svg" alt="github icon">
+                <img src="../icons/discord.svg" alt="discord icon">
+                <img src="../icons/telegram.svg" alt="telegram icon">
+                <img src="../icons/whatsapp.svg" alt="whatsapp icon">
+                <img src="../icons/youtube.svg" alt="youtube icon">
+                <img src="../icons/twitch.svg" alt="twitch icon">
+                <img src="../icons/trovo.svg" alt="trovo icon">
+                <img src="../icons/home.svg" alt="home icon">
+            </div>
+        </section>
+        <section>
+            <h2>section 2</h2>
+          <div>
+
+          </div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer class="footer-grid">
+        <div class="footer-col-1">
+            <!-- Footer image -->
+            <img class="footer-col-1-img" tabindex="0" aria-label="Gaspare Tocci" src="/images/bg-footer.svg"
+                alt="Gaspare Tocci" title="my name">
+        </div>
+
+        <div class="footer-col-2">
+            <!-- Links to social media and contact -->
+            <a aria-label="My LinkedIn page" href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank"
+                title="LinkedIn"><img class="footer-icon" src="/icons/linkedIn.svg" alt="LinkedIn"></a>
+            <a aria-label="my GitHub page" href="https://github.com/Riello76" target="_blank" title="GitHub"><img
+                    class="footer-icon" src="/icons/github.svg" alt="GitHub"></a>
+            <a aria-label="Email" href="mailto:gaspare_tocci@yahoo.it" title="Write me"><img class="footer-icon"
+                    src="/icons/mail.svg" alt="Email"></a>
+                    <a aria-label="Download CV" href="./files/Gaspare Tocci CV(IT).pdf" download="Gaspare Tocci CV" title="Download CV"><img class="footer-icon" src="/icons/download.svg" alt="Curriculum download"></a>
+        </div>
+    </footer>
+    <!-- JavaScript for button functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const url = this.dataset.url;
+                    if (url) {
+                        window.location.href = url;
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
