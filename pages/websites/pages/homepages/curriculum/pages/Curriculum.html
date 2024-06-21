@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Curriculum</title><link rel="stylesheet" href="/css/style.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script></head><body id="body-cv"><img class="logo" src="/icons/LOGO.png" alt="Logo Icon" width="100px" height="100px"><h1><span style="color: rgb(255, 127, 39);">C</span><span style="color: rgb(0, 168, 243);">urriculum</span></h1><div class="central-cv-div"><button id="btn1" class=" cv-btn"><span style="color: rgb(255, 127, 39);">P</span>rofile</button><button id="btn2" class="cv-btn"><span style="color: rgb(255, 127, 39);">W</span>ork <span style="color: rgb(255, 127, 39);">E</span>xperience</button><button id="btn3" class=" cv-btn"><span style="color: rgb(255, 127, 39);">K</span>ey <span style="color: rgb(255, 127, 39);">S</span>kills</button><button id="btn4" class=" cv-btn"><span style="color: rgb(255, 127, 39);">E</span>ducation</button><button id="btn5" class=" cv-btn"><span style="color: rgb(255, 127, 39);">H</span>obbies</button><button id="btn6" class=" cv-btn"><span style="color: rgb(255, 127, 39);">M</span>ore <span style="color: rgb(255, 127, 39);">A</span>bout <span style="color: rgb(255, 127, 39);">M</span>e</button><iframe id="frame-profile" src="/pages/Profile.html" frameborder="0"></iframe><iframe id="frame-work-experience" src="/pages/Work Exerience.html" frameborder="0"></iframe><iframe id="frame-key-skills" src="/pages/Key Skills.html" frameborder="0"></iframe><iframe id="frame-education" src="/pages/Education.html" frameborder="0"></iframe><iframe id="frame-hobbies" src="/pages/Hobbies.html" frameborder="0"></iframe><iframe id="frame-more-about-me" src="/pages/More Abou Me.html" frameborder="0"></iframe></div><script>//profile iframe
+var iframeProfile=document.getElementById("frame-profile"); // your button ID
+const button1=document.getElementById("btn1");
+button1.addEventListener("click", function (){ //close all other iframes closeOtherIframes(iframeProfile); //toggle iframe display if (iframeProfile.style.display==="block"){ iframeProfile.style.display="none";} else{ iframeProfile.style.display="block";}}); //work experience iframe
+var iframeWorkExperience=document.getElementById("frame-work-experience"); // your button ID
+const button2=document.getElementById("btn2");
+button2.addEventListener("click", function (){ //close all other iframes closeOtherIframes(iframeWorkExperience); //toggle iframe display if (iframeWorkExperience.style.display==="block"){ iframeWorkExperience.style.display="none";} else{ iframeWorkExperience.style.display="block";}}); //key skills iframe
+var iframeKeySkills=document.getElementById("frame-key-skills"); // your button ID
+const button3=document.getElementById("btn3");
+button3.addEventListener("click", function (){ //close all other iframes closeOtherIframes(iframeKeySkills); //toggle iframe display if (iframeKeySkills.style.display==="block"){ iframeKeySkills.style.display="none";} else{ iframeKeySkills.style.display="block";}}); //education iframe
+var iframeEducation=document.getElementById("frame-education"); // your button ID
+const button4=document.getElementById("btn4");
+button4.addEventListener("click", function (){ //close all other iframes closeOtherIframes(iframeEducation); //toggle iframe display if (iframeEducation.style.display==="block"){ iframeEducation.style.display="none";} else{ iframeEducation.style.display="block";}});
+//hobbies iframe
+var iframeHobbies=document.getElementById("frame-hobbies"); // your button ID
+const button5=document.getElementById("btn5");
+button5.addEventListener("click", function (){ //close all other iframes closeOtherIframes(iframeHobbies); //toggle iframe display if (iframeHobbies.style.display==="block"){ iframeHobbies.style.display="none";} else{ iframeHobbies.style.display="block";}});
+//more about me iframe
+var iframeMoreAboutMe=document.getElementById("frame-more-about-me"); // your button ID
+const button6=document.getElementById("btn6");
+button6.addEventListener("click", function (){ //close all other iframes closeOtherIframes(iframeMoreAboutMe); //toggle iframe display if (iframeMoreAboutMe.style.display==="block"){ iframeMoreAboutMe.style.display="none";} else{ iframeMoreAboutMe.style.display="block";}});
+//function to close all other iframes
+function closeOtherIframes(iframe){ //get all iframes var iframes=document.querySelectorAll("iframe"); //loop through iframes and close all except the current iframe for (var i=0; i < iframes.length; i++){ if (iframes[i] !==iframe){ iframes[i].style.display="none";}}} </script></body></html>
