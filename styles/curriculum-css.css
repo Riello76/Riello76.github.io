@@ -18,148 +18,148 @@ html {
     rgba(0, 255, 255, 0.25),
     transparent,
     transparent
-  );
-  background-color: black;
+  ); /* Background gradient with transparent and light blue colors */
+  background-color: black; /* Fallback background color */
   display: flex;
   flex-direction: column;
 }
 
 /* Variables for Colors and Spacing */
 :root {
-  --header-padding: 20px;
-  --header-bg-color: black;
-  --header-color: white;
-  --gap: 20px;
-  --main-color: #07f7f7;
-  --main-color-opacity: rgba(7, 247, 247, 0.6);
-  --h2-color: white;
-  --border-h2: 1px solid white;
-  --width-h2: 100%;
-  --font-weight-h2: bold;
-  --font-size-h2: 1.2em;
-  --border-radius: 25px;
-  --font-size-p: 1.2em;
-  --font-size-span: 1em;
-  --height-p: 400px;
-  --padding-p: 10px;
-  --line-height-p: 25px;
-  --footer-padding: 10px 20px;
+  --header-padding: 20px; /* Padding for the header */
+  --header-bg-color: black; /* Background color for the header */
+  --header-color: white; /* Text color for the header */
+  --gap: 20px; /* Spacing between elements */
+  --main-color: #07f7f7; /* Main color */
+  --main-color-opacity: rgba(7, 247, 247, 0.6); /* Main color with opacity */
+  --h2-color: white; /* Heading 2 text color */
+  --border-h2: 1px solid white; /* Border for Heading 2 */
+  --width-h2: 100%; /* Width for Heading 2 */
+  --font-weight-h2: bold; /* Font weight for Heading 2 */
+  --font-size-h2: 1.2em; /* Font size for Heading 2 */
+  --border-radius: 25px; /* Border radius */
+  --font-size-p: 1.1em; /* Font size for paragraphs */
+  --font-size-span: 1em; /* Font size for spans */
+  --height-p: 21em; /* Height for paragraphs */
+  --padding-p: 10px; /* Padding for paragraphs */
+  --line-height-p: 25px; /* Line height for paragraphs */
+  --footer-padding: 10px 20px; /* Padding for the footer */
 }
 
 /* Header styles */
 .header-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr; /* Three columns for the header */
   align-items: center;
   justify-items: center;
 }
 
 .header-col-1 {
-  width: 50%;
+  width: 50%; /* Width of the first column in the header */
 }
 
 .header-col-2 {
-  grid-column: span 2;
-  width: 100%;
+  grid-column: span 2; /* Spanning across two columns */
+  width: 100%; /* Full width */
 }
 
 .header-col-3 {
-  grid-column: span 3;
+  grid-column: span 3; /* Spanning across all three columns */
 }
 
 .logo {
-  width: 70%;
-  height: auto;
-  box-shadow: 0px 0px 30px var(--header-bg-color);
-  border-radius: 100%;
+  width: 70%; /* Width of the logo */
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 0px 0px 30px var(--header-bg-color); /* Box shadow with header background color */
+  border-radius: 100%; /* Border radius for a circular shape */
 }
 
 .title {
-  width: 80%;
-  height: auto;
+  width: 80%; /* Width of the title */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .nav-buttons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--gap);
+  justify-content: center; /* Center align buttons */
+  gap: var(--gap); /* Spacing between buttons */
 }
 
 .button {
-  background: transparent no-repeat center/cover;
-  width: 13em;
-  height: 4em;
-  cursor: pointer;
-  transition: transform 0.1s ease-in-out;
-  border: 0;
+  background: transparent no-repeat center/cover; /* Button background styling */
+  width: 13em; /* Button width */
+  height: 4em; /* Button height */
+  cursor: pointer; /* Cursor style */
+  transition: transform 0.1s ease-in-out; /* Transition effect */
+  border: 0; /* No border */
 }
 
 .nav-buttons .button:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Scale effect on hover */
 }
 
 .home-btn {
-  background-image: url(/images/home-btn.svg);
+  background-image: url(/images/home-btn.svg); /* Background image for Home button */
 }
 
 .cv-btn {
-  background-image: url(/images/cv-btn.svg);
+  background-image: url(/images/cv-btn.svg); /* Background image for CV button */
 }
 
 .cv-btn-active {
-  background-image: url(/images/cv-btn-active.svg);
+  background-image: url(/images/cv-btn-active.svg); /* Background image for active CV button */
 }
 
 .gallery-btn {
-  background-image: url(/images/gallery-btn.svg);
+  background-image: url(/images/gallery-btn.svg); /* Background image for Gallery button */
 }
 
 .websites-btn {
-  background-image: url(/images/sites-btn.svg);
+  background-image: url(/images/sites-btn.svg); /* Background image for Websites button */
 }
 
-/* Main section styles */
-.main-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
+/* Carousel container */
+#carousel-container {
+  width: 300px; /* Visible container width */
+  min-height: 420px; /* Visible container height */
+  overflow: hidden; /* Hide excess slides */
+  margin: 0 auto; /* Center the carousel */
+  border: 1px solid black; /* Optional: border for the container */
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
 
-.main-grid > section {
-  display: flex;
-  flex-wrap: wrap;
-  align-self: center;
-  padding: var(--gap);
-  background-color: transparent;
-  max-width: 94%;
-  min-height: 300px;
+/* Carousel */
+#carousel {
+  width: 1500px; /* Total width of all slides (300px * 5) */
+  height: 300px; /* Slide height */
+  transition: transform 1s ease-in-out; /* Smooth transition */
+  display: flex; /* Flexbox layout */
 }
-
-.main-grid > section > h2 {
+#carousel h2 {
   width: var(--width-h2);
   text-align: center;
   font-weight: var(--font-weight-h2);
   font-size: var(--font-size-h2);
   border-radius: var(--border-radius) var(--border-radius) 0 0;
-  background: black url(/images/bg-label.svg) center / 55em no-repeat;
+  background: var(--header-bg-color) url(/images/bg-label.svg) center / 40em
+    no-repeat;
   color: var(--h2-color);
-  box-shadow: 0px 10px 15px white;
+  box-shadow: 0px 10px 15px var(--h2-color);
   margin-bottom: 1em;
   animation: light-h2 6s infinite;
 }
-
 @keyframes light-h2 {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 10px 15px white;
   }
   50% {
     box-shadow: 0 10px 15px rgba(255, 255, 255, 0.662);
   }
 }
-
-.main-grid > section > p,
-.main-grid > section > ul {
+#carousel p,ul {
   font-size: var(--font-size-p);
   overflow: auto;
   box-shadow: 0 0 10px var(--h2-color);
@@ -176,7 +176,6 @@ html {
     );
   animation: light-p 6s infinite;
 }
-
 @keyframes light-p {
   0%, 100% {
     background: rgba(255, 255, 255, 0);
@@ -186,7 +185,19 @@ html {
   }
 }
 
-
+/* Individual slides */
+#carousel-one,
+#carousel-two,
+#carousel-three,
+#carousel-four,
+#carousel-five {
+  width: 300px; /* Slide width */
+  height: 300px; /* Slide height */
+  background-color: transparent;
+  flex: 0 0 auto; /* Non-flexible, fixed size */
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
 .span-word {
   color: var(--main-color);
   font-size: var(--font-size-p);
@@ -200,17 +211,32 @@ html {
   margin-top: 1em;
 }
 
-.main-grid > section > p::-webkit-scrollbar,
-.main-grid > section > ul::-webkit-scrollbar {
+p::-webkit-scrollbar,
+ul::-webkit-scrollbar {
   width: 10px;
 }
 
-.main-grid > section > p::-webkit-scrollbar-thumb,
-.main-grid > section > ul::-webkit-scrollbar-thumb {
+p::-webkit-scrollbar-thumb,
+ul::-webkit-scrollbar-thumb {
   background-color: var(--main-color-opacity);
   border-radius: var(--border-radius);
 }
 
+/* Button container */
+#buttons {
+  text-align: center; /* Center align buttons */
+  margin-top: 20px; /* Top margin for separation from content above */
+}
+#button-left,#button-right{
+  background-color: transparent;
+  border: none;
+  margin: 1rem;
+  width: 9em;
+  cursor: pointer;
+}
+#button-left:hover,#button-right:hover{
+  transform: scale(1.4);
+}
 /* Footer styles */
 .footer-grid {
   display: grid;
