@@ -135,7 +135,7 @@ html {
   width: 1500px; /* Total width of all slides (300px * 5) */
   height: 300px; /* Slide height */
   transition: transform 1s ease-in-out; /* Smooth transition */
-  display: flex; /* Flexbox layout */
+  display: flex;
 }
 #carousel h2 {
   width: var(--width-h2);
