@@ -149,7 +149,7 @@ html {
   font-size: var(--font-size-h2);
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   background: black url(../images/bg-label.svg) center / 55em no-repeat;
-  color: var(--h2-color);
+  color: var(--main-color);
   box-shadow: 0 10px 15px white;
   margin-bottom: 1em;
   animation: light-h2 6s infinite;
