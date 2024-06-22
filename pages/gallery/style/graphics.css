@@ -121,16 +121,20 @@ background-image: url(/images/home-btn-active.svg);
   justify-items: center;
 }
 
-.main-grid > section {
+.main-grid > section > div{
   display: flex;
   flex-wrap: wrap;
-  align-self: center;
-  padding: var(--gap);
+  justify-content: center;
   background-color: transparent;
-  max-width: 92%;
+  max-width: 100%;
   min-height: 300px;
+  overflow: auto;
 }
-
+.main-grid > section > div > img{
+  height: 2rem;
+  margin: 0.3rem;
+  flex: 0 1 auto;
+}
 .main-grid > section > h2 {
   border: var(--border-h2);
   width: var(--width-h2);
