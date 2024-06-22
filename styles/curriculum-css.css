@@ -313,10 +313,8 @@ ul::-webkit-scrollbar-thumb {
   #carousel-container {
     width: 20rem;
   }
-  .footer-grid {
-    grid-template-columns: 1fr;
-    padding: 0;
-    margin-top: 1em;
+#carousel p,ul {
+  height:45vh;
   }
 
   .footer-col-1 {
