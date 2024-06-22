@@ -121,7 +121,7 @@ html {
 
 /* Carousel container */
 #carousel-container {
-  width: 300px; /* Visible container width */
+  width: 30rem; /* Visible container width */
   min-height: 420px; /* Visible container height */
   overflow: hidden; /* Hide excess slides */
   margin: 0 auto; /* Center the carousel */
@@ -132,10 +132,10 @@ html {
 
 /* Carousel */
 #carousel {
-  width: 1500px; /* Total width of all slides (300px * 5) */
-  height: 300px; /* Slide height */
+  width: 100%; /* Total width of all slides (300px * 5) */
+  height: auto; /* Slide height */
   transition: transform 1s ease-in-out; /* Smooth transition */
-  display: flex;
+  display: flex; 
 }
 #carousel h2 {
   width: var(--width-h2);
@@ -164,6 +164,7 @@ html {
   overflow: auto;
   box-shadow: 0 0 10px var(--h2-color);
   color: var(--h2-color);
+  width: 100%;
   height: var(--height-p);
   padding: var(--padding-p);
   line-height: var(--line-height-p);
@@ -191,7 +192,7 @@ html {
 #carousel-three,
 #carousel-four,
 #carousel-five {
-  width: 300px; /* Slide width */
+  width: 100%; /* Slide width */
   height: 300px; /* Slide height */
   background-color: transparent;
   flex: 0 0 auto; /* Non-flexible, fixed size */
