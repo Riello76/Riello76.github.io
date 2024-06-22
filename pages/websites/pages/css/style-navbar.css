@@ -1,0 +1,107 @@
+#btn-nav-div {
+  display: grid;
+  position: absolute;
+  grid-template-areas:
+    ". new-portfolio-back ."
+    ". curriculum ."
+    "projects menu home";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.btns-nav,
+.new-portfolio-back{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 8rem;
+  height: 8rem;
+  transition: transform 0.3s ease;
+}
+
+.btns-nav:hover,
+.new-portfolio-back:hover {
+  transform: scale(0.9);
+}
+
+#menu-btn {
+  grid-area: menu;
+  background-image: url(../icons/btn-menu.svg);
+  bottom: 0;
+}
+
+#home-btn-back {
+  grid-area: home;
+  background-image: url(../icons/btn-home.svg);
+}
+
+#curriculum-btn {
+  grid-area: curriculum;
+  background-image: url(../icons/btn-curriculum.svg);
+}
+
+#projects-btn {
+  grid-area: projects;
+  background-image: url(../icons/btn-projects.svg);
+}
+
+.new-portfolio-back {
+  grid-area: new-portfolio-back;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #btn-nav-div {
+  width: 100%;
+  height: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  #btn-nav-div {
+    width: 40%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  #btn-nav-div {
+    width: 40%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1439.98px) {
+  #btn-nav-div {
+    width: 100%;
+  height: auto;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  #btn-nav-div {
+    width: 20%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 2560px) {
+  #btn-nav-div {
+    width: 20%;
+    height: auto;
+  }
+  .btns-nav {
+    width: 15rem;
+    height:15rem;
+  }
+  .new-portfolio-back {
+    width: 15rem; 
+    height: 15rem;
+}
+.new-portfolio-back img{
+  width: 100%;
+  height: 100%;
+}
+}
