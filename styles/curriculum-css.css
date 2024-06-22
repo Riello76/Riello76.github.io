@@ -36,13 +36,13 @@ html {
   --border-h2: 1px solid white; /* Border for Heading 2 */
   --width-h2: 100%; /* Width for Heading 2 */
   --font-weight-h2: bold; /* Font weight for Heading 2 */
-  --font-size-h2: 1.2em; /* Font size for Heading 2 */
+  --font-size-h2: 1.2rem; /* Font size for Heading 2 */
   --border-radius: 25px; /* Border radius */
-  --font-size-p: 1.1em; /* Font size for paragraphs */
-  --font-size-span: 1em; /* Font size for spans */
-  --height-p: 21em; /* Height for paragraphs */
-  --padding-p: 10px; /* Padding for paragraphs */
-  --line-height-p: 25px; /* Line height for paragraphs */
+  --font-size-p: 1.1rem; /* Font size for paragraphs */
+  --font-size-span: 1rem; /* Font size for spans */
+  --height-p: 21rem; /* Height for paragraphs */
+  --padding-p: 1.3rem; /* Padding for paragraphs */
+  --line-height-p: 1.5rem; /* Line height for paragraphs */
   --footer-padding: 10px 20px; /* Padding for the footer */
 }
 
@@ -165,7 +165,7 @@ html {
   box-shadow: 0 0 10px var(--h2-color);
   color: var(--h2-color);
   width: 100%;
-  height: var(--height-p);
+  height:45vh;
   padding: var(--padding-p);
   line-height: var(--line-height-p);
   word-break: break-all;
@@ -310,10 +310,9 @@ ul::-webkit-scrollbar-thumb {
     padding: 0;
     margin-bottom: 2em;
   }
-#carousel {
-  width: 50%;
-}
-
+  #carousel-container {
+    width: 20rem;
+  }
   .footer-grid {
     grid-template-columns: 1fr;
     padding: 0;
@@ -525,7 +524,21 @@ ul::-webkit-scrollbar-thumb {
     font-size: x-large;
     min-height: 50vh;
   }
-
+  #carousel-container {
+    width: 50rem;
+    height: 37rem;
+  }
+  #carousel-container h2{
+    font-size: 2rem;
+  }
+  #carousel-container p,ul,.span-word{
+    line-height: 2rem;
+    font-size: 2rem;
+  }
+  #button-left img,#button-right img{
+    margin: 1rem;
+    width: 5em;
+  }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
