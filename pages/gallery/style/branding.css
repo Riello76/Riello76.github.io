@@ -133,7 +133,7 @@ html {
   justify-content: center;
   padding: var(--gap);
   background-color: transparent;
-  max-width: 92%;
+  max-width: 100%;
   min-height: 300px;
 }
 
@@ -200,8 +200,8 @@ html {
 .main-grid > section > div > img {
   width: 100%;
   transition: transform 0.4s ease-in-out;
-}
 
+}
 .main-grid > section > div::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -345,6 +345,7 @@ html {
     grid-template-columns: 1fr;
   }
   .main-grid > section {
+    width: 50%;
     padding: 0;
     margin-bottom: 2em;
   }
@@ -400,15 +401,14 @@ html {
   }
 
   .main-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
   }
   .main-grid > section {
     padding: 0;
     margin-bottom: 2em;
   }
-  .main-grid > section > div > img {
-    width: 40%;
-  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     padding: 0;
@@ -460,14 +460,12 @@ html {
   }
 
   .main-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
   }
   .main-grid > section {
     padding: 0;
     margin-bottom: 2em;
-  }
-  .main-grid > section > div > img {
-    width: 40%;
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
@@ -521,7 +519,8 @@ html {
   }
 
   .main-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
   }
   .main-grid > section {
     padding: 0;
@@ -535,9 +534,6 @@ html {
   .main-grid > section > div{
     justify-content: center;
     height: 720px;
-  }
-  .main-grid > section> div> img{
-    width: 100%;
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
