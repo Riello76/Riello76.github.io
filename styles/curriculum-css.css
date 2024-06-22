@@ -145,7 +145,7 @@ html {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   background: var(--header-bg-color) url(/images/bg-label.svg) center / 40em
     no-repeat;
-  color: var(--h2-color);
+  color: var(--main-color);
   box-shadow: 0px 10px 15px var(--h2-color);
   margin-bottom: 1em;
   animation: light-h2 6s infinite;
