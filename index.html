@@ -7,104 +7,179 @@
     <meta name="description"
         content="Gaspare Tocci's portfolio as a web designer and developer. Discover my projects and skills.">
     <meta name="keywords"
-        content="web design, web development, portfolio, HTML, CSS, JavaScript, Inkscape, Figma, Filmora, PowerPoint, Gimp">
+        content="web design, web development, portfolio, HTML, CSS, JavaScript,Inkscape,Figma,Filmora,PowerPoint,Gimp">
     <meta name="author" content="Gaspare Tocci">
     <meta name="robots" content="index, follow">
     <title>Gaspare Tocci's Portfolio</title>
     <!-- Link to external stylesheet -->
-    <link rel="stylesheet" href="/styles/index-css.css">
+    <link rel="stylesheet" href="/styles/curriculum-css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <!-- Link to favicon -->
     <link rel="icon" href="/icons/favicon.svg" type="image/x-icon">
-    <!-- Preconnect links -->
-    <link rel="preconnect" href="https://www.youtube.com">
-    <link rel="preconnect" href="https://www.google.com">
 </head>
 
 <body>
     <!-- Header -->
     <header class="header-grid">
         <div class="header-col-1">
+            <!-- Logo -->
             <img tabindex="1" class="logo" src="/images/logo.svg" alt="logo" title="logo">
         </div>
         <div class="header-col-2">
+            <!-- Title -->
             <img tabindex="2" class="title" src="/images/title.svg" alt="title" title="Page title">
         </div>
-        <!-- Navigation buttons -->
-        <nav class="header-col-3 nav-buttons">
-            <button tabindex="3" aria-label="Home - Link to Home Page" class="button home-btn home-btn-active"
-                data-url="/index.html"></button>
-            <button tabindex="4" aria-label="CV - Link to Curriculum Page" class="button cv-btn cv-btn-active"
-                data-url="/pages/curriculum/curriculum.html"></button>
-            <button tabindex="5" aria-label="Gallery - Link to Gallery Page"
-                class="button gallery-btn gallery-btn-active" data-url="/pages/gallery/gallery.html"></button>
-            <button tabindex="6" aria-label="Websites - Link to Websites Page"
-                class="button websites-btn websites-btn-active" data-url="/pages/websites/websites.html"></button>
-        </nav>
+        <div class="header-col-3">
+            <!-- Navigation buttons -->
+            <nav class="header-col-3 nav-buttons">
+                <button tabindex="3" aria-label="Home - Link to Home Page" class="button home-btn home-btn-active"
+                    data-url="/index.html"></button>
+                <button tabindex="4" aria-label="CV - Link to Curriculum Page" class="button cv-btn cv-btn-active"
+                    data-url="/pages/curriculum/curriculum.html"></button>
+                <button tabindex="5" aria-label="Gallery - Link to Gallery Page"
+                    class="button gallery-btn gallery-btn-active" data-url="/pages/gallery/gallery.html"></button>
+                <button tabindex="6" aria-label="Websites - Link to Websites Page"
+                    class="button websites-btn websites-btn-active" data-url="/pages/websites/websites.html"></button>
+            </nav>
+        </div>
     </header>
-    <!-- Main content -->
-    <main class="main-grid">
+
+    <!-- Main Content -->
+    <main>
         <section>
-            <h2 tabindex="0" aria-label="About Me">About me!</h2>
-            <!-- Paragraph about the author -->
-            <p tabindex="0" aria-label="Description of my experience">
-                <span class="span-sentence">Welcome to my portfolio, let me introduce myself! My name is Gaspare Tocci,
-                    and I am Italian.</span>
-                <span class="span-sentence">I have a great passion for web design and development. I am a self-taught
-                    person who, at every opportunity, follows any course that can improve my knowledge and give me new
-                    points of view. I like working in a team and achieving the goal together in the best way.</span>
-                <span class="span-sentence">This is my first portfolio, but I have my own idea of what I would like: a
-                    site that reflects sustainable web design as much as possible, but without depriving the visitor of
-                    a beautiful experience, with the right insertion of micro animations.</span>
-                <span class="span-sentence">I am for a design that is simple to understand and use and at the same time
-                    gives an excellent visual effect. All my images, logos, icons are in SVG. I try to write code that
-                    respects best practices, and at the end of the project, everything will be minified to increase
-                    loading speed.</span>
-                <span class="span-sentence">I use AI as a support to speed up writing, and I help myself with snippets.
-                    I'm still at the beginning, and I have a lot to learn. For this reason, I'm looking for an
-                    apprentice opportunity.</span>
-            </p>
-        </section>
-        <section>
-            <h2 tabindex="0" aria-label="My tools">My Tools</h2>
-            <!-- Paragraph about the tools -->
-            <p tabindex="0" aria-label="Description of my tools">
-                <span class="span-sentence"><span class="span-word">Inkscape</span>: Used for creating and editing
-                    vector graphics, ensuring scalable and high-quality visuals. I leveraged its powerful tracing
-                    capabilities and drawing tools for designing custom logos, icons, and illustrations.</span><br>
-                <span class="span-sentence"><span class="span-word">VS Code</span>: My preferred code editor for writing
-                    clean, efficient code while following best practices. I use extensions such as HTML Preview, Live
-                    Preview, Open Browser Preview, Code Spell Checker, and Prettier for real-time updates, spell
-                    checking, and automatic code formatting.</span><br>
-                <span class="span-sentence"><span class="span-word">Gimp</span>: Used for image editing and
-                    manipulation, enhancing photos, and creating custom graphics. I utilized advanced tools like layers,
-                    masks, and filters to achieve professional visual effects.</span><br>
-                <span class="span-sentence"><span class="span-word">Blender</span>: Utilized for 3D modeling and
-                    animation, adding dynamic elements to my projects. I created detailed 3D models and smooth
-                    animations, integrating them into my web projects for greater interactivity and visual
-                    impact.</span><br>
-                <span class="span-sentence"><span class="span-word">Figma</span>: Used for UI design and collaborative
-                    prototyping. I created interactive wireframes and mockups, facilitating design idea communication
-                    and real-time team collaboration.</span><br>
-                <span class="span-sentence"><span class="span-word">Filmora</span>: A video editing tool used for
-                    creating and editing videos with a user-friendly interface. I used its various effects, transitions,
-                    and audio editing capabilities to produce polished and engaging video content.</span><br>
-                <span class="span-sentence"><span class="span-word">PowerPoint</span>: Utilized for creating
-                    presentations with impactful visuals and clear structure. I designed custom slides, incorporating
-                    multimedia elements and animations to enhance the delivery of information and engage the audience
-                    effectively.</span>
-            </p>
-        </section>
-        <section>
-            <!-- Section about the news -->
-            <h2 tabindex="0" aria-label="My portfolio video">News</h2>
-            <iframe
-                src="https://player.vimeo.com/video/963164639?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                title="Portfolio is work in progress">
-            </iframe>
+            <!-- Carousel from  https://codepen.io/michenall1/project/editor/XvbxWX -->
+            <div id="carousel-container">
+                <div id="carousel">
+                    <div id="carousel-one" class="sdf">
+                        <h2>Profile</h2>
+                        <p>
+                            I am a motivated aspiring apprentice with a background rooted in diverse roles, honing my
+                            teamwork and
+                            <span class="span-word">problem-solving</span> skills. I've demonstrated the ability to
+                            thrive in
+                            dynamic environments, leveraging my past experiences as a waiter, unarmed security
+                            personnel, and volunteer soldier to
+                            effectively tackle challenges. I'm eager to apply my solid foundation in IT fundamentals and
+                            recent
+                            technical certifications to excel in a web development/design apprenticeship role. Other
+                            skills I
+                            possess include
+                            <span class="span-word">creativity</span>, <span class="span-word">adaptability</span>,
+                            <span class="span-word">effective communication</span>,
+                            <span class="span-word">attention to detail</span>, <span
+                                class="span-word">resilience</span>,
+                            <span class="span-word">teamwork</span>,
+                            <span class="span-word">self-learning</span>, and <span class="span-word">customer
+                                service</span>.
+                        </p>
+                    </div>
+                    <div id="carousel-two" class="sdf">
+                        <h2>Experience</h2>
+                        <ul>
+                            <li>
+                                <span class="span-word">(2009-2022)</span> Hospitality and Security Roles: I
+                                demonstrated strong attention to detail and customer service skills while working as a
+                                waiter at various 4/5-star hotels in Italy and London. I developed proficiency in <span
+                                    class="span-word">CCTV monitoring</span> and perimeter control during unarmed
+                                security duties at Marina4 - Darsena, Caorle Porto Santa Margherita, Italy.
+                            </li>
+                            <hr>
+                            <li>
+                                <span class="span-word">(2004-2005)</span> Military Experience: I acquired technical
+                                skills in surveillance systems and resource management as a volunteer soldier at Ettore
+                                Manes Barracks of the Genius Sapper. I demonstrated <span class="span-word">adaptability
+                                    and problem-solving abilities</span> in managing various tasks and responsibilities
+                                as a corporal.
+                            </li>
+                            <hr>
+                        </ul>
+                    </div>
+                    <div id="carousel-three" class="sdf">
+                        <h2>Education</h2>
+                        <ul>
+                            <li><span class="span-word">(1982-1987)</span> Primary School Circolo Didattico Primo
+                                Circolo at Piazza Indipendenza, 87012 Castrovillari CS, Italy.</li>
+                            <hr>
+                            <li><span class="span-word">(1987-1990)</span> Secondary School E. De Nicola at Via Coscile,
+                                28, 87012 Castrovillari CS, Italy.</li>
+                            <hr>
+                            <li><span class="span-word">(1990-1993)</span> High School IPSIA at Leonardo Da Vinci Via
+                                dell'Industria 2, 87012 Castrovillari CS, Italy.</li>
+                            <hr>
+                        </ul>
+                    </div>
+                    <div id="carousel-four" class="sdf">
+                        <h2>Certifications/Licensing</h2>
+                        <ul>
+                            <li><span class="span-word">(26-05-2021):</span> Esol Skills For Life Entry Lv 1 at MI
+                                COMPUT SOLUTION TRAINING, London.</li>
+                            <hr>
+                            <li><span class="span-word">(27-05-2021):</span> Functional Skills Lv 1 in ICT (Excel, Word)
+                                at MI COMPUT SOLUTION TRAINING, London.</li>
+                            <hr>
+                            <li><span class="span-word">(13-07-2021):</span> Gateway Qualifications Lv 2 Award in
+                                Digital and IT Skills at ELATT, London.</li>
+                            <hr>
+                            <li><span class="span-word">(25-08-2023):</span> FastTrack Functional Skills English Lv 2 at
+                                Strive Training Croydon.</li>
+                            <hr>
+                            <li><span class="span-word">(08-09-2023):</span> FastTrack Functional Skills Maths Lv 3 at
+                                Strive Training Croydon.</li>
+                            <hr>
+                            <li><span class="span-word">(22-03-2014):</span> SIA Door Supervisor License at Lewisham
+                                College.</li>
+                            <hr>
+                            <li><span class="span-word">(22-04-2014):</span> Engaged in Web Development Bootcamp at
+                                GetSetUK.</li>
+                            <hr>
+                        </ul>
+                    </div>
+                    <div id="carousel-five" class="sdf">
+                        <h2>Technical Skills</h2>
+                        <ul>
+                            <li>Proficient in <span class="span-word">HTML5</span>, <span class="span-word">CSS3</span>,
+                                and <span class="span-word">JavaScript</span>.</li>
+                            <hr>
+                            <li>Experienced in Web Design, UI/UX, and Web Development.</li>
+                            <hr>
+                            <li>Skilled in using <span class="span-word">VS Code</span>, <span
+                                    class="span-word">Inkscape</span>, <span class="span-word">OBS</span>, <span
+                                    class="span-word">Filmora</span>, <span class="span-word">PowerPoint</span>, <span
+                                    class="span-word">GIMP</span>, and <span class="span-word">Figma</span> for
+                                development and design workflows.</li>
+                            <hr>
+                            <li>Understanding of internet infrastructure, web security principles, server operations,
+                                protocols, and ports.</li>
+                            <hr>
+                            <li>Knowledgeable in setting up domains and hosting.</li>
+                            <hr>
+                            <li>Ability to design solutions and express them using pseudo-code.</li>
+                            <hr>
+                            <li>Familiarity with foundational syntax and libraries for Web Development.</li>
+                            <hr>
+                            <li>Application of fundamental concepts such as variables, control flow, and data
+                                structures.</li>
+                            <hr>
+                            <li>Use of built-in functions to optimize web pages.</li>
+                            <hr>
+                            <li>Experience in designing, planning, and building code projects.</li>
+                            <hr>
+                            <li>Proficiency in performing version control with <span class="span-word">Git</span> and
+                                <span class="span-word">GitHub</span>.
+                            </li>
+                            <hr>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="buttons">
+                <button id="button-left"><img src="./icons/left-arrow.svg" alt="left arrow icon"></button>
+                <button id="button-right"><img src="./icons/right-arrow.svg" alt="right arrow icon"></button>
+            </div>
         </section>
     </main>
-    <!-- Footer -->
+
+    <!-- Footer Section -->
     <footer class="footer-grid">
         <div class="footer-col-1">
             <!-- Footer image -->
@@ -123,8 +198,16 @@
                 title="Download CV"><img class="footer-icon" src="/icons/download.svg" alt="Curriculum download"></a>
         </div>
     </footer>
-    <!-- JavaScript for button functionality -->
-<script src="./scripts/buttons-script.js"></script>
+
+    <!-- Include Hammer.js library from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs"></script>
+
+    <!-- Include script for buttons functionality -->
+    <script src="../../scripts/buttons-script.js"></script>
+
+    <!-- Include script for carousel functionality -->
+    <script src="/scripts/carousel-script.js"></script>
+
 </body>
 
 </html>
