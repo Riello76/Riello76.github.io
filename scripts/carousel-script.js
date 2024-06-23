@@ -41,22 +41,3 @@ buttonPrev.addEventListener('click', () => {
     }
     moveTo(current);
 });
-
-// Add Hammer.js to handle touch/swipe gestures on the carousel
-const mc = new Hammer(carousel);
-
-mc.on('swipeleft', () => {
-    current++;
-    if (current >= total) {
-        current = 0; // Reset to the first slide if at the end
-    }
-    moveTo(current);
-});
-
-mc.on('swiperight', () => {
-    current--;
-    if (current < 0) {
-        current = total - 1; // Go to the last slide if at the first one
-    }
-    moveTo(current);
-});
