@@ -121,7 +121,7 @@ html {
 
 /* Carousel container */
 #carousel-container {
-  width: 30rem; /* Visible container width */
+  max-width: 30rem; /* Visible container width */
   min-height: 420px; /* Visible container height */
   overflow: hidden; /* Hide excess slides */
   margin: 0 auto; /* Center the carousel */
@@ -310,6 +310,7 @@ ul::-webkit-scrollbar-thumb {
     padding: 0;
     margin-bottom: 2em;
   }
+
   .footer-grid {
     grid-template-columns: 1fr;
     padding: 0;
