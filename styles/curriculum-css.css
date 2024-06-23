@@ -121,7 +121,7 @@ html {
 
 /* Carousel container */
 #carousel-container {
-  max-width: 30rem; /* Visible container width */
+  width: 30rem; /* Visible container width */
   min-height: 420px; /* Visible container height */
   overflow: hidden; /* Hide excess slides */
   margin: 0 auto; /* Center the carousel */
