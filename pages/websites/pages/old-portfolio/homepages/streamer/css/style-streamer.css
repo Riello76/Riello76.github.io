@@ -1,0 +1,158 @@
+/* === CSS RESET === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* === BASE STYLES === */
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px for better font scaling */
+}
+
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg-main.jpg);
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 200px;
+}
+.logo {
+  width: 15rem;
+}
+.title {
+  width: 60%;
+}
+#btn-streamer-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+}
+.btn-streamer {
+  width: 100px;
+  height: 50px;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.btn-streamer:hover {
+  transform: scaleX(0.9) scaleY(0.8);
+}
+#btn-home {
+  background-image: url(../icons/btn-home.svg);
+}
+#btn-twitch {
+  background-image: url(../icons/btn-twitch.svg);
+}
+#btn-youtube {
+  background-image: url(../icons/btn-youtube.svg);
+}
+#btn-trovo {
+  background-image: url(../icons/btn-trovo.svg);
+}
+#btn-discord {
+  background-image: url(../icons/btn-discord.svg);
+}
+#btn-facebook {
+  background-image: url(../icons/btn-facebook.svg);
+}
+#btn-tiktok {
+  background-image: url(../icons/btn-tiktok.svg);
+}
+#btn-instagram {
+  background-image: url(../icons/btn-instagram.svg);
+}
+#btn-biography {
+  background-image: url(../icons/btn-biography.svg);
+}
+#main-div {
+  display: flex;
+  position: absolute;
+  top: 40%;
+  gap: 1rem;
+}
+.sub-main-div {
+  border: 2px solid rgb(157, 141, 101);
+  width: 100%;
+}
+.sub-main-div img {
+  width: 100%;
+  height: 30rem;
+}
+#footer-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+}
+#footer-links a,
+#copyright {
+  color: goldenrod;
+  padding: 1rem;
+}
+@media screen and (max-width: 320px) {
+  .btn-streamer {
+    width: 60px;
+  }
+  #main-div {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 425px) {
+  .btn-streamer {
+    width: 80px;
+  }
+  #main-div {
+    flex-direction: column;
+    top: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn-streamer {
+    width: 80px;
+  }
+  #main-div {
+    top: 30%;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .btn-streamer {
+    width: 80px;
+  }
+  #main-div {
+    width: 70%;
+    top: 60%;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .btn-streamer {
+    width: 80px;
+  }
+  #main-div {
+    width: 70%;
+    top: 60%;
+  }
+}

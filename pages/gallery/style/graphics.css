@@ -1,0 +1,90 @@
+/* Main */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center content */
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  padding: 20px; /* Padding around sections */
+  background-color: transparent; /* Transparent background */
+  width: 40%; /* Section width */
+}
+
+section h2 {
+  width: 100%; /* Full width */
+  text-align: center; /* Center align */
+  font-weight: bold; /* Bold font */
+  font-size: var(--font-size-heading); /* Heading font size */
+  border-radius: var(--border-radius) var(--border-radius) 0 0; /* Border radius */
+  background: var(--header-bg-color) url(/images/bg-label.svg) center / 55em
+    no-repeat; /* Background with image */
+  color: var(--header-text-color); /* Text color */
+  box-shadow: 0 10px 15px var(--header-text-color); /* Box shadow */
+  margin-bottom: 1em; /* Bottom margin */
+  animation: light-h2 6s infinite; /* Animation */
+}
+
+@keyframes light-h2 {
+  0%,
+  100% {
+    box-shadow: 0 10px 15px white; /* White shadow */
+  }
+  50% {
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.662); /* Shadow with opacity */
+  }
+}
+
+section div {
+  overflow: auto;
+  width: 100%;
+  height: 20rem;
+  box-shadow: 0 0 10px white;
+  color: var(--header-color);
+  padding: var(--padding-p);
+  background: black
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.662),
+      rgba(255, 255, 255, 0)
+    );
+  animation: light-p 6s infinite;
+}
+
+@keyframes light-p {
+  0%, 100% {
+    background: rgba(255, 255, 255, 0); /* Transparent background */
+  }
+  50% {
+    background: rgba(0, 0, 0, 0.662); /* Background with opacity */
+  }
+}
+
+section p {
+  color: var(--main-color);
+  font-size: larger;
+}
+
+section div::-webkit-scrollbar,
+ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+section div::-webkit-scrollbar-thumb,
+ul::-webkit-scrollbar-thumb {
+  background-color: var(--main-color-opacity);
+  border-radius: var(--border-radius);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  section {
+    width: 100%;
+  }
+}

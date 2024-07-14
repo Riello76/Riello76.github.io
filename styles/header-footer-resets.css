@@ -1,0 +1,152 @@
+/* Reset and box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and HTML */
+body,
+html {
+  /* Background gradient */
+  background: linear-gradient(
+    to top,
+    transparent,
+    transparent,
+    rgba(0, 255, 255, 0.25),
+    rgba(0, 255, 255, 0.25),
+    rgba(0, 255, 255, 0.25),
+    transparent,
+    transparent
+  );
+  background-color: black; /* Fallback background color */
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*
+   Reset styles for img, picture, and iframe elements
+   Ensures consistent display and sizing across different browsers
+*/
+img,
+picture,
+iframe {
+  display: block; /* Ensures these elements behave as block-level elements */
+  width: 100%; /* Makes the elements take up full width of their parent container */
+  height: auto; /* Automatically adjusts height to maintain aspect ratio */
+}
+
+/* Header */
+.top-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px; /* Padding around header */
+  color: var(--header-text-color); /* Text color in header */
+  border-radius: var(--border-radius); /* Border radius */
+}
+
+.logo {
+  width: 20%; /* Logo width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 100%; /* Circular shape */
+}
+
+.title {
+  width: 80%; /* Title width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Navbar */
+.navbar-nav{
+  width: 40%;
+  justify-content: space-around;
+}
+.navbar h2 {
+  font-weight: bold;
+}
+.nav-link{
+  display: flex;
+  align-items: center;
+}
+.bg-body-tertiary {
+  --bs-bg-opacity: 0; /* Background opacity */
+}
+.dropdown-toggle::after {
+  color: var(--main-color); /* Dropdown toggle color */
+}
+
+.dropdown-menu {
+  background-color: #009494; /* Dropdown menu background color */
+}
+
+.dropdown-menu a {
+  color: white; /* Dropdown menu link color */
+}
+/* Hamburger menu */
+.navbar-toggler {
+  border: none; /* No border */
+  background: transparent; /* Transparent background */
+  outline: none; /* No outline */
+  padding: 0; /* No padding */
+}
+
+/* Navbar Toggler Icon */
+.navbar-toggler-icon {
+  background-image: url("/images/hamburger-img.svg"); /* Default hamburger image */
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: rotate(0deg) scale(1); /* Default state */
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  background-image: url("/images/hamburger-img-active.svg"); /* Active hamburger image */
+  transform: rotate(180deg) scale(0.8); /* Rotate 180 degrees and scale down when not collapsed */
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around; /* Space around content */
+}
+
+.footer-img {
+  width: 30%; /* Image width */
+}
+ footer a:hover{
+  transform: scale(0.9);
+}
+.footer-icon-container {
+  display: flex;
+  justify-content: space-around; /* Space around icons */
+  width: 50%; /* Container width */
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .top-header{
+    flex-direction: column;
+  }
+  .logo {
+    width: 50%; /* Logo width on smaller screens */
+  }
+  .title {
+    width: 100%; /* Title width on smaller screens */
+  }
+
+  footer {
+    flex-direction: column; /* Column layout for footer */
+  }
+
+  .footer-img {
+    width: 80%; /* Image width on smaller screens */
+  }
+}

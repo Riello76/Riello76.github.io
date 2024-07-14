@@ -1,0 +1,92 @@
+/* === CSS RESET === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === BASE STYLES === */
+html,
+body {
+  height: 100%; /* Ensures body and html span the entire viewport height */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures main content and footer are spaced correctly */
+  font-size: 1.6rem;
+  background-color: black;
+}
+
+/* === TYPOGRAPHY === */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* === IMAGE STYLES === */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+  color: goldenrod;
+}
+
+main {
+  flex: 1; /* Allows main content to grow and take available space */
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+main > img {
+  width: 50%;
+  height: 70rem;
+  position: absolute;
+}
+
+/* === MEDIA QUERIES === */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  main > img {
+    width: 100%;
+    height: 40rem;
+  }
+}
+@media (min-width: 2560px) {
+.logo{
+  width: 15%;
+}
+.banner{
+  width: 50%;
+}
+
+  main > img {
+    width: 100%;
+    height: 100%;
+  }
+}
