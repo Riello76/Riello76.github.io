@@ -13,14 +13,14 @@
   --main-color: #07f7f7; /* Main color */
   --main-color-opacity: rgba(7, 247, 247, 0.6); /* Main color with opacity */
   --border-radius: 2.5rem; /* Border radius */
-  --font-size-h1: 10vw; /* Font size for h1 */
+  --font-size-h1: 8vw; /* Font size for h1 */
   --font-size-h2: 4vw; /* Font size for h2 */
   --font-size-h3: 3.5vw; /* Font size for h3 */
   --font-size-h4: 3vw; /* Font size for h4 */
   --font-size-h5: 2.5vw; /* Font size for h5 */
   --font-size-h6: 2vw; /* Font size for h6 */
   --font-size-p: 1.5rem; /* Paragraph font size */
-  --heading-gradient: linear-gradient(to bottom, #009191, rgba(255, 255, 255, 0.551), #009191); /* Heading gradient */
+  --heading-gradient: linear-gradient(to bottom, #009191 40%, #DFE5E5 60%, #009494); /* Heading gradient */
 }
 
 /* Apply gradient to text in headings */
@@ -29,10 +29,6 @@ h1, h2, h3, h4, h5, h6 {
   background-clip: text; /* Clip the gradient to the text */
   color: transparent; /* Make the text color transparent */
   background-image: var(--heading-gradient); /* Apply heading gradient */
-  -webkit-text-stroke-width: 2px; /* Set the stroke width for WebKit browsers */
-  -webkit-text-stroke-color: white; /* Set the stroke color for WebKit browsers */
-  text-stroke-width: 1px; /* Set the stroke width for other browsers */
-  text-stroke-color: white; /* Set the stroke color for other browsers */
 }
 
 /* Body and HTML */
@@ -81,12 +77,6 @@ iframe {
 .navbar-nav{
   width: 40%;
   justify-content: space-around;
-}
-.navbar h2 {
- -webkit-text-stroke-width: 1px; /* Set the stroke width for WebKit browsers */
-  -webkit-text-stroke-color: white; /* Set the stroke color for WebKit browsers */
-  text-stroke-width: 1px; /* Set the stroke width for other browsers */
-  text-stroke-color: white; /* Set the stroke color for other browsers */
 }
 
 .nav-link{
