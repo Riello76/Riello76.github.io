@@ -83,7 +83,6 @@ iframe {
   justify-content: space-around;
 }
 .navbar h2 {
-  font-weight: bold; /* Set the font weight to bold */
  -webkit-text-stroke-width: 1px; /* Set the stroke width for WebKit browsers */
   -webkit-text-stroke-color: white; /* Set the stroke color for WebKit browsers */
   text-stroke-width: 1px; /* Set the stroke width for other browsers */
@@ -102,11 +101,12 @@ iframe {
 }
 
 .dropdown-menu {
-  background-color: #009494; /* Dropdown menu background color */
+  background: #00272E; /* Dropdown menu background color */
 }
 
 .dropdown-menu a {
   color: white; /* Dropdown menu link color */
+  font-weight: bold;
 }
 /* Hamburger menu */
 .navbar-toggler {
