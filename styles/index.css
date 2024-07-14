@@ -1,27 +1,5 @@
-/* Global variables */
-:root {
-  --header-bg-color: black; /* Header background color */
-  --header-text-color: white; /* Header text color */
-  --main-color: #07f7f7; /* Main color */
-  --main-color-opacity: rgba(7, 247, 247, 0.6); /* Main color with opacity */
-  --border-radius: 2.5rem; /* Border radius */
-  --font-size-h1: 10vw; /* Font size for h1 */
-  --font-size-h2: 4vw; /* Font size for h2 */
-  --font-size-h3: 3.5vw; /* Font size for h3 */
-  --font-size-h4: 3vw; /* Font size for h4 */
-  --font-size-h5: 2.5vw; /* Font size for h5 */
-  --font-size-h6: 2vw; /* Font size for h6 */
-  --font-size-p: 1.5rem; /* Paragraph font size */
-  --heading-gradient: linear-gradient(to bottom, #009191, #d0d0d0, #009191); /* Heading gradient */
-}
+@import url("/styles/header-footer-resets.css");
 
-/* Apply gradient to text in headings */
-h1, h2, h3, h4, h5, h6 {
-  -webkit-background-clip: text; /* Clip the gradient to the text */
-  background-clip: text; /* Clip the gradient to the text */
-  color: transparent; /* Make the text color transparent */
-  background-image: var(--heading-gradient); /* Apply heading gradient */
-}
 
 /* Main */
 main {
