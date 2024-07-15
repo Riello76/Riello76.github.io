@@ -36,7 +36,6 @@ body,
 html {
   background-image: url(/images/body-bg.svg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   background-color: black; /* Fallback background color */
   display: flex;
