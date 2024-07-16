@@ -51,24 +51,24 @@
   --bg-color-btn6: #3999d0ff;
   --color-btn6: white;
 
-  /*------------------ Background color for a specific button style */
+  /*------------------- Background color for a specific button style */
   --bg-color-btn7: #674c37ff;
 
-  /*------------------------------------ Linear gradient background */
+  /*------------------------------------- Linear gradient background */
   --bg-linear-gradient: linear-gradient(to bottom,
       rgb(0, 0, 0, 1),
       rgb(0, 0, 0, 0.2));
 
-  /*------------------------------- Background color for containers */
+  /*--------------------------------- Background color for containers */
   --bg-color-container: black;
 
-  /*---------------------------------------- Box shadow for buttons */
+  /*------------------------------------------ Box shadow for buttons */
   --box-shadow-button: 0px 0px 10px white;
 
-  /*------------------------------------------ Larger border radius */
+  /*-------------------------------------------- Larger border radius */
   --border-radius-bigger: 5rem;
 
-  /*----------------------------------------- Smaller border radius */
+  /*------------------------------------------- Smaller border radius */
   --border-radius-smaller: 2rem;
 }
 
