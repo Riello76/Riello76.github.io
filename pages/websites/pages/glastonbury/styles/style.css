@@ -697,9 +697,7 @@ footer {
 /* ------------------------------------------------- Media Queries Start */
 
 @media screen and (max-width: 768px) {
-  /* Header Start */
-
-  /* Hamburger Menu Styles */
+  /*---------------------------------------------- Hamburger Menu Styles */
   .hamburger {
     display: flex;
     background-color: var(--bg-color-hamburger);
@@ -713,7 +711,7 @@ footer {
     height: 0.2rem;
   }
 
-  /* Navbar Buttons Container */
+  /*------------------------------------------- Navbar Buttons Container */
   .navbar-buttons {
     display: none;
     gap: 1rem;
@@ -735,7 +733,7 @@ footer {
     display: flex;
   }
 
-  /* Search Container Styles */
+  /*--------------------------------------------- Search Container Styles */
   .search-container {
     margin-top: 1rem;
     width: 100%;
@@ -766,8 +764,7 @@ footer {
     border-radius: 0.5rem;
   }
 
-  /* Header End */
-  /* Main Start */
+  /*--------------------------------------------------------------- Main */
   main {
     justify-content: center;
     align-items: center;
@@ -805,7 +802,6 @@ footer {
     width: 100%;
     order: 3;
   }
-  /* Main End */
 }
 /* --------------------------------------------------------------------- */
 @media screen and (min-width: 2560px) {
