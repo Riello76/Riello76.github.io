@@ -254,12 +254,20 @@ main {
   height: 40rem;
   margin-bottom: 3rem;
 }
+.shop-p{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  height: 80rem;
+  margin-bottom: 3rem;
+}
 .news-p{
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 25%;
-  height: 90rem;
+  height: 50rem;
   margin-bottom: 3rem;
 }
 
