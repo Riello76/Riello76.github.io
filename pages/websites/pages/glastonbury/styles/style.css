@@ -1,4 +1,5 @@
-/* Reset CSS */
+
+/* ------------------------------------------------------- Reset CSS */
 *,
 *::before,
 *::after {
@@ -47,22 +48,22 @@
 }
 
 html {
-  font-size: 62.5%; /* Sets 1rem to 10px for easier font-size calculations */
+  font-size: 62.5%; 
 }
 
-/* ---IMAGES--- */
+/* ------------------------------------------------------------ Images */
 img,
 picture {
   display: block;
-  max-width: 100%; /* Ensures images and pictures resize responsively */
+  max-width: 100%; 
 }
-/* ---Typography--- */
+/* -------------------------------------------------------- Typography */
 p {
   padding: 0.6rem;
   line-height: 3rem;
   font-weight: bolder;
 }
-/* Body Styles */
+/* ------------------------------------------------------- Body Styles */
 body {
   background-color: var(--body-bg-color); /* Background color */
   color: var(--body-color); /* Text color */
@@ -74,7 +75,7 @@ body {
   overflow-x: hidden; /* Hides horizontal overflow */
 }
 
-/* Header Styles */
+/* ----------------------------------------------------- Header Styles */
 header {
   display: flex;
   flex-wrap: wrap;
@@ -90,7 +91,7 @@ header {
   height: auto;
 }
 
-/* Navbar Styles */
+/* ------------------------------------------------------ Navbar Styles*/
 nav {
   position: relative;
   display: flex;
@@ -108,7 +109,7 @@ nav {
   gap: 2rem;
 }
 
-/* Navbar Button Styles */
+//* ---------------------------------------------- Navbar Button Styles */
 .nav-btn {
   width: 9%;
   cursor: pointer;
@@ -139,7 +140,7 @@ nav {
   }
 }
 
-/* Navbar Buttons Background */
+/* -------------------------------------------- Navbar Button Background */
 #home {
   background-color: var(--bg-color-btn1);
   color: var(--color-btn1);
@@ -179,7 +180,7 @@ nav {
   color: var(--body-color);
 }
 
-/* Search bar Styles */
+/* --------------------------------------------------- Search Bar Styles */
 .search-container {
   width: 30%;
   margin: 2rem;
@@ -197,7 +198,7 @@ nav {
   font-size: var(--h6-font-size);
 }
 
-/* Hamburger menu styles */
+/* ----------------------------------------------- Hamburger Menu Styles */
 .hamburger {
   display: none;
   position: absolute;
@@ -226,9 +227,9 @@ nav {
   background-color: var(--body-color);
 }
 
-/* -----------------------------------------------Header End */
+/* ---------------------------------------------------------- Header End */
 
-/* -----------------------------------------------Main Start */
+/* ---------------------------------------------------------- Main Start */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -243,7 +244,7 @@ main {
   justify-content: space-around;
   margin-bottom: 3rem;
 }
-/*---------------------------------------Info Festival Start */
+/*-------------------------------------------------- Info Festival Start */
 .info-festival,
 .info-location {
   display: flex;
@@ -296,27 +297,28 @@ main {
   font-size: var(--p-font-size);
 }
 
-/* Style for the scrollbar in Webkit browsers */
+/*---------------------------- Style for the scrollbar in Webkit browsers */
 .info-festival p::-webkit-scrollbar,
 .info-location p::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */
 }
 
-/* Style for the scrollbar track (background) */
+/*---------------------------- Style for the scrollbar track (background) */
 .info-festival p::-webkit-scrollbar-track,
 .info-location p::-webkit-scrollbar-track {
   background: var(--bg-linear-gradient);
 }
 
-/* Style for the scrollbar thumb (the part that moves) */
+/*------------------- Style for the scrollbar thumb (the part that moves) */
 .info-festival p::-webkit-scrollbar-thumb,
 .info-location p::-webkit-scrollbar-thumb {
   background-color: var(--body-color);
   border-radius: var(--border-radius-smaller);
 }
 
-/*-----------------------------------------Info Festival End */
-/*------------------------------------------- Carousel Start */
+/*----------------------------------------------------- Info Festival End */
+
+/*-------------------------------------------------------- Carousel Start */
 .carousel-container {
   position: relative;
   width: 45%;
@@ -395,8 +397,9 @@ main {
   width: 100%;
 }
 
-/*------------------------------------------- Carousel End */
-/*------------------------------------Middle Sections Start*/
+/*---------------------------------------------------------- Carousel End */
+
+/*-------------------------------------------------- Middle Sections Start*/
 .middle-section,.middle-section-news {
   display: flex;
   width: 100%;
@@ -412,7 +415,7 @@ main {
   width: 40%;
 }
 
-/*------------------------------------------- Video Start */
+/*----------------------------------------------------------- Video Start */
 .video {
   display: flex;
   flex-direction: column;
@@ -459,9 +462,9 @@ main {
   font-size: var(--h4-font-size);
 }
 
-/*--------------------------------------------- Video End */
+/*------------------------------------------------------------ Video End */
 
-/*------------------------------------------- -Card Start */
+/*----------------------------------------------------------- Card Start */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -507,16 +510,17 @@ main {
   width: 60%;
   height: 4rem;
   margin: 2rem;
+  cursor: pointer;
 }
 
 .info button:hover {
-  transform: scale(0.9);
   box-shadow: var(--box-shadow-button);
   border-radius: var(--border-radius-bigger);
 }
 
-/*-----------------------------------------------Card End */
-/*------------------------------------------History Start */
+/*------------------------------------------------------------- Card End */
+
+/*-------------------------------------------------------- History Start */
 .history {
   display: flex;
   flex-wrap: wrap;
@@ -543,8 +547,9 @@ main {
   font-size: var(--p-font-size);
 }
 
-/*--------------------------------------------History End */
-/*-------------------------------------------Asides Start */
+/*---------------------------------------------------------- History End */
+
+/*--------------------------------------------------------- Asides Start */
 .aside-left,
 .aside-right {
   flex: 1 1 20%;
@@ -592,13 +597,13 @@ main {
   background: var(--bg-linear-gradient);
 }
 
-/*---------------------------------------------Asides End */
+/*----------------------------------------------------------- Asides End */
 
-/*-------------------------------------Middle Sections End*/
+/*--------------------------------------------------- Middle Sections End*/
 
-/* ----------------------------------------------Main End */
+/* ------------------------------------------------------------ Main End */
 
-/* ------------------------------------------Footer Start */
+/* -------------------------------------------------------- Footer Start */
 footer {
   background: var(--bg-linear-gradient);
   padding: 2rem;
@@ -643,8 +648,9 @@ footer {
 .footer-info p {
   margin: 0.5rem 0;
 }
-/* --------------------------------------------Footer End */
-/*---------------------------------- Gallery Styles Start */
+/* ---------------------------------------------------------- Footer End */
+
+/*------------------------------------------------  Gallery Styles Start */
 
 .gallery-item {
   position: relative;
@@ -686,8 +692,9 @@ footer {
     }
   }
 }
-/*---------------------------------- Gallery Styles End */
-/* -----------------------------------Media Queries Start */
+/*--------------------------------------------------- Gallery Styles End */
+
+/* ------------------------------------------------- Media Queries Start */
 
 @media screen and (max-width: 768px) {
   /* Header Start */
@@ -800,7 +807,7 @@ footer {
   }
   /* Main End */
 }
-/* ----------------------------------------------- */
+/* --------------------------------------------------------------------- */
 @media screen and (min-width: 2560px) {
   /* Main Start */
   .top-section p,
@@ -846,4 +853,4 @@ footer {
   }
   /* Main End */
 }
-/* -----------------------------------Media Queries End */
+/* ------------------------------------------------- Media Queries End */
