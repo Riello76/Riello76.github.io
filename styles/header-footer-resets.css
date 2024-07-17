@@ -6,41 +6,59 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* Global variables */
 :root {
-  --header-bg-color: black; /* Header background color */
-  --header-text-color: white; /* Header text color */
-  --main-color: #07f7f7; /* Main color */
-  --main-color-opacity: rgba(7, 247, 247, 0.6); /* Main color with opacity */
-  --border-radius: 2.5rem; /* Border radius */
-  --font-size-h1: 8vw; /* Font size for h1 */
-  --font-size-h2: 4vw; /* Font size for h2 */
-  --font-size-h3: 3.5vw; /* Font size for h3 */
-  --font-size-h4: 3vw; /* Font size for h4 */
-  --font-size-h5: 2.5vw; /* Font size for h5 */
-  --font-size-h6: 2vw; /* Font size for h6 */
-  --font-size-p: 1.5rem; /* Paragraph font size */
-  --heading-gradient: linear-gradient(to bottom, #009191 40%, #DFE5E5 60%, #009494); /* Heading gradient */
+  /* text color */
+  --header-text-color: #DCDCDC;
+
+  /* Main color */
+  --main-color: rgb(2, 2, 69);
+
+  /* Border radius */
+  --border-radius: 2.5rem;
+
+  /* Font size for h1 */
+  --font-size-h1: 8vw;
+
+  /* Font size for h2 */
+  --font-size-h2: 4vw;
+
+  /* Font size for h3 */
+  --font-size-h3: 3.5vw;
+
+  /* Font size for h4 */
+  --font-size-h4: 3vw;
+
+  /* Font size for h5 */
+  --font-size-h5: 2.5vw;
+
+  /* Font size for h6 */
+  --font-size-h6: 1.2vw;
+
+  /* Paragraph font size */
+  --font-size-p: 1.2vw;
+
 }
 
-/* Apply gradient to text in headings */
-h1, h2, h3, h4, h5, h6 {
-  -webkit-background-clip: text; /* Clip the gradient to the text */
-  background-clip: text; /* Clip the gradient to the text */
-  color: transparent; /* Make the text color transparent */
-  background-image: var(--heading-gradient); /* Apply heading gradient */
+/* Apply color to text in headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--header-text-color);
 }
 
 /* Body and HTML */
 body,
 html {
-  background-image: url(/images/body-bg.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black; /* Fallback background color */
+  background-color: black;
   display: flex;
   flex-direction: column;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 62.5%;
 }
 
 /*
@@ -50,117 +68,185 @@ html {
 img,
 picture,
 iframe {
-  display: block; /* Ensures these elements behave as block-level elements */
-  width: 100%; /* Makes the elements take up full width of their parent container */
-  height: auto; /* Automatically adjusts height to maintain aspect ratio */
+  display: block;
+  width: 100%;
+  height: auto;
 }
-
 /* Header */
 .top-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px; /* Padding around header */
-  color: var(--header-text-color); /* Text color in header */
-  border-radius: var(--border-radius); /* Border radius */
+  color: var(--header-text-color);
+  background-color: black;
+  background: linear-gradient(to right, black, var(--main-color));
 }
 
 .logo {
-  width: 20%; /* Logo width */
-  height: auto; /* Maintain aspect ratio */
+  width: 20%;
+  height: auto;
+  background: linear-gradient(to left, black, var(--main-color));
+  border-radius: 100%;
 }
 
 .title {
-  width: 80%; /* Title width */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: var(--font-size-h2);
+  color: var(--header-text-color)
 }
 
 /* Navbar */
-.navbar-nav{
-  width: 40%;
-  justify-content: space-around;
+.cs-navbar {
+  float: right;
+
+}
+.cs-navbar h6{
+  font-size: var(--font-size-h6);
+  font-weight: bold;
 }
 
-.nav-link{
+
+.nav-link {
   display: flex;
   align-items: center;
 }
-.bg-body-tertiary {
-  --bs-bg-opacity: 0; /* Background opacity */
-}
+
 .dropdown-toggle::after {
-  color: var(--main-color); /* Dropdown toggle color */
+  color: var(--header-text-color);
+  font-size: 2rem;
 }
 
 .dropdown-menu {
-  background: #00272E; /* Dropdown menu background color */
+  background: linear-gradient(to right, black, var(--main-color));
+    font-size: 1.5rem;
 }
 
 .dropdown-menu a {
-  color: white; /* Dropdown menu link color */
+  color: var(--header-text-color);
   font-weight: bold;
 }
-/* Hamburger menu */
-.navbar-toggler {
-  border: none; /* No border */
-  background: transparent; /* Transparent background */
-  outline: none; /* No outline */
-  padding: 0; /* No padding */
-}
 
+/* Hamburger */
 /* Navbar Toggler Icon */
-.navbar-toggler-icon {
-  background-image: url("/images/hamburger-img.svg"); /* Default hamburger image */
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  transition: background-image 0.5s ease-in-out, transform 0.5s ease-in-out;
-  transform: rotate(0deg) scale(1); /* Default state */
+.navbar-toggler {
+  border: none;
+  /* No border */
+  background: transparent;
+  /* Transparent background */
+  outline: none;
+  /* No outline */
+  padding: 0;
+  /* No padding */
 }
 
-.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
-  background-image: url("/images/hamburger-img-active.svg"); /* Active hamburger image */
-  transform: rotate(180deg) scale(0.8); /* Rotate 180 degrees and scale down when not collapsed */
+/* Custom Hamburger Icon */
+.navbar-toggler-icon {
+  width: 1.5rem;
+  /* Set the width of the icon */
+  height: 1.5rem;
+  /* Set the height of the icon */
+  display: inline-block;
+  /* Make the icon inline */
+  position: relative;
+  /* Position relative for absolute child elements */
+  vertical-align: middle;
+  /* Align vertically in the middle */
+  background-color: var(--main-color);
+  /* Blue background color */
+  border-radius: var(--border-radius);
+  /* Rounded corners */
+  cursor: pointer;
+  /* Cursor pointer */
+}
+
+/* The three hamburger lines */
+.navbar-toggler-icon .bar {
+  position: absolute;
+  /* Position absolutely */
+  width: 100%;
+  /* Full width */
+  height: 0.2rem;
+  /* Height of each line */
+  background-color: var(--header-text-color);
+  /* White color for lines */
+  border-radius: 0.4rem;
+  /* Rounded corners */
+  transition: transform 0.3s ease-out;
+  /* Smooth transform transition */
+}
+
+/* Positioning for each line */
+.navbar-toggler-icon .bar:nth-child(1) {
+  top: 0.25rem;
+}
+
+.navbar-toggler-icon .bar:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar-toggler-icon .bar:nth-child(3) {
+  bottom: 0.25rem;
+}
+
+/* Style for lines when toggler is active */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .bar:nth-child(1) {
+  transform: translateY(0.50rem) rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .bar:nth-child(2) {
+  transform: scale(0);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .bar:nth-child(3) {
+  transform: translateY(-0.60rem) rotate(-45deg);
 }
 
 /* Footer */
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around; /* Space around content */
+.cs-footer{
+background: linear-gradient(to top, black, var(--main-color));
 }
-
-.footer-img {
-  width: 30%; /* Image width */
+.cs-footer h5{
+  font-size: var(--font-size-h5);
 }
- footer a:hover{
-  transform: scale(0.9);
+.cs-footer a,.cs-footer p{
+  font-size: var(--font-size-p);
 }
-.footer-icon-container {
-  display: flex;
-  justify-content: space-around; /* Space around icons */
-  width: 50%; /* Container width */
-}
-
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-  .top-header{
+  .top-header {
     flex-direction: column;
+    background: linear-gradient(to top, black, var(--main-color));
   }
+
   .logo {
-    width: 50%; /* Logo width on smaller screens */
+    background: linear-gradient(to top, black, var(--main-color));
   }
-  .title {
-    width: 100%; /* Title width on smaller screens */
+
+  .cs-navbar {
+    float: left;
+    background: linear-gradient(to left, black, var(--main-color));
+  }
+.cs-container-fluid {
+  position: absolute;
+  top: 0;
+
+}
+  .dropdown-menu {
+    background: linear-gradient(to left, black, var(--main-color));
+    width: 20%;
   }
 
   footer {
-    flex-direction: column; /* Column layout for footer */
+    flex-direction: column;
+    /* Column layout for footer */
   }
 
   .footer-img {
-    width: 80%; /* Image width on smaller screens */
+    width: 80%;
+    /* Image width on smaller screens */
   }
 }

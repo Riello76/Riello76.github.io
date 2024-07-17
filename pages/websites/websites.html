@@ -23,137 +23,128 @@
 </head>
 
 <body>
-  <!-- Header -->
-  <header>
-    <div class="top-header">
-      <img
-        tabindex="1"
-        class="logo"
-        src="/images/my-img.svg"
-        alt="logo"
-        title="logo"
-      />
-      <img
-        tabindex="2"
-        class="title"
-        src="/images/title.svg"
-        alt="title"
-        title="Page title"
-      />
-    </div>
-    <!-- Navigation buttons -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../../index.html"><img src="../../images/logo-navbar.svg" alt="navbar logo"></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!-- home button -->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../../index.html"
-                ><h2>HOME</h2></a>
-            </li>
-                  <!-- cv button -->
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <h2>CV</h2>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="../curriculum/curriculum.html"
-                          >Main</a
-                        >
-                      </li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          aria-label="Download CV in PDF format"
-                          href="../../files/Gaspare Tocci CV.pdf"
-                          download="Gaspare Tocci CV.pdf"
-                          title="Download CV in PDF format"
-                        >
-                          Download -PDF-
-                        </a>
-                      </li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          aria-label="Download CV in DOC format"
-                          href="../../files/Gaspare Tocci CV.doc"
-                          download="Gaspare Tocci CV.doc"
-                          title="Download CV in DOC format"
-                        >
-                          Download -DOC-
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-            <!-- gallery button -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-               <h2>GALLERY</h2>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../gallery/gallery.html">Main</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="../gallery/pages/branding.html">Branding</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="../gallery/pages/graphics.html">Graphic</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="../gallery/pages/3d-design.html">3D Design</a></li>
-              </ul>
-            </li>
-            <!-- websites button -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <h2>WEBSITES</h2>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../websites/websites.html">Main</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="../websites/pages/glastonbury/index.html">Glastonbury Festival</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="../websites/pages/old-portfolio/old-portfolio.html">Old Portfolio</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+    <!-- Header -->
+    <header>
+      <div class="top-header">
+        <img tabindex="1" class="logo" src="/images/my-img.svg" alt="logo" title="logo" />
+        <h1 class="title">Every problem has its creative solution.</h1>
       </div>
-    </nav>
+      <!-- Navigation menu -->
+      <nav class="navbar navbar-expand-lg  cs-navbar">
+        <div class="container-fluid cs-container-fluid">
+    
+          <!-- Navbar Toggler Button with Hamburger Icon -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </span>
+          </button>
+    
+          <!-- Navbar Collapse Content -->
+          <div class="collapse navbar-collapse cs-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
+              <!-- Home button -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html" title="Homepage">
+                  <h4>HOME</h4>
+                </a>
+              </li>
+    
+              <!-- CV dropdown menu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  title="Curriculum">
+                  <h4>CV</h4>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../curriculum/curriculum.html" title="Main Page">Main Page</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" aria-label="Download CV in PDF format" href="/files/Gaspare Tocci CV.pdf"
+                      download="Gaspare Tocci CV.pdf" title="Download CV in PDF format">Download -PDF-</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" aria-label="Download CV in DOC format" href="/files/Gaspare Tocci CV.doc"
+                      download="Gaspare Tocci CV.doc" title="Download CV in DOC format">Download -DOC-</a></li>
+                </ul>
+              </li>
+    
+              <!-- Gallery dropdown menu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  title="Gallery">
+                  <h4>GALLERY</h4>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../gallery/gallery.html" title="Main page">Main Page</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="../gallery/pages/branding.html" title="Branding">Branding</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="../gallery/pages/graphics.html" title="Graphic">Graphic</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="../gallery/pages/3d-design.html" title="3D Design">3D Design</a>
+                  </li>
+                </ul>
+              </li>
+    
+              <!-- Websites dropdown menu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  title="Websites">
+                  <h4>WEBSITES</h4>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../websites/websites.html" title="Main">Main Page</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="../websites/pages/glastonbury/index.html"
+                      title="Glastonbury Festival">Glastonbury Festival</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="../websites/pages/old-portfolio/old-portfolio.html"
+                      title="Old Portfolio">Old Portfolio</a></li>
+                </ul>
+              </li>
+    
+              <!-- Contact dropdown menu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  title="Contacts">
+                  <h4>CONTACTS</h4>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank"
+                      title="LinkedIn">LinkedIn</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="https://github.com/Riello76" target="_blank" title="GitHub">GitHub</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="mailto:gaspare_tocci@yahoo.it" title="Email">Email</a></li>
+                </ul>
+              </li>
+    
+            </ul>
+          </div>
+        </div>
+      </nav>
   </header>
     <!-- Main content -->
     <main>

@@ -1,117 +1,136 @@
 @import url("/styles/header-footer-resets.css");
 
-
-/* Main */
+/* Main section */
 main {
+  /* Set main content to flexbox with centered content and wrapping */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center content */
+  justify-content: center;
+    background-color: black;
+    background: linear-gradient(to right, black, var(--main-color));
 }
 
 .top-main {
+  /* Header section with flex layout, space between items, and horizontal alignment */
   display: flex;
   flex-wrap: wrap;
-  align-self: center;
-  justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+ 
+  width: 100%;
+}
+
+.top-main h5 {
+  font-size: var(--font-size-h5);
+  margin-right: 6rem;
+}
+
+.my-img {
+  /* Image style to take full width */
+  width: 20%;
+}
+
+.news-div {
+  /* News section with 30% width */
+  width: 30%;
+  height: 100%;
   text-align: center;
-  padding: 20px; /* Padding around sections */
-  background-color: transparent; /* Transparent background */
-  width: 100%; /* Section width */
 }
 
-.top-main h1 {
-  font-size: var(--font-size-h1);
-  font-weight: bold;
-  word-wrap: break-word;
+.news-div h6 {
+  font-size: var(--font-size-h6);
 }
 
-.top-main > h2 {
-  font-size: var(--font-size-h2);
-  word-wrap: break-word;
-}
-
-span {
-  color: var(--main-color);
-  text-decoration: underline white; /* Underline with white color */
+.news-div iframe {
+  height: 80%;
 }
 
 .middle-main {
+  /* Main content section with centered content, gap between items, and padding */
   display: flex;
   flex-wrap: wrap;
-  align-self: center;
   justify-content: center;
-  flex-direction: row;
-  gap: 5rem; /* Gap between sections */
-  padding: 20px; /* Padding around sections */
-  background-color: transparent; /* Transparent background */
-  width: 100%; /* Section width */
+  gap: 5rem;
+  /* Gap between sections */
+  padding: 20px;
+  /* Padding around sections */
+  background-color: transparent;
+  /* Transparent background */
+  width: 100%;
+  /* Full width */
+}
+
+.middle-main h6 {
+  /* Styling for h6 headings in the middle-main section */
+  width: 100%;
+  text-align: left;
+  color: white;
+  /* White text color */
+  font-size: var(--font-size-h6);
+  /* Font size */
+  border-radius: var(--border-radius);
+  /* Rounded corners */
+  margin-bottom: 1rem;
+  /* Bottom margin */
 }
 
 section {
-  width: 30%; /* Section width */
+  /* Sections within middle-main with 30% width */
+  width: 30%;
 }
 
-.middle-main h5 {
-  width: 100%; /* Full width */
-  text-align: center; /* Center align */
-  background: url(/images/bg-label.svg) center / 55em no-repeat; /* Background with image */
-  color: white; /* White text color */
-  font-size: 1.5em; /* Heading font size */
-  border-radius: var(--border-radius) var(--border-radius) 0 0; /* Border radius */
-  box-shadow: 0 10px 15px var(--header-text-color); /* Box shadow */
-  margin-bottom: 1rem; /* Bottom margin */
-  animation: light-heading 6s infinite; /* Animation */
+section p {
+  width: 100%;
+  text-align: left;
+  font-size: var(--font-size-p);
+  overflow: auto;
+  color: var(--header-text-color);
+  height: 40rem;
+  word-break: break-all;
+  
 }
 
-@keyframes light-heading {
-  0%, 100% {
-    box-shadow: 0 10px 15px white; /* White shadow */
-  }
-  50% {
-    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.662); /* Shadow with opacity */
-  }
+section>p::-webkit-scrollbar,
+section>ul::-webkit-scrollbar {
+  /* Scrollbar width */
+  width: 10px;
 }
 
-section p, iframe {
-  width: 100%; /* Full width */
-  text-align: left; /* Left align */
-  font-size: var(--font-size-p); /* Font size */
-  overflow: auto; /* Overflow handling */
-  box-shadow: 0 0 10px var(--header-text-color); /* Box shadow */
-  color: var(--header-text-color); /* Text color */
-  height: 400px; /* Fixed height */
-  word-break: break-all; /* Word break handling */
-  padding: 1rem; /* Padding around content */
-  background: var(--header-bg-color) linear-gradient(to bottom, rgba(255, 255, 255, 0.662), rgba(255, 255, 255, 0)); /* Background gradient */
-  animation: light-p 6s infinite; /* Animation */
-}
-
-@keyframes light-p {
-  0%, 100% {
-    background: rgba(255, 255, 255, 0); /* Transparent background */
-  }
-  50% {
-    background: rgba(0, 0, 0, 0.662); /* Background with opacity */
-  }
-}
-
-section > p::-webkit-scrollbar, section > ul::-webkit-scrollbar {
-  width: 10px; /* Scrollbar width */
-}
-
-section > p::-webkit-scrollbar-thumb, ul::-webkit-scrollbar-thumb {
-  background-color: var(--main-color-opacity); /* Scrollbar thumb color with opacity */
-  border-radius: var(--border-radius); /* Scrollbar border radius */
+section>p::-webkit-scrollbar-thumb,
+ul::-webkit-scrollbar-thumb {
+  /* Scrollbar thumb style */
+  background-color: var(--main-color-opacity);
+  /* Scrollbar thumb color with opacity */
+  border-radius: var(--border-radius);
+  /* Rounded corners */
 }
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-  main {
-    flex-direction: column; /* Stack items vertically on small screens */
+
+  /* Media query for small screens */
+  main,
+  .top-main {
+    flex-direction: column;
+    background-color: black;
+  }
+.top-main h5 {
+  margin-right: 0;
+}
+  .my-img-div,
+  .news-div {
+    width: 100%;
+    /* Full width for image and news sections */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center align items */
   }
 
-  section {
-    width: 100%; /* Full width for sections on small screens */
+  .middle-main section {
+    width: 100%;
+    /* Full width for sections */
+    height: 20rem;
+
   }
 }
