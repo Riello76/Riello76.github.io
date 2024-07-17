@@ -206,7 +206,7 @@ iframe {
 
 /* Footer */
 .cs-footer{
-background: linear-gradient(to top, black, var(--main-color));
+background: linear-gradient(to right, black, var(--main-color));
 }
 .cs-footer h5{
   font-size: var(--font-size-h5);
