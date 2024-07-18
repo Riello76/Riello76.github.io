@@ -38,13 +38,14 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-
+  <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Custom stylesheets -->
   <link rel="stylesheet" href="/styles/header-footer-resets.css" />
   <link rel="stylesheet" href="/styles/index.css" />
 
   <!-- Favicon -->
-<link rel="icon" href="./icons/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml" />
 
 
   <!-- Preconnect links for performance improvement -->
@@ -61,7 +62,7 @@
     </div>
 
     <!-- Navigation menu -->
-    <nav class="navbar navbar-expand-lg  cs-navbar">
+    <nav  class="navbar navbar-expand-lg  cs-navbar" data-aos="fade-up-left">
       <div class="container-fluid cs-container-fluid">
 
         <!-- Navbar Toggler Button with Hamburger Icon -->
@@ -182,152 +183,184 @@
   <!-- Main content -->
   <main>
     <section class="top-main">
-      <img class="my-img" src="./images/my-photo.webp" alt="my image">
-      <h5>Let Me Tell You About Myself!</h5>
+      <img class="my-img" src="./images/my-photo.webp" alt="my image" data-aos="zoom-in">
+      <h5 data-aos="flip-right">Let Me Tell You About Myself!</h5>
     </section>
     <section class="middle-main">
-      <div class="accordion cs-accordion" id="accordionExample">
-        <div class="accordion-item cs-accordion-item">
-          <button class=" cs-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
-            About Me
-          </button>
-          <div id="collapseOne" class="accordion-collapse collapse show cs-collapse-accordion"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body cs-accordion-body">
-              <section class="about-me">
-                <p tabindex="0" aria-label="Description of my experience">
-                  Welcome to my portfolio! My name is <strong>Gaspare Tocci</strong>, and I am Italian. I have a great
-                  passion
-                  for web design and development.
-                  I am a <strong>self-taught</strong> person who, at every opportunity, follows any course that can
-                  improve my
-                  knowledge and give me new
-                  points of view. I like working in a team and achieving the goal together in the best way.
 
-                  This is my first portfolio, but I have my
-                  own idea of what I would like: a site that reflects sustainable web design as much as possible, but
-                  without
-                  depriving the visitor of a
-                  beautiful experience, with the right insertion of <strong>micro animations</strong>. I am for a design
-                  that
-                  is simple to understand and use
-                  and at the same time gives an excellent visual effect.
-                  All my images, logos, icons are in
-                  <strong>SVG</strong> or <strong>WEBP</strong>. I try to write code that
-                  <strong>respects best practices</strong>, and at the end of the project, <strong>everything will be
-                    minified
-                    to increase loading speed.</strong>
-                  <strong>I use AI as a support</strong> to speed up writing, and I help myself with
-                  <strong>snippets</strong>.
-                  I'm still at the beginning, and I
-                  have a lot to learn. For this reason, I'm looking for an apprentice opportunity. For my portfolio, I
-                  used
-                  <strong>Bootstrap</strong> to help
-                  streamline the design and responsiveness of the layout.
-                </p>
-              </section>
-              <img src="./images/london.webp" alt="my photo">
-            </div>
-          </div>
+      <!-- About Me -->
+
+      <section class="about-me">
+        <div>
+          <p class="about-me-p1" tabindex="0" aria-label="Description of my experience" data-aos="fade-right">
+            Welcome to my portfolio! My name is <strong>Gaspare Tocci</strong>, and I am Italian, currently living in
+            London. I have
+            a great passion for web design and development.
+          </p>
+          <hr>
+          <p class="about-me-p2" data-aos="fade-right">
+            I am a <strong>self-taught</strong> individual who seizes every opportunity to follow courses that can
+            enhance my
+            knowledge and provide new perspectives. I enjoy working in a team to achieve goals together in the best way
+            possible.
+          </p>
+          <hr>
+          <p class="about-me-p3" data-aos="fade-right">
+            This is my first portfolio, but I have a clear vision: a site that embodies sustainable web design without
+            depriving the
+            visitor of a beautiful experience, incorporating <strong>micro animations</strong> where appropriate. I
+            strive for a
+            design that is simple to understand and use, while also providing an excellent visual effect.
+          </p>
+          <hr>
+          <p class="about-me-p4" data-aos="fade-right">
+            All my images, logos, and icons are in <strong>SVG</strong> or <strong>WEBP</strong> formats. I aim to write
+            code that
+            <strong>respects best practices</strong>, ensuring everything is minified to increase loading speed by the
+            end of the
+            project.
+          </p>
+          <hr>
+          <p class="about-me-p5" data-aos="fade-right">
+            <strong>I use AI as a support tool</strong> to speed up writing, and I assist myself with
+            <strong>snippets</strong>.
+            Although I am still at the beginning of my journey and have much to learn, I am eager for an apprentice
+            opportunity. For
+            my portfolio, I used <strong>Bootstrap</strong> to help streamline the design and responsiveness of the
+            layout.
+          </p>
         </div>
-        <div class="accordion-item cs-accordion-item">
-          <button class="collapsed cs-accordion-button" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            My Tools
-          </button>
-          <div id="collapseTwo" class="accordion-collapse collapse cs-collapse-accordion"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body cs-accordion-body">
-              <section class="my-tools">
-                <p tabindex="0" aria-label="Description of my tools">
-                  <strong>Inkscape</strong>: <br> Used for creating and editing vector graphics, ensuring scalable and
-                  high-quality visuals. I leveraged
-                  its powerful tracing capabilities and drawing tools for designing custom logos, icons, and
-                  illustrations.
-                  <br />
+        <img src="./images/london.webp" alt="my photo" data-aos="fade-up"
+     data-aos-duration="3000">
+      </section>
 
+      <!-- My Tools -->
 
-                <p>
-                  <strong>VS Code</strong>: <br>My preferred code editor for writing clean, efficient code while
-                  following
-                  best practices. I use extensions such
-                  as HTML Preview, Live Preview, Open Browser Preview, Code Spell Checker, and Prettier for real-time
-                  updates,
-                  spell checking, and
-                  automatic code formatting.
-                </p> <br />
+      <section class="my-tools">
+        <div>
+          <p tabindex="0" aria-label="Description of my tools" data-aos="fade-right">
+            <strong>Inkscape</strong>: <br> Used for creating and editing vector graphics, ensuring scalable and
+            high-quality visuals. I leveraged
+            its powerful tracing capabilities and drawing tools for designing custom logos, icons, and
+            illustrations.
+          </p>
+          <a href="https://inkscape.org/" target="_blank"><img src="./icons/Inkscape.svg" alt="inkscape icon" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></a>
+        </div><br />
+        <hr>
+        <div>
+          <p data-aos="fade-right">
+            <strong>VS Code</strong>: <br>My preferred code editor for writing clean, efficient code while
+            following
+            best practices. I use extensions such
+            as HTML Preview, Live Preview, Open Browser Preview, Code Spell Checker, and Prettier for real-time
+            updates,
+            spell checking, and
+            automatic code formatting.
+          </p>
+          <a href="https://code.visualstudio.com/" target="_blank"><img src="./icons/vs-code.svg"
+              alt="visual studio code icon" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></a>
+        </div> <br />
+        <hr>
+        <div>
+          <p data-aos="fade-right">
+            <strong>Gimp</strong>:<br> Used for image editing and manipulation, enhancing photos, and creating
+            custom
+            graphics. I utilized advanced
+            tools like layers, masks, and filters to achieve professional visual effects.
+          </p>
+          <a href="https://www.gimp.org/" target="_blank"><img src="./icons/gimp.svg" alt="gimp icon" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></a>
+        </div> <br />
+        <hr>
+        <div>
+          <p data-aos="fade-right">
+            <strong>Blender</strong>:<br> Utilized for 3D modeling and animation, adding dynamic elements to my
+            projects. I created detailed 3D models and
+            smooth animations, integrating them into my web projects for greater interactivity and visual impact.
+          </p>
+          <a href="https://www.blender.org/" target="_blank"><img src="./icons/blender.svg" alt="blender icon" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></a>
 
-
-                <p>
-                  <strong>Gimp</strong>:<br> Used for image editing and manipulation, enhancing photos, and creating
-                  custom
-                  graphics. I utilized advanced
-                  tools like layers, masks, and filters to achieve professional visual effects.
-                </p> <br />
-
-
-                <p>
-                  <strong>Blender</strong>:<br> Utilized for 3D modeling and animation, adding dynamic elements to my
-                  projects. I created detailed 3D models and
-                  smooth animations, integrating them into my web projects for greater interactivity and visual impact.
-                </p>
-                <br />
-
-
-                <p>
-                  <strong>Figma</strong>:<br> Used for UI design and collaborative prototyping. I created interactive
-                  wireframes and mockups,
-                  facilitating design idea communication and real-time team collaboration.
-                </p> <br />
-
-
-                <p>
-                  <strong>Filmora</strong>: <br>A video editing tool used for creating and editing videos with a
-                  user-friendly
-                  interface. I used its various
-                  effects, transitions, and audio editing capabilities to produce polished and engaging video content.
-                </p>
-                <br />
-
-
-                <p>
-                  <strong>PowerPoint</strong>: <br>Utilized for creating presentations with impactful visuals and clear
-                  structure. I designed custom slides,
-                  incorporating multimedia elements and animations to enhance the delivery of information and engage the
-                  audience effectively.
-                </p> <br />
-
-
-                <p>
-                  <strong>Git</strong>:<br> Used for version control and collaboration in software development projects.
-                  I
-                  utilize Git commands for managing code versions, branching, merging, and collaborating with team
-                  members to
-                  ensure project integrity and efficiency.
-                </p>
-                </p>
-              </section>
-            </div>
-          </div>
         </div>
-        <div class="accordion-item cs-accordion-item">
-          <button class="collapsed cs-accordion-button" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            News
-          </button>
-          <div id="collapseThree" class="accordion-collapse collapse cs-collapse-accordion"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body cs-accordion-body">
-              <iframe
-                src="https://player.vimeo.com/video/963164639?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                title="Portfolio is work in progress"></iframe>
-            </div>
-          </div>
+        <br />
+        <hr>
+        <div>
+          <p data-aos="fade-right">
+            <strong>Figma</strong>:<br> Used for UI design and collaborative prototyping. I created interactive
+            wireframes and mockups,
+            facilitating design idea communication and real-time team collaboration.
+          </p>
+          <a href="https://www.figma.com/" target="_blank"><img src="./icons/figma.svg" alt="figma icon" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></a>
+
+        </div> <br />
+        <hr>
+        <div>
+          <p data-aos="fade-right">
+            <strong>Filmora</strong>: <br>A video editing tool used for creating and editing videos with a
+            user-friendly
+            interface. I used its various
+            effects, transitions, and audio editing capabilities to produce polished and engaging video content.
+          </p>
+          <a href="https://filmora.wondershare.net/" target="_blank"><img src="./icons/filmora.svg"
+              alt="filmora icon" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></a>
+
         </div>
-      </div>
-      </div>
+        <br />
+        <hr>
+        <div>
+          <p data-aos="fade-right">
+            <strong>PowerPoint</strong>: <br>Utilized for creating presentations with impactful visuals and clear
+            structure. I designed custom slides,
+            incorporating multimedia elements and animations to enhance the delivery of information and engage the
+            audience effectively.
+          </p>
+          <a href="https://www.microsoft.com/en-gb/microsoft-365/powerpoint" target="_blank"><img
+              src="./icons/powerpoint.svg" alt="powerpoint icon" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></a>
+
+        </div> <br />
+        <hr>
+        <div>
+          <p data-aos="fade-right">
+            <strong>Git</strong>:<br> Used for version control and collaboration in software development projects.
+            I
+            utilize Git commands for managing code versions, branching, merging, and collaborating with team
+            members to
+            ensure project integrity and efficiency.
+          </p>
+          <a href="https://git-scm.com/" target="_blank"><img src="./icons/git.svg" alt="git icon" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"></a>
+
+        </div>
+      </section>
+
+      <!--  News  -->
+
+      <section class="news">
+        <iframe src="https://player.vimeo.com/video/963164639?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          width="1920" height="1440" frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; gyroscope; accelerometer"
+          title="Portfolio is work in progress" data-aos="zoom-in"></iframe>
+        <p data-aos="zoom-out-up">
+          This portfolio is a work in progress, and I am continually refining and adding new elements to enhance both
+          functionality and aesthetics. You will get a glimpse of my current work, the techniques I use, and my
+          commitment to
+          creating a smooth and engaging user experience. Stay tuned for updates as I continue to build and improve my
+          portfolio.
+        </p>
+      </section>
     </section>
 
   </main>
@@ -378,6 +411,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

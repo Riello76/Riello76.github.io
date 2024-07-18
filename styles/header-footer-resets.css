@@ -86,6 +86,7 @@ iframe {
 /* Navbar */
 .cs-navbar {
   float: right;
+  z-index: 1000;
 }
 
 .cs-navbar h6 {
@@ -191,22 +192,17 @@ iframe {
 }
 
 /* Media Queries */
-@media screen and (max-width: 424px) {
-  p {
-    font-size: 1.5rem;
-  }
-
+@media screen and (max-width:768px) {
   .top-header {
     flex-direction: column;
-
   }
 
   .logo {
-    width: 10rem;
+    width: 20rem;
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
   .cs-navbar {
@@ -214,53 +210,9 @@ iframe {
 
   }
 
-  .cs-navbar h6 {
-    font-size: 1.5rem;
-  }
-
   .cs-container-fluid {
     position: absolute;
     top: 0;
 
-  }
-}
-
-@media screen and (min-width: 425px) and (max-width: 768px) {
-  .top-header {
-    flex-direction: column;
-
-  }
-
-  .logo {
-    width: 15rem;
-  }
-
-  .title {
-    font-size: 3rem;
-  }
-
-  .cs-navbar {
-    float: left;
-
-  }
-
-  .cs-navbar h6 {
-    font-size: 1.5rem;
-  }
-
-  .cs-container-fluid {
-    position: absolute;
-    top: 0;
-
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-
-  .logo {
-    width: 15rem;
-  }
-
-  .title {
-    font-size: 3rem;
   }
 }
