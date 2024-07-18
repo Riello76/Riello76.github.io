@@ -20,6 +20,7 @@ main {
   width: 100%;
   border-top-right-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
+  margin-bottom: 5rem;
 }
 
 .top-main h5 {
@@ -38,8 +39,18 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 5rem;
 }
-
+.about-me{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow: auto;
+}
+.my-tools{
+    overflow: auto;
+}
 .cs-accordion {
   background-color: black;
   width: 100%;
@@ -58,16 +69,22 @@ main {
 .cs-accordion-item {
   background-color: transparent;
   border: none;
+  margin-bottom: 5rem;
 }
 
 .cs-accordion-body {
   color: var(--secondary-color);
   overflow: auto;
-  width: 50%;
   border-top-right-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
+.cs-accordion-body img {
+  width: 100%;
+  height:100%;
+}
 .cs-accordion iframe {
   width: 100%;
   height: 100%;
@@ -93,6 +110,73 @@ section ul::-webkit-scrollbar-thumb {
 }
 
 /* Media Queries */
+@media screen and (max-width: 424px) {
+
+  .top-main {
+    flex-direction: column;
+  }
+
+  .top-main h5 {
+    font-size: 2rem;
+  }
+
+  .my-img {
+    width: 10rem;
+  }
+
+  .middle-main section {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 10rem;
+  }
+.cs-accordion-body {
+  flex-direction: column-reverse;
+}
+  .cs-accordion-button,
+  .cs-accordion-body {
+    width: 100%;
+  }
+
+  .cs-accordion iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 30rem;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+
+  .top-main {
+    flex-direction: column;
+  }
+
+  .top-main h5 {
+    font-size: 2rem;
+  }
+
+  .my-img {
+    width: 20rem;
+  }
+
+  .middle-main section {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 10rem;
+  }
+.cs-accordion-body {
+  flex-direction: column-reverse;
+}
+  .cs-accordion-button,
+  .cs-accordion-body {
+    width: 100%;
+  }
+
+  .cs-accordion iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 30rem;
+  }
+}
+
 @media screen and (min-width: 425px) and (max-width: 768px) {
 
   .top-main {
@@ -125,34 +209,3 @@ section ul::-webkit-scrollbar-thumb {
   }
 }
 
-@media screen and (max-width: 375px) {
-
-  .top-main {
-    flex-direction: column;
-  }
-
-  .top-main h5 {
-    font-size: 2rem;
-  }
-
-  .my-img {
-    width: 10rem;
-  }
-
-  .middle-main section {
-    width: 100%;
-    height: 20rem;
-    margin-bottom: 10rem;
-  }
-
-  .cs-accordion-button,
-  .cs-accordion-body {
-    width: 100%;
-  }
-
-  .cs-accordion iframe {
-    width: 100%;
-    height: 100%;
-    min-height: 30rem;
-  }
-}
