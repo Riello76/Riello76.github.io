@@ -74,7 +74,7 @@
         </button>
 
         <!-- Navbar Collapse Content -->
-        <div class="collapse navbar-collapse cs-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse cs-collapse-navbar" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             <!-- Home button -->
@@ -185,82 +185,141 @@
       <h5>Let Me Tell You About Myself!</h5>
     </section>
     <section class="middle-main">
-      <section>
-        <h6 tabindex="0" aria-label="About Me">About me!</h6>
-        <!-- Paragraph about the author -->
-        <p tabindex="0" aria-label="Description of my experience">
-          Welcome to my portfolio! My name is <strong>Gaspare Tocci</strong>, and
-          I am Italian. I have a great passion for web design and development.
-          I am a <strong>self-taught</strong> person who, at every opportunity,
-          follows any course that can improve my knowledge and give me new
-          points of view. I like working in a team and achieving the goal
-          together in the best way. This is my first portfolio, but I have my
-          own idea of what I would like: a site that reflects sustainable web
-          design as much as possible, but without depriving the visitor of a
-          beautiful experience, with the right insertion of
-          <strong>micro animations</strong>. I am for a design that is simple to
-          understand and use and at the same time gives an excellent visual
-          effect. All my images, logos, icons are in <strong>SVG</strong> or
-          <strong>WEBP</strong>. I try to write code that
-          <strong>respects best practices</strong>, and at the end of the project,
-          <strong>everything will be minified to increase loading speed.</strong>
-          <strong>I use AI as a support</strong> to speed up writing, and I help
-          myself with <strong>snippets</strong>. I'm still at the beginning, and I
-          have a lot to learn. For this reason, I'm looking for an apprentice
-          opportunity. For my portfolio, I used <strong>Bootstrap</strong> to help
-          streamline the design and responsiveness of the layout.
-        </p>
-      </section>
+      <div class="accordion cs-accordion" id="accordionExample">
+        <div class="accordion-item cs-accordion-item">
+          <button class=" cs-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            About Me
+          </button>
+          <div id="collapseOne" class="accordion-collapse collapse show cs-collapse-accordion" data-bs-parent="#accordionExample">
+            <div class="accordion-body cs-accordion-body">
+              <section class="about-me">
+                <p tabindex="0" aria-label="Description of my experience">
+                  Welcome to my portfolio! My name is <strong>Gaspare Tocci</strong>, and I am Italian. I have a great
+                  passion
+                  for web design and development.
+                  I am a <strong>self-taught</strong> person who, at every opportunity, follows any course that can
+                  improve my
+                  knowledge and give me new
+                  points of view. I like working in a team and achieving the goal together in the best way. <br> <hr> 
+                  <p>
+                    This is my first portfolio, but I have my
+                    own idea of what I would like: a site that reflects sustainable web design as much as possible, but
+                    without
+                    depriving the visitor of a
+                    beautiful experience, with the right insertion of <strong>micro animations</strong>. I am for a design
+                    that
+                    is simple to understand and use
+                    and at the same time gives an excellent visual effect.
+                  </p> <br><hr> <p>
+                    All my images, logos, icons are in
+                    <strong>SVG</strong> or <strong>WEBP</strong>. I try to write code that
+                    <strong>respects best practices</strong>, and at the end of the project, <strong>everything will be
+                      minified
+                      to increase loading speed.</strong>
+                    <strong>I use AI as a support</strong> to speed up writing, and I help myself with
+                    <strong>snippets</strong>.
+                  </p> <br><hr><p>
+                     I'm still at the beginning, and I
+                    have a lot to learn. For this reason, I'm looking for an apprentice opportunity. For my portfolio, I
+                    used
+                    <strong>Bootstrap</strong> to help
+                    streamline the design and responsiveness of the layout.
+                  </p>
+                </p>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item cs-accordion-item">
+          <button class="collapsed cs-accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            My Tools
+          </button>
+          <div id="collapseTwo" class="accordion-collapse collapse cs-collapse-accordion" data-bs-parent="#accordionExample">
+            <div class="accordion-body cs-accordion-body">
+              <section>
+                <p tabindex="0" aria-label="Description of my tools">
+                  <strong>Inkscape</strong>: <br> Used for creating and editing vector graphics, ensuring scalable and
+                  high-quality visuals. I leveraged
+                  its powerful tracing capabilities and drawing tools for designing custom logos, icons, and
+                  illustrations.
+                  <br /> <hr>
 
-      <section>
-        <h6 tabindex="0" aria-label="My tools">My Tools</h6>
-        <!-- Paragraph about the tools -->
-        <p tabindex="0" aria-label="Description of my tools">
-          <strong>Inkscape</strong>: Used for creating and editing vector
-          graphics, ensuring scalable and high-quality visuals. I leveraged
-          its powerful tracing capabilities and drawing tools for designing
-          custom logos, icons, and illustrations. <br />
+                  <p>
+                    <strong>VS Code</strong>: <br>My preferred code editor for writing clean, efficient code while
+                    following
+                    best practices. I use extensions such
+                    as HTML Preview, Live Preview, Open Browser Preview, Code Spell Checker, and Prettier for real-time
+                    updates,
+                    spell checking, and
+                    automatic code formatting.
+                  </p> <br /><hr>
 
-          <strong>VS Code</strong>: My preferred code editor for writing clean,
-          efficient code while following best practices. I use extensions such
-          as HTML Preview, Live Preview, Open Browser Preview, Code Spell
-          Checker, and Prettier for real-time updates, spell checking, and
-          automatic code formatting. <br />
+                  <p>
+                    <strong>Gimp</strong>:<br> Used for image editing and manipulation, enhancing photos, and creating
+                    custom
+                    graphics. I utilized advanced
+                    tools like layers, masks, and filters to achieve professional visual effects.
+                  </p> <br /> <hr>
 
-          <strong>Gimp</strong>: Used for image editing and manipulation,
-          enhancing photos, and creating custom graphics. I utilized advanced
-          tools like layers, masks, and filters to achieve professional visual
-          effects. <br />
+                  <p>
+                    <strong>Blender</strong>:<br> Utilized for 3D modeling and animation, adding dynamic elements to my
+                    projects. I created detailed 3D models and
+                    smooth animations, integrating them into my web projects for greater interactivity and visual impact.
+                  </p>
+                  <br /><hr>
 
-          <strong>Blender</strong>: Utilized for 3D modeling and animation, adding
-          dynamic elements to my projects. I created detailed 3D models and
-          smooth animations, integrating them into my web projects for greater
-          interactivity and visual impact. <br />
+                  <p>
+                    <strong>Figma</strong>:<br> Used for UI design and collaborative prototyping. I created interactive
+                    wireframes and mockups,
+                    facilitating design idea communication and real-time team collaboration.
+                  </p> <br /><hr>
 
-          <strong>Figma</strong>: Used for UI design and collaborative
-          prototyping. I created interactive wireframes and mockups,
-          facilitating design idea communication and real-time team
-          collaboration. <br />
+                  <p>
+                    <strong>Filmora</strong>: <br>A video editing tool used for creating and editing videos with a
+                    user-friendly
+                    interface. I used its various
+                    effects, transitions, and audio editing capabilities to produce polished and engaging video content.
+                  </p>
+                  <br /><hr>
 
-          <strong>Filmora</strong>: A video editing tool used for creating and
-          editing videos with a user-friendly interface. I used its various
-          effects, transitions, and audio editing capabilities to produce
-          polished and engaging video content. <br />
+                  <p>
+                    <strong>PowerPoint</strong>: <br>Utilized for creating presentations with impactful visuals and clear
+                    structure. I designed custom slides,
+                    incorporating multimedia elements and animations to enhance the delivery of information and engage the
+                    audience effectively.
+                  </p> <br /><hr>
 
-          <strong>PowerPoint</strong>: Utilized for creating presentations with
-          impactful visuals and clear structure. I designed custom slides,
-          incorporating multimedia elements and animations to enhance the
-          delivery of information and engage the audience effectively. <br />
-
-          <strong>GIT</strong>: Used for version control and collaboration in software development projects. I utilize
-          Git
-          commands
-          for managing code versions, branching, merging, and collaborating with team members to ensure project
-          integrity and
-          efficiency.
-        </p>
-      </section>
+                  <p>
+                    <strong>Git</strong>:<br> Used for version control and collaboration in software development projects.
+                    I
+                    utilize Git commands for managing code versions, branching, merging, and collaborating with team
+                    members to
+                    ensure project integrity and efficiency.
+                  </p>
+                </p>
+              </section>
+            </div>
+          </div>
+        </div>
+          <div class="accordion-item cs-accordion-item">
+              <button class="collapsed cs-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                News
+              </button>
+            <div id="collapseThree" class="accordion-collapse collapse cs-collapse-accordion" data-bs-parent="#accordionExample">
+              <div class="accordion-body cs-accordion-body">
+                  <iframe src="https://player.vimeo.com/video/963164639?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                    title="Portfolio is work in progress"></iframe>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
     </section>
+
   </main>
 
   <!-- Footer Section -->
@@ -270,7 +329,7 @@
 
         <!-- Contact Information -->
         <div class="col-md-4">
-          <h5>Contact Information</h5>
+          <h6>Contact Information</h6>
           <ul class="list-unstyled">
             <li><a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="text-white"
                 title="LinkedIn">LinkedIn</a></li>
@@ -283,7 +342,7 @@
 
         <!-- Quick Links -->
         <div class="col-md-4">
-          <h5>Quick Links</h5>
+          <h6>Quick Links</h6>
           <ul class="list-unstyled">
             <li><a href="./index.html" class="text-white" title="Homepage">Home</a></li>
             <li><a href="./pages/curriculum/curriculum.html" class="text-white" title="Curriculum">CV</a></li>
@@ -294,10 +353,9 @@
 
         <!-- Additional Information -->
         <div class="col-md-4">
-          <h5>Additional Information</h5>
-          <p>Welcome to my portfolio! My name is Gaspare Tocci, and I am a passionate web designer and developer. I am
-            always eager to learn and improve my skills through various courses and practical experiences. I believe in
-            creating sustainable web designs that provide excellent user experiences.</p>
+          <h6>Additional Information</h6>
+          <p>Feel free to reach out if you have any questions or opportunities. I am always open to discussing new projects,
+          creative ideas, or potential collaborations.</p>
         </div>
 
       </div>

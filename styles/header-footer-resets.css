@@ -9,46 +9,32 @@
 
 /* Global variables */
 :root {
-  /* text color */
-  --header-text-color: #DCDCDC;
-
   /* Main color */
   --main-color: rgb(2, 2, 69);
 
+  /* Secondary color */
+  --secondary-color: #DCDCDC;
+
   /* Border radius */
   --border-radius: 2.5rem;
-
-  /* Font size for h1 */
-  --font-size-h1: 8vw;
-
-  /* Font size for h2 */
-  --font-size-h2: 4vw;
-
-  /* Font size for h3 */
-  --font-size-h3: 3.5vw;
-
-  /* Font size for h4 */
-  --font-size-h4: 3vw;
-
-  /* Font size for h5 */
-  --font-size-h5: 2.5vw;
-
-  /* Font size for h6 */
-  --font-size-h6: 1.2vw;
-
-  /* Paragraph font size */
-  --font-size-p: 1.2vw;
-
 }
 
-/* Apply color to text in headings */
+/* Apply color to text */
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  color: var(--header-text-color);
+h6,
+p,
+ul,
+li,
+a {
+  color: var(--secondary-color);
+}
+
+p {
+  font-size: 2rem;
 }
 
 /* Body and HTML */
@@ -72,20 +58,21 @@ iframe {
   width: 100%;
   height: auto;
 }
+
 /* Header */
 .top-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--header-text-color);
   background-color: black;
   background: linear-gradient(to right, black, var(--main-color));
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
 }
 
 .logo {
-  width: 20%;
+  width: 30rem;
   height: auto;
-  background: linear-gradient(to left, black, var(--main-color));
   border-radius: 100%;
 }
 
@@ -93,38 +80,41 @@ iframe {
   width: 100%;
   height: auto;
   text-align: center;
-  font-size: var(--font-size-h2);
-  color: var(--header-text-color)
+  font-size: 8rem;
 }
 
 /* Navbar */
 .cs-navbar {
   float: right;
-
 }
-.cs-navbar h6{
-  font-size: var(--font-size-h6);
+
+.cs-navbar h6 {
   font-weight: bold;
+  font-size: 2rem;
 }
 
+.cs-collapse-navbar {
+  background: linear-gradient(to right, black, var(--main-color));
+}
 
 .nav-link {
   display: flex;
   align-items: center;
+  padding: 0;
 }
 
 .dropdown-toggle::after {
-  color: var(--header-text-color);
-  font-size: 2rem;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
 }
 
 .dropdown-menu {
   background: linear-gradient(to right, black, var(--main-color));
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .dropdown-menu a {
-  color: var(--header-text-color);
+  color: var(--secondary-color);
   font-weight: bold;
 }
 
@@ -132,49 +122,29 @@ iframe {
 /* Navbar Toggler Icon */
 .navbar-toggler {
   border: none;
-  /* No border */
-  background: transparent;
-  /* Transparent background */
   outline: none;
-  /* No outline */
   padding: 0;
-  /* No padding */
 }
 
 /* Custom Hamburger Icon */
 .navbar-toggler-icon {
-  width: 1.5rem;
-  /* Set the width of the icon */
-  height: 1.5rem;
-  /* Set the height of the icon */
+  width: 2.5rem;
+  height: 2rem;
   display: inline-block;
-  /* Make the icon inline */
   position: relative;
-  /* Position relative for absolute child elements */
   vertical-align: middle;
-  /* Align vertically in the middle */
-  background-color: var(--main-color);
-  /* Blue background color */
-  border-radius: var(--border-radius);
-  /* Rounded corners */
+  background: transparent;
   cursor: pointer;
-  /* Cursor pointer */
 }
 
 /* The three hamburger lines */
 .navbar-toggler-icon .bar {
   position: absolute;
-  /* Position absolutely */
   width: 100%;
-  /* Full width */
   height: 0.2rem;
-  /* Height of each line */
-  background-color: var(--header-text-color);
-  /* White color for lines */
+  background-color: var(--secondary-color);
   border-radius: 0.4rem;
-  /* Rounded corners */
   transition: transform 0.3s ease-out;
-  /* Smooth transform transition */
 }
 
 /* Positioning for each line */
@@ -201,52 +171,81 @@ iframe {
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .bar:nth-child(3) {
-  transform: translateY(-0.60rem) rotate(-45deg);
+  transform: translateY(-0.80rem) rotate(-45deg);
 }
 
 /* Footer */
-.cs-footer{
-background: linear-gradient(to right, black, var(--main-color));
+.cs-footer {
+  background: linear-gradient(to right, black, var(--main-color));
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
 }
-.cs-footer h5{
-  font-size: var(--font-size-h5);
+
+.cs-footer h6 {
+  font-size: 2rem;
 }
-.cs-footer a,.cs-footer p{
-  font-size: var(--font-size-p);
+
+.cs-footer a,
+.cs-footer p {
+  font-size: 1.5rem;
 }
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
-  .top-header {
-    flex-direction: column;
-    background: linear-gradient(to top, black, var(--main-color));
+@media screen and (max-width: 375px) {
+  p{
+    font-size: 1.5rem;
+  }
+.top-header {
+  flex-direction: column;
+
+}
+  .logo{
+    width: 10rem;
   }
 
-  .logo {
-    background: linear-gradient(to top, black, var(--main-color));
+  .title {
+    font-size: 2rem;
   }
 
   .cs-navbar {
     float: left;
-    background: linear-gradient(to left, black, var(--main-color));
-  }
-.cs-container-fluid {
-  position: absolute;
-  top: 0;
 
+  }
+
+  .cs-navbar h6 {
+    font-size: 1.5rem;
+  }
+
+  .cs-container-fluid {
+    position: absolute;
+    top: 0;
+
+  }
 }
-  .dropdown-menu {
-    background: linear-gradient(to left, black, var(--main-color));
-    width: 20%;
-  }
-
-  footer {
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .top-header {
     flex-direction: column;
-    /* Column layout for footer */
+
+  }
+ .logo {
+   width: 15rem;
+ }
+  .title {
+    font-size: 3rem;
   }
 
-  .footer-img {
-    width: 80%;
-    /* Image width on smaller screens */
+  .cs-navbar {
+    float: left;
+
+  }
+
+  .cs-navbar h6 {
+    font-size: 1.5rem;
+  }
+
+  .cs-container-fluid {
+    position: absolute;
+    top: 0;
+
   }
 }
