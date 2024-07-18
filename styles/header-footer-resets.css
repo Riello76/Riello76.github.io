@@ -68,7 +68,6 @@ iframe {
   background: linear-gradient(to right, black, var(--main-color));
   border-top-right-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
-  margin-bottom: 5rem;
 }
 
 .logo {
