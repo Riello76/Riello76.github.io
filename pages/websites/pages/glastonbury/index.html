@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Final Project</title>
+
+    <!-- meta tags SEO -->
+    <meta name="author" content="Gaspare Tocci">
+    <meta name="description" content="Glastonbury Festival Website">
+    <meta name="keywords"
+        content="music festival, live music, artists, lineup, dates, location, tickets, cultural events, concerts, live performances">
+    <meta property="og:title" content="Glastonbury Festival">
+    <meta property="og:description"
+        content="Join us at the Glastonbury Festival for an unforgettable experience with live music, artists, and cultural events.">
+    <meta property="og:image" content="https://www.glastonburyfestivals.co.uk/path-to-your-image.jpg">
+    <meta property="og:url" content="https://www.glastonburyfestivals.co.uk/">
+    <meta property="og:profile" content="https://www.instagram.com/glastofest/">
+
+    <!-- link to external file -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <a class="logo" href="./index.html"><img src="./images/logo.svg" alt="logo"></a>
+        <img class="hero-image" src="./images/hero-img.svg" alt="hero image"></img>
+
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="navbar-buttons">
+                <button id="home" class="nav-btn selected" onclick="subPage(this.id)">Home</button>
+                <button id="info" class="nav-btn" onclick="subPage(this.id)">Info</button>
+                <button id="line-up" class="nav-btn" onclick="subPage(this.id)">Line-up</button>
+                <button id="areas" class="nav-btn" onclick="subPage(this.id)">Areas</button>
+                <button id="gallery" class="nav-btn" onclick="subPage(this.id)">Gallery</button>
+                <button id="shop" class="nav-btn" onclick="subPage(this.id)">Shop</button>
+                <button id="news" class="nav-btn" onclick="subPage(this.id)">News</button>
+                <button id="websites" class="nav-btn" onclick="window.location.href='../../websites.html'">Websites</button>
+
+                <div class="search-container">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="  Search..." name="query" class="search-input"
+                            autocomplete="off">
+                        <button type="button">🔍</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+    <!-- Main Start -->
+    <main>
+
+        <section class="top-section">
+            <section class="info-festival">
+                <h2>Glastonbury Festival</h2>
+                <p>
+                    Glastonbury Festival (formally Glastonbury Festival of Contemporary Performing Arts and known
+                    colloquially as Glastonbury) is a five-day festival of contemporary performing arts held near
+                    Pilton, Somerset, England, in most summers. In addition to contemporary music, the festival hosts
+                    dance, comedy, theatre, circus, cabaret, and other arts. Leading pop and rock artists have
+                    headlined, alongside thousands of others appearing on smaller stages and performance areas. Films
+                    and albums have been recorded at the festival, and it receives extensive television and newspaper
+                    coverage.
+                    <br><br>
+                    Glastonbury is attended by around 200,000 people, requiring extensive security, transport, water,
+                    and electricity-supply infrastructure. While the number of attendees is sometimes swollen by
+                    gatecrashers, a record of 300,000 people was set at the 1994 festival, headlined by the Levellers,
+                    who performed on The Pyramid Stage. Most festival staff are unpaid volunteers, helping the
+                    festival to raise millions of pounds for charity organisations.
+                    <br><br>
+                    Regarded as a major event in British culture, the festival is inspired by the ethos of the hippie,
+                    the counterculture of the 1960s, and the free festival movement. Vestiges of these traditions are
+                    retained in the Green Fields area, which includes sections known as the Green Futures, the Stone
+                    Circle and Healing Field. Michael Eavis hosted the first festival, then called Pilton Festival,
+                    after seeing an open-air Led Zeppelin concert in 1970 at the Bath Festival of Blues and Progressive
+                    Music.
+                    <br><br>
+                    The festival was held intermittently from 1970 until 1981 and has been held most years since, except
+                    for "fallow years" taken mostly at five-year intervals, intended to give the land, local population,
+                    and organisers a break. 2018 was a "fallow year", and the 2019 festival took place from 26 to 30
+                    June. There have been two consecutive "fallow years" since then due to the COVID-19 pandemic.
+                    The festival returned for 22-26 June 2022 with the headliners Billie Eilish, Paul McCartney and
+                    Kendrick Lamar. The next festival took place between 21 and 25 June 2023, headlined by Arctic
+                    Monkeys, Guns N' Roses and Elton John in his final UK performance.
+                </p>
+
+            </section>
+            <!-- Carousel  -->
+            <div class="carousel-container">
+                <!-- Carousel Images Slides -->
+                <div class="carousel">
+                    <div class="carousel-slide">
+                        <img src="./images/carousel-image-1.webp" alt="carousel image 1">
+                        <img src="./images/carousel-image-2.webp" alt="carousel image 2">
+                        <img src="./images/carousel-image-3.webp" alt="carousel image 3">
+                        <img src="./images/carousel-image-4.webp" alt="carousel image 4">
+                    </div>
+                </div>
+                <!-- Left and right arrows -->
+                <div class="carousel-navigation">
+                    <button class="prev"><img src="./icons/carousel-left.svg" alt="left arrow icon">
+                    </button>
+                    <button class="next"><img src="./icons/carousel-right.svg" alt="right arrow icon">
+                    </button>
+                    <!-- Bullet points indicators -->
+                    <div class="carousel-bullets">
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                    </div>
+                </div>
+            </div>
+            <section class="info-location">
+                <h2>Glastonbury Location</h2>
+                <p>
+                    The festival takes place in South West England at Worthy Farm between the small villages of Pilton
+                    and Pylle in Somerset, six miles east of Glastonbury, overlooked by the Glastonbury Tor in the "Vale
+                    of Avalon". The area has a number of legends and spiritual traditions, and is a "New Age" site of
+                    interest: ley lines are considered to converge on the Tor. The nearest town to the festival site is
+                    Shepton Mallet, three miles (5 km) northeast, but there continues to be interaction between the
+                    people espousing alternative lifestyles living in Glastonbury and the festival. The farm is situated
+                    between the A361 and A37 roads.
+                    <br><br>
+                    Worthy Farm is situated at grid reference ST 590 397 in a valley at the head of the Whitelake River,
+                    between two low limestone ridges, part of the southern edge of the Mendip Hills. On the site is a
+                    confluence of the two small streams that make the Whitelake River. In the past, the site has
+                    experienced problems with flooding, though after the floods that occurred during the 1997 and 1998
+                    festival, drainage was improved. This did not prevent flooding during the 2005 festival, but allowed
+                    the flood water to dissipate within hours. The Highbridge branch of the Somerset and Dorset Joint
+                    Railway ran through the farm on an embankment but was dismantled in 1966 and now forms a main
+                    thoroughfare across the site. Another prominent feature is the high-voltage electricity line which
+                    crosses the site east-west. There are several public rights of way bordering the festival site.
+                    <br><br>
+                    In recent years, the site has been organised around a restricted backstage compound, with the
+                    Pyramid stage on the north and Other stage on the south of the compound. Attractions on the east of
+                    the site include the acoustic tent, comedy tent and circus. To the south are the green fields, which
+                    include displays of traditional and environmentally friendly crafts. In King's Meadow, the hill at
+                    the far south of the site, is a modern small megalith circle which, like Stonehenge, is coordinated
+                    with the summer solstice, and since 1990 represents a stone circle.
+                </p>
+
+            </section>
+        </section>
+        <!-- Asides  And  Video Container  -->
+        <section class="middle-section">
+            <!-- Aside Left Container -->
+            <aside class="aside-left">
+                <!-- Aside Left Images -->
+                <div>
+                    <h2>Indie Rock Showcase</h2> <a href="#"><img src="./images/event-1.webp" alt="event image 1"></a>
+                    <p>Discover the freshest sounds in indie music at the Indie Rock Showcase on the Other Stage. This
+                        event highlights up-and-coming indie bands and established acts who push the boundaries of rock
+                        and alternative music. Enjoy a night of eclectic performances, raw energy, and innovative
+                        sounds.</p>
+                </div> <br>
+                <div>
+                    <h2>Rock Legends Night</h2> <a href="#"><img src="./images/event-2.webp" alt="event image 2"></a>
+                    <p>Head to the Pyramid Stage for Rock Legends Night, featuring performances by iconic rock bands and
+                        legendary guitarists. This night is dedicated to the timeless classics that have shaped the
+                        genre, promising electrifying solos and unforgettable anthems that will have you rocking out all
+                        night long.
+                    </p>
+                </div> <br>
+                <div>
+                    <h2>Electro Rave Party</h2> <a href="#"><img src="./images/event-3.webp" alt="event image 3"></a>
+                    <p>Join the ultimate Electro Rave Party at the Arcadia Spider. With cutting-edge visuals,
+                        pyrotechnics, and a lineup of world-renowned DJs, this event is a high-energy celebration of
+                        electronic dance music. Dance beneath the neon lights and lose yourself in the pulsating beats
+                        and immersive light shows.</p>
+                </div> <br>
+                <div>
+                    <h2>Folk & Roots Revival</h2> <a href="#"><img src="./images/event-4.webp" alt="event image 4"></a>
+                    <P>Experience the soulful sounds of Folk & Roots Revival at the Acoustic Stage. This event brings
+                        together a diverse lineup of folk musicians, traditional storytellers, and roots artists who
+                        celebrate the rich heritage of folk music. Enjoy intimate acoustic sets and feel the warmth of
+                        authentic, heartfelt performances.</P>
+                </div> <br>
+                <div>
+                    <h2>Global Beats Fiesta</h2> <a href="#"><img src="./images/event-5.webp" alt="event image 5"></a>
+                    <p>Celebrate cultural diversity at the Global Beats Fiesta on the West Holts Stage. Featuring an
+                        array of international artists, this event showcases world music genres from Afrobeat and reggae
+                        to Latin and Asian fusion. Dance to the global rhythms and experience the vibrant energy of
+                        different cultures coming together.</p>
+                </div> <br>
+               
+                <div>
+                    <h2>Jazz and Blues Evening</h2> <a href="#"><img src="./images/event-6.webp"
+                            alt="event image 6"></a>
+                    <p>Relax and unwind at the Jazz and Blues Evening in the Jazz World area. Featuring smooth jazz
+                        ensembles, soulful blues bands, and masterful soloists, this event is a celebration of two
+                        timeless genres. Enjoy laid-back vibes and captivating performances that transport you to the
+                        smoky clubs of a bygone era.</p>
+                </div> <br>
+                <div>
+                    <h2>Hip-Hop Takeover</h2> <a href="#"><img src="./images/event-7.webp" alt="event image 7"></a>
+                    <p>Experience the beats and rhymes of the Hip-Hop Takeover at the Silver Hayes Sonic Stage. This
+                        event features a lineup of top-tier hip-hop artists, including MCs, DJs, and beatboxers,
+                        delivering powerful performances and freestyle battles. Celebrate the culture and creativity of
+                        hip-hop with dynamic shows and interactive sessions.
+
+                    </p>
+                </div> <br>
+                <div>
+                    <h2>Classical Music Serenade</h2> <a href="#"><img src="./images/event-8.webp"
+                            alt="event image 8"></a>
+                    <p>Indulge in an evening of elegance at the Classical Music Serenade in the Glade. This event
+                        features orchestral performances, chamber music ensembles, and soloists who bring the beauty of
+                        classical music to the festival. Enjoy the serene sounds of strings, woodwinds, and piano in a
+                        picturesque outdoor setting.</p>
+                </div>
+            </aside>
+            <!-- Video Container/Cards/history-->
+            <section class="center-container">
+                <!-- Video Iframe -->
+                <div class="video">
+                    <a href="https://youtu.be/Rt-3z2djgKU?si=og-5Zqadi8usLp_C"><span>👉Glastonbury Channel👈</span></a>
+                    <iframe src="https://www.youtube.com/embed/Rt-3z2djgKU?si=eD1qUKIvgB06MGJT"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!-- Video Paragraph -->
+                    <p>
+                        Stay tuned and never miss a beat with the latest updates from Glastonbury! Subscribe to our
+                        YouTube channel for exclusive videos, behind-the-scenes content, and the hottest news. Join our
+                        community and follow us on YouTube for an immersive festival experience like no other!
+                    </p>
+                </div>
+
+                <!-- Card Container -->
+                <section class="card-container">
+                    <!-- Card -->
+                    <div class="card">
+                        <img src="./images/card-img-1.webp" alt="card image 1">
+                        <div class="info">
+                            <h3>A Magic Day</h3>
+                            <p>A photo from last year</p>
+                        <button type="button" onclick="window.location.href='../glastonbury/index.html'">More Photos</button>
+
+                        </div>
+                    </div>
+                    <!-- Card -->
+                    <div class="card">
+                        <img src="./images/card-img-2.webp" alt="card image 2">
+                        <div class="info">
+                            <h3>Amazing Friends</h3>
+                            <p>A photo from last year</p>
+                            <button type="button" onclick="window.location.href='../glastonbury/index.html'">More Photos</button>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                    <div class="card">
+                        <img src="./images/card-img-3.webp" alt="card image 3">
+                        <div class="info">
+                            <h3>Why not! 😁</h3>
+                            <p>A photo from last year</p>
+                            <button type="button" onclick="window.location.href='../glastonbury/index.html'">More Photos</button>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                    <div class="card">
+                        <img src="./images/card-img-4.webp" alt="card image 3">
+                        <div class="info">
+                            <h3>Dragon ceremony</h3>
+                            <p>A photo from last year</p>
+                            <button type="button" onclick="window.location.href='../glastonbury/index.html'">More Photos</button>
+                        </div>
+                    </div>
+                    <!-- More Cards Here -->
+                </section>
+                <section>
+                    <div class="history">
+                        <h2>☀ How it all started. ☀</h2>
+                        <img src="./images/history.webp" alt="history image">
+                        <p>Welcome to the History pages, which chart the events at the Festival since it began the day
+                            after Jimi Hendrix died, in 1970. To begin your wander down memory lane, select a year from
+                            the list on the right…<br>
+                            (Image above from 1971, by Peter Ball)</p>
+                    </div>
+                    <div class="history">
+                        <h2>☀ The first manifest 1970 ☀</h2>
+                        <img src="./images/manifest-1.webp" alt="first manifest image">
+                        <p>The first Festival was held on the day after Jimi Hendrix died, over a two day period and
+                            before long “word had got around”. It was the Blues festival at the Bath & West Showground
+                            that had inspired Michael Eavis to begin a festival of his own although on a smaller
+                            scale.Acts to appear included: Marc Bolan, Keith Christmas, Stackridge, Al Stewart,
+                            Quintessence Attendance: 1,500.Price: £1 including free milk from the farm.
+                        </p>
+                    </div>
+                    <div class="history">
+                        <h2>☀ The last manifest 2023 ☀</h2>
+                        <img src="./images/manifest-2.webp" alt="first manifest image">
+                        <p>2023 saw Glastonbury return, firing on all cylinders. Joining the Green Fields, which have
+                            always been powered by renewable energy, this year every generator across the Festival site
+                            was run entirely on palm-oil free, sustainable HVO renewable fuel. This, along with the new
+                            temporary wind turbine powering the food stalls at Carhenge, added to the Festival's
+                            existing green energy arsenal - the solar array on the cowshed roof and the anaerobic
+                            digester, turning slurry waste into renewable energy - helping to make Glastonbury a greener
+                            and even more sustainable Festival.
+                        </p>
+                    </div>
+                </section>
+            </section>
+            <!-- Aside Right  -->
+            <aside class="aside-right">
+                <!-- aside Right Images -->
+                <div>
+                    <h2>Festival Lineup Announced</h2>
+                    <a href=""><img src="./images/news-1.webp" alt="image news 1"></a>
+                    <p>Get ready for an unforgettable experience as the Glastonbury Festival announces its star-studded
+                        lineup! This year's event will feature headline performances by music legends, breakthrough
+                        artists, and international sensations. With genres ranging from rock and pop to hip-hop and
+                        electronic, there's something for everyone. Stay tuned for more updates and start planning your
+                        festival schedule now!</p>
+                </div> <br>
+                <div>
+                    <h2>Sustainability Initiatives Unveiled</h2>
+                    <a href=""><img src="./images/news-2.webp" alt="image news 2"></a>
+                    <p>Glastonbury Festival is taking significant steps towards sustainability with new initiatives
+                        aimed at reducing its environmental impact. This year, the festival will introduce a zero-waste
+                        policy, expanded recycling programs, and a commitment to using renewable energy sources.
+                        Festival-goers can participate in eco-friendly workshops and learn how to minimize their carbon
+                        footprint while enjoying the event.</p>
+                </div> <br>
+                <div>
+                    <h2>Live from Glastonbury: Festival Webcam</h2>
+                    <a href=""><img src="./images/webcam.webp" alt="image webcam"></a>
+                    <p>Experience the magic of Glastonbury Festival from anywhere in the world with our live webcam
+                        feed! Watch as the stages come alive with music, see the crowds enjoying the festivities, and
+                        catch behind-the-scenes glimpses of the festival grounds. Whether you're reminiscing about past
+                        visits or planning to join us next year, the Glastonbury webcam keeps you connected to the
+                        action in real time.</p>
+                </div> <br>
+                <div>
+                    <h2>Follow Us on Instagram</h2>
+                    <a href=""><img src="./images/socials.svg" alt="image social"></a>
+                    <p>Stay up-to-date with all the latest festival highlights by following Glastonbury Festival on
+                        Instagram! From backstage moments and artist takeovers to stunning snapshots of the performances
+                        and festival fashion, our Instagram feed captures the vibrant spirit of Glastonbury. Use the
+                        hashtag #Glastonbury2024 to share your own photos and be featured on our page.</p>
+                </div> <br>
+                <div>
+                    <h2>General Information</h2>
+                    <a href=""><img src="./images/info.svg" alt="image info"></a>
+                    <p>Welcome to the Glastonbury Festival, a celebration of music, arts, and community. Held annually
+                        in Somerset, England, this iconic festival attracts thousands of attendees from around the
+                        globe. Featuring multiple stages, diverse performances, and an array of activities, Glastonbury
+                        offers a unique experience for all. Visit our official website for ticket information, festival
+                        guidelines, and travel tips to make the most of your Glastonbury adventure.</p>
+                    <!-- Google Map Iframe -->
+                </div> <br>
+                <div class="map">
+                    <h2>Google Maps</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2533033.593261809!2d-4.003193975051047!3d51.6842634340958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4872232963c8542d%3A0x87c17fc9f2a07ee2!2sGlastonbury%20Festival%20Site!5e0!3m2!1sit!2suk!4v1719586117606!5m2!1sit!2suk"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Welcome to the Glastonbury Festival Site! This map provides a comprehensive view of the festival
+                        grounds, allowing you to explore and plan your visit. Enjoy the vibrant atmosphere and
+                        incredible performances!</p>
+                </div>
+            </aside>
+        </section>
+    </main>
+    <!-- Main End -->
+    <!-- Footer Start -->
+    <footer>
+        <a href="./index.html" class="back-to-top">🚀Back to top</a>
+        <div class="footer-links">
+            <a href="#">Sitemap</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+            <a href="#">Tags</a>
+            <a href="#">Anti-slavery Statement</a>
+            <a href="#">Diversity Statement</a>
+            <a href="#">Links</a>
+            <a href="#">Contacts</a>
+            <a href="#">Newsletter</a>
+            <a href="#">Worthy Causes</a>
+        </div>
+        <div class="footer-info">
+            <p>© 1997-2024 GLASTONBURY FESTIVAL</p>
+            <p>HEADER ARTWORK: THE SHELTER OF A DREAM BY STANLEY DONWOOD</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>

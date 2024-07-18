@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+
+    <!-- meta tags SEO -->
+    <meta name="author" content=" Gaspare Tocci">
+    <meta name="description" content="Glastonbury Festival Website">
+    <meta name="keywords"
+        content="music festival, live music, artists, lineup, dates, location, tickets, cultural events, concerts, live performances">
+    <meta property="og:profile" content="https://www.instagram.com/glastofest/">
+    <meta property="og:url" content="https://www.glastonburyfestivals.co.uk/" />
+
+    <!-- link to external file -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <a class="logo" href="../index.html"><img src="../images/logo.svg" alt="logo"></a>
+        <img class="hero-image" src="../images/hero-img.svg" alt="hero image"></img>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="navbar-buttons">
+                <button id="home" class="nav-btn" onclick="subPage(this.id)">Home</button>
+                <button id="info" class="nav-btn" onclick="subPage(this.id)">Info</button>
+                <button id="line-up" class="nav-btn" onclick="subPage(this.id)">Line-up</button>
+                <button id="areas" class="nav-btn" onclick="subPage(this.id)">Areas</button>
+                <button id="gallery" class="nav-btn" onclick="subPage(this.id)">Gallery</button>
+                <button id="shop" class="nav-btn" onclick="subPage(this.id)">Shop</button>
+                <button id="news" class="nav-btn selected" onclick="subPage(this.id)">News</button>
+                <button id="websites" class="nav-btn" onclick="window.location.href='../../../websites.html'">Websites</button>
+                <div class="search-container">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="  Search..." name="query" class="search-input"
+                            autocomplete="off">
+                        <button type="button">🔍</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+    <!-- Main Start -->
+    <main>
+        <section class="top-section"><img src="../images/news-main-image.svg" alt="news image"></section>
+        <section class="middle-section-news">
+            <section class="info-festival shop-p">
+                <h2>NEW POETRY FROM THIS YEAR'S <br> OFFICIAL POET SALLY JENKINSON</h2>
+                <img src="../images/news-img-01.webp" alt="news image 1">
+                <p>
+                    We'd like to thank our Glastonbury Poet in Residence for 2024, Sally Jenkinson, a writer, performer,
+                    care worker, and mum from Doncaster, South Yorkshire. <br><br> Sally Jenkinson's recent chapbook 'Pantomime
+                    Horse, Russian Doll, Egg', published by Burning Eye Books, is a poetry cycle exploring labour and
+                    childbirth. <br><br> Her work has also recently been featured in Lighthouse Journal, Emerge Literary Journal,
+                    The Morning Star, and on BBC Radio 4's 'Power Lines'.<br><br> She now lives in the Forest of Dean with her
+                    cats, husband, and various fierce and magical children. Sally Jenkinson performed in the Poetry and
+                    Words Tent, Theatre & Circus, on Sunday at 4.17pm. Below are Sally Jenkinson's wonderful poems,
+                    which perfectly capture the essence of the Festival. <br><br>
+                    <strong>✨WHO AM I THIS YEAR?✨</strong><br>
+                    At twenty years old<br>
+                    with a grief-heavy heart<br>
+                    that refused to mend, I was dragged<br>
+                    into the fields by golden friends.<br><br>
+                    
+                    Amy sang all of her pain<br>
+                    and she sang mine too.<br>
+                    The rain trickled inside my poncho<br>
+                    and mud squelched between my toes.<br><br>
+                    
+                    I saw all the humans dancing<br>
+                    under the damp hug<br>
+                    of a grey Avalon sky.<br>
+                    Their bodies sparked like quartz<br>
+                    against the cold of my bones<br>
+                    and began a small fire.
+                </p>
+            </section>
+            <section class="info-festival shop-p">
+                <h2>DOWNLOAD OUR 2024 APP + <br>
+                    KEEP YOUR PHONE CHARGED</h2>
+                <img src="../images/news-img-02.webp" alt="news image 2">
+                <p>
+                    We're pleased to report that the official Glastonbury 2024 mobile app - powered by Vodafone - is now
+                    available to download on Apple iOS and Android.<br><br> The app has everything you need to enhance your
+                    Glastonbury experience on-site.<br><br> <strong>Personalised Festival Line-up:</strong> View all the artists
+                    performing at the Festival. Personalise your own Festival line-up, see any timing clashes, and use
+                    the homescreen widget to keep track of who's on now/up next.<br><br> <strong>Live Interactive Map:</strong>
+                    Live map with stage, area, and trader locations. Create custom shareable pins to help find your tent
+                    or friends.<br><br> <strong>Latest News & Announcements:</strong> All the latest news and real-time updates
+                    direct from the Festival. <strong>Spotify:</strong> Connect and get line-up recommendations based on
+                    your Spotify activity.<br><br> <strong>Worthy FM:</strong> Listen to the Festival's radio station directly
+                    through the app from Saturday 17th, by clicking the button on the News page.
+                </p>
+
+            </section>
+
+            <section class="info-festival shop-p">
+                <h2>DOWNLOAD THE 2024 <br>
+                    GLASTONBURY FREE PRESS!</h2>
+                    <img src="../images/news-img-03.webp" alt="news image 3">
+                <p>
+                    Download Sunday's edition of our on-site newspaper, the Glastonbury Free Press, which features
+                    exclusive interviews with Emily Eavis, Love Watts, and this year's Agony Aunt, Paloma Faith.<br><br> Or pick
+                    up a copy around the site! Download Thursday's issue of the Glastonbury Free Press.<br><br> This edition
+                    features exclusives with Michael Eavis, Ros Atkins, Jayahadadream, Paul Heaton, and Asha Puthli,
+                    along with a host of other Festival-related pieces.<br><br> The Free Press is printed in the Theatre &
+                    Circus fields on a vintage Heidelberg press and is available now around the site, for free.<br><br> Plus,
+                    you can get it from the Free Press printing tent in the Theatre & Circus fields, where you can also
+                    buy souvenir Free Press posters and beermats.<br><br> Our thanks to the amazing Free Press team of writers,
+                    designers, and printers.
+                </p>
+            </section>
+    </main>
+    <!-- Main End -->
+
+
+    <!-- Footer Start -->
+    <footer>
+        <a href="./news.html" class="back-to-top">🚀Back to top</a>
+        <div class="footer-links">
+            <a href="#">Sitemap</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+            <a href="#">Tags</a>
+            <a href="#">Anti-slavery Statement</a>
+            <a href="#">Diversity Statement</a>
+            <a href="#">Links</a>
+            <a href="#">Contacts</a>
+            <a href="#">Newsletter</a>
+            <a href="#">Worthy Causes</a>
+        </div>
+        <div class="footer-info">
+            <p>© 1997-2024 GLASTONBURY FESTIVAL</p>
+            <p>HEADER ARTWORK: THE SHELTER OF A DREAM BY STANLEY DONWOOD</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="../scripts/script.js"></script>
+
+
+</body>
+
+</html>

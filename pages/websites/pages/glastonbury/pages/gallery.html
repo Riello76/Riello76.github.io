@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <!-- meta tags SEO -->
+    <meta name="author" content=" Gaspare Tocci">
+    <meta name="description" content="Glastonbury Festival Website">
+    <meta name="keywords"
+        content="music festival, live music, artists, lineup, dates, location, tickets, cultural events, concerts, live performances">
+    <meta property="og:profile" content="https://www.instagram.com/glastofest/">
+    <meta property="og:url" content="https://www.glastonburyfestivals.co.uk/" />
+
+    <!-- link to external file -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <a class="logo" href="../index.html"><img src="../images/logo.svg" alt="logo"></a>
+        <img class="hero-image" src="../images/hero-img.svg" alt="hero image"></img>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="navbar-buttons">
+                <button id="home" class="nav-btn" onclick="subPage(this.id)">Home</button>
+                <button id="info" class="nav-btn" onclick="subPage(this.id)">Info</button>
+                <button id="line-up" class="nav-btn" onclick="subPage(this.id)">Line-up</button>
+                <button id="areas" class="nav-btn" onclick="subPage(this.id)">Areas</button>
+                <button id="gallery" class="nav-btn selected" onclick="subPage(this.id)">Gallery</button>
+                <button id="shop" class="nav-btn" onclick="subPage(this.id)">Shop</button>
+                <button id="news" class="nav-btn" onclick="subPage(this.id)">News</button>
+                <button id="websites" class="nav-btn" onclick="window.location.href='../../../websites.html'">Websites</button>
+                <div class="search-container">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="  Search..." name="query" class="search-input"
+                            autocomplete="off">
+                        <button type="button">🔍</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main>
+        <section class="top-section">
+            <img src="../images/gallery-main.webp" alt="gallery main gif image">
+        </section>
+        <section class="middle-section">
+            <div class="gallery-item">
+                <img src="../images/gallery-img-01.webp"
+                    alt="A child captivated by giant puppets at the Glastonbury Festival.">
+                <div class="caption">Nighttime ambiance at the Greenpeace Café.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/gallery-img-02.webp"
+                    alt="Acrobatic show at the outside circus stage of the Glastonbury Festival.">
+                <div class="caption">A child captivated by giant puppets.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/gallery-img-03.webp"
+                    alt="Festive participants during a group activity at the Glastonbury Festival.">
+                <div class="caption">Excited fans during a concert.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/gallery-img-04.webp"
+                    alt="Nighttime ambiance at the Greenpeace Café at the Glastonbury Festival.">
+                <div class="caption">Acrobatic show at the outside circus stage.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/gallery-img-05.webp"
+                    alt="Excited fans during a concert at the Glastonbury Festival.">
+                <div class="caption">Festive participants during a group activity.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/gallery-img-06.webp"
+                    alt="Excited fans during a concert at the Glastonbury Festival.">
+                <div class="caption">You meet new friends in moments of relaxation.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/gallery-img-07.webp"
+                    alt="Excited fans during a concert at the Glastonbury Festival.">
+                <div class="caption">The luckiest birthday this year at the Glastonbury Festival.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/gallery-img-08.webp"
+                    alt="Excited fans during a concert at the Glastonbury Festival.">
+                <div class="caption">The time has come to open the doors.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/gallery-img-09.webp"
+                    alt="Excited fans during a concert at the Glastonbury Festival.">
+                <div class="caption">You certainly won't feel alone 😁 at the Glastonbury Festival.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/gallery-img-10.webp"
+                    alt="Excited fans during a concert at the Glastonbury Festival.">
+                <div class="caption">This is an image taken from the webcam at the Glastonbury Festival.</div>
+            </div>
+        </section>
+    </main>
+    <!-- Main End -->
+
+
+    <!-- Footer Start -->
+    <footer>
+        <a href="./gallery.html" class="back-to-top">🚀Back to top</a>
+        <div class="footer-links">
+            <a href="#">Sitemap</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+            <a href="#">Tags</a>
+            <a href="#">Anti-slavery Statement</a>
+            <a href="#">Diversity Statement</a>
+            <a href="#">Links</a>
+            <a href="#">Contacts</a>
+            <a href="#">Newsletter</a>
+            <a href="#">Worthy Causes</a>
+        </div>
+        <div class="footer-info">
+            <p>© 1997-2024 GLASTONBURY FESTIVAL</p>
+            <p>HEADER ARTWORK: THE SHELTER OF A DREAM BY STANLEY DONWOOD</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="../scripts/script.js"></script>
+
+
+</body>
+
+</html>

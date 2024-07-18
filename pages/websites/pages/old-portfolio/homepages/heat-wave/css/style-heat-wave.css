@@ -1,0 +1,808 @@
+/* === CSS RESET === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px for better font scaling */
+}
+
+body {
+  background-color: #01172c;
+  margin: 0;
+  padding: 0;
+}
+#header-div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 98vw;
+  justify-content: space-between;
+  align-items: center;
+  color: #1c91c1;
+
+}
+h1 {
+  font-size: 6rem;
+}
+#logo {
+  border-radius: 100%;
+}
+#callUs {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  box-shadow: 0 0 10px white;
+  border-radius: 10%;
+}
+#nav-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 2%;
+}
+.nav-btn {
+  width: 20rem;
+  background-color: #01172c;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  box-shadow: 0 0 5px white;
+}
+.nav-btn:hover {
+  transform: scale(1.1);
+}
+#headline-div {
+  position: relative;
+  background-color: #01172c;
+  color: white;
+  text-align: center;
+  width: 60rem;
+  margin-top: 3%;
+  margin-left: 6%;
+  margin-bottom: 3%;
+  font-size: 1.8em;
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 20%;
+  box-shadow: 0 0 20px white;
+  align-items: center;
+}
+#hdln-btn {
+  background-color: #01172c;
+  color: #ffffff;
+  width: 60%;
+  font-size: 0.9em;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+#hdln-btn:hover,
+.nav-btn:hover {
+  box-shadow: 0 0 20px white;
+}
+.web-rated {
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+.web-content {
+  width: 50rem;
+  height:auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 30%;
+  box-shadow: 0 0 10px;
+}
+.img-webcont {
+  width: 40%;
+}
+.p-webcont {
+  font-size: 3rem;
+}
+#rvws-div {
+  width: 99%;
+  background-color: #01172c;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8px;
+  margin-bottom: 2%;
+  box-shadow: 0 0 20px white;
+}
+.p-services {
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+}
+.rating {
+  text-align: center;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+.rating::before {
+  content: "⭐";
+  margin-right: 5px;
+  color: gold;
+}
+.review {
+  flex: 1;
+  font-size: 2em;
+  border: 1px solid #ccc;
+  padding-bottom: 1%;
+  text-align: center;
+}
+#subHeadline-div {
+  color: #ffffff;
+  margin-bottom: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.services {
+  background-color: #01172c;
+  width: 30%;
+  max-height: 585px;
+  word-wrap: break-word;
+  font-size: 2em;
+  margin-left: 2%;
+  border-radius: 10%;
+  text-align: center;
+  box-shadow: 0 0 10px white;
+  overflow: auto;
+}
+.services:not(p) {
+  text-align: left;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  border: 1px solid white;
+  box-shadow: 0 0 10px white;
+}
+#caption {
+  width: 800px;
+  font-size: 2em;
+  word-wrap: break-word;
+  text-align: center;
+}
+#footer-div {
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  width: 99vw;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 20px white;
+}
+#contact-info,
+p {
+  margin: 0;
+  font-size: 1.8em;
+}
+#footer-links a {
+  margin-right: 20px;
+  color: gold;
+  text-decoration: none;
+}
+#footer-links a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 320px) {
+  #header-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 1.3em;
+  }
+  #logo {
+    width: 20%;
+    height: 20%;
+  }
+  #callUs {
+    font-size: 1em;
+    margin-bottom: 3%;
+  }
+  #nav-div {
+    height: 14%;
+    width: 99vw;
+    font-size: 0.3em;
+  }
+  .nav-btn {
+    width: 100%;
+    height: 20%;
+  }
+  #headline-div {
+    width: 90vw;
+    top: 45px;
+    font-size: 1em;
+  }
+  .web-rated {
+    position: relative;
+    top: 50px;
+    width: 99vw;
+    height: 50px;
+    margin-bottom: 2%;
+    font-size: 0.2em;
+  }
+  .web-content {
+    width: 40%;
+    height: 60%;
+  }
+  .img-webcont {
+    width: 40%;
+    height: 100%;
+  }
+  #rvws-div {
+    position: relative;
+    top: 50px;
+    width: 94vw;
+    font-size: 0.3em;
+  }
+  #subHeadline-div {
+    position: relative;
+    top: 50px;
+    width: 96vw;
+  }
+  .services {
+    width: 100%;
+    font-size: 0.6em;
+  }
+  .image {
+    position: relative;
+    top: 50px;
+    height: 80%;
+    width: 100%;
+    left: 2%;
+  }
+  #caption {
+    position: relative;
+    top: 50px;
+    width: 300px;
+    height: 130px;
+    font-size: 0.8em;
+    left: 2%;
+  }
+  #footer-div {
+    position: relative;
+    top: 150px;
+    width: 100vw;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px white;
+  }
+  #contact-info,
+  p {
+    font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  #header-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 1.3em;
+  }
+  #logo {
+    width: 20%;
+    height: 20%;
+  }
+  #callUs {
+    font-size: 1em;
+    margin-bottom: 3%;
+  }
+  #nav-div {
+    height: 14%;
+    width: 99vw;
+    font-size: 0.3em;
+  }
+  .nav-btn {
+    width: 100%;
+    height: 20%;
+  }
+  #headline-div {
+    width: 90vw;
+    top: 45px;
+  }
+  h4 {
+    font-size: 0.7em;
+  }
+  #hdln-btn {
+    font-size: 0.5em;
+  }
+  .web-rated {
+    position: relative;
+    top: 50px;
+    width: 99vw;
+    height: 50px;
+    margin-bottom: 2%;
+    font-size: 0.2em;
+  }
+  .web-content {
+    width: 40%;
+    height: 60%;
+  }
+  .img-webcont {
+    width: 40%;
+    height: 100%;
+  }
+  #rvws-div {
+    position: relative;
+    top: 50px;
+    width: 94vw;
+    font-size: 0.4em;
+  }
+  #subHeadline-div {
+    position: relative;
+    top: 50px;
+    width: 96vw;
+  }
+  .services {
+    width: 100%;
+    font-size: 0.7em;
+  }
+  .image {
+    position: relative;
+    top: 50px;
+    height: 80%;
+    width: 100%;
+    left: 2%;
+  }
+  #caption {
+    position: relative;
+    top: 50px;
+    width: 350px;
+    height: 130px;
+    font-size: 0.8em;
+    left: 3%;
+  }
+  #footer-div {
+    position: relative;
+    top: 150px;
+    width: 100vw;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px white;
+    font-size: 0.3em;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  #header-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 1.3em;
+  }
+  #logo {
+    width: 20%;
+    height: 20%;
+  }
+  #callUs {
+    font-size: 1em;
+    margin-bottom: 3%;
+  }
+  #nav-div {
+    height: 14%;
+    width: 99vw;
+    font-size: 0.3em;
+  }
+  .nav-btn {
+    width: 100%;
+    height: 20%;
+  }
+  #headline-div {
+    width: 90%;
+    top: 45px;
+  }
+  h4 {
+    font-size: 0.4em;
+  }
+  #hdln-btn {
+    font-size: 0.4em;
+  }
+  .web-rated {
+    position: relative;
+    top: 50px;
+    width: 99vw;
+    height: 50px;
+    margin-bottom: 2%;
+    font-size: 0.2em;
+  }
+  .web-content {
+    width: 40%;
+    height: 60%;
+  }
+  .img-webcont {
+    width: 40%;
+    height: 100%;
+  }
+  #rvws-div {
+    position: relative;
+    top: 50px;
+    width: 94vw;
+    font-size: 0.3em;
+  }
+  #subHeadline-div {
+    position: relative;
+    top: 50px;
+    width: 96vw;
+  }
+  .services {
+    width: 100%;
+    font-size: 0.6em;
+  }
+  .image {
+    position: relative;
+    top: 50px;
+    height: 80%;
+    width: 100%;
+    left: 2%;
+  }
+  #caption {
+    position: relative;
+    top: 50px;
+    width: 400px;
+    height: 130px;
+    font-size: 0.8em;
+    left: 2%;
+  }
+  #footer-div {
+    position: relative;
+    top: 150px;
+    width: 100vw;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px white;
+    font-size: 0.4em;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  #header-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  #logo {
+    width: 10%;
+    height: 20%;
+  }
+  #callUs {
+    font-size: 1.5em;
+  }
+  #nav-div {
+    height: 14%;
+    width: 99vw;
+    font-size: 0.5em;
+  }
+  .nav-btn {
+    width: 100%;
+    height: 20%;
+  }
+  #headline-div {
+    width: 90vw;
+    top: 45px;
+    font-size: 1em;
+  }
+  .web-rated {
+    position: relative;
+    top: 50px;
+    width: 99vw;
+    height: 90px;
+    margin-bottom: 2%;
+    font-size: 0.5em;
+  }
+  .web-content {
+    width: 40%;
+    height: 60%;
+  }
+  .img-webcont {
+    width: 40%;
+    height: 100%;
+  }
+  #rvws-div {
+    position: relative;
+    top: 50px;
+    width: 98vw;
+    font-size: 0.5em;
+  }
+  #subHeadline-div {
+    position: relative;
+    top: 50px;
+    width: 98vw;
+  }
+  .services {
+    width: 100%;
+    font-size: 0.9em;
+  }
+  .image {
+    position: relative;
+    top: 50px;
+    height: 80%;
+    width: 100%;
+    left: 2%;
+  }
+  #caption {
+    position: relative;
+    top: 50px;
+    width: 700px;
+    height: 120px;
+    font-size: 0.9em;
+    left: 2%;
+  }
+  #footer-div {
+    position: relative;
+    top: 150px;
+    width: 100vw;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px white;
+    font-size: 0.4em;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #header-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  #logo {
+    width: 10%;
+    height: 20%;
+  }
+  #callUs {
+    font-size: 1.5em;
+  }
+  #nav-div {
+    height: 14%;
+    width: 99vw;
+    font-size: 0.5em;
+  }
+  .nav-btn {
+    width: 100%;
+    height: 20%;
+  }
+  #headline-div {
+    width: 90vw;
+    top: 45px;
+    font-size: 1em;
+  }
+  .web-rated {
+    position: relative;
+    top: 50px;
+    width: 99vw;
+    height: 150px;
+    margin-bottom: 2%;
+    font-size: 0.7em;
+  }
+  .web-content {
+    width: 40%;
+    height: 60%;
+  }
+  .img-webcont {
+    width: 40%;
+    height: 100%;
+  }
+  #rvws-div {
+    position: relative;
+    top: 50px;
+    width: 94vw;
+    font-size: 0.7em;
+  }
+  #subHeadline-div {
+    position: relative;
+    top: 50px;
+    width: 96vw;
+  }
+  .services {
+    width: 100%;
+    font-size: 0.9em;
+  }
+  .image {
+    position: relative;
+    top: 50px;
+    height: 80%;
+    width: 100%;
+    left: 2%;
+  }
+  #caption {
+    position: relative;
+    top: 50px;
+    width: 800px;
+    height: 130px;
+    font-size: 1em;
+    left: 2%;
+  }
+  #footer-div {
+    position: relative;
+    top: 150px;
+    width: 100vw;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px white;
+    font-size: 0.6em;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  #header-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  #logo {
+    width: 10%;
+    height: 20%;
+  }
+  #callUs {
+    font-size: 1.6em;
+  }
+  #nav-div {
+    height: 30%;
+    width: 99vw;
+    font-size: 0.8em;
+  }
+  .nav-btn {
+    width: 100%;
+    height: 20%;
+  }
+  #headline-div {
+    width: 90vw;
+    top: 45px;
+    font-size: 1em;
+  }
+  .web-rated {
+    position: relative;
+    top: 50px;
+    width: 99vw;
+    height: 200px;
+    margin-bottom: 2%;
+    font-size: 1em;
+  }
+  .web-content {
+    width: 40%;
+    height: 60%;
+  }
+  .img-webcont {
+    width: 40%;
+    height: 100%;
+  }
+  #rvws-div {
+    position: relative;
+    top: 50px;
+    width: 99vw;
+    font-size: 1em;
+  }
+  #subHeadline-div {
+    position: relative;
+    top: 50px;
+    width: 96vw;
+  }
+  .services {
+    width: 100%;
+    font-size: 1em;
+  }
+  .image {
+    position: relative;
+    top: 50px;
+    height: 80%;
+    width: 100%;
+    left: 2%;
+  }
+  #caption {
+    position: relative;
+    top: 50px;
+    width: 900px;
+    height: 130px;
+    font-size: 1em;
+    left: 2%;
+  }
+  #footer-div {
+    position: relative;
+    top: 150px;
+    width: 100vw;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px white;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  #header-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 5em;
+  }
+  #logo {
+    width: 15%;
+    height: 20%;
+  }
+  #callUs {
+    font-size: 3em;
+  }
+  #nav-div {
+    height: 30%;
+    width: 99vw;
+    font-size: 1em;
+  }
+  .nav-btn {
+    width: 100%;
+    height: 20%;
+  }
+  #headline-div {
+    width: 90vw;
+    top: 45px;
+    font-size: 3em;
+  }
+  .web-rated {
+    position: relative;
+    top: 50px;
+    width: 99vw;
+    height: 200px;
+    margin-bottom: 2%;
+    font-size: 1em;
+  }
+  .web-content {
+    width: 40%;
+    height: 60%;
+  }
+  .img-webcont {
+    width: 40%;
+    height: 100%;
+  }
+  #rvws-div {
+    position: relative;
+    top: 50px;
+    width: 99vw;
+    font-size: 1em;
+  }
+  #subHeadline-div {
+    position: relative;
+    top: 50px;
+    width: 96vw;
+  }
+  .services {
+    width: 100%;
+    font-size: 2em;
+  }
+  .image {
+    position: relative;
+    top: 50px;
+    height: 80%;
+    width: 100%;
+    left: 2%;
+  }
+  #caption {
+    position: relative;
+    top: 50px;
+    width: 1000px;
+    height: 130px;
+    font-size: 2em;
+    left: 2%;
+  }
+  #footer-div {
+    position: relative;
+    top: 150px;
+    width: 100vw;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px white;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 767px) and (orientation: landscape) {
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
