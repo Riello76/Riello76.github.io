@@ -58,6 +58,7 @@ main {
 .cs-accordion-item {
   background-color: transparent;
   border: none;
+  margin-bottom: 5rem;
 }
 
 .cs-accordion-body {
