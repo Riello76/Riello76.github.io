@@ -1,81 +1,87 @@
 @import url(/styles/header-footer-resets.css);
-/* Main */
+
+
+/* Main section */
 main {
+  /* Set main content to flexbox with centered content and wrapping */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center content */
+  justify-content: center;
+  background-color: black;
 }
-section {
+
+.top-main {
+  /* Header section with flex layout, space between items, and horizontal alignment */
   display: flex;
   flex-wrap: wrap;
-  align-self: center;
-  padding: 20px; /* Padding around sections */
-  background-color: transparent; /* Transparent background */
-  width: 33%; /* Section width */
-}
-
-section > h2 {
-  width: 100%; /* Full width */
-  text-align: center; /* Center align */
-  font-weight: bold; /* Bold font */
-  font-size: var(--font-size-heading); /* Heading font size */
-  border-radius: var(--border-radius) var(--border-radius) 0 0; /* Border radius */
-  background: var(--header-bg-color) url(/images/bg-label.svg) center / 55em no-repeat; /* Background with image */
-  color: var(--header-text-color); /* Text color */
-  box-shadow: 0 10px 15px var(--header-text-color); /* Box shadow */
-  margin-bottom: 1em; /* Bottom margin */
-  animation: light-h2 6s infinite; /* Animation */
-}
-
-@keyframes light-h2 {
-  0%, 100% {
-    box-shadow: 0 10px 15px white; /* White shadow */
-  }
-  50% {
-    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.662); /* Shadow with opacity */
-  }
-}
-
-section > div {
-  width: 100%; /* Full width */
-  font-size: 1.2em; /* Font size */
-  overflow: auto; /* Overflow handling */
-  box-shadow: 0 0 10px var(--header-text-color); /* Box shadow */
-  color: var(--header-text-color); /* Text color */
-  height: 400px; /* Fixed height */
-  word-break: break-all; /* Word break handling */
-  padding: 1rem;
-  background: var(--header-bg-color) linear-gradient(to bottom, rgba(255, 255, 255, 0.662), rgba(255, 255, 255, 0)); /* Background gradient */
-  animation: light-p 6s infinite; /* Animation */
-}
-@keyframes light-p {
-  0%, 100% {
-    background: rgba(255, 255, 255, 0); /* Transparent background */
-  }
-  50% {
-    background: rgba(0, 0, 0, 0.662); /* Background with opacity */
-  }
-}
-section > div > img {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   width: 100%;
+  background: linear-gradient(to right, black, var(--main-color));
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  margin-bottom: 5rem;
+}
+
+.top-main h5 {
+  font-size: 3rem;
+}
+
+.middle-main {
+  /* Main content section with centered content, gap between items, and padding */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.middle-main h5 {
+  width: 100%;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, black, var(--main-color));
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  text-align: right;
+}
+
+.logos-div,
+.business-card-div,
+.calendars-div {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.logos-content,
+.business-card-content,
+.calendars-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+
+.logos-content img,
+.business-card-content img,
+.calendars-content img {
+  width: 20rem;
 
 }
-section > div::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
 
-section > div::-webkit-scrollbar-thumb {
-  background-color: var(--main-color-opacity);
-  border-radius: var(--border-radius);
-}
+
 
 /* Media Queries */
-@media screen and (max-width: 768px){
-  main{
-    flex-direction: column;
-  }
-  section{
+@media screen and (max-width:768px) {
+
+  .logos-div,
+  .business-card-div,
+  .calendars-div {
     width: 100%;
+  }
+
+  .middle-main h5 {
+    text-align: center;
   }
 }

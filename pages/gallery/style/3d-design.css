@@ -1,81 +1,64 @@
 @import url(/styles/header-footer-resets.css);
-/* Main */
+
+
+/* Main section */
 main {
+  /* Set main content to flexbox with centered content and wrapping */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center content */
+  justify-content: center;
+  background-color: black;
 }
-section {
+
+.top-main {
+  /* Header section with flex layout, space between items, and horizontal alignment */
   display: flex;
   flex-wrap: wrap;
-  align-self: center;
-  padding: 20px; /* Padding around sections */
-  background-color: transparent; /* Transparent background */
-  width: 33%; /* Section width */
-}
-section > h2 {
-  width: 100%; /* Full width */
-  text-align: center; /* Center align */
-  font-weight: bold; /* Bold font */
-  font-size: var(--font-size-heading); /* Heading font size */
-  border-radius: var(--border-radius) var(--border-radius) 0 0; /* Border radius */
-  background: var(--header-bg-color) url(/images/bg-label.svg) center / 55em no-repeat; /* Background with image */
-  color: var(--header-text-color); /* Text color */
-  box-shadow: 0 10px 15px var(--header-text-color); /* Box shadow */
-  margin-bottom: 1em; /* Bottom margin */
-  animation: light-h2 6s infinite; /* Animation */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background: linear-gradient(to right, black, var(--main-color));
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  margin-bottom: 5rem;
 }
 
-@keyframes light-h2 {
-  0%, 100% {
-    box-shadow: 0 10px 15px white; /* White shadow */
-  }
-  50% {
-    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.662); /* Shadow with opacity */
-  }
+.top-main h5 {
+  font-size: 3rem;
 }
-section > p {
-  width: 100%; /* Full width */
-  font-size: 1.2em; /* Font size */
-  overflow: auto; /* Overflow handling */
-  box-shadow: 0 0 10px var(--header-text-color); /* Box shadow */
-  color: var(--header-text-color); /* Text color */
-  height: 400px; /* Fixed height */
-  word-break: break-all; /* Word break handling */
-  padding: 1rem;
-  background: var(--header-bg-color) linear-gradient(to bottom, rgba(255, 255, 255, 0.662), rgba(255, 255, 255, 0)); /* Background gradient */
-  animation: light-p 6s infinite; /* Animation */
+.middle-main {
+  /* Main content section with centered content, gap between items, and padding */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
 }
 
-@keyframes light-p {
-  0%, 100% {
-    background: rgba(255, 255, 255, 0); /* Transparent background */
-  }
-  50% {
-    background: rgba(0, 0, 0, 0.662); /* Background with opacity */
-  }
+.middle-main h5 {
+  width: 100%;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, black, var(--main-color));
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  text-align: right;
 }
-section > p > span {
-  color: var(--main-color);
-  font-size: larger;
-}
-
-section > p::-webkit-scrollbar,
-ul::-webkit-scrollbar {
-  width: 10px;
-}
-
-section > p::-webkit-scrollbar-thumb,
-ul::-webkit-scrollbar-thumb {
-  background-color: var(--main-color-opacity);
-  border-radius: var(--border-radius);
-}
-/* Media Queries */
-@media screen and (max-width: 768px){
-  main{
+.section-1-div,.section-2-div{
+  display: flex;
     flex-direction: column;
-  }
-  section{
+    width: 60%;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width:768px) {
+
+.section-1-div,
+  .section-2-div {
     width: 100%;
   }
+    .middle-main h5{
+      text-align: center;
+    }
 }

@@ -1,91 +1,81 @@
 @import url(/styles/header-footer-resets.css);
-/* Main */
+
+/* Main section */
 main {
+  /* Set main content to flexbox with centered content and wrapping */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center content */
+  justify-content: center;
+  background-color: black;
 }
 
-section {
+.top-main {
+  /* Header section with flex layout, space between items, and horizontal alignment */
   display: flex;
   flex-wrap: wrap;
-  align-self: center;
-  padding: 20px; /* Padding around sections */
-  background-color: transparent; /* Transparent background */
-  width: 40%; /* Section width */
-}
-
-section h2 {
-  width: 100%; /* Full width */
-  text-align: center; /* Center align */
-  font-weight: bold; /* Bold font */
-  font-size: var(--font-size-heading); /* Heading font size */
-  border-radius: var(--border-radius) var(--border-radius) 0 0; /* Border radius */
-  background: var(--header-bg-color) url(/images/bg-label.svg) center / 55em
-    no-repeat; /* Background with image */
-  color: var(--header-text-color); /* Text color */
-  box-shadow: 0 10px 15px var(--header-text-color); /* Box shadow */
-  margin-bottom: 1em; /* Bottom margin */
-  animation: light-h2 6s infinite; /* Animation */
-}
-
-@keyframes light-h2 {
-  0%,
-  100% {
-    box-shadow: 0 10px 15px white; /* White shadow */
-  }
-  50% {
-    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.662); /* Shadow with opacity */
-  }
-}
-
-section div {
-  overflow: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   width: 100%;
-  height: 20rem;
-  box-shadow: 0 0 10px white;
-  color: var(--header-color);
-  padding: var(--padding-p);
-  background: black
-    linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.662),
-      rgba(255, 255, 255, 0)
-    );
-  animation: light-p 6s infinite;
+  background: linear-gradient(to right, black, var(--main-color));
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  margin-bottom: 5rem;
 }
 
-@keyframes light-p {
-  0%, 100% {
-    background: rgba(255, 255, 255, 0); /* Transparent background */
-  }
-  50% {
-    background: rgba(0, 0, 0, 0.662); /* Background with opacity */
-  }
+.top-main h5 {
+  font-size: 3rem;
 }
 
-section p {
-  color: var(--main-color);
-  font-size: larger;
+.middle-main {
+  /* Main content section with centered content, gap between items, and padding */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
 }
 
-section div::-webkit-scrollbar,
-ul::-webkit-scrollbar {
-  width: 10px;
+.middle-main h5 {
+  width: 100%;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, black, var(--main-color));
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  text-align: right;
 }
 
-section div::-webkit-scrollbar-thumb,
-ul::-webkit-scrollbar-thumb {
-  background-color: var(--main-color-opacity);
-  border-radius: var(--border-radius);
+.icons-div,
+.buttons-div {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
 }
+
+.icons-content,
+.buttons-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+
+.icons-content img,
+.buttons-content img {
+  width: 5rem;
+}
+
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
-  main {
-    flex-direction: column;
-  }
-  section {
+@media screen and (max-width:768px) {
+
+  .icons-div,
+  .buttons-div {
     width: 100%;
   }
+    .icons-content img,
+    .buttons-content img {
+      width: 4rem;
+    }
 }
