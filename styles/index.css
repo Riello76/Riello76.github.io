@@ -53,22 +53,27 @@ main {
 
 .about-me-p1 {
   margin-left: 5rem;
+  width: 105%;
 }
 
 .about-me-p2 {
   margin-left: 10rem;
+  width: 91%;
 }
 
 .about-me-p3 {
   margin-left: 15rem;
+  width: 84%;
 }
 
 .about-me-p4 {
   margin-left: 20rem;
+  width: 85%;
 }
 
 .about-me-p5 {
   margin-left: 25rem;
+  width: 105%;
 }
 
 .about-me img {
