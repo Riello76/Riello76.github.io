@@ -1,94 +1,75 @@
 @import url(/styles/header-footer-resets.css);
-/* main */
+
+/* Main section */
 main {
+  /* Set main content to flexbox with centered content and wrapping */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center content */
-  align-items: center;
-}
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-self: center;
-  padding: 20px; /* Padding around sections */
-  background-color: transparent; /* Transparent background */
-
-}
-
-section > h2 {
-  width: 100%; /* Full width */
-  text-align: center; /* Center align */
-  font-weight: bold; /* Bold font */
-  font-size: var(--font-size-heading); /* Heading font size */
-  border-radius: var(--border-radius) var(--border-radius) 0 0; /* Border radius */
-  background: var(--header-bg-color) url(/images/bg-label.svg) center / 55em no-repeat; /* Background with image */
-  color: var(--header-text-color); /* Text color */
-  box-shadow: 0 10px 15px var(--header-text-color); /* Box shadow */
-  margin-bottom: 1em; /* Bottom margin */
-  animation: light-h2 6s infinite; /* Animation */
-}
-@keyframes light-h2 {
-  0%, 100% {
-    box-shadow: 0 10px 15px white; /* White shadow */
-  }
-  50% {
-    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.662); /* Shadow with opacity */
-  }
-}
-section > ul {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  font-size: var(--font-size-p);
-  overflow: auto;
-  list-style: none;
-  border: 2px solid white;
-  box-shadow: 0 0 10px white;
-  color: var(--main-color);
-  height: var(--height-p);
-  padding: var(--padding-p);
-  line-height: var(--line-height-p);
-  word-break: break-all;
-  animation: light-p 6s infinite; /* Animation */
-}
-@keyframes light-p {
-  0%, 100% {
-    background: rgba(255, 255, 255, 0); /* Transparent background */
-  }
-  50% {
-    background: rgba(0, 0, 0, 0.662); /* Background with opacity */
-  }
-}
-section > ul li{
- position: relative;
- margin-left: 1em;
- padding: 1em;
-}
-section > ul > a > img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
+  justify-content: center;
   background-color: black;
 }
-section > ul > a{
-  height: 6em;
+
+.top-main {
+  /* Header section with flex layout, space between items, and horizontal alignment */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background: linear-gradient(to right, black, var(--main-color));
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  margin-bottom: 5rem;
 }
 
-section > p::-webkit-scrollbar,
-ul::-webkit-scrollbar {
-  width: 10px;
+.top-main h5 {
+  font-size: 3rem;
 }
 
-section > p::-webkit-scrollbar-thumb,
-ul::-webkit-scrollbar-thumb {
-  background-color: var(--main-color-opacity);
-  border-radius: var(--border-radius);
+.middle-main {
+  /* Main content section with centered content, gap between items, and padding */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+
+}
+.middle-main h5{
+  background: linear-gradient(to right, black, var(--main-color));
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    margin-bottom: 5rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.middle-main ul{
+  background: linear-gradient(to right, black, var(--main-color));
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    margin-bottom: 5rem;
+}
+.branding-div,
+.graphic-div,
+.design-div {
+  width: 20%;
+  
 }
 
 
 
 
+
+
+/* Media Queries */
+@media screen and (max-width:768px) {
+.middle-main{
+  flex-direction: column;
+}
+    .branding-div,
+    .graphic-div,
+    .design-div {
+      width: 100%;
+  
+    }
+}

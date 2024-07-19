@@ -27,12 +27,6 @@ main {
   font-size: 3rem;
 }
 
-.my-img {
-  width: 30rem;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-
 .middle-main {
   /* Main content section with centered content, gap between items, and padding */
   display: flex;
@@ -80,6 +74,7 @@ main {
 .about-me img {
   width: 50%;
   border-radius: 50%;
+  border: 1rem solid var(--secondary-color);
 }
 
 .my-tools {
@@ -110,14 +105,18 @@ hr {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 5rem;
   background: linear-gradient(to right, black, var(--main-color));
 }
 .news p{
   width: 60%;
 }
-.news iframe {
-  height: 50rem;
+.news div{
+  display: flex;
+}
+.news img {
+  width: 10rem;;
   margin-bottom: 5rem;
 }
 /* Media Queries */

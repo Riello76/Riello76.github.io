@@ -33,7 +33,7 @@ a {
   color: var(--secondary-color);
 }
 
-p {
+p,li {
   font-size: 2rem;
 }
 
@@ -52,8 +52,7 @@ html {
    Ensures consistent display and sizing across different browsers
 */
 img,
-picture,
-iframe {
+picture {
   display: block;
   width: 100%;
   height: auto;
@@ -181,14 +180,19 @@ iframe {
   border-top-right-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
 }
-
+.go-to-top{
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+}
 .cs-footer h6 {
   font-size: 2rem;
 }
 
 .cs-footer a,
 .cs-footer p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 /* Media Queries */
