@@ -197,6 +197,11 @@ picture {
 
 /* Media Queries */
 @media screen and (max-width:768px) {
+    html,
+      body {
+        display: flex;
+        flex-direction: column;
+      }
   .top-header {
     flex-direction: column;
   }
