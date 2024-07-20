@@ -33,7 +33,8 @@ a {
   color: var(--secondary-color);
 }
 
-p,li {
+p,
+li {
   font-size: 2rem;
 }
 
@@ -43,14 +44,13 @@ html {
   background-color: black;
   display: flex;
   flex-direction: column;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  /* Reset to 10px for rem */
   font-size: 62.5%;
 }
 
-/*
-   Reset styles for img, picture, and iframe elements
-   Ensures consistent display and sizing across different browsers
-*/
+
 img,
 picture {
   display: block;
@@ -100,12 +100,12 @@ picture {
 .nav-link {
   display: flex;
   align-items: center;
-  padding: 0;
+  padding: 0.5rem;
 }
 
 .dropdown-toggle::after {
   color: var(--secondary-color);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .dropdown-menu {
@@ -180,12 +180,14 @@ picture {
   border-top-right-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
 }
-.go-to-top{
+
+.go-to-top {
   display: flex;
   text-decoration: none;
   justify-content: center;
   text-align: center;
 }
+
 .cs-footer h6 {
   font-size: 2rem;
 }
@@ -196,12 +198,50 @@ picture {
 }
 
 /* Media Queries */
-@media screen and (max-width:768px) {
-    html,
-      body {
-        display: flex;
-        flex-direction: column;
-      }
+@media screen and (min-width:320px)and (max-width:425px) {
+  .top-header {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 10rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    padding: 0.3rem;
+  }
+
+  .cs-navbar {
+    float: left;
+
+  }
+
+  .cs-navbar h6 {
+    font-size: 1.5rem;
+  }
+
+  .dropdown-menu a {
+    font-size: 1.5rem;
+  }
+
+  .cs-container-fluid {
+    position: absolute;
+    top: 0;
+
+  }
+}
+
+/* --------------------------------------------------------------- */
+
+@media screen and (min-width:426px) and (max-width:768px) {
+
+  html,
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
   .top-header {
     flex-direction: column;
   }

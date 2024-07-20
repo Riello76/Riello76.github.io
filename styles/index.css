@@ -2,15 +2,15 @@
 
 /* Main section */
 main {
-  /* Set main content to flexbox with centered content and wrapping */
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-color: black;
+  margin-top: 5rem;
 }
 
 .top-main {
-  /* Header section with flex layout, space between items, and horizontal alignment */
   background: linear-gradient(to right, black, var(--main-color));
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +28,6 @@ main {
 }
 
 .middle-main {
-  /* Main content section with centered content, gap between items, and padding */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -124,6 +123,8 @@ hr {
   width: 10rem;;
   margin-bottom: 5rem;
 }
+
+
 /* Media Queries */
 @media screen and (max-width:768px) {
   .top-main h5 {

@@ -20,7 +20,7 @@
   <meta property="og:title" content="Gaspare Tocci's Portfolio" />
   <meta property="og:description"
     content="Gaspare Tocci's portfolio as a web designer and developer. Discover my projects and skills." />
-  <meta property="og:image" content="URL_to_image.jpg" />
+  <meta property="og:image" content="/images/logo.svg" />
   <meta property="og:url" content="https://riello76.github.io/" />
 
   <!-- Document title -->
@@ -29,15 +29,16 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
   <!-- AOS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Custom stylesheets -->
   <link rel="stylesheet" href="/styles/header-footer-resets.css" />
   <link rel="stylesheet" href="/styles/index.css" />
 
   <!-- Favicon -->
   <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml" />
-
 
   <!-- Preconnect links for performance improvement -->
   <link rel="preconnect" href="https://www.youtube.com" />
@@ -47,8 +48,14 @@
 <body>
   <!-- Header section -->
   <header>
+
+    <!-- Top Header -->
     <div class="top-header">
+
+      <!-- Logo -->
       <img tabindex="1" class="logo" src="/images/logo.svg" alt="logo" title="logo" />
+
+      <!-- Title -->
       <h1 class="title" tabindex="2">Every problem has its creative solution.</h1>
     </div>
 
@@ -57,15 +64,16 @@
       <div class="container-fluid cs-container-fluid">
 
         <!-- Navbar Toggler Button with Hamburger Icon -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" tabindex="3">
-        <span class="navbar-toggler-icon">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </span>
-      </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" tabindex="3">
 
+          <!-- Hamburger Menu Bar -->
+          <div class="navbar-toggler-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </button>
 
         <!-- Navbar Collapse Content -->
         <div class="collapse navbar-collapse cs-collapse-navbar" id="navbarSupportedContent">
@@ -85,17 +93,23 @@
                 <h6>CV</h6>
               </a>
               <ul class="dropdown-menu">
+
+                <!-- CV Main Page -->
                 <li><a class="dropdown-item" href="./pages/curriculum/curriculum.html" title="Main Page"
                     tabindex="6">Main Page</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
+
+                <!-- Download cv .pdf -->
                 <li><a class="dropdown-item" aria-label="Download CV in PDF format" href="/files/Gaspare-Tocci-CV.pdf"
                     download="Gaspare Tocci CV.pdf" title="Download CV in PDF format" tabindex="7">Download -PDF-</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
+
+                <!-- Download cv .doc -->
                 <li><a class="dropdown-item" aria-label="Download CV in DOC format" href="/files/Gaspare-Tocci-CV.doc"
                     download="Gaspare Tocci CV.doc" title="Download CV in DOC format" tabindex="8">Download -DOC-</a>
                 </li>
@@ -109,21 +123,29 @@
                 <h6>GALLERY</h6>
               </a>
               <ul class="dropdown-menu">
+
+                <!-- Gallery Main Page -->
                 <li><a class="dropdown-item" href="./pages/gallery/gallery.html" title="Main page" tabindex="10">Main
                     Page</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
+
+                <!-- Branding -->
                 <li><a class="dropdown-item" href="./pages/gallery/pages/branding.html" title="Branding"
                     tabindex="11">Branding</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
+
+                <!-- Graphic -->
                 <li><a class="dropdown-item" href="./pages/gallery/pages/graphics.html" title="Graphic"
                     tabindex="12">Graphic</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
+
+                <!-- 3D Design -->
                 <li><a class="dropdown-item" href="./pages/gallery/pages/3d-design.html" title="3D Design"
                     tabindex="13">3D Design</a></li>
               </ul>
@@ -136,16 +158,22 @@
                 <h6>WEBSITES</h6>
               </a>
               <ul class="dropdown-menu">
+
+                <!--Websites Main Page -->
                 <li><a class="dropdown-item" href="./pages/websites/websites.html" title="Main" tabindex="15">Main
                     Page</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
+
+                <!-- Glastonbury Festival -->
                 <li><a class="dropdown-item" href="./pages/websites/pages/glastonbury/index.html"
                     title="Glastonbury Festival" tabindex="16">Glastonbury Festival</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
+
+                <!-- Old Portfolio -->
                 <li><a class="dropdown-item" href="./pages/websites/pages/old-portfolio/old-portfolio.html"
                     title="Old Portfolio" tabindex="17">Old Portfolio</a></li>
               </ul>
@@ -158,17 +186,23 @@
                 <h6>CONTACTS</h6>
               </a>
               <ul class="dropdown-menu">
+
+                <!-- LinkedIn -->
                 <li><a class="dropdown-item" href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank"
                     title="LinkedIn" tabindex="19">LinkedIn</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
+
+                <!-- GitHub -->
                 <li><a class="dropdown-item" href="https://github.com/Riello76" target="_blank" title="GitHub"
                     tabindex="20">GitHub</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
+
+                <!-- Email -->
                 <li><a class="dropdown-item" href="mailto:gaspare_tocci@yahoo.it" title="Email" tabindex="21">Email</a>
                 </li>
               </ul>
@@ -181,59 +215,80 @@
 
   <!-- Main content -->
   <main>
+
+    <!-- Top Main -->
     <section class="top-main">
       <h5>Let Me Tell You About Myself!</h5>
     </section>
-    <section class="middle-main">
 
+    <!-- Middle Main -->
+    <section class="middle-main">
       <!-- About Me -->
       <section class="about-me">
         <div>
+          <!-- About Me Paragraph 1 -->
           <p class="about-me-p1" tabindex="23" aria-label="Description of my experience" data-aos="fade-right"
             data-aos-duration="2000">
             Welcome to my portfolio! My name is <strong>Gaspare Tocci</strong>, and I am Italian, currently living in
-            London. I have
+            London.
+            I have
             a great passion for web design and development.
           </p>
-          <hr class="about-me-p1" >
+          <hr class="about-me-p1">
+
+          <!-- About Me Paragraph 2 -->
           <p class="about-me-p2" data-aos="fade-right" data-aos-duration="2000" tabindex="24">
             I am a <strong>self-taught</strong> individual who seizes every opportunity to follow courses that can
-            enhance my
-            knowledge and provide new perspectives. I enjoy working in a team to achieve goals together in the best way
+            enhance my knowledge and provide new perspectives. I enjoy working in a team to achieve goals together in
+            the best
+            way
             possible.
           </p>
-          <hr class="about-me-p2" >
+          <hr class="about-me-p2">
+
+          <!-- About Me Paragraph 3 -->
           <p class="about-me-p3" data-aos="fade-right" data-aos-duration="2000" tabindex="25">
             This is my first portfolio, but I have a clear vision: a site that embodies sustainable web design without
             depriving the
             visitor of a beautiful experience, incorporating <strong>micro animations</strong> where appropriate. I
-            strive for a
+            strive for
+            a
             design that is simple to understand and use, while also providing an excellent visual effect.
           </p>
           <hr class="about-me-p3">
+
+          <!-- About Me Paragraph 4 -->
           <p class="about-me-p4" data-aos="fade-right" data-aos-duration="2000" tabindex="26">
             All my images, logos, and icons are in <strong>SVG</strong> or <strong>WEBP</strong> formats. I aim to write
-            code that
-            <strong>respects best practices</strong>, ensuring everything is minified to increase loading speed by the
-            end of the
-            project.
+            code that <strong>respects best practices</strong>, ensuring everything is minified to increase loading
+            speed by
+            the
+            end of the project.
           </p>
-          <hr class="about-me-p4" >
+          <hr class="about-me-p4">
+
+          <!-- About Me Paragraph 5 -->
           <p class="about-me-p5" data-aos="fade-right" data-aos-duration="2000" tabindex="27">
             <strong>I use AI as a support tool</strong> to speed up writing, and I assist myself with
-            <strong>snippets</strong>.
-            Although I am still at the beginning of my journey and have much to learn, I am eager for an apprentice
-            opportunity. For
-            my portfolio, I used <strong>Bootstrap</strong> to help streamline the design and responsiveness of the
-            layout.
+            <strong>snippets</strong>. Although I am still at the beginning of my journey and have much to learn, I am
+            eager
+            for an
+            apprentice opportunity. For my portfolio, I used <strong>Bootstrap</strong> to help streamline the design
+            and
+            responsiveness of the layout.
           </p>
           <hr class="about-me-p5">
         </div>
-        <img src="./images/london.webp" alt="my photo" tabindex="28">
+
+        <!-- About Me Image -->
+        <img src="./images/london.webp" width="500px" alt="my photo" tabindex="28">
       </section>
+
 
       <!-- My Tools -->
       <section class="my-tools">
+
+        <!-- Inkscape -->
         <div>
           <p tabindex="29" aria-label="Description of my tools" data-aos="fade-right" data-aos-duration="2000">
             <strong>Inkscape</strong>: <br> Used for creating and editing vector graphics, ensuring scalable and
@@ -244,8 +299,10 @@
           <a href="https://inkscape.org/" target="_blank" tabindex="30" aria-label="Visit Inkscape website"><img
               src="./icons/Inkscape.svg" alt="inkscape icon" data-aos="flip-left" data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"></a>
-        </div><br />
+        </div>
         <hr>
+
+        <!-- Visual Studio Code -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="31">
             <strong>VS Code</strong>: <br>My preferred code editor for writing clean, efficient code while
@@ -259,8 +316,10 @@
           <a href="https://code.visualstudio.com/" target="_blank" tabindex="32" aria-label="Visit VS Code website"><img
               src="./icons/vs-code.svg" alt="visual studio code icon" data-aos="flip-left"
               data-aos-easing="ease-out-cubic" data-aos-duration="2000"></a>
-        </div> <br />
+        </div>
         <hr>
+
+        <!-- GIMP -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="33">
             <strong>Gimp</strong>:<br> Used for image editing and manipulation, enhancing photos, and creating
@@ -271,8 +330,10 @@
           <a href="https://www.gimp.org/" target="_blank" tabindex="34" aria-label="Visit Gimp website"><img
               src="./icons/gimp.svg" alt="gimp icon" data-aos="flip-left" data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"></a>
-        </div> <br />
+        </div>
         <hr>
+
+        <!-- Blender -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="35">
             <strong>Blender</strong>:<br> Utilized for 3D modeling and animation, adding dynamic elements to my
@@ -283,8 +344,9 @@
               src="./icons/blender.svg" alt="blender icon" data-aos="flip-left" data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"></a>
         </div>
-        <br />
         <hr>
+
+        <!-- Figma -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="37">
             <strong>Figma</strong>:<br> Used for UI design and collaborative prototyping. I created interactive
@@ -294,8 +356,10 @@
           <a href="https://www.figma.com/" target="_blank" tabindex="38" aria-label="Visit Figma website"><img
               src="./icons/figma.svg" alt="figma icon" data-aos="flip-left" data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"></a>
-        </div> <br />
+        </div>
         <hr>
+
+        <!-- Filmora -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="39">
             <strong>Filmora</strong>: <br>A video editing tool used for creating and editing videos with a
@@ -307,8 +371,9 @@
             aria-label="Visit Filmora website"><img src="./icons/filmora.svg" alt="filmora icon" data-aos="flip-left"
               data-aos-easing="ease-out-cubic" data-aos-duration="2000"></a>
         </div>
-        <br />
         <hr>
+
+        <!-- PowerPoint -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="41">
             <strong>PowerPoint</strong>: <br>Utilized for creating presentations with impactful visuals and clear
@@ -319,8 +384,10 @@
           <a href="https://www.microsoft.com/en-gb/microsoft-365/powerpoint" target="_blank" tabindex="42"
             aria-label="Visit PowerPoint website"><img src="./icons/powerpoint.svg" alt="powerpoint icon"
               data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></a>
-        </div> <br />
+        </div>
         <hr>
+
+        <!-- Git -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="43">
             <strong>Git</strong>:<br> Used for version control and collaboration in software development projects.
@@ -333,6 +400,24 @@
               src="./icons/git.svg" alt="git icon" data-aos="flip-left" data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"></a>
         </div>
+        <hr>
+
+        <!-- GitHub -->
+        <div>
+          <p data-aos="fade-right" data-aos-duration="2000" tabindex="43">
+            <strong>GitHub</strong>:<br> Used for hosting repositories, collaboration, and version control in software
+            development projects. I utilize GitHub for managing code repositories, issues, pull requests, and
+            collaborating with
+            team members to ensure project integrity and efficiency.
+          </p>
+          <a href="https://github.com/" target="_blank" tabindex="44" aria-label="Visit GitHub website"><img
+              src="./icons/github.svg" alt="GitHub icon" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"></a>
+        </div>
+
+        <hr>
+
+        <!-- OBS -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="45">
             <strong>OBS</strong>:<br> Used for video recording and live streaming. I leverage OBS's powerful features to
@@ -341,11 +426,11 @@
             and
             transitions to enhance viewer engagement.
           </p>
-
           <a href="https://obsproject.com/" target="_blank" tabindex="46" aria-label="Visit OBS website"><img
               src="./icons/obs.svg" alt="obs icon" data-aos="flip-left" data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"></a>
         </div>
+        <hr>
       </section>
 
       <!-- News -->
