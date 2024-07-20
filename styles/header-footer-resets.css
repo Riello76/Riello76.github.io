@@ -36,6 +36,7 @@ a {
 p,
 li {
   font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* Body and HTML */
