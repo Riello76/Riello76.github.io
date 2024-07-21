@@ -237,6 +237,8 @@ picture {
   text-decoration: none;
   justify-content: center;
   text-align: center;
+  color: var(--secondary-color);
+  font-weight: bold;
 }
 
 /* ========== Media Queries ========== */
