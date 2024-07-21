@@ -20,7 +20,7 @@
   <meta property="og:title" content="Gaspare Tocci's Portfolio" />
   <meta property="og:description"
     content="Gaspare Tocci's portfolio as a web designer and developer. Discover my projects and skills." />
-  <meta property="og:image" content="/images/logo.svg" />
+  <meta property="og:image" content="/images/share-img.svg />
   <meta property="og:url" content="https://riello76.github.io/" />
 
   <!-- Document title -->
@@ -218,12 +218,13 @@
 
     <!-- Top Main -->
     <section class="top-main">
-      <h5>Let Me Tell You About Myself!</h5>
+      <h2>Let Me Tell You About Myself!</h2>
     </section>
 
     <!-- Middle Main -->
     <section class="middle-main">
       <!-- About Me -->
+      <h3>About me</h3>
       <section class="about-me">
         <div>
           <!-- About Me Paragraph 1 -->
@@ -284,14 +285,15 @@
         <img src="./images/london.webp" width="500px" alt="my photo" tabindex="28">
       </section>
 
-
+      <h3>My Tools</h3>
       <!-- My Tools -->
       <section class="my-tools">
 
         <!-- Inkscape -->
         <div>
           <p tabindex="29" aria-label="Description of my tools" data-aos="fade-right" data-aos-duration="2000">
-            <strong>Inkscape</strong>: <br> Used for creating and editing vector graphics<strong>(SVG)</strong>, ensuring scalable and
+            <strong>Inkscape</strong>: <br> Used for creating and editing vector graphics<strong>(SVG)</strong>,
+            ensuring scalable and
             high-quality visuals. I leveraged
             its powerful tracing capabilities and drawing tools for designing custom logos, icons, and
             illustrations.
@@ -433,31 +435,47 @@
         <hr>
       </section>
 
-      <!-- News -->
-      <section class="news">
-        <p data-aos="zoom-out-up" data-aos-duration="2000" tabindex="47">For this page, I used <strong>Bootstrap</strong> for the navigation bar, which I customized to adapt to the style of the
-        site. I created the logo and icons with <strong>Inkscape</strong>, and they are in <strong>SVG</strong> format. I added
-        scrolling animations using the <strong>AOS (Animate on Scroll)</strong> library.
-        
-        I created two CSS files: the first one takes care of the <strong>resets, the header, and the footer</strong>, as they
-        will be the same on all pages. For simplicity and ease of maintenance, I have chosen to have a separate CSS file for
-        this purpose. The second CSS file mainly covers the body of the page, as other pages will be structured similarly. I
-        integrated the CSS for the reset, header, and footer into the main CSS file using <strong>@import</strong> at the top of
-        the CSS. I used two font families: the main one is <strong>'Gill Sans'</strong>, and for paragraphs, I used
-        <strong>'Courier New'</strong> for better readability.</p>
+      <!-- Technical Details -->
+
+      <h3>Technical Details</h3>
+      <section class="technical-details">
+        <p data-aos="zoom-out-up" data-aos-duration="2000" tabindex="47">
+          For this page, I used <strong>Bootstrap</strong> for the navigation bar, which I customized to adapt to the
+          style of the site.
+          I created the logo and icons with <strong>Inkscape</strong>, and they are in <strong>SVG</strong> format. I
+          added scrolling animations using the <strong>AOS (Animate on Scroll)</strong> library.
+
+          I created two CSS files: the first one takes care of the <strong>resets, the header, and the footer</strong>,
+          as they will be the same on all pages. For simplicity and ease of maintenance, I have chosen to have a
+          separate CSS
+          file for
+          this purpose. The second CSS file mainly covers the body of the page, as other pages will be structured
+          similarly. I
+          integrated the CSS for the reset, header, and footer into the main CSS file using <strong>@import</strong> at
+          the
+          top of the CSS. I
+          used the <strong>system-ui</strong> font family for better readability and performance. Additionally, I
+          utilized the
+          <strong>clamp()</strong> function for the font size to ensure it adjusts dynamically between minimum and
+          maximum
+          values for optimal
+          readability across different screen sizes.
+        </p>
+        <hr>
         <p data-aos="zoom-out-up" data-aos-duration="2000" tabindex="48">
-        This portfolio is a work in progress, and I am continually refining and adding new elements to enhance both
-        <strong>functionality</strong> and <strong>aesthetics</strong>. You will get a glimpse of my current work, the
-        <strong>techniques</strong> I use, and my commitment to creating a <strong>smooth and engaging user experience</strong>.
-        Stay tuned for updates as I continue to build and improve my portfolio.
+          This portfolio is a work in progress, and I am continually refining and adding new elements to enhance both
+          <strong>functionality</strong> and <strong>aesthetics</strong>. You will get a glimpse of my current work, the
+          <strong>techniques</strong> I use, and my commitment to creating a <strong>smooth and engaging user
+            experience</strong>.
+          Stay tuned for updates as I continue to build and improve my portfolio.
         </p>
         <div>
           <img data-aos="fade-up" data-aos-duration="2000" src="./icons/html.svg" alt="html icon">
           <img data-aos="fade-up" data-aos-duration="2000" src="./icons/css.svg" alt="css icon">
           <img data-aos="fade-up" data-aos-duration="2000" src="./icons/js.svg" alt="javascript icon">
         </div>
+        <hr>
       </section>
-    </section>
   </main>
 
   <!-- Footer Section -->
@@ -468,7 +486,7 @@
 
         <!-- Contact Information -->
         <div class="col-md-4">
-          <h6 tabindex="49">Contact Information</h6>
+          <h5 tabindex="49">Contact Information</h5>
           <ul class="list-unstyled">
             <li><a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="text-white"
                 title="LinkedIn" tabindex="50">LinkedIn</a></li>
@@ -482,7 +500,7 @@
 
         <!-- Quick Links -->
         <div class="col-md-4">
-          <h6 tabindex="53">Quick Links</h6>
+          <h5 tabindex="53">Quick Links</h5>
           <ul class="list-unstyled">
             <li><a href="./index.html" class="text-white" title="Homepage" tabindex="54">Home</a></li>
             <li><a href="./pages/curriculum/curriculum.html" class="text-white" title="Curriculum" tabindex="53">CV</a>
@@ -495,7 +513,7 @@
 
         <!-- Additional Information -->
         <div class="col-md-4">
-          <h6 tabindex="57">Additional Information</h6>
+          <h5 tabindex="57">Additional Information</h5>
           <p tabindex="58">Feel free to reach out if you have any questions or opportunities. I am always open to
             discussing new
             projects,
