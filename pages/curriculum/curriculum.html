@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-  <!-- Character set -->
+  <!-- ========== Character Set ========== -->
   <meta charset="UTF-8" />
 
-  <!-- Viewport settings for responsive design -->
+  <!-- ========== Viewport settings for responsive design ========== -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO meta tags -->
+  <!-- ========== SEO and social media meta tags ========== -->
   <meta name="description"
     content="Gaspare Tocci's portfolio as a web designer and developer. Discover my projects and skills." />
   <meta name="keywords"
@@ -16,129 +16,165 @@
   <meta name="author" content="Gaspare Tocci" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Document title -->
+  <!-- ========== Open Graph meta tags for social media sharing ========== -->
+  <meta property="og:title" content="Gaspare Tocci's Portfolio" />
+  <meta property="og:description"
+    content="Explore Gaspare Tocci's professional portfolio showcasing his expertise in web design and development. 
+      Discover a diverse range of projects and skills, including HTML, CSS, JavaScript, and popular design tools like Figma and Inkscape." />
+
+  <meta property="og:image" content="/images/share-img.webp" />
+  <meta property="og:url" content="https://riello76.github.io/curriculum.html" />
+
+  <!-- ========== Document Title ========== -->
   <title>Gaspare Tocci's Curriculum</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- ========== Bootstrap CSS ========== -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <!-- AOS CSS -->
+
+  <!-- ========== AOS CSS ========== -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- Custom stylesheets -->
+
+  <!-- ========== Custom Stylesheets ========== -->
   <link rel="stylesheet" href="/styles/header-footer-resets.css">
   <link rel="stylesheet" href="/styles/curriculum.css" />
 
-  <!-- Favicon -->
+  <!-- ========== Favicon ========== -->
   <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
+
+  <!-- ========== Preconnect Links for Performance Improvement ========== -->
+  <link rel="preconnect" href="https://www.youtube.com" />
+  <link rel="preconnect" href="https://www.google.com" />
 </head>
 
 <body>
-  <!-- Header section -->
+  <!-- ========== HEADER SECTION ========== -->
   <header>
+
+    <!-- ========== TOP HEADER ========== -->
     <div class="top-header">
+
+      <!-- ========== Logo ========== -->
       <img tabindex="1" class="logo" src="/images/logo.svg" alt="logo" title="logo" />
+
+      <!-- ========== Title ========== -->
       <h1 class="title">Every problem has its creative solution.</h1>
     </div>
-    <!-- Navigation menu -->
+
+    <!-- ========== NAVIGATION MENU ========== -->
     <nav class="navbar navbar-expand-lg  cs-navbar">
       <div class="container-fluid cs-container-fluid">
 
-        <!-- Navbar Toggler Button with Hamburger Icon -->
+        <!-- ========== Navbar Toggler Button with Hamburger Icon ========== -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" tabindex="3">
+
+          <!-- ========== Hamburger Menu Bar ========== -->
+          <div class="navbar-toggler-icon">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
-          </span>
+          </div>
         </button>
 
-        <!-- Navbar Collapse Content -->
+        <!-- ========== Navbar Collapse Content ========== -->
         <div class="collapse navbar-collapse cs-collapse-navbar" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            <!-- Home button -->
+            <!-- ========== HOME BUTTON ========== -->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/index.html" title="Homepage">
-                <h6>HOME</h6>
+                <h5>HOME</h5>
               </a>
             </li>
 
-            <!-- CV dropdown menu -->
+            <!-- ========== CV DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 title="Curriculum">
-                <h6>CV</h6>
+                <h5>CV</h5>
               </a>
               <ul class="dropdown-menu">
+
+                <!-- ========== CV Main Page ========== -->
                 <li><a class="dropdown-item" href="../curriculum/curriculum.html" title="Main Page">Main Page</a></li>
                 <li>
                 </li>
+
+                <!-- ========== Download CV as PDF ========== -->
                 <li><a class="dropdown-item" aria-label="Download CV in PDF format" href="/files/Gaspare-Tocci-CV.pdf"
                     download="Gaspare Tocci CV.pdf" title="Download CV in PDF format">Download -PDF-</a></li>
                 <li>
                 </li>
+
+                <!-- ========== Download CV as DOC ========== -->
                 <li><a class="dropdown-item" aria-label="Download CV in DOC format" href="/files/Gaspare-Tocci-CV.doc"
                     download="Gaspare Tocci CV.doc" title="Download CV in DOC format">Download -DOC-</a></li>
               </ul>
             </li>
 
-            <!-- Gallery dropdown menu -->
+            <!-- ========== GALLERY DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 title="Gallery">
-                <h6>GALLERY</h6>
+                <h5>GALLERY</h5>
               </a>
               <ul class="dropdown-menu">
+
+                <!-- ========== Gallery Main Page ========== -->
                 <li><a class="dropdown-item" href="../gallery/gallery.html" title="Main page">Main Page</a></li>
-                <li>
-                </li>
+
+                <!-- ========== Branding ========== -->
                 <li><a class="dropdown-item" href="../gallery/pages/branding.html" title="Branding">Branding</a></li>
-                <li>
-                </li>
+
+                <!-- ========== Graphic ========== -->
                 <li><a class="dropdown-item" href="../gallery/pages/graphics.html" title="Graphic">Graphic</a></li>
-                <li>
-                </li>
+
+                <!-- ========== 3D Design ========== -->
                 <li><a class="dropdown-item" href="../gallery/pages/3d-design.html" title="3D Design">3D Design</a>
                 </li>
               </ul>
             </li>
 
-            <!-- Websites dropdown menu -->
+            <!-- ========== WEBSITES DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 title="Websites">
-                <h6>WEBSITES</h6>
+                <h5>WEBSITES</h5>
               </a>
               <ul class="dropdown-menu">
+
+                <!-- ========== Websites Main Page ========== -->
                 <li><a class="dropdown-item" href="../websites/websites.html" title="Main">Main Page</a></li>
-                <li>
-                </li>
+
+                <!-- ========== Glastonbury Festival ========== -->
                 <li><a class="dropdown-item" href="../websites/pages/glastonbury/index.html"
                     title="Glastonbury Festival">Glastonbury Festival</a></li>
-                <li>
-                </li>
+
+                <!-- ========== Old Portfolio ========== -->
                 <li><a class="dropdown-item" href="../websites/pages/old-portfolio/old-portfolio.html"
                     title="Old Portfolio">Old Portfolio</a></li>
               </ul>
             </li>
 
-            <!-- Contact dropdown menu -->
+            <!-- ========== CONTACT DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 title="Contacts">
-                <h6>CONTACTS</h6>
+                <h5>CONTACTS</h5>
               </a>
               <ul class="dropdown-menu">
+
+                <!-- ========== LinkedIn ========== -->
                 <li><a class="dropdown-item" href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank"
                     title="LinkedIn">LinkedIn</a></li>
-                <li>
-                </li>
+
+                <!-- ========== GitHub ========== -->
                 <li><a class="dropdown-item" href="https://github.com/Riello76" target="_blank"
                     title="GitHub">GitHub</a>
                 </li>
-                <li>
-                </li>
+
+                <!-- ========== Email ========== -->
                 <li><a class="dropdown-item" href="mailto:gaspare_tocci@yahoo.it" title="Email">Email</a></li>
               </ul>
             </li>
@@ -148,165 +184,188 @@
     </nav>
   </header>
 
-<!-- Main content -->
-<main>
-  <section class="top-main">
-    <h5>Curriculum</h5>
-  </section>
-  <section class="middle-main">
+  <!-- ========== MAIN CONTENT ========== -->
+  <main>
 
-    <div class="profile-div" data-aos="fade-right"  data-aos-duration="2000">
-      <h5>Profile</h5>
-      <p>
-        I am a motivated aspiring apprentice with a background rooted in
-        diverse roles, honing my teamwork and problem-solving skills. I've
-        demonstrated the ability to thrive in dynamic environments,
-        leveraging my past experiences as a waiter, unarmed security
-        personnel, and volunteer soldier to effectively tackle
-        challenges. I'm eager to apply my solid foundation in IT
-        fundamentals and recent technical certifications to excel in a
-        web development/design apprenticeship role. Other skills I
-        possess include creativity, adaptability, effective communication,
-        attention to detail, resilience, teamwork, self-learning, and
-        customer service.
-      </p>
-    </div>
+    <!-- ========== Top Main ========== -->
+    <section class="top-main">
+      <h2>Curriculum</h2>
+    </section>
 
-    <div class="experience-div" data-aos="fade-left"  data-aos-duration="2000">
-      <h5>Experience</h5>
-      <ul>
-        <li>
-          (2009-2022) Hospitality and Security Roles: I demonstrated strong attention to detail and
+    <!-- ========== Middle Main ========== -->
+    <section class="middle-main">
+
+      <div class="profile-div" data-aos="fade-right" data-aos-duration="2000">
+        <h2>Profile</h2>
+        <p>
+          I am a motivated aspiring apprentice with a background rooted in
+          diverse roles, honing my teamwork and problem-solving skills. I've
+          demonstrated the ability to thrive in dynamic environments,
+          leveraging my past experiences as a waiter, unarmed security
+          personnel, and volunteer soldier to effectively tackle
+          challenges. I'm eager to apply my solid foundation in IT
+          fundamentals and recent technical certifications to excel in a
+          web development/design apprenticeship role. Other skills I
+          possess include creativity, adaptability, effective communication,
+          attention to detail, resilience, teamwork, self-learning, and
+          customer service.
+        </p>
+      </div>
+
+      <div class="experience-div" data-aos="fade-left" data-aos-duration="2000">
+        <h2>Experience</h2>
+
+        <p>
+          (2009-2022) <strong>Hospitality and Security Roles</strong>: I demonstrated strong attention to detail and
           customer service skills while working as a waiter at various
           4/5-star hotels in Italy and London. I developed proficiency
           in CCTV monitoring and
           perimeter control during unarmed security duties at Marina4 -
           Darsena, Caorle Porto Santa Margherita, Italy.
-        </li>
-        <li>
-          (2004-2005) Military Experience: I acquired technical skills in surveillance
+        </p>
+
+        <p>
+          (2004-2005)<strong> Military Experience</strong>: I acquired technical skills in surveillance
           systems and resource management as a volunteer soldier at
           Ettore Manes Barracks of the Genius Sapper. I demonstrated
           adaptability and problem-solving abilities
           in managing various tasks and responsibilities as a corporal.
-        </li>
-      </ul>
-    </div>
-    <div class="education-div" data-aos="fade-right"  data-aos-duration="2000">
-      <h5>Education</h5>
-      <ul>
-        <li>
+        </p>
+
+      </div>
+      <div class="education-div" data-aos="fade-right" data-aos-duration="2000">
+        <h2>Education</h2>
+        <p>
           (1982-1987) Primary School
           Circolo Didattico Primo Circolo at Piazza Indipendenza, 87012
           Castrovillari CS, Italy.
-        </li>
-        <li>
+        </p>
+
+        <p>
           (1987-1990) Secondary School E.
           De Nicola at Via Coscile, 28, 87012 Castrovillari CS, Italy.
-        </li>
-        <li>
+        </p>
+
+        <p>
           (1990-1993) High School IPSIA
           at Leonardo Da Vinci Via dell'Industria 2, 87012 Castrovillari
           CS, Italy.
-        </li>
-      </ul>
-    </div>
-    <div class="certifications-div" data-aos="fade-left"  data-aos-duration="2000">
-      <h5>Certifications/Licensing</h5>
-      <ul>
-        <li>
-          (26-05-2021): Esol Skills For
-          Life Entry Lv 1 at MI COMPUT SOLUTION TRAINING, London.
-        </li>
-        <li>
-          (27-05-2021): Functional Skills
-          Lv 1 in ICT (Excel, Word) at MI COMPUT SOLUTION TRAINING,
+        </p>
+
+        <p></p>
+      </div>
+
+
+      <div class="certifications-div" data-aos="fade-left" data-aos-duration="2000">
+        <h2>Certifications/Licensing</h2>
+        <p>
+          (26-05-2021): <strong>
+            Esol Skills For
+            Life Entry Lv 1
+          </strong> at MI COMPUT SOLUTION TRAINING, London.
+        </p>
+
+        <p>
+          (27-05-2021): <strong>
+            Functional Skills
+            Lv 1 in ICT </strong>(Excel, Word)
+          at MI COMPUT SOLUTION TRAINING,
           London.
-        </li>
-        <li>
-          (13-07-2021): Gateway
-          Qualifications Lv 2 Award in Digital and IT Skills at ELATT,
+        </p>
+
+        <p>
+          (13-07-2021): <strong>
+            Gateway
+            Qualifications Lv 2 Award
+          </strong> in Digital and IT Skills at ELATT,
           London.
-        </li>
-        <li>
-          (25-08-2023): FastTrack
-          Functional Skills English Lv 2 at Strive Training Croydon.
-        </li>
-        <li>
-          (08-09-2023): FastTrack
-          Functional Skills Maths Lv 3 at Strive Training Croydon.
-        </li>
-        <li>
-          (22-03-2014): SIA Door
-          Supervisor License at Lewisham College.
-        </li>
-        <li>
-          (22-04-2014): Engaged in Web
-          Development Bootcamp at GetSetUK.
-        </li>
-      </ul>
-    </div>
-    <div class="technical-skills" data-aos="fade-right"  data-aos-duration="2000">
-      <h5>Technical Skills</h5>
-      <ul>
-        <li>
-          Proficient in HTML5,
-          CSS3, and
-          JavaScript.
-        </li>
-        <li>Experienced in Web Design, UI/UX, and Web Development.</li>
-        <li>
-          Skilled in using VS Code,
-          Git, and
-          Inkscape,
-          OBS,
-          Filmora,
-          PowerPoint,
-          GIMP, and
-          Figma for development and
+        </p>
+
+        <p>
+          (25-08-2023): <strong>
+            FastTrack
+            Functional Skills English Lv 2
+          </strong> at Strive Training Croydon.
+        </p>
+
+        <p>
+          (08-09-2023): <strong>
+            FastTrack
+            Functional Skills Maths Lv 3
+          </strong> at Strive Training Croydon.
+        </p>
+
+        <p>
+          (22-03-2014): <strong>
+            SIA Door
+            Supervisor License
+          </strong> at Lewisham College.
+        </p>
+
+        <p>
+          (22-04-2014): <strong>
+            Engaged in Web
+            Development Bootcamp
+          </strong> at GetSetUK.
+        </p>>
+
+      </div>
+      <div class="technical-skills" data-aos="fade-right" data-aos-duration="2000">
+        <h2>Technical Skills</h2>
+
+        <p>
+          Proficient in <strong>HTML5</strong>, <strong>CSS3</strong>, and (currently studying)
+          <strong>JavaScript</strong>.
+        </p>
+
+        <p>Experienced in <strong>Web Design</strong>, <strong>UI/UX</strong>, and <strong>Web Development</strong>.</p>
+
+        <p>
+          Skilled in using <strong>VS Code</strong>,
+          <strong>Git</strong>,
+          <strong>Inkscape</strong>,
+          <strong>OBS</strong>,
+          <strong>Filmora</strong>,
+          <strong>PowerPoint</strong>,
+          <strong>GIMP, </strong>and
+          <strong>Figma</strong> for development and
           design workflows.
-        </li>
-        <li>
-          Understanding of internet infrastructure, web security
-          principles, server operations, protocols, and ports.
-        </li>
-        <li>Knowledgeable in setting up domains and hosting.</li>
-        <li>
-          Ability to design solutions and express them using
-          pseudo-code.
-        </li>
-        <li>
+        </p>
+
+        <p>
           Familiarity with foundational syntax and libraries for Web
           Development.
-        </li>
-        <li>
+        </p>
+
+        <p>
           Application of fundamental concepts such as variables, control
           flow, and data structures.
-        </li>
-        <li>Use of built-in functions to optimize web pages.</li>
-        <li>
-          Experience in designing, planning, and building code projects.
-        </li>
-        <li>
+        </p>
+
+        <p>Use of built-in functions to optimize web pages.</p>
+
+        <p>Experience in designing, planning, and building code projects.</p>
+
+        <p>
           Proficiency in performing version control with
-          Git and
-          GitHub.
-        </li>
-      </ul>
-    </div>
-  </section>
-</main>
+          <strong>Git</strong> and
+          <strong>GitHub</strong>.
+        </p>
+
+      </div>
+    </section>
+  </main>
 
 
-  <!-- Footer Section -->
+<!-- ========== Footer Section ========== -->
   <footer class="text-white mt-5 cs-footer">
     <a class="go-to-top" href="./curriculum.html">⏫- Go To Top -⏫</a>
     <div class="container py-4">
       <div class="row">
 
-        <!-- Contact Information -->
+        <!-- ========== Contact Information ========== -->
         <div class="col-md-4">
-          <h6 tabindex="49">Contact Information</h6>
+          <h4 tabindex="49">Contact Information</h4>
           <ul class="list-unstyled">
             <li><a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="text-white"
                 title="LinkedIn" tabindex="50">LinkedIn</a></li>
@@ -318,9 +377,9 @@
           </ul>
         </div>
 
-        <!-- Quick Links -->
+      <!-- ========== Quick Links ========== -->
         <div class="col-md-4">
-          <h6 tabindex="53">Quick Links</h6>
+          <h4 tabindex="53">Quick Links</h4>
           <ul class="list-unstyled">
             <li><a href="/index.html" class="text-white" title="Homepage" tabindex="54">Home</a></li>
             <li><a href="./curriculum.html" class="text-white" title="Curriculum" tabindex="53">CV</a>
@@ -331,9 +390,9 @@
           </ul>
         </div>
 
-        <!-- Additional Information -->
+        <!-- ========== Additional Information ========== -->
         <div class="col-md-4">
-          <h6 tabindex="57">Additional Information</h6>
+          <h4 tabindex="57">Additional Information</h4>
           <p tabindex="58">Feel free to reach out if you have any questions or opportunities. I am always open to
             discussing new
             projects,
@@ -344,15 +403,21 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
+  <!-- ========== Bootstrap JS Library ========== -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
+  
+  <!-- ========== AOS (Animate On Scroll) Library ========== -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+  
+  <!-- ========== Initialize AOS Animations ========== -->
   <script>
-    AOS.init();
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init();
+    });
   </script>
+
 </body>
 
 </html>

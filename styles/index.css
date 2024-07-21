@@ -73,7 +73,7 @@ main {
 .about-me img {
   width: 40%;
   border-radius: 50%;
-  border: 0.5rem solid var(--secondary-color);
+  border: 0.5rem solid var(--info-color);
 }
 
 /* ========== My tools ========== */
