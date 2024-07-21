@@ -1,4 +1,4 @@
-/* Reset and box-sizing */
+/* ========== Reset and Box-Sizing ========== */
 *,
 *::before,
 *::after {
@@ -7,95 +7,100 @@
   box-sizing: border-box;
 }
 
-/* Global Variables */
+/* ========== Global Variables ========== */
 :root {
   /* Main color */
-  --main-color: rgb(2, 2, 69);
+  --main-color: #001f3f;
 
   /* Secondary color */
-  --secondary-color: #DCDCDC;
+  --secondary-color: #ffffff;
+
+  /* Tertiary color */
+  --tertiary-color: rgb(0, 0, 0);
+
+  /* Background color */
+  --background-color: linear-gradient(to right, var(--tertiary-color) 0%, var(--main-color));
 
   /* Border radius */
   --border-radius: 2.5rem;
 
-  /* Typography Variables */
+  /* ========== Typography Variables ========== */
   --font-size-h1: clamp(3rem, 1.5rem + 2vw, 8rem);
-  --font-size-h2: clamp(2rem, 1rem + 1vw, 6rem);
-  --font-size-h3: clamp(1.5rem, 1.5rem + 1vw, 4rem);
-  --font-size-h4: clamp(1rem, 2rem + 1vw, 5rem);
-  --font-size-h5: clamp(2rem, 1rem + 1vw, 4rem);
-  --font-size-h6: clamp(1.5rem, 1.5rem + 0.5vw, 3rem);
+  /* Font size for h1 */
+  --font-size-h2: clamp(2.2rem, 1.5rem + 1.5vw, 6rem);
+  /* Font size for h2 */
+  --font-size-h3: clamp(2rem, 1.5rem + 1vw, 5rem);
+  /* Font size for h3 */
+  --font-size-h4: clamp(1.75rem, 1.5rem + 0.75vw, 4rem);
+  /* Font size for h4 */
+  --font-size-h5: clamp(1.5rem, 1.25rem + 0.5vw, 3.5rem);
+  /* Font size for h5 */
+  --font-size-h6: clamp(1.25rem, 1rem + 0.5vw, 3rem);
+  /* Font size for h6 */
   --font-size-p: clamp(1rem, 1.5rem + 0.5vw, 3rem);
-  --font-size-a: clamp(1rem, 1.5rem + 0.5vw, 2.5rem);
+  /* Font size for p */
+  --font-size-a: clamp(1rem, 1.2rem + 0.5vw, 2.5rem);
+  /* Font size for a */
 }
 
-/* Typography Styles */
-
-/* Font size for h1 */
+/* ========== Typography Styles ========== */
 h1 {
   font-size: var(--font-size-h1);
   color: var(--secondary-color);
 }
 
-/* Font size for h2 */
 h2 {
   font-size: var(--font-size-h2);
   color: var(--secondary-color);
 }
 
-/* Font size for h3 */
 h3 {
   font-size: var(--font-size-h3);
   color: var(--secondary-color);
 }
 
-/* Font size for h4 */
 h4 {
   font-size: var(--font-size-h4);
   color: var(--secondary-color);
 }
 
-/* Font size for h5 */
 h5 {
   font-size: var(--font-size-h5);
   color: var(--secondary-color);
 }
 
-/* Font size for h6 */
 h6 {
   font-size: var(--font-size-h6);
   color: var(--secondary-color);
 }
 
-/* Font size for paragraphs */
 p {
   font-size: var(--font-size-p);
   color: var(--secondary-color);
 }
 
-/* Font size for links */
 a {
   font-size: var(--font-size-a);
   color: var(--secondary-color);
 }
 
-/* Text color for unordered lists and list items */
 ul,
 li {
   color: var(--secondary-color);
 }
 
-/* Body and HTML */
+/* ========== Body and HTML ========== */
 body,
 html {
-  background-color: black;
+  background-color: var(--tertiary-color);
   display: flex;
   flex-direction: column;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
   /* Reset to 10px for rem */
   font-size: 62.5%;
 }
-
 
 img,
 picture {
@@ -104,13 +109,13 @@ picture {
   height: auto;
 }
 
-/* Header */
+/* ========== Header ========== */
 .top-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  background: linear-gradient(to right, black, var(--main-color));
+  background-color: var(--tertiary-color);
+  background: var(--background-color);
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 
@@ -126,17 +131,16 @@ picture {
   text-align: center;
 }
 
-/* Navbar */
+/* ========== Navbar ========== */
 .cs-navbar {
   float: right;
   z-index: 1000;
-  margin-top: 3rem;
-  max-width: calc(100% - 5rem);
+  margin-top: 5rem;
 }
 
 .cs-collapse-navbar {
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  background: linear-gradient(to right, black, var(--main-color));
+  background: var(--background-color);
 }
 
 .nav-link {
@@ -151,22 +155,23 @@ picture {
 }
 
 .dropdown-menu {
-  background: linear-gradient(to right, black, var(--main-color));
+  background: var(--background-color);
 }
 
 .dropdown-menu a {
   color: var(--secondary-color);
 }
 
-/* Hamburger */
-/* Navbar Toggler Icon */
+/* ========== Hamburger ========== */
+
+/* ========== Navbar Toggler Icon ========== */
 .navbar-toggler {
   border: none;
   outline: none;
   padding: 0;
 }
 
-/* Custom Hamburger Icon */
+/* ========== Custom Hamburger Icon ========== */
 .navbar-toggler-icon {
   width: 2.5rem;
   height: 2rem;
@@ -177,7 +182,7 @@ picture {
   cursor: pointer;
 }
 
-/* The three hamburger lines */
+/* ========== The three hamburger lines ========== */
 .navbar-toggler-icon .bar {
   position: absolute;
   width: 100%;
@@ -187,7 +192,7 @@ picture {
   transition: transform 0.3s ease-out;
 }
 
-/* Positioning for each line */
+/* ========== Positioning for each line ========== */
 .navbar-toggler-icon .bar:nth-child(1) {
   top: 0.25rem;
 }
@@ -201,7 +206,7 @@ picture {
   bottom: 0.25rem;
 }
 
-/* Style for lines when toggler is active */
+/* ========== Style for lines when toggler is active ========== */
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .bar:nth-child(1) {
   transform: translateY(0.50rem) rotate(45deg);
 }
@@ -214,9 +219,9 @@ picture {
   transform: translateY(-0.80rem) rotate(-45deg);
 }
 
-/* Footer */
+/* ========== Footer ========== */
 .cs-footer {
-  background: linear-gradient(to right, black, var(--main-color));
+  background: var(--background-color);
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 
@@ -227,9 +232,8 @@ picture {
   text-align: center;
 }
 
-
-/* Media Queries */
-@media screen and (min-width:320px)and (max-width:425px) {
+/* ========== Media Queries ========== */
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .top-header {
     flex-direction: column;
   }
@@ -245,7 +249,6 @@ picture {
 
   .cs-navbar {
     float: left;
-
   }
 
   .cs-navbar h6 {
@@ -259,13 +262,10 @@ picture {
   .cs-container-fluid {
     position: absolute;
     top: 0;
-
   }
 }
 
-/* --------------------------------------------------------------- */
-
-@media screen and (min-width:426px) and (max-width:768px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
 
   html,
   body {
@@ -287,12 +287,10 @@ picture {
 
   .cs-navbar {
     float: left;
-
   }
 
   .cs-container-fluid {
     position: absolute;
     top: 0;
-
   }
 }

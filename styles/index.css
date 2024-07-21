@@ -1,17 +1,16 @@
 @import url("/styles/header-footer-resets.css");
 
-/* Main section */
+/* ========== Main section ========== */
 main {
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: black;
+  background-color: var(--tertiary-color);
   margin-top: 5rem;
 }
 
 .top-main {
-  background: linear-gradient(to right, black, var(--main-color));
+  background: var(--background-color);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -30,8 +29,7 @@ main {
   margin-bottom: 5rem;
 }
 
-
-/* About me */
+/* ========== About me ========== */
 .about-me {
   width: 100%;
   display: flex;
@@ -40,7 +38,7 @@ main {
   padding: 5rem;
   margin-bottom: 5rem;
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  background: linear-gradient(to right, black, var(--main-color));
+  background: var(--background-color);
 }
 
 .about-me p {
@@ -53,7 +51,7 @@ main {
 }
 
 .about-me-p2 {
-margin: 0 0 2rem 10rem;
+  margin: 0 0 2rem 10rem;
   width: 91%;
 }
 
@@ -68,7 +66,7 @@ margin: 0 0 2rem 10rem;
 }
 
 .about-me-p5 {
-margin: 0 0 2rem 25rem;
+  margin: 0 0 2rem 25rem;
   width: 90%;
 }
 
@@ -78,14 +76,13 @@ margin: 0 0 2rem 25rem;
   border: 0.5rem solid var(--secondary-color);
 }
 
-
-/* My tools */
+/* ========== My tools ========== */
 .my-tools {
   padding: 5rem;
   margin-bottom: 5rem;
   overflow: auto;
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  background: linear-gradient(to right, black, var(--main-color));
+  background: var(--background-color);
 }
 
 .my-tools div {
@@ -107,8 +104,7 @@ hr {
   color: var(--secondary-color);
 }
 
-
-/* Technical Details */
+/* ========== Technical Details ========== */
 .technical-details {
   display: flex;
   flex-wrap: wrap;
@@ -117,7 +113,7 @@ hr {
   flex-direction: column;
   padding: 5rem;
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  background: linear-gradient(to right, black, var(--main-color));
+  background: var(--background-color);
 }
 
 .technical-details p {
@@ -131,12 +127,9 @@ hr {
 
 .technical-details img {
   width: 10rem;
-  ;
-  margin-bottom: 5rem;
 }
 
-
-/* Media Queries */
+/* ========== Media Queries ========== */
 @media screen and (max-width:768px) {
   .about-me {
     flex-direction: column-reverse;
@@ -179,5 +172,4 @@ hr {
   .technical-details p {
     width: 100%;
   }
-
 }

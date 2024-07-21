@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-  <!-- Character set -->
+  <!-- ========== Character Set ========== -->
+
   <meta charset="UTF-8" />
 
-  <!-- Viewport settings for responsive design -->
+  <!-- ========== Viewport settings for responsive design ========== -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO and social media meta tags -->
+  <!-- ========== SEO and social media meta tags ========== -->
   <meta name="description"
     content="Gaspare Tocci's portfolio as a web designer and developer. Discover my projects and skills." />
   <meta name="keywords"
@@ -16,7 +17,7 @@
   <meta name="author" content="Gaspare Tocci" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph meta tags for social media sharing -->
+  <!-- ========== Open Graph meta tags for social media sharing ========== -->
   <meta property="og:title" content="Gaspare Tocci's Portfolio" />
   <meta property="og:description"
     content="Explore Gaspare Tocci's professional portfolio showcasing his expertise in web design and development. 
@@ -25,51 +26,49 @@
   <meta property="og:image" content="/images/share-img.webp" />
   <meta property="og:url" content="https://riello76.github.io/" />
 
-  <!-- Document title -->
+  <!-- ========== Document Title ========== -->
   <title>Gaspare Tocci's Portfolio</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- ========== Bootstrap CSS ========== -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-  <!-- AOS CSS -->
+  <!-- ========== AOS CSS ========== -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <!-- Custom stylesheets -->
+  <!-- ========== Custom Stylesheets ========== -->
   <link rel="stylesheet" href="/styles/header-footer-resets.css" />
   <link rel="stylesheet" href="/styles/index.css" />
 
-  <!-- Favicon -->
+  <!-- ========== Favicon ========== -->
   <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml" />
 
-  <!-- Preconnect links for performance improvement -->
+  <!-- ========== Preconnect Links for Performance Improvement ========== -->
   <link rel="preconnect" href="https://www.youtube.com" />
   <link rel="preconnect" href="https://www.google.com" />
 </head>
 
 <body>
-  <!-- Header section -->
+  <!-- ========== HEADER SECTION ========== -->
   <header>
 
-    <!-- Top Header -->
+    <!-- ========== TOP HEADER ========== -->
     <div class="top-header">
+      <!-- ========== Logo ========== -->
+      <img tabindex="1" class="logo" src="/images/logo.svg" alt="Gaspare Tocci's Logo" title="Gaspare Tocci's Logo" />
 
-      <!-- Logo -->
-      <img tabindex="1" class="logo" src="/images/logo.svg" alt="logo" title="logo" />
-
-      <!-- Title -->
+      <!-- ========== Title ========== -->
       <h1 class="title" tabindex="2">Every problem has its creative solution.</h1>
     </div>
 
-    <!-- Navigation menu -->
+    <!-- ========== NAVIGATION MENU ========== -->
     <nav class="navbar navbar-expand-lg cs-navbar">
       <div class="container-fluid cs-container-fluid">
 
-        <!-- Navbar Toggler Button with Hamburger Icon -->
+        <!-- ========== Navbar Toggler Button with Hamburger Icon ========== -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" tabindex="3">
-
-          <!-- Hamburger Menu Bar -->
+          <!-- ========== Hamburger Menu Bar ========== -->
           <div class="navbar-toggler-icon">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -77,136 +76,135 @@
           </div>
         </button>
 
-        <!-- Navbar Collapse Content -->
+        <!-- ========== Navbar Collapse Content ========== -->
         <div class="collapse navbar-collapse cs-collapse-navbar" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            <!-- Home button -->
+            <!-- ========== HOME BUTTON ========== -->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./index.html" title="Homepage" tabindex="4">
-                <h6>HOME</h6>
+                <h5>HOME</h5>
               </a>
             </li>
 
-            <!-- CV dropdown menu -->
+            <!-- ========== CV DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                title="Curriculum" tabindex="5">
-                <h6>CV</h6>
+                title="Curriculum Vitae" tabindex="5">
+                <h5>CV</h5>
               </a>
               <ul class="dropdown-menu">
 
-                <!-- CV Main Page -->
-                <li><a class="dropdown-item" href="./pages/curriculum/curriculum.html" title="Main Page"
-                    tabindex="6">Main Page</a></li>
+                <!-- ========== CV Main Page ========== -->
+                <li><a class="dropdown-item" href="./pages/curriculum/curriculum.html"
+                    title="Curriculum Vitae Main Page" tabindex="6">Main Page</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
 
-                <!-- Download cv .pdf -->
+                <!-- ========== Download CV as PDF ========== -->
                 <li><a class="dropdown-item" aria-label="Download CV in PDF format" href="/files/Gaspare-Tocci-CV.pdf"
-                    download="Gaspare Tocci CV.pdf" title="Download CV in PDF format" tabindex="7">Download -PDF-</a>
+                    download="Gaspare-Tocci-CV.pdf" title="Download CV in PDF format" tabindex="7">Download -PDF-</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
 
-                <!-- Download cv .doc -->
+                <!-- ========== Download CV as DOC ========== -->
                 <li><a class="dropdown-item" aria-label="Download CV in DOC format" href="/files/Gaspare-Tocci-CV.doc"
-                    download="Gaspare Tocci CV.doc" title="Download CV in DOC format" tabindex="8">Download -DOC-</a>
+                    download="Gaspare-Tocci-CV.doc" title="Download CV in DOC format" tabindex="8">Download -DOC-</a>
                 </li>
               </ul>
             </li>
 
-            <!-- Gallery dropdown menu -->
+            <!-- ========== GALLERY DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 title="Gallery" tabindex="9">
-                <h6>GALLERY</h6>
+                <h5>GALLERY</h5>
               </a>
               <ul class="dropdown-menu">
 
-                <!-- Gallery Main Page -->
-                <li><a class="dropdown-item" href="./pages/gallery/gallery.html" title="Main page" tabindex="10">Main
-                    Page</a></li>
+                <!-- ========== Gallery Main Page ========== -->
+                <li><a class="dropdown-item" href="./pages/gallery/gallery.html" title="Gallery Main Page"
+                    tabindex="10">Main Page</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
 
-                <!-- Branding -->
+                <!-- ========== Branding ========== -->
                 <li><a class="dropdown-item" href="./pages/gallery/pages/branding.html" title="Branding"
                     tabindex="11">Branding</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
 
-                <!-- Graphic -->
+                <!-- ========== Graphic ========== -->
                 <li><a class="dropdown-item" href="./pages/gallery/pages/graphics.html" title="Graphic"
                     tabindex="12">Graphic</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
 
-                <!-- 3D Design -->
+                <!-- ========== 3D Design ========== -->
                 <li><a class="dropdown-item" href="./pages/gallery/pages/3d-design.html" title="3D Design"
                     tabindex="13">3D Design</a></li>
               </ul>
             </li>
 
-            <!-- Websites dropdown menu -->
+            <!-- ========== WEBSITES DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 title="Websites" tabindex="14">
-                <h6>WEBSITES</h6>
+                <h5>WEBSITES</h5>
               </a>
               <ul class="dropdown-menu">
 
-                <!--Websites Main Page -->
-                <li><a class="dropdown-item" href="./pages/websites/websites.html" title="Main" tabindex="15">Main
-                    Page</a></li>
+                <!-- ========== Websites Main Page ========== -->
+                <li><a class="dropdown-item" href="./pages/websites/websites.html" title="Websites Main Page"
+                    tabindex="15">Main Page</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
 
-                <!-- Glastonbury Festival -->
+                <!-- ========== Glastonbury Festival ========== -->
                 <li><a class="dropdown-item" href="./pages/websites/pages/glastonbury/index.html"
                     title="Glastonbury Festival" tabindex="16">Glastonbury Festival</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
 
-                <!-- Old Portfolio -->
+                <!-- ========== Old Portfolio ========== -->
                 <li><a class="dropdown-item" href="./pages/websites/pages/old-portfolio/old-portfolio.html"
                     title="Old Portfolio" tabindex="17">Old Portfolio</a></li>
               </ul>
             </li>
 
-            <!-- Contact dropdown menu -->
+            <!-- ========== CONTACT DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 title="Contacts" tabindex="18">
-                <h6>CONTACTS</h6>
+                <h5>CONTACTS</h5>
               </a>
               <ul class="dropdown-menu">
 
-                <!-- LinkedIn -->
+                <!-- ========== LinkedIn ========== -->
                 <li><a class="dropdown-item" href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank"
-                    title="LinkedIn" tabindex="19">LinkedIn</a></li>
+                    title="LinkedIn Profile" tabindex="19">LinkedIn</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
 
-                <!-- GitHub -->
-                <li><a class="dropdown-item" href="https://github.com/Riello76" target="_blank" title="GitHub"
-                    tabindex="20">GitHub</a>
-                </li>
+                <!-- ========== GitHub ========== -->
+                <li><a class="dropdown-item" href="https://github.com/Riello76" target="_blank" title="GitHub Profile"
+                    tabindex="20">GitHub</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
 
-                <!-- Email -->
-                <li><a class="dropdown-item" href="mailto:gaspare_tocci@yahoo.it" title="Email" tabindex="21">Email</a>
-                </li>
+                <!-- ========== Email ========== -->
+                <li><a class="dropdown-item" href="mailto:gaspare_tocci@yahoo.it" title="Send Email"
+                    tabindex="21">Email</a></li>
               </ul>
             </li>
           </ul>
@@ -215,90 +213,79 @@
     </nav>
   </header>
 
-  <!-- Main content -->
+
+  <!-- ========== MAIN CONTENT ========== -->
   <main>
 
-    <!-- Top Main -->
+    <!-- ========== Top Main ========== -->
     <section class="top-main">
       <h2>Let Me Tell You About Myself!</h2>
     </section>
 
-    <!-- Middle Main -->
+    <!-- ========== Middle Main ========== -->
     <section class="middle-main">
-      <!-- About Me -->
-      <h3>About me</h3>
+      <!-- ========== About Me ========== -->
+      <h2>About me</h2>
       <section class="about-me">
         <div>
-          <!-- About Me Paragraph 1 -->
+          <!-- ========== About Me Paragraph 1 ========== -->
           <p class="about-me-p1" tabindex="23" aria-label="Description of my experience" data-aos="fade-right"
             data-aos-duration="2000">
             Welcome to my portfolio! My name is <strong>Gaspare Tocci</strong>, and I am Italian, currently living in
-            London.
-            I have
-            a great passion for web design and development.
+            London. I have a great passion for web design and development.
           </p>
           <hr class="about-me-p1">
 
-          <!-- About Me Paragraph 2 -->
+          <!-- ========== About Me Paragraph 2 ========== -->
           <p class="about-me-p2" data-aos="fade-right" data-aos-duration="2000" tabindex="24">
             I am a <strong>self-taught</strong> individual who seizes every opportunity to follow courses that can
             enhance my knowledge and provide new perspectives. I enjoy working in a team to achieve goals together in
-            the best
-            way
-            possible.
+            the best way possible.
           </p>
           <hr class="about-me-p2">
 
-          <!-- About Me Paragraph 3 -->
+          <!-- ========== About Me Paragraph 3 ========== -->
           <p class="about-me-p3" data-aos="fade-right" data-aos-duration="2000" tabindex="25">
             This is my first portfolio, but I have a clear vision: a site that embodies sustainable web design without
-            depriving the
-            visitor of a beautiful experience, incorporating <strong>micro animations</strong> where appropriate. I
-            strive for
-            a
-            design that is simple to understand and use, while also providing an excellent visual effect.
+            depriving the visitor of a beautiful experience, incorporating <strong>micro animations</strong> where
+            appropriate. I strive for a design that is simple to understand and use, while also providing an excellent
+            visual effect.
           </p>
           <hr class="about-me-p3">
 
-          <!-- About Me Paragraph 4 -->
+          <!-- ========== About Me Paragraph 4 ========== -->
           <p class="about-me-p4" data-aos="fade-right" data-aos-duration="2000" tabindex="26">
-            All my images, logos, and icons are in <strong>SVG</strong> or <strong>WEBP</strong> formats. I aim to write
-            code that <strong>respects best practices</strong>, ensuring everything is minified to increase loading
-            speed by
-            the
-            end of the project.
+            All my images, logos, and icons are in <strong>SVG</strong> or <strong>WEBP</strong> formats. I aim to
+            write code that <strong>respects best practices</strong>, ensuring everything is minified to increase
+            loading speed by the end of the project.
           </p>
           <hr class="about-me-p4">
 
-          <!-- About Me Paragraph 5 -->
+          <!-- ========== About Me Paragraph 5 ========== -->
           <p class="about-me-p5" data-aos="fade-right" data-aos-duration="2000" tabindex="27">
             <strong>I use AI as a support tool</strong> to speed up writing, and I assist myself with
-            <strong>snippets</strong>. Although I am still at the beginning of my journey and have much to learn, I am
-            eager
-            for an
-            apprentice opportunity. For my portfolio, I used <strong>Bootstrap</strong> to help streamline the design
-            and
-            responsiveness of the layout.
+            <strong>snippets</strong>. Although I am still at the beginning of my journey and have much to learn, I
+            am eager for an apprentice opportunity. For my portfolio, I used <strong>Bootstrap</strong> to help
+            streamline the design and responsiveness of the layout.
           </p>
           <hr class="about-me-p5">
         </div>
 
-        <!-- About Me Image -->
+        <!-- ========== About Me Image ========== -->
         <img src="./images/london.webp" width="500px" alt="my photo" tabindex="28">
       </section>
 
-      <h3>My Tools</h3>
-      <!-- My Tools -->
+      <!-- ========== My Tools ========== -->
+      <h2>My Tools</h2>
       <section class="my-tools">
 
-        <!-- Inkscape -->
+        <!-- ========== Inkscape ========== -->
         <div>
           <p tabindex="29" aria-label="Description of my tools" data-aos="fade-right" data-aos-duration="2000">
             <strong>Inkscape</strong>: <br> Used for creating and editing vector graphics<strong>(SVG)</strong>,
-            ensuring scalable and
-            high-quality visuals. I leveraged
-            its powerful tracing capabilities and drawing tools for designing custom logos, icons, and
-            illustrations.
+            ensuring
+            scalable and high-quality visuals. I leveraged its powerful tracing capabilities and drawing tools for
+            designing custom logos, icons, and illustrations.
           </p>
           <a href="https://inkscape.org/" target="_blank" tabindex="30" aria-label="Visit Inkscape website"><img
               src="./icons/Inkscape.svg" alt="inkscape icon" data-aos="flip-left" data-aos-easing="ease-out-cubic"
@@ -306,16 +293,12 @@
         </div>
         <hr>
 
-        <!-- Visual Studio Code -->
+        <!-- ========== Visual Studio Code ========== -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="31">
-            <strong>VS Code</strong>: <br>My preferred code editor for writing clean, efficient code while
-            following
-            best practices. I use extensions such
-            as HTML Preview, Live Preview, Open Browser Preview, Code Spell Checker, and Prettier for real-time
-            updates,
-            spell checking, and
-            automatic code formatting.
+            <strong>VS Code</strong>: <br>My preferred code editor for writing clean, efficient code while following
+            best practices. I use extensions such as HTML Preview, Live Preview, Open Browser Preview, Code Spell
+            Checker, and Prettier for real-time updates, spell checking, and automatic code formatting.
           </p>
           <a href="https://code.visualstudio.com/" target="_blank" tabindex="32" aria-label="Visit VS Code website"><img
               src="./icons/vs-code.svg" alt="visual studio code icon" data-aos="flip-left"
@@ -323,13 +306,11 @@
         </div>
         <hr>
 
-        <!-- GIMP -->
+        <!-- ========== GIMP ========== -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="33">
-            <strong>Gimp</strong>:<br> Used for image editing and manipulation, enhancing photos, and creating
-            custom
-            graphics. I utilized advanced
-            tools like layers, masks, and filters to achieve professional visual effects.
+            <strong>Gimp</strong>:<br> Used for image editing and manipulation, enhancing photos, and creating custom
+            graphics. I utilized advanced tools like layers, masks, and filters to achieve professional visual effects.
           </p>
           <a href="https://www.gimp.org/" target="_blank" tabindex="34" aria-label="Visit Gimp website"><img
               src="./icons/gimp.svg" alt="gimp icon" data-aos="flip-left" data-aos-easing="ease-out-cubic"
@@ -337,12 +318,14 @@
         </div>
         <hr>
 
-        <!-- Blender -->
+        <!-- ========== Blender ========== -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="35">
             <strong>Blender</strong>:<br> Utilized for 3D modeling and animation, adding dynamic elements to my
-            projects. I created detailed 3D models and
-            smooth animations, integrating them into my web projects for greater interactivity and visual impact.
+            projects.
+            I
+            created detailed 3D models and smooth animations, integrating them into my web projects for greater
+            interactivity and visual impact.
           </p>
           <a href="https://www.blender.org/" target="_blank" tabindex="36" aria-label="Visit Blender website"><img
               src="./icons/blender.svg" alt="blender icon" data-aos="flip-left" data-aos-easing="ease-out-cubic"
@@ -350,12 +333,12 @@
         </div>
         <hr>
 
-        <!-- Figma -->
+        <!-- ========== Figma ========== -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="37">
             <strong>Figma</strong>:<br> Used for UI design and collaborative prototyping. I created interactive
-            wireframes and mockups,
-            facilitating design idea communication and real-time team collaboration.
+            wireframes
+            and mockups, facilitating design idea communication and real-time team collaboration.
           </p>
           <a href="https://www.figma.com/" target="_blank" tabindex="38" aria-label="Visit Figma website"><img
               src="./icons/figma.svg" alt="figma icon" data-aos="flip-left" data-aos-easing="ease-out-cubic"
@@ -363,13 +346,12 @@
         </div>
         <hr>
 
-        <!-- Filmora -->
+        <!-- ========== Filmora ========== -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="39">
-            <strong>Filmora</strong>: <br>A video editing tool used for creating and editing videos with a
-            user-friendly
-            interface. I used its various
-            effects, transitions, and audio editing capabilities to produce polished and engaging video content.
+            <strong>Filmora</strong>: <br>A video editing tool used for creating and editing videos with a user-friendly
+            interface. I used its various effects, transitions, and audio editing capabilities to produce polished and
+            engaging video content.
           </p>
           <a href="https://filmora.wondershare.net/" target="_blank" tabindex="40"
             aria-label="Visit Filmora website"><img src="./icons/filmora.svg" alt="filmora icon" data-aos="flip-left"
@@ -377,13 +359,13 @@
         </div>
         <hr>
 
-        <!-- PowerPoint -->
+        <!-- ========== PowerPoint ========== -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="41">
             <strong>PowerPoint</strong>: <br>Utilized for creating presentations with impactful visuals and clear
-            structure. I designed custom slides,
-            incorporating multimedia elements and animations to enhance the delivery of information and engage the
-            audience effectively.
+            structure. I
+            designed custom slides, incorporating multimedia elements and animations to enhance the delivery of
+            information and engage the audience effectively.
           </p>
           <a href="https://www.microsoft.com/en-gb/microsoft-365/powerpoint" target="_blank" tabindex="42"
             aria-label="Visit PowerPoint website"><img src="./icons/powerpoint.svg" alt="powerpoint icon"
@@ -391,13 +373,11 @@
         </div>
         <hr>
 
-        <!-- Git -->
+        <!-- ========== Git ========== -->
         <div>
           <p data-aos="fade-right" data-aos-duration="2000" tabindex="43">
-            <strong>Git</strong>:<br> Used for version control and collaboration in software development projects.
-            I
-            utilize Git commands for managing code versions, branching, merging, and collaborating with team
-            members to
+            <strong>Git</strong>:<br> Used for version control and collaboration in software development projects. I
+            utilize Git commands for managing code versions, branching, merging, and collaborating with team members to
             ensure project integrity and efficiency.
           </p>
           <a href="https://git-scm.com/" target="_blank" tabindex="44" aria-label="Visit Git website"><img
@@ -406,72 +386,67 @@
         </div>
         <hr>
 
-        <!-- GitHub -->
+        <!-- ========== GitHub ========== -->
         <div>
-          <p data-aos="fade-right" data-aos-duration="2000" tabindex="43">
+          <p data-aos="fade-right" data-aos-duration="2000" tabindex="45">
             <strong>GitHub</strong>:<br> Used for hosting repositories, collaboration, and version control in software
             development projects. I utilize GitHub for managing code repositories, issues, pull requests, and
-            collaborating with
-            team members to ensure project integrity and efficiency.
+            collaborating
+            with team members to ensure project integrity and efficiency.
           </p>
-          <a href="https://github.com/" target="_blank" tabindex="44" aria-label="Visit GitHub website"><img
+          <a href="https://github.com/" target="_blank" tabindex="46" aria-label="Visit GitHub website"><img
               src="./icons/github.svg" alt="GitHub icon" data-aos="flip-left" data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"></a>
         </div>
-
         <hr>
 
-        <!-- OBS -->
+        <!-- ========== OBS ========== -->
         <div>
-          <p data-aos="fade-right" data-aos-duration="2000" tabindex="45">
+          <p data-aos="fade-right" data-aos-duration="2000" tabindex="47">
             <strong>OBS</strong>:<br> Used for video recording and live streaming. I leverage OBS's powerful features to
-            capture
-            high-quality video content, configure scenes and sources, and stream live events with customizable overlays
-            and
-            transitions to enhance viewer engagement.
+            capture high-quality video content, configure scenes and sources, and stream live events with customizable
+            overlays and transitions to enhance viewer engagement.
           </p>
-          <a href="https://obsproject.com/" target="_blank" tabindex="46" aria-label="Visit OBS website"><img
+          <a href="https://obsproject.com/" target="_blank" tabindex="48" aria-label="Visit OBS website"><img
               src="./icons/obs.svg" alt="obs icon" data-aos="flip-left" data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"></a>
         </div>
         <hr>
       </section>
 
-      <!-- Technical Details -->
+      <!-- ========== Technical Details ========== -->
 
-      <h3>Technical Details</h3>
+      <h2>Technical Details</h2>
       <section class="technical-details">
-        <p data-aos="zoom-out-up" data-aos-duration="2000" tabindex="47">
+        <p data-aos="zoom-out-up" data-aos-duration="2000" tabindex="49">
           For this page, I used <strong>Bootstrap</strong> for the navigation bar, which I customized to adapt to the
-          style of the site.
-          I created the logo and icons with <strong>Inkscape</strong>, and they are in <strong>SVG</strong> format. I
-          added scrolling animations using the <strong>AOS (Animate on Scroll)</strong> library.
+          style of the site. I created the logo and icons with <strong>Inkscape</strong>, and they are in
+          <strong>SVG</strong>
+          format. I added scrolling animations using the <strong>AOS (Animate on Scroll)</strong> library.
 
           I created two CSS files: the first one takes care of the <strong>resets, the header, and the footer</strong>,
-          as they will be the same on all pages. For simplicity and ease of maintenance, I have chosen to have a
-          separate CSS
-          file for
-          this purpose. The second CSS file mainly covers the body of the page, as other pages will be structured
-          similarly. I
-          integrated the CSS for the reset, header, and footer into the main CSS file using <strong>@import</strong> at
-          the
-          top of the CSS. I
-          used the <strong>system-ui</strong> font family for better readability and performance. Additionally, I
-          utilized the
-          <strong>clamp()</strong> function for the font size to ensure it adjusts dynamically between minimum and
-          maximum
-          values for optimal
-          readability across different screen sizes.
+          as
+          they will be the same on all pages. For simplicity and ease of maintenance, I have chosen to have a separate
+          CSS
+          file for this purpose. The second CSS file mainly covers the body of the page, as other pages will be
+          structured
+          similarly. I integrated the CSS for the reset, header, and footer into the main CSS file using
+          <strong>@import</strong>
+          at the top of the CSS. I used the <strong>system-ui</strong> font family for better readability and
+          performance.
+          Additionally, I utilized the <strong>clamp()</strong> function for the font size to ensure it adjusts
+          dynamically
+          between minimum and maximum values for optimal readability across different screen sizes.
         </p>
         <hr>
-        <p data-aos="zoom-out-up" data-aos-duration="2000" tabindex="48">
+        <p data-aos="zoom-out-up" data-aos-duration="2000" tabindex="50">
           This portfolio is a work in progress, and I am continually refining and adding new elements to enhance both
           <strong>functionality</strong> and <strong>aesthetics</strong>. You will get a glimpse of my current work, the
           <strong>techniques</strong> I use, and my commitment to creating a <strong>smooth and engaging user
             experience</strong>.
           Stay tuned for updates as I continue to build and improve my portfolio.
         </p>
-        <div>
+        <div >
           <img data-aos="fade-up" data-aos-duration="2000" src="./icons/html.svg" alt="html icon">
           <img data-aos="fade-up" data-aos-duration="2000" src="./icons/css.svg" alt="css icon">
           <img data-aos="fade-up" data-aos-duration="2000" src="./icons/js.svg" alt="javascript icon">
@@ -480,61 +455,64 @@
       </section>
   </main>
 
-  <!-- Footer Section -->
+  <!-- ========== Footer Section ========== -->
   <footer class="text-white mt-5 cs-footer">
     <a class="go-to-top" href="./index.html">⏫- Go To Top -⏫</a>
     <div class="container py-4">
       <div class="row">
 
-        <!-- Contact Information -->
+        <!-- ========== Contact Information ========== -->
         <div class="col-md-4">
-          <h5 tabindex="49">Contact Information</h5>
+          <h4 tabindex="51">Contact Information</h4>
           <ul class="list-unstyled">
             <li><a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="text-white"
-                title="LinkedIn" tabindex="50">LinkedIn</a></li>
+                title="LinkedIn" tabindex="52">LinkedIn</a></li>
             <li><a href="https://github.com/Riello76" target="_blank" class="text-white" title="GitHub"
-                tabindex="51">GitHub</a></li>
-            <li><a href="mailto:gaspare_tocci@yahoo.it" class="text-white" title="Email" tabindex="52">Email:
+                tabindex="53">GitHub</a></li>
+            <li><a href="mailto:gaspare_tocci@yahoo.it" class="text-white" title="Email" tabindex="54">Email:
                 gaspare_tocci@yahoo.it</a>
             </li>
           </ul>
         </div>
 
-        <!-- Quick Links -->
+        <!-- ========== Quick Links ========== -->
         <div class="col-md-4">
-          <h5 tabindex="53">Quick Links</h5>
+          <h4 tabindex="55">Quick Links</h4>
           <ul class="list-unstyled">
-            <li><a href="./index.html" class="text-white" title="Homepage" tabindex="54">Home</a></li>
-            <li><a href="./pages/curriculum/curriculum.html" class="text-white" title="Curriculum" tabindex="53">CV</a>
+            <li><a href="./index.html" class="text-white" title="Homepage" tabindex="56">Home</a></li>
+            <li><a href="./pages/curriculum/curriculum.html" class="text-white" title="Curriculum" tabindex="57">CV</a>
             </li>
-            <li><a href="./pages/gallery/gallery.html" class="text-white" title="Gallery" tabindex="55">Gallery</a></li>
-            <li><a href="./pages/websites/websites.html" class="text-white" title="Websites" tabindex="56">Websites</a>
+            <li><a href="./pages/gallery/gallery.html" class="text-white" title="Gallery" tabindex="58">Gallery</a></li>
+            <li><a href="./pages/websites/websites.html" class="text-white" title="Websites" tabindex="59">Websites</a>
             </li>
           </ul>
         </div>
 
-        <!-- Additional Information -->
+        <!-- ========== Additional Information ========== -->
         <div class="col-md-4">
-          <h5 tabindex="57">Additional Information</h5>
-          <p tabindex="58">Feel free to reach out if you have any questions or opportunities. I am always open to
-            discussing new
-            projects,
-            creative ideas, or potential collaborations.</p>
+          <h4 tabindex="60">Additional Information</h4>
+          <p tabindex="61">Feel free to reach out if you have any questions or opportunities. I am always open to
+            discussing new projects, creative ideas, or potential collaborations.</p>
         </div>
 
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
+  <!-- ========== Bootstrap JS Library ========== -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
 
-</html>
+  <!-- ========== AOS (Animate On Scroll) Library ========== -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+
+  <!-- ========== Initialize AOS Animations ========== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init();
+    });
+  </script>
+
+</body>
+    
