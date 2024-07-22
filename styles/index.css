@@ -29,6 +29,15 @@ main {
   margin-bottom: 5rem;
 }
 
+.middle-main h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: var(--background-color);
+  color: var(--info-color);
+  margin-bottom: 1rem;
+}
+
 /* ========== About me ========== */
 .about-me {
   width: 100%;
