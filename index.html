@@ -67,14 +67,15 @@
 
         <!-- ========== Navbar Toggler Button with Hamburger Icon ========== -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" tabindex="3">
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <!-- ========== Hamburger Menu Bar ========== -->
-          <div class="navbar-toggler-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
+          <span class="navbar-toggler-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </span>
         </button>
+
 
         <!-- ========== Navbar Collapse Content ========== -->
         <div class="collapse navbar-collapse cs-collapse-navbar" id="navbarSupportedContent">
@@ -104,9 +105,9 @@
                 <li><a class="dropdown-item" aria-label="Download CV in PDF format" href="/files/Gaspare-Tocci-CV.pdf"
                     download="Gaspare-Tocci-CV.pdf" title="Download CV in PDF format" tabindex="7">Download -PDF-</a>
                 </li>
-                <li>
 
-                  <!-- ========== Download CV as DOC ========== -->
+
+                <!-- ========== Download CV as DOC ========== -->
                 <li><a class="dropdown-item" aria-label="Download CV in DOC format" href="/files/Gaspare-Tocci-CV.doc"
                     download="Gaspare-Tocci-CV.doc" title="Download CV in DOC format" tabindex="8">Download -DOC-</a>
                 </li>
@@ -261,7 +262,7 @@
         </div>
 
         <!-- ========== Carousel ========== -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="./images/london.webp" class="d-block w-100" alt="London image">
@@ -421,24 +422,30 @@
       <section class="technical-details">
         <p data-aos="zoom-out-up" data-aos-duration="1000" tabindex="49">
           For this page, I used <strong>Bootstrap</strong> for the navigation bar, which I customized to adapt to the
-          style of the site. I created the logo and icons with <strong>Inkscape</strong>, and they are in
-          <strong>SVG</strong>
-          format. I added scrolling animations using the <strong>AOS (Animate on Scroll)</strong> library.
+          style of
+          the site. I created the logo and icons with <strong>Inkscape</strong>, and they are in <strong>SVG</strong>
+          format. I
+          added scrolling animations using the <strong>AOS (Animate on Scroll)</strong> library.
 
           I created two CSS files: the first one takes care of the <strong>resets, the header, and the footer</strong>,
-          as
-          they will be the same on all pages. For simplicity and ease of maintenance, I have chosen to have a separate
-          CSS
-          file for this purpose. The second CSS file mainly covers the body of the page, as other pages will be
-          structured
-          similarly. I integrated the CSS for the reset, header, and footer into the main CSS file using
-          <strong>@import</strong>
-          at the top of the CSS. I used the <strong>system-ui</strong> font family for better readability and
-          performance.
-          Additionally, I utilized the <strong>clamp()</strong> function for the font size to ensure it adjusts
-          dynamically
-          between minimum and maximum values for optimal readability across different screen sizes.
+          as they
+          will be the same on all pages. For simplicity and ease of maintenance, I have chosen to have a separate CSS
+          file for
+          this purpose. The second CSS file mainly covers the body of the page, as other pages will be structured
+          similarly. I
+          integrated the CSS for the reset, header, and footer into the main CSS file using <strong>@import</strong> at
+          the top
+          of the CSS. I used the <strong>system-ui</strong> font family for better readability and performance.
+          Additionally, I
+          utilized the <strong>clamp()</strong> function for the font size to ensure it adjusts dynamically between
+          minimum and
+          maximum values for optimal readability across different screen sizes.
+
+          The hero image was created using <strong>AI</strong> and then customized with <strong>GIMP</strong>. I
+          converted and
+          optimized it in <strong>WEBP</strong> format to ensure faster loading times and better performance.
         </p>
+
         <hr>
         <p data-aos="zoom-out-up" data-aos-duration="1000" tabindex="50">
           This portfolio is a work in progress, and I am continually refining and adding new elements to enhance both
@@ -447,13 +454,13 @@
             experience</strong>.
           Stay tuned for updates as I continue to build and improve my portfolio.
         </p>
-        <div>
-          <img data-aos="fade-up" data-aos-duration="1000" src="./icons/html.svg" alt="html icon">
-          <img data-aos="fade-up" data-aos-duration="1000" src="./icons/css.svg" alt="css icon">
-          <img data-aos="fade-up" data-aos-duration="1000" src="./icons/js.svg" alt="javascript icon">
+        <div class="technical-img-div" data-aos="fade-up" data-aos-duration="1000">
+          <img src="./icons/html.svg" alt="html icon">
+          <img src="./icons/css.svg" alt="css icon">
+          <img src="./icons/js.svg" alt="javascript icon">
         </div>
-        <hr>
       </section>
+    </section>
   </main>
 
   <!-- ========== Footer Section ========== -->

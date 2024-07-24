@@ -32,6 +32,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .hero-overlay {
@@ -207,10 +208,13 @@ hr {
   display: flex;
 }
 
-.technical-details img {
-  width: 10rem;
+.technical-img-div {
+  display: flex;
+  justify-content: space-around;
 }
-
+.technical-img-div img{
+  width: 20%;
+}
 /* ========== Media Queries ========== */
 @media screen and (max-width:768px) {
   .cs-collapse-navbar {
@@ -237,7 +241,7 @@ hr {
     margin: 0 0 2rem 0;
   }
 
-  .about-me img {
+  .carousel-item {
     width: 100%;
     margin-bottom: 5rem;
   }
