@@ -144,11 +144,6 @@ picture {
   margin-top: 1rem;
 }
 
-.cs-collapse-navbar {
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  background: var(--background-color);
-}
-
 .nav-link {
   display: flex;
   align-items: center;
@@ -161,7 +156,7 @@ picture {
 }
 
 .dropdown-menu {
-  background: var(--background-color);
+  background: var(--tertiary-color);
 }
 
 .dropdown-menu a {
