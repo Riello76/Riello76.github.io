@@ -198,15 +198,11 @@
 
       <!-- ========== Hero Image ========== -->
       <div class="hero-img-container">
-        <div class="hero-overlay"></div>
+        <img class="hero-img" src="./images/hero-image.webp" alt="hero image">
         <div class="hero-content">
           <h2>Welcome to My Portfolio</h2>
           <p>Interested in working together? Contact me today to get started!</p>
-          <div class="cta-btn-container">
-            <a href="mailto:gaspare_tocci@yahoo.it">
-              CONTACT ME
-            </a>
-          </div>
+          <a class="cta-btn" href="mailto:gaspare_tocci@yahoo.it">CONTACT ME</a>
         </div>
       </div>
       <h2>Let Me Tell You About Myself!</h2>
@@ -261,20 +257,42 @@
           <hr class="about-me-p5">
         </div>
 
-        <!-- ========== Carousel ========== -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./images/london.webp" class="d-block w-100" alt="London image">
-            </div>
-            <div class="carousel-item">
-              <img src="./images/london-2.webp" class="d-block w-100" alt="London image">
-            </div>
-            <div class="carousel-item">
-              <img src="./images/london-3.webp" class="d-block w-100" alt="London image">
-            </div>
+      <!-- ========== Carousel ========== -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+      
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/london.webp" class="d-block w-100" alt="London image">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/london-2.webp" class="d-block w-100" alt="London image">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/london-3.webp" class="d-block w-100" alt="London image">
           </div>
         </div>
+      
+        <!-- Navigation Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
       </section>
 
       <!-- ========== My Tools ========== -->
