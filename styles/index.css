@@ -147,7 +147,12 @@ main {
   width: 90%;
 }
 
-.about-me img {
+/* ========== Carousel ========== */
+
+.carousel-item {
+  width: 70rem;
+}
+.carousel-item img {
   width: 40%;
   border-radius: 50%;
   border: 0.5rem solid var(--info-color);
