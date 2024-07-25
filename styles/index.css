@@ -19,6 +19,7 @@ main {
   width: 100%;
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
   margin: 1rem 0 1rem 0;
+  padding: 5rem;
 }
 
 /* ========== Hero Image ========== */
@@ -131,7 +132,7 @@ main {
 /* ========== Carousel ========== */
 .carousel-inner {
   border-radius: 100%;
-width: clamp(20rem, 30vw, 70rem);
+  width: clamp(30rem, 50vw, 70rem);
 }
 
 /* ========== My tools ========== */
