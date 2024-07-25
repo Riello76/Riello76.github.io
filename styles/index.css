@@ -129,8 +129,9 @@ main {
 }
 
 /* ========== Carousel ========== */
-.carousel-inner{
+.carousel-inner {
   border-radius: 100%;
+width: clamp(20rem, 30vw, 70rem);
 }
 
 /* ========== My tools ========== */
