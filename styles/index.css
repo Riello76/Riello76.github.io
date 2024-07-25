@@ -129,24 +129,10 @@ main {
 }
 
 /* ========== Carousel ========== */
-
-.carousel-item {
-  width: 70rem;
+.carousel-inner{
+  border-radius: 100%;
 }
 
-.carousel-item img {
-  width: 40%;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 0.5rem solid var(--info-color);
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: black;
-  border-radius: 50%;
-  padding: 1rem;
-
-}
 /* ========== My tools ========== */
 .my-tools {
   padding: 5rem;
