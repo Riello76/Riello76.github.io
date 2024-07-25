@@ -6,7 +6,6 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   background-color: var(--tertiary-color);
-  margin-top: 1rem;
 }
 
 .top-main {
@@ -19,7 +18,6 @@ main {
   width: 100%;
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
   margin: 1rem 0 1rem 0;
-  padding: 5rem;
 }
 
 /* ========== Hero Image ========== */
@@ -76,7 +74,6 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
 }
 
 .middle-main h2 {
@@ -138,7 +135,7 @@ main {
 /* ========== My tools ========== */
 .my-tools {
   padding: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   overflow: auto;
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
   background: var(--background-color);
@@ -177,7 +174,7 @@ hr {
 
 .technical-details p {
   width: 60%;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 .technical-details div {
@@ -222,11 +219,6 @@ hr {
   .about-me-p5 {
     width: 100%;
     margin: 0 0 2rem 0;
-  }
-
-  .carousel-item {
-    width: 100%;
-    margin-bottom: 5rem;
   }
 
   .my-tools {
