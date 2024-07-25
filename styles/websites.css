@@ -1,86 +1,67 @@
 @import url(/styles/header-footer-resets.css);
 
-/* Main section */
+/* ========== Main Section ========== */
 main {
-  /* Set main content to flexbox with centered content and wrapping */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: black;
+  background-color: var(--tertiary-color);
 }
 
 .top-main {
-  /* Header section with flex layout, space between items, and horizontal alignment */
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  background: linear-gradient(to right, black, var(--main-color));
-  border-top-right-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-  margin-bottom: 5rem;
+  margin: 1rem 0;
 }
 
-.top-main h5 {
-  font-size: 3rem;
-}
-
+/* ========== Middle Main ========== */
 .middle-main {
-  /* Main content section with centered content, gap between items, and padding */
   display: flex;
-  flex-wrap: wrap;
-
 }
 
-.old-portfolio-div h5,
-.glastonbury-div h5 {
-  width: 50%;
-  font-size: 2.5rem;
-  background: linear-gradient(to right, black, var(--main-color));
-  border-top-right-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-  text-align: right;
+.middle-main h2,
+.top-main h2 {
+  text-align: center;
+  width: 100%;
 }
 
 .old-portfolio-div,
 .glastonbury-div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 5rem;
+  background: var(--background-color);
+  width: 100%;
 }
 
 .old-portfolio-content,
 .glastonbury-content {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  width: 50%;
+  width: 100%;
 }
 
-.glastonbury-content img,
-.old-portfolio-content img {
-  width: 15rem;
-}
-
-
-/* Media Queries */
+/* ========== Media Queries ========== */
 @media screen and (max-width:768px) {
-
-.old-portfolio-div,
-  .glastonbury-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
+  main {
+    margin-top: 1rem;
   }
-  
+
+  .middle-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .old-portfolio-div,
+  .glastonbury-div {
+    padding: 1rem;
+    width: 100%;
+  }
+
   .old-portfolio-content,
   .glastonbury-content {
     flex-direction: column;

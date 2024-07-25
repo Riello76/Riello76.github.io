@@ -16,8 +16,7 @@ main {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0;
 }
 
 /* ========== Hero Image ========== */
@@ -66,7 +65,6 @@ main {
     transform: scale(0.9);
   }
 }
-
 
 /* ========== Middle Main ========== */
 .middle-main {
@@ -192,9 +190,8 @@ hr {
 
 /* ========== Media Queries ========== */
 @media screen and (max-width:768px) {
-  .cs-collapse-navbar {
-    border-radius: 0 var(--border-radius) var(--border-radius) 0;
-    background: var(--background-color);
+  main{
+    margin-top: 1rem;
   }
 
   .cta-btn-container {

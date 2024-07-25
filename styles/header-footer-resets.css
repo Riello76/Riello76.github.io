@@ -19,7 +19,8 @@
   --tertiary-color: rgb(0, 0, 0);
 
   /* Info color */
-  --info-color:#ffffff;
+  --info-color: #ffffff;
+
   /* Background color */
   --background-color: linear-gradient(to right, var(--tertiary-color) 0%, var(--main-color), var(--tertiary-color) 100%);
 
@@ -28,21 +29,13 @@
 
   /* ========== Typography Variables ========== */
   --font-size-h1: clamp(3rem, 1.5rem + 2vw, 8rem);
-  /* Font size for h1 */
   --font-size-h2: clamp(2.2rem, 1.5rem + 1.5vw, 6rem);
-  /* Font size for h2 */
   --font-size-h3: clamp(2rem, 1.5rem + 1vw, 5rem);
-  /* Font size for h3 */
   --font-size-h4: clamp(1.75rem, 1.5rem + 0.75vw, 4rem);
-  /* Font size for h4 */
   --font-size-h5: clamp(1.5rem, 1.25rem + 0.5vw, 3.5rem);
-  /* Font size for h5 */
   --font-size-h6: clamp(1.25rem, 1rem + 0.5vw, 3rem);
-  /* Font size for h6 */
   --font-size-p: clamp(1rem, 1.5rem + 0.5vw, 3rem);
-  /* Font size for p */
   --font-size-a: clamp(1rem, 1.2rem + 0.5vw, 2.5rem);
-  /* Font size for a */
 }
 
 /* ========== Typography Styles ========== */
@@ -54,6 +47,8 @@ h1 {
 h2 {
   font-size: var(--font-size-h2);
   color: var(--secondary-color);
+    background: var(--background-color);
+    margin-bottom: 1rem;
 }
 
 h3 {
@@ -90,9 +85,11 @@ ul,
 li {
   color: var(--info-color);
 }
-strong{
+
+strong {
   color: var(--secondary-color);
 }
+
 /* ========== Body and HTML ========== */
 body,
 html {
@@ -126,7 +123,7 @@ picture {
 }
 
 .logo {
-  width: 25rem;
+  width: clamp(10rem,20rem,50rem);
   height: auto;
   border-radius: 100%;
 }
@@ -162,10 +159,12 @@ picture {
 .dropdown-menu a {
   color: var(--secondary-color);
 }
+
 .dropdown-item:hover {
   background-color: var(--main-color);
   color: var(--info-color);
 }
+
 /* ========== Hamburger ========== */
 
 /* ========== Navbar Toggler Icon ========== */
@@ -175,7 +174,6 @@ picture {
   padding: 0;
 }
 
-/* ========== Custom Hamburger Icon ========== */
 .navbar-toggler-icon {
   width: 2.5rem;
   height: 2rem;
@@ -186,7 +184,6 @@ picture {
   cursor: pointer;
 }
 
-/* ========== The three hamburger lines ========== */
 .navbar-toggler-icon .bar {
   position: absolute;
   width: 100%;
@@ -196,7 +193,6 @@ picture {
   transition: transform 0.3s ease-out;
 }
 
-/* ========== Positioning for each line ========== */
 .navbar-toggler-icon .bar:nth-child(1) {
   top: 0.25rem;
 }
@@ -210,7 +206,6 @@ picture {
   bottom: 0.25rem;
 }
 
-/* ========== Style for lines when toggler is active ========== */
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .bar:nth-child(1) {
   transform: translateY(0.50rem) rotate(45deg);
 }
@@ -242,12 +237,13 @@ picture {
 /* ========== Media Queries ========== */
 @media screen and (min-width: 320px) and (max-width: 425px) {
 
-  .logo {
-    width: 10rem;
-  }
-
   .cs-navbar {
     float: left;
+  }
+
+  .cs-collapse-navbar {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    background: var(--background-color);
   }
 
   .cs-container-fluid {
@@ -264,12 +260,13 @@ picture {
     flex-direction: column;
   }
 
-  .logo {
-    width: 20rem;
-  }
-
   .cs-navbar {
     float: left;
+  }
+
+  .cs-collapse-navbar {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    background: var(--background-color);
   }
 
   .cs-container-fluid {

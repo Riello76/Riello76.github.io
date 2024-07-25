@@ -2,156 +2,201 @@
 <html lang="en">
 
 <head>
+  <!-- ========== Character Set ========== -->
   <meta charset="UTF-8" />
+
+  <!-- ========== Viewport Settings ========== -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ========== SEO Meta Tags ========== -->
   <meta name="description"
-    content="Gaspare Tocci's portfolio as a web designer and developer. Discover my projects and skills." />
+    content="Explore Gaspare Tocci's 3D design projects. Discover a collection of 3D models, animations, and visualizations created using Blender and other advanced tools." />
   <meta name="keywords"
-    content="web design, web development, portfolio, HTML, CSS, JavaScript,Inkscape,Figma,Filmora,PowerPoint,Gimp" />
+    content="3D design, 3D models, 3D animation, Blender, CGI, visualizations, Gaspare Tocci, 3D art, 3D portfolio" />
   <meta name="author" content="Gaspare Tocci" />
   <meta name="robots" content="index, follow" />
-  <title>Gaspare Tocci's 3d design</title>
-  <!-- Link to external stylesheet -->
+
+  <!-- ========== Document Title ========== -->
+  <title>Gaspare Tocci's 3D Design</title>
+
+  <!-- ========== Bootstrap CSS ========== -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../../../styles/header-footer.css" />
+
+  <!-- ========== AOS CSS ========== -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- ========== Custom Stylesheets ========== -->
+  <link rel="stylesheet" href="../../../styles/header-footer-resets.css" />
   <link rel="stylesheet" href="../style/3d-design.css" />
-  <!-- Link to favicon -->
+
+  <!-- ========== Link to Favicon ========== -->
   <link rel="icon" href="/icons/favicon.svg" type="image/x-icon" />
 </head>
 
+
 <body>
-  <!-- Header section -->
+
+  <!-- ========== HEADER SECTION ========== -->
   <header>
+  
+    <!-- ========== TOP HEADER ========== -->
     <div class="top-header">
+  
+      <!-- ========== Logo ========== -->
       <img tabindex="1" class="logo" src="/images/logo.svg" alt="logo" title="logo" />
+  
+      <!-- ========== Title ========== -->
       <h1 class="title">Every problem has its creative solution.</h1>
     </div>
-    <!-- Navigation menu -->
-    <nav class="navbar navbar-expand-lg  cs-navbar">
+  
+  
+    <!-- ========== NAVIGATION MENU ========== -->
+    <nav class="navbar navbar-expand-lg cs-navbar">
       <div class="container-fluid cs-container-fluid">
-
-        <!-- Navbar Toggler Button with Hamburger Icon -->
+  
+        <!-- ========== Navbar Toggler Button with Hamburger Icon ========== -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- ========== Hamburger Menu Bar ========== -->
           <span class="navbar-toggler-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </span>
         </button>
-
-        <!-- Navbar Collapse Content -->
+  
+  
+        <!-- ========== Navbar Collapse Content ========== -->
         <div class="collapse navbar-collapse cs-collapse-navbar" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-            <!-- Home button -->
+  
+            <!-- ========== HOME BUTTON ========== -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../../../index.html" title="Homepage">
-                <h6>HOME</h6>
+              <a class="nav-link active" aria-current="page" href="/index.html" title="Homepage" tabindex="4">
+                <h5>HOME</h5>
               </a>
             </li>
-
-            <!-- CV dropdown menu -->
+  
+            <!-- ========== CV DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                title="Curriculum">
-                <h6>CV</h6>
+                title="Curriculum Vitae" tabindex="5">
+                <h5>CV</h5>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../../curriculum/curriculum.html" title="Main Page">Main Page</a>
-                </li>
+  
+                <!-- ========== CV Main Page ========== -->
+                <li><a class="dropdown-item" href="../../curriculum/curriculum.html" title="Curriculum Vitae Main Page"
+                    tabindex="6">Main
+                    Page</a></li>
                 <li>
-                  <hr class="dropdown-divider" />
-                </li>
+  
+                  <!-- ========== Download CV as PDF ========== -->
                 <li><a class="dropdown-item" aria-label="Download CV in PDF format" href="/files/Gaspare-Tocci-CV.pdf"
-                    download="Gaspare Tocci CV.pdf" title="Download CV in PDF format">Download -PDF-</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
+                    download="Gaspare-Tocci-CV.pdf" title="Download CV in PDF format" tabindex="7">Download -PDF-</a>
                 </li>
+  
+  
+                <!-- ========== Download CV as DOC ========== -->
                 <li><a class="dropdown-item" aria-label="Download CV in DOC format" href="/files/Gaspare-Tocci-CV.doc"
-                    download="Gaspare Tocci CV.doc" title="Download CV in DOC format">Download -DOC-</a></li>
-              </ul>
-            </li>
-
-            <!-- Gallery dropdown menu -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                title="Gallery">
-                <h6>GALLERY</h6>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../gallery.html" title="Main page">Main Page</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item" href="../pages/branding.html" title="Branding">Branding</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item" href="../pages/graphics.html" title="Graphic">Graphic</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item" href="../pages/3d-design.html" title="3D Design">3D Design</a>
+                    download="Gaspare-Tocci-CV.doc" title="Download CV in DOC format" tabindex="8">Download -DOC-</a>
                 </li>
               </ul>
             </li>
-
-            <!-- Websites dropdown menu -->
+  
+            <!-- ========== GALLERY DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                title="Websites">
-                <h6>WEBSITES</h6>
+                title="Gallery" tabindex="9">
+                <h5>GALLERY</h5>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../../websites/websites.html" title="Main">Main Page</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
+  
+                <!-- ========== Gallery Main Page ========== -->
+                <li><a class="dropdown-item" href="../gallery.html" title="Gallery Main Page" tabindex="10">Main
+                    Page</a></li>
+  
+                <!-- ========== Branding ========== -->
+                <li><a class="dropdown-item" href="../pages/branding.html" title="Branding" tabindex="11">Branding</a>
                 </li>
+  
+                <!-- ========== Graphic ========== -->
+                <li><a class="dropdown-item" href="../pages/graphics.html" title="Graphic" tabindex="12">Graphic</a>
+                </li>
+  
+                <!-- ========== 3D Design ========== -->
+                <li><a class="dropdown-item" href="../pages/3d-design.html" title="3D Design" tabindex="13">3D
+                    Design</a></li>
+              </ul>
+            </li>
+  
+            <!-- ========== WEBSITES DROPDOWN MENU ========== -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                title="Websites" tabindex="14">
+                <h5>WEBSITES</h5>
+              </a>
+              <ul class="dropdown-menu">
+  
+                <!-- ========== Websites Main Page ========== -->
+                <li><a class="dropdown-item" href="../../websites/websites.html" title="Websites Main Page"
+                    tabindex="15">Main
+                    Page</a></li>
+  
+                <!-- ========== Glastonbury Festival ========== -->
                 <li><a class="dropdown-item" href="../../websites/pages/glastonbury/index.html"
-                    title="Glastonbury Festival">Glastonbury Festival</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
+                    title="Glastonbury Festival" tabindex="16">Glastonbury Festival</a></li>
+  
+                <!-- ========== Old Portfolio ========== -->
                 <li><a class="dropdown-item" href="../../websites/pages/old-portfolio/old-portfolio.html"
-                    title="Old Portfolio">Old Portfolio</a></li>
+                    title="Old Portfolio" tabindex="17">Old Portfolio</a></li>
               </ul>
             </li>
-
-            <!-- Contact dropdown menu -->
+  
+            <!-- ========== CONTACT DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                title="Contacts">
-                <h6>CONTACTS</h6>
+                title="Contacts" tabindex="18">
+                <h5>CONTACTS</h5>
               </a>
               <ul class="dropdown-menu">
+  
+                <!-- ========== LinkedIn ========== -->
                 <li><a class="dropdown-item" href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank"
-                    title="LinkedIn">LinkedIn</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
+                    title="LinkedIn Profile" tabindex="19">LinkedIn</a></li>
+  
+                <!-- ========== GitHub ========== -->
+                <li><a class="dropdown-item" href="https://github.com/Riello76" target="_blank" title="GitHub Profile"
+                    tabindex="20">GitHub</a></li>
+  
+                <!-- ========== Email ========== -->
+                <li><a class="dropdown-item" href="mailto:gaspare_tocci@yahoo.it" title="Send Email"
+                    tabindex="21">Email</a>
                 </li>
-                <li><a class="dropdown-item" href="https://github.com/Riello76" target="_blank"
-                    title="GitHub">GitHub</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item" href="mailto:gaspare_tocci@yahoo.it" title="Email">Email</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  </header> <!-- Main content -->
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
   <main>
+  <main>
+
+      <!-- ========== Top Main ========== -->
     <section class="top-main">
-      <h5>3D Design</h5>
+      <h2>3D Design</h2>
     </section>
+
+      <!-- ========== Middle Main ========== -->
     <section class="middle-main">
+
+      <!-- 3D Model -->
       <div class="section-1-div">
-        <h5>SECTION 1</h5>
+        <h2>SECTION 1</h2>
         <div class="section-1-content">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -161,8 +206,10 @@
           </p>
         </div>
       </div>
+
+
       <div class="section-2-div">
-        <h5>SECTION 2</h5>
+        <h2>SECTION 2</h2>
         <div class="section-2-content">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, totam
@@ -174,13 +221,14 @@
       </div>
     </section>
   </main>
-  <!-- Footer Section -->
-  <footer class="text-white mt-5 cs-footer">
-    <a class="go-to-top" href="../pages/3d-design.html">⏫- Go To Top -⏫</a>
+  
+  <!-- ========== FOOTER ========== -->
+  <footer class="text-white cs-footer">
+    <a class="go-to-top" href="../pages/branding.html">⏫- Go To Top -⏫</a>
     <div class="container py-4">
       <div class="row">
-
-        <!-- Contact Information -->
+  
+        <!-- ========== Contact Information ========== -->
         <div class="col-md-4">
           <h6 tabindex="49">Contact Information</h6>
           <ul class="list-unstyled">
@@ -193,8 +241,8 @@
             </li>
           </ul>
         </div>
-
-        <!-- Quick Links -->
+  
+        <!-- ========== Quick Links ========== -->
         <div class="col-md-4">
           <h6 tabindex="53">Quick Links</h6>
           <ul class="list-unstyled">
@@ -206,8 +254,8 @@
             </li>
           </ul>
         </div>
-
-        <!-- Additional Information -->
+  
+        <!-- ========== Additional Information ========== -->
         <div class="col-md-4">
           <h6 tabindex="57">Additional Information</h6>
           <p tabindex="58">Feel free to reach out if you have any questions or opportunities. I am always open to
@@ -215,14 +263,22 @@
             projects,
             creative ideas, or potential collaborations.</p>
         </div>
-
+  
       </div>
     </div>
   </footer>
-  <!-- Bootstrap -->
+  
+  <!-- ========== Bootstrap JS Library ========== -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <!-- ========== AOS (Animate On Scroll) Library ========== -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <!-- ========== Initialize AOS Animations ========== -->
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
