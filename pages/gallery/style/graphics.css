@@ -30,6 +30,7 @@ main {
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
+  gap: 1rem;
 }
 
 .middle-main h2 {
@@ -44,9 +45,7 @@ main {
   width: 50%;
   background: var(--background-color);
 }
-.icons-div{
-  margin-bottom: 1rem;
-}
+
 .icons-content,
 .buttons-content {
   display: flex;
@@ -54,12 +53,12 @@ main {
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  margin-bottom: 5rem;
+  gap: 1rem;
 }
 
 .icons-content img,
 .buttons-content img {
-  width: 5rem;
+  width: 10rem;
 }
 
 

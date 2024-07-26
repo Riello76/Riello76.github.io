@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="180" height="100" version="1.1" viewBox="0 0 180 100" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="filter4" x="-.13534" y="-.24366" width="1.2707" height="1.4873" color-interpolation-filters="sRGB">
+   <feGaussianBlur in="SourceAlpha" result="result0" stdDeviation="2.3"/>
+   <feMorphology in="SourceAlpha" radius="6.6" result="result1"/>
+   <feGaussianBlur in="result1" stdDeviation="8.9"/>
+   <feColorMatrix result="result91" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.3 0"/>
+   <feComposite in="result0" in2="result91" operator="out" result="result2"/>
+   <feGaussianBlur result="result4" stdDeviation="1.7"/>
+   <feDiffuseLighting surfaceScale="10">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feDiffuseLighting>
+   <feBlend in2="SourceGraphic" mode="multiply"/>
+   <feComposite in2="SourceAlpha" operator="in" result="result3"/>
+   <feSpecularLighting in="result4" specularExponent="17.9" surfaceScale="5">
+    <feDistantLight azimuth="225" elevation="45"/>
+   </feSpecularLighting>
+   <feComposite in2="result3" operator="atop"/>
+  </filter>
+ </defs>
+ <path d="m0.0026467 0.012036h179.99v99.976h-179.99z" fill-rule="evenodd" filter="url(#filter4)"/>
+</svg>
