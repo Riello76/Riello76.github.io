@@ -6,6 +6,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   background-color: var(--tertiary-color);
+  gap: 1rem;
 }
 
 .top-main {
@@ -15,11 +16,12 @@ main {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  margin: 1rem 0;
 }
 .top-main h2{
   text-align: center;
   width: 100%;
+  background: var(--background-color);
+  margin-bottom: 0;
 }
 
 /* ========== Middle Main ========== */
@@ -35,30 +37,29 @@ main {
   text-align: center;
 }
 
-
 .branding-div,
 .graphic-div,
 .design-div {
-  width: 20%;
-  margin-bottom: 1rem;
-  padding: 1rem;
+  width: 30%;
   background: var(--background-color);
 }
 
 /* Media Queries */
 @media screen and (max-width:768px) {
   main {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
-
+  
   .middle-main {
     flex-direction: column;
   }
-
+  
   .branding-div,
   .graphic-div,
   .design-div {
     width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
   }
 
   .design-div {
