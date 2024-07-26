@@ -43,6 +43,7 @@ main {
   flex-wrap: wrap;
   background: var(--background-color);
   width: 100%;
+  padding: 1rem;
 }
 
 .old-portfolio-content,
