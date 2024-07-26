@@ -15,12 +15,20 @@ main {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.top-main h2 {
+  text-align: center;
+  width: 100%;
+  background: var(--background-color);
+  margin-bottom: 0;
 }
 
 /* ========== Middle Main ========== */
 .middle-main {
   display: flex;
+  gap: 1rem;
 }
 
 .middle-main h2,
@@ -48,7 +56,7 @@ main {
 /* ========== Media Queries ========== */
 @media screen and (max-width:768px) {
   main {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   .middle-main {
