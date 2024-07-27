@@ -13,37 +13,37 @@ main {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   width: 100%;
-  margin-bottom: 1rem;
 }
-
 .top-main h2 {
-  text-align: center;
   width: 100%;
+  text-align: center;
   background: var(--background-color);
-  margin-bottom: 0;
+  color: var(--info-color);
 }
 
 /* ========== Middle Main ========== */
 .middle-main {
   display: flex;
-  gap: 1rem;
-}
-
-.middle-main h2,
-.top-main h2 {
-  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
 }
 
+.middle-main h3 {
+  width: 100%;
+  text-align: center;
+  background: var(--background-color);
+}
+.middle-main p {
+  background: var(--background-color);
+}
 .old-portfolio-div,
 .glastonbury-div {
   display: flex;
   flex-wrap: wrap;
-  background: var(--background-color);
   width: 100%;
-  padding: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .old-portfolio-content,
@@ -51,6 +51,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: var(--background-color);
   width: 100%;
 }
 
@@ -67,7 +68,6 @@ main {
 
   .old-portfolio-div,
   .glastonbury-div {
-    padding: 1rem;
     width: 100%;
   }
 

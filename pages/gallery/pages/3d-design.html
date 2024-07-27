@@ -34,27 +34,21 @@
   <link rel="icon" href="/icons/favicon.svg" type="image/x-icon" />
 </head>
 
-
 <body>
 
   <!-- ========== HEADER SECTION ========== -->
   <header>
-  
     <!-- ========== TOP HEADER ========== -->
     <div class="top-header">
-  
       <!-- ========== Logo ========== -->
-      <img tabindex="1" class="logo" src="/images/logo.svg" alt="logo" title="logo" />
-  
+      <img tabindex="1" class="logo" src="/images/logo.svg" alt="Gaspare Tocci Logo" title="Gaspare Tocci Logo" />
       <!-- ========== Title ========== -->
       <h1 class="title">Every problem has its creative solution.</h1>
     </div>
-  
-  
+
     <!-- ========== NAVIGATION MENU ========== -->
-    <nav class="navbar navbar-expand-lg cs-navbar">
+    <nav class="navbar navbar-expand-lg cs-navbar" aria-label="Main Navigation">
       <div class="container-fluid cs-container-fluid">
-  
         <!-- ========== Navbar Toggler Button with Hamburger Icon ========== -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,115 +59,99 @@
             <span class="bar"></span>
           </span>
         </button>
-  
-  
+
         <!-- ========== Navbar Collapse Content ========== -->
         <div class="collapse navbar-collapse cs-collapse-navbar" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-  
+
             <!-- ========== HOME BUTTON ========== -->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/index.html" title="Homepage" tabindex="4">
                 <h5>HOME</h5>
               </a>
             </li>
-  
+
             <!-- ========== CV DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                title="Curriculum Vitae" tabindex="5">
+                title="Curriculum Vitae" tabindex="5" aria-label="Curriculum Vitae Menu">
                 <h5>CV</h5>
               </a>
               <ul class="dropdown-menu">
-  
                 <!-- ========== CV Main Page ========== -->
                 <li><a class="dropdown-item" href="../../curriculum/curriculum.html" title="Curriculum Vitae Main Page"
-                    tabindex="6">Main
-                    Page</a></li>
+                    tabindex="6" aria-label="Curriculum Vitae Main Page">Main Page</a></li>
                 <li>
-  
                   <!-- ========== Download CV as PDF ========== -->
-                <li><a class="dropdown-item" aria-label="Download CV in PDF format" href="/files/Gaspare-Tocci-CV.pdf"
+                  <a class="dropdown-item" aria-label="Download CV in PDF format" href="/files/Gaspare-Tocci-CV.pdf"
                     download="Gaspare-Tocci-CV.pdf" title="Download CV in PDF format" tabindex="7">Download -PDF-</a>
                 </li>
-  
-  
                 <!-- ========== Download CV as DOC ========== -->
                 <li><a class="dropdown-item" aria-label="Download CV in DOC format" href="/files/Gaspare-Tocci-CV.doc"
                     download="Gaspare-Tocci-CV.doc" title="Download CV in DOC format" tabindex="8">Download -DOC-</a>
                 </li>
               </ul>
             </li>
-  
+
             <!-- ========== GALLERY DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                title="Gallery" tabindex="9">
+                title="Gallery" tabindex="9" aria-label="Gallery Menu">
                 <h5>GALLERY</h5>
               </a>
               <ul class="dropdown-menu">
-  
                 <!-- ========== Gallery Main Page ========== -->
-                <li><a class="dropdown-item" href="../gallery.html" title="Gallery Main Page" tabindex="10">Main
-                    Page</a></li>
-  
+                <li><a class="dropdown-item" href="../gallery.html" title="Gallery Main Page" tabindex="10"
+                    aria-label="Gallery Main Page">Main Page</a></li>
                 <!-- ========== Branding ========== -->
-                <li><a class="dropdown-item" href="../pages/branding.html" title="Branding" tabindex="11">Branding</a>
-                </li>
-  
+                <li><a class="dropdown-item" href="../pages/branding.html" title="Branding" tabindex="11"
+                    aria-label="Branding">Branding</a></li>
                 <!-- ========== Graphic ========== -->
-                <li><a class="dropdown-item" href="../pages/graphics.html" title="Graphic" tabindex="12">Graphic</a>
-                </li>
-  
+                <li><a class="dropdown-item" href="../pages/graphics.html" title="Graphic" tabindex="12"
+                    aria-label="Graphic">Graphic</a></li>
                 <!-- ========== 3D Design ========== -->
-                <li><a class="dropdown-item" href="../pages/3d-design.html" title="3D Design" tabindex="13">3D
-                    Design</a></li>
+                <li><a class="dropdown-item" href="../pages/3d-design.html" title="3D Design" tabindex="13"
+                    aria-label="3D Design">3D Design</a></li>
               </ul>
             </li>
-  
+
             <!-- ========== WEBSITES DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                title="Websites" tabindex="14">
+                title="Websites" tabindex="14" aria-label="Websites Menu">
                 <h5>WEBSITES</h5>
               </a>
               <ul class="dropdown-menu">
-  
                 <!-- ========== Websites Main Page ========== -->
                 <li><a class="dropdown-item" href="../../websites/websites.html" title="Websites Main Page"
-                    tabindex="15">Main
-                    Page</a></li>
-  
+                    tabindex="15" aria-label="Websites Main Page">Main Page</a></li>
                 <!-- ========== Glastonbury Festival ========== -->
                 <li><a class="dropdown-item" href="../../websites/pages/glastonbury/index.html"
-                    title="Glastonbury Festival" tabindex="16">Glastonbury Festival</a></li>
-  
+                    title="Glastonbury Festival" tabindex="16" aria-label="Glastonbury Festival">Glastonbury
+                    Festival</a></li>
                 <!-- ========== Old Portfolio ========== -->
                 <li><a class="dropdown-item" href="../../websites/pages/old-portfolio/old-portfolio.html"
-                    title="Old Portfolio" tabindex="17">Old Portfolio</a></li>
+                    title="Old Portfolio" tabindex="17" aria-label="Old Portfolio">Old Portfolio</a></li>
               </ul>
             </li>
-  
+
             <!-- ========== CONTACT DROPDOWN MENU ========== -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                title="Contacts" tabindex="18">
+                title="Contacts" tabindex="18" aria-label="Contacts Menu">
                 <h5>CONTACTS</h5>
               </a>
               <ul class="dropdown-menu">
-  
                 <!-- ========== LinkedIn ========== -->
                 <li><a class="dropdown-item" href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank"
-                    title="LinkedIn Profile" tabindex="19">LinkedIn</a></li>
-  
+                    title="LinkedIn Profile" tabindex="19" aria-label="LinkedIn Profile of Gaspare Tocci">LinkedIn</a>
+                </li>
                 <!-- ========== GitHub ========== -->
                 <li><a class="dropdown-item" href="https://github.com/Riello76" target="_blank" title="GitHub Profile"
-                    tabindex="20">GitHub</a></li>
-  
+                    tabindex="20" aria-label="GitHub Profile of Gaspare Tocci">GitHub</a></li>
                 <!-- ========== Email ========== -->
-                <li><a class="dropdown-item" href="mailto:gaspare_tocci@yahoo.it" title="Send Email"
-                    tabindex="21">Email</a>
-                </li>
+                <li><a class="dropdown-item" href="mailto:gaspare_tocci@yahoo.it" title="Send Email" tabindex="21"
+                    aria-label="Send Email to Gaspare Tocci">Email</a></li>
               </ul>
             </li>
           </ul>
@@ -184,39 +162,39 @@
 
   <!-- ========== MAIN CONTENT ========== -->
   <main>
-  <main>
-
-      <!-- ========== Top Main ========== -->
+    <!-- ========== Top Main ========== -->
     <section class="top-main">
       <h2>3D Design</h2>
     </section>
 
-      <!-- ========== Middle Main ========== -->
+    <!-- ========== Middle Main ========== -->
     <section class="middle-main">
-
       <!-- 3D Model -->
       <div class="section-1-div">
-        <h2>Blender Workspace Creations</h2>
+        <h3>Blender Workspace Creations</h3>
         <div class="section-1-content">
-          <img src="../blender/project-1.webp" alt="Blender project showcasing a 3D model of a workstation with monitors, gaming chair, and desk">
-          <img src="../blender/project-2.webp" alt="Blender project showcasing a 3D model of a workstation with monitors, gaming chair, and desk">
-        <p>
-          I'm still exploring <strong>Blender</strong> and currently working on a project to <strong>recreate my real
-            workstation</strong>. In this project, I've
-          used <strong>screenshots of my actual monitors</strong> as textures, applying them to the monitor faces in the 3D
-          model. This approach
-          helps me capture the true look and feel of my workspace in the virtual environment. I'm also leveraging
-          <strong>BlenderKit</strong> to
-          <strong>create and enhance these environments</strong>, which provides a range of assets and tools to further enrich
-          my 3D workspace.
-        </p>
-
+          <img src="../blender/project-1.webp"
+            alt="3D model of a workstation with monitors, gaming chair, and desk created in Blender">
+          <img src="../blender/project-2.webp"
+            alt="Another 3D model of a workstation with monitors, gaming chair, and desk created in Blender">
+          <p>
+            I'm still exploring <strong>Blender</strong> and currently working on a project to <strong>recreate my real
+              workstation</strong>. In this project, I've
+            used <strong>screenshots of my actual monitors</strong> as textures, applying them to the monitor faces in
+            the 3D
+            model. This approach
+            helps me capture the true look and feel of my workspace in the virtual environment. I'm also leveraging
+            <strong>BlenderKit</strong> to
+            <strong>create and enhance these environments</strong>, which provides a range of assets and tools to
+            further enrich
+            my 3D workspace.
+          </p>
         </div>
       </div>
 
-
+      <!-- SECTION 2 -->
       <div class="section-2-div">
-        <h2>SECTION 2</h2>
+        <h3>SECTION 2</h3>
         <div class="section-2-content">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, totam
@@ -228,40 +206,38 @@
       </div>
     </section>
   </main>
-  
+
   <!-- ========== FOOTER ========== -->
   <footer class="text-white cs-footer">
-    <a class="go-to-top" href="../pages/branding.html">⏫- Go To Top -⏫</a>
-    <div class="container py-4">
+    <a class="go-to-top" href="./3d-design.html">⏫- Go To Top -⏫</a>
+    <div class="container">
       <div class="row">
-  
         <!-- ========== Contact Information ========== -->
         <div class="col-md-4">
           <h6 tabindex="49">Contact Information</h6>
           <ul class="list-unstyled">
             <li><a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="text-white"
-                title="LinkedIn" tabindex="50">LinkedIn</a></li>
-            <li><a href="https://github.com/Riello76" target="_blank" class="text-white" title="GitHub"
-                tabindex="51">GitHub</a></li>
-            <li><a href="mailto:gaspare_tocci@yahoo.it" class="text-white" title="Email" tabindex="52">Email:
-                gaspare_tocci@yahoo.it</a>
-            </li>
+                title="LinkedIn Profile" tabindex="50" aria-label="LinkedIn Profile of Gaspare Tocci">LinkedIn</a></li>
+            <li><a href="https://github.com/Riello76" target="_blank" class="text-white" title="GitHub Profile"
+                tabindex="51" aria-label="GitHub Profile of Gaspare Tocci">GitHub</a></li>
+            <li><a href="mailto:gaspare_tocci@yahoo.it" class="text-white" title="Email Gaspare Tocci" tabindex="52"
+                aria-label="Email Gaspare Tocci">Email: gaspare_tocci@yahoo.it</a></li>
           </ul>
         </div>
-  
+
         <!-- ========== Quick Links ========== -->
         <div class="col-md-4">
           <h6 tabindex="53">Quick Links</h6>
           <ul class="list-unstyled">
             <li><a href="../../../index.html" class="text-white" title="Homepage" tabindex="54">Home</a></li>
-            <li><a href="../../curriculum/curriculum.html" class="text-white" title="Curriculum" tabindex="53">CV</a>
-            </li>
+            <li><a href="../../curriculum/curriculum.html" class="text-white" title="Curriculum Vitae"
+                tabindex="53">CV</a></li>
             <li><a href="../../gallery/gallery.html" class="text-white" title="Gallery" tabindex="55">Gallery</a></li>
             <li><a href="../../websites/websites.html" class="text-white" title="Websites" tabindex="56">Websites</a>
             </li>
           </ul>
         </div>
-  
+
         <!-- ========== Additional Information ========== -->
         <div class="col-md-4">
           <h6 tabindex="57">Additional Information</h6>
@@ -270,18 +246,18 @@
             projects,
             creative ideas, or potential collaborations.</p>
         </div>
-  
       </div>
     </div>
   </footer>
-  
+
   <!-- ========== Bootstrap JS Library ========== -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
   <!-- ========== AOS (Animate On Scroll) Library ========== -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  
+
   <!-- ========== Initialize AOS Animations ========== -->
   <script>
     AOS.init();

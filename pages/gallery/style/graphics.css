@@ -9,19 +9,18 @@ main {
 }
 
 .top-main {
-  background: var(--background-color);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-
   width: 100%;
-  margin-bottom: 1rem;
 }
 
 .top-main h2 {
   width: 100%;
   text-align: center;
+  background: var(--background-color);
+  color: var(--info-color);
 }
 
 /* ========== Middle Main ========== */
@@ -30,20 +29,24 @@ main {
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
-  gap: 1rem;
 }
 
-.middle-main h2 {
-  width: 100%;
+.middle-main h3 {
   text-align: center;
+  background: var(--background-color);
+}
+.middle-main p {
+  background: var(--background-color);
+  padding: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .icons-div,
 .buttons-div {
   display: flex;
-  flex-direction: column;
-  width: 50%;
-  background: var(--background-color);
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
 }
 
 .icons-content,
@@ -53,7 +56,8 @@ main {
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  gap: 1rem;
+  background: var(--background-color);
+  padding: 1rem;
 }
 
 .icons-content img,
@@ -61,18 +65,19 @@ main {
   width: 10rem;
 }
 
-
-/* Media Queries */
+/* ========== Media Queries ========== */
 @media screen and (max-width:768px) {
   main {
-      margin-top: 2rem;
-    }
+    margin-top: 2rem;
+  }
+
   .icons-div,
   .buttons-div {
     width: 100%;
   }
-    .icons-content img,
-    .buttons-content img {
-      width: 4rem;
-    }
+
+  .icons-content img,
+  .buttons-content img {
+    width: 4rem;
+  }
 }

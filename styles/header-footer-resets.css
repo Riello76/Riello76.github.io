@@ -219,8 +219,6 @@ picture {
 /* ========== Footer ========== */
 .cs-footer {
   background: var(--background-color);
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  margin-top: 1rem;
 }
 
 .go-to-top {

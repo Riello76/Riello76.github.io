@@ -1,6 +1,5 @@
 @import url(/styles/header-footer-resets.css);
 
-
 /* ========== Main Section ========== */
 main {
   display: flex;
@@ -10,50 +9,57 @@ main {
 }
 
 .top-main {
-  background: var(--background-color);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
   width: 100%;
-  margin-bottom: 1rem;
 }
 
 .top-main h2 {
   width: 100%;
   text-align: center;
+  background: var(--background-color);
+  color: var(--info-color);
 }
 
 /* ========== Middle Main ========== */
 .middle-main {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
-  gap: 1rem;
 }
 
-.middle-main h2 {
-  width: 100%;
+.middle-main h3 {
   text-align: center;
+  background: var(--background-color);
 }
-.middle-main img{
-  border: 2px solid var(--info-color);
+
+.middle-main p {
+  background: var(--background-color);
+  padding: 1rem;
+  margin-bottom: 0.5rem;
 }
+
+.middle-main img {
+  padding: 1rem;
+}
+
 .section-1-div,
 .section-2-div {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  background: var(--background-color);
+  width: 100%;
 }
 
 .section-1-content,
 .section-2-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
-} 
+  align-items: center;
+}
+
 /* ========== Media Queries ========== */
 @media screen and (max-width:768px) {
   main {
@@ -69,7 +75,4 @@ main {
     width: 100%;
   }
 
-  .middle-main h5 {
-    text-align: center;
-  }
 }

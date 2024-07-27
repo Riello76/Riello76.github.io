@@ -6,7 +6,6 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   background-color: var(--tertiary-color);
-  gap: 1rem;
 }
 
 .top-main {
@@ -14,14 +13,14 @@ main {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   width: 100%;
 }
-.top-main h2{
-  text-align: center;
+
+.top-main h2 {
   width: 100%;
+  text-align: center;
   background: var(--background-color);
-  margin-bottom: 0;
+  color: var(--info-color);
 }
 
 /* ========== Middle Main ========== */
@@ -30,18 +29,23 @@ main {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
-
 }
 
-.middle-main h2 {
+.middle-main h3 {
   text-align: center;
+  background: var(--background-color);
+}
+
+.middle-main p {
+  background: var(--background-color);
+  padding: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .branding-div,
 .graphic-div,
 .design-div {
   width: 30%;
-  background: var(--background-color);
 }
 
 /* Media Queries */
@@ -49,20 +53,14 @@ main {
   main {
     margin-top: 2rem;
   }
-  
+
   .middle-main {
     flex-direction: column;
   }
-  
+
   .branding-div,
   .graphic-div,
   .design-div {
     width: 100%;
-    margin-bottom: 1rem;
-    padding: 1rem;
-  }
-
-  .design-div {
-    margin-bottom: 0;
   }
 }
