@@ -137,10 +137,6 @@ main h3 {
 }
 
 /* ========== My tools ========== */
-.my-tools {
-  margin-bottom: 0.5rem;
-}
-
 .my-tools div {
   display: flex;
   justify-content: space-around;
