@@ -189,7 +189,7 @@ span,h4{
   height: 50%;
  }
  main p{
-  line-height: 1.5rem;
+  font-size: 2rem;
  }
 }
 @media screen and (min-width:2560px) {
