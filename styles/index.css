@@ -82,7 +82,7 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.middle-main h3 {
+main h3 {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -97,8 +97,8 @@ main {
   align-items: center;
   justify-content: space-around;
   padding: 1rem;
-  margin-bottom: 0.5rem;
   background: var(--background-color);
+  margin-bottom: 0.5rem;
 }
 
 .about-me p {
