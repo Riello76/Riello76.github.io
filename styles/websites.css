@@ -37,6 +37,7 @@ main {
 }
 .middle-main p {
   background: var(--background-color);
+  padding: 1rem;
 }
 .old-portfolio-div,
 .glastonbury-div {
