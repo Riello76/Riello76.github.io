@@ -116,8 +116,6 @@ picture {
   flex-direction: column;
   background-color: var(--tertiary-color);
   background: var(--background-color);
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  padding: 2rem;
 }
 
 .logo {
