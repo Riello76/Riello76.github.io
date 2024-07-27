@@ -84,6 +84,7 @@ main {
 main p {
   line-height: 3rem; /* Line height */
   word-spacing: 0.3rem; /* Word spacing */
+  font-size: 2rem;
 }
 
 #experience p > span {
