@@ -134,6 +134,12 @@ main h3 {
 .carousel-inner {
   border-radius: 100%;
   width: clamp(30rem, 50vw, 70rem);
+  border: 2px solid var(--info-color);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: var(--main-color);
 }
 
 /* ========== My tools ========== */
