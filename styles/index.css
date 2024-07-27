@@ -96,38 +96,32 @@ main h3 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 1rem;
-  background: var(--background-color);
-  margin-bottom: 0.5rem;
 }
 
 .about-me p {
-  width: 60%;
+  background: var(--background-color);
+  padding: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .about-me-p1 {
-  margin: 0 0 2rem 5rem;
-  width: 105%;
+  width: 100%;
 }
 
 .about-me-p2 {
-  margin: 0 0 2rem 10rem;
-  width: 91%;
+  width: 90%;
 }
 
 .about-me-p3 {
-  margin: 0 0 2rem 15rem;
-  width: 84%;
+  width: 80%;
 }
 
 .about-me-p4 {
-  margin: 0 0 2rem 20rem;
-  width: 85%;
+  width: 90%;
 }
 
 .about-me-p5 {
-  margin: 0 0 2rem 25rem;
-  width: 90%;
+  width: 100%;
 }
 
 /* ========== Carousel ========== */
@@ -145,14 +139,14 @@ main h3 {
 /* ========== My tools ========== */
 .my-tools {
   margin-bottom: 0.5rem;
-  background: var(--background-color);
 }
 
 .my-tools div {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  background: var(--background-color);
+  margin-bottom: 0.5rem;
 }
 
 .my-tools p {
@@ -216,16 +210,6 @@ hr {
   .about-me {
     flex-direction: column-reverse;
 
-  }
-
-  .about-me p,
-  .about-me-p1,
-  .about-me-p2,
-  .about-me-p3,
-  .about-me-p4,
-  .about-me-p5 {
-    width: 100%;
-    margin: 0 0 2rem 0;
   }
 
   .my-tools div {
