@@ -119,7 +119,7 @@ picture {
 }
 
 .logo {
-  width: clamp(10rem,20rem,50rem);
+  width: clamp(10rem, 20rem, 50rem);
   height: auto;
   border-radius: 100%;
 }
@@ -134,7 +134,6 @@ picture {
 .cs-navbar {
   float: right;
   z-index: 1000;
-  margin-top: 1rem;
 }
 
 .nav-link {
@@ -171,8 +170,8 @@ picture {
 }
 
 .navbar-toggler-icon {
-  width: 2.5rem;
-  height: 2rem;
+  width: 4rem;
+  height: 3rem;
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -190,20 +189,20 @@ picture {
 }
 
 .navbar-toggler-icon .bar:nth-child(1) {
-  top: 0.25rem;
+  top: 0.20rem;
 }
 
 .navbar-toggler-icon .bar:nth-child(2) {
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
 }
 
 .navbar-toggler-icon .bar:nth-child(3) {
-  bottom: 0.25rem;
+  bottom: 0.80rem;
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .bar:nth-child(1) {
-  transform: translateY(0.50rem) rotate(45deg);
+  transform: translateY(1rem) rotate(45deg);
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .bar:nth-child(2) {
@@ -226,27 +225,13 @@ picture {
   text-align: center;
   color: var(--secondary-color);
   font-weight: bold;
+  font-size: 3rem;
+  animation: CTA infinite 3s ease-in-out;
 }
 
 /* ========== Media Queries ========== */
-@media screen and (min-width: 320px) and (max-width: 425px) {
 
-  .cs-navbar {
-    float: left;
-  }
-
-  .cs-collapse-navbar {
-    border-radius: 0 var(--border-radius) var(--border-radius) 0;
-    background: var(--background-color);
-  }
-
-  .cs-container-fluid {
-    position: absolute;
-    top: 0;
-  }
-}
-
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   html,
   body {
@@ -256,6 +241,12 @@ picture {
 
   .cs-navbar {
     float: left;
+    width: 30%;
+  }
+
+  .cs-navbar h5,
+  .cs-navbar a {
+    font-size: 2.5rem;
   }
 
   .cs-collapse-navbar {

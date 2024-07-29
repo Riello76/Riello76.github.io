@@ -4,17 +4,16 @@
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   background-color: var(--tertiary-color);
 }
 
+/* ========== Top Main ========== */
 .top-main {
   background: var(--background-color);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   width: 100%;
   margin-bottom: 0.5rem;
 }
@@ -23,8 +22,11 @@ main {
 .hero-img-container {
   position: relative;
   text-align: center;
+  font-weight: bold;
 }
-
+.hero-img-container h2{
+  font-weight:bold;
+}
 .hero-img {
   width: 100%;
   height: auto;
@@ -37,20 +39,19 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .cta-btn {
   padding: 1rem 2rem;
-  background-color: var(--main-color);
+  background-color: red;
   border-radius: var(--border-radius);
-  border: 0.1rem solid var(--info-color);
+  border: 0.5rem solid var(--info-color);
   text-decoration: none;
   text-align: center;
   font-weight: bold;
   cursor: pointer;
   display: inline-block;
-  animation: CTA infinite 3s ease-in-out;
+  animation: CTA infinite 2s ease-in-out;
 }
 
 @keyframes CTA {
@@ -81,34 +82,31 @@ main {
   color: var(--info-color);
   margin-bottom: 0.5rem;
 }
-
-main h3 {
+.middle-main h3 {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 0.5rem;
+  margin: 0 30rem 0.5rem 0;
   background: var(--background-color);
 }
-
 /* ========== About me ========== */
 .about-me {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .about-me p {
   background: var(--background-color);
-  padding: 1rem;
+ padding: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.about-me-p1 {
+.about-me-p1,.about-me-p5 {
   width: 100%;
 }
 
-.about-me-p2 {
+.about-me-p2,.about-me-p4 {
   width: 90%;
 }
 
@@ -116,19 +114,14 @@ main h3 {
   width: 80%;
 }
 
-.about-me-p4 {
-  width: 90%;
-}
-
-.about-me-p5 {
-  width: 100%;
-}
-
 /* ========== Carousel ========== */
+#carouselExampleIndicators{
+  margin-right: 5rem;
+}
 .carousel-inner {
   border-radius: 100%;
   width: clamp(30rem, 50vw, 70rem);
-  border: 2px solid var(--info-color);
+  border: 0.3rem solid var(--info-color);
 }
 
 .carousel-control-next-icon,
@@ -139,24 +132,22 @@ main h3 {
 /* ========== My tools ========== */
 .my-tools div {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+}
+.my-tools h3{
+    text-align: center;
+    width: 100%;
+    background: var(--background-color);
+}
+.my-tools p {
   background: var(--background-color);
   margin-bottom: 0.5rem;
-}
-
-.my-tools p {
-  width: 100%;
-  overflow: auto;
-  padding: 1rem;
+  width: 90%;
+ padding: 1rem;
 }
 
 .my-tools img {
   width: 10rem;
-}
-
-hr {
-  color: var(--info-color);
 }
 
 /* ========== Technical Details ========== */
@@ -166,13 +157,19 @@ hr {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+.technical-details h3{
+  text-align: center;
+  width: 100%;
   background: var(--background-color);
   margin-bottom: 0.5rem;
 }
-
 .technical-details p {
   width: 100%;
-  padding: 1rem;
+  background: var(--background-color);
+ padding: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .technical-details div {
@@ -181,6 +178,7 @@ hr {
 
 .technical-img-div {
   display: flex;
+  background: var(--background-color);
   justify-content: space-around;
 }
 
@@ -202,7 +200,9 @@ hr {
     background-size: 100%;
     height: 100%;
   }
-
+    #carouselExampleIndicators {
+      margin-right: 0;
+    }
   .about-me {
     flex-direction: column-reverse;
 
@@ -210,6 +210,10 @@ hr {
 
   .my-tools div {
     flex-direction: column-reverse;
+  }
+
+  .my-tools p {
+    width: 100%;
   }
 
   .my-tools a {

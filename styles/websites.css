@@ -39,7 +39,6 @@ main {
 }
 .middle-main p {
   background: var(--background-color);
-  padding: 1rem;
 }
 .old-portfolio-div,
 .glastonbury-div {
@@ -56,6 +55,7 @@ main {
   align-items: center;
   background: var(--background-color);
   width: 100%;
+  padding: 1rem;
 }
 
 /* ========== Media Queries ========== */
