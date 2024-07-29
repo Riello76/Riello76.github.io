@@ -219,6 +219,13 @@ main {
   .about-me {
     flex-direction: column-reverse;
   }
+  .about-me-p1,
+  .about-me-p2,
+  .about-me-p3,
+  .about-me-p4,
+  .about-me-p5 {
+    width: 100%;
+  }
 
   .my-tools div {
     flex-direction: column-reverse;
@@ -227,13 +234,11 @@ main {
   .my-tools p {
     width: 100%;
   }
-
   .my-tools a {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .technical-details p {
     width: 100%;
   }
