@@ -24,9 +24,11 @@ main {
   text-align: center;
   font-weight: bold;
 }
-.hero-img-container h2{
-  font-weight:bold;
+
+.hero-img-container h2 {
+  font-weight: bold;
 }
+
 .hero-img {
   width: 100%;
   height: auto;
@@ -82,13 +84,15 @@ main {
   color: var(--info-color);
   margin-bottom: 0.5rem;
 }
+
 .middle-main h3 {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 0 30rem 0.5rem 0;
+  margin-bottom: 0.5rem;
   background: var(--background-color);
 }
+
 /* ========== About me ========== */
 .about-me {
   width: 100%;
@@ -98,15 +102,17 @@ main {
 
 .about-me p {
   background: var(--background-color);
- padding: 1rem;
+  padding: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.about-me-p1,.about-me-p5 {
+.about-me-p1,
+.about-me-p5 {
   width: 100%;
 }
 
-.about-me-p2,.about-me-p4 {
+.about-me-p2,
+.about-me-p4 {
   width: 90%;
 }
 
@@ -115,9 +121,10 @@ main {
 }
 
 /* ========== Carousel ========== */
-#carouselExampleIndicators{
+#carouselExampleIndicators {
   margin-right: 5rem;
 }
+
 .carousel-inner {
   border-radius: 100%;
   width: clamp(30rem, 50vw, 70rem);
@@ -134,16 +141,18 @@ main {
   display: flex;
   align-items: center;
 }
-.my-tools h3{
-    text-align: center;
-    width: 100%;
-    background: var(--background-color);
+
+.my-tools h3 {
+  text-align: center;
+  width: 100%;
+  background: var(--background-color);
 }
+
 .my-tools p {
   background: var(--background-color);
   margin-bottom: 0.5rem;
   width: 90%;
- padding: 1rem;
+  padding: 1rem;
 }
 
 .my-tools img {
@@ -159,16 +168,18 @@ main {
   flex-direction: column;
   margin-bottom: 0.5rem;
 }
-.technical-details h3{
+
+.technical-details h3 {
   text-align: center;
   width: 100%;
   background: var(--background-color);
   margin-bottom: 0.5rem;
 }
+
 .technical-details p {
   width: 100%;
   background: var(--background-color);
- padding: 1rem;
+  padding: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -200,12 +211,13 @@ main {
     background-size: 100%;
     height: 100%;
   }
-    #carouselExampleIndicators {
-      margin-right: 0;
-    }
+
+  #carouselExampleIndicators {
+    margin-right: 0;
+  }
+
   .about-me {
     flex-direction: column-reverse;
-
   }
 
   .my-tools div {
