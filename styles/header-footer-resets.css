@@ -96,7 +96,7 @@ html {
   flex-direction: column;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+  overflow-x: hidden;
   /* Reset to 10px for rem */
   font-size: 62.5%;
 }
@@ -216,8 +216,12 @@ picture {
 /* ========== Footer ========== */
 .cs-footer {
   background: var(--background-color);
+  padding: 1rem;
 }
-
+.cs-footer a{
+  text-decoration-color: var(--secondary-color);
+  
+}
 .go-to-top {
   display: flex;
   text-decoration: none;

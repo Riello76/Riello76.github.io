@@ -42,19 +42,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
 // Carousel Script
 
 // Select all slide images and bullet elements
-const slides = document.querySelectorAll(".carousel-slide img"),
-  bullets = document.querySelectorAll(".carousel-bullets .bullet");
+const slides = document.querySelectorAll(".carousel-slide img");
+const bullets = document.querySelectorAll(".carousel-bullets .bullet");
+const nextButton = document.querySelector(".next");
+const prevButton = document.querySelector(".prev");
 
 // Initialize the current slide index
 let currentSlide = 0;
-
-// Set the first image and the first bullet as active on page load
-slides[currentSlide].classList.add("active");
-bullets[currentSlide].classList.add("active");
 
 // Function to show a specific slide
 const showSlide = (index) => {
@@ -62,8 +59,8 @@ const showSlide = (index) => {
   currentSlide = (index + slides.length) % slides.length;
 
   // Remove the "active" class from all slides and bullets
-  slides.forEach((slide, i) => slide.classList.remove("active"));
-  bullets.forEach((bullet, i) => bullet.classList.remove("active"));
+  slides.forEach(slide => slide.classList.remove("active"));
+  bullets.forEach(bullet => bullet.classList.remove("active"));
 
   // Add the "active" class to the current slide and bullet
   slides[currentSlide].classList.add("active");
@@ -71,18 +68,27 @@ const showSlide = (index) => {
 };
 
 // Add click event listener for the "next" button to show the next slide
-document.querySelector(".next").onclick = () => showSlide(currentSlide + 1);
+nextButton.addEventListener("click", () => showSlide(currentSlide + 1));
 
 // Add click event listener for the "prev" button to show the previous slide
-document.querySelector(".prev").onclick = () => showSlide(currentSlide - 1);
+prevButton.addEventListener("click", () => showSlide(currentSlide - 1));
 
 // Add click event listeners to each bullet to show the corresponding slide
 bullets.forEach((bullet, index) => {
-  bullet.onclick = () => showSlide(index);
+  bullet.addEventListener("click", () => showSlide(index));
 });
 
 // Automatically show the next slide every 2 seconds
-setInterval(() => showSlide(currentSlide + 1), 2000);
+let autoSlideInterval = setInterval(() => showSlide(currentSlide + 1), 2000);
+
+// Function to stop the automatic slide show (if needed)
+const stopAutoSlide = () => clearInterval(autoSlideInterval);
+
+// Stop the automatic slide show when the user interacts with the controls
+nextButton.addEventListener("click", stopAutoSlide);
+prevButton.addEventListener("click", stopAutoSlide);
+bullets.forEach(bullet => bullet.addEventListener("click", stopAutoSlide));
+
 
 // Hamburger Menu Script
 

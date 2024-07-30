@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://www.glastonburyfestivals.co.uk/" />
 
     <!-- link to external file -->
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/info.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
@@ -43,7 +43,8 @@
                 <button id="gallery" class="nav-btn" onclick="subPage(this.id)">Gallery</button>
                 <button id="shop" class="nav-btn" onclick="subPage(this.id)">Shop</button>
                 <button id="news" class="nav-btn" onclick="subPage(this.id)">News</button>
-                <button id="websites" class="nav-btn" onclick="window.location.href='../../../websites.html'">Websites</button>
+                <button id="websites" class="nav-btn"
+                    onclick="window.location.href='../../../websites.html'">Websites</button>
                 <div class="search-container">
                     <form action="#" method="get">
                         <input type="text" placeholder="  Search..." name="query" class="search-input"
@@ -57,12 +58,17 @@
     <!-- Header End -->
 
     <!-- Main Start -->
-    <main>
-        <img src="../images/info-main-image.webp" alt="info main image">
+    <main class="main-info">
+
         <section class="top-section">
-            <section class="info-festival news-p">
+            <img src="../images/info-main-image.webp" width="200px" alt="info main image">
+            <img src="../images/coach-info.webp" width="200px" alt="coaches info image">
+        </section>
+
+        <section class="middle-section">
+            <section class="ticket-info">
                 <h2>GLASTONBURY TICKET INFO</h2>
-                <p>
+                <p class="info-p">
                     Glastonbury Festival (formally Glastonbury Festival of Contemporary Performing Arts and known
                     colloquially as Glastonbury) is a five-day festival of contemporary performing arts held near
                     Pilton, Somerset, England, in most summers. In addition to contemporary music, the festival hosts
@@ -94,10 +100,10 @@
                 </p>
 
             </section>
-            <section class="info-festival news-p">
+            <section class="coaches-info">
                 <h2>GLASTONBURY COACHES INFO</h2>
-                <img src="../images/coach-info.webp" width="100%" alt="coaches info image">
-                <p>
+             
+                <p class="info-p">
                     As part of the Festival’s initiative to encourage Festival goers to reduce audience transport
                     emissions, deposits for combined ticket + coach travel options went on sale at 6pm GMT on Thursday
                     16th November 2023, giving the opportunity to book tickets + coach travel ahead of the general
@@ -111,14 +117,14 @@
                     Coach Departure Town and Coach Departure Day (Wednesday or Thursday). Please note you must have
                     chosen one option for your group as a whole – you cannot select multiple options within one
                     transaction.
-                       <br><br>
+                    <br><br>
                     Ticket balances for ticket + coach travel bookings were due in the balance payment window, between
                     the 1st and 7th April 2024.
-                       <br><br>
+                    <br><br>
                     You must not book in the ticket + coach travel sale unless you are certain you will be able to
                     travel on the coach you have selected, as travel on your chosen coach is mandatory in order to
                     receive your Festival tickets.
-                       <br><br>
+                    <br><br>
                     If you are travelling with children aged 12 and under, who do not require an entry ticket for the
                     Festival, you will need to book these additional coach seats whilst making your ticket + coach
                     travel booking. If the additional seats required are not available when booking, please contact <a
@@ -128,9 +134,9 @@
                 </p>
 
             </section>
-            <section class="info-festival news-p">
+            <section class="registration-info">
                 <h2>GLASTONBURY REGISTRATION</h2>
-                <p>
+                <p class="info-p">
                     To prevent touting, tickets for Glastonbury Festival are non-transferable. Each ticket features the
                     photograph of the registered ticket holder with security checks carried out to ensure that only the
                     person in the photograph is admitted to the Festival.

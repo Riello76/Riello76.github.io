@@ -1,259 +1,4 @@
-/* ------------------------------------------------------- Reset CSS */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  /*---------------------------------- Background color for the body */
-  --body-bg-color: #07348c;
-
-  /*---------------------------------- Font family for the body text */
-  --body-font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-
-  /*---------------------------------------- Text color for the body */
-  --body-color: white;
-
-  /*-------------------------- Font sizes for various heading levels */
-  --h1-font-size: 2.4rem;
-  --h2-font-size: 2rem;
-  --h3-font-size: 1.8rem;
-  --h4-font-size: 1.6rem;
-  --h5-font-size: 1.4rem;
-  --h6-font-size: 1.2rem;
-
-  /*---------------------------------- Font size for paragraph text */
-  --p-font-size: 1.7rem;
-
-  /*---------------------------------- Font size for label elements */
-  --label-font-size: 2rem;
-
-  /*------------------------------------------- Default font weight */
-  --font-weight: bold;
-
-  /*----------------------------------------- Font size for buttons */
-  --button-font-size: 2rem;
-
-  /*-------- Background and text colors for different button styles */
-  --bg-color-btn1: #8c0102ff;
-  --color-btn1: white;
-  --bg-color-btn2: #f1b300ff;
-  --color-btn2: black;
-  --bg-color-btn3: #052e6eff;
-  --color-btn3: white;
-  --bg-color-btn4: #027016ff;
-  --color-btn4: white;
-  --bg-color-btn5: #d6c2a0ff;
-  --color-btn5: black;
-  --bg-color-btn6: #3999d0ff;
-  --color-btn6: white;
-
-  /*------------------- Background color for a specific button style */
-  --bg-color-btn7: #674c37ff;
-
-  /*------------------------------------- Linear gradient background */
-  --bg-linear-gradient: linear-gradient(to bottom,
-      rgb(0, 0, 0, 1),
-      rgb(0, 0, 0, 0.2));
-
-  /*--------------------------------- Background color for containers */
-  --bg-color-container: black;
-
-  /*------------------------------------------ Box shadow for buttons */
-  --box-shadow-button: 0px 0px 10px white;
-
-  /*-------------------------------------------- Larger border radius */
-  --border-radius-bigger: 5rem;
-
-  /*------------------------------------------- Smaller border radius */
-  --border-radius-smaller: 2rem;
-}
-
-html {
-  font-size: 62.5%; 
-}
-
-/* ------------------------------------------------------------ Images */
-img,
-picture {
-  display: block;
-  max-width: 100%; 
-}
-/* -------------------------------------------------------- Typography */
-p {
-  padding: 0.6rem;
-  line-height: 3rem;
-  font-weight: bolder;
-}
-/* ------------------------------------------------------- Body Styles */
-body {
-  background-color: var(--body-bg-color); /* Background color */
-  color: var(--body-color); /* Text color */
-  font-family: var(--body-font-family); /* Font stack */
-  height: 100vh; /* Full viewport height */
-  max-height: 100%;
-  width: 100vw; /* Full viewport width */
-  max-width: 100%;
-  overflow-x: hidden; /* Hides horizontal overflow */
-}
-
-/* ----------------------------------------------------- Header Styles */
-header {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.logo {
-  width: 20%;
-  position: absolute;
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
-}
-
-/* ------------------------------------------------------ Navbar Styles*/
-nav {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  padding: 1rem;
-}
-
-.navbar-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  gap: 2rem;
-}
-
-/* ---------------------------------------------- Navbar Button Styles */
-.nav-btn {
-  width: 9%;
-  cursor: pointer;
-  font-weight: var(--font-weight);
-  font-size: var(--button-font-size);
-}
-
-.nav-btn:hover {
-  transition: transform 0.6s ease;
-  box-shadow: var(--box-shadow-button);
-}
-.nav-btn.selected {
-  animation: btnAnimation 5s infinite ease-in-out;
-}
-
-@keyframes btnAnimation {
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
-
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-    box-shadow: 0px 0px 10px white;
-    border-radius: var(--border-radius-smaller);
-  }
-}
-
-/* -------------------------------------------- Navbar Button Background */
-#home {
-  background-color: var(--bg-color-btn1);
-  color: var(--color-btn1);
-}
-
-#info {
-  background-color: var(--bg-color-btn2);
-  color: var(--color-btn2);
-}
-
-#line-up {
-  background-color: var(--bg-color-btn3);
-  color: var(--color-btn3);
-}
-
-#areas {
-  background-color: var(--bg-color-btn4);
-  color: var(--color-btn4);
-}
-
-#gallery {
-  background-color: var(--bg-color-btn5);
-  color: var(--color-btn5);
-}
-
-#shop {
-  background-color: var(--bg-color-btn6);
-  color: var(--color-btn6);
-}
-
-#news {
-  background-color: var(--bg-color-btn7);
-  color: var(--color-btn7);
-}
-#websites {
-  background-color: var(--bg-color-container);
-  color: var(--body-color);
-}
-
-/* --------------------------------------------------- Search Bar Styles */
-.search-container {
-  width: 30%;
-  margin: 2rem;
-}
-
-.search-input {
-  width: 70%;
-  height: 3rem;
-}
-
-.search-container > form > button {
-  width: 20%;
-  cursor: pointer;
-  height: 3rem;
-  font-size: var(--h6-font-size);
-}
-
-/* ----------------------------------------------- Hamburger Menu Styles */
-.hamburger {
-  display: none;
-  position: absolute;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  width: 4rem;
-  height: 4rem;
-  background-color: transparent;
-  border: none;
-  top: 1rem;
-  right: 1rem;
-  top: -3rem;
-  z-index: 1000;
-    border-radius: 100%;
-    border: 0.2rem solid var(--body-color);
-}
-
-.hamburger div {
-  height: 0.3rem;
-  background-color: var(--bg-color-hamburger);
-  margin: 0.3rem 0;
-}
-
-.hamburger.active div {
-  background-color: var(--body-color);
-}
-
-/* ---------------------------------------------------------- Header End */
+@import url(./header-footer-resets.css);
 
 /* ---------------------------------------------------------- Main Start */
 main {
@@ -629,53 +374,6 @@ main {
 
 /* ------------------------------------------------------------ Main End */
 
-/* -------------------------------------------------------- Footer Start */
-footer {
-  background: var(--bg-linear-gradient);
-  padding: 2rem;
-  text-align: center;
-  box-shadow: var(--box-shadow);
-  margin-top: 2rem;
-}
-
-.back-to-top {
-  text-decoration: none;
-  letter-spacing: 0.2rem;
-  font-size: var(--h2-font-size);
-  cursor: pointer;
-  animation: animation-text 3s infinite ease-in-out;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin: 0.5rem;
-}
-
-.footer-links a {
-  color: var(--body-color);
-  text-decoration: none;
-  padding: 0.5rem;
-  font-size: var(--h2-font-size);
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-  transform: scale(0.9);
-}
-
-.footer-info {
-  font-size: var(--h2-font-size);
-  line-height: 1.5;
-}
-
-.footer-info p {
-  margin: 0.5rem 0;
-}
-/* ---------------------------------------------------------- Footer End */
-
 /*------------------------------------------------  Gallery Styles Start */
 
 .gallery-item {
@@ -723,75 +421,6 @@ footer {
 /* ------------------------------------------------- Media Queries Start */
 
 @media screen and (max-width: 768px) {
-  /*---------------------------------------------- Hamburger Menu Styles */
-  .hamburger {
-    display: flex;
-    background-color: var(--bg-color-container);
-    align-items: center;
-    justify-content: center;
-    top: -4rem;
-  }
-
-  .hamburger div {
-    background-color: var(--body-color);
-    width: 2rem;
-    height: 0.3rem;
-  }
-
-  /*------------------------------------------- Navbar Buttons Container */
-  .navbar-buttons {
-    display: none;
-    gap: 1rem;
-    position: absolute;
-    right: 1rem;
-    background-color: var(--bg-color-container);
-    padding: 1rem;
-    border-radius: 1rem;
-    z-index: 10;
-    width: 15rem;
-  }
-  .nav-btn {
-    color: var(--body-color);
-    width: 70%;
-    font-size: var(--h6-font-size);
-    text-align: center;
-    border: 0.1rem solid var(--body-color);
-  }
-  .navbar-buttons.active {
-    display: flex;
-    border: 0.2rem solid var(--body-color);
-  }
-
-  /*--------------------------------------------- Search Container Styles */
-  .search-container {
-    margin-top: 1rem;
-    width: 100%;
-  }
-
-  .search-input {
-    width: 100%;
-    height: 2rem;
-    font-size: 1rem;
-    background-color: transparent;
-    border: 1px solid var(--body-color);
-    border-radius: 0.5rem;
-    color: var(--body-color);
-    margin-bottom: 1rem;
-  }
-
-  .search-input::placeholder {
-    color: var(--body-color);
-  }
-
-  .search-container > form > button {
-    width: 100%;
-    height: 2rem;
-    font-size: 1.5rem;
-    background-color: var(--bg-color-btn1);
-    color: var(--color-btn1);
-    border: none;
-    border-radius: 0.5rem;
-  }
 
   /*--------------------------------------------------------------- Main */
   main {
@@ -834,28 +463,18 @@ footer {
 }
 /* --------------------------------------------------------------------- */
 @media screen and (min-width: 2560px) {
-  /* Main Start */
+
   .top-section p,
-  .middle-section p,
-  footer p,
-  .footer-links a {
+  .middle-section p {
     font-size: 2.5rem;
   }
   .top-section h2,
   .middle-section h2,
   .middle-section span,
-  .back-to-top,
   .card h3 {
     font-size: 3rem;
   }
-  .navbar-buttons > button {
-    font-size: 4rem;
-  }
-  .search-input,
-  .search-container > form > button {
-    height: 4rem;
-    font-size: var(--h3-font-size);
-  }
+
   .top-section {
     margin-bottom: 5rem;
   }
@@ -876,6 +495,5 @@ footer {
   .info-location {
     height: 70rem;
   }
-  /* Main End */
 }
 /* ------------------------------------------------- Media Queries End */

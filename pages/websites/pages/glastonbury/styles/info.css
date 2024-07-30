@@ -1,0 +1,148 @@
+/* Importing external CSS */
+@import url(./header-footer-resets.css);
+
+/* Main container styling */
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40rem;
+    /* Large gap between items */
+}
+
+/* Top section styling */
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40rem;
+    /* Fixed height for the top section */
+}
+
+.top-section img {
+    width: 50%;
+    /* Width of image is 50% of its container */
+}
+
+/* Middle section styling */
+.middle-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Space items evenly */
+}
+
+/* Ticket, coaches, and registration info containers */
+.ticket-info,
+.coaches-info,
+.registration-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    /* Default width for larger screens */
+    height: 70rem;
+    /* Fixed height */
+}
+
+/* Header styling within info containers */
+.ticket-info h2,
+.coaches-info h2,
+.registration-info h2 {
+    width: 100%;
+    text-align: center;
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-weight);
+    background: var(--bg-linear-gradient);
+    border-top-left-radius: var(--border-radius-smaller);
+    border-top-right-radius: var(--border-radius-smaller);
+}
+
+/* Styling for scrollable content */
+.info-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50rem;
+    /* Fixed height */
+    margin-bottom: 3rem;
+    overflow-y: scroll;
+    /* Scrollable content */
+    background: var(--bg-linear-gradient);
+    font-size: var(--p-font-size);
+}
+
+/* Custom scrollbar styles */
+.info-p::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+.info-p::-webkit-scrollbar-track {
+    background: var(--bg-linear-gradient);
+}
+
+.info-p::-webkit-scrollbar-thumb {
+    background-color: var(--body-color);
+    border-radius: var(--border-radius-smaller);
+}
+
+/* Media query for small screens (320px to 425px) */
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .main-info {
+        gap: 0;
+        /* Remove gap */
+    }
+
+    .top-section img {
+        width: 100%;
+        /* Full width image */
+    }
+
+    .middle-section {
+        flex-direction: column;
+        /* Stack items vertically */
+    }
+
+    .ticket-info,
+    .coaches-info,
+    .registration-info {
+        width: 100%;
+        /* Full width containers */
+    }
+}
+
+/* Media query for medium screens (426px to 768px) */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .main-info {
+        gap: 0;
+        /* Remove gap */
+    }
+    .top-section{
+        margin-bottom: 40rem;
+    }
+    .top-section img {
+        width: 100%;
+        /* Full width image */
+    }
+
+    .middle-section {
+        flex-direction: column;
+        /* Stack items vertically */
+    }
+
+    .ticket-info,
+    .coaches-info,
+    .registration-info {
+        width: 100%;
+        /* Full width containers */
+    }
+}
+
+/* Media query for very large screens (2560px and above) */
+@media screen and (min-width: 2560px) {
+    .top-section{
+        width:100%;
+        margin-bottom: 50rem;
+    }
+}
