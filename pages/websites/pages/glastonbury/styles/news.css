@@ -1,0 +1,77 @@
+@import url(./header-footer-resets.css);
+
+/* Main container styling */
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Top section styling */
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Middle section styling */
+.middle-section {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.news-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.news-info h2 {
+    width: 100%;
+    text-align: center;
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-weight);
+    background: var(--bg-linear-gradient);
+    border-top-left-radius: var(--border-radius-smaller);
+    border-top-right-radius: var(--border-radius-smaller);
+}
+
+/* Styling for scrollable content */
+.info-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50rem;
+    /* Fixed height */
+    margin-bottom: 3rem;
+    overflow-y: scroll;
+    /* Scrollable content */
+    background: var(--bg-linear-gradient);
+    font-size: var(--p-font-size);
+}
+
+/* Custom scrollbar styles */
+.info-p::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+.info-p::-webkit-scrollbar-track {
+    background: var(--bg-linear-gradient);
+}
+
+.info-p::-webkit-scrollbar-thumb {
+    background-color: var(--body-color);
+    border-radius: var(--border-radius-smaller);
+}
+
+@media screen and (max-width: 768px) {
+ .middle-section{
+    flex-direction: column;
+ }
+ .news-info{
+    width: 100%;
+ }
+}

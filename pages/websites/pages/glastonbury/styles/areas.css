@@ -1,0 +1,155 @@
+@import url(./header-footer-resets.css);
+
+/* Main container styling */
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Top section styling */
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Middle section styling */
+.middle-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.areas-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.areas-info h2 {
+    width: 100%;
+    text-align: center;
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-weight);
+    background: var(--bg-linear-gradient);
+    border-top-left-radius: var(--border-radius-smaller);
+    border-top-right-radius: var(--border-radius-smaller);
+}
+
+/* Styling for scrollable content */
+.info-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50rem;
+    /* Fixed height */
+    margin-bottom: 3rem;
+    overflow-y: scroll;
+    /* Scrollable content */
+    background: var(--bg-linear-gradient);
+    font-size: var(--p-font-size);
+}
+
+/* Custom scrollbar styles */
+.info-p::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+.info-p::-webkit-scrollbar-track {
+    background: var(--bg-linear-gradient);
+}
+
+.info-p::-webkit-scrollbar-thumb {
+    background-color: var(--body-color);
+    border-radius: var(--border-radius-smaller);
+}
+
+/*-------------------------------------------------------- Carousel Start */
+.carousel-container {
+    position: relative;
+    width: 45%;
+    height: 100%;
+    border-radius: var(--border-radius-bigger);
+    order: 2;
+}
+
+.carousel-slide {
+    display: flex;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: var(--border-radius-bigger);
+}
+
+.carousel-slide img.active {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.carousel-navigation {
+    position: absolute;
+    transform: translateY(-100%);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carousel-navigation img {
+    cursor: pointer;
+}
+
+.prev:hover {
+    background-image: url(../icons/carousel-left.active.svg);
+}
+
+.next:hover {
+    background-image: url(../icons/carousel-right.active.svg);
+}
+
+.carousel-navigation button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.carousel-bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.carousel-bullets .bullet {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--body-color);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel-bullets .bullet.active {
+    background-color: rgba(252, 69, 2, 1);
+    transform: scale(1.3);
+}
+
+.info-areas {
+    width: 100%;
+}
+
+/*---------------------------------------------------------- Carousel End */
+
+@media screen and (max-width: 768px) {
+.carousel-container {
+        width: 100%;
+    }
+}

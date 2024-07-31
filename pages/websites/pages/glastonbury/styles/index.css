@@ -374,49 +374,6 @@ main {
 
 /* ------------------------------------------------------------ Main End */
 
-/*------------------------------------------------  Gallery Styles Start */
-
-.gallery-item {
-  position: relative;
-  width: 40%;
-}
-
-.gallery-item img {
-  height: 100%;
-  box-shadow: 0px 0px 20px black;
-  border: 2px solid black;
-}
-.gallery-item:hover {
-  box-shadow: 0px 0px 20px white;
-}
-.caption {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  width: 100%;
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 2rem;
-}
-@media screen and (max-width: 768px) {
-  .middle-section-news{
-   flex-direction: column;
-   width: 80%;
-  }
-  .gallery-item {
-    width: 100%;
-  }
-  .caption {
-    font-size: 1.5rem;
-  }
-  @media screen and (min-width: 2560px) {
-    .caption {
-      font-size: 3rem;
-    }
-  }
-}
-/*--------------------------------------------------- Gallery Styles End */
 
 /* ------------------------------------------------- Media Queries Start */
 
