@@ -127,7 +127,7 @@ main {
 
 .carousel-inner {
   border-radius: 100%;
-  width: clamp(30rem, 50vw, 70rem);
+  width: 60rem;
   border: 0.3rem solid var(--info-color);
 }
 
@@ -216,9 +216,14 @@ main {
     margin-right: 0;
   }
 
+  .carousel-inner {
+    width: 100%;
+  }
+
   .about-me {
     flex-direction: column-reverse;
   }
+
   .about-me-p1,
   .about-me-p2,
   .about-me-p3,
@@ -234,12 +239,19 @@ main {
   .my-tools p {
     width: 100%;
   }
+
   .my-tools a {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .technical-details p {
     width: 100%;
   }
+}
+@media screen and (min-width: 2560px) {
+  .carousel-inner {
+      width: 90rem;
+    }
 }
