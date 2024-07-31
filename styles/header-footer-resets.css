@@ -131,6 +131,7 @@ picture {
   text-align: center;
   animation: bounceInOpacity 3s ease-out;
 }
+
 @keyframes bounceInOpacity {
   0% {
     transform: scale(0.5);
@@ -152,9 +153,12 @@ picture {
 .cs-navbar {
   float: right;
   z-index: 1000;
-    animation: bounceInOpacity 3s ease-out;
+  animation: bounceInOpacity 3s ease-out;
 }
-
+.cs-navbar h5:hover,.dropdown-toggle:hover::after{
+  color: #FFB74D;
+  transform: scale(1.1);
+}
 .nav-link {
   display: flex;
   align-items: center;
@@ -237,10 +241,12 @@ picture {
   background: var(--background-color);
   padding: 1rem;
 }
-.cs-footer a{
+
+.cs-footer a {
   text-decoration-color: var(--secondary-color);
-  
+
 }
+
 .go-to-top {
   display: flex;
   text-decoration: none;
