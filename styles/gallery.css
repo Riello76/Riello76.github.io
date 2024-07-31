@@ -35,7 +35,10 @@ main {
   text-align: center;
   background: var(--background-color);
 }
+.middle-main img{
+  animation: bounceInOpacity 3s ease-out;
 
+}
 .middle-main p {
   background: var(--background-color);
   padding: 1rem;
