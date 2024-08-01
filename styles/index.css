@@ -256,4 +256,7 @@ main {
   .carousel-inner {
     width: 90rem;
   }
+    .hero-img {
+      width: 100vw;
+    }
 }
