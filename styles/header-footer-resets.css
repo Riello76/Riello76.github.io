@@ -129,7 +129,6 @@ picture {
   width: 100%;
   height: auto;
   text-align: center;
-  animation: bounceInOpacity 3s ease-out;
 }
 
 @keyframes bounceInOpacity {
@@ -153,7 +152,6 @@ picture {
 .cs-navbar {
   float: right;
   z-index: 1000;
-  animation: bounceInOpacity 3s ease-out;
 }
 .cs-navbar h5:hover,.dropdown-toggle:hover::after{
   color: #FFB74D;
