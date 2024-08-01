@@ -123,6 +123,7 @@ picture {
   height: auto;
   border-radius: 100%;
   animation: bounceInOpacity 3s ease-out;
+  will-change: transform;
 }
 
 .title {
@@ -153,10 +154,12 @@ picture {
   float: right;
   z-index: 1000;
 }
+
 .cs-navbar a {
   padding: 0.75rem 1rem;
   margin: 0.5rem;
 }
+
 .cs-navbar h5:hover,
 .dropdown-toggle:hover::after {
   color: #FFB74D;
@@ -263,6 +266,7 @@ picture {
   font-weight: bold;
   font-size: 3rem;
   animation: Bounce 2s infinite;
+  will-change: transform;
 }
 
 @keyframes Bounce {

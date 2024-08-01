@@ -53,7 +53,8 @@ main {
   font-weight: bold;
   cursor: pointer;
   display: inline-block;
-  animation: CTA infinite 2s ease-in-out;
+  animation: CTA infinite 3s ease-in-out;
+  will-change: transform;
 }
 
 @keyframes CTA {
@@ -250,8 +251,9 @@ main {
     width: 100%;
   }
 }
+
 @media screen and (min-width: 2560px) {
   .carousel-inner {
-      width: 90rem;
-    }
+    width: 90rem;
+  }
 }
