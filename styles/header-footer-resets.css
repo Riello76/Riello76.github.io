@@ -160,7 +160,12 @@ picture {
   margin: 0.5rem;
 }
 
-.cs-navbar h5:hover,
+.nav-item-text {
+  color: var(--info-color);
+  font-size: var(--font-size-h5);
+}
+
+.nav-item-text:hover,
 .dropdown-toggle:hover::after {
   color: #FFB74D;
   transform: scale(1.1);
@@ -183,6 +188,7 @@ picture {
 
 .dropdown-menu a {
   color: var(--secondary-color);
+  margin: 0;
 }
 
 .dropdown-item:hover {
@@ -306,7 +312,7 @@ picture {
     width: 30%;
   }
 
-  .cs-navbar h5,
+  .nav-item-text,
   .cs-navbar a {
     font-size: 2.5rem;
   }

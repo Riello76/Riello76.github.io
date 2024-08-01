@@ -54,138 +54,133 @@
 
 
 <body>
-  <!-- ========== HEADER SECTION ========== -->
-  <header>
+<!-- ========== HEADER SECTION ========== -->
+<header>
 
-    <!-- ========== TOP HEADER ========== -->
-    <div class="top-header">
-      <!-- ========== Logo ========== -->
-      <img class="logo" id="top" src="/images/logo.svg" alt="Gaspare Tocci's Logo" title="Gaspare Tocci's Logo" />
+  <!-- ========== TOP HEADER ========== -->
+  <div class="top-header">
+    <!-- ========== Logo ========== -->
+    <img class="logo" id="top" src="/images/logo.svg" alt="Gaspare Tocci's Logo" title="Gaspare Tocci's Logo" />
 
-      <!-- ========== Title ========== -->
-      <h1 class="title">Every problem has its creative solution</h1>
-    </div>
+    <!-- ========== Title ========== -->
+    <h1 class="title">Every problem has its creative solution</h1>
+  </div>
 
-    <!-- ========== NAVIGATION MENU ========== -->
-    <nav class="navbar navbar-expand-lg cs-navbar">
-      <div class="container-fluid cs-container-fluid">
+  <!-- ========== NAVIGATION MENU ========== -->
+  <nav class="navbar navbar-expand-lg cs-navbar" aria-label="Main Navigation">
+    <div class="container-fluid cs-container-fluid">
 
-        <!-- ========== Navbar Toggler Button with Hamburger Icon ========== -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <!-- ========== Hamburger Menu Bar ========== -->
-          <span class="navbar-toggler-icon">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </span>
-        </button>
+      <!-- ========== Navbar Toggler Button with Hamburger Icon ========== -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- ========== Hamburger Menu Bar ========== -->
+        <span class="navbar-toggler-icon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </span>
+      </button>
 
-        <!-- ========== Navbar Collapse Content ========== -->
-        <div class="collapse navbar-collapse cs-collapse-navbar" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <!-- ========== Navbar Collapse Content ========== -->
+      <div class="collapse navbar-collapse cs-collapse-navbar" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            <!-- ========== HOME BUTTON ========== -->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html" title="Homepage">
-                <h5>HOME</h5>
-              </a>
-            </li>
+          <!-- ========== HOME BUTTON ========== -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html" title="Homepage">
+              <span class="nav-item-text">HOME</span>
+            </a>
+          </li>
 
-            <!-- ========== CV DROPDOWN MENU ========== -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                title="Curriculum Vitae">
-                <h5>CV</h5>
-              </a>
-              <ul class="dropdown-menu">
+          <!-- ========== CV DROPDOWN MENU ========== -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              aria-label="Curriculum Vitae">
+              <span class="nav-item-text">CV</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="cvDropdown">
+              <!-- ========== CV Main Page ========== -->
+              <li><a class="dropdown-item" href="./pages/curriculum/curriculum.html"
+                  title="Curriculum Vitae Main Page">Main Page</a></li>
 
-                <!-- ========== CV Main Page ========== -->
-                <li><a class="dropdown-item" href="./pages/curriculum/curriculum.html"
-                    title="Curriculum Vitae Main Page">Main Page</a></li>
+              <!-- ========== Download CV as PDF ========== -->
+              <li><a class="dropdown-item" aria-label="Download CV in PDF format" href="/files/Gaspare-Tocci-CV.pdf"
+                  download="Gaspare-Tocci-CV.pdf" title="Download CV in PDF format">Download -PDF-</a></li>
 
-                <!-- ========== Download CV as PDF ========== -->
-                <li><a class="dropdown-item" aria-label="Download CV in PDF format" href="/files/Gaspare-Tocci-CV.pdf"
-                    download="Gaspare-Tocci-CV.pdf" title="Download CV in PDF format">Download -PDF-</a></li>
+              <!-- ========== Download CV as DOC ========== -->
+              <li><a class="dropdown-item" aria-label="Download CV in DOC format" href="/files/Gaspare-Tocci-CV.doc"
+                  download="Gaspare-Tocci-CV.doc" title="Download CV in DOC format">Download -DOC-</a></li>
+            </ul>
+          </li>
 
-                <!-- ========== Download CV as DOC ========== -->
-                <li><a class="dropdown-item" aria-label="Download CV in DOC format" href="/files/Gaspare-Tocci-CV.doc"
-                    download="Gaspare-Tocci-CV.doc" title="Download CV in DOC format">Download -DOC-</a></li>
-              </ul>
-            </li>
+          <!-- ========== GALLERY DROPDOWN MENU ========== -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              aria-label="Gallery">
+              <span class="nav-item-text">GALLERY</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+              <!-- ========== Gallery Main Page ========== -->
+              <li><a class="dropdown-item" href="./pages/gallery/gallery.html" title="Gallery Main Page">Main Page</a>
+              </li>
 
-            <!-- ========== GALLERY DROPDOWN MENU ========== -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                title="Gallery">
-                <h5>GALLERY</h5>
-              </a>
-              <ul class="dropdown-menu">
+              <!-- ========== Branding ========== -->
+              <li><a class="dropdown-item" href="./pages/gallery/pages/branding.html" title="Branding">Branding</a></li>
 
-                <!-- ========== Gallery Main Page ========== -->
-                <li><a class="dropdown-item" href="./pages/gallery/gallery.html" title="Gallery Main Page">Main Page</a>
-                </li>
+              <!-- ========== Graphic ========== -->
+              <li><a class="dropdown-item" href="./pages/gallery/pages/graphics.html" title="Graphic">Graphic</a></li>
 
-                <!-- ========== Branding ========== -->
-                <li><a class="dropdown-item" href="./pages/gallery/pages/branding.html" title="Branding">Branding</a>
-                </li>
+              <!-- ========== 3D Design ========== -->
+              <li><a class="dropdown-item" href="./pages/gallery/pages/3d-design.html" title="3D Design">3D Design</a>
+              </li>
+            </ul>
+          </li>
 
-                <!-- ========== Graphic ========== -->
-                <li><a class="dropdown-item" href="./pages/gallery/pages/graphics.html" title="Graphic">Graphic</a></li>
+          <!-- ========== WEBSITES DROPDOWN MENU ========== -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              aria-label="Websites">
+              <span class="nav-item-text">WEBSITES</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="websitesDropdown">
+              <!-- ========== Websites Main Page ========== -->
+              <li><a class="dropdown-item" href="./pages/websites/websites.html" title="Websites Main Page">Main
+                  Page</a></li>
 
-                <!-- ========== 3D Design ========== -->
-                <li><a class="dropdown-item" href="./pages/gallery/pages/3d-design.html" title="3D Design">3D Design</a>
-                </li>
-              </ul>
-            </li>
+              <!-- ========== Glastonbury Festival ========== -->
+              <li><a class="dropdown-item" href="./pages/websites/pages/glastonbury/index.html"
+                  title="Glastonbury Festival">Glastonbury Festival</a></li>
 
-            <!-- ========== WEBSITES DROPDOWN MENU ========== -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                title="Websites">
-                <h5>WEBSITES</h5>
-              </a>
-              <ul class="dropdown-menu">
+              <!-- ========== Old Portfolio ========== -->
+              <li><a class="dropdown-item" href="./pages/websites/pages/old-portfolio/old-portfolio.html"
+                  title="Old Portfolio">Old Portfolio</a></li>
+            </ul>
+          </li>
 
-                <!-- ========== Websites Main Page ========== -->
-                <li><a class="dropdown-item" href="./pages/websites/websites.html" title="Websites Main Page">Main
-                    Page</a></li>
+          <!-- ========== CONTACT DROPDOWN MENU ========== -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              aria-label="Contacts">
+              <span class="nav-item-text">CONTACTS</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="contactsDropdown">
+              <!-- ========== LinkedIn ========== -->
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank"
+                  title="LinkedIn Profile">LinkedIn</a></li>
 
-                <!-- ========== Glastonbury Festival ========== -->
-                <li><a class="dropdown-item" href="./pages/websites/pages/glastonbury/index.html"
-                    title="Glastonbury Festival">Glastonbury Festival</a></li>
+              <!-- ========== GitHub ========== -->
+              <li><a class="dropdown-item" href="https://github.com/Riello76" target="_blank"
+                  title="GitHub Profile">GitHub</a></li>
 
-                <!-- ========== Old Portfolio ========== -->
-                <li><a class="dropdown-item" href="./pages/websites/pages/old-portfolio/old-portfolio.html"
-                    title="Old Portfolio">Old Portfolio</a></li>
-              </ul>
-            </li>
-
-            <!-- ========== CONTACT DROPDOWN MENU ========== -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                title="Contacts">
-                <h5>CONTACTS</h5>
-              </a>
-              <ul class="dropdown-menu">
-
-                <!-- ========== LinkedIn ========== -->
-                <li><a class="dropdown-item" href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank"
-                    title="LinkedIn Profile">LinkedIn</a></li>
-
-                <!-- ========== GitHub ========== -->
-                <li><a class="dropdown-item" href="https://github.com/Riello76" target="_blank"
-                    title="GitHub Profile">GitHub</a></li>
-
-                <!-- ========== Email ========== -->
-                <li><a class="dropdown-item" href="mailto:gaspare_tocci@yahoo.it" title="Send Email">Email</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+              <!-- ========== Email ========== -->
+              <li><a class="dropdown-item" href="mailto:gaspare_tocci@yahoo.it" title="Send Email">Email</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
   <!-- ========== MAIN CONTENT ========== -->
   <main>
