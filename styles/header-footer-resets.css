@@ -268,14 +268,17 @@ picture {
   80%,
   100% {
     transform: translateY(0);
+    color: #DB561B;
   }
 
   40% {
     transform: translateY(-2rem);
+    color: #0C74B8;
   }
 
   60% {
     transform: translateY(-1.5rem);
+    color: #F6DF19;
   }
 }
 
