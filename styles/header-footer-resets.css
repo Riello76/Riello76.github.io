@@ -13,7 +13,7 @@
   --main-color: #001f3f;
 
   /* Secondary color */
-  --secondary-color: #FFB74D;
+  --secondary-color: #FFD700;
 
   /* Tertiary color */
   --tertiary-color: rgb(0, 0, 0);
@@ -131,7 +131,16 @@ picture {
   height: auto;
   text-align: center;
 }
-
+.contacts{
+  display: flex;
+}
+.contacts a{
+  text-decoration-color: var(--secondary-color);
+  margin: 1rem;
+}
+.contacts a:hover{
+  color: var(--secondary-color);
+}
 @keyframes bounceInOpacity {
   0% {
     transform: scale(0.5);
