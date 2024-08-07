@@ -97,7 +97,7 @@ html {
   display: flex;
   flex-direction: column;
   font-family: var(--font-family);
-  /* Reset to 10px for rem */
+  overflow-x: hidden;
   font-size: 62.5%;
 }
 
@@ -162,6 +162,7 @@ picture {
 .cs-navbar {
   float: right;
   z-index: 1000;
+  margin-right: 10rem;
 }
 
 .cs-navbar a {
@@ -176,7 +177,7 @@ picture {
 
 .nav-item-text:hover,
 .dropdown-toggle:hover::after {
-  color: #FFB74D;
+  color: var(--secondary-color);
   transform: scale(1.1);
 }
 
