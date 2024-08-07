@@ -40,6 +40,10 @@ main {
 .middle-main p {
   background: var(--background-color);
 }
+.middle-main a{
+  text-decoration-color: var(--secondary-color  );
+  font-weight: bold;
+}
 .old-portfolio-div,
 .glastonbury-div {
   display: flex;
