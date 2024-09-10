@@ -32,6 +32,7 @@ main {
   background-color: rgb(0, 0, 0, 0.5);
   border: 0.1rem solid var(--info-color);
   border-radius: var(--border-radius);
+  box-shadow: 0px 50px 50px black;
   margin: 2rem;
 }
 
@@ -74,6 +75,7 @@ main {
   display: inline-block;
   animation: CTA infinite 3s ease-in-out;
   will-change: transform;
+  box-shadow: 0px 50px 50px black;
 }
 
 @keyframes CTA {
