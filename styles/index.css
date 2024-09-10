@@ -60,7 +60,6 @@ main {
   margin-bottom: 1rem;
   border-radius: 100%;
   box-shadow: 0px 50px 50px black;
-
 }
 
 .cta-btn {
@@ -150,7 +149,7 @@ main {
 .carousel-inner {
   border-radius: 100%;
   width: 60rem;
-  border: 0.3rem solid var(--info-color);
+  box-shadow: 0px 0px 20px var(--info-color);
 }
 
 .carousel-control-next-icon,
