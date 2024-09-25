@@ -156,7 +156,7 @@ main {
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  background-color: var(--main-color);
+  background-color: var(--tertiary-color);
   border-radius: 100%;
 }
 
