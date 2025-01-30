@@ -47,6 +47,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: space-between;
   width: 30%;
 }
 
@@ -64,6 +65,7 @@ main {
 .icons-content img,
 .buttons-content img {
   width: 10rem;
+  margin: 1rem;
 }
 
 .video-div {
@@ -80,13 +82,11 @@ main {
   align-items: center;
   background: var(--background-color);
   padding: 1rem;
-  text-decoration: none;
+  text-decoration-color: var(--secondary-color);
 }
 
 .video-div a:hover {
-  color: transparent;
-  background: linear-gradient(to right, #FF0000, #FFFFFF);
-  -webkit-background-clip: text;
+  color: var(--secondary-color);
 }
 
 /* ========== Media Queries ========== */
