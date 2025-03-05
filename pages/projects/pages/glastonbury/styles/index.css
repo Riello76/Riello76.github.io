@@ -118,6 +118,7 @@ main {
 
 .carousel-navigation {
   position: absolute;
+  bottom: -3rem;
   transform: translateY(-100%);
   width: 100%;
   display: flex;
@@ -131,10 +132,14 @@ main {
 
 .prev:hover {
   background-image: url(../icons/carousel-left.active.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .next:hover {
   background-image: url(../icons/carousel-right.active.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .carousel-navigation button {
@@ -401,6 +406,12 @@ main {
   .middle-section {
     width: 95%;
     flex-direction: column;
+  }
+    .carousel-bullets {
+      bottom: 4rem;
+    }
+  .next,.prev{
+    display: none;
   }
   .center-container {
     width: 100%;
