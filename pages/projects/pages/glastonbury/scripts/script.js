@@ -2,10 +2,10 @@
 
 // Function to navigate to a subpage
 function subPage(pageName) {
-  const subpagePath = `/pages/websites/pages/glastonbury/pages/${pageName}.html`;
+  const subpagePath = `/pages/projects/pages/glastonbury/pages/${pageName}.html`;
 
   if (pageName === "home") {
-    window.location.assign("/pages/websites/pages/glastonbury/index.html");
+    window.location.assign("/pages/projects/pages/glastonbury/index.html");
   } else {
     window.location.assign(subpagePath);
   }
