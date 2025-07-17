@@ -126,7 +126,10 @@ picture {
   animation: bounceInOpacity 3s ease-out;
   will-change: transform;
 }
-
+.logo:hover {
+  transform: scale(0.9);
+  box-shadow: 0px 10px 10px var(--body-color);
+}
 .title {
   width: 100%;
   height: auto;
