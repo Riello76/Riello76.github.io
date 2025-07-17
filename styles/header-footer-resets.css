@@ -122,6 +122,7 @@ picture {
   width: clamp(10rem, 30rem, 50rem);
   height: auto;
   border-radius: 100%;
+  box-shadow: 0px 10px 10px var(--tertiary-color);
   animation: bounceInOpacity 3s ease-out;
   will-change: transform;
 }
