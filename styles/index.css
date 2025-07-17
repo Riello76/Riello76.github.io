@@ -65,6 +65,7 @@ main {
 .cta-btn {
   padding: 1rem 2rem;
   background-color: var(--main-color);
+  box-shadow: 0px 50px 50px var(--tertiary-color);
   border-radius: var(--border-radius);
   border: 0.2rem solid var(--info-color);
   text-decoration: none;
