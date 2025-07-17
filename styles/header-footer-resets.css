@@ -131,18 +131,21 @@ picture {
   width: 100%;
   height: auto;
   text-align: center;
-  box-shadow: 0px 50px 50px black;
 }
-.contacts{
+
+.contacts {
   display: flex;
 }
-.contacts a{
+
+.contacts a {
   text-decoration-color: var(--secondary-color);
   margin: 1rem;
 }
-.contacts a:hover{
+
+.contacts a:hover {
   color: var(--secondary-color);
 }
+
 @keyframes bounceInOpacity {
   0% {
     transform: scale(0.5);
@@ -165,6 +168,8 @@ picture {
   float: right;
   z-index: 1000;
   margin-right: 10rem;
+  background-color: var(--tertiary-color);
+  background: var(--background-color);
 }
 
 .cs-navbar a {
@@ -195,7 +200,8 @@ picture {
 }
 
 .dropdown-menu {
-  background: var(--tertiary-color);
+  background-color: var(--tertiary-color);
+  background: var(--background-color);
 }
 
 .dropdown-menu a {
