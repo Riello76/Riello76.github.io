@@ -119,7 +119,7 @@ picture {
 }
 
 .logo {
-  width: clamp(10rem, 20rem, 50rem);
+  width: clamp(10rem, 30rem, 50rem);
   height: auto;
   border-radius: 100%;
   animation: bounceInOpacity 3s ease-out;
