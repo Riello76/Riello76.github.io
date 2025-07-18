@@ -271,13 +271,16 @@ main {
     margin-top: 2rem;
   }
 
-  .cta-btn-container {
-    width: 15rem;
+  .cta-btn {
+    width: 20rem;
+    margin-bottom: 7rem;
+    font-size: 2rem;
   }
 
   .hero-img-container {
     background-size: 100%;
     height: 35rem;
+    margin-top: 7rem;
   }
 
   .hero-content {
@@ -292,9 +295,10 @@ main {
     width: 20rem;
   }
 
-  .hero-img-container h2,
-  .hero-img-container p {
-    margin: 0.4rem;
+  .hero-img-container h3,
+  .hero-img-container h5 {
+    margin: 0.4rem auto;
+    width: clamp(80vw, 90%, 50rem);
   }
 
   #carouselExampleIndicators {
@@ -338,9 +342,42 @@ main {
   }
 }
 
+@media screen and (min-width: 768px) {
+
+  .hero-img-container h3 {
+    width: 80vw;
+    height: 5rem;
+    font-size: 2.7rem;
+  }
+  .hero-img-container h5 {
+    width: 70vw;
+    font-size: 2rem;
+  }
+  .cta-btn {
+    font-size: 2.5rem;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .my-img {
     width: 50rem;
+  }
+
+  .hero-img-container h3 {
+    width: 60vw;
+    height: 7rem;
+    font-size: 3rem;
+  }
+
+  .hero-img-container h5 {
+    width: 50vw;
+    height: 6rem;
+    font-size: 2.2rem;
+  }
+
+  .cta-btn {
+    width: 15vw;
+    font-size: 3rem;
   }
 }
 
@@ -357,8 +394,21 @@ main {
     width: 70rem;
   }
 
+  .hero-img-container h3 {
+    width: 60vw;
+    height: 10rem;
+    font-size: 5rem;
+  }
+
+  .hero-img-container h5 {
+    width: 50vw;
+    height: 7rem;
+    font-size: 4rem;
+  }
+
   .cta-btn {
     width: 30rem;
+    height: 8rem;
     font-size: 4rem;
   }
 }

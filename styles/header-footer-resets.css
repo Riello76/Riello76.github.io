@@ -126,10 +126,12 @@ picture {
   animation: bounceInOpacity 3s ease-out;
   will-change: transform;
 }
+
 .logo:hover {
   transform: scale(0.9);
   box-shadow: 0px 10px 10px var(--body-color);
 }
+
 .title {
   font-family: var(--font-family);
   font-weight: 700;
@@ -146,6 +148,7 @@ picture {
   font-weight: 700;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
+
 .symbol.left {
   color: var(--secondary-color);
   font-size: 1.5rem;
@@ -168,6 +171,7 @@ picture {
 .highlight {
   color: var(--secondary-color);
 }
+
 .contacts {
   display: flex;
 }
@@ -360,6 +364,11 @@ picture {
     flex-direction: column;
   }
 
+  .title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
   .cs-navbar {
     float: left;
     width: 30%;
@@ -379,5 +388,5 @@ picture {
     position: absolute;
     top: 0;
   }
-  
+
 }
