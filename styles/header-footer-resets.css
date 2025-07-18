@@ -13,7 +13,7 @@
   --main-color: #001f3f;
 
   /* Secondary color */
-  --secondary-color: #FFD700;
+  --secondary-color: #ffb347;
 
   /* Tertiary color */
   --tertiary-color: rgb(0, 0, 0);
@@ -134,39 +134,39 @@ picture {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: clamp(3rem, 6vw, 5rem);
-  color: #f0f0f0;
+  color: var(--info-color);
   text-align: center;
   margin: 2rem 0;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .title .highlight {
-  color: #ffb347;
+  color: var(--secondary-color);
   font-style: italic;
   font-weight: 700;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 .symbol.left {
-  color: #ffb347;
+  color: var(--secondary-color);
   font-size: 1.5rem;
   margin-right: 1rem;
   user-select: none;
 }
 
 .symbol.right {
-  color: #ffffff;
+  color: var(--info-color);
   font-size: 1.5rem;
   margin-left: 1rem;
   user-select: none;
 }
 
 .title {
-  color: white;
+  color: var(--info-color);
   font-weight: 700;
 }
 
 .highlight {
-  color: #ffb347;
+  color: var(--secondary-color);
 }
 .contacts {
   display: flex;
