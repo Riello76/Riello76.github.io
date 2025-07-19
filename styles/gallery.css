@@ -34,10 +34,15 @@ main {
 .middle-main h3 {
   text-align: center;
   background: var(--background-color);
+    padding: 1rem;
 }
 .middle-main img{
   animation: bounceInOpacity 3s ease-out;
 
+}
+.middle-main img:hover {
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
 }
 .middle-main p {
   background: var(--background-color);

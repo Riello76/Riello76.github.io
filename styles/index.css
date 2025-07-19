@@ -159,7 +159,6 @@ main {
   display: flex;
   align-items: center;
 }
-
 .about-me p {
   background: var(--background-color);
   padding: 1rem;
@@ -210,6 +209,7 @@ main {
   text-align: center;
   width: 100%;
   background: var(--background-color);
+  padding: 1rem;
 }
 
 .my-tools p {
@@ -237,7 +237,7 @@ main {
   text-align: center;
   width: 100%;
   background: var(--background-color);
-  margin-bottom: 0.5rem;
+  padding: 1rem;
 }
 
 .technical-details p {

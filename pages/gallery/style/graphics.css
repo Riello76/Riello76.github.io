@@ -21,6 +21,7 @@ main {
   text-align: center;
   background: var(--background-color);
   color: var(--info-color);
+    padding: 1rem;
 }
 
 /* ========== Middle Main ========== */
@@ -34,6 +35,7 @@ main {
 .middle-main h3 {
   text-align: center;
   background: var(--background-color);
+    padding: 1rem;
 }
 
 .middle-main p {

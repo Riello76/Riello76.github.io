@@ -21,7 +21,9 @@ main {
   text-align: center;
   background: var(--background-color);
   color: var(--info-color);
+  padding: 1rem;
 }
+
 /* ========== Middle Main ========== */
 .middle-main {
   display: flex;
@@ -33,14 +35,17 @@ main {
   width: 100%;
   text-align: center;
   background: var(--background-color);
-}
-.middle-main p{
   padding: 1rem;
 }
+
+.middle-main p {
+  padding: 1rem;
+}
+
 .middle-main img {
-  width: 40rem;
+  width: 5rem;
   display: flex;
-  flex-grow: 1;
+  flex-grow: 0.2;
   height: 100%;
   padding: 1rem;
 }
@@ -65,6 +70,12 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+}
+
+.business-card-content img:hover,
+.calendars-content img:hover {
+  transform: scale(1.80);
+  transition: transform 0.3s ease;
 }
 
 /* ========== Media Queries ========== */
