@@ -324,8 +324,8 @@ main {
 
   .carousel-control-next-icon,
   .carousel-control-prev-icon {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .carousel-inner {
@@ -382,6 +382,12 @@ main {
 
   .cta-btn {
     font-size: 2.5rem;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
   }
 
 }
@@ -501,5 +507,11 @@ main {
     width: 40rem;
     height: 10rem;
     font-size: 5rem;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 5rem;
+    height: 5rem;
   }
 }
