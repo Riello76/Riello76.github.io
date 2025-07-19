@@ -143,6 +143,7 @@ main {
   background: var(--background-color);
   color: var(--info-color);
   margin-bottom: 0.5rem;
+  padding: 1rem;
 }
 
 .middle-main h3 {
@@ -151,6 +152,7 @@ main {
   width: 100%;
   margin-bottom: 0.5rem;
   background: var(--background-color);
+  padding: 1rem;
 }
 
 /* ========== About me ========== */
@@ -159,6 +161,7 @@ main {
   display: flex;
   align-items: center;
 }
+
 .about-me p {
   background: var(--background-color);
   padding: 1rem;
