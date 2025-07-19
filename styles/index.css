@@ -271,6 +271,10 @@ main {
     margin-top: 2rem;
   }
 
+  .top-main {
+    margin-bottom: 7rem;
+  }
+
   .cta-btn {
     width: 20rem;
     margin-bottom: 7rem;
@@ -288,14 +292,21 @@ main {
   }
 
   .hero-img {
-    height: 35rem;
+    height: 38rem;
   }
 
   .my-img {
     width: 20rem;
+    margin-top: 10rem;
   }
 
-  .hero-img-container h3,
+  .hero-img-container h3 {
+    margin: 0.4rem auto;
+    width: clamp(80vw, 90%, 50rem);
+    height: 6rem;
+    font-size: 1.7rem;
+  }
+
   .hero-img-container h5 {
     margin: 0.4rem auto;
     width: clamp(80vw, 90%, 50rem);
@@ -343,24 +354,73 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-
   .hero-img-container h3 {
     width: 80vw;
     height: 5rem;
-    font-size: 2.7rem;
+    font-size: 2.2rem;
   }
+
   .hero-img-container h5 {
     width: 70vw;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
+
+  .hero-img {
+    height: 40rem;
+  }
+
   .cta-btn {
     font-size: 2.5rem;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
+
+  .top-main {
+    margin-bottom: 10rem;
+  }
+
+  .hero-img-container {
+    height: 40rem;
+  }
+
+  .hero-img-container h3 {
+    height: 6rem;
+    font-size: 2.8rem;
+  }
+
+  .hero-img-container h5 {
+    width: 70vw;
+    height: 5rem;
+    font-size: 2rem;
+  }
+
   .my-img {
-    width: 50rem;
+    width: 30rem;
+  }
+
+  .hero-img {
+    height: 50rem;
+  }
+
+  .cta-btn {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .top-main {
+    margin-bottom: 20rem;
+  }
+
+  .hero-content {
+    height: auto;
+    margin-top: 10rem;
+  }
+
+  .my-img {
+    width: 30rem;
   }
 
   .hero-img-container h3 {
@@ -375,6 +435,10 @@ main {
     font-size: 2.2rem;
   }
 
+  .hero-img {
+    height: 60rem;
+  }
+
   .cta-btn {
     width: 15vw;
     font-size: 3rem;
@@ -382,16 +446,25 @@ main {
 }
 
 @media screen and (min-width: 2560px) {
+
+  .top-main {
+    margin-bottom: 50rem;
+  }
+
   .carousel-inner {
     width: 90rem;
   }
 
-  .hero-img {
-    width: 100vw;
+  .my-img {
+    width: 50rem;
   }
 
-  .my-img {
-    width: 70rem;
+  .hero-content {
+    margin-top: 25rem;
+  }
+
+  .hero-img {
+    height: 90rem;
   }
 
   .hero-img-container h3 {
@@ -402,13 +475,13 @@ main {
 
   .hero-img-container h5 {
     width: 50vw;
-    height: 7rem;
+    height: 8rem;
     font-size: 4rem;
   }
 
   .cta-btn {
-    width: 30rem;
-    height: 8rem;
-    font-size: 4rem;
+    width: 40rem;
+    height: 10rem;
+    font-size: 5rem;
   }
 }
