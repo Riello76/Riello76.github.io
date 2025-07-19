@@ -200,6 +200,8 @@ main {
 .carousel-control-prev-icon {
   background-color: var(--tertiary-color);
   border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
 }
 
 /* ========== My tools ========== */
@@ -265,7 +267,7 @@ main {
 }
 
 /* ========== Media Queries ========== */
-@media screen and (max-width:1024px) {
+@media screen and (min-width:320px) {
   .logo {
     width: 15rem;
   }
@@ -318,6 +320,12 @@ main {
   #carouselExampleIndicators {
     margin-right: 0;
     margin-top: 5rem;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
   }
 
   .carousel-inner {
@@ -375,6 +383,7 @@ main {
   .cta-btn {
     font-size: 2.5rem;
   }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -449,6 +458,9 @@ main {
 }
 
 @media screen and (min-width: 2560px) {
+  .logo {
+    width: 30rem;
+  }
 
   .top-main {
     margin-bottom: 50rem;
@@ -460,6 +472,7 @@ main {
 
   .my-img {
     width: 50rem;
+    margin: 0;
   }
 
   .hero-content {
@@ -474,12 +487,14 @@ main {
     width: 60vw;
     height: 10rem;
     font-size: 5rem;
+    margin: 1rem;
   }
 
   .hero-img-container h5 {
     width: 50vw;
     height: 8rem;
     font-size: 4rem;
+    margin: 2rem;
   }
 
   .cta-btn {
