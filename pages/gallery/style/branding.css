@@ -94,4 +94,10 @@ main {
     width: 100%;
   }
 
+  .business-card-content img:hover,
+  .calendars-content img:hover {
+    transform: none;
+    transition: none;
+  }
+
 }
