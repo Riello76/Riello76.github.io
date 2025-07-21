@@ -8,66 +8,35 @@
   <!-- ========== Viewport settings for responsive design ========== -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ========== SEO and social media meta tags ========== -->
+  <!-- ========== SEO and Social Media Meta Tags ========== -->
   <meta name="description"
     content="Gaspare Tocci's portfolio as a web designer and developer. Discover my projects and skills.">
   <meta name="keywords"
-    content="web design, web development, portfolio, HTML, CSS, JavaScript, Inkscape, Figma, Filmora, PowerPoint,
-     Gimp, frontend development, responsive design, UI/UX design, website creation, graphic design, visual design,
-      digital design, creative coding, web applications, interactive projects, user interface, user experience, 
-      prototyping, wireframing, web designer, web developer, Gaspare Tocci, web projects, design tools, web technologies">
+    content="web design, web development, portfolio, HTML, CSS, JavaScript, Inkscape, Figma, Filmora, PowerPoint, Gimp, frontend development, responsive design, UI/UX design, website creation, graphic design, visual design, digital design, creative coding, web applications, interactive projects, user interface, user experience, prototyping, wireframing, web designer, web developer, Gaspare Tocci, web projects, design tools, web technologies">
   <meta name="author" content="Gaspare Tocci">
   <meta name="robots" content="index, follow">
 
-  <!-- ========== Open Graph meta tags for social media sharing ========== -->
+  <!-- ========== Open Graph for Sharing ========== -->
   <meta property="og:title" content="Gaspare Tocci's Portfolio">
   <meta property="og:description"
     content="Explore Gaspare Tocci's professional portfolio showcasing his expertise in web design and development. Discover a diverse range of projects and skills, including HTML, CSS, JavaScript, and popular design tools like Figma and Inkscape.">
   <meta property="og:image" content="/images/share-img.png">
   <meta property="og:url" content="https://riello76.github.io/">
 
-  <!-- ========== Document Title ========== -->
+  <!-- ========== Page Title ========== -->
   <title>Gaspare Tocci's Portfolio</title>
 
-  <!-- ========== Preconnect Links for Performance Improvement ========== -->
+  <!-- ========== Preconnect for External Resources ========== -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="preconnect" href="https://www.youtube.com">
   <link rel="preconnect" href="https://www.google.com">
 
-  <!-- ========== Preload Key Resources ========== -->
-  <!-- Preload with onload applies the stylesheet as soon as it’s loaded -->
-  <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.rel='stylesheet'">
-
-  <!-- Fallback for users without JavaScript: load the CSS normally -->
-  <noscript>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-  </noscript>
-
-  <!-- Preload with onload applies the stylesheet as soon as it’s loaded -->
-  <link rel="preload" href="/styles/header-footer-resets.css" as="style" onload="this.rel='stylesheet'">
-
-  <!-- Fallback for users without JavaScript: load the CSS normally -->
-  <noscript>
-    <link rel="stylesheet" href="/styles/header-footer-resets.css">
-  </noscript>
-
-  <!-- Preload with onload applies the stylesheet as soon as it’s loaded -->
-  <link rel="preload" href="/styles/index.css" as="style" onload="this.rel='stylesheet'">
-
-  <!-- Fallback for users without JavaScript: load the CSS normally -->
-  <noscript>
-    <link rel="stylesheet" href="/styles/index.css">
-  </noscript>
-
-  <!-- ========== Bootstrap CSS ========== -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  <!-- ========== Stylesheets ========== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <!-- ========== AOS CSS ========== -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-
-  <!-- ========== Custom Stylesheets ========== -->
+  <link rel="stylesheet" href="/styles/header-footer-resets.css">
   <link rel="stylesheet" href="/styles/index.css">
 
   <!-- ========== Favicon ========== -->
@@ -238,16 +207,12 @@
 
       <!-- ========== Hero Image ========== -->
       <div class="hero-img-container">
-        <img class="hero-img" src="./images/hero-image.webp"
-          alt="Portfolio of Gaspare Tocci, junior web developer and designer">
+        <img class="hero-img" src="./images/hero-image.webp" alt="Web designer and developer showcasing skills">
 
         <div class="hero-content">
-          <img class="my-img" src="/images/my-img.gif" width="200" alt="Portrait of Gaspare Tocci">
-
-          <h3>Junior Web Developer & Designer · <span>Photo & Video Editor</span></h3>
-
-          <h5>Looking for an apprenticeship · <span>Let’s create something great together</span></h5>
-
+          <img class="my-img" src="/images/my-img.gif" width="200" alt="my-image">
+          <h3>Web Designer &amp; Developer &middot;<span> Basic Photo &amp; Video Editing</span></h3>
+          <h5>Interested in working together? &middot; <span>Contact me today to get started!</span></h5>
           <a class="cta-btn" href="mailto:gaspare_tocci@yahoo.it" aria-label="Contact Gaspare Tocci">
             <span class="btn-text default">Contact Me</span>
             <span class="btn-text hover">Send Email</span>
@@ -259,62 +224,46 @@
     </section>
 
     <!-- ========== Middle Main ========== -->
-     
     <section class="middle-main">
       <!-- ========== About Me ========== -->
       <h2>Let Me Tell You About Myself!</h2>
       <h3>About me</h3>
       <div class="about-me">
         <div>
-
-          <!-- ========== About Me Paragraph 1 ========== -->
           <p class="about-me-p1" data-aos="fade-right" data-aos-duration="1000">
-            I'm <strong>Gaspare Tocci</strong>, an Italian junior web developer based in London. In 2023, I began my
-            journey into
-            web development and digital creativity from scratch, teaching myself how to use tools like
-            <strong>GIMP</strong>,
-            <strong>Inkscape</strong>, and <strong>Blender</strong>. After an initial learning phase, I resumed my
-            studies through
-            the <strong>GetSetUK Web Development Bootcamp</strong>, which has significantly boosted my technical
-            proficiency.
+            • I'm <strong>Gaspare Tocci</strong>, an Italian junior web developer based in London.<br>
+            • I began my journey in <strong>2023</strong>, teaching myself <strong>GIMP</strong>,
+            <strong>Inkscape</strong>, and
+            <strong>Blender</strong>.<br>
+            • I later joined the <strong>GetSetUK Web Development Bootcamp</strong> to deepen my technical skills.
           </p>
 
           <!-- ========== About Me Paragraph 2 ========== -->
           <p class="about-me-p2" data-aos="fade-right" data-aos-duration="1000">
-            I'm a <strong>self-driven learner</strong> who thrives on challenges and growth. I enjoy working on hands-on
-            projects
-            and continuously expand my knowledge through online courses and experimentation. I believe in the power of
-            collaboration and enjoy contributing to shared goals while gaining insights from others.
+            • I'm a <strong>self-driven learner</strong> who loves challenges and growth.<br>
+            • I enjoy practical projects and learn continuously through online courses.<br>
+            • I believe in <strong>collaboration</strong> and shared learning.
           </p>
 
           <!-- ========== About Me Paragraph 3 ========== -->
           <p class="about-me-p3" data-aos="fade-right" data-aos-duration="1000">
-            This portfolio represents my first major project and reflects my interest in <strong>sustainable,
-              user-friendly web
-              design</strong>. My aim is to craft clean, responsive interfaces with <strong>micro animations</strong>
-            that enhance
-            user experience without compromising speed or simplicity.
+            • This is my first major portfolio project.<br>
+            • I'm passionate about <strong>sustainable, responsive design</strong>.<br>
+            • I aim to enhance UX through subtle <strong>micro animations</strong>.
           </p>
 
           <!-- ========== About Me Paragraph 4 ========== -->
           <p class="about-me-p4" data-aos="fade-right" data-aos-duration="1000">
-            I use modern formats like <strong>SVG</strong> and <strong>WEBP</strong> to ensure fast-loading visuals and
-            apply
-            <strong>best coding practices</strong> such as code minification and optimization. For social media
-            compatibility, the
-            <strong>Open Graph</strong> image is provided in PNG.
+            • I use efficient formats like <strong>SVG</strong> and <strong>WEBP</strong>.<br>
+            • I apply <strong>best coding practices</strong> like minification and performance optimization.<br>
+            • My Open Graph image is in <strong>PNG</strong> for social sharing.
           </p>
-
           <!-- ========== About Me Paragraph 5 ========== -->
           <p class="about-me-p5" data-aos="fade-right" data-aos-duration="1000">
-            As a creative enthusiast, I also work independently in <strong>photo and video editing</strong>. One of my
-            featured
-            works includes a video I produced for a friend's 50th birthday, combining editing techniques with
-            storytelling. I
-            integrate <strong>AI tools</strong> to support both development and content creation through dynamic
-            <strong>snippets</strong>. I am currently looking for an <strong>apprenticeship opportunity</strong> where I
-            can
-            continue to learn and grow within a forward-thinking team.
+            • I also enjoy <strong>photo and video editing</strong>.<br>
+            • I created a 50th birthday video mixing storytelling and editing.<br>
+            • I use <strong>AI tools</strong> for snippets and creative tasks.<br>
+            • I'm actively seeking an <strong>apprenticeship</strong> to grow in a modern, collaborative team.
           </p>
 
         </div>
