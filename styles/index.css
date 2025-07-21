@@ -362,10 +362,14 @@ h3{
     height: 5rem;
     font-size: 2.2rem;
   }
+  .hero-img-container h3{
+    margin-bottom: 1rem;
+  }
 
   .hero-img-container h5 {
     width: 70vw;
     font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
 
   .hero-img {
@@ -390,12 +394,14 @@ h3{
   .hero-img-container h3 {
     height: 6rem;
     font-size: 2.8rem;
+    margin-bottom: 1rem;
   }
 
   .hero-img-container h5 {
     width: 70vw;
     height: 5rem;
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
   .my-img {
@@ -428,14 +434,16 @@ h3{
 
   .hero-img-container h3 {
     width: 60vw;
-    height: 7rem;
+    height: 6rem;
     font-size: 3rem;
+    margin-bottom: 1rem;
   }
 
   .hero-img-container h5 {
     width: 50vw;
-    height: 6rem;
-    font-size: 2.2rem;
+    height: 5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
   .hero-img {
@@ -472,14 +480,16 @@ h3{
 
   .hero-img-container h3 {
     width: 60vw;
-    height: 10rem;
+    height: 9rem;
     font-size: 5rem;
+    margin-bottom: 3rem;
   }
 
   .hero-img-container h5 {
     width: 50vw;
     height: 8rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
   }
 
   .cta-btn {
