@@ -327,6 +327,7 @@ h3{
 
   .about-me {
     gap: 5rem;
+    flex-direction: column-reverse;
   }
 
   .about-me-p1,
