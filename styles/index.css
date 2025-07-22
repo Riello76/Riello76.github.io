@@ -1,7 +1,5 @@
 @import url("/styles/header-footer-resets.css");
 
-
-
 /* ========== Media Queries ========== */
 @media screen and (min-width:320px) {
 
@@ -166,6 +164,7 @@
   /* ========== About me ========== */
   .about-me {
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -173,21 +172,9 @@
     background: var(--background-color);
     padding: 1rem;
     margin-bottom: 0.5rem;
-  }
-
-  .about-me-p1,
-  .about-me-p5 {
     width: 100%;
   }
 
-  .about-me-p2,
-  .about-me-p4 {
-    width: 90%;
-  }
-
-  .about-me-p3 {
-    width: 80%;
-  }
 
   /* ========== Carousel ========== */
   #carouselExampleIndicators {
@@ -214,7 +201,7 @@
   .my-tools div {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .my-tools h3 {
@@ -309,6 +296,10 @@
     width: 25vw;
     height: 4rem;
   }
+
+  .my-tools p {
+    width: 100vw;
+  }
 }
 
 @media screen and (min-width:1024px) {
@@ -330,6 +321,10 @@
 
   #carouselExampleIndicators {
     width: auto;
+  }
+
+  .my-tools p {
+    width: 100vw;
   }
 }
 
@@ -371,7 +366,7 @@
 
 /* ========== MY TOOLS ========== */
 .my-tools div {
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 
 .my-tools img {
@@ -420,6 +415,7 @@
     text-align: center;
     width: 100vw;
   }
+
   .about-me div {
     width: 70vw;
   }
