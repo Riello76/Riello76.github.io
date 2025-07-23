@@ -415,7 +415,10 @@ section {
 .my-tools img {
   width: 10rem;
 }
-
+.my-tools a:hover {
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
 
 @media screen and (min-width:2560px) {
 
@@ -484,15 +487,24 @@ section {
   }
 
   /* ========== My Tools ========== */
-  .my-tools div {
-    flex-direction: row;
-  }
+/* ========== My Tools ========== */
 
-  .my-tools p {
-    width: 90vw;
-  }
+.my-tools div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .my-tools img {
-    width: 10rem;
-  }
+.my-tools p {
+  width: 50%;
+}
+}
+
+.my-tools img {
+  width: 10rem;
+}
+
+.my-tools a:hover {
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
 }

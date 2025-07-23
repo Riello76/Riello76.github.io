@@ -118,6 +118,7 @@ picture {
   background: var(--background-color);
   margin-bottom: 4rem
 }
+
 .logo {
   width: clamp(10rem, 30rem, 50rem);
   height: auto;
@@ -163,11 +164,6 @@ picture {
   user-select: none;
 }
 
-.title {
-  color: var(--info-color);
-  font-weight: 700;
-}
-
 .highlight {
   color: var(--secondary-color);
 }
@@ -181,11 +177,6 @@ picture {
   font-size: clamp(1.2rem, 1rem + 0.8vw, 2.4rem);
   font-weight: bolder;
   margin: 1rem;
-}
-
-.contacts a:hover {
-  color: var(--secondary-color);
-  text-decoration-color: var(--info-color);
 }
 
 @keyframes bounceInOpacity {
@@ -204,9 +195,11 @@ picture {
     opacity: 1;
   }
 }
-.top-main{
+
+.top-main {
   margin-top: 4rem;
 }
+
 /* ========== Navbar ========== */
 .cs-navbar {
   float: right;
@@ -324,8 +317,9 @@ picture {
   margin: 0.5rem;
 }
 
-.cs-footer h6 {
-  font-size: var(--font-size-h3);
+.cs-footer a:hover {
+  text-decoration-color: var(--info-color);
+  transform: scale(1.1);
 }
 
 .go-to-top {
