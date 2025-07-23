@@ -1,5 +1,7 @@
 @import url("/styles/header-footer-resets.css");
-
+section{
+  margin-bottom: 2rem;
+}
 /* ========== Media Queries ========== */
 @media screen and (min-width:320px) {
 
@@ -146,43 +148,16 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
+    overflow: hidden;
   }
-
-  .middle-main h2 {
-    background: var(--background-color);
-    color: var(--info-color);
-    padding: 1rem;
-  }
-
-  .middle-main h3 {
-    padding: 1rem;
-    text-align: center;
-    width: 100%;
-    background: var(--background-color);
-  }
-
-  /* ========== About me ========== */
-  .about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-me p {
-    background: var(--background-color);
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    width: 100%;
-  }
-
 
   /* ========== Carousel ========== */
   #carouselExampleIndicators {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5rem;
     width: 90vw;
+    margin: 2rem;
   }
 
   .carousel-inner {
@@ -195,6 +170,28 @@
   .carousel-control-prev-icon {
     background-color: var(--tertiary-color);
     border-radius: 100%;
+  }
+
+  /* ========== About me ========== */
+  .about-me-titles {
+    text-align: center;
+    width: 100vw;
+    background: var(--background-color);
+    margin: 0.5rem;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .about-me p {
+    background: var(--background-color);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    width: auto;
   }
 
   /* ========== My tools ========== */
@@ -214,7 +211,6 @@
   .my-tools p {
     background: var(--background-color);
     margin-bottom: 0.5rem;
-    width: 90%;
     padding: 1rem;
   }
 
@@ -319,6 +315,11 @@
     height: 4rem;
   }
 
+  .about-me,
+  .about-me p {
+    width: 100vw;
+  }
+
   #carouselExampleIndicators {
     width: auto;
   }
@@ -344,43 +345,75 @@
   }
 
   .hero-content h3 {
-    width: 60vw;
+    width: 50vw;
     font-size: 3rem;
   }
 
   .hero-content h5 {
-    width: 50vw;
+    width: 40vw;
     font-size: 2rem;
   }
 
   .cta-btn {
-    width: 20vw;
+    width: 12vw;
     height: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
   }
-
   /* ========== MIDDLE MAIN ========== */
-  .about-me div {
+  .middle-main {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+#carouselExampleIndicators{
+  margin: 5rem;
+}
+  .about-me-titles {
+    text-align: center;
+    background: var(--background-color);
+    margin: 0.5rem;
+  }
+  
+ .about-me p {
+    background: var(--background-color);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
     width: 100vw;
   }
-}
 
-/* ========== MY TOOLS ========== */
-.my-tools div {
-  /* flex-direction: row; */
-}
+  /* ========== MY TOOLS ========== */
+  .my-tools div {
+    flex-direction: row;
+  }
 
-.my-tools img {
-  width: 10rem;
+  .my-tools p {
+    width: 90vw;
+  }
+
+  .my-tools img {
+    width: 10rem;
+  }
 }
 
 
 @media screen and (min-width:2560px) {
-  .hero-img-container {
-    height: 100vh;
+  h3{
+      font-size: 6rem;
+  }
+  p{
+      font-size: 4rem;
+  }
+.hero-img-container {
+    height: 80vh;
+  }
+
+  .hero-content {
+    height: 100%;
   }
 
   .my-img {
-    width: 80rem;
+    width: 70rem;
     margin-bottom: 10rem;
   }
 
@@ -397,46 +430,44 @@
   .cta-btn {
     width: 20vw;
     height: 10rem;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: bold;
   }
 
   /* ========== MIDDLE MAIN ========== */
   .middle-main {
-    flex-direction: row-reverse;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
   }
 
-  .about-me {
-    flex-direction: column;
-    width: 100vw;
+  #carouselExampleIndicators {
+    margin: 5rem;
   }
 
   .about-me-titles {
     text-align: center;
+    background: var(--background-color);
+    margin: 0.5rem;
+  }
+
+  .about-me p {
+    background: var(--background-color);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
     width: 100vw;
   }
 
-  .about-me div {
-    width: 70vw;
+  /* ========== MY TOOLS ========== */
+  .my-tools div {
+    flex-direction: row;
   }
 
-  .about-me-p1 {
-    width: 70vw;
+  .my-tools p {
+    width: 90vw;
   }
 
-  .about-me-p2 {
-    width: 60vw;
-  }
-
-  .about-me-p3 {
-    width: 50vw;
-  }
-
-  .about-me-p4 {
-    width: 60vw;
-  }
-
-  .about-me-p5 {
-    width: 70vw;
+  .my-tools img {
+    width: 10rem;
   }
 }
