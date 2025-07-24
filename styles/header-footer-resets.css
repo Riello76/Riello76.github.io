@@ -417,7 +417,11 @@ picture {
     font-weight: bolder;
     margin: 1rem;
   }
-
+.contacts a:hover {
+    text-decoration-color: var(--info-color);
+    color: var(--secondary-color);
+    transform: scale(1.1);
+  }
   .top-main {
     margin-top: 4rem;
   }
