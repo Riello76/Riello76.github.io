@@ -508,3 +508,116 @@ section {
   transform: scale(0.9);
   transition: transform 0.3s ease;
 }
+@media screen and (orientation: landscape) and (max-height: 500px) {
+
+  /* Hero Section Fix */
+  .hero-img-container {
+    height: 40vh;
+    background-position: center top;
+  }
+
+  .hero-content h3 {
+    font-size: 1.2rem;
+    width: 90vw;
+  }
+
+  .hero-content h5 {
+    font-size: 1rem;
+    width: 85vw;
+  }
+
+  .my-img {
+    width: 12rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 1rem;
+    width: 60vw;
+    height: 3rem;
+  }
+
+  /* Carousel Fix */
+  #carouselExampleIndicators {
+    margin: 1rem 0;
+    width: 100vw;
+  }
+
+  .carousel-inner {
+    width: 90vw;
+    max-width: 25rem;
+    border-radius: 1rem;
+    box-shadow: none;
+  }
+
+  .carousel-item img {
+    object-fit: cover;
+    max-height: 200px;
+    width: 100%;
+  }
+
+}
+/* ========== Landscape & Orientation Fixes ========== */
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+    font-size: 0.9rem;
+  }
+
+        .hero-img-container {
+          height: 70vh;
+          background-position: center top;
+        }
+    
+        .hero-content {
+          transform: translate(-50%, -50%) scale(0.7);
+          width: 100%;
+          padding: 0 1rem;
+        }
+    
+        .hero-content h3 {
+          font-size: 1.2rem;
+          width: 90vw;
+          margin: 0.5rem 0;
+          padding: 0.5rem;
+        }
+    
+        .hero-content h5 {
+          font-size: 1rem;
+          width: 85vw;
+          margin: 0.5rem 0;
+          padding: 0.5rem;
+        }
+    
+        .my-img {
+          width: 10rem;
+          margin: 1rem 0;
+          box-shadow: 0px 10px 20px var(--tertiary-color);
+        }
+    
+        .cta-btn {
+          font-size: 1rem;
+          width: 60vw;
+          height: 2.8rem;
+          margin-top: 1rem;
+        }
+
+  .carousel-inner {
+    width: 90vw;
+  }
+
+  .about-me p,
+  .technical-details p,
+  .my-tools p {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    width: 90vw;
+  }
+
+  .my-tools img {
+    width: 5rem;
+  }
+}
