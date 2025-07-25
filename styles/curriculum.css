@@ -1,68 +1,122 @@
 @import url(/styles/header-footer-resets.css);
 
-/* ========== Main Section ========== */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: var(--tertiary-color);
-}
 
-.top-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.top-main h2 {
-    width: 100%;
-    text-align: center;
-    background: var(--background-color);
-    color: var(--info-color);
-}
-
-/* ========== Middle Main ========== */
-.middle-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-}
-
-.middle-main h3 {
-    text-align: center;
-    background: var(--background-color);
-    padding: 1rem;
-}
-
-.middle-main p {
-    background: var(--background-color);
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.profile-div,
-.experience-div,
-.education-div,
-.certifications-div,
-.technical-skills {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 50%;
-}
-
-.experience-div,
-.certifications-div {
-    align-self: flex-end;
-}
 
 /* ========== Media Queries ========== */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) {
+
+    /* ========== Main Section ========== */
     main {
-        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: var(--tertiary-color);
+    }
+
+    .top-main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    /* ========== Middle Main ========== */
+    .middle-main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .middle-main h2 {
+        width: 100%;
+        text-align: center;
+        background: var(--background-color);
+        color: var(--info-color);
+        font-size: clamp(1.5rem, 4vw, 2.2rem);
+        padding: 0.5rem 0;
+    }
+
+    .middle-main h3 {
+        text-align: center;
+        background: var(--background-color);
+        padding: 0.75rem 1rem;
+        font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+    }
+
+    .middle-main p {
+        background: var(--background-color);
+        padding: 0.75rem 1rem;
+        margin-bottom: 0.5rem;
+        font-size: clamp(1rem, 3vw, 1.4rem);
+    }
+
+
+    .profile-div,
+    .experience-div,
+    .education-div,
+    .certifications-div,
+    .technical-skills {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .experience-div,
+    .certifications-div {
+        align-self: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* ========== Main Section ========== */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: var(--tertiary-color);
+    }
+
+    .top-main {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ========== Middle Main ========== */
+    .middle-main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .middle-main h2 {
+        width: 100%;
+        text-align: center;
+        background: var(--background-color);
+        color: var(--info-color);
+        font-size: 3rem;
+    }
+
+    .middle-main h3 {
+        text-align: center;
+        background: var(--background-color);
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    .middle-main p {
+        background: var(--background-color);
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
     }
 
     .profile-div,
@@ -70,12 +124,132 @@ main {
     .education-div,
     .certifications-div,
     .technical-skills {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
     }
 
-    /* Reset align-self for smaller screens */
     .experience-div,
     .certifications-div {
-        align-self: auto;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    /* ========== Main Section ========== */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: var(--tertiary-color);
+    }
+
+    
+    /* ========== Middle Main ========== */
+    .middle-main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    .middle-main h2 {
+        text-align: center;
+        background: var(--background-color);
+        color: var(--info-color);
+    }
+
+    .middle-main h3 {
+        text-align: center;
+        background: var(--background-color);
+        padding: 1rem;
+    }
+
+    .middle-main p {
+        background: var(--background-color);
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .profile-div,
+    .experience-div,
+    .education-div,
+    .certifications-div,
+    .technical-skills {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .experience-div,
+    .certifications-div {
+        align-self: flex-end;
+    }
+}
+@media screen and (min-width: 2560px) {
+
+    /* ========== Main Section ========== */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: var(--tertiary-color);
+        padding: 4rem 0;
+    }
+
+    .top-main {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ========== Middle Main ========== */
+    .middle-main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .middle-main h2 {
+        width: 100%;
+        text-align: center;
+        background: var(--background-color);
+        color: var(--info-color);
+        font-size: 4rem;
+        padding: 2rem 0;
+    }
+
+    .middle-main h3 {
+        text-align: center;
+        background: var(--background-color);
+        padding: 2rem;
+        font-size: 3.5rem;
+    }
+
+    .middle-main p {
+        background: var(--background-color);
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+        font-size: 2.8rem;
+        line-height: 2;
+    }
+
+    .profile-div,
+    .experience-div,
+    .education-div,
+    .certifications-div,
+    .technical-skills {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 50%;
+        padding: 1.5rem;
+    }
+
+    .experience-div,
+    .certifications-div {
+        align-self: flex-end;
     }
 }

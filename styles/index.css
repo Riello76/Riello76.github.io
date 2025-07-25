@@ -322,9 +322,9 @@ section {
     height: 4rem;
   }
 
-  .about-me,
+
   .about-me p {
-    width: 100vw;
+    width: 100%;
   }
 
   #carouselExampleIndicators {
@@ -338,6 +338,15 @@ section {
   }
 
   .my-tools p {
+    width: 50%;
+  }
+
+  .technical-details p {
+    width: 50%;
+    text-align: center;
+  }
+
+  .technical-img-div {
     width: 50%;
   }
 }
@@ -393,10 +402,7 @@ section {
   }
 
   .about-me p {
-    background: var(--background-color);
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    width: 100vw;
+    width: 100%;
   }
 
   /* ========== My Tools ========== */
@@ -415,9 +421,14 @@ section {
 .my-tools img {
   width: 10rem;
 }
+
 .my-tools a:hover {
   transform: scale(0.9);
   transition: transform 0.3s ease;
+}
+
+.technical-img-div img {
+  width: 15rem;
 }
 
 @media screen and (min-width:2560px) {
@@ -480,24 +491,20 @@ section {
   }
 
   .about-me p {
-    background: var(--background-color);
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    width: 100vw;
+    width: 100%;
   }
 
   /* ========== My Tools ========== */
-/* ========== My Tools ========== */
 
-.my-tools div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .my-tools div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.my-tools p {
-  width: 50%;
-}
+  .my-tools p {
+    width: 50%;
+  }
 }
 
 .my-tools img {
@@ -508,36 +515,58 @@ section {
   transform: scale(0.9);
   transition: transform 0.3s ease;
 }
+
+/* ========== Landscape (max-height: 500px) Fixes ========== */
+
 @media screen and (orientation: landscape) and (max-height: 500px) {
 
-  /* Hero Section Fix */
+  html,
+  body {
+    overflow-x: hidden;
+    font-size: 0.9rem;
+  }
+
+  /* ==========  Hero Section ========== */
+
   .hero-img-container {
-    height: 40vh;
+    height: 70vh;
     background-position: center top;
+  }
+
+  .hero-content {
+    transform: translate(-50%, -50%) scale(0.7);
+    width: 100%;
+    padding: 0 1rem;
   }
 
   .hero-content h3 {
     font-size: 1.2rem;
     width: 90vw;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
   }
 
   .hero-content h5 {
     font-size: 1rem;
     width: 85vw;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
   }
 
   .my-img {
-    width: 12rem;
-    margin-bottom: 1rem;
+    width: 10rem;
+    margin: 1rem 0;
+    box-shadow: 0px 10px 20px var(--tertiary-color);
   }
 
   .cta-btn {
     font-size: 1rem;
     width: 60vw;
-    height: 3rem;
+    height: 2.8rem;
+    margin-top: 1rem;
   }
 
-  /* Carousel Fix */
+  /* ==========  Carousel ========== */
   #carouselExampleIndicators {
     margin: 1rem 0;
     width: 100vw;
@@ -556,58 +585,7 @@ section {
     width: 100%;
   }
 
-}
-/* ========== Landscape & Orientation Fixes ========== */
-
-@media screen and (orientation: landscape) and (max-height: 500px) {
-
-  html,
-  body {
-    overflow-x: hidden;
-    font-size: 0.9rem;
-  }
-
-        .hero-img-container {
-          height: 70vh;
-          background-position: center top;
-        }
-    
-        .hero-content {
-          transform: translate(-50%, -50%) scale(0.7);
-          width: 100%;
-          padding: 0 1rem;
-        }
-    
-        .hero-content h3 {
-          font-size: 1.2rem;
-          width: 90vw;
-          margin: 0.5rem 0;
-          padding: 0.5rem;
-        }
-    
-        .hero-content h5 {
-          font-size: 1rem;
-          width: 85vw;
-          margin: 0.5rem 0;
-          padding: 0.5rem;
-        }
-    
-        .my-img {
-          width: 10rem;
-          margin: 1rem 0;
-          box-shadow: 0px 10px 20px var(--tertiary-color);
-        }
-    
-        .cta-btn {
-          font-size: 1rem;
-          width: 60vw;
-          height: 2.8rem;
-          margin-top: 1rem;
-        }
-
-  .carousel-inner {
-    width: 90vw;
-  }
+  /* ==========  About & Tools ========== */
 
   .about-me p,
   .technical-details p,
@@ -620,4 +598,5 @@ section {
   .my-tools img {
     width: 5rem;
   }
+
 }
