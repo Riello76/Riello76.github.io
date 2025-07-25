@@ -22,7 +22,7 @@
   --info-color: #ffffff;
 
   /* Background color */
-  --background-color: linear-gradient(to right, var(--tertiary-color) 0%, var(--main-color), var(--tertiary-color) 100%);
+--background-gradient: linear-gradient(to right, var(--tertiary-color) 0%, var(--main-color), var(--tertiary-color) 100%);
 
   /* Border radius */
   --border-radius: 2.5rem;
@@ -162,7 +162,7 @@ picture {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--background-color);
+    background: var(--background-gradient);
   }
 
   .logo {
@@ -222,7 +222,7 @@ picture {
     z-index: 1000;
     width: clamp(13rem, 30vw, 20rem);
     background-color: var(--tertiary-color);
-    background: var(--background-color);
+    background: var(--background-gradient);
   }
 
   .nav-item-text {
@@ -318,7 +318,7 @@ picture {
 
   /* ========== Footer ========== */
   .cs-footer {
-    background: var(--background-color);
+    background: var(--background-gradient);
   }
 
   .cs-footer a {

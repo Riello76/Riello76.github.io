@@ -1,5 +1,57 @@
-@import url(/styles/header-footer-resets.css);
+@import url("/styles/header-footer-resets.css");
 
+@media screen and (min-width: 320px) {
+
+  /* ========== Main Section ========== */
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  
+  .middle-main {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .middle-main h2{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--info-color);
+    background-color: var(--tertiary-color);
+  }
+  .middle-main h3 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .middle-main p {
+    padding: 0.75rem;
+    font-size: 1.4rem;
+    width: 100%;
+  }
+
+  .middle-main img {
+    max-width: 100%;
+    height: auto;
+    animation: bounceInOpacity 3s ease-out;
+  }
+
+  .middle-main img:hover {
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+  }
+
+  .branding-div,
+  .graphic-div,
+  .design-div {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+}
+@media screen and (min-width: 1440px){
 /* ========== Main Section ========== */
 main {
   display: flex;
@@ -55,7 +107,7 @@ main {
 .design-div {
   width: 30%;
 }
-
+}
 /* Media Queries */
 @media screen and (max-width:768px) {
   main {
