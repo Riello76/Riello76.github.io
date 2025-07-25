@@ -207,22 +207,25 @@ picture {
     margin-left: 1rem;
   }
 
-  .cs-navbar {
-    float: left;
-    width: 30%;
+  .contacts{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    text-decoration: var(--secondary-color);
   }
 
     /* ========== Navbar ========== */
     .cs-navbar {
-      position: fixed;
+      position: absolute;
       float: left;
       z-index: 1000;
       margin-right: 10rem;
+      width: clamp(13rem, 30vw, 20rem);
       background-color: var(--tertiary-color);
       background: var(--background-color);
     }
-  
-  
+ 
     .nav-item-text {
       color: var(--info-color);
       font-size: var(--font-size-h5);
@@ -473,58 +476,6 @@ picture {
     background-color: var(--main-color);
     color: var(--info-color);
     transform: scale(0.9);
-  }
-
-  /* ========== Hamburger ========== */
-  .navbar-toggler {
-    border: none;
-    outline: none;
-    padding: 0;
-  }
-
-  .navbar-toggler-icon {
-    width: 4rem;
-    height: 3rem;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    background: transparent;
-    cursor: pointer;
-  }
-
-  .navbar-toggler-icon .bar {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0.3rem;
-    background-color: var(--info-color);
-    border-radius: 0.4rem;
-    transition: transform 0.3s ease-out;
-  }
-
-  .navbar-toggler-icon .bar:nth-child(1) {
-    top: 0.20rem;
-  }
-
-  .navbar-toggler-icon .bar:nth-child(2) {
-    top: 40%;
-    transform: translateY(-50%);
-  }
-
-  .navbar-toggler-icon .bar:nth-child(3) {
-    bottom: 0.80rem;
-  }
-
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .bar:nth-child(1) {
-    transform: translateY(1rem) rotate(45deg);
-  }
-
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .bar:nth-child(2) {
-    transform: scale(0);
-  }
-
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .bar:nth-child(3) {
-    transform: translateY(-0.80rem) rotate(-45deg);
   }
 
   /* ========== Footer ========== */
