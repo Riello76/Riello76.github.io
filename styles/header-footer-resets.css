@@ -9,6 +9,7 @@
 
 /* ========== Global Variables ========== */
 :root {
+  scroll-behavior: smooth;
   /* Main color */
   --main-color: #001f3f;
 
@@ -22,7 +23,7 @@
   --info-color: #ffffff;
 
   /* Background color */
---background-gradient: linear-gradient(to right, var(--tertiary-color) 0%, var(--main-color), var(--tertiary-color) 100%);
+  --background-gradient: linear-gradient(to right, var(--tertiary-color) 0%, var(--main-color), var(--tertiary-color) 100%);
 
   /* Border radius */
   --border-radius: 2.5rem;
@@ -158,38 +159,6 @@ picture {
     flex-direction: column;
   }
 
-  .top-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: var(--background-gradient);
-  }
-
-  .logo {
-    width: clamp(10rem, 15vw, 30rem);
-    height: auto;
-    border-radius: 100%;
-    box-shadow: 0px 10px 10px var(--tertiary-color);
-    animation: bounceInOpacity 3s ease-out;
-    will-change: transform;
-  }
-
-  .title {
-    font-family: var(--font-family);
-    font-weight: bolder;
-    font-size: clamp(1.5rem, 1rem + 2vw, var(--font-size-h1));
-    color: var(--info-color);
-    text-align: center;
-    margin: 2rem 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-  }
-
-  .title .highlight {
-    color: var(--secondary-color);
-    font-style: italic;
-    font-weight: 700;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-  }
 
   .symbol.left,
   .symbol.right {
@@ -206,14 +175,6 @@ picture {
     color: var(--info-color);
     margin-left: 1rem;
   }
-
-  .contacts {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    font-weight: bold;
-  }
-
 
   /* ========== Navbar ========== */
   .cs-navbar {
@@ -248,7 +209,7 @@ picture {
 
   .dropdown-menu {
     background-color: var(--tertiary-color);
-    background: var(--background-color);
+    background: var(--background-gradient);
   }
 
   .dropdown-menu a {
@@ -319,6 +280,7 @@ picture {
   /* ========== Footer ========== */
   .cs-footer {
     background: var(--background-gradient);
+
   }
 
   .cs-footer a {
@@ -349,45 +311,6 @@ picture {
 }
 
 @media screen and (min-width: 1024px) {
-  .top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    background: var(--background-color);
-    margin-bottom: 3rem;
-  }
-
-  .logo {
-    width: clamp(8rem, 22rem, 35rem);
-    height: auto;
-    border-radius: 100%;
-    box-shadow: 0px 8px 8px var(--tertiary-color);
-    animation: bounceInOpacity 3s ease-out;
-    will-change: transform;
-  }
-
-  .logo:hover {
-    transform: scale(0.9);
-    box-shadow: 0px 8px 8px var(--body-color);
-  }
-
-  .title {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: var(--font-size-h1);
-    color: var(--info-color);
-    text-align: center;
-    margin: 1.5rem 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-  }
-
-  .title .highlight {
-    color: var(--secondary-color);
-    font-style: italic;
-    font-weight: 700;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-  }
 
   .symbol.left,
   .symbol.right {
@@ -409,22 +332,7 @@ picture {
     color: var(--secondary-color);
   }
 
-  .contacts {
-    display: flex;
-  }
 
-  .contacts a {
-    text-decoration-color: var(--secondary-color);
-    font-size: clamp(1rem, 0.9rem + 0.7vw, 2rem);
-    font-weight: bolder;
-    margin: 1rem;
-  }
-
-  .contacts a:hover {
-    text-decoration-color: var(--info-color);
-    color: var(--secondary-color);
-    transform: scale(1.1);
-  }
 
   .top-main {
     margin-top: 3rem;
@@ -435,7 +343,7 @@ picture {
     float: right;
     z-index: 1000;
     margin-right: 7rem;
-    background: var(--background-color);
+    background: var(--background-gradient);
   }
 
   .cs-navbar a {
@@ -466,7 +374,7 @@ picture {
   }
 
   .dropdown-menu {
-    background: var(--background-color);
+    background: var(--background-gradient);
   }
 
   .dropdown-menu a {
@@ -482,7 +390,7 @@ picture {
 
   /* ========== Footer ========== */
   .cs-footer {
-    background: var(--background-color);
+    background: var(--background-gradient);
   }
 
   .cs-footer a {
@@ -512,45 +420,6 @@ picture {
 }
 
 @media screen and (min-width: 1440px) {
-  .top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    background: var(--background-color);
-    margin-bottom: 4rem;
-  }
-
-  .logo {
-    width: clamp(10rem, 30rem, 50rem);
-    height: auto;
-    border-radius: 100%;
-    box-shadow: 0px 10px 10px var(--tertiary-color);
-    animation: bounceInOpacity 3s ease-out;
-    will-change: transform;
-  }
-
-  .logo:hover {
-    transform: scale(0.9);
-    box-shadow: 0px 10px 10px var(--body-color);
-  }
-
-  .title {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: var(--font-size-h1);
-    color: var(--info-color);
-    text-align: center;
-    margin: 2rem 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-  }
-
-  .title .highlight {
-    color: var(--secondary-color);
-    font-style: italic;
-    font-weight: 700;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-  }
 
   .symbol.left,
   .symbol.right {
@@ -578,7 +447,7 @@ picture {
 
   .contacts a {
     text-decoration-color: var(--secondary-color);
-    font-size: clamp(1.2rem, 1rem + 0.8vw, 2.4rem);
+    font-size: clamp(1.2rem, 1rem + 2vw, 3rem);
     font-weight: bolder;
     margin: 1rem;
   }
@@ -598,7 +467,7 @@ picture {
     float: right;
     z-index: 1000;
     margin-right: 10rem;
-    background: var(--background-color);
+    background: var(--background-gradient);
   }
 
   .cs-navbar a {
@@ -628,7 +497,7 @@ picture {
   }
 
   .dropdown-menu {
-    background: var(--background-color);
+    background-color: var(--background-gradient);
   }
 
   .dropdown-menu a {
@@ -644,7 +513,7 @@ picture {
 
   /* ========== Footer ========== */
   .cs-footer {
-    background: var(--background-color);
+    background: var(--background-gradient);
   }
 
   .cs-footer a {
@@ -675,28 +544,6 @@ picture {
 
 @media screen and (min-width: 2560px) {
 
-  /* ========== Header Elements ========== */
-  .logo {
-    width: clamp(20rem, 35rem, 60rem);
-    box-shadow: 0px 12px 12px var(--tertiary-color);
-  }
-
-  .title {
-    font-size: 6rem;
-    margin: 3rem 0;
-  }
-
-  .symbol.left,
-  .symbol.right {
-    font-size: 4rem;
-  }
-
-  .contacts a {
-    font-size: clamp(1.8rem, 1rem + 1.2vw, 3rem);
-    margin: 1.5rem;
-  }
-
-  /* ========== Navbar ========== */
   .cs-navbar {
     margin-right: 15rem;
   }
@@ -778,7 +625,7 @@ picture {
   .cs-navbar {
     width: clamp(10rem, 25vw, 16rem);
     position: absolute;
-    background: var(--background-color);
+    background: var(--background-gradient);
     z-index: 1000;
   }
 
@@ -805,7 +652,7 @@ picture {
 
   .dropdown-menu {
     background-color: var(--tertiary-color);
-    background: var(--background-color);
+    background: var(--background-gradient);
     padding: 0.5rem;
   }
 
@@ -822,6 +669,57 @@ picture {
     transform: scale(0.9);
   }
 
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    padding: 0;
+  }
+
+  .navbar-toggler-icon {
+    width: 4rem;
+    height: 3rem;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .navbar-toggler-icon .bar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0.3rem;
+    background-color: var(--info-color);
+    border-radius: 0.4rem;
+    transition: transform 0.3s ease-out;
+  }
+
+  .navbar-toggler-icon .bar:nth-child(1) {
+    top: 0.20rem;
+  }
+
+  .navbar-toggler-icon .bar:nth-child(2) {
+    top: 40%;
+    transform: translateY(-50%);
+  }
+
+  .navbar-toggler-icon .bar:nth-child(3) {
+    bottom: 0.80rem;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .bar:nth-child(1) {
+    transform: translateY(1rem) rotate(45deg);
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .bar:nth-child(2) {
+    transform: scale(0);
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .bar:nth-child(3) {
+    transform: translateY(-0.80rem) rotate(-45deg);
+  }
+
   /* ========== Footer ========== */
   .cs-footer {
     flex-direction: column;
@@ -836,4 +734,62 @@ picture {
   .go-to-top {
     font-size: 1.5rem;
   }
+}
+
+/* ========== COMMON DESKTOP STYLES (min-width: 1024px and up) ========== */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: var(--background-gradient);
+  margin-bottom: 3rem;
+}
+
+.logo {
+  width: clamp(8rem, calc(1rem + 13vw), 35rem);
+  height: auto;
+  border-radius: 100%;
+  box-shadow: 0px 8px 8px var(--tertiary-color);
+  animation: bounceInOpacity 3s ease-out;
+  will-change: transform;
+}
+
+.logo:hover {
+  transform: scale(0.9);
+  box-shadow: 0px 8px 8px var(--main-color);
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: clamp(1.4rem, 1rem + 2vw, 8rem);
+  color: var(--info-color);
+  text-align: center;
+  margin: 1.5rem 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.title .highlight {
+  color: var(--secondary-color);
+  font-style: italic;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.contacts {
+  display: flex;
+}
+
+.contacts a {
+  text-decoration-color: var(--secondary-color);
+  font-size: clamp(1rem, 0.9rem + 1vw, 10rem);
+  font-weight: bolder;
+  margin: 1rem;
+}
+
+.contacts a:hover {
+  text-decoration-color: var(--info-color);
+  color: var(--secondary-color);
+  transform: scale(1.1);
 }

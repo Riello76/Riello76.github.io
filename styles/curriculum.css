@@ -34,24 +34,24 @@
     .middle-main h2 {
         width: 100%;
         text-align: center;
-        background: var(--background-color);
+        background: var(--background-gradient);
         color: var(--info-color);
-        font-size: clamp(1.5rem, 4vw, 2.2rem);
+        font-size: clamp(2rem, 4vw, 2.2rem);
         padding: 0.5rem 0;
     }
 
     .middle-main h3 {
         text-align: center;
-        background: var(--background-color);
+        background: var(--background-gradient);
         padding: 0.75rem 1rem;
-        font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+        font-size: clamp(1.7rem, 3.5vw, 1.8rem);
     }
 
     .middle-main p {
-        background: var(--background-color);
+        background: var(--background-gradient);
         padding: 0.75rem 1rem;
         margin-bottom: 0.5rem;
-        font-size: clamp(1rem, 3vw, 1.4rem);
+        font-size: clamp(1.5rem, 3vw, 1.4rem);
     }
 
 
@@ -100,23 +100,23 @@
     .middle-main h2 {
         width: 100%;
         text-align: center;
-        background: var(--background-color);
+        background: var(--background-gradient);
         color: var(--info-color);
         font-size: 3rem;
     }
 
     .middle-main h3 {
         text-align: center;
-        background: var(--background-color);
+        background: var(--background-gradient);
         padding: 1rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .middle-main p {
-        background: var(--background-color);
+        background: var(--background-gradient);
         padding: 1rem;
         margin-bottom: 0.5rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .profile-div,
@@ -156,18 +156,18 @@
     }
     .middle-main h2 {
         text-align: center;
-        background: var(--background-color);
+        background: var(--background-gradient);
         color: var(--info-color);
     }
 
     .middle-main h3 {
         text-align: center;
-        background: var(--background-color);
+        background: var(--background-gradient);
         padding: 1rem;
     }
 
     .middle-main p {
-        background: var(--background-color);
+        background: var(--background-gradient);
         padding: 1rem;
         margin-bottom: 0.5rem;
     }
