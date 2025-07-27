@@ -14,14 +14,15 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 5rem;
 }
 
 .top-main h2 {
   width: 100%;
   text-align: center;
-  background: var(--background-color);
+  background: var(--background-gradient);
   color: var(--info-color);
-    padding: 1rem;
+  padding: 1rem;
 }
 
 /* ========== Middle Main ========== */
@@ -34,12 +35,12 @@ main {
 
 .middle-main h3 {
   text-align: center;
-  background: var(--background-color);
-    padding: 1rem;
+  background: var(--background-gradient);
+  padding: 1rem;
 }
 
 .middle-main p {
-  background: var(--background-color);
+  background: var(--background-gradient);
   padding: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -66,7 +67,7 @@ main {
 
 .icons-content img,
 .buttons-content img {
-  width: 10rem;
+  width: 5rem;
   margin: 1rem;
 }
 
@@ -76,6 +77,7 @@ main {
   flex-direction: column;
   width: 30%;
 }
+
 .video-div a {
   display: flex;
   flex-wrap: wrap;
@@ -95,6 +97,7 @@ main {
   main {
     margin-top: 2rem;
   }
+
   .icons-div,
   .buttons-div,
   .video-div {
@@ -102,8 +105,7 @@ main {
   }
 
   .icons-content img,
-  .buttons-content img
-  {
+  .buttons-content img {
     width: 4rem;
   }
 }

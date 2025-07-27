@@ -1,11 +1,11 @@
-@import url(/styles/header-footer-resets.css);
+@import url("/styles/header-footer-resets.css");
 
 /* ========== Main Section ========== */
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: var(--tertiary-color);
+  background-color: var(--tertiary-gradient);
 }
 
 .top-main {
@@ -14,11 +14,12 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 5rem;
 }
 .top-main h2 {
   width: 100%;
   text-align: center;
-  background: var(--background-color);
+  background: var(--background-gradient);
   color: var(--info-color);
 }
 
@@ -35,10 +36,11 @@ main {
 .middle-main h3 {
   width: 100%;
   text-align: center;
-  background: var(--background-color);
+  background: var(--background-gradient);
 }
 .middle-main p {
-  background: var(--background-color);
+  text-align: center;
+  width: 50%;
 }
 .middle-main a{
   text-decoration-color: var(--secondary-color  );
@@ -56,7 +58,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--background-color);
+  background: var(--background-gradient);
   width: 100%;
   padding: 1rem;
 }

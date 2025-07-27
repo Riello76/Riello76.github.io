@@ -19,7 +19,7 @@ main {
 .top-main h2 {
   width: 100%;
   text-align: center;
-  background: var(--background-color);
+  background: var(--background-gradient);
   color: var(--info-color);
   padding: 1rem;
 }
@@ -34,20 +34,28 @@ main {
 
 .middle-main h3 {
   text-align: center;
-  background: var(--background-color);
+  background: var(--background-gradient);
   padding: 1rem;
 }
 
 .middle-main p {
-  background: var(--background-color);
+  background: var(--background-gradient);
   padding: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.middle-main img {
+.section-1-div img {
   padding: 1rem;
+  width: 50%;
 }
-
+.section-2-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-2-div img{
+  width: 40%;
+}
 .section-1-div,
 .section-2-div {
   display: flex;
@@ -65,7 +73,7 @@ main {
 /* ========== Media Queries ========== */
 @media screen and (max-width:768px) {
   main {
-    margin-top: 1rem;
+    margin-top: 5rem;
   }
 
   .middle-main {

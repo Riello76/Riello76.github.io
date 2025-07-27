@@ -17,7 +17,7 @@ main {
   width: 100%;
 }
 
- h2 {
+h2 {
   width: 100%;
   text-align: center;
   background: var(--background-gradient);
@@ -30,6 +30,7 @@ main {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
+  margin-bottom: 2rem;
 }
 
 .middle-main h3 {
@@ -49,7 +50,7 @@ main {
 }
 
 .middle-main p {
-  background: var(--background-color);
+  background: var(--background-gradient);
   padding: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -58,6 +59,7 @@ main {
 .graphic-div,
 .design-div {
   width: 30%;
+  background: var(--background-gradient);
 }
 
 /* Media Queries */

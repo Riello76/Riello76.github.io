@@ -19,7 +19,7 @@ main {
 .top-main h2 {
   width: 100%;
   text-align: center;
-  background: var(--background-color);
+  background: var(--background-gradient);
   color: var(--info-color);
   padding: 1rem;
 }
@@ -34,33 +34,32 @@ main {
 .middle-main h3 {
   width: 100%;
   text-align: center;
-  background: var(--background-color);
+  background: var(--background-gradient);
   padding: 1rem;
 }
 
 .middle-main p {
+  text-align: center;
+  width: 100%;
   padding: 1rem;
 }
 
 .middle-main img {
-  width: 5rem;
+width: clamp(10rem, 20vw, 50rem);
   display: flex;
-  flex-grow: 0.2;
-  height: 100%;
+  height: auto;
   padding: 1rem;
 }
 
 .logos-div,
 .business-card-div,
 .calendars-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   margin-bottom: 0.5rem;
-  background: var(--background-color);
-  justify-content: center;
-}
-
-.calendars-div {
-  margin-bottom: 0.5rem;
+  background: var(--background-gradient);
 }
 
 .logos-content,
@@ -70,8 +69,10 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
 }
 
+.logos-content img:hover,
 .business-card-content img:hover,
 .calendars-content img:hover {
   transform: scale(1.80);
@@ -81,7 +82,7 @@ main {
 /* ========== Media Queries ========== */
 @media screen and (max-width:768px) {
   main {
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 
   .logos-div,
@@ -90,10 +91,7 @@ main {
     width: 100%;
   }
 
-  .middle-main img {
-    width: 100%;
-  }
-
+   .logos-content img:hover,
   .business-card-content img:hover,
   .calendars-content img:hover {
     transform: none;
