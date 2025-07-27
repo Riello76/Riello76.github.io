@@ -298,7 +298,7 @@ picture {
   .nav-item-text {
     color: var(--info-color);
     font-weight: bold;
-    font-size: var(--font-size-h5);
+    font-size: clamp(1rem, 1rem + 0.7vw, 8rem);
   }
 
   .nav-item-text:hover,
@@ -376,82 +376,7 @@ picture {
   .top-main {
     margin-top: 4rem;
   }
-
-  /* ========== Navbar ========== */
-  .cs-navbar {
-    float: right;
-    z-index: 1000;
-    margin-right: 1rem;
-    background: var(--background-gradient);
-  }
-
-  .cs-navbar a {
-    padding: 0.75rem 1rem;
-    margin: 0.5rem;
-  }
-
-  .nav-item-text {
-    color: var(--info-color);
-    font-size: var(--font-size-h5);
-  }
-
-  .nav-item-text:hover,
-  .dropdown-toggle:hover::after {
-    transform: scale(1.1);
-  }
-
-  .nav-link {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
-  }
-
-  .dropdown-toggle::after {
-    color: var(--secondary-color);
-    font-size: 2rem;
-  }
-
-  .dropdown-menu {
-    background-color: var(--background-gradient);
-  }
-
-  .dropdown-menu a {
-    color: var(--secondary-color);
-    margin: 0;
-  }
-
-  .dropdown-item:hover {
-    background-color: var(--main-color);
-    color: var(--info-color);
-    transform: scale(0.9);
-  }
-
 }
-
-@media screen and (min-width: 2560px) {
-
-  .cs-navbar {
-    margin-right: 1rem;
-  }
-
-  .nav-item-text {
-    font-size: 3rem;
-  }
-
-  .dropdown-toggle::after {
-    font-size: 2.5rem;
-  }
-
-  .dropdown-menu a {
-    font-size: 2.5rem;
-  }
-
-  main {
-    padding: 0;
-  }
-
-}
-
 /* ========== Landscape & Orientation Fixes ========== */
 @media screen and (orientation: landscape) and (max-height: 500px) {
   .top-header {

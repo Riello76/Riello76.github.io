@@ -16,6 +16,7 @@ main {
   width: 100%;
   margin-top: 5rem;
 }
+
 .top-main h2 {
   width: 100%;
   text-align: center;
@@ -38,14 +39,16 @@ main {
   text-align: center;
   background: var(--background-gradient);
 }
+
 .middle-main p {
   text-align: center;
   width: 50%;
 }
-.middle-main a{
-  text-decoration-color: var(--secondary-color  );
-  font-weight: bold;
+
+.middle-main a:hover {
+  transform: scale(0.9);
 }
+
 .old-portfolio-div,
 .glastonbury-div {
   display: flex;
@@ -53,6 +56,7 @@ main {
   width: 100%;
   margin-bottom: 0.5rem;
 }
+
 .old-portfolio-content,
 .glastonbury-content {
   display: flex;
