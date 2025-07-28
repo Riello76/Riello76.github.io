@@ -215,7 +215,7 @@ section {
     justify-content: center;
   }
 
-  .my-tools h3 {
+  .my-tools h2 {
     text-align: center;
     width: 100%;
     padding: 1rem;
@@ -241,7 +241,7 @@ section {
     width: 100%;
   }
 
-  .technical-details h3 {
+  .technical-details h2 {
     text-align: center;
     padding: 1rem;
     background: var(--background-gradient);
