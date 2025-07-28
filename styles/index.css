@@ -55,7 +55,7 @@ section {
   }
 
   .hero-img-container h3,
-  .hero-img-container h5 {
+  .hero-img-container h4 {
     font-weight: bold;
     padding: 1rem;
     background-color: var(--main-color);
@@ -71,15 +71,16 @@ section {
     font-size: 1.5rem;
   }
 
-  .hero-img-container h5 {
+  .hero-img-container h4 {
     font-size: 1.2rem;
+    color: var(--info-color);
   }
 
   .hero-img-container h3 span {
     color: var(--info-color);
   }
 
-  .hero-img-container h5 span {
+  .hero-img-container h4 span {
     color: var(--secondary-color);
   }
 
@@ -309,7 +310,7 @@ section {
     font-size: 1.7rem;
   }
 
-  .hero-content h5 {
+  .hero-content h4 {
     width: 65vw;
     font-size: 1.4rem;
   }
@@ -348,7 +349,7 @@ section {
     font-size: 2rem;
   }
 
-  .hero-content h5 {
+  .hero-content h4 {
     width: 55vw;
     font-size: 1.6rem;
   }
@@ -454,7 +455,7 @@ section {
     font-size: 3rem;
   }
 
-  .hero-content h5 {
+  .hero-content h4 {
     width: 37vw;
     font-size: 2rem;
   }
@@ -539,7 +540,7 @@ section {
     font-size: 6rem;
   }
 
-  .hero-content h5 {
+  .hero-content h4 {
     width: 60vw;
     font-size: 4rem;
   }
@@ -631,7 +632,7 @@ section {
     padding: 0.5rem;
   }
 
-  .hero-content h5 {
+  .hero-content h4 {
     font-size: 1rem;
     width: 85vw;
     margin: 0.5rem 0;
