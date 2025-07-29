@@ -27,15 +27,13 @@ section {
 
   /* ========== Hero Image ========== */
   .hero-img-container {
-    background-image: url('/images/hero-image.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     width: 100vw;
     height: 60vh;
   }
-
+   .hero-img{
+    height: 60vh;
+   }
   .hero-content {
     display: flex;
     flex-direction: column;
@@ -284,17 +282,14 @@ section {
 
 @media screen and (min-width:768px) {
 
+  .middle-main{
+    margin-top: 5rem;
+  }
   /* ========== Hero Image ========== */
   .hero-img-container {
-    background-image: url('/images/hero-image.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    width: 100vw;
     height: 50vh;
   }
-
+  
   .hero-content {
     flex-direction: column;
     justify-content: center;
@@ -440,7 +435,9 @@ section {
   .hero-img-container {
     height: 80vh;
   }
-
+  .hero-img{
+    height: 90vh;
+  }
   .hero-content {
     height: 100%;
   }
