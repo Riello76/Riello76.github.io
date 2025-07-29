@@ -31,9 +31,13 @@ section {
     width: 100vw;
     height: 60vh;
   }
-   .hero-img{
+
+  .hero-img {
+    object-fit: cover;
     height: 60vh;
-   }
+    width: 100%;
+  }
+
   .hero-content {
     display: flex;
     flex-direction: column;
@@ -282,14 +286,15 @@ section {
 
 @media screen and (min-width:768px) {
 
-  .middle-main{
+  .middle-main {
     margin-top: 5rem;
   }
+
   /* ========== Hero Image ========== */
   .hero-img-container {
     height: 50vh;
   }
-  
+
   .hero-content {
     flex-direction: column;
     justify-content: center;
@@ -435,9 +440,11 @@ section {
   .hero-img-container {
     height: 80vh;
   }
-  .hero-img{
+
+  .hero-img {
     height: 90vh;
   }
+
   .hero-content {
     height: 100%;
   }
@@ -510,7 +517,7 @@ section {
 @media screen and (min-width:2560px) {
 
   /* ========== Text sizes ========== */
- 
+
 
   p {
     font-size: 4rem;
