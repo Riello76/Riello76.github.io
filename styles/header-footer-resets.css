@@ -377,6 +377,7 @@ picture {
     margin-top: 4rem;
   }
 }
+
 /* ========== Landscape & Orientation Fixes ========== */
 @media screen and (orientation: landscape) and (max-height: 500px) {
   .top-header {
@@ -544,7 +545,7 @@ picture {
   box-shadow: 0px 3px 3px var(--info-color);
   animation: bounceInOpacity 3s ease-out;
   will-change: transform;
-  background: var(--background-gradient);
+  background: var(--tertiary-color);
   margin: 2rem;
 }
 

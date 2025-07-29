@@ -215,7 +215,7 @@
     .middle-main h2 {
         width: 100%;
         text-align: center;
-        background: var(--background-color);
+        background: var(--background-gradient);
         color: var(--info-color);
         font-size: 4rem;
         padding: 2rem 0;
@@ -223,13 +223,13 @@
 
     .middle-main h3 {
         text-align: center;
-        background: var(--background-color);
+        background: var(--background-gradient);
         padding: 2rem;
         font-size: 3.5rem;
     }
 
     .middle-main p {
-        background: var(--background-color);
+        background: var(--background-gradient);
         padding: 2rem;
         margin-bottom: 1.5rem;
         font-size: 2.8rem;
