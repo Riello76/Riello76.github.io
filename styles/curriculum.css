@@ -2,15 +2,12 @@
 
 /* ========== Media Queries ========== */
 @media screen and (min-width: 320px) {
-   header{
-    background-color: var(--tertiary-color);
-   }
+
     /* ========== Main Section ========== */
     main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        background-color: var(--tertiary-color);
     }
 
     .top-main {
