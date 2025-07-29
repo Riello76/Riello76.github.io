@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
   <!-- Character Set -->
   <meta charset="UTF-8">
@@ -36,19 +33,32 @@
   <link rel="preconnect" href="https://www.youtube.com" crossorigin>
   <link rel="preconnect" href="https://www.google.com" crossorigin>
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"
-    media="all">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="all">
+  <!-- Preload critical CSS -->
+  <link rel="preload" href="/styles/header-footer-resets.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="/styles/curriculum.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="/styles/header-footer-resets.css">
+    <link rel="stylesheet" href="/styles/curriculum.css">
+  </noscript>
 
-  <!-- Local CSS -->
-  <link rel="stylesheet" href="/styles/header-footer-resets.css" media="all">
-  <link rel="stylesheet" href="/styles/curriculum.css" media="all">
+  <!-- Bootstrap (async loading) -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style"
+    onload="this.rel='stylesheet'" crossorigin="anonymous">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      crossorigin="anonymous">
+  </noscript>
+
+  <!-- AOS (async loading) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  </noscript>
 
   <!-- Favicon -->
   <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
 </head>
+
 
 <body>
   <!-- ========== HEADER SECTION ========== -->
