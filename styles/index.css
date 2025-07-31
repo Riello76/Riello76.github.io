@@ -1,4 +1,3 @@
-
 section {
   margin-bottom: 2rem;
 }
@@ -25,19 +24,20 @@ section {
   }
 
   /* ========== Hero Image ========== */
- .hero {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   height: 60vh;
-   background-image: url('/images/hero-image.webp');
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-image: url('/images/hero-image.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  
+
   .my-img {
     width: 15rem;
     height: 15rem;
@@ -282,9 +282,6 @@ section {
   }
 
   /* ========== Hero Image ========== */
-  .hero {
-    height: 50vh;
-  }
 
   .my-img {
     width: 15rem;
@@ -330,6 +327,12 @@ section {
 @media screen and (min-width:1024px) {
 
   /* ========== Hero Content ========== */
+
+  .hero {
+    height: 80vh;
+    justify-content: space-evenly;
+  }
+
   .hero h2 {
     width: 60vw;
     font-size: 2rem;
@@ -423,8 +426,10 @@ section {
 @media screen and (min-width:1440px) {
 
   /* ========== Hero Image ========== */
+
   .hero {
-    height: 80vh;
+    height: 100vh;
+    justify-content: space-evenly;
   }
 
   .my-img {
@@ -481,17 +486,17 @@ section {
   .my-tools p {
     width: 50%;
   }
-  
+
   .my-tools img {
     width: 10rem;
   }
-  
+
   .my-tools a:hover {
     transform: scale(0.9);
     transition: transform 0.3s ease;
   }
 }
-  
+
 @media screen and (min-width:2560px) {
 
   /* ========== Text sizes ========== */
@@ -503,7 +508,8 @@ section {
 
   /* ========== Hero Image ========== */
   .hero {
-    height: 80vh;
+    height: 100vh;
+    justify-content: space-around;
   }
 
   .my-img {
