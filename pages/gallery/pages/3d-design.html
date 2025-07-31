@@ -308,7 +308,12 @@
     crossorigin="anonymous"></script>
 
   <!-- ========== AOS (Animate On Scroll) Library ========== -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+<script defer>
+  window.addEventListener('DOMContentLoaded', () => {
+    AOS.init();
+  });
+</script>
 
   <!-- ========== Initialize AOS Animations ========== -->
   <script>
