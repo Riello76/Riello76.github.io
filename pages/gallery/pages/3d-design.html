@@ -37,8 +37,10 @@
     crossorigin="anonymous" media="print" onload="this.media='all'">
 
   <!-- ========== AOS CSS (async load) ========== -->
-  <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" crossorigin>
-  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" crossorigin="anonymous">
+<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'"
+  crossorigin="anonymous">
+
 
   <!-- ========== Custom Stylesheets (load normally) ========== -->
   <link rel="stylesheet" href="../style/3d-design.css">
@@ -56,11 +58,11 @@
     <!-- ========== TOP HEADER ========== -->
     <div class="top-header">
       <!-- ========== Logo ========== -->
-    <a href="/index.html" title="Go to Homepage">
-<img class="logo" id="top" src="/images/logo.svg" alt="Gaspare Tocci's Logo" title="Gaspare Tocci's Logo" width="120"
-  height="60">
+      <a href="/index.html" title="Go to Homepage">
+        <img class="logo" id="top" src="/images/logo.svg" alt="Gaspare Tocci's Logo" title="Gaspare Tocci's Logo"
+          width="120" height="60">
 
-    </a>
+      </a>
 
       <!-- ========== Title ========== -->
       <h1 class="title" title="Page's Title">
@@ -124,8 +126,9 @@
                     download="Gaspare-Tocci-CV-IT.pdf" title="Download CV in PDF format" tabindex="7">Download -PDF-</a>
                 </li>
                 <!-- ========== Download CV as DOC ========== -->
-                <li><a class="dropdown-item" aria-label="Download CV in DOC format" href="/files/Gaspare-Tocci-CV-IT.doc"
-                  download="Gaspare-Tocci-CV.doc" title="Download CV in DOC format" tabindex="8">Download -DOC-</a>
+                <li><a class="dropdown-item" aria-label="Download CV in DOC format"
+                    href="/files/Gaspare-Tocci-CV-IT.doc" download="Gaspare-Tocci-CV.doc"
+                    title="Download CV in DOC format" tabindex="8">Download -DOC-</a>
                 </li>
               </ul>
             </li>
@@ -167,25 +170,29 @@
                 <li><a class="dropdown-item" href="../../projects/pages/glastonbury/index.html"
                     title="Glastonbury Festival" tabindex="16" aria-label="Glastonbury Festival">Glastonbury
                     Festival</a></li>
-                
-                      <!-- ========== Old Curriculum ========== -->
-                      <li><a class="dropdown-item" href="../../projects/pages/old-portfolio/homepages/curriculum/index-cv.html"
-                          title="Old Curriculum">Old Curriculum</a></li>
-                      
-                      
-                      <!-- ========== Heat Wave ========== -->
-                      <li><a class="dropdown-item" href="../../projects/pages/old-portfolio/homepages/heat-wave/index-heat-wave.html"
-                          title="Heat Wave">Heat Wave</a></li>
-                      
-                      
-                      <!-- ========== Streamer ========== -->
-                      <li><a class="dropdown-item" href="../../projects/pages/old-portfolio/homepages/streamer/index-streamer.html"
-                          title="Streamer">Streamer</a></li>
-                      
-                      
-                      <!-- ========== WADA Solutions ========== -->
-                      <li><a class="dropdown-item" href="../../projects/pages/old-portfolio/homepages/wada-solutions/index.html"
-                          title="WADA Solutions">WADA Solutions</a></li>
+
+                <!-- ========== Old Curriculum ========== -->
+                <li><a class="dropdown-item"
+                    href="../../projects/pages/old-portfolio/homepages/curriculum/index-cv.html"
+                    title="Old Curriculum">Old Curriculum</a></li>
+
+
+                <!-- ========== Heat Wave ========== -->
+                <li><a class="dropdown-item"
+                    href="../../projects/pages/old-portfolio/homepages/heat-wave/index-heat-wave.html"
+                    title="Heat Wave">Heat Wave</a></li>
+
+
+                <!-- ========== Streamer ========== -->
+                <li><a class="dropdown-item"
+                    href="../../projects/pages/old-portfolio/homepages/streamer/index-streamer.html"
+                    title="Streamer">Streamer</a></li>
+
+
+                <!-- ========== WADA Solutions ========== -->
+                <li><a class="dropdown-item"
+                    href="../../projects/pages/old-portfolio/homepages/wada-solutions/index.html"
+                    title="WADA Solutions">WADA Solutions</a></li>
               </ul>
             </li>
           </ul>
@@ -209,17 +216,22 @@
         <div class="section-1-content">
           <img src="../blender/project-1.webp"
             alt="3D model of a workstation with monitors, gaming chair, and desk created in Blender">
+
           <img src="../blender/project-2.webp"
             alt="Another 3D model of a workstation with monitors, gaming chair, and desk created in Blender">
-        <p>
-          I'm currently exploring <strong>Blender</strong> through a project focused on <strong>recreating my real-life
-            workstation</strong>.
-          In this scene, I’ve applied <strong>screenshots of my actual monitors</strong> as textures on the 3D models, capturing
-          the authentic look
-          and feel of my setup. To enrich the environment, I'm also using <strong>BlenderKit</strong>, which offers a wide range
-          of assets and tools
-          that enhance the realism and depth of the virtual workspace.
-        </p>
+
+          <p data-aos="fade-right">
+            I'm currently exploring <strong>Blender</strong> through a project focused on <strong>recreating my
+              real-life
+              workstation</strong>.
+            In this scene, I’ve applied <strong>screenshots of my actual monitors</strong> as textures on the 3D models,
+            capturing
+            the authentic look
+            and feel of my setup. To enrich the environment, I'm also using <strong>BlenderKit</strong>, which offers a
+            wide range
+            of assets and tools
+            that enhance the realism and depth of the virtual workspace.
+          </p>
 
         </div>
       </div>
@@ -229,8 +241,10 @@
         <h3>SECTION 2</h3>
         <div class="section-2-content">
           <img src="/images/work-in-progress.webp" alt="Section under construction, content not yet available">
-          <p>
-            Every project begins as an idea — this section is where <strong>concepts are forming</strong>, and creativity is in
+          <p data-aos="fade-left">
+            Every project begins as an idea — this section is where <strong>concepts are forming</strong>, and
+            creativity
+            is in
             motion. New content is on the way!
           </p>
 
@@ -239,68 +253,71 @@
     </section>
   </main>
 
-<!-- ========== Footer Section ========== -->
-<footer class="text-white cs-footer">
-  <a class="go-to-top" href="#top" aria-label="Scroll to top">
-  
-    <!-- ========== Lottie Animated Up Arrow ========== -->
-    <!-- https://app.lottiefiles.com/share/f00f7ce4-d280-4499-a458-7dc31e2ea1bb -->
-    <img src="/icons/Scroll Down Arrow.gif" alt="Animated up arrow to scroll to top" width="40" height="40" loading="lazy"
-      style="display: inline-block; transform: rotate(180deg);">
-  </a>
-  <div class="container py-4">
-    <div class="row">
 
-      <!-- ========== Contact Information ========== -->
-      <div class="col-md-4 mb-4 mb-md-0">
-        <h4>Contact</h4>
-        <ul class="list-unstyled">
-          <li>
-            <a href="mailto:gaspare_tocci@yahoo.it" class="text-white" title="Email">
-              <strong>Email:</strong> gaspare_tocci@yahoo.it
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/Riello76" target="_blank" class="text-white" title="GitHub">
-              <strong>GitHub:</strong> Riello76
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="text-white"
-              title="LinkedIn">
-              <strong>LinkedIn:</strong> gaspare-tocci
-            </a>
-          </li>
-        </ul>
-      </div>
+  <!-- ========== Footer Section ========== -->
+  <footer class="text-white cs-footer">
+    <a class="go-to-top" href="#top" aria-label="Scroll to top">
 
-      <!-- ========== Quick Links ========== -->
-      <div class="col-md-4 mb-4 mb-md-0">
-        <h4>Quick Links</h4>
-        <ul class="list-unstyled">
-          <li><a href="/index.html" class="text-white" title="Homepage">Home</a></li>
-          <li><a href="/pages/curriculum/curriculum.html" class="text-white" title="Curriculum Vitae">CV</a></li>
-          <li><a href="/pages/projects/projects.html" class="text-white" title="Projects">Projects</a></li>
-          <li><a href="/pages/gallery/gallery.html" class="text-white" title="Gallery">Gallery</a></li>
-        </ul>
-      </div>
+      <!-- ========== Lottie Animated Up Arrow ========== -->
+      <!-- https://app.lottiefiles.com/share/f00f7ce4-d280-4499-a458-7dc31e2ea1bb -->
+      <img src="/icons/Scroll Down Arrow.gif" alt="Animated up arrow to scroll to top" width="40" height="40"
+        loading="lazy" style="display: inline-block; transform: rotate(180deg);">
+    </a>
+    <div class="container py-4">
+      <div class="row">
 
-      <!-- ========== Additional Information ========== -->
-      <div class="col-md-4">
-        <h4>About This Portfolio</h4>
+        <!-- ========== Contact Information ========== -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="mailto:gaspare_tocci@yahoo.it" class="text-white" title="Email">
+                <strong>Email:</strong> gaspare_tocci@yahoo.it
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Riello76" target="_blank" class="text-white" title="GitHub">
+                <strong>GitHub:</strong> Riello76
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="text-white"
+                title="LinkedIn">
+                <strong>LinkedIn:</strong> gaspare-tocci
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ========== Quick Links ========== -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="/index.html" class="text-white" title="Homepage">Home</a></li>
+            <li><a href="/pages/curriculum/curriculum.html" class="text-white" title="Curriculum Vitae">CV</a></li>
+            <li><a href="/pages/projects/projects.html" class="text-white" title="Projects">Projects</a></li>
+            <li><a href="/pages/gallery/gallery.html" class="text-white" title="Gallery">Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- ========== Additional Information ========== -->
+        <div class="col-md-4">
+          <h4>About This Portfolio</h4>
           <p>
-            This portfolio was built with a <strong>mobile-first</strong> approach and reflects my skills in <strong>HTML, CSS,
+            This portfolio was built with a <strong>mobile-first</strong> approach and reflects my skills in
+            <strong>HTML, CSS,
               responsive design</strong>, and performance optimization.
           </p>
           <p>
-            It combines what I’ve learned through <strong>self-study</strong> and the <strong>GetSetUK Bootcamp</strong>, and
+            It combines what I’ve learned through <strong>self-study</strong> and the <strong>GetSetUK
+              Bootcamp</strong>, and
             shows my commitment to <strong>clean, accessible, and user-friendly interfaces</strong>.
           </p>
-      </div>
+        </div>
 
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
   <!-- ========== Bootstrap JS Library ========== -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -308,17 +325,13 @@
     crossorigin="anonymous"></script>
 
   <!-- ========== AOS (Animate On Scroll) Library ========== -->
-<script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js" crossorigin="anonymous" defer></script>
 <script defer>
-  window.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', () => {
     AOS.init();
   });
 </script>
 
-  <!-- ========== Initialize AOS Animations ========== -->
-  <script>
-    AOS.init();
-  </script>
 </body>
 
 </html>
