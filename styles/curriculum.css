@@ -52,18 +52,24 @@
     }
 
 
-    .profile-div,
-    .experience-div,
-    .education-div,
-    .certifications-div,
-    .technical-skills {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 1rem;
-    }
+   .profile-div,
+   .experience-div,
+   .education-div,
+   .certifications-div,
+   .technical-skills {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       width: 100%;
+       margin-bottom: 1rem;
 
+       /* Prevent layout shift by reserving space */
+       min-height: 220px;
+       /* adatta in base alla quantità di contenuto */
+
+       /* For smoother animation */
+       will-change: transform, opacity;
+   }
     .experience-div,
     .certifications-div {
         align-self: auto;
