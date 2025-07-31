@@ -585,15 +585,20 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
     defer></script>
 
-  <!-- ========== AOS (Animate On Scroll) Library ========== -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+<!-- ========== AOS (Animate On Scroll) Library ========== -->
+<script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
 
-  <!-- ========== Initialize AOS Animations ========== -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      AOS.init();
+<!-- ========== Initialize AOS Animations AFTER full page load ========== -->
+<script>
+  window.addEventListener('load', function () {
+    AOS.init({
+      once: true, // evita ripetizioni multiple
+      duration: 800, // opzionale: regola la durata
+      easing: 'ease-out-cubic' // opzionale: migliora fluidità
     });
-  </script>
+  });
+</script>
+
 
 </body>
 
