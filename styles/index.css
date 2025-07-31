@@ -36,10 +36,6 @@ section {
    background-size: cover;
  }
 
-  .hero-img {
-    height: 100%;
-    width: 100%;
-  }
 
   .hero-content {
     display: flex;
@@ -55,6 +51,7 @@ section {
   .my-img {
     width: 20rem;
     border-radius: 100%;
+    background: var(--background-gradient);
     box-shadow: 0px 50px 50px var(--tertiary-color);
     border: 0.1rem solid var(--info-color);
   }
