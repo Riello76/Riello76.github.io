@@ -26,28 +26,19 @@ section {
   }
 
   /* ========== Hero Image ========== */
- .hero-img-container {
-   position: relative;
+ .hero {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    width: 100%;
    height: 60vh;
    background-image: url('/images/hero-image.webp');
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
- }
-
-
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
-
+  
   .my-img {
     width: 15rem;
     height: 15rem;
@@ -57,8 +48,8 @@ section {
     border: 0.1rem solid var(--info-color);
   }
 
-  .hero-img-container h2,
-  .hero-img-container h3 {
+  .hero h2,
+  .hero h3 {
     font-weight: bold;
     padding: 1rem;
     background-color: var(--main-color);
@@ -70,20 +61,20 @@ section {
     text-align: center;
   }
 
-  .hero-img-container h2 {
+  .hero h2 {
     font-size: 1.5rem;
   }
 
-  .hero-img-container h3 {
+  .hero h3 {
     font-size: 1.2rem;
     color: var(--info-color);
   }
 
-  .hero-img-container h2 span {
+  .hero h2 span {
     color: var(--info-color);
   }
 
-  .hero-img-container h3 span {
+  .hero h3 span {
     color: var(--secondary-color);
   }
 
@@ -292,14 +283,8 @@ section {
   }
 
   /* ========== Hero Image ========== */
-  .hero-img-container {
+  .hero {
     height: 50vh;
-  }
-
-  .hero-content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .my-img {
@@ -307,12 +292,12 @@ section {
     height: 15rem;
   }
 
-  .hero-content h2 {
+  .hero h2 {
     width: 70vw;
     font-size: 1.7rem;
   }
 
-  .hero-content h3 {
+  .hero h3 {
     width: 65vw;
     font-size: 1.4rem;
   }
@@ -346,12 +331,12 @@ section {
 @media screen and (min-width:1024px) {
 
   /* ========== Hero Content ========== */
-  .hero-content h2 {
+  .hero h2 {
     width: 60vw;
     font-size: 2rem;
   }
 
-  .hero-content h3 {
+  .hero h3 {
     width: 55vw;
     font-size: 1.6rem;
   }
@@ -439,12 +424,8 @@ section {
 @media screen and (min-width:1440px) {
 
   /* ========== Hero Image ========== */
-  .hero-img-container {
+  .hero {
     height: 80vh;
-  }
-
-  .hero-content {
-    height: 100%;
   }
 
   .my-img {
@@ -452,12 +433,12 @@ section {
     height: 25rem;
   }
 
-  .hero-content h2 {
+  .hero h2 {
     width: 45vw;
     font-size: 3rem;
   }
 
-  .hero-content h3 {
+  .hero h3 {
     width: 37vw;
     font-size: 2rem;
   }
@@ -501,17 +482,17 @@ section {
   .my-tools p {
     width: 50%;
   }
+  
+  .my-tools img {
+    width: 10rem;
+  }
+  
+  .my-tools a:hover {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+  }
 }
-
-.my-tools img {
-  width: 10rem;
-}
-
-.my-tools a:hover {
-  transform: scale(0.9);
-  transition: transform 0.3s ease;
-}
-
+  
 @media screen and (min-width:2560px) {
 
   /* ========== Text sizes ========== */
@@ -522,12 +503,8 @@ section {
   }
 
   /* ========== Hero Image ========== */
-  .hero-img-container {
+  .hero {
     height: 80vh;
-  }
-
-  .hero-content {
-    height: 100%;
   }
 
   .my-img {
@@ -535,12 +512,12 @@ section {
     height: 40rem;
   }
 
-  .hero-content h2 {
+  .hero h2 {
     width: 70vw;
     font-size: 6rem;
   }
 
-  .hero-content h3 {
+  .hero h3 {
     width: 60vw;
     font-size: 4rem;
   }
