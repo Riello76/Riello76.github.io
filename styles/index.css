@@ -50,6 +50,7 @@ section {
 
   .my-img {
     width: 15rem;
+    height: 15rem;
     border-radius: 100%;
     background: var(--background-gradient);
     box-shadow: 0px 50px 50px var(--tertiary-color);
@@ -303,6 +304,7 @@ section {
 
   .my-img {
     width: 15rem;
+    height: 15rem;
   }
 
   .hero-content h2 {
@@ -447,6 +449,7 @@ section {
 
   .my-img {
     width: 25rem;
+    height: 25rem;
   }
 
   .hero-content h2 {
@@ -529,6 +532,7 @@ section {
 
   .my-img {
     width: 40rem;
+    height: 40rem;
   }
 
   .hero-content h2 {
@@ -637,6 +641,7 @@ section {
 
   .my-img {
     width: 10rem;
+    height: 10rem;
     margin: 1rem 0;
     box-shadow: 0px 10px 20px var(--tertiary-color);
   }
