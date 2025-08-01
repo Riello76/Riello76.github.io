@@ -671,9 +671,9 @@ section {
 
 @media (max-width: 768px) {
   [data-aos] {
-    opacity: 1 !important;
-    transform: none !important;
-    transition: none !important;
-    animation: none !important;
+    opacity: 1;
+    transform: none;
+    transition: none;
+    animation: none;
   }
 }

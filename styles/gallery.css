@@ -62,7 +62,7 @@ main {
   background: var(--background-gradient);
 }
 
-/* Media Queries */
+
 @media screen and (max-width:768px) {
   main {
     margin-top: 2rem;
@@ -76,5 +76,15 @@ main {
   .graphic-div,
   .design-div {
     width: 100%;
+  }
+}
+/* ==========  Disable AOS animations on small screens (max-width 768px) to improve performance and usability ========== */
+
+@media (max-width: 768px) {
+  [data-aos] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    animation: none;
   }
 }

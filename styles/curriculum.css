@@ -255,3 +255,14 @@
         align-self: flex-end;
     }
 }
+
+/* ==========  Disable AOS animations on small screens (max-width 768px) to improve performance and usability ========== */
+
+@media (max-width: 768px) {
+    [data-aos] {
+        opacity: 1;
+        transform: none;
+        transition: none;
+        animation: none;
+    }
+}
