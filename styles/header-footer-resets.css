@@ -243,11 +243,11 @@ picture {
 /* ========== Navbar Desktop View (769px and up) ========== */
 @media (min-width: 769px) {
   .navbar-toggler {
-    display: none !important;
+    display: none;
   }
 
   .navbar-collapse {
-    display: flex !important;
+    display: flex;
   }
 }
 
