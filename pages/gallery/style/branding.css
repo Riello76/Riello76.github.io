@@ -1,5 +1,3 @@
-
-
 /* ========== Main Section ========== */
 main {
   display: flex;
@@ -45,7 +43,7 @@ main {
 }
 
 .middle-main img {
-width: clamp(10rem, 20vw, 50rem);
+  width: clamp(10rem, 20vw, 50rem);
   display: flex;
   height: auto;
   padding: 1rem;
@@ -91,11 +89,29 @@ width: clamp(10rem, 20vw, 50rem);
     width: 100%;
   }
 
-   .logos-content img:hover,
+  .logos-content img:hover,
   .business-card-content img:hover,
   .calendars-content img:hover {
     transform: none;
     transition: none;
   }
 
+}
+
+@media screen and (min-width: 1024px) {
+  .middle-main p {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .middle-main p {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .middle-main p {
+    width: 50%;
+  }
 }

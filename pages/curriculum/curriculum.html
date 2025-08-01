@@ -33,26 +33,25 @@
   <link rel="preconnect" href="https://www.youtube.com" crossorigin>
   <link rel="preconnect" href="https://www.google.com" crossorigin>
   
-  <!-- ========== Preload and apply CSS for faster rendering ========== -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style"
-    crossorigin onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="/styles/header-footer-resets.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="/styles/curriculum.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   
-  <!-- Fallback for no-JS -->
+  <!-- ========== CSS Stylesheets (no preload to avoid warning) ========== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" media="print"
+    onload="this.media='all'; this.onload=null;">
   <noscript>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/curriculum.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   </noscript>
-  <!-- AOS (async loading) -->
+  <link rel="stylesheet" href="/styles/curriculum.css">
+  <link rel="stylesheet" href="/styles/header-footer-resets.css">
+  
+  <!-- ========== AOS (Animate On Scroll) CSS ========== -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'">
   <noscript>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   </noscript>
+  
   <!-- ========== Favicon ========== -->
   <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml">
-  </head>
+</head>
 
 
 <body>
@@ -219,78 +218,72 @@
     <!-- ========== Top Main ========== -->
     <section class="top-main">
       <!-- ========== Section reserved for future content ========== -->
+      <h2>Curriculum</h2>
     </section>
 
     <!-- ========== Middle Main ========== -->
     <section class="middle-main">
-      <h2>Curriculum</h2>
 
       <!-- ========== Profile ========== -->
-      <div class="profile-div" data-aos="fade-right" data-aos-duration="1000">
+      <div class="profile-div">
         <h3>Profile</h3>
-        <p>
-          I am a highly motivated aspiring apprentice with a diverse professional background that has shaped my
-          <strong>teamwork</strong>, <strong>resilience</strong>, and <strong>problem-solving abilities</strong>.
-          Through my
-          experiences as a waiter, unarmed security officer, and volunteer soldier, I’ve learned to adapt quickly,
-          remain
-          composed under pressure, and collaborate effectively in fast-paced environments.
-          <br><br>
-          Now transitioning into tech, I bring with me a <strong>solid foundation in IT fundamentals</strong> and
-          <strong>newly
-            acquired technical certifications</strong>, ready to be applied in a <strong>web development or design
-            apprenticeship</strong>. I combine <strong>creativity</strong> with <strong>attention to detail</strong>,
-          and I am
-          committed to continuous self-learning. My strengths include <strong>adaptability</strong>, <strong>clear
-            communication</strong>, and a strong <strong>customer-first mindset</strong>, making me an ideal candidate
-          for a
-          team-driven digital role.
+        <p data-aos="fade-right" data-aos-duration="1000">
+          Highly motivated aspiring apprentice transitioning into tech, with a diverse background in hospitality,
+          security,
+          and military service. Strong foundation in IT fundamentals, complemented by:
         </p>
-
+        <p data-aos="fade-right" data-aos-duration="1000">
+          ❖ <strong>Teamwork</strong> and collaboration in fast-paced environments.<br>
+          ❖ <strong>Resilience</strong> and adaptability under pressure.<br>
+          ❖ <strong>Problem-solving</strong> and resourcefulness.<br>
+          ❖ <strong>Clear communication</strong> and customer-focused mindset.<br>
+          ❖ <strong>Creativity</strong> paired with attention to detail.<br>
+          ❖ Commitment to <strong>continuous learning</strong> and growth.
+        </p>
+        <p data-aos="fade-right" data-aos-duration="1000">
+          Seeking a web development or design apprenticeship to apply and further develop these skills.
+        </p>
       </div>
+
+
 
       <!-- ========== Experience ========== -->
-      <div class="experience-div" data-aos="fade-left" data-aos-duration="1000">
+      <div class="experience-div">
         <h3>Experience</h3>
 
-        <p>
-          <strong>(2009–2022) Hospitality & Security Roles:</strong> Gained extensive experience in customer-facing
-          environments, working as a waiter in several 4- and 5-star hotels across Italy and London. Developed strong
-          <strong>attention to detail</strong>, <strong>problem-solving</strong>, and <strong>customer service
-            skills</strong>.
-          As an unarmed security officer at Marina4 – Darsena, Porto Santa Margherita (Caorle, Italy), I enhanced my
-          proficiency
-          in <strong>CCTV monitoring</strong> and <strong>perimeter control</strong>.
+        <p data-aos="fade-left" data-aos-duration="1000">
+          <strong>(2009–2022) Hospitality & Security Roles:</strong> Served as a <strong>waiter</strong> in 4- and
+          5-star
+          hotels across Italy and London, providing exceptional <strong>customer service</strong>. Worked as an
+          <strong>unarmed security officer</strong> at Marina4 – Darsena, Porto Santa Margherita, managing <strong>CCTV
+            monitoring</strong> and <strong>perimeter control</strong>.
         </p>
 
-        <p>
-          <strong>(2004–2005) Military Experience:</strong> Served as a volunteer soldier and later corporal at the
-          Ettore Manes
-          Barracks (Genius Sapper Corps). Acquired foundational <strong>technical skills in surveillance
-            systems</strong> and
-          <strong>resource management</strong>, while also demonstrating <strong>adaptability</strong> and
-          <strong>leadership</strong> through multi-role task handling and responsibility under pressure.
+        <p data-aos="fade-left" data-aos-duration="1000" style="margin-top:1rem;">
+          <strong>(2004–2005) Military Experience:</strong> Volunteer soldier and corporal at Ettore Manes Barracks
+          (<strong>Genius Sapper Corps</strong>). Gained <strong>technical skills</strong> in <strong>surveillance
+            systems</strong> and <strong>resource management</strong>, performing multiple roles with
+          <strong>responsibility</strong>.
         </p>
-
-
       </div>
 
+
       <!-- ========== Education ========== -->
-      <div class="education-div" data-aos="fade-right" data-aos-duration="1000">
+      <div class="education-div">
         <h3>Education</h3>
-        <p>
+        <p data-aos="fade-right" data-aos-duration="1000">
           <strong>Primary School (1982–1987):</strong> Circolo Didattico "Primo Circolo", Piazza Indipendenza,
           Castrovillari
           (CS), Italy.
         </p>
 
-        <p>
+        <p data-aos="fade-right" data-aos-duration="1000">
           <strong>Secondary School (1987–1990):</strong> Scuola Secondaria "E. De Nicola", Via Coscile 28, Castrovillari
           (CS),
           Italy.
         </p>
 
-        <p>
+        <p data-aos="fade-right" data-aos-duration="1000">
           <strong>High School – IPSIA (1990–1993):</strong> Istituto Professionale "Leonardo Da Vinci", Via
           dell'Industria 2,
           Castrovillari (CS), Italy.
@@ -299,163 +292,161 @@
       </div>
 
       <!-- ========== Certification ========== -->
-      <div class="certifications-div" data-aos="fade-left" data-aos-duration="1000">
-        <h3>Certifications/Licensing</h3>
-        <p>
-          <strong>(26 May 2021)</strong>: ESOL Skills for Life – Entry Level 1, completed at MI Comput Solution
-          Training,
-          London.
-        </p>
+      <div class="certifications-div">
+        <h3>Certifications / Licensing</h3>
 
-        <p>
-          <strong>(27 May 2021)</strong>: Functional Skills Level 1 in ICT (Excel, Word), completed at MI Comput
+        <p data-aos="fade-left" data-aos-duration="1000">
+          <strong>26 May 2021:</strong> ESOL Skills for Life – <strong>Entry Level 1</strong>, completed at MI Comput
           Solution
           Training, London.
         </p>
 
-        <p>
-          <strong>(13 July 2021)</strong>: Gateway Qualifications Level 2 Award in Digital and IT Skills, completed at
-          ELATT,
-          London.
+        <p data-aos="fade-left" data-aos-duration="1000">
+          <strong>27 May 2021:</strong> Functional Skills Level 1 in <strong>ICT (Excel, Word)</strong>, completed at MI
+          Comput Solution Training, London.
         </p>
 
-        <p>
-          <strong>(25 August 2023)</strong>: FastTrack Functional Skills English – Level 2, completed at Strive
-          Training,
-          Croydon.
+        <p data-aos="fade-left" data-aos-duration="1000">
+          <strong>13 July 2021:</strong> Gateway Qualifications Level 2 Award in <strong>Digital and IT Skills</strong>,
+          completed at ELATT, London.
         </p>
 
-        <p>
-          <strong>(08 September 2023)</strong>: FastTrack Functional Skills Maths – Level 3, completed at Strive
-          Training,
-          Croydon.
+        <p data-aos="fade-left" data-aos-duration="1000">
+          <strong>25 August 2023:</strong> FastTrack Functional Skills <strong>English – Level 2</strong>, completed at
+          Strive
+          Training, Croydon.
         </p>
 
-        <p>
-          <strong>(22 March 2024)</strong>: SIA Door Supervisor Licence, obtained at Lewisham College.
+        <p data-aos="fade-left" data-aos-duration="1000">
+          <strong>08 September 2023:</strong> FastTrack Functional Skills <strong>Maths – Level 3</strong>, completed at
+          Strive Training, Croydon.
         </p>
 
-        <p>
-          <strong>(16 July 2024)</strong>: Enrolled in Web Development Bootcamp, delivered by GetSetUK.
+        <p data-aos="fade-left" data-aos-duration="1000">
+          <strong>22 March 2024:</strong> <strong>SIA Door Supervisor Licence</strong>, obtained at Lewisham College.
         </p>
 
-        <p>
-          <strong>(18 July 2025)</strong>: Graphic Design Essentials, completed through Canva Design School.
+        <p data-aos="fade-left" data-aos-duration="1000">
+          <strong>16 July 2024:</strong> Enrolled in <strong>Web Development Bootcamp</strong>, delivered by GetSetUK.
         </p>
 
-
+        <p data-aos="fade-left" data-aos-duration="1000">
+          <strong>18 July 2025:</strong> <strong>Graphic Design Essentials</strong>, completed through Canva Design
+          School.
+        </p>
       </div>
 
+
       <!-- ========== Technical Skills ========== -->
-      <div class="technical-skills" data-aos="fade-right" data-aos-duration="1000">
+      <div class="technical-skills">
         <h3>Technical Skills</h3>
 
-        <p>
-          Proficient in <strong>HTML5</strong> and <strong>CSS3</strong>, with introductory experience in
+        <p data-aos="fade-right" data-aos-duration="1000">
+          Proficient in <strong>HTML5</strong> and <strong>CSS3</strong>, with plans to deepen knowledge in
           <strong>JavaScript</strong>.
         </p>
 
-        <p>
+        <p data-aos="fade-right" data-aos-duration="1000">
           Experienced in <strong>Web Design</strong>, <strong>UI/UX</strong>, and <strong>Web Development</strong>.
         </p>
 
-        <p>
-          Skilled in using <strong>VS Code</strong>,
-          <strong>Git</strong>,
-          <strong>Inkscape</strong>,
+        <p data-aos="fade-right" data-aos-duration="1000">
+          Skilled in using <strong>VS Code</strong>, <strong>Git</strong>, <strong>Inkscape</strong>,
           <strong>OBS</strong>,
-          <strong>Filmora</strong>,
-          <strong>PowerPoint</strong>,
-          <strong>GIMP</strong>, and
-          <strong>Figma</strong> for development and design workflows.
+          <strong>Filmora</strong>, <strong>PowerPoint</strong>, <strong>GIMP</strong>, and <strong>Figma</strong> for
+          development and design workflows.
         </p>
 
-        <p>
+        <p data-aos="fade-right" data-aos-duration="1000">
           Familiar with foundational syntax and libraries for web development.
         </p>
 
-        <p>
-          Solid understanding of fundamental concepts such as variables, control flow, and data structures.
+        <p data-aos="fade-right" data-aos-duration="1000">
+          Solid understanding of fundamental concepts such as <strong>variables</strong>, <strong>control flow</strong>,
+          and
+          <strong>data structures</strong>.
         </p>
 
-        <p>
+        <p data-aos="fade-right" data-aos-duration="1000">
           Able to apply built-in functions to enhance website efficiency and performance.
         </p>
 
-        <p>
+        <p data-aos="fade-right" data-aos-duration="1000">
           Hands-on experience in designing, planning, and building code-based projects.
         </p>
 
-        <p>
+        <p data-aos="fade-right" data-aos-duration="1000">
           Proficient in performing version control with <strong>Git</strong> and <strong>GitHub</strong>.
         </p>
-
       </div>
+
     </section>
   </main>
 
 
-<!-- ========== Footer Section ========== -->
-<footer class="text-white cs-footer">
-  <a class="go-to-top" href="#top" aria-label="Scroll to top">
-  
-    <!-- ========== Lottie Animated Up Arrow ========== -->
-    <!-- https://app.lottiefiles.com/share/f00f7ce4-d280-4499-a458-7dc31e2ea1bb -->
-    <img src="/icons/Scroll Down Arrow.gif" alt="Animated up arrow to scroll to top" width="40" height="40" loading="lazy"
-      style="display: inline-block; transform: rotate(180deg);">
-  </a>
-  <div class="container py-4">
-    <div class="row">
+  <!-- ========== Footer Section ========== -->
+  <footer class="text-white cs-footer">
+    <a class="go-to-top" href="#top" aria-label="Scroll to top">
 
-      <!-- ========== Contact Information ========== -->
-      <div class="col-md-4 mb-4 mb-md-0">
-        <h4>Contact</h4>
-        <ul class="list-unstyled">
-          <li>
-            <a href="mailto:gaspare_tocci@yahoo.it" class="text-white" title="Email">
-              <strong>Email:</strong> gaspare_tocci@yahoo.it
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/Riello76" target="_blank" class="text-white" title="GitHub">
-              <strong>GitHub:</strong> Riello76
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="text-white"
-              title="LinkedIn">
-              <strong>LinkedIn:</strong> gaspare-tocci
-            </a>
-          </li>
-        </ul>
-      </div>
+      <!-- ========== Lottie Animated Up Arrow ========== -->
+      <!-- https://app.lottiefiles.com/share/f00f7ce4-d280-4499-a458-7dc31e2ea1bb -->
+      <img src="/icons/Scroll Down Arrow.gif" alt="Animated up arrow to scroll to top" width="40" height="40"
+        loading="lazy" style="display: inline-block; transform: rotate(180deg);">
+    </a>
+    <div class="container py-4">
+      <div class="row">
 
-      <!-- ========== Quick Links ========== -->
-      <div class="col-md-4 mb-4 mb-md-0">
-        <h4>Quick Links</h4>
-        <ul class="list-unstyled">
-          <li><a href="/index.html" class="text-white" title="Homepage">Home</a></li>
-          <li><a href="/pages/curriculum/curriculum.html" class="text-white" title="Curriculum Vitae">CV</a></li>
-          <li><a href="/pages/projects/projects.html" class="text-white" title="Projects">Projects</a></li>
-          <li><a href="/pages/gallery/gallery.html" class="text-white" title="Gallery">Gallery</a></li>
-        </ul>
-      </div>
+        <!-- ========== Contact Information ========== -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="mailto:gaspare_tocci@yahoo.it" class="text-white" title="Email">
+                <strong>Email:</strong> gaspare_tocci@yahoo.it
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Riello76" target="_blank" class="text-white" title="GitHub">
+                <strong>GitHub:</strong> Riello76
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="text-white"
+                title="LinkedIn">
+                <strong>LinkedIn:</strong> gaspare-tocci
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <!-- ========== Additional Information ========== -->
-      <div class="col-md-4">
-        <h4>About This Portfolio</h4>
+        <!-- ========== Quick Links ========== -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="/index.html" class="text-white" title="Homepage">Home</a></li>
+            <li><a href="/pages/curriculum/curriculum.html" class="text-white" title="Curriculum Vitae">CV</a></li>
+            <li><a href="/pages/projects/projects.html" class="text-white" title="Projects">Projects</a></li>
+            <li><a href="/pages/gallery/gallery.html" class="text-white" title="Gallery">Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- ========== Additional Information ========== -->
+        <div class="col-md-4">
+          <h4>About This Portfolio</h4>
           <p>
-            This portfolio was built with a <strong>mobile-first</strong> approach and reflects my skills in <strong>HTML, CSS,
+            This portfolio was built with a <strong>mobile-first</strong> approach and reflects my skills in
+            <strong>HTML, CSS,
               responsive design</strong>, and performance optimization.
           </p>
           <p>
-            It combines what I’ve learned through <strong>self-study</strong> and the <strong>GetSetUK Bootcamp</strong>, and
+            It combines what I’ve learned through <strong>self-study</strong> and the <strong>GetSetUK
+              Bootcamp</strong>, and
             shows my commitment to <strong>clean, accessible, and user-friendly interfaces</strong>.
           </p>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
   <!-- ========== Bootstrap JS Library ========== -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

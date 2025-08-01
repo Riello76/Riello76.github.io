@@ -17,7 +17,7 @@ main {
   width: 100%;
 }
 
-h2 {
+.top-main h2 {
   width: 100%;
   text-align: center;
   background: var(--background-gradient);

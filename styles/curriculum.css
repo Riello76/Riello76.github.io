@@ -1,4 +1,3 @@
-
 /* ========== Media Queries ========== */
 @media screen and (min-width: 320px) {
 
@@ -17,6 +16,12 @@
         width: 100%;
     }
 
+    .top-main h2 {
+        width: 100%;
+        text-align: center;
+        background: var(--background-gradient);
+        color: var(--info-color);
+    }
 
     /* ========== Middle Main ========== */
     .middle-main {
@@ -25,15 +30,6 @@
         flex-direction: column;
         width: 100%;
         margin-top: 5rem;
-    }
-
-    .middle-main h2 {
-        width: 100%;
-        text-align: center;
-        background: var(--background-gradient);
-        color: var(--info-color);
-        font-size: clamp(2rem, 4vw, 2.2rem);
-        padding: 0.5rem 0;
     }
 
     .middle-main h3 {
@@ -52,24 +48,25 @@
     }
 
 
-   .profile-div,
-   .experience-div,
-   .education-div,
-   .certifications-div,
-   .technical-skills {
-       display: flex;
-       flex-wrap: wrap;
-       flex-direction: column;
-       width: 100%;
-       margin-bottom: 1rem;
+    .profile-div,
+    .experience-div,
+    .education-div,
+    .certifications-div,
+    .technical-skills {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1rem;
 
-       /* Prevent layout shift by reserving space */
-       min-height: 220px;
-       /* adatta in base alla quantità di contenuto */
+        /* Prevent layout shift by reserving space */
+        min-height: 220px;
+        /* adatta in base alla quantità di contenuto */
 
-       /* For smoother animation */
-       will-change: transform, opacity;
-   }
+        /* For smoother animation */
+        will-change: transform, opacity;
+    }
+
     .experience-div,
     .certifications-div {
         align-self: auto;
@@ -149,7 +146,7 @@
         background-color: var(--tertiary-color);
     }
 
-    
+
     /* ========== Middle Main ========== */
     .middle-main {
         display: flex;
@@ -157,6 +154,7 @@
         flex-direction: column;
         width: 100%;
     }
+
     .middle-main h2 {
         text-align: center;
         background: var(--background-gradient);
@@ -191,6 +189,7 @@
         align-self: flex-end;
     }
 }
+
 @media screen and (min-width: 2560px) {
 
     /* ========== Main Section ========== */
