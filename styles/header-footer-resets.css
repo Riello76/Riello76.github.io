@@ -414,6 +414,7 @@ picture {
     min-width: 200px;
     z-index: 1000;
     font-weight: bolder;
+    margin-top: 1rem;
   }
 
   /* ========== DROPDOWN ON HOVER ========== */
@@ -660,7 +661,6 @@ picture {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 3rem;
 }
 
 /* ========== LOGO STYLE ========== */
