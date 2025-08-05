@@ -322,7 +322,103 @@ picture {
     transform: scale(0.95);
   }
 }
+@media screen and (min-width: 769px) {
 
+  /* Stili desktop per navbar e dropdown */
+  .gt-navbar {
+    background: var(--background-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .gt-navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .gt-navbar-toggler {
+    display: none;
+  }
+
+  .gt-navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  .gt-nav-item {
+    position: relative;
+  }
+
+  .gt-nav-link {
+    color: var(--info-color);
+    font-weight: bold;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+  .gt-nav-link:hover {
+    color: var(--secondary-color);
+    transform: scale(0.95);
+  }
+
+  .gt-dropdown-toggle {
+    cursor: pointer;
+  }
+
+  .gt-arrow {
+    display: inline-block;
+    margin-left: 0.5rem;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    border-top: 0.5rem solid var(--secondary-color);
+    transition: transform 0.3s ease;
+  }
+
+  .gt-dropdown.show .gt-arrow {
+    transform: rotate(180deg);
+  }
+
+  .gt-dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--background-gradient);
+    padding: 1rem 0;
+    min-width: 200px;
+    z-index: 1000;
+    font-weight: bolder;
+    margin-top: 1rem;
+  }
+
+  .gt-dropdown.show .gt-dropdown-menu {
+    display: flex;
+  }
+
+  .gt-dropdown-item {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: var(--info-color);
+    transition: transform 0.3s ease;
+  }
+
+  .gt-dropdown-item:hover {
+    color: var(--secondary-color);
+    transform: scale(0.95);
+  }
+}
 @media screen and (min-width: 1024px) {
 
   /* ========== TOP MAIN SECTION MARGIN ========== */
