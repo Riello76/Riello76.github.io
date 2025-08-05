@@ -322,7 +322,7 @@ picture {
     transform: scale(0.95);
   }
 }
-  
+
 @media screen and (min-width: 1024px) {
 
   /* ========== TOP MAIN SECTION MARGIN ========== */
@@ -336,7 +336,6 @@ picture {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 2rem;
     position: relative;
     z-index: 1000;
   }
@@ -370,7 +369,7 @@ picture {
   .gt-nav-link {
     color: var(--info-color);
     font-weight: bold;
-    padding: 0.6rem 1rem;
+    padding: 0.5rem;
     display: flex;
     align-items: center;
     transition: transform 0.3s ease;
@@ -378,7 +377,7 @@ picture {
 
   .gt-nav-link:hover {
     color: var(--secondary-color);
-    transform: scale(1.05);
+    transform: scale(0.95);
   }
 
   /* ========== DROPDOWN TOGGLE STYLE ========== */
@@ -470,7 +469,6 @@ picture {
 
   /* ========== CONTACTS LINKS STYLE ========== */
   .contacts a {
-    text-decoration-color: var(--secondary-color);
     font-size: clamp(1.2rem, 1rem + 2vw, 3rem);
     font-weight: bolder;
     margin: 1rem;
@@ -478,9 +476,8 @@ picture {
 
   /* ========== CONTACTS LINKS HOVER EFFECT ========== */
   .contacts a:hover {
-    text-decoration-color: var(--info-color);
     color: var(--secondary-color);
-    transform: scale(1.1);
+    transform: scale(0.95);
   }
 
   /* ========== TOP MAIN MARGIN ========== */
@@ -723,16 +720,14 @@ picture {
 }
 
 .contacts a {
-  text-decoration-color: var(--secondary-color);
   font-size: clamp(1rem, 0.9rem + 1vw, 10rem);
   font-weight: bolder;
   margin: 1rem;
 }
 
 .contacts a:hover {
-  text-decoration-color: var(--info-color);
-  color: var(--secondary-color);
-  transform: scale(1.1);
+    color: var(--secondary-color);
+      transform: scale(0.95);
 }
 
 /* ========== FOOTER SECTION ========== */
@@ -749,11 +744,12 @@ picture {
   display: inline-block;
   padding: 0.75rem 1rem;
   margin: 0.5rem;
+  font-weight: bolder;
 }
 
 .cs-footer a:hover {
-  text-decoration-color: var(--info-color);
-  transform: scale(1.1);
+  color: var(--secondary-color);
+  transform: scale(0.95);
 }
 
 /* ========== GO TO TOP BUTTON STYLE ========== */
