@@ -200,32 +200,74 @@ section {
   }
 
   /* ========== My Tools ========== */
-  .my-tools div {
-    display: flex;
-    align-items: center;
-  }
-
-  .my-tools div a {
-    display: flex;
-    justify-content: center;
+  .my-tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
   }
 
   .my-tools h2 {
+    grid-column: 1 / -1;
     text-align: center;
-    width: 100%;
     padding: 1rem;
     background: var(--background-gradient);
+    color: var(--info-color);
+    border-radius: 8px;
   }
 
-  .my-tools p {
+  .tool-card {
     background: var(--background-gradient);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .tool-card:hover {
+    transform: translateY(-5px);
+    border: 1px solid var(--info-color);
+  }
+
+  .tool-card img {
+    width: 8rem;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .tool-card h3 {
     margin-bottom: 0.5rem;
-    padding: 1rem;
-    text-align: center;
+    font-size: var(--font-size-h3);
+    color: var(--secondary-color);
+    font-weight: bolder;
   }
 
-  .my-tools img {
-    width: 7rem;
+  .tool-card p {
+    font-size: var(--font-size-p);
+    color: var(--info-color);
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .download-btn {
+    background: var(--main-color);
+    color: var(--info-color);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--info-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .download-btn:hover {
+    background: var(--secondary-color);
+    color: var(--main-color);
+    transform: scale(0.9);
   }
 
   /* ========== Technical Details ========== */
@@ -310,11 +352,36 @@ section {
     width: 4rem;
     height: 4rem;
   }
+/* ========== My Tools ========== */
 
-  .my-tools p {
-    width: 100vw;
-  }
+/* ========== Increase the card grid size and spacing for ultra-wide screens ========== */
+.my-tools {
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+}
 
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background: var(--background-gradient);
+  border-radius: 0.5rem;
+}
+
+/* ========== Card Content ========== */
+.tool-card p {
+  flex-grow: 1;
+}
+
+/* ========== Download Button ========== */
+.download-btn {
+  align-self: center;
+  padding: 0.75rem 1.5rem;
+  font-size: var(--font-size-h5);
+  margin-top: 1rem;
+}
   .technical-img-div img {
     width: 10rem;
     height: 10rem;
@@ -399,17 +466,39 @@ section {
     display: inline-block;
     line-height: 1;
   }
+/* ========== My Tools ========== */
 
-  .my-tools div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+/* ========== Increase the card grid size and spacing for ultra-wide screens ========== */
+.my-tools {
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+}
 
-  .my-tools p {
-    width: 50%;
-  }
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background: var(--background-gradient);
+  border-radius: 0.5rem;
+}
 
+/* ========== Card Content ========== */
+.tool-card p {
+  flex-grow: 1;
+  font-size: var(--font-size-h5);
+}
+
+/* ========== Download Button ========== */
+.download-btn {
+  align-self: center;
+  padding: 0.75rem 1.5rem;
+  font-size: var(--font-size-h5);
+  margin-top: 1rem;
+}
+
+/* ========== Technical Details ========== */
   .technical-details p {
     width: 50%;
     text-align: center;
@@ -475,110 +564,137 @@ section {
 
   /* ========== My Tools ========== */
 
-  .my-tools div {
+  /* ========== Increase the card grid size and spacing for ultra-wide screens ========== */
+  .my-tools {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    padding: 3rem;
+  }
+
+  .tool-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-  .my-tools p {
-    width: 50%;
-  }
-
-  .my-tools img {
-    width: 10rem;
-  }
-
-  .my-tools a:hover {
-    transform: scale(0.9);
-    transition: transform 0.3s ease;
-  }
-}
-
-@media screen and (min-width:2560px) {
-
-  /* ========== Text sizes ========== */
-
-
-  p {
-    font-size: 4rem;
-  }
-
-  /* ========== Hero Image ========== */
-  .hero {
-    height: 100vh;
-    justify-content: space-around;
-  }
-
-  .my-img {
-    width: 40rem;
-    height: 40rem;
-  }
-
-  .hero h2 {
-    width: 70vw;
-    font-size: 6rem;
-  }
-
-  .hero h3 {
-    width: 60vw;
-    font-size: 4rem;
-  }
-
-  .cta-btn {
-    width: 20vw;
-    height: 10rem;
-    font-size: 6rem;
-    font-weight: bold;
-  }
-
-  /* ========== Middle Main ========== */
-  .middle-main {
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #carouselExampleIndicators {
-    margin: 5rem;
-  }
-
-  .about-me-titles {
-    text-align: center;
+    justify-content: space-between;
+    padding: 2rem;
     background: var(--background-gradient);
-    margin: 0.5rem;
+    border-radius: 0.5rem;
   }
 
-  .about-me p {
-    width: 100%;
+  /* ========== Card Content ========== */
+  .tool-card p {
+    flex-grow: 1;
   }
 
-  /* ========== My Tools ========== */
-
-  .my-tools div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* ========== Download Button ========== */
+  .download-btn {
+    align-self: center;
+    padding: 0.75rem 1.5rem;
+    font-size: var(--font-size-h5);
+    margin-top: 1rem;
   }
 
-  .my-tools p {
-    width: 50%;
+  .tool-card p {
+    font-size: var(--font-size-h6);
   }
 
+  @media screen and (min-width:2560px) {
 
-  .my-tools img {
-    width: 10rem;
-  }
+    /* ========== Text sizes ========== */
 
-  .my-tools a:hover {
-    transform: scale(0.9);
-    transition: transform 0.3s ease;
-  }
 
-  .technical-img-div img {
-    width: 20rem;
-    height: 20rem;
-    margin: 5rem;
+    p {
+      font-size: 4rem;
+    }
+
+    /* ========== Hero Image ========== */
+    .hero {
+      height: 100vh;
+      justify-content: space-around;
+    }
+
+    .my-img {
+      width: 40rem;
+      height: 40rem;
+    }
+
+    .hero h2 {
+      width: 70vw;
+      font-size: 6rem;
+    }
+
+    .hero h3 {
+      width: 60vw;
+      font-size: 4rem;
+    }
+
+    .cta-btn {
+      width: 20vw;
+      height: 10rem;
+      font-size: 6rem;
+      font-weight: bold;
+    }
+
+    /* ========== Middle Main ========== */
+    .middle-main {
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #carouselExampleIndicators {
+      margin: 5rem;
+    }
+
+    .about-me-titles {
+      text-align: center;
+      background: var(--background-gradient);
+      margin: 0.5rem;
+    }
+
+    .about-me p {
+      width: 100%;
+    }
+
+    /* ========== My Tools ========== */
+
+    /* ========== Increase the card grid size and spacing for ultra-wide screens ========== */
+    .my-tools {
+      grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+      gap: 2rem;
+      padding: 3rem;
+    }
+
+    /* ========== Slightly increase the padding inside each card ========== */
+    .tool-card {
+      padding: 2rem;
+    }
+
+    /* ========== Increase icon size for better visibility on large displays ========== */
+    .tool-card img {
+      width: 100px;
+    }
+
+    /* ========== Make tool titles larger for readability ========== */
+    .tool-card h3 {
+      font-size: var(--font-size-h3);
+    }
+
+    /* ========== Increase the description text size slightly ========== */
+    .tool-card p {
+      font-size: var(--font-size-h4);
+    }
+
+    /* ========== Make the download buttons larger and more clickable ========== */
+    .download-btn {
+      padding: 0.75rem 1.5rem;
+      font-size: var(--font-size-h5);
+    }
+
+    .technical-img-div img {
+      width: 20rem;
+      height: 20rem;
+      margin: 5rem;
+    }
   }
 }
 
