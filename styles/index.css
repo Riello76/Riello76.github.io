@@ -240,7 +240,12 @@ section {
   }
 
   .tool-card h3 {
+    width: 60%;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--info-color);
+    background: var(--background-gradient);
     margin-bottom: 0.5rem;
+    padding: 0.5rem;
     font-size: var(--font-size-h3);
     color: var(--secondary-color);
     font-weight: bolder;
@@ -254,14 +259,17 @@ section {
   }
 
   .download-btn {
-    background: var(--main-color);
+    background: var(--background-gradient);
     color: var(--info-color);
     padding: 0.5rem 1rem;
-    border-radius: 6px;
+    border-radius: var(--border-radius);
     border: 1px solid var(--info-color);
     font-weight: bold;
     text-decoration: none;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition:
+      background 0.3s ease,
+      color 0.3s ease,
+      transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .download-btn:hover {
@@ -352,36 +360,38 @@ section {
     width: 4rem;
     height: 4rem;
   }
-/* ========== My Tools ========== */
 
-/* ========== Increase the card grid size and spacing for ultra-wide screens ========== */
-.my-tools {
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 2rem;
-  padding: 3rem;
-}
+  /* ========== My Tools ========== */
 
-.tool-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 2rem;
-  background: var(--background-gradient);
-  border-radius: 0.5rem;
-}
+  /* ========== Increase the card grid size and spacing for ultra-wide screens ========== */
+  .my-tools {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    padding: 3rem;
+  }
 
-/* ========== Card Content ========== */
-.tool-card p {
-  flex-grow: 1;
-}
+  .tool-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    background: var(--background-gradient);
+    border-radius: 0.5rem;
+  }
 
-/* ========== Download Button ========== */
-.download-btn {
-  align-self: center;
-  padding: 0.75rem 1.5rem;
-  font-size: var(--font-size-h5);
-  margin-top: 1rem;
-}
+  /* ========== Card Content ========== */
+  .tool-card p {
+    flex-grow: 1;
+  }
+
+  /* ========== Download Button ========== */
+  .download-btn {
+    align-self: center;
+    padding: 0.75rem 1.5rem;
+    font-size: var(--font-size-h5);
+    margin-top: 1rem;
+  }
+
   .technical-img-div img {
     width: 10rem;
     height: 10rem;
@@ -466,39 +476,40 @@ section {
     display: inline-block;
     line-height: 1;
   }
-/* ========== My Tools ========== */
 
-/* ========== Increase the card grid size and spacing for ultra-wide screens ========== */
-.my-tools {
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 2rem;
-  padding: 3rem;
-}
+  /* ========== My Tools ========== */
 
-.tool-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 2rem;
-  background: var(--background-gradient);
-  border-radius: 0.5rem;
-}
+  /* ========== Increase the card grid size and spacing for ultra-wide screens ========== */
+  .my-tools {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    padding: 3rem;
+  }
 
-/* ========== Card Content ========== */
-.tool-card p {
-  flex-grow: 1;
-  font-size: var(--font-size-h5);
-}
+  .tool-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    background: var(--background-gradient);
+    border-radius: 0.5rem;
+  }
 
-/* ========== Download Button ========== */
-.download-btn {
-  align-self: center;
-  padding: 0.75rem 1.5rem;
-  font-size: var(--font-size-h5);
-  margin-top: 1rem;
-}
+  /* ========== Card Content ========== */
+  .tool-card p {
+    flex-grow: 1;
+    font-size: var(--font-size-h5);
+  }
 
-/* ========== Technical Details ========== */
+  /* ========== Download Button ========== */
+  .download-btn {
+    align-self: center;
+    padding: 0.75rem 1.5rem;
+    font-size: var(--font-size-h5);
+    margin-top: 1rem;
+  }
+
+  /* ========== Technical Details ========== */
   .technical-details p {
     width: 50%;
     text-align: center;
@@ -582,7 +593,12 @@ section {
 
   /* ========== Card Content ========== */
   .tool-card p {
+    font-size: var(--font-size-p);
     flex-grow: 1;
+  }
+
+  .tool-card h3 {
+    font-size: var(--font-size-h4);
   }
 
   /* ========== Download Button ========== */
