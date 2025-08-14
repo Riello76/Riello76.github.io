@@ -127,7 +127,7 @@ picture {
 
 /* ========== Media Queries ========== */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) {
 
   /* ========== Base layout flex for mobile ========== */
   html,
@@ -236,7 +236,6 @@ picture {
   .gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(3) {
     top: 50%;
     left: -30%;
-    /* converted from -30% to rem */
     transform: translateY(-50%) rotate(70deg);
     background-image: url('/icons/logo-right.svg');
     background-color: transparent;
@@ -321,10 +320,141 @@ picture {
     color: var(--secondary-color);
     transform: scale(0.95);
   }
-}
-@media screen and (min-width: 769px) {
 
-  /* Stili desktop per navbar e dropdown */
+  /* ========== GT Footer Section ========== */
+  .gt-footer {
+    background: var(--background-gradient);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--secondary-color);
+
+  }
+
+  /* ========== Footer Container ========== */
+  .gt-footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 120rem;
+  }
+
+  /* ========== Footer Column ========== */
+  .gt-footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ========== Footer Headings ========== */
+  .gt-footer h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--info-color);
+  }
+
+  .gt-footer a {
+    text-decoration: underline var(--info-color);
+  }
+
+  .gt-footer-about p {
+    padding: 2rem;
+  }
+
+  /* ========== Footer Lists ========== */
+  .gt-footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .gt-footer-list li {
+    margin: 0;
+  }
+
+  /* ========== Footer Links ========== */
+  .gt-footer-link {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    color: var(--secondary-color);
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .gt-footer-link:hover {
+    color: var(--info-color);
+    transform: scale(0.95);
+  }
+
+  /* ========== Scroll to Top ========== */
+  .gt-go-to-top {
+    display: inline-block;
+    margin-bottom: 3rem;
+    width: 6rem;
+    transition: transform 0.3s ease;
+  }
+
+  .gt-go-to-top:hover {
+    transform: scale(1.1);
+  }
+
+  /* ========== Footer Info / Date & Time ========== */
+  .gt-footer-info {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    gap: 2rem;
+    background: var(--tertiary-color);
+  }
+
+
+
+  /* ========== Footer Date Style ========== */
+  .gt-footer-date {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .gt-colon {
+    color: var(--info-color);
+
+  }
+
+  /* ========== Footer Date Multi-color ========== */
+  .gt-day {
+    color: var(--info-color);
+    /* Giorno */
+  }
+
+  .gt-month {
+    color: var(--secondary-color);
+    /* Mese */
+  }
+
+  .gt-year {
+    color: var(--info-color);
+    /* Anno */
+  }
+
+  .gt-time {
+    color: var(--secondary-color);
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+
   .gt-navbar {
     background: var(--background-gradient);
     display: flex;
@@ -419,6 +549,7 @@ picture {
     transform: scale(0.95);
   }
 }
+
 @media screen and (min-width: 1024px) {
 
   /* ========== TOP MAIN SECTION MARGIN ========== */
@@ -584,7 +715,7 @@ picture {
 }
 
 /* ========== LANDSCAPE & ORIENTATION FIXES ========== */
-@media screen and (orientation: landscape) and (max-height: 500px) {
+@media screen and (orientation: landscape) and (max-height: 815px) {
 
   /* ========== TOP HEADER FLEX CENTER ALIGNMENT ========== */
   .top-header {
@@ -628,6 +759,7 @@ picture {
   .gt-navbar {
     width: clamp(10rem, 25vw, 16rem);
     position: absolute;
+    margin-left: 5rem;
     z-index: 1000;
   }
 
@@ -720,31 +852,6 @@ picture {
     bottom: 0.80rem;
   }
 
-  /* ========== HAMBURGER MORPH EFFECT LANDSCAPE ========== */
-  .gt-navbar-toggler[aria-expanded="true"] .gt-navbar-toggler-icon .gt-bar:nth-child(1) {
-    transform: translateY(1rem) rotate(45deg);
-  }
-
-  .gt-navbar-toggler[aria-expanded="true"] .gt-navbar-toggler-icon .gt-bar:nth-child(2) {
-    transform: scale(0);
-  }
-
-  .gt-navbar-toggler[aria-expanded="true"] .gt-navbar-toggler-icon .gt-bar:nth-child(3) {
-    transform: translateY(-0.80rem) rotate(-45deg);
-  }
-
-  /* ========== FOOTER FLEX DIRECTION & PADDING ========== */
-  .cs-footer {
-    flex-direction: column;
-    padding: 1rem 0;
-  }
-
-  /* ========== FOOTER LINKS STYLE ========== */
-  .cs-footer a {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-  }
-
   /* ========== GO TO TOP BUTTON SIZE ========== */
   .go-to-top {
     font-size: 1.5rem;
@@ -822,35 +929,23 @@ picture {
 }
 
 .contacts a:hover {
-    color: var(--secondary-color);
-      transform: scale(0.95);
-}
-
-/* ========== FOOTER SECTION ========== */
-.cs-footer {
-  background: var(--background-gradient);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.cs-footer a {
-  text-decoration-color: var(--secondary-color);
-  display: inline-block;
-  padding: 0.75rem 1rem;
-  margin: 0.5rem;
-  font-weight: bolder;
-}
-
-.cs-footer a:hover {
   color: var(--secondary-color);
   transform: scale(0.95);
 }
 
-/* ========== GO TO TOP BUTTON STYLE ========== */
-.go-to-top {
-  width: 10rem;
+/* ========== Responsive Footer ========== */
+@media screen and (max-width: 768px) {
+  .gt-footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .gt-footer {
+    padding: 6rem 4rem;
+  }
 }
 
 /* ========== DESKTOP (>= 769px) OVERRIDE ========== */
