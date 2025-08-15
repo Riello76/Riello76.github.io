@@ -136,344 +136,377 @@ picture {
     flex-direction: column;
   }
 
-  /* ========== NAVBAR CONTAINER ========== */
-  .gt-navbar {
-    width: 100%;
-    background: var(--background-gradient);
-    position: relative;
-    z-index: 999;
-  }
-
-  /* ========== DROPDOWN ARROW STYLE ========== */
-  .gt-arrow {
-    display: inline-block;
-    margin-left: 0.5rem;
-    width: 0;
-    height: 0;
-    vertical-align: middle;
-    border-left: 0.4rem solid transparent;
-    border-right: 0.4rem solid transparent;
-    border-top: 0.5rem solid var(--secondary-color);
-    transition: transform 0.3s ease;
-  }
-
-  /* ========== ROTATE ARROW WHEN DROPDOWN OPEN ========== */
-  .gt-dropdown.show .gt-arrow {
-    transform: rotate(180deg);
-  }
-
-  /* ========== CONTAINER FLUID WITH PADDING & FLEX ALIGNMENT ========== */
-  .gt-container-fluid {
-    padding: 1rem;
+  /* ========== NEWS BAR ========== */
+  .gt-news-bar {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
-  }
-
-  /* ========== HAMBURGER BUTTON STYLES ========== */
-  .gt-navbar-toggler {
-    border: none;
-    background: none;
-    cursor: pointer;
-    display: inline-block;
-    padding: 0.5rem;
-  }
-
-  /* ========== HAMBURGER ICON WRAPPER ========== */
-  .gt-navbar-toggler-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 2rem;
-    width: 2rem;
-    position: relative;
-  }
-
-  /* ========== SINGLE BARS INSIDE HAMBURGER ICON ========== */
-  .gt-navbar-toggler-icon .gt-bar {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0.25rem;
-    background-color: var(--secondary-color);
-    border-radius: 0.4rem;
-    transition: all 0.3s ease;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-
-  /* ========== POSITION EACH BAR NORMAL STATE ========== */
-  .gt-navbar-toggler-icon .gt-bar:nth-child(1) {
-    top: 0;
-  }
-
-  .gt-navbar-toggler-icon .gt-bar:nth-child(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: var(--info-color);
-  }
-
-  .gt-navbar-toggler-icon .gt-bar:nth-child(3) {
-    bottom: 0;
-  }
-
-  /* ========== HAMBURGER MORPH TO X SHAPE WHEN OPEN ========== */
-  .gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(1) {
-    top: 50%;
-    left: -20%;
-    transform: translateY(-50%) rotate(120deg);
-    background-image: url('/icons/logo-left.svg');
-    background-color: transparent;
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(2) {
-    opacity: 0;
-    /* hide middle bar */
-  }
-
-  .gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(3) {
-    top: 50%;
-    left: -30%;
-    transform: translateY(-50%) rotate(70deg);
-    background-image: url('/icons/logo-right.svg');
-    background-color: transparent;
-    width: 3rem;
-    height: 3rem;
-  }
-
-  /* ========== NAV MENU HIDDEN BY DEFAULT ON MOBILE ========== */
-  .gt-navbar-collapse {
-    display: none;
-    flex-direction: column;
-  }
-
-  /* ========== NAV MENU SHOW WHEN ACTIVE ========== */
-  .gt-navbar-collapse.show {
-    display: flex;
-  }
-
-  /* ========== NAV LIST FLEX DIRECTION COLUMN ON MOBILE ========== */
-  .gt-navbar-nav {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  /* ========== NAV ITEM RELATIVE POSITIONING FOR DROPDOWNS ========== */
-  .gt-nav-item {
-    position: relative;
-  }
-
-  /* ========== NAV LINK STYLES ========== */
-  .gt-nav-link {
-    display: inline-block;
-    transition: all 0.3s ease;
-    padding: 0.5rem 1rem;
-    color: var(--info-color);
-    font-weight: bold;
-    border-radius: 4px;
-  }
-
-  /* ========== HOVER EFFECT ON NAV LINKS ========== */
-  .gt-nav-link:hover {
-    color: var(--secondary-color);
-    transform: scale(0.95);
-  }
-
-  /* ========== CURSOR POINTER FOR DROPDOWN TOGGLE ========== */
-  .gt-dropdown-toggle {
-    cursor: pointer;
-  }
-
-  /* ========== DROPDOWN MENU HIDDEN BY DEFAULT ========== */
-  .gt-dropdown-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    margin-top: 1rem;
-    left: 0;
     background: var(--background-gradient);
-    padding: 1rem 0;
-    min-width: 200px;
-    z-index: 1000;
+    color: var(--info-color);
+    padding: 5px 10px;
+    font-size: 1.4rem;
     font-weight: bolder;
+    width: 95%;
   }
 
-  /* ========== SHOW DROPDOWN MENU WHEN OPEN ========== */
-  .gt-dropdown.show .gt-dropdown-menu {
-    display: flex;
-  }
-
-  /* ========== DROPDOWN ITEM STYLES ========== */
-  .gt-dropdown-item {
-    display: inline-block;
-    transition: all 0.3s ease;
-    padding: 0.5rem 1rem;
-    color: var(--info-color);
-  }
-
-  /* ========== HOVER EFFECT FOR DROPDOWN ITEMS ========== */
-  .gt-dropdown-item:hover {
-    color: var(--secondary-color);
-    transform: scale(0.95);
-  }
-
-  /* ========== GT Footer Section ========== */
-  .gt-footer {
-    background: var(--background-gradient);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: var(--secondary-color);
-
-  }
-
-  /* ========== Footer Container ========== */
-  .gt-footer-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    width: 100%;
-    max-width: 120rem;
-  }
-
-  /* ========== Footer Column ========== */
-  .gt-footer-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* ========== Footer Headings ========== */
-  .gt-footer h4 {
-    font-size: 2rem;
+  .gt-news-label {
+    flex-shrink: 0;
     font-weight: bold;
-    margin-bottom: 1rem;
-    color: var(--info-color);
+    color: #ffcc00;
   }
 
-  .gt-footer a {
-    text-decoration: underline var(--info-color);
+  .gt-news-container {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
   }
 
-  .gt-footer-about p {
-    padding: 2rem;
-  }
-
-  /* ========== Footer Lists ========== */
-  .gt-footer-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-
-  .gt-footer-list li {
-    margin: 0;
-  }
-
-  /* ========== Footer Links ========== */
-  .gt-footer-link {
-    display: flex;
-    flex-direction: row;
-    margin: 1rem;
-    color: var(--secondary-color);
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-
-  .gt-footer-link:hover {
-    color: var(--info-color);
-    transform: scale(0.95);
-  }
-
-  /* ========== Scroll to Top ========== */
-  .gt-go-to-top {
+  .gt-news-ticker {
     display: inline-block;
-    margin-bottom: 3rem;
-    width: 6rem;
-    transition: transform 0.3s ease;
+    white-space: nowrap;
+      transform: translateX(0);
+    animation: ticker 50s linear infinite;
   }
 
-  .gt-go-to-top:hover {
-    transform: scale(1.1);
+  .gt-news-item {
+    margin-right: 5rem;
   }
 
-  /* ========== Footer Info / Date & Time ========== */
-  .gt-footer-info {
-    display: flex;
-    justify-content: center;
-    font-size: 1.3rem;
-    margin-top: 2rem;
-    gap: 2rem;
-    background: var(--tertiary-color);
-  }
+  @keyframes ticker {
+    0% {
+      transform: translateX(15%);
+    }
 
-
-
-  /* ========== Footer Date Style ========== */
-  .gt-footer-date {
-    color: var(--secondary-color);
-    font-weight: bold;
-    font-size: 2rem;
-  }
-
-  .gt-colon {
-    color: var(--info-color);
-
-  }
-
-  /* ========== Footer Date Multi-color ========== */
-  .gt-day {
-    color: var(--info-color);
-    /* Giorno */
-  }
-
-  .gt-month {
-    color: var(--secondary-color);
-    /* Mese */
-  }
-
-  .gt-year {
-    color: var(--info-color);
-    /* Anno */
-  }
-
-  .gt-time {
-    color: var(--secondary-color);
+    100% {
+      transform: translateX(-100%);
+    }
   }
 }
 
+/* ========== NAVBAR CONTAINER ========== */
+.gt-navbar {
+  width: 100%;
+  background: var(--background-gradient);
+  position: relative;
+  z-index: 999;
+}
 
+/* ========== DROPDOWN ARROW STYLE ========== */
+.gt-arrow {
+  display: inline-block;
+  margin-left: 0.5rem;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.5rem solid var(--secondary-color);
+  transition: transform 0.3s ease;
+}
+
+/* ========== ROTATE ARROW WHEN DROPDOWN OPEN ========== */
+.gt-dropdown.show .gt-arrow {
+  transform: rotate(180deg);
+}
+
+/* ========== CONTAINER FLUID WITH PADDING & FLEX ALIGNMENT ========== */
+.gt-container-fluid {
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ========== HAMBURGER BUTTON STYLES ========== */
+.gt-navbar-toggler {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+/* ========== HAMBURGER ICON WRAPPER ========== */
+.gt-navbar-toggler-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+}
+
+/* ========== SINGLE BARS INSIDE HAMBURGER ICON ========== */
+.gt-navbar-toggler-icon .gt-bar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.25rem;
+  background-color: var(--secondary-color);
+  border-radius: 0.4rem;
+  transition: all 0.3s ease;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* ========== POSITION EACH BAR NORMAL STATE ========== */
+.gt-navbar-toggler-icon .gt-bar:nth-child(1) {
+  top: 0;
+}
+
+.gt-navbar-toggler-icon .gt-bar:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--info-color);
+}
+
+.gt-navbar-toggler-icon .gt-bar:nth-child(3) {
+  bottom: 0;
+}
+
+/* ========== HAMBURGER MORPH TO X SHAPE WHEN OPEN ========== */
+.gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(1) {
+  top: 50%;
+  left: -20%;
+  transform: translateY(-50%) rotate(120deg);
+  background-image: url('/icons/logo-left.svg');
+  background-color: transparent;
+  width: 3rem;
+  height: 3rem;
+}
+
+.gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(2) {
+  opacity: 0;
+  /* hide middle bar */
+}
+
+.gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(3) {
+  top: 50%;
+  left: -30%;
+  transform: translateY(-50%) rotate(70deg);
+  background-image: url('/icons/logo-right.svg');
+  background-color: transparent;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* ========== NAV MENU HIDDEN BY DEFAULT ON MOBILE ========== */
+.gt-navbar-collapse {
+  display: none;
+  flex-direction: column;
+}
+
+/* ========== NAV MENU SHOW WHEN ACTIVE ========== */
+.gt-navbar-collapse.show {
+  display: flex;
+}
+
+/* ========== NAV LIST FLEX DIRECTION COLUMN ON MOBILE ========== */
+.gt-navbar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ========== NAV ITEM RELATIVE POSITIONING FOR DROPDOWNS ========== */
+.gt-nav-item {
+  position: relative;
+}
+
+/* ========== NAV LINK STYLES ========== */
+.gt-nav-link {
+  display: inline-block;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  color: var(--info-color);
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* ========== HOVER EFFECT ON NAV LINKS ========== */
+.gt-nav-link:hover {
+  color: var(--secondary-color);
+  transform: scale(0.95);
+}
+
+/* ========== CURSOR POINTER FOR DROPDOWN TOGGLE ========== */
+.gt-dropdown-toggle {
+  cursor: pointer;
+}
+
+/* ========== DROPDOWN MENU HIDDEN BY DEFAULT ========== */
+.gt-dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 1rem;
+  left: 0;
+  background: var(--background-gradient);
+  padding: 1rem 0;
+  min-width: 200px;
+  z-index: 1000;
+  font-weight: bolder;
+}
+
+/* ========== SHOW DROPDOWN MENU WHEN OPEN ========== */
+.gt-dropdown.show .gt-dropdown-menu {
+  display: flex;
+}
+
+/* ========== DROPDOWN ITEM STYLES ========== */
+.gt-dropdown-item {
+  display: inline-block;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  color: var(--info-color);
+}
+
+/* ========== HOVER EFFECT FOR DROPDOWN ITEMS ========== */
+.gt-dropdown-item:hover {
+  color: var(--secondary-color);
+  transform: scale(0.95);
+}
+
+/* ========== GT Footer Section ========== */
+.gt-footer {
+  background: var(--background-gradient);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--secondary-color);
+
+}
+
+/* ========== Footer Container ========== */
+.gt-footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 120rem;
+}
+
+/* ========== Footer Column ========== */
+.gt-footer-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.gt-footer-about{
+  margin-bottom: 3rem;
+}
+.gt-footer-about h4{
+  margin-bottom: 1rem;
+}
+/* ========== Footer Icons ========== */
+.gt-footer-icon-div{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.gt-footer-icon{
+  width: 4rem;
+}
+.gt-footer-icon:hover{
+  transform: scale(0.95);
+}
+/* ========== Footer Headings ========== */
+.gt-footer h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--info-color);
+}
+
+.gt-footer a {
+  text-decoration: underline var(--info-color);
+}
+
+.gt-footer-about p {
+  padding: 0 2rem 0 2rem;
+}
+
+/* ========== Footer Lists ========== */
+.gt-footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.gt-footer-list li {
+  margin: 0;
+}
+
+/* ========== Footer Links ========== */
+.gt-footer-link {
+  display: flex;
+  flex-direction: row;
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.gt-footer-link a:hover {
+  color: var(--info-color);
+  transform: scale(0.95);
+}
+
+/* ========== Scroll to Top ========== */
+.gt-go-to-top {
+  display: inline-block;
+  margin-bottom: 3rem;
+  width: 6rem;
+  transition: transform 0.3s ease;
+}
+
+.gt-go-to-top:hover {
+  transform: scale(0.95);
+}
+
+/* ========== MEDIA QUERY: DESKTOP & TABLET NAVBAR STYLING ========== */
 @media screen and (min-width: 768px) {
 
+  /* ========== GT Navbar Container ========== */
   .gt-navbar {
     background: var(--background-gradient);
+    /* Gradient background for navbar */
     display: flex;
+    /* Flex layout for alignment */
     justify-content: center;
+    /* Center items horizontally */
     align-items: center;
+    /* Center items vertically */
     position: relative;
+    /* For dropdown positioning */
     z-index: 1000;
+    /* Ensure navbar is on top */
   }
 
+  /* ========== GT Navbar Collapse / Menu Items Container ========== */
   .gt-navbar-collapse {
     display: flex;
     flex-direction: row;
+    /* Horizontal menu on desktop */
     gap: 2rem;
+    /* Spacing between menu sections */
   }
 
+  /* ========== GT Navbar Toggler (Hamburger) HIDDEN ON DESKTOP ========== */
   .gt-navbar-toggler {
     display: none;
   }
 
+  /* ========== GT Navbar List ========== */
   .gt-navbar-nav {
     display: flex;
     flex-direction: row;
@@ -481,10 +514,12 @@ picture {
     list-style: none;
   }
 
+  /* ========== Individual Nav Item Styling ========== */
   .gt-nav-item {
     position: relative;
   }
 
+  /* ========== GT Nav Link Styling ========== */
   .gt-nav-link {
     color: var(--info-color);
     font-weight: bold;
@@ -494,15 +529,18 @@ picture {
     transition: transform 0.3s ease;
   }
 
+  /* Hover effect for nav links */
   .gt-nav-link:hover {
     color: var(--secondary-color);
     transform: scale(0.95);
   }
 
+  /* ========== Dropdown Toggle Styling ========== */
   .gt-dropdown-toggle {
     cursor: pointer;
   }
 
+  /* ========== Dropdown Arrow Icon ========== */
   .gt-arrow {
     display: inline-block;
     margin-left: 0.5rem;
@@ -515,15 +553,18 @@ picture {
     transition: transform 0.3s ease;
   }
 
+
   .gt-dropdown.show .gt-arrow {
     transform: rotate(180deg);
   }
 
+  /* ========== Dropdown Menu Styling ========== */
   .gt-dropdown-menu {
     display: none;
     flex-direction: column;
     position: absolute;
     top: 100%;
+    /* Directly below nav item */
     left: 0;
     background: var(--background-gradient);
     padding: 1rem 0;
@@ -537,6 +578,7 @@ picture {
     display: flex;
   }
 
+  /* ========== Dropdown Item Styling ========== */
   .gt-dropdown-item {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -549,6 +591,12 @@ picture {
     transform: scale(0.95);
   }
 }
+
+/* ========== GT Footer Section ========== */
+.gt-footer-column {
+ justify-content: space-evenly;
+}
+
 
 @media screen and (min-width: 1024px) {
 
@@ -933,20 +981,6 @@ picture {
   transform: scale(0.95);
 }
 
-/* ========== Responsive Footer ========== */
-@media screen and (max-width: 768px) {
-  .gt-footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-}
-
-@media screen and (min-width: 1024px) {
-  .gt-footer {
-    padding: 6rem 4rem;
-  }
-}
 
 /* ========== DESKTOP (>= 769px) OVERRIDE ========== */
 @media (min-width: 769px) {
