@@ -52,7 +52,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:zoom="0.76781253"
-     inkscape:cx="373.78916"
+     inkscape:cx="374.44036"
      inkscape:cy="332.11232"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
@@ -69,19 +69,22 @@
       <text
          xml:space="preserve"
          id="text2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:144px;line-height:94.42%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0.11px;white-space:pre;shape-inside:url(#rect2);opacity:0.921769;fill:#75d811;fill-opacity:1;fill-rule:evenodd;stroke:#78e40c;stroke-width:0;stroke-linecap:round;stroke-dasharray:none" />
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:144px;line-height:94.42%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0.11px;white-space:pre;shape-inside:url(#rect2);display:inline;opacity:0.921769;fill:#75d811;fill-opacity:1;fill-rule:evenodd;stroke:#78e40c;stroke-width:0;stroke-linecap:round;stroke-dasharray:none" />
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:568.998px;line-height:94.42%;font-family:'Microsoft JhengHei';-inkscape-font-specification:'Microsoft JhengHei';letter-spacing:0.43465px;opacity:0.921769;fill:#ffb347;fill-opacity:1;fill-rule:evenodd;stroke:#ffb347;stroke-width:14.7094;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
-       x="18.927164"
-       y="491.40692"
-       id="text3"
-       transform="scale(1.0009479,0.99905299)"><tspan
-         sodipodi:role="line"
-         id="tspan3"
-         x="18.927164"
-         y="491.40692"
-         style="fill:#ffb347;fill-opacity:1;stroke:#ffb347;stroke-width:14.7094;stroke-dasharray:none;stroke-opacity:1">in</tspan></text>
+    <path
+       style="font-size:648.429px;line-height:94.42%;font-family:'Microsoft JhengHei';-inkscape-font-specification:'Microsoft JhengHei';letter-spacing:0.495326px;opacity:0.921769;fill:#ffb347;fill-rule:evenodd;stroke:#ffb347;stroke-width:14.7094;stroke-linecap:round"
+       d="M 498.05509,522.79785 H 445.18027 V 322.69671 q 0,-113.34843 -82.95333,-113.34843 -43.37635,0 -71.23854,32.61142 -27.86218,32.2948 -27.86218,81.05363 v 199.78452 h -52.87483 v -350.177 h 52.87483 v 58.57391 h 1.58308 q 39.26035,-66.80592 114.93151,-66.80592 57.62406,0 88.01917,37.04405 30.39511,37.04404 30.39511,107.33273 z"
+       transform="scale(1.0011463,0.99885502)"
+       id="path2" />
+    <path
+       style="font-size:648.429px;line-height:94.42%;font-family:'Microsoft JhengHei';-inkscape-font-specification:'Microsoft JhengHei';letter-spacing:0.495326px;opacity:0.921769;fill:#ffb347;fill-rule:evenodd;stroke:#ffb347;stroke-width:14.7094;stroke-linecap:round"
+       d="m 41.949723,522.79785 v -350.177 h 52.558211 v 350.177 z"
+       transform="scale(1.0011463,0.99885502)"
+       id="path1" />
+    <path
+       style="font-size:648.429px;line-height:94.42%;font-family:'Microsoft JhengHei';-inkscape-font-specification:'Microsoft JhengHei';letter-spacing:0.495326px;opacity:0.921769;fill:#f9f9f9;fill-rule:evenodd;stroke:#ffb347;stroke-width:14.7094;stroke-linecap:round"
+       d="m 34.667561,46.607793 q 0,-14.880939 9.815088,-25.012643 10.131703,-10.448319 24.379411,-10.448319 14.880939,0 25.012643,10.448319 10.448317,10.448319 10.448317,25.012643 0,13.931092 -10.448317,24.379411 -10.131704,10.448319 -25.012643,10.448319 -14.88094,0 -24.696027,-10.131703 -9.498472,-10.131704 -9.498472,-24.696027 z"
+       transform="scale(1.0011463,0.99885502)"
+       id="text3" />
   </g>
 </svg>

@@ -31,14 +31,14 @@
   /* ========== Typography Variables ========== */
   --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --font-size-h1: clamp(3rem, 1.5rem + 2vw, 8rem);
-  --font-size-h2: clamp(2.2rem, 1.5rem + 1.5vw, 6rem);
-  --font-size-h3: clamp(2rem, 1.5rem + 1vw, 5rem);
-  --font-size-h4: clamp(1.75rem, 1.5rem + 0.75vw, 4rem);
-  --font-size-h5: clamp(1.5rem, 1.25rem + 0.5vw, 3.5rem);
-  --font-size-h6: clamp(1.25rem, 1rem + 0.5vw, 3rem);
-  --font-size-p: clamp(1rem, 1.5rem + 0.5vw, 3rem);
-  --font-size-a: clamp(1rem, 1.2rem + 0.5vw, 2.5rem);
+  --font-size-h1: clamp(2.5rem, 2rem + 2vw, 6rem);
+  --font-size-h2: clamp(2rem, 1.75rem + 1.5vw, 4.5rem);
+  --font-size-h3: clamp(1.75rem, 1.5rem + 1vw, 3.5rem);
+  --font-size-h4: clamp(1.5rem, 1.25rem + 0.75vw, 3rem);
+  --font-size-h5: clamp(1.25rem, 1rem + 0.5vw, 2.25rem);
+  --font-size-h6: clamp(1rem, 0.875rem + 0.5vw, 1.75rem);
+  --font-size-p: clamp(0.95rem, 1rem + 0.5vw, 1.25rem);
+  --font-size-a: clamp(0.95rem, 1rem + 0.5vw, 1.25rem);
 }
 
 /* ========== Typography Styles ========== */
@@ -50,11 +50,13 @@ h1 {
 h2 {
   font-size: var(--font-size-h2);
   color: var(--secondary-color);
+  background: var(--background-gradient);
 }
 
 h3 {
   font-size: var(--font-size-h3);
   color: var(--secondary-color);
+  background: var(--background-gradient);
 }
 
 h4 {
@@ -136,50 +138,6 @@ picture {
     flex-direction: column;
   }
 
-  /* ========== NEWS BAR ========== */
-  .gt-news-bar {
-    display: flex;
-    align-items: center;
-    background: var(--background-gradient);
-    color: var(--info-color);
-    padding: 5px 10px;
-    font-size: 1.4rem;
-    font-weight: bolder;
-    width: 95%;
-  }
-
-  .gt-news-label {
-    flex-shrink: 0;
-    font-weight: bold;
-    color: #ffcc00;
-  }
-
-  .gt-news-container {
-    flex: 1;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .gt-news-ticker {
-    display: inline-block;
-    white-space: nowrap;
-      transform: translateX(0);
-    animation: ticker 50s linear infinite;
-  }
-
-  .gt-news-item {
-    margin-right: 5rem;
-  }
-
-  @keyframes ticker {
-    0% {
-      transform: translateX(15%);
-    }
-
-    100% {
-      transform: translateX(-100%);
-    }
-  }
 }
 
 /* ========== NAVBAR CONTAINER ========== */
@@ -375,7 +333,7 @@ picture {
   align-items: center;
   text-align: center;
   color: var(--secondary-color);
-
+  padding: clamp(1rem, 2vw, 4rem);
 }
 
 /* ========== Footer Container ========== */
@@ -384,9 +342,9 @@ picture {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: clamp(0.5rem, 1vw, 2rem);
   width: 100%;
-  max-width: 120rem;
+  max-width: clamp(90rem, 80vw, 120rem);
 }
 
 /* ========== Footer Column ========== */
@@ -395,30 +353,36 @@ picture {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: clamp(1rem, 2vw, 3rem);
   width: 100%;
 }
-.gt-footer-about{
-  margin-bottom: 3rem;
+
+.gt-footer-about {
+  margin-bottom: clamp(1.5rem, 3vw, 4rem);
 }
-.gt-footer-about h4{
-  margin-bottom: 1rem;
+
+.gt-footer-about h4 {
+  margin-bottom: clamp(0.5rem, 1vw, 1.5rem);
+  font-size: clamp(2rem, 2vw, 3rem);
 }
 /* ========== Footer Icons ========== */
-.gt-footer-icon-div{
+.gt-footer-icon-div {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: clamp(0.5rem, 1vw, 2rem);
 }
-.gt-footer-icon{
-  width: 4rem;
+
+.gt-footer-icon {
+  width: clamp(3rem, 2vw, 6rem);
 }
-.gt-footer-icon:hover{
+
+.gt-footer-icon:hover {
   transform: scale(0.95);
 }
+
 /* ========== Footer Headings ========== */
 .gt-footer h4 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2vw, 3rem);
   font-weight: bold;
   color: var(--info-color);
 }
@@ -428,7 +392,8 @@ picture {
 }
 
 .gt-footer-about p {
-  padding: 0 2rem 0 2rem;
+  padding: 0 clamp(1rem, 2vw, 4rem);
+  font-size: clamp(1.1rem, 1.2vw, 5rem);
 }
 
 /* ========== Footer Lists ========== */
@@ -439,7 +404,7 @@ picture {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: clamp(1rem, 1.5vw, 3rem);
 }
 
 .gt-footer-list li {
@@ -450,8 +415,8 @@ picture {
 .gt-footer-link {
   display: flex;
   flex-direction: row;
-  margin: 0 1rem 1rem 1rem;
-  font-size: 1.5rem;
+  margin: clamp(0.5rem, 1vw, 1.5rem);
+  font-size: clamp(1.3rem, 1vw, 3rem);
   color: var(--secondary-color);
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -464,13 +429,8 @@ picture {
 /* ========== Scroll to Top ========== */
 .gt-go-to-top {
   display: inline-block;
-  margin-bottom: 3rem;
-  width: 6rem;
-  transition: transform 0.3s ease;
-}
-
-.gt-go-to-top:hover {
-  transform: scale(0.95);
+  margin-bottom: clamp(1.5rem, 2vw, 6rem);
+  width: clamp(4rem, 1vw + 4rem, 12rem);
 }
 
 /* ========== MEDIA QUERY: DESKTOP & TABLET NAVBAR STYLING ========== */
@@ -479,26 +439,18 @@ picture {
   /* ========== GT Navbar Container ========== */
   .gt-navbar {
     background: var(--background-gradient);
-    /* Gradient background for navbar */
     display: flex;
-    /* Flex layout for alignment */
     justify-content: center;
-    /* Center items horizontally */
     align-items: center;
-    /* Center items vertically */
     position: relative;
-    /* For dropdown positioning */
     z-index: 1000;
-    /* Ensure navbar is on top */
   }
 
   /* ========== GT Navbar Collapse / Menu Items Container ========== */
   .gt-navbar-collapse {
     display: flex;
     flex-direction: row;
-    /* Horizontal menu on desktop */
-    gap: 2rem;
-    /* Spacing between menu sections */
+    gap: clamp(1rem, 1vw + 1rem, 3rem);
   }
 
   /* ========== GT Navbar Toggler (Hamburger) HIDDEN ON DESKTOP ========== */
@@ -510,7 +462,7 @@ picture {
   .gt-navbar-nav {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: clamp(0.5rem, 0.8vw, 2rem);
     list-style: none;
   }
 
@@ -523,13 +475,13 @@ picture {
   .gt-nav-link {
     color: var(--info-color);
     font-weight: bold;
-    padding: 0.5rem;
+    padding: clamp(0.3rem, 0.5vw, 1rem);
     display: flex;
     align-items: center;
+    font-size: clamp(1rem, 0.8vw + 0.8rem, 3rem);
     transition: transform 0.3s ease;
   }
 
-  /* Hover effect for nav links */
   .gt-nav-link:hover {
     color: var(--secondary-color);
     transform: scale(0.95);
@@ -543,16 +495,15 @@ picture {
   /* ========== Dropdown Arrow Icon ========== */
   .gt-arrow {
     display: inline-block;
-    margin-left: 0.5rem;
+    margin-left: clamp(0.2rem, 0.5vw, 1rem);
     width: 0;
     height: 0;
     vertical-align: middle;
-    border-left: 0.4rem solid transparent;
-    border-right: 0.4rem solid transparent;
-    border-top: 0.5rem solid var(--secondary-color);
+    border-left: clamp(0.2rem, 0.5vw, 0.5rem) solid transparent;
+    border-right: clamp(0.2rem, 0.5vw, 0.5rem) solid transparent;
+    border-top: clamp(0.25rem, 0.6vw, 0.8rem) solid var(--secondary-color);
     transition: transform 0.3s ease;
   }
-
 
   .gt-dropdown.show .gt-arrow {
     transform: rotate(180deg);
@@ -564,14 +515,13 @@ picture {
     flex-direction: column;
     position: absolute;
     top: 100%;
-    /* Directly below nav item */
     left: 0;
     background: var(--background-gradient);
-    padding: 1rem 0;
-    min-width: 200px;
+    padding: clamp(0.5rem, 1vw, 1.5rem) 0;
+    min-width: clamp(150px, 15vw, 300px);
     z-index: 1000;
     font-weight: bolder;
-    margin-top: 1rem;
+    margin-top: clamp(0.5rem, 1vw, 1rem);
   }
 
   .gt-dropdown.show .gt-dropdown-menu {
@@ -581,8 +531,9 @@ picture {
   /* ========== Dropdown Item Styling ========== */
   .gt-dropdown-item {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: clamp(0.3rem, 0.5vw, 1rem) clamp(0.5rem, 1vw, 2rem);
     color: var(--info-color);
+    font-size: clamp(0.9rem, 0.7vw + 0.8rem, 3rem);
     transition: transform 0.3s ease;
   }
 
@@ -590,125 +541,12 @@ picture {
     color: var(--secondary-color);
     transform: scale(0.95);
   }
-}
 
-/* ========== GT Footer Section ========== */
-.gt-footer-column {
- justify-content: space-evenly;
-}
-
-
-@media screen and (min-width: 1024px) {
-
-  /* ========== TOP MAIN SECTION MARGIN ========== */
-  .top-main {
-    margin-top: 3rem;
+  /* ========== GT Footer Section ========== */
+  .gt-footer-column {
+    justify-content: space-evenly;
   }
 
-  /* ========== NAVBAR STYLE DESKTOP ========== */
-  .gt-navbar {
-    background: var(--background-gradient);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1000;
-  }
-
-  /* ========== NAVBAR COLLAPSE (VISIBLE) ========== */
-  .gt-navbar-collapse {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  /* ========== TOGGLER HIDDEN ON DESKTOP ========== */
-  .gt-navbar-toggler {
-    display: none;
-  }
-
-  /* ========== NAVBAR NAV ========== */
-  .gt-navbar-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    list-style: none;
-  }
-
-  /* ========== NAV ITEM STYLE ========== */
-  .gt-nav-item {
-    position: relative;
-  }
-
-  /* ========== NAV LINK ========== */
-  .gt-nav-link {
-    color: var(--info-color);
-    font-weight: bold;
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease;
-  }
-
-  .gt-nav-link:hover {
-    color: var(--secondary-color);
-    transform: scale(0.95);
-  }
-
-  /* ========== DROPDOWN TOGGLE STYLE ========== */
-  .gt-dropdown-toggle {
-    cursor: pointer;
-  }
-
-  /* ========== DROPDOWN ARROW ========== */
-  .gt-arrow {
-    display: inline-block;
-    margin-left: 0.5rem;
-    width: 0;
-    height: 0;
-    vertical-align: middle;
-    border-left: 0.4rem solid transparent;
-    border-right: 0.4rem solid transparent;
-    border-top: 0.5rem solid var(--secondary-color);
-    transition: transform 0.3s ease;
-  }
-
-  .gt-dropdown.show .gt-arrow {
-    transform: rotate(180deg);
-  }
-
-  /* ========== DROPDOWN MENU ========== */
-  .gt-dropdown-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: var(--background-gradient);
-    padding: 1rem 0;
-    min-width: 200px;
-    z-index: 1000;
-    font-weight: bolder;
-    margin-top: 1rem;
-  }
-
-  /* ========== DROPDOWN ON HOVER ========== */
-  .gt-dropdown.show .gt-dropdown-menu {
-    display: flex;
-  }
-
-  /* ========== DROPDOWN ITEM ========== */
-  .gt-dropdown-item {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    color: var(--info-color);
-    transition: transform 0.3s ease;
-  }
-
-  .gt-dropdown-item:hover {
-    color: var(--secondary-color);
-    transform: scale(0.95);
-  }
 }
 
 /* ========== LARGE DESKTOP (>= 1440px) ========== */
@@ -762,150 +600,6 @@ picture {
   }
 }
 
-/* ========== LANDSCAPE & ORIENTATION FIXES ========== */
-@media screen and (orientation: landscape) and (max-height: 815px) {
-
-  /* ========== TOP HEADER FLEX CENTER ALIGNMENT ========== */
-  .top-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--background-color);
-  }
-
-  /* ========== LOGO SIZE & MARGIN ========== */
-  .logo {
-    width: 8rem;
-    height: auto;
-    margin: 1rem;
-  }
-
-  /* ========== TITLE FONT SIZE & CENTER ALIGNMENT ========== */
-  .title {
-    font-size: 2rem;
-    text-align: center;
-    margin: 1rem auto;
-  }
-
-  /* ========== SYMBOL ICONS FONT SIZE ========== */
-  .symbol.left,
-  .symbol.right {
-    font-size: 2rem;
-  }
-
-  /* ========== CONTACTS FLEX WRAP & GAP ========== */
-  .contacts {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 1rem;
-    gap: 1rem;
-  }
-
-  /* ========== NAVBAR WIDTH & POSITION FOR LANDSCAPE ========== */
-  .gt-navbar {
-    width: clamp(10rem, 25vw, 16rem);
-    position: absolute;
-    margin-left: 5rem;
-    z-index: 1000;
-  }
-
-  /* ========== HAMBURGER ICON SIZE & COLORS FOR LANDSCAPE ========== */
-  .gt-navbar-toggler-icon {
-    width: 2.5rem;
-    height: 3rem;
-  }
-
-  .gt-navbar-toggler-icon .gt-bar {
-    background-color: var(--info-color);
-    height: 0.25rem;
-    border-radius: 0.3rem;
-  }
-
-  /* ========== NAV ITEM TEXT FONT SIZE & COLOR ========== */
-  .gt-nav-item-text {
-    font-size: clamp(1rem, 1.1vw, 1.4rem);
-    color: var(--info-color);
-  }
-
-  /* ========== DROPDOWN ARROW COLOR & SIZE ========== */
-  .gt-dropdown-toggle::after {
-    color: var(--secondary-color);
-    font-size: 2rem;
-  }
-
-  /* ========== DROPDOWN MENU BG & PADDING ========== */
-  .gt-dropdown-menu {
-    background-color: var(--tertiary-color);
-    background: var(--background-gradient);
-    padding: 0.5rem;
-  }
-
-  /* ========== DROPDOWN LINK COLOR & PADDING ========== */
-  .gt-dropdown-menu a {
-    color: var(--secondary-color);
-    font-size: 1rem;
-    margin: 0;
-    padding: 0.3rem 0.5rem;
-  }
-
-  /* ========== DROPDOWN ITEM HOVER EFFECT ========== */
-  .gt-dropdown-item:hover {
-    background-color: var(--main-color);
-    color: var(--info-color);
-    transform: scale(0.9);
-  }
-
-  /* ========== HAMBURGER BUTTON RESET ========== */
-  .gt-navbar-toggler {
-    border: none;
-    outline: none;
-    padding: 0;
-  }
-
-  /* ========== HAMBURGER ICON STYLE LANDSCAPE ========== */
-  .gt-navbar-toggler-icon {
-    width: 4rem;
-    height: 3rem;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    background: transparent;
-    cursor: pointer;
-  }
-
-  /* ========== HAMBURGER BARS STYLE LANDSCAPE ========== */
-  .gt-navbar-toggler-icon .gt-bar {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0.3rem;
-    background-color: var(--info-color);
-    border-radius: 0.4rem;
-    transition: transform 0.3s ease-out;
-  }
-
-  /* ========== POSITION EACH BAR LANDSCAPE ========== */
-  .gt-navbar-toggler-icon .gt-bar:nth-child(1) {
-    top: 0.20rem;
-  }
-
-  .gt-navbar-toggler-icon .gt-bar:nth-child(2) {
-    top: 40%;
-    transform: translateY(-50%);
-  }
-
-  .gt-navbar-toggler-icon .gt-bar:nth-child(3) {
-    bottom: 0.80rem;
-  }
-
-  /* ========== GO TO TOP BUTTON SIZE ========== */
-  .go-to-top {
-    font-size: 1.5rem;
-  }
-}
-
 /* ========== COMMON DESKTOP STYLES (min-width: 1024px and up) ========== */
 .top-header {
   display: flex;
@@ -948,6 +642,53 @@ picture {
   font-style: italic;
   font-weight: 700;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* ========== NEWS BAR ========== */
+.gt-news-bar {
+  display: flex;
+  align-items: center;
+  background: var(--background-gradient);
+  color: var(--info-color);
+  padding: clamp(0.3rem, 0.5vw, 1rem) clamp(0.5rem, 1vw, 2rem);
+  font-size: clamp(1rem, 1vw + 0.8rem, 1.8rem);
+  font-weight: bolder;
+  width: 95%;
+}
+
+.gt-news-label {
+  flex-shrink: 0;
+  font-weight: bold;
+  color: #ffcc00;
+  font-size: clamp(1rem, 1vw + 1rem, 2rem);
+}
+
+.gt-news-container {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.gt-news-ticker {
+  display: inline-block;
+  white-space: nowrap;
+  transform: translateX(0);
+  animation: ticker 50s linear infinite;
+  font-size: clamp(1rem, 0.9vw + 0.8rem, 2.5rem);
+}
+
+.gt-news-item {
+  margin-right: clamp(2rem, 2vw + 1rem, 6rem);
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(15%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* ========== SYMBOL ICONS STYLE ========== */

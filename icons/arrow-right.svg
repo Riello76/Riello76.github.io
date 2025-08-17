@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="300"
-   height="300"
-   viewBox="0 0 79.375 79.375"
+   width="50"
+   height="50"
+   viewBox="0 0 13.229167 13.229167"
    version="1.1"
    id="svg1"
    sodipodi:docname="arrow-right.svg"
@@ -22,9 +22,9 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="0.92159584"
-     inkscape:cx="-41.232825"
-     inkscape:cy="56.423866"
+     inkscape:zoom="7.3727667"
+     inkscape:cx="1.0172572"
+     inkscape:cy="39.876482"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="1912"
@@ -32,14 +32,15 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1" />
   <path
-     d="M 6.1152227,1.6311608 72.547981,41.049186 7.741578,77.264784 A 33.347668,44.459065 0 0 0 22.766082,40.115964 33.347668,44.459065 0 0 0 6.1152227,1.6311608 Z"
+     d="M 1.05668,0.05771827 12.172487,7.0176651 1.1818641,13.171449 A 5.6191731,7.7071992 0.65044485 0 0 3.7864781,6.7606706 5.6191731,7.7071992 0.65044485 0 0 1.05668,0.05771827 Z"
      fill="#ffb347"
      fill-rule="evenodd"
      stroke="#f9f9f9"
-     stroke-width="2.09"
+     stroke-width="2.09001"
      stroke-linecap="round"
      stroke-linejoin="round"
      stroke-miterlimit="3.7"
      paint-order="stroke markers fill"
-     id="path1" />
+     id="path1"
+     style="stroke:#f9f9f9;stroke-opacity:1;stroke-width:0.10583334;stroke-dasharray:none" />
 </svg>
