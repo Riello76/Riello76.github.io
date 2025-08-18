@@ -1,240 +1,129 @@
+/* ========== Base Styles ========== */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.top-main,
+.middle-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.top-main h2,
+.middle-main h3,
+.middle-main p {
+    background: var(--background-gradient);
+}
+
+.middle-main h3 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.profile-div,
+.experience-div,
+.education-div,
+.certifications-div,
+.technical-skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 1rem;
+    will-change: transform, opacity;
+}
+
+/* ========== Disable AOS animations on small screens ========== */
+@media (max-width: 768px) {
+    [data-aos] {
+        opacity: 1;
+        transform: none;
+        transition: none;
+        animation: none;
+    }
+}
+
 /* ========== Media Queries ========== */
 @media screen and (min-width: 320px) {
-
-    /* ========== Main Section ========== */
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .top-main {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-top: 2rem;
-    }
-
     .top-main h2 {
-        width: 100%;
         text-align: center;
-        background: var(--background-gradient);
+        font-size: var(--font-size-h2);
+        padding: 0.5rem 0;
         color: var(--info-color);
     }
 
-    /* ========== Middle Main ========== */
-    .middle-main {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-    }
-
     .middle-main h3 {
-        text-align: center;
-        background: var(--background-gradient);
         padding: 0.75rem 1rem;
-        font-size: clamp(1.7rem, 3.5vw, 1.8rem);
-        color: var(--secondary-color);
+        font-size: var(--font-size-h3);
     }
 
     .middle-main p {
-        background: var(--background-gradient);
         padding: 0.75rem 1rem;
         margin-bottom: 0.5rem;
-        font-size: clamp(1.5rem, 3vw, 1.4rem);
-    }
-
-
-    .profile-div,
-    .experience-div,
-    .education-div,
-    .certifications-div,
-    .technical-skills {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 1rem;
-
-        /* Prevent layout shift by reserving space */
-        min-height: 220px;
-        /* adatta in base alla quantità di contenuto */
-
-        /* For smoother animation */
-        will-change: transform, opacity;
-    }
-
-    .experience-div,
-    .certifications-div {
-        align-self: auto;
+        font-size: var(--font-size-p);
     }
 }
 
 @media screen and (min-width: 1024px) {
-
-    /* ========== Main Section ========== */
     main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         background-color: var(--tertiary-color);
     }
 
-    .top-main {
-        margin: 0;
-        padding: 0;
-    }
-
-    /* ========== Middle Main ========== */
+    .top-main,
     .middle-main {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
         width: 100%;
-        margin-top: 3rem;
     }
 
     .middle-main h2 {
-        width: 100%;
-        text-align: center;
-        background: var(--background-gradient);
-        color: var(--info-color);
         font-size: 3rem;
     }
 
     .middle-main h3 {
-        text-align: center;
-        background: var(--background-gradient);
         padding: 1rem;
         font-size: 2.5rem;
     }
 
     .middle-main p {
-        background: var(--background-gradient);
         padding: 1rem;
-        margin-bottom: 0.5rem;
         font-size: 2rem;
-    }
-
-    .profile-div,
-    .experience-div,
-    .education-div,
-    .certifications-div,
-    .technical-skills {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .experience-div,
-    .certifications-div {
-        align-self: flex-end;
     }
 }
 
-@media screen and (min-width:1440px) {
-
-    /* ========== Main Section ========== */
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-color: var(--tertiary-color);
-    }
-
-
-    /* ========== Middle Main ========== */
-    .middle-main {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .middle-main h2 {
-        text-align: center;
-        background: var(--background-gradient);
-        color: var(--info-color);
-    }
-
-    .middle-main h3 {
-        text-align: center;
-        background: var(--background-gradient);
-        padding: 1rem;
-    }
-
-    .middle-main p {
-        background: var(--background-gradient);
-        padding: 1rem;
-        margin-bottom: 0.5rem;
-    }
+@media screen and (min-width: 1440px) {
 
     .profile-div,
     .experience-div,
     .education-div,
     .certifications-div,
     .technical-skills {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
         width: 50%;
-    }
-
-    .experience-div,
-    .certifications-div {
-        align-self: flex-end;
     }
 }
 
 @media screen and (min-width: 2560px) {
-
-    /* ========== Main Section ========== */
     main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-color: var(--tertiary-color);
         padding: 4rem 0;
     }
 
-    .top-main {
-        margin: 0;
-        padding: 0;
-    }
-
-    /* ========== Middle Main ========== */
-    .middle-main {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-    }
-
     .middle-main h2 {
-        width: 100%;
-        text-align: center;
-        background: var(--background-gradient);
-        color: var(--info-color);
         font-size: 4rem;
         padding: 2rem 0;
     }
 
     .middle-main h3 {
-        text-align: center;
-        background: var(--background-gradient);
-        padding: 2rem;
         font-size: 3.5rem;
+        padding: 2rem;
     }
 
     .middle-main p {
-        background: var(--background-gradient);
+        font-size: 2.8rem;
         padding: 2rem;
         margin-bottom: 1.5rem;
-        font-size: 2.8rem;
         line-height: 2;
     }
 
@@ -243,26 +132,7 @@
     .education-div,
     .certifications-div,
     .technical-skills {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
         width: 50%;
         padding: 1.5rem;
-    }
-
-    .experience-div,
-    .certifications-div {
-        align-self: flex-end;
-    }
-}
-
-/* ==========  Disable AOS animations on small screens (max-width 768px) to improve performance and usability ========== */
-
-@media (max-width: 768px) {
-    [data-aos] {
-        opacity: 1;
-        transform: none;
-        transition: none;
-        animation: none;
     }
 }

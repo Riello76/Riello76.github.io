@@ -64,19 +64,24 @@
     <div class="top-header">
 
       <!-- ========== Logo ========== -->
-      <a href="/index.html" title="Go to Homepage">
+      <a href="/index.html" aria-label="Go to Homepage">
         <img class="logo" id="top" src="/images/logo.svg" alt="Gaspare Tocci's Logo" width="120" height="60">
       </a>
 
       <!-- ========== NEWS BAR ========== -->
       <div class="gt-news-bar" aria-label="Latest News" role="region">
-        <span class="gt-news-label">LATEST :</span>
-        <div class="gt-news-container">
-          <div class="gt-news-ticker" role="marquee" aria-live="polite">
-            <span class="gt-news-item">Portfolio in constant evolution — exciting new projects are on the way!</span>
-            <span class="gt-news-item">Continuing my learning journey through professional courses and training.</span>
-            <span class="gt-news-item">Continuously refining responsive layouts and optimizing performance.</span>
+        <span class="gt-news-label">
+          LATEST :
+          <img class="pacman-icon" src="/icons/pacman.webp" alt="Pac-Man" />
+        </span>
 
+        <div class="gt-news-container">
+          <div class="gt-news-ticker" aria-live="polite" tabindex="0">
+            <span class="gt-news-item">Portfolio evolving with new projects on the way!</span>
+            <span class="gt-news-item">Starting the IT Smart Technician Bootcamp soon — hands-on IoT, networking, and
+              smart
+              tech skills!</span>
+            <span class="gt-news-item">Optimizing responsive layouts and performance.</span>
           </div>
         </div>
       </div>
@@ -123,12 +128,12 @@
               </a>
               <!-- ========== CV DROPDOWN ITEMS ========== -->
               <ul class="gt-dropdown-menu" role="menu">
-                <li><a class="gt-dropdown-item" href="/pages/curriculum/curriculum.html" role="menuitem">Main Page</a>
-                </li>
-                <li><a class="gt-dropdown-item" href="/files/Gaspare-Tocci-CV-IT.pdf" download role="menuitem">Download
-                    -PDF-</a></li>
-                <li><a class="gt-dropdown-item" href="/files/Gaspare-Tocci-CV-IT.doc" download role="menuitem">Download
-                    -DOC-</a></li>
+                <li><a class="gt-dropdown-item" href="/pages/curriculum/curriculum.html" role="menuitem"
+                    tabindex="-1">Main Page</a></li>
+                <li><a class="gt-dropdown-item" href="/files/Gaspare-Tocci-CV-IT.pdf" download role="menuitem"
+                    tabindex="-1">Download -PDF-</a></li>
+                <li><a class="gt-dropdown-item" href="/files/Gaspare-Tocci-CV-IT.doc" download role="menuitem"
+                    tabindex="-1">Download -DOC-</a></li>
               </ul>
             </li>
 
@@ -140,13 +145,14 @@
               </a>
               <!-- ========== GALLERY DROPDOWN ITEMS ========== -->
               <ul class="gt-dropdown-menu" role="menu">
-                <li><a class="gt-dropdown-item" href="/pages/gallery/gallery.html" role="menuitem">Main Page</a></li>
-                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/branding.html" role="menuitem">Branding</a>
-                </li>
-                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/graphics.html" role="menuitem">Graphics</a>
-                </li>
-                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/3d-design.html" role="menuitem">3D Design</a>
-                </li>
+                <li><a class="gt-dropdown-item" href="/pages/gallery/gallery.html" role="menuitem" tabindex="-1">Main
+                    Page</a></li>
+                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/branding.html" role="menuitem"
+                    tabindex="-1">Branding</a></li>
+                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/graphics.html" role="menuitem"
+                    tabindex="-1">Graphics</a></li>
+                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/3d-design.html" role="menuitem"
+                    tabindex="-1">3D Design</a></li>
               </ul>
             </li>
 
@@ -158,21 +164,21 @@
               </a>
               <!-- ========== PROJECTS DROPDOWN ITEMS ========== -->
               <ul class="gt-dropdown-menu" role="menu">
-                <li><a class="gt-dropdown-item" href="/pages/projects/projects.html" role="menuitem">Main Page</a></li>
-                <li><a class="gt-dropdown-item" href="/pages/projects/pages/glastonbury/"
-                    role="menuitem">Glastonbury</a>
-                </li>
+                <li><a class="gt-dropdown-item" href="/pages/projects/projects.html" role="menuitem" tabindex="-1">Main
+                    Page</a></li>
+                <li><a class="gt-dropdown-item" href="/pages/projects/pages/glastonbury/" role="menuitem"
+                    tabindex="-1">Glastonbury</a></li>
                 <li><a class="gt-dropdown-item" href="/pages/projects/pages/old-portfolio/old-portfolio.html"
-                    role="menuitem">Old Curriculum</a></li>
+                    role="menuitem" tabindex="-1">Old Curriculum</a></li>
                 <li><a class="gt-dropdown-item"
-                    href="/pages/projects/pages/old-portfolio/homepages/heat-wave/index-heat-wave.html"
-                    role="menuitem">Heat Wave</a></li>
+                    href="/pages/projects/pages/old-portfolio/homepages/heat-wave/index-heat-wave.html" role="menuitem"
+                    tabindex="-1">Heat Wave</a></li>
                 <li><a class="gt-dropdown-item"
-                    href="/pages/projects/pages/old-portfolio/homepages/streamer/index-streamer.html"
-                    role="menuitem">Streamer</a></li>
+                    href="/pages/projects/pages/old-portfolio/homepages/streamer/index-streamer.html" role="menuitem"
+                    tabindex="-1">Streamer</a></li>
                 <li><a class="gt-dropdown-item"
-                    href="/pages/projects/pages/old-portfolio/homepages/wada-solutions/index.html" role="menuitem">WADA
-                    Solutions</a></li>
+                    href="/pages/projects/pages/old-portfolio/homepages/wada-solutions/index.html" role="menuitem"
+                    tabindex="-1">WADA Solutions</a></li>
               </ul>
             </li>
 
@@ -189,9 +195,9 @@
     <section class="top-main">
 
       <!-- ========== Hero Image ========== -->
-      <section class="hero" aria-label="Hero Section - Introduction">
-        <img class="my-img" src="/images/my-img1.webp" srcset="/images/my-img5.webp 1x" width="200" height="200"
-          alt="Portrait of Gaspare Tocci" decoding="async" fetchpriority="high" />
+      <section class="hero" role="region" aria-label="Hero Section - Introduction">
+        <img class="my-img" src="/images/my-img5.webp" alt="Portrait of Gaspare Tocci" width="200" height="200"
+          loading="lazy">
         <h2>Junior Web Developer & Designer &middot; <span>Photo & Video Editor</span></h2>
         <h3>Looking for an apprenticeship &middot; <span>Let’s create something great together</span></h3>
         <a class="cta-btn" href="mailto:gaspare_tocci@yahoo.it" aria-label="Contact Gaspare Tocci via email">
@@ -207,7 +213,8 @@
 
       <!-- ========== GT Carousel My Tools ========== -->
       <h2>My Tools</h2>
-      <div id="gt-carousel" aria-label="Image Carousel of London cityscapes">
+      <div id="gt-carousel" role="region" aria-label="Image Carousel of tools" tabindex="0">
+
         <!-- ========== GT Carousel Indicators ========== -->
         <div class="gt-carousel-indicators">
           <button type="button" class="gt-active" data-gt-slide="0" aria-label="Slide 1"></button>
@@ -388,14 +395,14 @@
           </div>
         </div>
         <!-- ========== GT Carousel Controls ========== -->
-      <button class="gt-carousel-control-prev" type="button" data-gt-slide="prev" aria-label="Previous slide">
-        <span class="gt-carousel-control-icon gt-carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      
-      <button class="gt-carousel-control-next" type="button" data-gt-slide="next" aria-label="Next slide">
-        <span class="gt-carousel-control-icon gt-carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
-        
+        <button class="gt-carousel-control-prev" type="button" data-gt-slide="prev" aria-label="Previous slide">
+          <span class="gt-carousel-control-icon gt-carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+
+        <button class="gt-carousel-control-next" type="button" data-gt-slide="next" aria-label="Next slide">
+          <span class="gt-carousel-control-icon gt-carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+
       </div>
 
       <!-- ========== About Me ========== -->
@@ -403,32 +410,38 @@
         <h2 class="about-me-titles">About Me</h2>
         <div>
           <p data-aos="fade-right" data-aos-duration="1000">
-            • I'm <strong>Gaspare Tocci</strong>, a junior web developer based in London.<br>
-            • I started in <strong>2023</strong>, teaching myself tools like <strong>GIMP</strong>,
-            <strong>Inkscape</strong>, and <strong>Blender</strong>, before joining the <strong>GetSetUK Web Development
+            I'm <strong>Gaspare Tocci</strong>, a junior web developer based in London.<br>
+            I began my journey in <strong>2023</strong>, teaching myself tools like <strong>GIMP</strong>,
+            <strong>Inkscape</strong>, and <strong>Blender</strong>, before completing the <strong>GetSetUK Web
+              Development
               Bootcamp</strong>.
           </p>
 
           <p data-aos="fade-right" data-aos-duration="1000">
-            • I'm passionate about <strong>clean code</strong>, <strong>responsive design</strong>, and <strong>user
-              experience</strong>.<br>
-            • I enjoy building real projects and continuously improving through courses and hands-on practice.
+            I’m passionate about <strong>clean, readable code</strong>, <strong>responsive design</strong>, and creating
+            <strong>user-friendly experiences</strong>.<br>
+            I enjoy turning ideas into real projects, learning on the go, and applying new skills practically rather
+            than just
+            theoretically.
           </p>
 
           <p data-aos="fade-right" data-aos-duration="1000">
-            • I follow best practices like performance optimization, using formats such as <strong>SVG</strong> and
-            <strong>WEBP</strong>, and applying minification for faster load times.
-          </p>
-
-          <p data-aos="fade-right" data-aos-duration="1000">
-            • I also enjoy <strong>photo and video editing</strong>, and I use <strong>AI tools</strong> to support
+            I pay attention to details like <strong>performance optimization</strong>, using modern formats such as
+            <strong>SVG</strong> and <strong>WEBP</strong>, and minifying assets for faster load times.<br>
+            I also enjoy <strong>photo and video editing</strong>, and exploring <strong>AI tools</strong> to support
             creative
-            and coding tasks.<br>
-            • I'm currently looking for an <strong>apprenticeship</strong> or entry-level role where I can grow as part
-            of a
-            modern, collaborative team.
+            and technical work.
+          </p>
+
+          <p data-aos="fade-right" data-aos-duration="1000">
+            I’m currently seeking an <strong>apprenticeship</strong> or entry-level opportunity where I can contribute,
+            learn,
+            and grow as part of a collaborative, modern team.<br>
+            My goal is to turn my self-taught foundation into professional experience, and I’m excited to take on new
+            challenges while bringing a creative eye to coding.
           </p>
         </div>
+
       </div>
 
     </section>
@@ -444,7 +457,6 @@
         loading="lazy">
     </a>
 
-    
     <div class="gt-footer-container">
 
       <!-- Contacts -->
@@ -467,7 +479,7 @@
         </p>
       </div>
 
-    
+<!-- ========== GT Quick Links ========== -->
       <h4>❖ Quick Links ❖</h4>
       <div class="gt-footer-column gt-footer-column2">
         <p><a href="./index.html" class="gt-footer-link">Home</a></p>
@@ -477,18 +489,20 @@
       </div>
 
     </div>
-   
+
+        <!-- ========== GT About Footer ========== -->
     <div class="gt-footer-about">
       <h4>❖ About This Portfolio ❖</h4>
-    <p>
-      This portfolio reflects my <strong>self-learning journey</strong> and experience from the <strong>GetSetUK Web
-        Development Bootcamp</strong>.
-      I have built skills in <strong>HTML, CSS, responsive design</strong>, and <strong>creating clean and accessible
-        interfaces</strong>.
-      I also enjoy <strong>video and photo editing</strong> as part of my creative work.
-      I am seeking an opportunity to start my career and continue growing professionally.
-    </p>
-
+      <p>
+        This portfolio reflects my <strong>self-learning journey</strong> and experience from the <strong>GetSetUK Web
+          Development Bootcamp</strong>.
+        I have built solid skills in <strong>HTML, CSS, responsive design</strong>, and <strong>creating clean and
+          accessible interfaces</strong>.
+        I also enjoy <strong>video and photo editing</strong> as part of my creative work.
+        I am seeking an <strong>apprenticeship or entry-level role in frontend development</strong>, eager to contribute
+        to
+        real projects and continue growing professionally.
+      </p>
     </div>
 
   </footer>

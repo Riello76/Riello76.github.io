@@ -1,20 +1,29 @@
-// ========== GT NEWS TICKER SCRIPT ==========
-// This script handles dynamic news insertion into the ticker.
-// It waits for the DOM to be ready before adding content.
-// Author: Gaspare Tocci
 document.addEventListener("DOMContentLoaded", () => {
+  // Select the news ticker element
   const ticker = document.querySelector(".gt-news-ticker");
-  if (!ticker) return;
+  if (!ticker) return; // Exit if no ticker is found
 
-  // Imposta posizione iniziale visibile
-  ticker.style.transform = "translateX(0)";
-  ticker.style.transition = "transform 10s linear"; // velocità lenta
+  // Get the parent container to calculate the starting point
+  const container = ticker.parentElement;
+  let start = container.offsetWidth; // Start from the right edge of the container
+  const speed = 50; // Speed in pixels per second
 
-  // Scorrimento dopo breve delay
-  setTimeout(() => {
-    // Calcola la distanza da percorrere fino a ":"
-    const container = ticker.parentElement;
-    const distance = ticker.scrollWidth - container.offsetWidth;
-    ticker.style.transform = `translateX(-${distance}px)`;
-  }, 100); // 0.1s delay, la news è già visibile subito
+  // Animation function, called every frame
+  function animate(time) {
+    start -= speed / 60; // Move left based on speed (approx. 60fps)
+
+    // Reset position when the ticker scrolls completely off the left
+    if (start <= -ticker.scrollWidth) {
+      start = container.offsetWidth; // Jump back to the right
+    }
+
+    // Apply the horizontal translation to the ticker
+    ticker.style.transform = `translateX(${start}px)`;
+
+    // Continue the animation on the next frame
+    requestAnimationFrame(animate);
+  }
+
+  // Start the animation loop
+  requestAnimationFrame(animate);
 });

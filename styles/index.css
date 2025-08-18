@@ -1,11 +1,13 @@
 @media screen and (min-width:320px) {
 
+  /* ========== MAIN CONTAINER ========== */
   main {
     display: flex;
     flex-wrap: wrap;
     background: var(--tertiary-color);
   }
 
+  /* ========== TOP MAIN SECTION ========== */
   .top-main {
     background: var(--background-color);
     display: flex;
@@ -15,6 +17,7 @@
     margin-top: 2rem;
   }
 
+  /* ========== HERO SECTION ========== */
   .hero {
     display: flex;
     flex-direction: column;
@@ -27,6 +30,7 @@
     background: url('/images/hero-image.webp') center/cover no-repeat;
   }
 
+  /* ========== PROFILE IMAGE ========== */
   .my-img {
     width: 10rem;
     height: 10rem;
@@ -37,6 +41,7 @@
     border: 0.1rem solid var(--info-color);
   }
 
+  /* ========== HERO HEADINGS ========== */
   .hero h2,
   .hero h3 {
     font-weight: bold;
@@ -66,6 +71,7 @@
     color: var(--secondary-color);
   }
 
+  /* ========== CTA BUTTON ========== */
   .cta-btn {
     position: relative;
     display: flex;
@@ -85,6 +91,7 @@
     overflow: hidden;
   }
 
+  /* ========== CTA BUTTON TEXT LAYERS ========== */
   .cta-btn .btn-text {
     position: absolute;
     top: 50%;
@@ -110,6 +117,7 @@
     opacity: 1;
   }
 
+  /* ========== CTA ANIMATION ========== */
   @keyframes CTA {
     50% {
       transform: scale(0.9);
@@ -122,6 +130,7 @@
     }
   }
 
+  /* ========== MIDDLE MAIN SECTION ========== */
   .middle-main {
     display: flex;
     flex-direction: column;
@@ -137,6 +146,7 @@
     margin: 0.5rem;
   }
 
+  /* ========== CAROUSEL CONTAINER ========== */
   #gt-carousel {
     position: relative;
     display: grid;
@@ -155,6 +165,7 @@
     overflow: hidden;
   }
 
+  /* ========== CAROUSEL ITEM ========== */
   .gt-carousel-item {
     grid-area: 1/1/2/2;
     display: none;
@@ -166,8 +177,10 @@
 
   .gt-carousel-item.gt-active {
     display: grid;
+    background: var(--background-gradient);
   }
 
+  /* ========== CAROUSEL CONTROLS ========== */
   .gt-carousel-control-prev,
   .gt-carousel-control-next {
     position: absolute;
@@ -179,6 +192,7 @@
     border-radius: var(--border-radius);
     border: none;
     z-index: 1000;
+    cursor: pointer;
   }
 
   .gt-carousel-control-prev {
@@ -211,6 +225,7 @@
     transform: scale(0.95);
   }
 
+  /* ========== CAROUSEL INDICATORS ========== */
   .gt-carousel-indicators {
     position: absolute;
     bottom: clamp(56px, 4vw, 120px);
@@ -235,8 +250,8 @@
     background: var(--info-color);
   }
 
+  /* ========== TOOL CARD ========== */
   .tool-card {
-    background: var(--background-gradient);
     padding: clamp(12px, 1vw, 24px);
     display: flex;
     flex-direction: column;
@@ -245,7 +260,6 @@
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: clamp(30rem, 23vw, 60rem);
-    width: clamp(30rem, 20vw, 60rem);
     margin-bottom: 2rem;
   }
 
@@ -273,34 +287,36 @@
     text-align: left;
     flex-grow: 1;
     min-height: clamp(80px, 10vw, 180px);
+    width: clamp(30rem, 20vw, 60rem);
     margin-bottom: clamp(12px, 1vw, 24px);
   }
 
-.download-btn {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  /* centra il bottone */
-  transform-origin: bottom center;
-  /* scala mantenendo il fondo fermo */
-  font-size: clamp(1.3rem, 1.2vw, 5rem);
-  padding: clamp(0.5rem, 0.9vw, 12px);
-  width: clamp(9rem, 12vw, 20rem);
-  background: var(--background-gradient);
-  color: var(--info-color);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--info-color);
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.4s;
-  align-self: center;
-}
+  /* ========== DOWNLOAD BUTTON ========== */
+  .download-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: bottom center;
+    font-size: clamp(1.3rem, 1.2vw, 5rem);
+    padding: clamp(0.5rem, 0.9vw, 12px);
+    width: clamp(9rem, 12vw, 20rem);
+    background: var(--background-gradient);
+    color: var(--info-color);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--info-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.4s;
+    align-self: center;
+  }
 
-.download-btn:hover {
-  background: var(--secondary-color);
-  color: var(--main-color);
-}
+  .download-btn:hover {
+    background: var(--secondary-color);
+    color: var(--main-color);
+  }
+
+  /* ========== ABOUT ME SECTION ========== */
   .about-me {
     display: flex;
     flex-direction: column;
@@ -314,6 +330,7 @@
     margin-bottom: 0.5rem;
   }
 
+  /* ========== TECHNICAL DETAILS SECTION ========== */
   .technical-details {
     display: flex;
     flex-direction: column;
@@ -344,6 +361,7 @@
     align-items: center;
   }
 
+  /* ========== TECHNICAL IMAGES GRID ========== */
   .technical-img-div {
     display: flex;
     flex-wrap: wrap;
@@ -360,13 +378,16 @@
   }
 }
 
+/* ========== MEDIA QUERY: TABLET / SMALL DESKTOP (768px) ========== */
 @media screen and (min-width:768px) {
 
+  /* ========== PROFILE IMAGE SCALE UP ========== */
   .my-img {
     width: 12rem;
     height: 12rem;
   }
 
+  /* ========== HERO HEADINGS ADJUSTMENT ========== */
   .hero h2 {
     width: 70vw;
     font-size: 1.7rem;
@@ -377,11 +398,13 @@
     font-size: 1.4rem;
   }
 
+  /* ========== CTA BUTTON ADJUSTMENT ========== */
   .cta-btn {
     width: 20vw;
     height: 4rem;
   }
 
+  /* ========== CAROUSEL CONTROLS POSITION ========== */
   .gt-carousel-control-prev {
     left: clamp(15rem, 1.5vw, 10rem);
     bottom: 0.6rem;
@@ -392,6 +415,7 @@
     bottom: 0.6rem;
   }
 
+  /* ========== TECHNICAL IMAGE GRID ========== */
   .technical-img-div img {
     width: 10rem;
     height: 10rem;
@@ -399,14 +423,16 @@
   }
 }
 
+/* ========== MEDIA QUERY: DESKTOP (1024px) ========== */
 @media screen and (min-width:1024px) {
 
-
+  /* ========== PROFILE IMAGE SCALE UP ========== */
   .my-img {
     width: 15rem;
     height: 15rem;
   }
 
+  /* ========== HERO HEADINGS ADJUSTMENT ========== */
   .hero h2 {
     width: 80vw;
     font-size: 2.5rem;
@@ -417,15 +443,18 @@
     font-size: 2rem;
   }
 
+  /* ========== CTA BUTTON ADJUSTMENT ========== */
   .cta-btn {
     width: 30rem;
     padding: 2rem;
   }
 
+  /* ========== ABOUT ME TEXT WIDTH ========== */
   .about-me p {
     width: 100%;
   }
 
+  /* ========== CAROUSEL CONTROLS POSITION ========== */
   .gt-carousel-control-prev {
     left: 20rem;
     bottom: 0.8rem;
@@ -437,8 +466,10 @@
   }
 }
 
+/* ========== MEDIA QUERY: LARGE DESKTOP / WIDESCREEN (1440px) ========== */
 @media screen and (min-width:1440px) {
 
+  /* ========== HERO HEADINGS ADJUSTMENT ========== */
   .hero h2 {
     width: 60vw;
     font-size: 3rem;
@@ -449,17 +480,20 @@
     font-size: 2.1rem;
   }
 
+  /* ========== CTA BUTTON ADJUSTMENT ========== */
   .cta-btn {
     width: 20rem;
     padding: 2rem;
   }
 
+  /* ========== MIDDLE MAIN ALIGNMENT ========== */
   .middle-main {
     width: 100vw;
     justify-content: center;
     align-items: center;
   }
 
+  /* ========== CAROUSEL CONTROLS POSITION ========== */
   .gt-carousel-control-prev {
     left: 30rem;
     bottom: 1rem;
@@ -471,18 +505,22 @@
   }
 }
 
+/* ========== MEDIA QUERY: ULTRA-WIDE SCREENS (2560px) ========== */
 @media screen and (min-width:2560px) {
 
+  /* ========== HERO SECTION ADJUSTMENT ========== */
   .hero {
     height: 80vh;
     gap: 5rem;
   }
 
+  /* ========== PROFILE IMAGE SCALE UP MASSIVE ========== */
   .my-img {
     width: 40rem;
     height: 40rem;
   }
 
+  /* ========== HERO HEADINGS MASSIVE ========== */
   .hero h2 {
     width: 70vw;
     font-size: 6rem;
@@ -493,6 +531,7 @@
     font-size: 4rem;
   }
 
+  /* ========== CTA BUTTON MASSIVE ========== */
   .cta-btn {
     width: 20vw;
     height: 10rem;
@@ -500,23 +539,20 @@
     font-weight: bold;
   }
 
-  .middle-main {
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-  }
-
+  /* ========== ABOUT ME TITLES ========== */
   .about-me-titles {
     text-align: center;
     background: var(--background-gradient);
     margin: 0.5rem;
   }
 
+  /* ========== ABOUT ME TEXT ========== */
   .about-me p {
     width: 100%;
     font-size: 3rem;
   }
 
+  /* ========== CAROUSEL CONTROLS POSITION ========== */
   .gt-carousel-control-prev {
     left: 55rem;
     bottom: 1.5rem;
@@ -528,13 +564,14 @@
   }
 }
 
-
-/* ========== Disable AOS animations on small screens (max-width 768px) ========== */
-@media (max-width:768px) {
+/* ========== DISABLE AOS ANIMATIONS ON SMALL SCREENS ========== */
+@media (max-width:768px),
+(prefers-reduced-motion: reduce) {
   [data-aos] {
     opacity: 1;
     transform: none;
     transition: none;
     animation: none;
+    will-change: auto;
   }
 }

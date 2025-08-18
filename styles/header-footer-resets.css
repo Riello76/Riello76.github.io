@@ -140,6 +140,140 @@ picture {
 
 }
 
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ========== LOGO STYLE ========== */
+.logo {
+  width: clamp(8rem, calc(1rem + 13vw), 35rem);
+  height: auto;
+  border-radius: 100%;
+  box-shadow: 0px 3px 3px var(--info-color);
+  animation: bounceInOpacity 3s ease-out;
+  will-change: transform;
+  background: var(--background-gradient);
+  margin: 2rem;
+}
+
+/* ========== LOGO HOVER EFFECT ========== */
+.logo:hover {
+  transform: scale(0.9);
+  background: var(--tertiary-color);
+  box-shadow: 0px 3px 3px var(--tertiary-color);
+}
+
+/* ========== TITLE STYLE ========== */
+.title {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: clamp(1.5rem, calc(0.5rem + 2vw), 8rem);
+  color: var(--info-color);
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* ========== HIGHLIGHTED TITLE PART ========== */
+.title .highlight {
+  color: var(--secondary-color);
+  font-style: italic;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* ========== NEWS BAR ========== */
+.gt-news-bar {
+  display: flex;
+  align-items: center;
+  background: var(--background-gradient);
+  color: var(--info-color);
+  padding: clamp(0.3rem, 0.5vw, 1rem) clamp(0.5rem, 1vw, 2rem);
+  font-size: clamp(1rem, 1vw + 0.8rem, 1.8rem);
+  font-weight: bolder;
+  width: 95%;
+}
+
+.gt-news-label {
+  display: flex;
+  flex-shrink: 0;
+  font-weight: bold;
+  color: #ffcc00;
+  font-size: clamp(1rem, 1vw + 1rem, 2rem);
+}
+
+/* Pac-Man Icon Style */
+.pacman-icon {
+    width: clamp(2rem, 1vw + 1.5rem, 3rem);
+  height: auto;
+  margin-left: 0.3rem;
+}
+.gt-news-container {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.gt-news-ticker {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker 50s linear infinite;
+  font-size: clamp(1rem, 0.9vw + 0.8rem, 2.5rem);
+}
+
+.gt-news-item {
+  margin-right: clamp(2rem, 2vw + 1rem, 6rem);
+}
+
+.gt-news-item::before {
+  content: "❖ ";
+  margin-right: 0.5rem;
+  color: var(--secondary-color);
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(20%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ========== SYMBOL ICONS STYLE ========== */
+.symbol.left,
+.symbol.right {
+  font-size: clamp(1.8rem, 1.2rem + 1vw, 4rem);
+  user-select: none;
+}
+
+.symbol.left {
+  color: var(--secondary-color);
+}
+
+.symbol.right {
+  color: var(--info-color);
+}
+
+/* ========== CONTACTS SECTION ========== */
+.contacts {
+  display: flex;
+}
+
+.contacts a {
+  font-size: clamp(1rem, 0.9rem + 1vw, 10rem);
+  font-weight: bolder;
+  margin: 1rem;
+}
+
+.contacts a:hover {
+  color: var(--secondary-color);
+  transform: scale(0.95);
+}
+
 /* ========== NAVBAR CONTAINER ========== */
 .gt-navbar {
   width: 100%;
@@ -152,14 +286,14 @@ picture {
 .gt-arrow {
   display: inline-block;
   margin-left: 0.5rem;
-  width: 0;
-  height: 0;
   vertical-align: middle;
-  border-left: 0.4rem solid transparent;
-  border-right: 0.4rem solid transparent;
-  border-top: 0.5rem solid var(--secondary-color);
+  border-left: clamp(0.3rem, 0.5vw, 1.5rem) solid transparent;
+  border-right: clamp(0.3rem, 0.5vw, 1.5rem) solid transparent;
+  border-top: clamp(0.4rem, 0.6vw, 1.7rem) solid var(--secondary-color);
   transition: transform 0.3s ease;
 }
+
+
 
 /* ========== ROTATE ARROW WHEN DROPDOWN OPEN ========== */
 .gt-dropdown.show .gt-arrow {
@@ -365,6 +499,7 @@ picture {
   margin-bottom: clamp(0.5rem, 1vw, 1.5rem);
   font-size: clamp(2rem, 2vw, 3rem);
 }
+
 /* ========== Footer Icons ========== */
 .gt-footer-icon-div {
   display: flex;
@@ -373,10 +508,12 @@ picture {
 }
 
 .gt-footer-icon {
-  width: clamp(3rem, 2vw, 6rem);
+  width: clamp(3rem, 2.5vw, 6rem);
+  margin: clamp(1rem, 1vw, 1.5rem);
 }
 
-.gt-footer-icon:hover {
+.gt-footer-icon:hover,
+.gt-footer-link:hover {
   transform: scale(0.95);
 }
 
@@ -415,8 +552,8 @@ picture {
 .gt-footer-link {
   display: flex;
   flex-direction: row;
-  margin: clamp(0.5rem, 1vw, 1.5rem);
-  font-size: clamp(1.3rem, 1vw, 3rem);
+  margin: clamp(1rem, 1vw, 1.5rem);
+  font-size: clamp(1.3rem, 1.5vw, 3rem);
   color: var(--secondary-color);
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -436,6 +573,15 @@ picture {
 /* ========== MEDIA QUERY: DESKTOP & TABLET NAVBAR STYLING ========== */
 @media screen and (min-width: 768px) {
 
+  @keyframes ticker {
+      0% {
+        transform: translateX(40%);
+      }
+  
+      100% {
+        transform: translateX(-100%);
+      }
+    }
   /* ========== GT Navbar Container ========== */
   .gt-navbar {
     background: var(--background-gradient);
@@ -496,8 +642,6 @@ picture {
   .gt-arrow {
     display: inline-block;
     margin-left: clamp(0.2rem, 0.5vw, 1rem);
-    width: 0;
-    height: 0;
     vertical-align: middle;
     border-left: clamp(0.2rem, 0.5vw, 0.5rem) solid transparent;
     border-right: clamp(0.2rem, 0.5vw, 0.5rem) solid transparent;
@@ -548,10 +692,30 @@ picture {
   }
 
 }
+/* ========== LARGE DESKTOP (>= 1024px) ========== */
+@media screen and (min-width: 1024px) {
+  @keyframes ticker {
+    0% {
+      transform: translateX(50%);
+    }
 
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
 /* ========== LARGE DESKTOP (>= 1440px) ========== */
 @media screen and (min-width: 1440px) {
 
+    @keyframes ticker {
+        0% {
+          transform: translateX(60%);
+        }
+    
+        100% {
+          transform: translateX(-100%);
+        }
+      }
   /* ========== SYMBOL ICONS FONT SIZE & UNSELECTABLE ========== */
   .symbol.left,
   .symbol.right {
@@ -600,128 +764,18 @@ picture {
   }
 }
 
-/* ========== COMMON DESKTOP STYLES (min-width: 1024px and up) ========== */
-.top-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
+/* ========== EXTRA LARGE DESKTOP (>= 2560px) ========== */
+@media screen and (min-width: 2560px) {
+  @keyframes ticker {
+    0% {
+      transform: translateX(90%);
+    }
 
-/* ========== LOGO STYLE ========== */
-.logo {
-  width: clamp(8rem, calc(1rem + 13vw), 35rem);
-  height: auto;
-  border-radius: 100%;
-  box-shadow: 0px 3px 3px var(--info-color);
-  animation: bounceInOpacity 3s ease-out;
-  will-change: transform;
-  background: var(--tertiary-color);
-  margin: 2rem;
-}
-
-/* ========== LOGO HOVER EFFECT ========== */
-.logo:hover {
-  transform: scale(0.9);
-  box-shadow: 0px 3px 3px var(--tertiary-color);
-}
-
-/* ========== TITLE STYLE ========== */
-.title {
-  font-family: var(--font-family);
-  font-weight: bold;
-  font-size: clamp(1.5rem, calc(0.5rem + 2vw), 8rem);
-  color: var(--info-color);
-  text-align: center;
-  margin: 1.5rem 0;
-}
-
-/* ========== HIGHLIGHTED TITLE PART ========== */
-.title .highlight {
-  color: var(--secondary-color);
-  font-style: italic;
-  font-weight: 700;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-}
-
-/* ========== NEWS BAR ========== */
-.gt-news-bar {
-  display: flex;
-  align-items: center;
-  background: var(--background-gradient);
-  color: var(--info-color);
-  padding: clamp(0.3rem, 0.5vw, 1rem) clamp(0.5rem, 1vw, 2rem);
-  font-size: clamp(1rem, 1vw + 0.8rem, 1.8rem);
-  font-weight: bolder;
-  width: 95%;
-}
-
-.gt-news-label {
-  flex-shrink: 0;
-  font-weight: bold;
-  color: #ffcc00;
-  font-size: clamp(1rem, 1vw + 1rem, 2rem);
-}
-
-.gt-news-container {
-  flex: 1;
-  overflow: hidden;
-  position: relative;
-}
-
-.gt-news-ticker {
-  display: inline-block;
-  white-space: nowrap;
-  transform: translateX(0);
-  animation: ticker 50s linear infinite;
-  font-size: clamp(1rem, 0.9vw + 0.8rem, 2.5rem);
-}
-
-.gt-news-item {
-  margin-right: clamp(2rem, 2vw + 1rem, 6rem);
-}
-
-@keyframes ticker {
-  0% {
-    transform: translateX(15%);
-  }
-
-  100% {
-    transform: translateX(-100%);
+    100% {
+      transform: translateX(-100%);
+    }
   }
 }
-
-/* ========== SYMBOL ICONS STYLE ========== */
-.symbol.left,
-.symbol.right {
-  font-size: clamp(1.8rem, 1.2rem + 1vw, 4rem);
-  user-select: none;
-}
-
-.symbol.left {
-  color: var(--secondary-color);
-}
-
-.symbol.right {
-  color: var(--info-color);
-}
-
-/* ========== CONTACTS SECTION ========== */
-.contacts {
-  display: flex;
-}
-
-.contacts a {
-  font-size: clamp(1rem, 0.9rem + 1vw, 10rem);
-  font-weight: bolder;
-  margin: 1rem;
-}
-
-.contacts a:hover {
-  color: var(--secondary-color);
-  transform: scale(0.95);
-}
-
 
 /* ========== DESKTOP (>= 769px) OVERRIDE ========== */
 @media (min-width: 769px) {
