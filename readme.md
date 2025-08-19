@@ -1,36 +1,43 @@
-# Gaspare Tocci's Portfolio
+# 🚀 Gaspare Tocci – Portfolio  
 
-Welcome to my portfolio! Let me introduce myself:
+Welcome to my portfolio!  
 
-- **Name:** Gaspare Tocci
-- **Nationality:** Italian
+---
 
-## About Me
+## 💡 About Me  
+I am a self-taught **junior web developer** passionate about building responsive, accessible, and user-friendly websites.  
+I thrive in collaborative environments and enjoy combining **clean design** with **modern front-end techniques** to deliver engaging digital experiences.  
 
-I am passionate about web design and development, entirely self-taught, and constantly pursuing courses to broaden my knowledge and perspectives. I excel in collaborative team environments, striving to achieve outstanding results together.
+---
 
-My portfolio showcases my journey into web development, emphasizing sustainable design principles while prioritizing exceptional user experience. I specialize in creating visually stunning websites enhanced with subtle micro animations for engaging user interactions.
+## 🎨 Design & Graphics  
+Creative tools I use:  
+- **Inkscape** → custom logos and vector illustrations  
+- **GIMP** → professional photo editing and visual effects  
+- **Blender** → 3D models and animations  
+- **Figma** → UI/UX design and interactive prototypes  
 
-## 🎨 Design and Graphics Tools
+---
 
-- **Inkscape:** Creating and editing scalable vector graphics (SVG) for custom logos and intricate illustrations.
-- **Gimp:** Mastering advanced image editing tools like layers, masks, and filters for professional visual effects.
-- **Blender:** Crafting detailed 3D models and animations to add dynamic elements and interactivity to web projects.
-- **Figma:** Designing intuitive user interfaces and collaborating seamlessly with interactive wireframes and mockups.
+## 🔧 Development Stack  
+My core development skills include:  
+- **HTML, CSS, JavaScript** → responsive and semantic coding  
+- **Bootstrap** → streamlined layouts and components  
+- **AOS (Animate on Scroll)** → smooth scroll-based animations  
+- **VS Code** → with Live Preview, Prettier, and Snippets  
+- **AI tools** → improving workflow and productivity  
 
-## 🔧 Development Tools
+---
 
-- **Bootstrap:** Utilizing Bootstrap for responsive web design, customizing navigation bars and carousels to match the site's style.
-- **AOS (Animate on Scroll):** Adding scrolling animations to enhance user engagement and provide a dynamic browsing experience.
-- **VS Code:** My coding sanctuary equipped with HTML Preview, Live Preview, and Prettier extensions for efficient and clean code.
-- **AI Support:** Utilizing AI tools to expedite coding processes and enhance development workflows.
-- **Snippet Usage:** Implementing code snippets to adhere to best practices and streamline coding tasks.
+## 📹 Multimedia & Content Creation  
+I also create visual content to enhance digital projects:  
+- **Filmora** → video editing with effects and transitions  
+- **PowerPoint** → impactful presentations with animations  
 
-## 📹 Multimedia and Content Creation
+---
 
-- **Filmora:** Editing videos with finesse, incorporating effects, transitions, and audio edits to produce polished visual content.
-- **PowerPoint:** Crafting impactful presentations that captivate audiences with multimedia elements and captivating animations.
+## 🌟 Career Goals  
+I am seeking an **apprenticeship or entry-level role in front-end development**.  
+My goal is to contribute to real projects, keep improving my skills, and grow into a well-rounded developer focused on **sustainable design** and **user-first solutions**.  
 
-## 🌟 Goals and Aspirations
-
-I am at the beginning of my journey and eager to learn and grow. I am actively seeking apprenticeship opportunities to further refine my skills and contribute effectively to innovative web projects. My goal is to continue evolving my portfolio with sustainable design practices and cutting-edge web solutions.
+---
