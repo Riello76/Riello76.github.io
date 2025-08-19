@@ -49,16 +49,15 @@
     box-shadow: 0 50px 50px var(--tertiary-color);
     border-radius: var(--border-radius);
     width: 90vw;
-    text-align: center;
   }
-  
+
   .hero h2 {
-    font-size: 1.3rem;
+    font-size: var(--font-size-h2);
     color: var(--info-color);
   }
 
   .hero h3 {
-    font-size: 1.2rem;
+    font-size: var(--font-size-h3);
     color: var(--info-color);
   }
 
@@ -139,7 +138,6 @@
   }
 
   .middle-main h2 {
-    text-align: center;
     width: 100vw;
     background: var(--background-gradient);
     margin: 0.5rem;
@@ -152,15 +150,15 @@
     justify-items: center;
     align-items: center;
     grid-template-rows: auto 1fr auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .gt-carousel-inner {
     display: grid;
     grid-template: 1fr / 1fr;
     place-items: center;
-    width: clamp(320px, 60vw, 1440px);
-    height: clamp(360px, 35vw, 720px);
+    width: clamp(32rem, 60vw, 144rem);
+    height: clamp(36rem, 35vw, 72rem);
     overflow: hidden;
   }
 
@@ -172,6 +170,7 @@
     height: 100%;
     place-items: center;
     position: relative;
+
   }
 
   .gt-carousel-item.gt-active {
@@ -257,47 +256,46 @@
     align-items: center;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: clamp(30rem, 23vw, 60rem);
+    height: clamp(30rem, 26vw, 60rem);
     margin-bottom: 2rem;
   }
 
   .tool-card img {
-    width: clamp(64px, 8vw, 128px);
-    height: clamp(64px, 8vw, 128px);
-    margin-bottom: clamp(12px, 1vw, 24px);
+    width: clamp(6.4rem, 8vw, 12.8rem);
+    height: clamp(6.4rem, 8vw, 12.8rem);
+    margin-bottom: clamp(1.2rem, 1vw, 2.4rem);
   }
 
   .tool-card h3 {
-    width: 40%;
+    width: 15rem;
     border-radius: var(--border-radius);
     border: 1px solid var(--info-color);
     background: var(--background-gradient);
     margin-bottom: clamp(8px, 0.5vw, 16px);
     padding: clamp(4px, 0.5vw, 8px);
-    font-size: clamp(1.4rem, 1vw, 2rem);
     color: var(--secondary-color);
     font-weight: bolder;
   }
 
   .tool-card p {
-    font-size: clamp(1.3rem, 0.9vw, 2.5rem);
+    font-size: var(--font-size-p);
     color: var(--info-color);
-    text-align: justify;
     flex-grow: 1;
-    min-height: clamp(80px, 10vw, 180px);
-    width: clamp(30rem, 20vw, 60rem);
-    margin-bottom: clamp(12px, 1vw, 24px);
+    min-height: clamp(8rem, 10vw, 180rem);
+    width: 30rem;
+    margin-bottom: clamp(2rem, 1vw, 40rem);
   }
 
   /* ========== DOWNLOAD BUTTON ========== */
   .download-btn {
     position: absolute;
     bottom: 0;
+    margin-bottom: 0.2rem;
     left: 50%;
     transform: translateX(-50%);
     transform-origin: bottom center;
     font-size: clamp(1.3rem, 1.2vw, 5rem);
-    padding: clamp(0.5rem, 0.9vw, 12px);
+    padding: clamp(0.5rem, 0.9vw, 1.2rem);
     width: clamp(9rem, 12vw, 20rem);
     background: var(--background-gradient);
     color: var(--info-color);
@@ -324,9 +322,10 @@
 
   .about-me p {
     background: var(--background-gradient);
+    margin: 0.5rem 0;
+    color: var(--info-color);
+    font-size: var(--font-size-p);
     padding: 1rem;
-    margin-bottom: 0.5rem;
-      text-align: justify;
   }
 
   /* ========== TECHNICAL DETAILS SECTION ========== */
@@ -334,13 +333,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100vw;
   }
 
   .technical-details h2 {
-    text-align: center;
     padding: 1rem;
-    background: var(--background-gradient);
     width: 100%;
     color: var(--secondary-color);
   }
@@ -349,8 +346,8 @@
     background: var(--background-gradient);
     margin: 0.5rem 0;
     color: var(--info-color);
-    width: 100%;
-    padding: 2rem;
+    font-size: var(--font-size-p);
+    padding: 1rem;
   }
 
   .technical-details div {
@@ -368,6 +365,7 @@
     align-items: center;
     background: var(--background-gradient);
     padding: 1rem;
+    margin-bottom: 1rem;
   }
 
   .technical-img-div img {
@@ -412,6 +410,11 @@
   .gt-carousel-control-next {
     right: 10rem;
     bottom: 0.6rem;
+  }
+
+  /* ========== TOOL CARD ========== */
+  .tool-card h3 {
+    width: 60%;
   }
 
   /* ========== TECHNICAL IMAGE GRID ========== */
@@ -463,6 +466,20 @@
     right: 15rem;
     bottom: 0.8rem;
   }
+
+  /* ========== TOOL CARD ========== */
+  .tool-card h3 {
+    width: 20rem;
+  }
+
+  .tool-card p {
+    width: 40rem;
+  }
+
+  .about-me p,
+  .technical-details p {
+    width: 80%;
+  }
 }
 
 /* ========== MEDIA QUERY: LARGE DESKTOP / WIDESCREEN (1440px) ========== */
@@ -502,6 +519,7 @@
     right: 20rem;
     bottom: 1rem;
   }
+
 }
 
 /* ========== MEDIA QUERY: ULTRA-WIDE SCREENS (2560px) ========== */
@@ -538,19 +556,6 @@
     font-weight: bold;
   }
 
-  /* ========== ABOUT ME TITLES ========== */
-  .about-me-titles {
-    text-align: center;
-    background: var(--background-gradient);
-    margin: 0.5rem;
-  }
-
-  /* ========== ABOUT ME TEXT ========== */
-  .about-me p {
-    width: 100%;
-    font-size: 3rem;
-  }
-
   /* ========== CAROUSEL CONTROLS POSITION ========== */
   .gt-carousel-control-prev {
     left: 40rem;
@@ -560,6 +565,15 @@
   .gt-carousel-control-next {
     right: 40rem;
     bottom: 1.5rem;
+  }
+
+  /* ========== TOOL CARD ========== */
+  .tool-card h3 {
+    width: 25rem;
+  }
+
+  .tool-card p {
+    width: 60rem;
   }
 }
 
