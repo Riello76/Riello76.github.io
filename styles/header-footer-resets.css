@@ -10,23 +10,12 @@
 /* ========== Global Variables ========== */
 :root {
   scroll-behavior: smooth;
-  /* Main color */
   --main-color: #001f3f;
-
-  /* Secondary color */
   --secondary-color: #ffb347;
-
-  /* Tertiary color */
   --tertiary-color: rgb(0, 0, 0);
-
-  /* Info color */
   --info-color: #ffffff;
-
-  /* Background gradient */
   --background-gradient: linear-gradient(to right, var(--tertiary-color) 0%, var(--main-color), var(--tertiary-color) 100%);
-
-  /* Border radius */
-  --border-radius: 2.5rem;
+   -border-radius: 2.5rem;
 
   /* ========== Typography Variables ========== */
   --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -204,12 +193,7 @@ picture {
   font-size: clamp(1rem, 1vw + 1rem, 2rem);
 }
 
-/* Pac-Man Icon Style */
-.pacman-icon {
-    width: clamp(2rem, 1vw + 1.5rem, 3rem);
-  height: auto;
-  margin-left: 0.3rem;
-}
+
 .gt-news-container {
   flex: 1;
   overflow: hidden;
@@ -574,14 +558,15 @@ picture {
 @media screen and (min-width: 768px) {
 
   @keyframes ticker {
-      0% {
-        transform: translateX(40%);
-      }
-  
-      100% {
-        transform: translateX(-100%);
-      }
+    0% {
+      transform: translateX(40%);
     }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
   /* ========== GT Navbar Container ========== */
   .gt-navbar {
     background: var(--background-gradient);
@@ -692,6 +677,7 @@ picture {
   }
 
 }
+
 /* ========== LARGE DESKTOP (>= 1024px) ========== */
 @media screen and (min-width: 1024px) {
   @keyframes ticker {
@@ -704,18 +690,20 @@ picture {
     }
   }
 }
+
 /* ========== LARGE DESKTOP (>= 1440px) ========== */
 @media screen and (min-width: 1440px) {
 
-    @keyframes ticker {
-        0% {
-          transform: translateX(60%);
-        }
-    
-        100% {
-          transform: translateX(-100%);
-        }
-      }
+  @keyframes ticker {
+    0% {
+      transform: translateX(60%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
   /* ========== SYMBOL ICONS FONT SIZE & UNSELECTABLE ========== */
   .symbol.left,
   .symbol.right {
