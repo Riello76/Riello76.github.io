@@ -1,127 +1,111 @@
-/* ========== Base Styles ========== */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.top-main,
-.middle-main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-}
-
-.top-main h2,
-.middle-main h3,
-.middle-main p {
-    background: var(--background-gradient);
-    width: 100%;
-}
-
-.middle-main h3 {
-    text-align: center;
-    color: var(--secondary-color);
-}
-
-.profile-div,
-.experience-div,
-.education-div,
-.certifications-div,
-.technical-skills {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    will-change: transform, opacity;
-}
-
-/* ========== Disable AOS animations on small screens ========== */
-@media (max-width: 768px) {
-    [data-aos] {
-        opacity: 1;
-        transform: none;
-        transition: none;
-        animation: none;
-    }
-}
-
-/* ========== Media Queries ========== */
+/* Base mobile-first (fino a 320px) */
 @media screen and (min-width: 320px) {
+    .top-main {
+        margin-top: 1rem;
+    }
+
     .top-main h2 {
-        text-align: center;
         font-size: var(--font-size-h2);
-        padding: 0.5rem 0;
         color: var(--info-color);
+        margin-bottom: 1rem;
     }
 
     .middle-main h3 {
-        padding: 0.75rem 1rem;
         font-size: var(--font-size-h3);
+        padding: 0.75rem;
+        margin-bottom: 1rem;
     }
-
+    .middle-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .middle-main p {
-        padding: 0.75rem 1rem;
-        margin-bottom: 0.5rem;
         font-size: var(--font-size-p);
+        background: var(--background-gradient);
+        padding: 0.75rem;
+    }
+
+    .profile-div,
+    .experience-div,
+    .education-div,
+    .certifications-div,
+    .technical-skills {
+        width: 95%;
+        margin-bottom: 1rem;
     }
 }
 
+/* Tablet portrait */
+@media screen and (min-width: 768px) {
+    .middle-main h3 {
+        padding: 1rem;
+    }
+
+    .middle-main p {
+        padding: 1rem;
+    }
+
+    .profile-div,
+    .experience-div,
+    .education-div,
+    .certifications-div,
+    .technical-skills {
+        width: 85%;
+        align-items: center;
+
+    }
+}
+
+/* Tablet landscape / small desktop */
 @media screen and (min-width: 1024px) {
-    main {
-        background-color: var(--tertiary-color);
-    }
-
-    .top-main,
-    .middle-main {
-        width: 100%;
-    }
-
-    .middle-main h2 {
-        font-size: 3rem;
-    }
-
     .middle-main h3 {
-        padding: 1rem;
-        font-size: 2.5rem;
+        padding: 1.25rem;
     }
 
     .middle-main p {
-        padding: 1rem;
-        font-size: 2rem;
+        padding: 1.25rem;
+    }
+
+    .profile-div,
+    .experience-div,
+    .education-div,
+    .certifications-div,
+    .technical-skills {
+        width: 80%;
     }
 }
 
+/* Large desktop */
 @media screen and (min-width: 1440px) {
+    .middle-main h3 {
+        padding: 1.5rem;
+    }
+
+    .middle-main p {
+        line-height: 1.8;
+        padding: 1.5rem;
+    }
 
     .profile-div,
     .experience-div,
     .education-div,
     .certifications-div,
     .technical-skills {
-        width: 50%;
+        width: 70%;
     }
 }
 
+/* Ultra wide (2K–4K) */
 @media screen and (min-width: 2560px) {
-
-    .middle-main h2 {
-        font-size: 4rem;
-        padding: 2rem 0;
-    }
-
     .middle-main h3 {
-        font-size: 3.5rem;
         padding: 2rem;
     }
 
     .middle-main p {
-        font-size: 2.8rem;
-        padding: 2rem;
-        margin-bottom: 1.5rem;
         line-height: 2;
+        padding: 2rem;
     }
 
     .profile-div,
@@ -129,7 +113,6 @@ main {
     .education-div,
     .certifications-div,
     .technical-skills {
-        width: 50%;
-        padding: 1.5rem;
+        width: 80%;
     }
 }
