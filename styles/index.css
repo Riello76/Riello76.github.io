@@ -170,7 +170,6 @@
     height: 100%;
     place-items: center;
     position: relative;
-
   }
 
   .gt-carousel-item.gt-active {
@@ -191,6 +190,7 @@
     border: none;
     z-index: 1000;
     cursor: pointer;
+    margin-bottom: 1rem;
   }
 
   .gt-carousel-control-prev {
@@ -295,7 +295,7 @@
     transform: translateX(-50%);
     transform-origin: bottom center;
     font-size: clamp(1.3rem, 1.2vw, 5rem);
-    padding: clamp(0.5rem, 0.9vw, 1.2rem);
+    padding: clamp(0.3rem, 0.9vw, 0.8rem);
     width: clamp(9rem, 12vw, 20rem);
     background: var(--background-gradient);
     color: var(--info-color);
@@ -305,6 +305,7 @@
     text-decoration: none;
     transition: 0.4s;
     align-self: center;
+    margin-bottom: 1rem;
   }
 
   .download-btn:hover {
@@ -404,12 +405,10 @@
   /* ========== CAROUSEL CONTROLS POSITION ========== */
   .gt-carousel-control-prev {
     left: 10rem;
-    bottom: 0.6rem;
   }
 
   .gt-carousel-control-next {
     right: 10rem;
-    bottom: 0.6rem;
   }
 
   /* ========== TOOL CARD ========== */
@@ -459,12 +458,10 @@
   /* ========== CAROUSEL CONTROLS POSITION ========== */
   .gt-carousel-control-prev {
     left: 15rem;
-    bottom: 0.8rem;
   }
 
   .gt-carousel-control-next {
     right: 15rem;
-    bottom: 0.8rem;
   }
 
   /* ========== TOOL CARD ========== */
@@ -512,12 +509,10 @@
   /* ========== CAROUSEL CONTROLS POSITION ========== */
   .gt-carousel-control-prev {
     left: 20rem;
-    bottom: 1rem;
   }
 
   .gt-carousel-control-next {
     right: 20rem;
-    bottom: 1rem;
   }
 
 }
