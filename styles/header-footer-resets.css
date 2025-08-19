@@ -208,8 +208,8 @@ picture {
 .gt-news-ticker {
   display: inline-block;
   white-space: nowrap;
-  animation: ticker 50s linear infinite;
-  font-size: clamp(1rem, 0.9vw + 0.8rem, 2.5rem);
+  animation: ticker 70s linear infinite;
+  font-size: var(--font-size-p);
 }
 
 .gt-news-item {
