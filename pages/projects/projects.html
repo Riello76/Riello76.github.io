@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preconnect" href="https://unpkg.com" crossorigin />
 
-  <!-- ========== AOS CSS (Async, non-bloccante) ========== -->
+  <!-- ========== AOS CSS ========== -->
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" media="print"
     onload="this.onload=null;this.media='all';" crossorigin="anonymous" />
 
@@ -54,6 +54,22 @@
           width="120" height="60">
       </a>
 
+
+      <!-- ========== NEWS BAR ========== -->
+      <div class="gt-news-bar" aria-label="Latest News" role="region">
+        <span class="gt-news-label"> LATEST :</span>
+
+        <div class="gt-news-container">
+          <div class="gt-news-ticker" aria-live="polite" tabindex="0">
+            <span class="gt-news-item">Portfolio evolving with new projects on the way!</span>
+            <span class="gt-news-item">Starting the IT Smart Technician Bootcamp soon — hands-on IoT, networking, and
+              smart
+              tech skills!</span>
+            <span class="gt-news-item">Optimizing responsive layouts and performance.</span>
+          </div>
+        </div>
+      </div>
+
       <!-- ========== Title ========== -->
       <h1 class="title" title="Page's Title">
         <span class="symbol left">❖</span>
@@ -61,19 +77,7 @@
         <span class="symbol right">❖</span>
       </h1>
 
-      <!-- ========== CONTACTS LINKS ========== -->
-      <div class="contacts">
 
-        <!-- ========== LinkedIn ========== -->
-        <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank"
-          title="LinkedIn Profile">LinkedIn</a>
-
-        <!-- ========== GitHub ========== -->
-        <a href="https://github.com/Riello76" target="_blank" title="GitHub Profile">GitHub</a>
-
-        <!-- ========== Email ========== -->
-        <a href="mailto:gaspare_tocci@yahoo.it" title="Send Email">Email</a>
-      </div>
     </div>
 
     <!-- ========== NAVBAR CONTAINER ========== -->
@@ -273,66 +277,71 @@
     </section>
   </main>
 
-
   <!-- ========== GT Footer Section ========== -->
   <footer class="gt-footer">
-  
+
     <!-- ========== GT Scroll to Top ========== -->
     <a class="gt-go-to-top" href="#top" aria-label="Scroll to top">
       <img src="/icons/Scroll Down Arrow.gif" alt="Animated up arrow to scroll to top" width="40" height="40"
         loading="lazy">
     </a>
-  
+
     <div class="gt-footer-container">
-  
-      <!-- ========== GT Contact Information ========== -->
-      <h4>Contact</h4>
-      <div class="gt-footer-column">
-        <p><a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link">gaspare_tocci@yahoo.it</a></p>
-        <p><a href="https://github.com/Riello76" target="_blank" class="gt-footer-link">GitHub: Riello76</a></p>
-        <p><a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="gt-footer-link">LinkedIn:
-            gaspare-tocci</a></p>
+
+      <!-- Contacts -->
+      <h4>❖ Contacts ❖</h4>
+      <div class="gt-footer-column gt-footer-column1">
+
+        <a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link" aria-label="Send an email to Gaspare Tocci">
+          <span class="gt-footer-icon">
+            <img src="/icons/email-footer.svg" alt="Email icon">
+          </span>
+        </a>
+
+        <a href="https://github.com/Riello76" target="_blank" class="gt-footer-link"
+          aria-label="Visit Gaspare Tocci's GitHub profile">
+          <span class="gt-footer-icon">
+            <img src="/icons/github-footer.svg" alt="GitHub icon">
+          </span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="gt-footer-link"
+          aria-label="Visit Gaspare Tocci's LinkedIn profile">
+          <span class="gt-footer-icon">
+            <img src="/icons/linkedn-footer.svg" alt="LinkedIn icon">
+          </span>
+        </a>
+
       </div>
-  
+
       <!-- ========== GT Quick Links ========== -->
-      <h4>Quick Links</h4>
-      <div class="gt-footer-column gt-footer-link">
+      <h4>❖ Quick Links ❖</h4>
+      <div class="gt-footer-column gt-footer-column2">
         <p><a href="/index.html" class="gt-footer-link">Home</a></p>
         <p><a href="/pages/curriculum/curriculum.html" class="gt-footer-link">CV</a></p>
         <p><a href="/pages/projects/projects.html" class="gt-footer-link">Projects</a></p>
         <p><a href="/pages/gallery/gallery.html" class="gt-footer-link">Gallery</a></p>
       </div>
-  
-      <!-- ========== GT About Footer ========== -->
-      <h4>About</h4>
-      <div class="gt-footer-column gt-footer-about">
-        <p>
-          <strong>Mobile-first</strong> portfolio showcasing skills in <strong>HTML, CSS, responsive design</strong>,
-          and
-          <strong>performance optimization</strong>.
-          Combines <strong>self-study</strong> and <strong>GetSetUK Bootcamp</strong> experience, with focus on
-          <strong>clean,
-            accessible interfaces</strong>.
-        </p>
-  
-      </div>
-  
     </div>
-    <div class="gt-footer-info">
-      <p class="gt-footer-date">
-        <span class="gt-day">14</span>
-        <span class="gt-month">August</span>
-        <span class="gt-year">2025</span> - <span class="gt-time">
-          15<span class="gt-colon">:</span>42
-        </span>
-  
+
+    <!-- ========== GT About Footer for Project Page ========== -->
+    <h4>❖ About This Page ❖</h4>
+    <div class="gt-footer-column gt-footer-about">
+      <p>
+        Welcome! This page showcases a mix of my practice projects, older portfolio pieces, and the Glastonbury Festival
+        project completed during the GetSetUK bootcamp.
+        Some sites are still works in progress, but each demonstrates how I explore <strong>web design, 3D, and creative
+          problem-solving</strong>.
+        Browsing these projects gives a sense of my <strong>growth, hands-on learning, and approach to turning ideas
+          into
+          functional designs</strong>.
       </p>
     </div>
-  
+
   </footer>
-  
-  <!-- ========== Footer Info ========== -->
-  <script src="/scripts/footer-info.js"></script>
+
+  <!-- ========== Info ========== -->
+  <script src="/scripts/info.js"></script>
 
   <!-- ========== Navbar ========== -->
   <script src="/scripts/navbar.js" defer></script>

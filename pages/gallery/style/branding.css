@@ -12,6 +12,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .top-main h2 {
@@ -20,6 +21,7 @@ main {
   background: var(--background-gradient);
   color: var(--info-color);
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* ========== Middle Main ========== */
@@ -37,9 +39,9 @@ main {
 }
 
 .middle-main p {
-  text-align: center;
   width: 100%;
   padding: 1rem;
+  font-size: var(--font-size-p);
 }
 
 .middle-main img {
@@ -70,7 +72,6 @@ main {
   width: 100%;
 }
 
-.logos-content img:hover,
 .business-card-content img:hover,
 .calendars-content img:hover {
   transform: scale(1.80);
@@ -79,9 +80,6 @@ main {
 
 /* ========== Media Queries ========== */
 @media screen and (max-width:768px) {
-  main {
-    margin-top: 5rem;
-  }
 
   .logos-div,
   .business-card-div,
@@ -104,7 +102,7 @@ main {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .middle-main p {
     width: 60%;
   }
@@ -113,6 +111,7 @@ main {
 @media screen and (min-width: 2560px) {
   .middle-main p {
     width: 50%;
+    font-size: 2.5rem;
   }
 }
 /* ==========  Disable AOS animations on small screens (max-width 768px) to improve performance and usability ========== */

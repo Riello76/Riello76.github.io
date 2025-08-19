@@ -1,15 +1,14 @@
-
-/* ========== Main Section ========== */
+/* ========== Base Styles (Mobile 320px) ========== */
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-color: var(--tertiary-color);
+  margin-top: 1rem;
 }
 
 .top-main {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -17,76 +16,86 @@ main {
 
 .top-main h2 {
   width: 100%;
-  text-align: center;
   background: var(--background-gradient);
   color: var(--info-color);
-  padding: 1rem;
+  padding: 0.5rem;
+  font-size: var(--font-size-h2);
+  margin-bottom: 1rem;
 }
 
-/* ========== Middle Main ========== */
 .middle-main {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
 }
 
-.middle-main h3 {
-  text-align: center;
-  background: var(--background-gradient);
-  padding: 1rem;
-}
-
+.middle-main h3,
 .middle-main p {
+  width: 100%;
   background: var(--background-gradient);
-  padding: 1rem;
-  margin-bottom: 0.5rem;
+  padding: 0.5rem;
 }
 
-.section-1-div img {
-  padding: 1rem;
-  width: 50%;
-}
-.section-2-content{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.section-2-div img{
-  width: 40%;
-}
 .section-1-div,
 .section-2-div {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .section-1-content,
 .section-2-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
 }
 
-/* ========== Media Queries ========== */
-@media screen and (max-width:768px) {
-  main {
-    margin-top: 5rem;
+/* Images */
+.section-1-div img,
+.section-2-div img {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.section-1-content p,
+.section-2-content p {
+  margin-top: auto;
+  width: 100%;
+}
+
+/* ========== Media Queries (Mobile First) ========== */
+@media screen and (min-width: 768px) {
+  .middle-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
-  .middle-main {
+  .section-1-content,
+  .section-2-content {
     flex-direction: column;
   }
+}
+
+@media screen and (min-width: 1440px) {
 
   .section-1-div,
   .section-2-div {
-    width: 100%;
+    width: 30%;
   }
-
 }
-/* ==========  Disable AOS animations on small screens (max-width 768px) to improve performance and usability ========== */
 
+@media screen and (min-width: 2560px) {
+
+  .middle-main p {
+    padding: 1rem;
+    font-size: 2.5rem;
+  }
+}
+
+/* ========== Disable AOS animations on small screens ========== */
 @media (max-width: 768px) {
   [data-aos] {
     opacity: 1;

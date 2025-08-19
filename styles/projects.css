@@ -1,4 +1,4 @@
-/* ========== Main Section ========== */
+/* ========== Base Styles (Mobile 320px) ========== */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -8,11 +8,9 @@ main {
 
 .top-main {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 5rem;
 }
 
 .top-main h2 {
@@ -20,93 +18,97 @@ main {
   text-align: center;
   background: var(--background-gradient);
   color: var(--info-color);
+  padding: 0.5rem;
+  font-size: var(--font-size-h2);
+  margin-bottom: 1rem;
 }
 
-/* ========== Middle Main ========== */
+/* Middle main */
 .middle-main {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  justify-content: space-around;
+  align-items: stretch;
 }
 
 .middle-main h3 {
   width: 100%;
   text-align: center;
   background: var(--background-gradient);
+  padding: 0.5rem;
+  font-size: var(--font-size-h3);
 }
 
 .middle-main p {
-  text-align: center;
   width: 100%;
+  background: var(--background-gradient);
+  padding: 0.5rem;
 }
 
-.middle-main a:hover {
-  transform: scale(0.9);
-}
-
+/* Containers */
 .old-portfolio-div,
 .glastonbury-div {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .old-portfolio-content,
 .glastonbury-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  background: var(--background-gradient);
   width: 100%;
+  height: 100%;
   padding: 1rem;
+  flex: 1;
+}
+.old-portfolio-content img,
+.glastonbury-content img {
+  max-width: 100%;
 }
 
-/* ========== Media Queries ========== */
-@media screen and (max-width:768px) {
-  main {
-    margin-top: 2rem;
-  }
+/* ========== Media Queries (Mobile First) ========== */
 
+/* Medium devices / tablets / desktop 1024px+ => 2 colonne */
+@media screen and (min-width: 1024px) {
   .middle-main {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .old-portfolio-div,
   .glastonbury-div {
-    width: 100%;
+    width: 48%;
   }
 
-  .old-portfolio-content,
-  .glastonbury-content {
-    flex-direction: column;
-    width: 100%;
-  }
 }
 
-@media screen and (min-width: 1024px) {
-  .middle-main p {
-    width: 70%;
+/* Large devices / 1440px+ => 3 colonne */
+@media screen and (min-width: 1440px) {
+
+  .old-portfolio-div,
+  .glastonbury-div {
+    width: 30%;
   }
+
 }
 
-@media screen and (min-width: 1920px) {
-  .middle-main p {
-    width: 60%;
-  }
-}
-
+/* Super wide / 2560px */
 @media screen and (min-width: 2560px) {
+  main {
+    padding: 4rem 0;
+  }
+
   .middle-main p {
-    width: 50%;
+    font-size: 2.5rem;
   }
 }
-/* ==========  Disable AOS animations on small screens (max-width 768px) to improve performance and usability ========== */
 
+/* ========== Disable AOS animations on small screens ========== */
 @media (max-width: 768px) {
   [data-aos] {
     opacity: 1;

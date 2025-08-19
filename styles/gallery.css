@@ -1,15 +1,16 @@
-/* ========== Main Section ========== */
+/* ================== Base Styles (Mobile First) ================== */
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-color: var(--tertiary-color);
+  margin: 1rem 0;
 }
 
 .top-main {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
 }
@@ -19,26 +20,31 @@ main {
   text-align: center;
   background: var(--background-gradient);
   color: var(--info-color);
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
 }
 
-/* ========== Middle Main ========== */
+/* ================== Middle Main ================== */
 .middle-main {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
 .middle-main h3 {
   text-align: center;
   background: var(--background-gradient);
-  padding: 1rem;
+  padding: 0.75rem 1rem;
 }
 
 .middle-main img {
+  width: 100%;
+  max-width: 300px;
   animation: bounceInOpacity 3s ease-out;
-
+  margin: 0 auto 1rem auto;
 }
 
 .middle-main img:hover {
@@ -50,40 +56,127 @@ main {
   background: var(--background-gradient);
   padding: 1rem;
   margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 .branding-div,
 .graphic-div,
 .design-div {
-  width: 30%;
+  width: 100%;
   background: var(--background-gradient);
   margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 
+/* ================== Disable AOS animations on small screens ================== */
+[data-aos] {
+  opacity: 1;
+  transform: none;
+  transition: none;
+  animation: none;
+}
 
-@media screen and (max-width:768px) {
-  main {
-    margin-top: 2rem;
-  }
-
+/* ================== Medium Screens >= 768px ================== */
+@media screen and (min-width: 768px) {
   .middle-main {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .branding-div,
   .graphic-div,
   .design-div {
-    width: 100%;
+    width: 48%;
+  }
+
+  .middle-main img {
+    max-width: 250px;
   }
 }
 
-/* ==========  Disable AOS animations on small screens (max-width 768px) to improve performance and usability ========== */
+/* ================== Large Screens >= 1024px ================== */
+@media screen and (min-width: 1024px) {
 
-@media (max-width: 768px) {
-  [data-aos] {
+  .branding-div,
+  .graphic-div,
+  .design-div {
+    width: 30%;
+    padding: 1rem;
+  }
+
+  .middle-main h3 {
+    font-size: var(--font-size-h3);
+    padding: 1rem;
+  }
+
+  .middle-main p {
+    font-size: var(--font-size-p);
+    padding: 1rem;
+  }
+}
+
+/* ================== Extra Large Screens >= 1440px ================== */
+@media screen and (min-width: 1440px) {
+
+  .middle-main h3 {
+    font-size: calc(var(--font-size-h3) * 1.2);
+    padding: 1.5rem;
+  }
+
+  .middle-main p {
+    font-size: calc(var(--font-size-p) * 1.2);
+    padding: 1.5rem;
+  }
+
+  .branding-div,
+  .graphic-div,
+  .design-div {
+    padding: 1.5rem;
+  }
+}
+
+/* ================== Ultra Wide Screens >= 2560px ================== */
+@media screen and (min-width: 2560px) {
+
+  .middle-main h3 {
+    font-size: calc(var(--font-size-h3) * 1.5);
+    padding: 2rem;
+  }
+
+  .middle-main p {
+    font-size: calc(var(--font-size-p) * 1.5);
+    padding: 2rem;
+    line-height: 2;
+  }
+
+  .branding-div,
+  .graphic-div,
+  .design-div {
+    padding: 2rem;
+  }
+
+  .middle-main img {
+    max-width: 400px;
+  }
+}
+
+/* ================== Animations ================== */
+@keyframes bounceInOpacity {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.1);
     opacity: 1;
-    transform: none;
-    transition: none;
-    animation: none;
+  }
+
+  80% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }

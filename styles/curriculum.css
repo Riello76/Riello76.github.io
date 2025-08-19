@@ -12,12 +12,14 @@ main {
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .top-main h2,
 .middle-main h3,
 .middle-main p {
     background: var(--background-gradient);
+    width: 100%;
 }
 
 .middle-main h3 {
@@ -34,7 +36,6 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 1rem;
     will-change: transform, opacity;
 }
 

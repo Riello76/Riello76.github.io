@@ -46,13 +46,13 @@
   .hero h3 {
     font-weight: bold;
     padding: 1rem;
-    border-radius: var(--border-radius);
     border: 0.1rem solid var(--info-color);
     box-shadow: 0 50px 50px var(--tertiary-color);
+    border-radius: var(--border-radius);
     width: 90vw;
     text-align: center;
   }
-
+  
   .hero h2 {
     font-size: 1.3rem;
     color: var(--info-color);
@@ -64,7 +64,7 @@
   }
 
   .hero h2 span {
-    color: var(--info-color);
+    color: var(--secondary-color);
   }
 
   .hero h3 span {
@@ -196,11 +196,11 @@
   }
 
   .gt-carousel-control-prev {
-    left: clamp(9rem, 1.5vw, 10rem);
+    left: 6rem;
   }
 
   .gt-carousel-control-next {
-    right: clamp(9rem, 1.5vw, 10rem);
+    right: 6rem;
   }
 
   .gt-carousel-control-prev-icon,
@@ -252,7 +252,6 @@
 
   /* ========== TOOL CARD ========== */
   .tool-card {
-    padding: clamp(12px, 1vw, 24px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -284,7 +283,7 @@
   .tool-card p {
     font-size: clamp(1.3rem, 0.9vw, 2.5rem);
     color: var(--info-color);
-    text-align: left;
+    text-align: justify;
     flex-grow: 1;
     min-height: clamp(80px, 10vw, 180px);
     width: clamp(30rem, 20vw, 60rem);
@@ -328,6 +327,7 @@
     background: var(--background-gradient);
     padding: 1rem;
     margin-bottom: 0.5rem;
+      text-align: justify;
   }
 
   /* ========== TECHNICAL DETAILS SECTION ========== */
@@ -406,12 +406,12 @@
 
   /* ========== CAROUSEL CONTROLS POSITION ========== */
   .gt-carousel-control-prev {
-    left: clamp(15rem, 1.5vw, 10rem);
+    left: 10rem;
     bottom: 0.6rem;
   }
 
   .gt-carousel-control-next {
-    right: clamp(15rem, 1.5vw, 10rem);
+    right: 10rem;
     bottom: 0.6rem;
   }
 
@@ -456,12 +456,12 @@
 
   /* ========== CAROUSEL CONTROLS POSITION ========== */
   .gt-carousel-control-prev {
-    left: 20rem;
+    left: 15rem;
     bottom: 0.8rem;
   }
 
   .gt-carousel-control-next {
-    right: 20rem;
+    right: 15rem;
     bottom: 0.8rem;
   }
 }
@@ -495,12 +495,12 @@
 
   /* ========== CAROUSEL CONTROLS POSITION ========== */
   .gt-carousel-control-prev {
-    left: 30rem;
+    left: 20rem;
     bottom: 1rem;
   }
 
   .gt-carousel-control-next {
-    right: 30rem;
+    right: 20rem;
     bottom: 1rem;
   }
 }
@@ -554,12 +554,12 @@
 
   /* ========== CAROUSEL CONTROLS POSITION ========== */
   .gt-carousel-control-prev {
-    left: 55rem;
+    left: 40rem;
     bottom: 1.5rem;
   }
 
   .gt-carousel-control-next {
-    right: 55rem;
+    right: 40rem;
     bottom: 1.5rem;
   }
 }

@@ -1,6 +1,4 @@
-
-
-/* ========== Main Section ========== */
+/* ========== Base Styles (Mobile 320px) ========== */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -10,81 +8,64 @@ main {
 
 .top-main {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 5rem;
 }
 
 .top-main h2 {
   width: 100%;
-  text-align: center;
   background: var(--background-gradient);
   color: var(--info-color);
-  padding: 1rem;
+  padding: 0.5rem;
+  font-size: var(--font-size-h2);
+  margin-bottom: 1rem;
 }
 
-/* ========== Middle Main ========== */
 .middle-main {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
   width: 100%;
-}
-
-.middle-main h3 {
-  text-align: center;
-  background: var(--background-gradient);
-  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .middle-main p {
+  width: 100%;
   background: var(--background-gradient);
-  padding: 1rem;
-  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  margin-top: auto;
 }
 
 .icons-div,
-.buttons-div {
+.buttons-div,
+.video-div {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
-  width: 30%;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .icons-content,
 .buttons-content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-around;
-  flex-direction: row;
   background: var(--background-color);
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .icons-content img,
 .buttons-content img {
-  width: 5rem;
-  margin: 1rem;
-}
-
-.video-div {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 30%;
+  width: 4rem;
+  margin: 0.5rem;
 }
 
 .video-div a {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background: var(--background-color);
-  padding: 1rem;
+  padding: 0.5rem;
   text-decoration-color: var(--secondary-color);
 }
 
@@ -92,25 +73,68 @@ main {
   color: var(--secondary-color);
 }
 
-/* ========== Media Queries ========== */
-@media screen and (max-width:768px) {
-  main {
-    margin-top: 2rem;
+/* ========== Media Queries (Mobile First) ========== */
+
+
+@media screen and (min-width: 768px) {
+
+  .middle-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .icons-div,
   .buttons-div,
   .video-div {
-    width: 100%;
+    width: 48%;
   }
 
   .icons-content img,
   .buttons-content img {
-    width: 4rem;
+    width: 5rem;
   }
 }
-/* ==========  Disable AOS animations on small screens (max-width 768px) to improve performance and usability ========== */
 
+@media screen and (min-width: 1024px) {
+
+  .icons-content img,
+  .buttons-content img {
+    width: 5.5rem;
+  }
+}
+
+/* Extra large / 1440px */
+@media screen and (min-width: 1440px) {
+
+  .icons-div,
+  .buttons-div,
+  .video-div {
+    width: 30%;
+  }
+
+  .icons-content img,
+  .buttons-content img {
+    width: 6rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .middle-main p {
+    padding: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .icons-content img,
+  .buttons-content img {
+    width: 7rem;
+  }
+  .video-div a {
+    font-size: 2.5rem;
+  }
+}
+
+/* ========== Disable AOS animations on small screens ========== */
 @media (max-width: 768px) {
   [data-aos] {
     opacity: 1;

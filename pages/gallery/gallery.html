@@ -31,7 +31,7 @@
   <link rel="preconnect" href="https://unpkg.com" crossorigin>
 
   <!-- ========== AOS CSS ========== -->
-  <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@next/dist/aos.css" as="style" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" crossorigin="anonymous" media="print"
     onload="this.media='all'">
 
@@ -56,7 +56,20 @@
         <img class="logo" id="top" src="/images/logo.svg" alt="Gaspare Tocci's Logo" title="Gaspare Tocci's Logo"
           width="120" height="60">
       </a>
+      <!-- ========== NEWS BAR ========== -->
+      <div class="gt-news-bar" aria-label="Latest News" role="region">
+        <span class="gt-news-label"> LATEST :</span>
 
+        <div class="gt-news-container">
+          <div class="gt-news-ticker" aria-live="polite" tabindex="0">
+            <span class="gt-news-item">Portfolio evolving with new projects on the way!</span>
+            <span class="gt-news-item">Starting the IT Smart Technician Bootcamp soon — hands-on IoT, networking, and
+              smart
+              tech skills!</span>
+            <span class="gt-news-item">Optimizing responsive layouts and performance.</span>
+          </div>
+        </div>
+      </div>
 
       <!-- ========== Title ========== -->
       <h1 class="title" title="Page's Title">
@@ -64,21 +77,7 @@
         Every problem has its <span class="highlight">creative solution</span>
         <span class="symbol right">❖</span>
       </h1>
-      <!-- ========== CONTACTS LINKS ========== -->
-      <div class="contacts">
-
-        <!-- ========== LinkedIn ========== -->
-        <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank"
-          title="LinkedIn Profile">LinkedIn</a>
-
-        <!-- ========== GitHub ========== -->
-        <a href="https://github.com/Riello76" target="_blank" title="GitHub Profile">GitHub</a>
-
-        <!-- ========== Email ========== -->
-        <a href="mailto:gaspare_tocci@yahoo.it" title="Send Email">Email</a>
-      </div>
     </div>
-
     <!-- ========== NAVBAR CONTAINER ========== -->
     <nav class="gt-navbar" aria-label="Main Navigation">
       <div class="gt-container-fluid">
@@ -192,7 +191,7 @@
 
       <!-- ========== Graphic ========== -->
       <div class="graphic-div">
-        <h3>Graphics & Video Editing</h3>
+        <h3>Graphics</h3>
         <a href="../gallery/pages/graphics.html" title="Graphics Page">
           <img src="./icons/graphic.svg" alt="Link to Graphics page" />
         </a>
@@ -234,66 +233,73 @@
     </section>
   </main>
 
-    <!-- ========== GT Footer Section ========== -->
-    <footer class="gt-footer">
-    
-      <!-- ========== GT Scroll to Top ========== -->
-      <a class="gt-go-to-top" href="#top" aria-label="Scroll to top">
-        <img src="/icons/Scroll Down Arrow.gif" alt="Animated up arrow to scroll to top" width="40" height="40"
-          loading="lazy">
-      </a>
-    
-      <div class="gt-footer-container">
-    
-        <!-- ========== GT Contact Information ========== -->
-        <h4>Contact</h4>
-        <div class="gt-footer-column">
-          <p><a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link">gaspare_tocci@yahoo.it</a></p>
-          <p><a href="https://github.com/Riello76" target="_blank" class="gt-footer-link">GitHub: Riello76</a></p>
-          <p><a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="gt-footer-link">LinkedIn:
-              gaspare-tocci</a></p>
-        </div>
-    
-        <!-- ========== GT Quick Links ========== -->
-        <h4>Quick Links</h4>
-        <div class="gt-footer-column gt-footer-link">
-          <p><a href="/index.html" class="gt-footer-link">Home</a></p>
-          <p><a href="/pages/curriculum/curriculum.html" class="gt-footer-link">CV</a></p>
-          <p><a href="/pages/projects/projects.html" class="gt-footer-link">Projects</a></p>
-          <p><a href="/pages/gallery/gallery.html" class="gt-footer-link">Gallery</a></p>
-        </div>
-    
-        <!-- ========== GT About Footer ========== -->
-        <h4>About</h4>
-        <div class="gt-footer-column gt-footer-about">
-          <p>
-            <strong>Mobile-first</strong> portfolio showcasing skills in <strong>HTML, CSS, responsive design</strong>,
-            and
-            <strong>performance optimization</strong>.
-            Combines <strong>self-study</strong> and <strong>GetSetUK Bootcamp</strong> experience, with focus on
-            <strong>clean,
-              accessible interfaces</strong>.
-          </p>
-    
-        </div>
-    
-      </div>
-      <div class="gt-footer-info">
-        <p class="gt-footer-date">
-          <span class="gt-day">14</span>
-          <span class="gt-month">August</span>
-          <span class="gt-year">2025</span> - <span class="gt-time">
-            15<span class="gt-colon">:</span>42
-          </span>
-    
-        </p>
-      </div>
-    
-    </footer>
-    
-    <!-- ========== Footer Info ========== -->
-    <script src="/scripts/footer-info.js"></script>
+  <!-- ========== GT Footer Section ========== -->
+  <footer class="gt-footer">
 
+    <!-- ========== GT Scroll to Top ========== -->
+    <a class="gt-go-to-top" href="#top" aria-label="Scroll to top">
+      <img src="/icons/Scroll Down Arrow.gif" alt="Animated up arrow to scroll to top" width="40" height="40"
+        loading="lazy">
+    </a>
+
+    <div class="gt-footer-container">
+
+      <!-- Contacts -->
+      <h4>❖ Contacts ❖</h4>
+      <div class="gt-footer-column gt-footer-column1">
+
+        <a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link" aria-label="Send an email to Gaspare Tocci">
+          <span class="gt-footer-icon">
+            <img src="/icons/email-footer.svg" alt="Email icon">
+          </span>
+        </a>
+
+        <a href="https://github.com/Riello76" target="_blank" class="gt-footer-link"
+          aria-label="Visit Gaspare Tocci's GitHub profile">
+          <span class="gt-footer-icon">
+            <img src="/icons/github-footer.svg" alt="GitHub icon">
+          </span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="gt-footer-link"
+          aria-label="Visit Gaspare Tocci's LinkedIn profile">
+          <span class="gt-footer-icon">
+            <img src="/icons/linkedn-footer.svg" alt="LinkedIn icon">
+          </span>
+        </a>
+
+      </div>
+
+
+
+      <!-- ========== GT Quick Links ========== -->
+      <h4>❖ Quick Links ❖</h4>
+      <div class="gt-footer-column gt-footer-column2">
+        <p><a href="/index.html" class="gt-footer-link">Home</a></p>
+        <p><a href="/pages/curriculum/curriculum.html" class="gt-footer-link">CV</a></p>
+        <p><a href="/pages/projects/projects.html" class="gt-footer-link">Projects</a></p>
+        <p><a href="/pages/gallery/gallery.html" class="gt-footer-link">Gallery</a></p>
+      </div>
+    </div>
+
+    <!-- ========== GT About Footer for Gallery Page ========== -->
+    <h4>❖ About This Page ❖</h4>
+    <div class="gt-footer-column gt-footer-about">
+      <p>
+        Welcome! This gallery is where I share my favorite projects in <strong>branding, graphics, video editing, and 3D
+          design</strong>.
+        Each piece represents not just a skill, but how I like to solve problems creatively and make ideas come to life.
+        I hope exploring these projects gives you a sense of my <strong>passion for design</strong> and how I turn
+        concepts
+        into <strong>visual stories</strong>.
+      </p>
+    </div>
+
+  </footer>
+
+  <!-- ========== Info ========== -->
+  <script src="/scripts/info.js"></script>
+  
   <!-- ========== Navbar ========== -->
   <script src="/scripts/navbar.js" defer></script>
 
