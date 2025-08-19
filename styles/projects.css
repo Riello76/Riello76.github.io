@@ -15,7 +15,6 @@ main {
 
 .top-main h2 {
   width: 100%;
-  text-align: center;
   background: var(--background-gradient);
   color: var(--info-color);
   padding: 0.5rem;
@@ -99,9 +98,6 @@ main {
 
 /* Super wide / 2560px */
 @media screen and (min-width: 2560px) {
-  main {
-    padding: 4rem 0;
-  }
 
   .middle-main p {
     font-size: 2.5rem;

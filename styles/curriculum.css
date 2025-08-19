@@ -12,7 +12,6 @@ main {
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
-    margin-top: 1rem;
 }
 
 .top-main h2,
@@ -107,9 +106,6 @@ main {
 }
 
 @media screen and (min-width: 2560px) {
-    main {
-        padding: 4rem 0;
-    }
 
     .middle-main h2 {
         font-size: 4rem;
