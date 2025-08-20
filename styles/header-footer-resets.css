@@ -31,6 +31,7 @@
   /* ==== Body Text & Links ==== */
   --font-size-p: clamp(1.3rem, 0.9rem + 0.5vw, 2.5rem);
   --font-size-a: clamp(1rem, 0.85rem + 0.4vw, 1.4rem);
+
 }
 
 /* ========== Typography Styles ========== */
@@ -381,6 +382,13 @@ picture {
 /* ========== NAV ITEM RELATIVE POSITIONING FOR DROPDOWNS ========== */
 .gt-nav-item {
   position: relative;
+  font-weight: bolder;
+  height: 3rem;
+}
+
+.gt-nav-item-text {
+  font-weight: bolder;
+  font-size: 1.5rem;
 }
 
 /* ========== GRADIENT ANIMATION ON NAV LINKS ========== */
@@ -443,6 +451,16 @@ picture {
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  z-index: 999;
+}
+
+.gt-dropdown-menu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(3px);
+  z-index: -1;
 }
 
 /* Shine overlay */
@@ -481,6 +499,9 @@ picture {
   transition: all 0.3s ease;
   padding: 0.5rem 1rem;
   color: var(--info-color);
+  font-size: 1.5rem;
+  box-shadow: 0 0 1px var(--info-color);
+  border-radius: 0.5rem;
 }
 
 .gt-dropdown-item:hover {
@@ -495,6 +516,8 @@ picture {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
+  text-align: center;
+  padding: 1rem;
 }
 
 .gt-dropdown.show .gt-dropdown-menu {
@@ -708,6 +731,10 @@ picture {
     position: relative;
   }
 
+  .gt-nav-item-text {
+    font-size: 2rem;
+  }
+
   /* ========== GT Nav Link Styling ========== */
   .gt-nav-link {
     color: var(--info-color);
@@ -869,6 +896,9 @@ picture {
       transform: translateX(-100%);
     }
   }
+    .gt-nav-item-text {
+      font-size: 4rem;
+    }
 }
 
 /* ========== DESKTOP (>= 769px) OVERRIDE ========== */
