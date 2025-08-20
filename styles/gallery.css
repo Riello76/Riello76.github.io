@@ -16,7 +16,6 @@ main {
 
 .top-main h2 {
   width: 100%;
-  text-align: center;
   background: var(--background-gradient);
   color: var(--info-color);
   padding: 0.5rem 0;
@@ -34,16 +33,22 @@ main {
 }
 
 .middle-main h3 {
-  text-align: center;
   background: var(--background-gradient);
   padding: 0.75rem 1rem;
 }
 
 .middle-main img {
-  width: 100%;
-  max-width: 300px;
+  width: clamp(12.5rem, 90%, 70rem);
   animation: bounceInOpacity 3s ease-out;
   margin: 0 auto 1rem auto;
+}
+
+.click-hint {
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-size-p);
+  font-weight: bolder;
+  width: 100%;
 }
 
 .middle-main img:hover {
@@ -55,7 +60,7 @@ main {
   background: var(--background-gradient);
   padding: 1rem;
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: var(--font-size-p);
 }
 
 .branding-div,
@@ -88,9 +93,6 @@ main {
     width: 48%;
   }
 
-  .middle-main img {
-    max-width: 250px;
-  }
 }
 
 /* ================== Large Screens >= 1024px ================== */
@@ -154,9 +156,6 @@ main {
     padding: 2rem;
   }
 
-  .middle-main img {
-    max-width: 400px;
-  }
 }
 
 /* ================== Animations ================== */

@@ -10,6 +10,8 @@
 /* ========== Global Variables ========== */
 :root {
   scroll-behavior: smooth;
+
+  /* ==== Color Palette ==== */
   --main-color: #001f3f;
   --secondary-color: #ffb347;
   --tertiary-color: rgb(0, 0, 0);
@@ -18,17 +20,17 @@
       var(--main-color), var(--tertiary-color) 100%);
   --border-radius: 2.5rem;
 
-  /* ========== Typography Variables ========== */
-  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --font-size-h1: clamp(2.5rem, 2rem + 2vw, 6rem);
-  --font-size-h2: clamp(2rem, 1.75rem + 1.5vw, 4.5rem);
-  --font-size-h3: clamp(1.75rem, 1.5rem + 1vw, 3.5rem);
-  --font-size-h4: clamp(1.5rem, 1.25rem + 0.75vw, 3rem);
-  --font-size-h5: clamp(1.25rem, 1rem + 0.5vw, 2.25rem);
-  --font-size-h6: clamp(1rem, 0.875rem + 0.5vw, 1.75rem);
-  --font-size-p: clamp(0.95rem, 1rem + 0.5vw, 3rem);
-  --font-size-a: clamp(0.95rem, 1rem + 0.5vw, 1.25rem);
+  /* ==== Heading Sizes ==== */
+  --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 5rem);
+  --font-size-h2: clamp(2rem, 1.2rem + 2vw, 4rem);
+  --font-size-h3: clamp(1.75rem, 1rem + 1.5vw, 3rem);
+  --font-size-h4: clamp(1.5rem, 0.9rem + 1vw, 2.25rem);
+  --font-size-h5: clamp(1.25rem, 0.8rem + 0.8vw, 1.75rem);
+  --font-size-h6: clamp(1.1rem, 0.7rem + 0.5vw, 1.5rem);
+
+  /* ==== Body Text & Links ==== */
+  --font-size-p: clamp(1.3rem, 0.9rem + 0.5vw, 2.5rem);
+  --font-size-a: clamp(1rem, 0.85rem + 0.4vw, 1.4rem);
 }
 
 /* ========== Typography Styles ========== */
@@ -43,6 +45,9 @@ h2 {
   color: var(--secondary-color);
   background: var(--background-gradient);
   text-align: center;
+  font-weight: bolder;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--info-color);
 }
 
 h3 {
@@ -50,6 +55,9 @@ h3 {
   color: var(--secondary-color);
   background: var(--background-gradient);
   text-align: center;
+  font-weight: bolder;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--info-color);
 }
 
 h4 {
@@ -209,7 +217,7 @@ picture {
   display: inline-block;
   white-space: nowrap;
   animation: ticker 70s linear infinite;
-  font-size: var(--font-size-p);
+  font-size: clamp(1.2rem, 1vw + 0.5rem, 2.5rem);
 }
 
 .gt-news-item {
@@ -377,58 +385,144 @@ picture {
   position: relative;
 }
 
-/* ========== NAV LINK STYLES ========== */
+/* ========== GRADIENT ANIMATION ON NAV LINKS ========== */
 .gt-nav-link {
-  display: inline-block;
-  transition: all 0.3s ease;
-  padding: 0.5rem 1rem;
-  color: var(--info-color);
-  font-weight: bold;
-  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* ========== HOVER EFFECT ON NAV LINKS ========== */
-.gt-nav-link:hover {
-  color: var(--secondary-color);
-  transform: scale(0.95);
-}
-
-/* ========== CURSOR POINTER FOR DROPDOWN TOGGLE ========== */
-.gt-dropdown-toggle {
-  cursor: pointer;
-}
-
-/* ========== DROPDOWN MENU HIDDEN BY DEFAULT ========== */
-.gt-dropdown-menu {
-  display: none;
-  flex-direction: column;
+.gt-nav-link::before {
+  content: "";
   position: absolute;
-  margin-top: 1rem;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, var(--secondary-color), var(--tertiary-gradient));
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+.gt-nav-link span {
+  position: relative;
+  z-index: 1;
+}
+
+.gt-nav-link:hover::before {
   left: 0;
-  background: var(--background-gradient);
-  padding: 1rem;
-  min-width: 15rem;
-  z-index: 1000;
-  font-weight: bolder;
 }
 
-/* ========== SHOW DROPDOWN MENU WHEN OPEN ========== */
-.gt-dropdown.show .gt-dropdown-menu {
+/* ========== MICRO-UNDERLINE ON HOVER ========== */
+.gt-nav-link::after {
+  content: "";
+  display: block;
+  height: 0.1rem;
+  width: 0;
+  background: var(--secondary-color);
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.gt-nav-link:hover::after {
+  width: 100%;
+}
+
+/* ========== GLASSMORPHISM DROPDOWN MENU ========== */
+.gt-dropdown-menu {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
+  opacity: 0;
   display: flex;
+  flex-direction: column;
 }
 
-/* ========== DROPDOWN ITEM STYLES ========== */
+.gt-dropdown.show .gt-dropdown-menu {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.3s ease, transform 0.3s ease;
+}
+
+/* ========== DROPDOWN ITEM HOVER EFFECTS ========== */
 .gt-dropdown-item {
   display: inline-block;
   transition: all 0.3s ease;
   padding: 0.5rem 1rem;
   color: var(--info-color);
+  border-radius: 6px;
 }
 
-/* ========== HOVER EFFECT FOR DROPDOWN ITEMS ========== */
 .gt-dropdown-item:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   color: var(--secondary-color);
-  transform: scale(0.95);
+}
+
+/* ========== ACCORDION EFFECT FOR MOBILE DROPDOWN ========== */
+.gt-dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.gt-dropdown.show .gt-dropdown-menu {
+  max-height: 500px;
+}
+
+/* ========== HAMBURGER MORPH WITH ICONS ========== */
+.gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(1) {
+  top: 50%;
+  left: -20%;
+  transform: translateY(-50%) rotate(120deg);
+  background-image: url('/icons/logo-left.svg');
+  background-color: transparent;
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(3) {
+  top: 50%;
+  left: -30%;
+  transform: translateY(-50%) rotate(70deg);
+  background-image: url('/icons/logo-right.svg');
+  background-color: transparent;
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+/* ========== DROPDOWN ITEM ICON HOVER EFFECT ========== */
+.gt-dropdown-item img {
+  transition: transform 0.3s ease;
+}
+
+.gt-dropdown-item:hover img {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* ========== STICKY NAVBAR SHADOW ON SCROLL ========== */
+.gt-navbar.scrolled {
+  background: var(--background-gradient);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* ========== MAIN NAV LINK SCALE ON HOVER ========== */
+.gt-nav-link:hover {
+  transform: scale(1.05);
 }
 
 /* ========== GT Footer Section ========== */

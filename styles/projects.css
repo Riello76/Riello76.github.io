@@ -43,7 +43,13 @@ main {
   background: var(--background-gradient);
   padding: 0.5rem;
 }
-
+.click-hint {
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-size-p);
+  font-weight: bolder;
+  width: 100%;
+}
 /* Containers */
 .old-portfolio-div,
 .glastonbury-div {
