@@ -383,7 +383,6 @@ picture {
 .gt-nav-item {
   position: relative;
   font-weight: bolder;
-  height: 3rem;
 }
 
 .gt-nav-item-text {
@@ -451,16 +450,6 @@ picture {
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  z-index: 999;
-}
-
-.gt-dropdown-menu::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(3px);
-  z-index: -1;
 }
 
 /* Shine overlay */
