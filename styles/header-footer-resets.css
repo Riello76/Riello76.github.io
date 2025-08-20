@@ -118,15 +118,18 @@ picture {
   0% {
     transform: scale(0.5);
     opacity: 0;
+    box-shadow: 0 3px 3px var(--secondary-color);
   }
 
   50% {
     transform: scale(1.1);
     opacity: 0.5;
+    box-shadow: 0px 6px 12px var(--info-color);
   }
 
   100% {
     transform: scale(1);
+    box-shadow: 0px 3px 3px var(--secondary-color);
     opacity: 1;
   }
 }
@@ -157,7 +160,7 @@ picture {
   height: auto;
   border-radius: 100%;
   box-shadow: 0px 3px 3px var(--info-color);
-  animation: bounceInOpacity 3s ease-out;
+  animation: bounceInOpacity 3s ease-out, pulseShadow 2s infinite ease-in-out;
   will-change: transform;
   background: var(--background-gradient);
   margin: 2rem;
@@ -463,6 +466,7 @@ picture {
   background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
   transform: rotate(25deg);
   animation: shine 2.5s forwards;
+  z-index: -1;
 }
 
 /* Shine animation */
@@ -510,7 +514,7 @@ picture {
 }
 
 .gt-dropdown.show .gt-dropdown-menu {
-  max-height: 500px;
+  max-height: 50rem;
 }
 
 /* ========== HAMBURGER MORPH WITH ICONS ========== */
@@ -692,7 +696,7 @@ picture {
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 1000;
+    z-index: 5;
   }
 
   /* ========== GT Navbar Collapse / Menu Items Container ========== */
@@ -770,7 +774,7 @@ picture {
     background: var(--background-gradient);
     padding: clamp(0.5rem, 1vw, 1.5rem) 0;
     min-width: clamp(150px, 15vw, 300px);
-    z-index: 1000;
+    z-index: 4;
     font-weight: bolder;
     margin-top: clamp(0.5rem, 1vw, 1rem);
   }
@@ -885,9 +889,10 @@ picture {
       transform: translateX(-100%);
     }
   }
-    .gt-nav-item-text {
-      font-size: 4rem;
-    }
+
+  .gt-nav-item-text {
+    font-size: 4rem;
+  }
 }
 
 /* ========== DESKTOP (>= 769px) OVERRIDE ========== */
