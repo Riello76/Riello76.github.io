@@ -423,7 +423,7 @@ picture {
   background: var(--secondary-color);
   transition: width 0.3s ease;
   position: absolute;
-  bottom: 0;
+  bottom: 0.2rem;
   left: 0;
 }
 
@@ -431,17 +431,44 @@ picture {
   width: 100%;
 }
 
-/* ========== GLASSMORPHISM DROPDOWN MENU ========== */
+/* ========== GLASSMORPHISM DROPDOWN MENU WITH SHINE ========== */
 .gt-dropdown-menu {
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  background-size: contain;
+  border-radius: 1rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease, transform 0.3s ease;
   transform: translateY(-10px);
   opacity: 0;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shine overlay */
+.gt-dropdown-menu::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: rotate(25deg);
+  animation: shine 2.5s forwards;
+}
+
+/* Shine animation */
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+
+  100% {
+    transform: translateX(300%) rotate(25deg);
+  }
 }
 
 .gt-dropdown.show .gt-dropdown-menu {
@@ -456,7 +483,6 @@ picture {
   transition: all 0.3s ease;
   padding: 0.5rem 1rem;
   color: var(--info-color);
-  border-radius: 6px;
 }
 
 .gt-dropdown-item:hover {
