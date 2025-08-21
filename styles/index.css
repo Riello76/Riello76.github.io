@@ -76,7 +76,6 @@
     border: 0.2rem solid var(--info-color);
     font-size: 2rem;
     font-weight: bolder;
-    text-decoration: none;
     cursor: pointer;
     animation: CTA 3s infinite ease-in-out;
     overflow: hidden;
@@ -126,14 +125,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
   }
 
   .middle-main h2 {
-    width: 100vw;
+    width: 100%;
     background: var(--background-gradient);
-    margin: 0.5rem;
+    margin: 1rem 0 1rem 0;
   }
 
   /* ========== CAROUSEL CONTAINER ========== */
@@ -146,12 +145,13 @@
     margin-bottom: 1rem;
   }
 
+  /* ========== CAROUSEL INNER ========== */
   .gt-carousel-inner {
     display: grid;
     grid-template: 1fr / 1fr;
     place-items: center;
-    width: clamp(32rem, 60vw, 144rem);
-    height: clamp(36rem, 35vw, 72rem);
+    width: clamp(32rem, 48vw, 60rem);
+    height: clamp(36rem, 54vw, 67.5rem);
     overflow: hidden;
   }
 
@@ -170,6 +170,68 @@
     background: var(--background-gradient);
   }
 
+  /* ========== TOOL CARD ========== */
+  .tool-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: clamp(30rem, 26vw, 40rem);
+    margin-bottom: clamp(1rem, 15%, 10rem);
+  }
+
+  .tool-card img {
+    width: clamp(6.4rem, 8vw, 12.8rem);
+    height: clamp(6.4rem, 8vw, 12.8rem);
+    margin-bottom: clamp(1.2rem, 1vw, 2.4rem);
+  }
+
+  .tool-card h3 {
+    width: clamp(12rem, 14vw, 15rem);
+    border-radius: var(--border-radius);
+    background: var(--background-gradient);
+    margin-bottom: clamp(8px, 0.5vw, 16px);
+    padding: clamp(4px, 0.5vw, 8px);
+    color: var(--secondary-color);
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .tool-card p {
+    font-size: var(--font-size-p);
+    color: var(--info-color);
+    flex-grow: 1;
+    min-height: clamp(8rem, 10vw, 18rem);
+    width: clamp(24rem, 28vw, 30rem);
+    margin-bottom: clamp(2rem, 1vw, 4rem);
+  }
+
+  /* ========== DOWNLOAD BUTTON ========== */
+  .download-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(1.2rem, 1vw + 0.5rem, 2.5rem);
+    padding: clamp(0.5rem, 0.6vw, 1rem);
+    width: clamp(8rem, 12vw, 20rem);
+    background: var(--background-gradient);
+    color: var(--info-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 1px 5px var(--info-color);
+    font-weight: bold;
+    text-align: center;
+    transition: 0.4s;
+    margin: 0.5rem 0 0.8rem 0;
+  }
+
+  .download-btn:hover {
+    transform: translateX(-50%) scale(0.95);
+    box-shadow: 0px 3px 5px var(--secondary-color);
+    color: var(--secondary-color);
+  }
+
   /* ========== CAROUSEL CONTROLS ========== */
   .gt-carousel-control-prev,
   .gt-carousel-control-next {
@@ -178,20 +240,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
+    width: clamp(3rem, 5vw, 7rem);
+    height: clamp(2.5rem, 3vw, 5rem);
+    background: var(--background-gradient);
     border-radius: var(--border-radius);
-    border: none;
+    box-shadow: 0px 1px 5px var(--info-color);
     z-index: 1000;
     cursor: pointer;
-    margin-bottom: 1rem;
+    margin: 0.5rem 0;
   }
 
   .gt-carousel-control-prev {
-    left: 6rem;
+    left: clamp(6rem, 12vw, 7rem);
   }
 
   .gt-carousel-control-next {
-    right: 6rem;
+    right: clamp(6rem, 12vw, 7rem);
+  }
+
+  .gt-carousel-control-next:hover,
+  .gt-carousel-control-prev:hover {
+    transform: scale(0.95);
+    box-shadow: 0px 3px 5px var(--secondary-color);
   }
 
   .gt-carousel-control-prev-icon,
@@ -201,6 +271,7 @@
     border-radius: var(--border-radius-bigger);
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 1rem;
   }
 
   .gt-carousel-control-prev-icon {
@@ -211,25 +282,21 @@
     background-image: url(/icons/arrow-right.svg);
   }
 
-  .gt-carousel-control-next-icon:hover,
-  .gt-carousel-control-prev-icon:hover {
-    transform: scale(0.95);
-  }
 
   /* ========== CAROUSEL INDICATORS ========== */
   .gt-carousel-indicators {
     position: absolute;
-    bottom: clamp(56px, 4vw, 120px);
+    bottom: clamp(5rem, 4vw, 9rem);
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: clamp(8px, 0.5vw, 16px);
+    gap: clamp(0.5rem, 0.7vw, 1rem);
     z-index: 10;
   }
 
   .gt-carousel-indicators button {
-    width: clamp(8px, 0.8vw, 16px);
-    height: clamp(8px, 0.8vw, 16px);
+    width: clamp(0.5rem, 0.7vw, 1rem);
+    height: clamp(0.5rem, 0.7vw, 1rem);
     border-radius: 50%;
     border: none;
     background: var(--tertiary-color);
@@ -241,82 +308,21 @@
     background: var(--info-color);
   }
 
-  /* ========== TOOL CARD ========== */
-  .tool-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: clamp(30rem, 26vw, 60rem);
-    margin-bottom: 2rem;
-  }
-
-  .tool-card img {
-    width: clamp(6.4rem, 8vw, 12.8rem);
-    height: clamp(6.4rem, 8vw, 12.8rem);
-    margin-bottom: clamp(1.2rem, 1vw, 2.4rem);
-  }
-
-  .tool-card h3 {
-    width: 15rem;
-    border-radius: var(--border-radius);
-    border: 1px solid var(--info-color);
-    background: var(--background-gradient);
-    margin-bottom: clamp(8px, 0.5vw, 16px);
-    padding: clamp(4px, 0.5vw, 8px);
-    color: var(--secondary-color);
-    font-weight: bolder;
-  }
-
-  .tool-card p {
-    font-size: var(--font-size-p);
-    color: var(--info-color);
-    flex-grow: 1;
-    min-height: clamp(8rem, 10vw, 180rem);
-    width: 30rem;
-    margin-bottom: clamp(2rem, 1vw, 40rem);
-  }
-
-  /* ========== DOWNLOAD BUTTON ========== */
-  .download-btn {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 0.2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    transform-origin: bottom center;
-    font-size: clamp(1.3rem, 1.2vw, 5rem);
-    padding: clamp(0.3rem, 0.9vw, 0.8rem);
-    width: clamp(9rem, 12vw, 20rem);
-    background: var(--background-gradient);
-    color: var(--info-color);
-    border-radius: var(--border-radius);
-    border: 1px solid var(--info-color);
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.4s;
-    align-self: center;
-    margin-bottom: 1rem;
-  }
-
-  .download-btn:hover {
-    background: var(--secondary-color);
-    color: var(--main-color);
-  }
-
   /* ========== ABOUT ME SECTION ========== */
   .about-me {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .about-me h2 {
+    margin: 1rem 0 1rem 0;
   }
 
   .about-me p {
     background: var(--background-gradient);
-    margin: 0.5rem 0;
     color: var(--info-color);
     font-size: var(--font-size-p);
     padding: 1rem;
@@ -327,18 +333,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
   }
 
   .technical-details h2 {
-    padding: 1rem;
+    margin-bottom: 1rem;
     width: 100%;
     color: var(--secondary-color);
   }
 
   .technical-details p {
     background: var(--background-gradient);
-    margin: 0.5rem 0;
     color: var(--info-color);
     font-size: var(--font-size-p);
     padding: 1rem;
@@ -359,7 +364,7 @@
     align-items: center;
     background: var(--background-gradient);
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0 1rem 0;
   }
 
   .technical-img-div img {
@@ -393,15 +398,6 @@
   .cta-btn {
     width: 20vw;
     height: 4rem;
-  }
-
-  /* ========== CAROUSEL CONTROLS POSITION ========== */
-  .gt-carousel-control-prev {
-    left: 10rem;
-  }
-
-  .gt-carousel-control-next {
-    right: 10rem;
   }
 
   /* ========== TOOL CARD ========== */
@@ -448,15 +444,6 @@
     width: 100%;
   }
 
-  /* ========== CAROUSEL CONTROLS POSITION ========== */
-  .gt-carousel-control-prev {
-    left: 15rem;
-  }
-
-  .gt-carousel-control-next {
-    right: 15rem;
-  }
-
   /* ========== TOOL CARD ========== */
   .tool-card h3 {
     width: 20rem;
@@ -494,18 +481,9 @@
 
   /* ========== MIDDLE MAIN ALIGNMENT ========== */
   .middle-main {
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     align-items: center;
-  }
-
-  /* ========== CAROUSEL CONTROLS POSITION ========== */
-  .gt-carousel-control-prev {
-    left: 20rem;
-  }
-
-  .gt-carousel-control-next {
-    right: 20rem;
   }
 
 }
@@ -542,17 +520,6 @@
     height: 10rem;
     font-size: 6rem;
     font-weight: bold;
-  }
-
-  /* ========== CAROUSEL CONTROLS POSITION ========== */
-  .gt-carousel-control-prev {
-    left: 40rem;
-    bottom: 1.5rem;
-  }
-
-  .gt-carousel-control-next {
-    right: 40rem;
-    bottom: 1.5rem;
   }
 
   /* ========== TOOL CARD ========== */

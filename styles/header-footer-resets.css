@@ -23,7 +23,7 @@
   /* ==== Heading Sizes ==== */
   --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 5rem);
   --font-size-h2: clamp(2rem, 1.2rem + 2vw, 4rem);
-  --font-size-h3: clamp(1.75rem, 1rem + 1.5vw, 3rem);
+  --font-size-h3: clamp(1.70rem, 1rem + 1.5vw, 3rem);
   --font-size-h4: clamp(1.5rem, 0.9rem + 1vw, 2.25rem);
   --font-size-h5: clamp(1.25rem, 0.8rem + 0.8vw, 1.75rem);
   --font-size-h6: clamp(1.1rem, 0.7rem + 0.5vw, 1.5rem);
@@ -64,16 +64,22 @@ h3 {
 h4 {
   font-size: var(--font-size-h4);
   color: var(--secondary-color);
+  text-align: center;
+  font-weight: bolder;
 }
 
 h5 {
   font-size: var(--font-size-h5);
   color: var(--info-color);
+  text-align: center;
+  font-weight: bolder;
 }
 
 h6 {
   font-size: var(--font-size-h6);
   color: var(--secondary-color);
+  text-align: center;
+  font-weight: bolder;
 }
 
 p {
@@ -164,6 +170,26 @@ picture {
   will-change: transform;
   background: var(--background-gradient);
   margin: 2rem;
+  background: linear-gradient(270deg,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 31, 63, 0.8),
+      rgba(0, 0, 0, 0.9));
+  background-size: 400% 400%;
+  animation: gradientShift 25s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* ========== LOGO HOVER EFFECT ========== */
@@ -393,6 +419,10 @@ picture {
   font-size: 1.5rem;
 }
 
+.gt-nav-item-text:hover {
+  text-shadow: 0 0 2rem var(--secondary-color);
+}
+
 /* ========== GRADIENT ANIMATION ON NAV LINKS ========== */
 .gt-nav-link {
   position: relative;
@@ -491,9 +521,11 @@ picture {
   display: inline-block;
   transition: all 0.3s ease;
   padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
   color: var(--info-color);
+  width: clamp(13rem, 13vw, 25rem);
   font-size: 1.5rem;
-  box-shadow: 0 0 1px var(--info-color);
+  box-shadow: 0 0 2px var(--info-color);
   border-radius: 0.5rem;
 }
 
@@ -501,7 +533,7 @@ picture {
   transform: scale(1.05);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  color: var(--secondary-color);
+  text-shadow: 0 0 2rem var(--secondary-color);
 }
 
 /* ========== ACCORDION EFFECT FOR MOBILE DROPDOWN ========== */
@@ -571,9 +603,7 @@ picture {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   color: var(--secondary-color);
-  padding: clamp(1rem, 2vw, 4rem);
 }
 
 /* ========== Footer Container ========== */
@@ -603,7 +633,7 @@ picture {
 
 .gt-footer-about h4 {
   margin-bottom: clamp(0.5rem, 1vw, 1.5rem);
-  font-size: clamp(2rem, 2vw, 3rem);
+  font-size: var(--font-size-h4);
 }
 
 /* ========== Footer Icons ========== */
@@ -625,7 +655,7 @@ picture {
 
 /* ========== Footer Headings ========== */
 .gt-footer h4 {
-  font-size: clamp(1.5rem, 2vw, 3rem);
+  font-size: var(--font-size-h4);
   font-weight: bold;
   color: var(--info-color);
 }
@@ -636,7 +666,7 @@ picture {
 
 .gt-footer-about p {
   padding: 0 clamp(1rem, 2vw, 4rem);
-  font-size: clamp(1.1rem, 1.2vw, 5rem);
+  font-size: var(--font-size-p);
 }
 
 /* ========== Footer Lists ========== */
