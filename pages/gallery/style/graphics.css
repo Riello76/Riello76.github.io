@@ -13,15 +13,6 @@ main {
   width: 100%;
 }
 
-.top-main h2 {
-  width: 100%;
-  background: var(--background-gradient);
-  color: var(--info-color);
-  padding: 0.5rem;
-  font-size: var(--font-size-h2);
-  margin-bottom: 1rem;
-}
-
 .middle-main {
   display: flex;
   flex-direction: column;
@@ -30,9 +21,6 @@ main {
 }
 
 .middle-main p {
-  width: 100%;
-  background: var(--background-gradient);
-  padding: 0.5rem;
   margin-top: auto;
 }
 
@@ -41,7 +29,7 @@ main {
 .video-div {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: clamp(30rem, 100%, 80rem);
   margin-bottom: 1rem;
 }
 
@@ -72,9 +60,6 @@ main {
 .video-div a:hover {
   color: var(--secondary-color);
 }
-
-/* ========== Media Queries (Mobile First) ========== */
-
 
 @media screen and (min-width: 768px) {
 

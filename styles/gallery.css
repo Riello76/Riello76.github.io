@@ -14,14 +14,6 @@ main {
   width: 100%;
 }
 
-.top-main h2 {
-  width: 100%;
-  background: var(--background-gradient);
-  color: var(--info-color);
-  padding: 0.5rem 0;
-  margin-bottom: 1rem;
-}
-
 /* ================== Middle Main ================== */
 .middle-main {
   display: flex;
@@ -29,18 +21,16 @@ main {
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
-  margin-bottom: 2rem;
 }
-
-.middle-main h3 {
-  background: var(--background-gradient);
-  padding: 0.75rem 1rem;
+.middle-main a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .middle-main img {
-  width: clamp(12.5rem, 90%, 70rem);
-  animation: bounceInOpacity 3s ease-out;
-  margin: 0 auto 1rem auto;
+  width: clamp(12.5rem, 100%, 70rem);
+  margin: 2rem auto;
 }
 
 .click-hint {
@@ -48,19 +38,41 @@ main {
   justify-content: center;
   font-size: var(--font-size-p);
   font-weight: bolder;
-  width: 100%;
+  width: 50%;
+  color: var(--info-color);
+  background: var(--background-gradient);
+  cursor: pointer;
+  box-shadow: 0px 0px 5px var(--info-color);
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
+.click-hint:hover {
+  color: var(--secondary-color);
+  transform: scale(1.1) rotate(-2deg);
+  text-shadow: 0 0 8px var(--secondary-color), 0 0 12px var(--secondary-color);
+}
+
+.click-hint:hover {
+  animation: pulse 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+  50% {
+    transform: scale(1.15) rotate(2deg);
+  }
+
+  100% {
+    transform: scale(1.1) rotate(-2deg);
+  }
+}
 .middle-main img:hover {
   transform: scale(0.9);
   transition: transform 0.3s ease;
-}
-
-.middle-main p {
-  background: var(--background-gradient);
-  padding: 1rem;
-  margin-bottom: 0.5rem;
-  font-size: var(--font-size-p);
 }
 
 .branding-div,
@@ -90,91 +102,8 @@ main {
   .branding-div,
   .graphic-div,
   .design-div {
-    width: 48%;
+    width: 33%;
   }
 
 }
 
-/* ================== Large Screens >= 1024px ================== */
-@media screen and (min-width: 1024px) {
-
-  .branding-div,
-  .graphic-div,
-  .design-div {
-    width: 30%;
-    padding: 1rem;
-  }
-
-  .middle-main h3 {
-    font-size: var(--font-size-h3);
-    padding: 1rem;
-  }
-
-  .middle-main p {
-    font-size: var(--font-size-p);
-    padding: 1rem;
-  }
-}
-
-/* ================== Extra Large Screens >= 1440px ================== */
-@media screen and (min-width: 1440px) {
-
-  .middle-main h3 {
-    font-size: calc(var(--font-size-h3) * 1.2);
-    padding: 1.5rem;
-  }
-
-  .middle-main p {
-    font-size: calc(var(--font-size-p) * 1.2);
-    padding: 1.5rem;
-  }
-
-  .branding-div,
-  .graphic-div,
-  .design-div {
-    padding: 1.5rem;
-  }
-}
-
-/* ================== Ultra Wide Screens >= 2560px ================== */
-@media screen and (min-width: 2560px) {
-
-  .middle-main h3 {
-    font-size: calc(var(--font-size-h3) * 1.5);
-    padding: 2rem;
-  }
-
-  .middle-main p {
-    font-size: calc(var(--font-size-p) * 1.5);
-    padding: 2rem;
-    line-height: 2;
-  }
-
-  .branding-div,
-  .graphic-div,
-  .design-div {
-    padding: 2rem;
-  }
-
-}
-
-/* ================== Animations ================== */
-@keyframes bounceInOpacity {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-
-  60% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-
-  80% {
-    transform: scale(0.95);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
