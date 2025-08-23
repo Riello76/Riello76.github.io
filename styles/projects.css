@@ -1,4 +1,4 @@
-/* ========== Base Styles (Mobile 320px) ========== */
+/* ================== Base Styles ================== */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -6,23 +6,7 @@ main {
   background-color: var(--tertiary-gradient);
 }
 
-.top-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.top-main h2 {
-  width: 100%;
-  background: var(--background-gradient);
-  color: var(--info-color);
-  padding: 0.5rem;
-  font-size: var(--font-size-h2);
-  margin-bottom: 1rem;
-}
-
-/* Middle main */
+/* Middle Section */
 .middle-main {
   display: flex;
   flex-wrap: wrap;
@@ -30,40 +14,44 @@ main {
   align-items: stretch;
 }
 
-.middle-main h3 {
-  width: 100%;
-  text-align: center;
-  background: var(--background-gradient);
-  padding: 0.5rem;
-  font-size: var(--font-size-h3);
+.middle-main h2 {
+  color: var(--info-color);
 }
 
-.middle-main p {
-  width: 100%;
-  background: var(--background-gradient);
-  padding: 0.5rem;
+/* Links & Images */
+.middle-main a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.old-cv-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Click Hint Button */
 .click-hint {
   display: flex;
   justify-content: center;
   font-size: var(--font-size-p);
-  font-weight: bolder;
-  width: 50%;
+  font-weight: 700;
+  width: clamp(14rem, 100%, 20rem);
   color: var(--info-color);
   background: var(--background-gradient);
   cursor: pointer;
-  box-shadow: 0px 0px 5px var(--info-color);
+  box-shadow: 0 0 0.3rem var(--info-color);
   border-radius: var(--border-radius);
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  margin: 1rem 0;
 }
 
 .click-hint:hover {
   color: var(--secondary-color);
-  transform: scale(1.1) rotate(-2deg);
-  text-shadow: 0 0 8px var(--secondary-color), 0 0 12px var(--secondary-color);
-}
-
-.click-hint:hover {
+  text-shadow: 0 0 0.5rem var(--secondary-color), 0 0 0.8rem var(--secondary-color);
   animation: pulse 0.8s ease-in-out infinite alternate;
 }
 
@@ -80,13 +68,15 @@ main {
     transform: scale(1.1) rotate(-2deg);
   }
 }
-/* Containers */
+
+/* ================== Portfolio Containers ================== */
 .old-portfolio-div,
 .glastonbury-div {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin-bottom: 1rem;
+  flex: 1 1 clamp(20rem, 45%, 38rem);
+  margin: 1rem;
+  background: var(--background-gradient);
 }
 
 .old-portfolio-content,
@@ -95,52 +85,49 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 100%;
-  padding: 1rem;
-  flex: 1;
-}
-.old-portfolio-content img,
-.glastonbury-content img {
-  max-width: 100%;
 }
 
-/* ========== Media Queries (Mobile First) ========== */
+.old-portfolio-content a,
+.glastonbury-content a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-/* Medium devices / tablets / desktop 1024px+ => 2 colonne */
-@media screen and (min-width: 1024px) {
+.old-portfolio-content p,
+.glastonbury-content p {
+  flex-grow: 1;
+  width: 100%;
+  margin-top: auto;
+  text-align: justify;
+}
+
+/* ================== Responsive Columns ================== */
+@media screen and (min-width: 768px) {
   .middle-main {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
 
-  .old-portfolio-div,
-  .glastonbury-div {
-    width: 48%;
-  }
-
-}
-
-/* Large devices / 1440px+ => 3 colonne */
-@media screen and (min-width: 1440px) {
-
-  .old-portfolio-div,
-  .glastonbury-div {
-    width: 30%;
+  .old-cv-moon {
+    width: 20rem;
   }
 
 }
 
-/* Super wide / 2560px */
 @media screen and (min-width: 2560px) {
+  .middle-main img:not(.old-cv-moon) {
+    width: 40rem;
+  }
 
-  .middle-main p {
-    font-size: 2.5rem;
+  .old-cv-moon {
+    width: 30rem;
   }
 }
 
-/* ========== Disable AOS animations on small screens ========== */
+/* ================== Disable AOS animations on small screens ================== */
 @media (max-width: 768px) {
   [data-aos] {
     opacity: 1;

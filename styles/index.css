@@ -43,15 +43,21 @@
 
   /* ========== HERO HEADINGS ========== */
 
-  .hero h2 {
+  .hero h2,
+  .hero h3 {
     color: var(--info-color);
+    padding: 0.5rem;
   }
-  .hero h2 span {
+
+  .hero h2 span,.hero h3 span {
     color: var(--secondary-color);
   }
 
-  .hero h3 span {
+  .highlight {
     color: var(--secondary-color);
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   }
 
   /* ========== CTA BUTTON ========== */
@@ -128,7 +134,6 @@
     justify-items: center;
     align-items: center;
     grid-template-rows: auto 1fr auto;
-    margin-bottom: 1rem;
   }
 
   /* ========== CAROUSEL INNER ========== */
@@ -284,7 +289,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 1rem;
   }
 
   /* ========== TECHNICAL DETAILS SECTION ========== */

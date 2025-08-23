@@ -9,17 +9,26 @@ main {
 /* ================== Middle Main ================== */
 .middle-main {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
-  gap: 1rem;
 }
-
+.middle-main h2 {
+  color: var(--info-color);
+  margin-bottom: 1rem;
+}
+.middle-main p {
+  background: transparent;
+  width: clamp(30rem, 90%, 60rem);
+}
 /* ================== Sections ================== */
 .section-1-div,
 .section-2-div {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 1rem;
+  background: var(--background-gradient);
 }
 
 /* ================== Section Content ================== */
@@ -37,6 +46,7 @@ main {
 .section-2-div img {
   width: clamp(20rem, 80%, 60rem);
   height: auto;
+  margin: 1rem 0 1rem 0;
 }
 
 
@@ -46,7 +56,11 @@ main {
   .middle-main {
     flex-direction: row;
   }
+  .section-1-div,.section-2-div {
+    width: 50%;
+  }
 }
+
 /* ================== Disable AOS animations on small screens ================== */
 @media (max-width: 768px) {
   [data-aos] {

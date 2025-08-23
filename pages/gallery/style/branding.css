@@ -6,14 +6,6 @@ main {
   background-color: var(--tertiary-color);
 }
 
-/* ================== Top Main ================== */
-.top-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 1rem;
-}
 
 /* ================== Middle Main ================== */
 .middle-main {
@@ -22,6 +14,11 @@ main {
   justify-content: center;
   width: 100%;
   margin-top: 1rem;
+}
+
+.middle-main h2 {
+  color: var(--info-color);
+  margin-bottom: 1rem;
 }
 
 /* ================== Images ================== */

@@ -29,7 +29,7 @@
   --font-size-h6: clamp(1.1rem, 0.7rem + 0.5vw, 1.5rem);
 
   /* ==== Body Text & Links ==== */
-  --font-size-p: clamp(1.3rem, 1rem + 1vw, 3rem);
+  --font-size-p: clamp(1.3rem, 1rem + 1vw, 4rem);
   --font-size-a: clamp(1rem, 0.85rem + 0.4vw, 1.4rem);
 
 }
@@ -49,7 +49,7 @@ h2 {
   font-weight: bolder;
   border-radius: var(--border-radius);
   border: 1px solid var(--info-color);
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
   width: 100%;
 }
 
@@ -91,7 +91,7 @@ p {
   background: var(--background-gradient);
   font-weight: bolder;
   text-align: justify;
-  line-height: 1.5;
+  line-height: 1.2;
   padding: 1rem;
 }
 
@@ -163,6 +163,10 @@ picture {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  background-image: image-set(url('/images/header-bg.svg'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* ========== LOGO STYLE ========== */
@@ -170,15 +174,11 @@ picture {
   width: clamp(8rem, calc(1rem + 13vw), 35rem);
   height: auto;
   border-radius: 100%;
-  box-shadow: 0px 3px 3px var(--info-color);
   animation: bounceInOpacity 3s ease-out, pulseShadow 2s infinite ease-in-out;
   will-change: transform;
-  background: var(--background-gradient);
-  margin: 2rem;
-  background: linear-gradient(270deg,
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 31, 63, 0.8),
-      rgba(0, 0, 0, 0.9));
+  margin: 3rem 0 1rem 0;
+  background: linear-gradient(to right, var(--tertiary-color) 0%,
+      var(--main-color) 50%, var(--tertiary-color) 100%);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
 }
@@ -200,8 +200,7 @@ picture {
 /* ========== LOGO HOVER EFFECT ========== */
 .logo:hover {
   transform: scale(0.9);
-  background: var(--tertiary-color);
-  box-shadow: 0px 3px 3px var(--tertiary-color);
+  box-shadow: 0px 3px 3px transparent;
 }
 
 /* ========== TITLE STYLE ========== */
@@ -225,7 +224,6 @@ picture {
 .gt-news-bar {
   display: flex;
   align-items: center;
-  background: var(--background-gradient);
   color: var(--info-color);
   padding: clamp(0.3rem, 0.5vw, 1rem) clamp(0.5rem, 1vw, 2rem);
   font-size: clamp(1rem, 1vw + 0.8rem, 1.8rem);
@@ -696,6 +694,7 @@ picture {
   font-size: clamp(1.3rem, 1.5vw, 3rem);
   color: var(--secondary-color);
   transition: transform 0.3s ease, color 0.3s ease;
+  font-weight: bolder;
 }
 
 .gt-footer-link a:hover {
@@ -725,13 +724,18 @@ picture {
 
   /* ========== GT Navbar Container ========== */
   .gt-navbar {
-    background: var(--background-gradient);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 5;
+    background-image: image-set(url('/images/header-bg.svg'));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
   }
+
 
   /* ========== GT Navbar Collapse / Menu Items Container ========== */
   .gt-navbar-collapse {
