@@ -21,10 +21,10 @@
   --border-radius: 2.5rem;
 
   /* ==== Heading Sizes ==== */
-  --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 5rem);
+  --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 7rem);
   --font-size-h2: clamp(2rem, 1.2rem + 2vw, 4rem);
   --font-size-h3: clamp(1.70rem, 1rem + 1.5vw, 3rem);
-  --font-size-h4: clamp(1.5rem, 0.9rem + 1vw, 2.25rem);
+  --font-size-h4: clamp(1.5rem, 0.9rem + 1vw, 2.50rem);
   --font-size-h5: clamp(1.25rem, 0.8rem + 0.8vw, 1.75rem);
   --font-size-h6: clamp(1.1rem, 0.7rem + 0.5vw, 1.5rem);
 
@@ -177,24 +177,7 @@ picture {
   animation: bounceInOpacity 3s ease-out, pulseShadow 2s infinite ease-in-out;
   will-change: transform;
   margin: 3rem 0 1rem 0;
-  background: linear-gradient(to right, var(--tertiary-color) 0%,
-      var(--main-color) 50%, var(--tertiary-color) 100%);
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
-}
-
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+  box-shadow: 0px 3px 3px var(--secondary-color);
 }
 
 /* ========== LOGO HOVER EFFECT ========== */
@@ -206,8 +189,6 @@ picture {
 /* ========== TITLE STYLE ========== */
 .title {
   font-family: var(--font-family);
-  font-weight: bold;
-  font-size: clamp(1.5rem, calc(0.5rem + 2vw), 8rem);
   color: var(--info-color);
   margin: 1.5rem 0;
 }
@@ -602,7 +583,10 @@ picture {
 
 /* ========== GT Footer Section ========== */
 .gt-footer {
-  background: var(--background-gradient);
+  background-image: image-set(url('/images/header-bg.svg'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -634,11 +618,6 @@ picture {
   margin-bottom: clamp(1.5rem, 3vw, 4rem);
 }
 
-.gt-footer-about h4 {
-  margin-bottom: clamp(0.5rem, 1vw, 1.5rem);
-  font-size: var(--font-size-h4);
-}
-
 /* ========== Footer Icons ========== */
 .gt-footer-icon-div {
   display: flex;
@@ -658,7 +637,7 @@ picture {
 
 /* ========== Footer Headings ========== */
 .gt-footer h4 {
-  font-size: var(--font-size-h4);
+  font-size: clamp(2rem, 1.5vw + 1rem, 4rem);
   font-weight: bold;
   color: var(--info-color);
 }
@@ -668,7 +647,7 @@ picture {
 }
 
 .gt-footer p {
-  padding: 0 clamp(1rem, 2vw, 4rem);
+  background: transparent;
 }
 
 /* ========== Footer Lists ========== */
@@ -730,12 +709,10 @@ picture {
     position: relative;
     z-index: 5;
     background-image: image-set(url('/images/header-bg.svg'));
-    background-size: cover;
+    background-size: 70% 9;
     background-position: center;
     background-repeat: no-repeat;
-    width: 50%;
   }
-
 
   /* ========== GT Navbar Collapse / Menu Items Container ========== */
   .gt-navbar-collapse {

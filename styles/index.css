@@ -9,7 +9,7 @@
 
   /* ========== TOP MAIN SECTION ========== */
   .top-main {
-    background: var(--background-color);
+    background: var(--background-gradient);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,41 +23,49 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    gap: 1rem;
+    width: clamp(10rem, 100%, 100vw);
+    height: clamp(10rem, 60vw, 100vh);
+    max-height: 100vh;
+    object-fit: cover;
     background: url('/images/hero-image.webp') center/cover no-repeat;
+  }
+
+
+  /* ========== MIDDLE MAIN SECTION ========== */
+  .middle-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* ========== ABOUT ME SECTION ========== */
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: image-set(url('/images/header-bg.svg'));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   /* ========== PROFILE IMAGE ========== */
   .my-img {
-    width: 10rem;
-    height: 10rem;
+    width: clamp(15rem, 20vw, 30rem);
+    height: clamp(15rem, 20vw, 30rem);
     object-fit: cover;
     border-radius: 50%;
     background: var(--background-gradient);
-    box-shadow: 0 50px 50px var(--tertiary-color);
-    border: 0.1rem solid var(--info-color);
+    margin: 2rem 0;
+    box-shadow: 0px 0px 10px var(--info-color);
   }
 
-  /* ========== HERO HEADINGS ========== */
-
-  .hero h2,
-  .hero h3 {
-    color: var(--info-color);
-    padding: 0.5rem;
-  }
-
-  .hero h2 span,.hero h3 span {
-    color: var(--secondary-color);
-  }
-
-  .highlight {
-    color: var(--secondary-color);
-    font-style: italic;
-    font-weight: 700;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  .about-me p {
+    margin: 0.5rem 0 0.5rem 0;
+    background: transparent;
   }
 
   /* ========== CTA BUTTON ========== */
@@ -66,17 +74,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50vw;
-    height: 4rem;
+    width: clamp(12rem, 50vw, 30rem);
+    height: clamp(3rem, 4vw, 8rem);
     background: var(--background-gradient);
     color: var(--secondary-color);
     border-radius: var(--border-radius);
     border: 0.2rem solid var(--info-color);
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 2vw, 5rem);
     font-weight: bolder;
     cursor: pointer;
     animation: CTA 3s infinite ease-in-out;
     overflow: hidden;
+    margin: 1rem 0;
   }
 
   /* ========== CTA BUTTON TEXT LAYERS ========== */
@@ -118,15 +127,6 @@
     }
   }
 
-  /* ========== MIDDLE MAIN SECTION ========== */
-  .middle-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-  }
-
   /* ========== CAROUSEL CONTAINER ========== */
   #gt-carousel {
     position: relative;
@@ -134,6 +134,7 @@
     justify-items: center;
     align-items: center;
     grid-template-rows: auto 1fr auto;
+
   }
 
   /* ========== CAROUSEL INNER ========== */
@@ -175,6 +176,10 @@
     width: clamp(6.4rem, 8vw, 12.8rem);
     height: clamp(6.4rem, 8vw, 12.8rem);
     margin-bottom: clamp(1.2rem, 1vw, 2.4rem);
+  }
+
+  .tool-card h3 {
+    width: clamp(10rem, 70%, 20rem);
   }
 
   .tool-card p {
@@ -283,14 +288,6 @@
     background: var(--info-color);
   }
 
-  /* ========== ABOUT ME SECTION ========== */
-  .about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
   /* ========== TECHNICAL DETAILS SECTION ========== */
   .technical-details {
     display: flex;
@@ -327,29 +324,6 @@
 /* ========== MEDIA QUERY: TABLET / SMALL DESKTOP (768px) ========== */
 @media screen and (min-width:768px) {
 
-  /* ========== PROFILE IMAGE SCALE UP ========== */
-  .my-img {
-    width: 12rem;
-    height: 12rem;
-  }
-
-  /* ========== HERO HEADINGS ADJUSTMENT ========== */
-  .hero h2 {
-    width: 70vw;
-    font-size: 1.7rem;
-  }
-
-  .hero h3 {
-    width: 65vw;
-    font-size: 1.4rem;
-  }
-
-  /* ========== CTA BUTTON ADJUSTMENT ========== */
-  .cta-btn {
-    width: 20vw;
-    height: 4rem;
-  }
-
   /* ========== TOOL CARD ========== */
   .tool-card h3 {
     width: 60%;
@@ -366,28 +340,6 @@
 /* ========== MEDIA QUERY: DESKTOP (1024px) ========== */
 @media screen and (min-width:1024px) {
 
-  /* ========== PROFILE IMAGE SCALE UP ========== */
-  .my-img {
-    width: 15rem;
-    height: 15rem;
-  }
-
-  /* ========== HERO HEADINGS ADJUSTMENT ========== */
-  .hero h2 {
-    width: 80vw;
-    font-size: 2.5rem;
-  }
-
-  .hero h3 {
-    width: 70vw;
-    font-size: 2rem;
-  }
-
-  /* ========== CTA BUTTON ADJUSTMENT ========== */
-  .cta-btn {
-    width: 30rem;
-    padding: 2rem;
-  }
 
   /* ========== ABOUT ME TEXT WIDTH ========== */
   .about-me p {
@@ -412,23 +364,6 @@
 /* ========== MEDIA QUERY: LARGE DESKTOP / WIDESCREEN (1440px) ========== */
 @media screen and (min-width:1440px) {
 
-  /* ========== HERO HEADINGS ADJUSTMENT ========== */
-  .hero h2 {
-    width: 60vw;
-    font-size: 3rem;
-  }
-
-  .hero h3 {
-    width: 50vw;
-    font-size: 2.1rem;
-  }
-
-  /* ========== CTA BUTTON ADJUSTMENT ========== */
-  .cta-btn {
-    width: 20rem;
-    padding: 2rem;
-  }
-
   /* ========== MIDDLE MAIN ALIGNMENT ========== */
   .middle-main {
     width: 100%;
@@ -440,42 +375,6 @@
 
 /* ========== MEDIA QUERY: ULTRA-WIDE SCREENS (2560px) ========== */
 @media screen and (min-width:2560px) {
-
-  /* ========== HERO SECTION ADJUSTMENT ========== */
-  .hero {
-    height: 80vh;
-    gap: 5rem;
-  }
-
-  /* ========== PROFILE IMAGE SCALE UP MASSIVE ========== */
-  .my-img {
-    width: 40rem;
-    height: 40rem;
-  }
-
-  /* ========== HERO HEADINGS MASSIVE ========== */
-  .hero h2 {
-    width: 70vw;
-    font-size: 6rem;
-  }
-
-  .hero h3 {
-    width: 60vw;
-    font-size: 4rem;
-  }
-
-  /* ========== CTA BUTTON MASSIVE ========== */
-  .cta-btn {
-    width: 20vw;
-    height: 10rem;
-    font-size: 6rem;
-    font-weight: bold;
-  }
-
-  /* ========== TOOL CARD ========== */
-  .tool-card h3 {
-    width: 25rem;
-  }
 
   .tool-card p {
     width: 60rem;
