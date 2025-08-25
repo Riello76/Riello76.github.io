@@ -191,11 +191,19 @@
     <!-- ========== Top Main ========== -->
     <section class="top-main">
 
-      <!-- ========== Hero Image ========== -->
-      <div class="hero" role="region" aria-label="Hero Section - Introduction">
-        <img src="/images/hero-image.webp" alt="Hero Image" width="600" height="400" loading="lazy">
-        <span class="hero-name">Gaspare Tocci</span>
-      </div>
+    <!-- ========== Hero Image Responsive ========== -->
+    <div class="hero" role="region" aria-label="Hero Section - Introduction">
+      <picture>
+        <!-- 4K / 2K -->
+        <source srcset="/images/hero-image-4k.webp" type="image/webp" media="(min-width: 1440px)">
+    
+        <!-- Normal resolution -->
+        <source srcset="/images/hero-image.webp" type="image/webp">
+    
+        <!-- Fallback -->
+        <img src="/images/hero-image.webp" alt="Hero Image" loading="lazy" width="600" height="400">
+      </picture>
+    </div>
 
     </section>
 

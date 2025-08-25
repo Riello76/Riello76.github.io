@@ -23,17 +23,6 @@
     position: relative;
   }
 
-  .hero-name {
-    position: absolute;
-    bottom: 0;
-    right: 2rem;
-    font-family: 'Great Vibes', cursive;
-    font-size: clamp(2rem, 5vw, 5rem);
-    color: var(--info-color);
-    text-shadow: 2px 2px 4px var(--secondary-color);
-    opacity: 0.5;
-  }
-
   /* ========== MIDDLE MAIN SECTION ========== */
   .middle-main {
     display: flex;
