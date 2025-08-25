@@ -91,7 +91,7 @@ p {
   background: var(--background-gradient);
   font-weight: bolder;
   text-align: justify;
-  line-height: 1;
+  line-height: 1.2;
   padding: 1rem;
 }
 
@@ -669,8 +669,6 @@ picture {
 
 .gt-footer p {
   background: transparent;
-  width: clamp(95%, 30vw, 80%);
-  margin: 0 auto;
 }
 
 /* ========== Footer Lists ========== */
@@ -767,7 +765,7 @@ picture {
   }
 
   .gt-nav-item-text {
-    font-size: 2rem;
+    font-size: var(--font-size-h3);
   }
 
   /* ========== GT Nav Link Styling ========== */
@@ -928,9 +926,6 @@ picture {
     }
   }
 
-  .gt-nav-item-text {
-    font-size: 4rem;
-  }
 }
 
 /* ========== DESKTOP (>= 769px) OVERRIDE ========== */
