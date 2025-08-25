@@ -15,10 +15,17 @@
 
     .profile-div,
     .experience-div,
-    .education-div,
     .certifications-div,
     .technical-skills {
         width: clamp(90%, 100%, 70rem);
         margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1024px) {
+    p{
+        width: 80%;
     }
 }

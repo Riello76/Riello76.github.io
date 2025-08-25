@@ -20,9 +20,18 @@
   /* ========== HERO SECTION ========== */
   .hero {
     width: 100%;
-
+    position: relative;
   }
 
+  .hero-name {
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(2rem, 5vw, 5rem);
+    color: var(--info-color);
+    text-shadow: 2px 2px 4px var(--secondary-color);
+  }
 
   /* ========== MIDDLE MAIN SECTION ========== */
   .middle-main {
@@ -177,6 +186,7 @@
     flex-grow: 1;
     margin-bottom: clamp(1rem, 1vw, 4rem);
     background: transparent;
+    line-height: 1;
   }
 
   /* ========== DOWNLOAD BUTTON ========== */

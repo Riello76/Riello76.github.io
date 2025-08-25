@@ -111,20 +111,13 @@ main {
     flex-wrap: wrap;
   }
 
-  .old-cv-moon {
-    width: 20rem;
-  }
-
-}
-
-@media screen and (min-width: 2560px) {
   .middle-main img:not(.old-cv-moon) {
     width: 40rem;
   }
-
   .old-cv-moon {
-    width: 30rem;
+    width: clamp(20rem, 30vw, 30rem);
   }
+
 }
 
 /* ================== Disable AOS animations on small screens ================== */

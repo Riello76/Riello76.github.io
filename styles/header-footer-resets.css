@@ -19,19 +19,17 @@
   --background-gradient: linear-gradient(to right, var(--tertiary-color) 0%,
       var(--main-color), var(--tertiary-color) 100%);
   --border-radius: 2.5rem;
-
-  /* ==== Heading Sizes ==== */
-  --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 6rem);
-  --font-size-h2: clamp(2rem, 1.2rem + 2vw, 4rem);
-  --font-size-h3: clamp(1.70rem, 1rem + 1.5vw, 3rem);
-  --font-size-h4: clamp(1.5rem, 0.9rem + 1vw, 2.50rem);
-  --font-size-h5: clamp(1.25rem, 0.8rem + 0.8vw, 1.75rem);
-  --font-size-h6: clamp(1.1rem, 0.7rem + 0.5vw, 1.5rem);
+/* ==== Heading Sizes ==== */
+  --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 7rem);
+  --font-size-h2: clamp(2rem, 1.2rem + 2vw, 5.5rem);
+  --font-size-h3: clamp(1.7rem, 1rem + 1.5vw, 4rem);
+  --font-size-h4: clamp(1.5rem, 0.9rem + 1vw, 3.5rem);
+  --font-size-h5: clamp(1.25rem, 0.8rem + 0.8vw, 2.5rem);
+  --font-size-h6: clamp(1.1rem, 0.7rem + 0.5vw, 2rem);
 
   /* ==== Body Text & Links ==== */
-  --font-size-p: clamp(1.3rem, 1rem + 1vw, 4rem);
-  --font-size-a: clamp(1rem, 0.85rem + 0.4vw, 1.4rem);
-
+  --font-size-p: clamp(1.3rem, 1rem + 1vw, 3rem);
+  --font-size-a: clamp(1rem, 0.85rem + 0.4vw, 1.8rem);
 }
 
 /* ========== Typography Styles ========== */
@@ -48,7 +46,7 @@ h2 {
   text-align: center;
   font-weight: bolder;
   border-radius: var(--border-radius);
-  border: 1px solid var(--info-color);
+  border: 2px solid var(--info-color);
   margin: 1rem 0 0 0;
   width: 100%;
 }
@@ -60,7 +58,7 @@ h3 {
   text-align: center;
   font-weight: bolder;
   border-radius: var(--border-radius);
-  border: 1px solid var(--info-color);
+  border: 2px solid var(--info-color);
   width: 100%;
 }
 
@@ -590,7 +588,6 @@ picture {
   flex-direction: column;
   align-items: center;
   color: var(--secondary-color);
-  padding: clamp(2rem, 3vw, 5rem) 1rem;
 }
 
 /* ========== Footer Container ========== */
@@ -653,7 +650,7 @@ picture {
   background: var(--background-gradient);
 }
 
-.gt-footer a {
+.gt-footer a{
   box-shadow: 10px 10px 10px var(--tertiary-color);
   border-radius: var(--border-radius);
   border: 1px solid var(--info-color);
@@ -661,9 +658,18 @@ picture {
   background: var(--background-gradient);
   text-decoration: underline var(--info-color);
 }
+.gt-footer-column2 a {
+  width: clamp(12rem, 15vw, 20rem);
+  display: inline-block;
+  text-align: center;
+  font-size: var(--font-size-p);
+}
+
 
 .gt-footer a:hover {
   border: 1px solid var(--secondary-color);
+  color: var(--info-color);
+  text-decoration: underline var(--secondary-color);
   transform: scale(0.95);
 }
 
@@ -854,6 +860,9 @@ picture {
     100% {
       transform: translateX(-100%);
     }
+  }
+  .gt-footer p{
+    width: 80%;
   }
 }
 
