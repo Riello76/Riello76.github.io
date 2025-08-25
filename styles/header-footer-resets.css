@@ -21,7 +21,7 @@
   --border-radius: 2.5rem;
 
   /* ==== Heading Sizes ==== */
-  --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 7rem);
+  --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 6rem);
   --font-size-h2: clamp(2rem, 1.2rem + 2vw, 4rem);
   --font-size-h3: clamp(1.70rem, 1rem + 1.5vw, 3rem);
   --font-size-h4: clamp(1.5rem, 0.9rem + 1vw, 2.50rem);
@@ -91,7 +91,7 @@ p {
   background: var(--background-gradient);
   font-weight: bolder;
   text-align: justify;
-  line-height: 1.2;
+  line-height: 1;
   padding: 1rem;
 }
 
@@ -188,7 +188,6 @@ picture {
 
 /* ========== TITLE STYLE ========== */
 .title {
-  font-family: var(--font-family);
   color: var(--info-color);
   margin: 1.5rem 0;
 }
@@ -591,6 +590,7 @@ picture {
   flex-direction: column;
   align-items: center;
   color: var(--secondary-color);
+  padding: clamp(2rem, 3vw, 5rem) 1rem;
 }
 
 /* ========== Footer Container ========== */
@@ -599,7 +599,7 @@ picture {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: clamp(0.5rem, 1vw, 2rem);
+  gap: clamp(1rem, 1vw, 2rem);
   width: 100%;
   max-width: clamp(90rem, 80vw, 120rem);
 }
@@ -611,10 +611,13 @@ picture {
   justify-content: center;
   align-items: center;
   margin-bottom: clamp(1rem, 2vw, 3rem);
+  gap: clamp(1rem, 2vw, 2rem);
   width: 100%;
+  margin: 0 0 5rem 0;
 }
 
 .gt-footer-about {
+  gap: clamp(1.5rem, 2vw, 3rem);
   margin-bottom: clamp(1.5rem, 3vw, 4rem);
 }
 
@@ -627,34 +630,54 @@ picture {
 
 .gt-footer-icon {
   width: clamp(3rem, 2.5vw, 6rem);
-  margin: clamp(1rem, 1vw, 1.5rem);
+  margin: clamp(0.5rem, 0.5vw, 1rem);
 }
 
-.gt-footer-icon:hover,
-.gt-footer-link:hover {
-  transform: scale(0.95);
+/* ========== Footer About Section ========== */
+.gt-footer-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
 }
 
 /* ========== Footer Headings ========== */
 .gt-footer h4 {
-  font-size: clamp(2rem, 1.5vw + 1rem, 4rem);
   font-weight: bold;
   color: var(--info-color);
+  box-shadow: 10px 10px 10px var(--tertiary-color);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--info-color);
+  padding: 0.5rem clamp(1rem, 2vw, 2rem);
+  background: var(--background-gradient);
 }
 
 .gt-footer a {
+  box-shadow: 10px 10px 10px var(--tertiary-color);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--info-color);
+  padding: 1rem;
+  background: var(--background-gradient);
   text-decoration: underline var(--info-color);
+}
+
+.gt-footer a:hover {
+  border: 1px solid var(--secondary-color);
+  transform: scale(0.95);
 }
 
 .gt-footer p {
   background: transparent;
+  width: clamp(95%, 30vw, 80%);
+  margin: 0 auto;
 }
 
 /* ========== Footer Lists ========== */
 .gt-footer-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -669,7 +692,7 @@ picture {
 .gt-footer-link {
   display: flex;
   flex-direction: row;
-  margin: clamp(1rem, 1vw, 1.5rem);
+  margin: clamp(0.5rem, 1vw, 1rem);
   font-size: clamp(1.3rem, 1.5vw, 3rem);
   color: var(--secondary-color);
   transition: transform 0.3s ease, color 0.3s ease;
@@ -684,8 +707,12 @@ picture {
 /* ========== Scroll to Top ========== */
 .gt-go-to-top {
   display: inline-block;
-  margin-bottom: clamp(1.5rem, 2vw, 6rem);
+  margin-bottom: 3rem;
   width: clamp(4rem, 1vw + 4rem, 12rem);
+}
+
+.gt-go-to-top:hover {
+  transform: scale(0.95);
 }
 
 /* ========== MEDIA QUERY: DESKTOP & TABLET NAVBAR STYLING ========== */

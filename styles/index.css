@@ -19,15 +19,8 @@
 
   /* ========== HERO SECTION ========== */
   .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: clamp(10rem, 100%, 100vw);
-    height: clamp(10rem, 60vw, 100vh);
-    max-height: 100vh;
-    object-fit: cover;
-    background: url('/images/hero-image.webp') center/cover no-repeat;
+    width: 100%;
+
   }
 
 
@@ -64,7 +57,6 @@
   }
 
   .about-me p {
-    margin: 0.5rem 0 0.5rem 0;
     background: transparent;
   }
 
@@ -134,7 +126,6 @@
     justify-items: center;
     align-items: center;
     grid-template-rows: auto 1fr auto;
-
   }
 
   /* ========== CAROUSEL INNER ========== */
@@ -185,6 +176,7 @@
   .tool-card p {
     flex-grow: 1;
     margin-bottom: clamp(1rem, 1vw, 4rem);
+    background: transparent;
   }
 
   /* ========== DOWNLOAD BUTTON ========== */
@@ -194,7 +186,7 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: clamp(1.2rem, 1vw + 0.5rem, 2.5rem);
-    padding: clamp(0.5rem, 0.6vw, 1rem);
+    padding: clamp(0.5rem, 0.7vw, 1rem);
     width: clamp(8rem, 12vw, 20rem);
     background: var(--background-gradient);
     color: var(--info-color);
@@ -203,7 +195,7 @@
     font-weight: bold;
     text-align: center;
     transition: 0.4s;
-    margin: 0.5rem 0 0.8rem 0;
+    margin: 0.5rem 0 1rem 0;
   }
 
   .download-btn:hover {
@@ -227,7 +219,7 @@
     box-shadow: 0px 1px 5px var(--info-color);
     z-index: 1000;
     cursor: pointer;
-    margin: 0.5rem 0;
+    margin: 0 0 0.5rem 0;
   }
 
   .gt-carousel-control-prev {
@@ -246,12 +238,12 @@
 
   .gt-carousel-control-prev-icon,
   .gt-carousel-control-next-icon {
-    width: clamp(2rem, 2vw, 4rem);
-    height: clamp(2rem, 2vw, 4rem);
+    width: clamp(1.4rem, 1.7vw, 4rem);
+    height: clamp(1.4rem, 1.7vw, 4rem);
     border-radius: var(--border-radius-bigger);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 1rem;
+    padding: rem;
   }
 
   .gt-carousel-control-prev-icon {
