@@ -164,6 +164,7 @@ picture {
   body {
     display: flex;
     flex-direction: column;
+    background: var(--tertiary-color);
   }
 
 }
@@ -284,6 +285,7 @@ picture {
   background: var(--background-gradient);
   position: relative;
   z-index: 999;
+  margin: 2rem 0;
 }
 
 /* ========== DROPDOWN ARROW STYLE ========== */
@@ -592,10 +594,7 @@ picture {
 
 /* ========== GT Footer Section ========== */
 .gt-footer {
-  background-image: image-set(url('/images/header-bg.svg'));
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: var(--background-gradient);
   display: flex;
   flex-direction: column;
   align-items: center;
