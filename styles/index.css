@@ -4,7 +4,7 @@
   main {
     display: flex;
     flex-wrap: wrap;
-    background: var(--tertiary-color);
+    background: var(--background-gradient);
   }
 
   /* ========== TOP MAIN SECTION ========== */
@@ -30,6 +30,10 @@
     align-items: center;
     width: 100%;
     overflow: hidden;
+    background-image: image-set(url('/images/header-bg.svg'));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   /* ========== ABOUT ME SECTION ========== */
@@ -125,6 +129,9 @@
     justify-items: center;
     align-items: center;
     grid-template-rows: auto 1fr auto;
+    margin: 2rem 0;
+    border: 1px solid var(--info-color);
+    box-shadow: 10px 10px 10px var(--tertiary-color);
   }
 
   /* ========== CAROUSEL INNER ========== */
@@ -132,7 +139,7 @@
     display: grid;
     grid-template: 1fr / 1fr;
     place-items: center;
-    width: clamp(32rem, 48vw, 60rem);
+    width: clamp(31rem, 48vw, 60rem);
     height: clamp(36rem, 54vw, 70rem);
     overflow: hidden;
   }
@@ -165,11 +172,11 @@
   .tool-card img {
     width: clamp(6.4rem, 8vw, 12.8rem);
     height: clamp(6.4rem, 8vw, 12.8rem);
-    margin-bottom: clamp(1.2rem, 1vw, 2.4rem);
+    margin: 1rem 0;
   }
 
   .tool-card h3 {
-    width: clamp(10rem, 70%, 20rem);
+    width: clamp(10rem, 70%, 30rem);
   }
 
   .tool-card p {
@@ -286,40 +293,19 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin: 2rem 0;
   }
-
+  
   .technical-details div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
-
-  /* ========== TECHNICAL IMAGES GRID ========== */
-  .technical-img-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    background: var(--background-gradient);
-    padding: 1rem;
-    margin: 1rem 0 1rem 0;
-  }
-
-  .technical-img-div img {
-    width: 6rem;
-    height: 6rem;
-    margin: 1rem;
-  }
 }
 
 /* ========== MEDIA QUERY: TABLET / SMALL DESKTOP (768px) ========== */
 @media screen and (min-width:768px) {
-
-  /* ========== TOOL CARD ========== */
-  .tool-card h3 {
-    width: 60%;
-  }
 
   /* ========== TECHNICAL IMAGE GRID ========== */
   .technical-img-div img {
@@ -339,9 +325,6 @@
   }
 
   /* ========== TOOL CARD ========== */
-  .tool-card h3 {
-    width: 20rem;
-  }
 
   .tool-card p {
     width: 40rem;
