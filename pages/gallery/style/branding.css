@@ -1,80 +1,111 @@
 /* ================== Main Section ================== */
 main {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: var(--tertiary-color);
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1rem;
+  background: var(--background-gradient);
 }
-
 
 /* ================== Middle Main ================== */
 .middle-main {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  margin-top: 1rem;
+  gap: 1rem;
 }
 
 .middle-main h2 {
   color: var(--info-color);
-  margin-bottom: 1rem;
+
 }
 
-/* ================== Images ================== */
-
-/* Portrait images: typically vertical photos */
-.img-portrait {
-  width: clamp(20rem, 20vw, 40rem);
-  height: auto;
-  margin: 1rem 0;
-}
-
-/* Landscape images: typically horizontal photos */
-.img-landscape {
-  width: clamp(10rem, 80vw, 50rem);
-  height: auto;
-  margin: 1rem 0;
-}
-
-/* Calendar portrait images: vertical calendars */
-.calendar-portrait {
-  width: clamp(20rem, 50vw, 30rem);
-  height: auto;
-  margin: 1rem 0;
-}
-
-/* ================== Galleries / Divs ================== */
-.logos-div {
+/* ================== Branding Groups ================== */
+.branding-group {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  width: clamp(80%, 70%, 50%);
-  background: var(--background-gradient);
-  margin-bottom: 1rem;
-}
-
-.business-card-div,
-.calendars-div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  width: clamp(90%, 85%, 80%);
-  background: var(--background-gradient);
-  margin-bottom: 1rem;
-}
-
-/* Content inside galleries */
-.logos-content,
-.business-card-content,
-.calendars-content {
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   width: 100%;
+  max-width: 1200px;
+  gap: 1.5rem;
+  border-radius: var(--border-radius);
+  background: var(--background-gradient);
+  box-shadow: 10px 10px 10px var(--tertiary-color);
+}
+
+.branding-group:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.25),
+    0 0 15px var(--info-color),
+    0 0 30px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg,
+      var(--tertiary-color) 0%,
+      var(--main-color) 40%,
+      var(--info-color) 200%,
+      var(--tertiary-color) 100%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+}
+
+.branding-group h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+/* ================== Grid Layout for Images ================== */
+.branding-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .branding-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .branding-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ================== Individual Image Cards ================== */
+.branding-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Portrait Images */
+.img-portrait {
+  max-width: clamp(30rem, 20vw, 40rem);
+  height: auto;
+  margin: 0.5rem 0;
+}
+
+/* Landscape Images */
+.img-landscape {
+  max-width: clamp(30rem, 60vw, 90rem);
+  height: auto;
+  margin: 0.5rem 0;
+
+}
+
+/* ================== Description Card ================== */
+.branding-desc {
+  width: 100%;
+}
+
+.branding-desc p {
+  color: var(--info-color);
+  background: transparent;
 }
 
 /* ================== Disable AOS animations on small screens ================== */

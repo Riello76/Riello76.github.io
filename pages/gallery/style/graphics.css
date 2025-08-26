@@ -1,129 +1,102 @@
-/* ========== Base Styles (Mobile 320px) ========== */
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: var(--tertiary-color);
-}
-
+/* ================== Middle Main ================== */
 .middle-main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 2rem;
   width: 100%;
-  margin-bottom: 1rem;
+  padding: 1rem;
+  background: var(--background-gradient);
 }
 
-.middle-main h2 {
-  color: var(--info-color);
-  margin-bottom: 1rem;
-}
-
-.middle-main p {
-  margin-top: auto;
-}
-
-.icons-div,
-.buttons-div,
-.video-div {
+/* Group wrapper */
+.graphic-group {
+  width: 100%;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
-  width: clamp(30rem, 100%, 80rem);
-  margin-bottom: 1rem;
+  gap: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 10px 10px 10px var(--tertiary-color);
 }
 
-.icons-content,
-.buttons-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background: var(--background-color);
-  padding: 0.5rem;
+.graphic-group:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.25),
+    0 0 15px var(--info-color),
+    0 0 30px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg,
+      var(--tertiary-color) 0%,
+      var(--main-color) 40%,
+      var(--info-color) 200%,
+      var(--tertiary-color) 100%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+}
+.graphic-group p{
+  background: transparent;
+}
+/* Grids for icons and buttons */
+.graphic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1rem;
+  justify-items: center;
 }
 
-.icons-content img,
-.buttons-content img {
-  width: 4rem;
-  margin: 0.5rem;
-}
-
-.video-div a {
+/* Graphic items (icons/buttons) */
+.graphic-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--background-color);
+}
+
+.graphic-item img {
+  width: clamp(40px, 5vw, 100px);
+  height: auto;
+  display: block;
+}
+
+/* ================== Video Section ================== */
+.video-grid {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: clamp(25rem, 60%, 80rem);
+  max-width: 90rem;
+  box-shadow: 10px 10px 10px var(--tertiary-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background: var(--background-gradient);
   padding: 0.5rem;
-  text-decoration-color: var(--secondary-color);
 }
 
-.video-div a:hover {
+.video-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: var(--border-radius);
+}
+
+.video-card a {
+  margin: 0.5rem 0;
+  color: var(--info-color);
+  font-weight: bold;
+  font-size: var(--font-size-p);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.video-card a:hover {
   color: var(--secondary-color);
-}
-
-@media screen and (min-width: 768px) {
-
-  .middle-main {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .icons-div,
-  .buttons-div,
-  .video-div {
-    width: 48%;
-  }
-
-  .icons-content img,
-  .buttons-content img {
-    width: 5rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-
-  .icons-content img,
-  .buttons-content img {
-    width: 5.5rem;
-  }
-}
-
-/* Extra large / 1440px */
-@media screen and (min-width: 1440px) {
-
-  .icons-div,
-  .buttons-div,
-  .video-div {
-    width: 30%;
-  }
-
-  .icons-content img,
-  .buttons-content img {
-    width: 6rem;
-  }
-}
-
-@media screen and (min-width: 2560px) {
-  .middle-main p {
-    padding: 1rem;
-    font-size: 2.5rem;
-  }
-
-  .icons-content img,
-  .buttons-content img {
-    width: 7rem;
-  }
-
-  .video-div a {
-    font-size: 2.5rem;
-  }
-}
-
-/* ========== Disable AOS animations on small screens ========== */
-@media (max-width: 768px) {
-  [data-aos] {
-    opacity: 1;
-    transform: none;
-    transition: none;
-    animation: none;
-  }
+  text-decoration: underline;
 }

@@ -71,6 +71,7 @@ h3 {
   font-weight: bolder;
   border-radius: var(--border-radius);
   border: 2px solid var(--info-color);
+  box-shadow: 10px 10px 10px var(--tertiary-color);
   width: 100%;
 }
 
@@ -726,9 +727,9 @@ picture {
   z-index: 0;
   overflow: visible;
   transition: transform 0.3s ease;
-    box-shadow: 10px 10px 10px var(--tertiary-color);
-      border-radius: var(--border-radius);
-      border: 1px solid var(--info-color);
+  box-shadow: 10px 10px 10px var(--tertiary-color);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--info-color);
 }
 
 /* ========== External Glow with Box-Shadow ========== */

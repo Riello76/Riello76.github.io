@@ -1,39 +1,84 @@
 /* ================== Base Styles ================== */
 main {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: var(--tertiary-gradient);
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  background: var(--background-gradient);
 }
 
-/* Middle Section */
-.middle-main {
+/* ================== Projects Grid ================== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ================== Project Card ================== */
+.project-card {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: stretch;
+  flex-direction: column;
+  align-items: center;
+  background: var(--background-gradient);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
 }
 
-.middle-main h2 {
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.25),
+    0 0 15px var(--info-color),
+    0 0 30px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg,
+      var(--tertiary-color) 0%,
+      var(--main-color) 40%,
+      var(--info-color) 200%,
+      var(--tertiary-color) 100%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+}
+
+/* ================== Images ================== */
+.project-card img {
+  max-width: 200px;
+  height: auto;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+}
+
+/* ================== Titles ================== */
+.project-card h3 {
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ================== Paragraphs ================== */
+.project-card p {
   color: var(--info-color);
+  margin-bottom: 1rem;
+  background: transparent;
 }
 
-/* Links & Images */
-.middle-main a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.old-cv-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Click Hint Button */
+/* ================== Click Hint / Links ================== */
+.project-link,
 .click-hint {
   display: flex;
   justify-content: center;
@@ -45,16 +90,19 @@ main {
   cursor: pointer;
   box-shadow: 0 0 0.3rem var(--info-color);
   border-radius: var(--border-radius);
+  text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
-  margin: 1rem 0;
+  margin-top: 1rem;
 }
 
+.project-link:hover,
 .click-hint:hover {
   color: var(--secondary-color);
   text-shadow: 0 0 0.5rem var(--secondary-color), 0 0 0.8rem var(--secondary-color);
   animation: pulse 0.8s ease-in-out infinite alternate;
 }
 
+/* ================== Pulse Animation ================== */
 @keyframes pulse {
   0% {
     transform: scale(1.05) rotate(-1deg);
@@ -69,57 +117,6 @@ main {
   }
 }
 
-/* ================== Portfolio Containers ================== */
-.old-portfolio-div,
-.glastonbury-div {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 clamp(20rem, 45%, 38rem);
-  margin: 1rem;
-  background: var(--background-gradient);
-}
-
-.old-portfolio-content,
-.glastonbury-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-
-.old-portfolio-content a,
-.glastonbury-content a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.old-portfolio-content p,
-.glastonbury-content p {
-  flex-grow: 1;
-  width: 100%;
-  margin-top: auto;
-  text-align: justify;
-}
-
-/* ================== Responsive Columns ================== */
-@media screen and (min-width: 768px) {
-  .middle-main {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .middle-main img:not(.old-cv-moon) {
-    width: 40rem;
-  }
-  .old-cv-moon {
-    width: clamp(20rem, 30vw, 30rem);
-  }
-
-}
-
 /* ================== Disable AOS animations on small screens ================== */
 @media (max-width: 768px) {
   [data-aos] {
@@ -128,4 +125,18 @@ main {
     transition: none;
     animation: none;
   }
+}
+
+/* ================== Old CV Image Special ================== */
+.old-cv-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.old-cv-moon {
+  width: clamp(20rem, 30vw, 30rem);
+  height: auto;
+  border-radius: var(--border-radius);
 }

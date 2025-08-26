@@ -168,7 +168,7 @@
     height: clamp(30rem, 35vw, 60rem);
     margin-bottom: clamp(1rem, 15%, 10rem);
   }
-
+  
   .tool-card img {
     width: clamp(6.4rem, 8vw, 12.8rem);
     height: clamp(6.4rem, 8vw, 12.8rem);
