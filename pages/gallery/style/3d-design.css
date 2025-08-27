@@ -39,7 +39,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: clamp(25rem, 60%, 80rem);
+  width: clamp(30rem, 80%, 80rem);
   max-width: 90rem;
   box-shadow: 10px 10px 10px var(--tertiary-color);
   border-radius: var(--border-radius);
