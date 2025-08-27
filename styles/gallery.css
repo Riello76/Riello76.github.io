@@ -3,55 +3,91 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: var(--tertiary-color);
 }
-
 
 /* ================== Middle Main ================== */
 .middle-main {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
   width: 100%;
-  justify-content: center;
+  padding: 1rem;
+  background: var(--background-gradient);
 }
 
-.middle-main h2{
+.middle-main h2 {
   color: var(--info-color);
+  margin-bottom: 2rem;
 }
-.middle-main a{
+
+/* ================== Gallery Group wrapper ==================*/
+.gallery-group {
+  width: 100%;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.middle-main img {
-  width: clamp(12.5rem, 100%, 70rem);
-  margin: 2rem auto;
+  gap: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
 }
 
-.click-hint {
+/* ================== Gallery Card ==================*/
+.gallery-card {
+  background: var(--background-gradient);
+  border-radius: var(--border-radius);
+  box-shadow: 10px 10px 10px var(--tertiary-color);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.25),
+    0 0 15px var(--info-color),
+    0 0 30px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg,
+      var(--tertiary-color) 0%,
+      var(--main-color) 40%,
+      var(--info-color) 200%,
+      var(--tertiary-color) 100%);
+}
+.gallery-card a {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.gallery-card img {
+  width: clamp(12rem, 100%, 40rem);
+  margin: 0 auto 1rem auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-card img:hover {
+  transform: scale(0.9);
+}
+
+/* ================== Click hint ==================*/
+.click-hint {
+  width: clamp(10rem, 20vw, 30rem);
   font-size: var(--font-size-p);
-  font-weight: bolder;
-  width: 50%;
+  font-weight: bold;
   color: var(--info-color);
   background: var(--background-gradient);
-  cursor: pointer;
-  box-shadow: 0px 0px 5px var(--info-color);
+  padding: 0.3rem 0.6rem;
   border-radius: var(--border-radius);
+  box-shadow: 0px 0px 5px var(--info-color);
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .click-hint:hover {
   color: var(--secondary-color);
-  transform: scale(1.1) rotate(-2deg);
-  text-shadow: 0 0 8px var(--secondary-color), 0 0 12px var(--secondary-color);
-}
-
-.click-hint:hover {
   animation: pulse 0.8s ease-in-out infinite alternate;
+  text-shadow: 0 0 8px var(--secondary-color), 0 0 12px var(--secondary-color);
 }
 
 @keyframes pulse {
@@ -67,40 +103,20 @@ main {
     transform: scale(1.1) rotate(-2deg);
   }
 }
-.middle-main img:hover {
-  transform: scale(0.9);
-  transition: transform 0.3s ease;
-}
 
-.branding-div,
-.graphic-div,
-.design-div {
-  width: 100%;
-  background: var(--background-gradient);
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-}
-
-/* ================== Disable AOS animations on small screens ================== */
-[data-aos] {
-  opacity: 1;
-  transform: none;
-  transition: none;
-  animation: none;
+.gallery-card p {
+  background: transparent;
 }
 
 /* ================== Medium Screens >= 768px ================== */
 @media screen and (min-width: 768px) {
-  .middle-main {
+  .gallery-group {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
-  .branding-div,
-  .graphic-div,
-  .design-div {
-    width: 33%;
+  .gallery-card {
+    flex: 1;
+    max-width: 32%;
   }
-
 }
-

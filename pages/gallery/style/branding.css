@@ -1,11 +1,8 @@
-/* ================== Main Section ================== */
+/* ================== Base Layout ================== */
 main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 1rem 1rem;
-  background: var(--background-gradient);
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* ================== Middle Main ================== */
@@ -13,26 +10,26 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
   width: 100%;
-  gap: 1rem;
+  padding: 1rem;
+  background: var(--background-gradient);
 }
-
 .middle-main h2 {
   color: var(--info-color);
-
+  margin-bottom: 2rem;
 }
 
 /* ================== Branding Groups ================== */
 .branding-group {
+ width: 100%;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  gap: 1.5rem;
+  gap: 1rem;
   border-radius: var(--border-radius);
-  background: var(--background-gradient);
-  box-shadow: 10px 10px 10px var(--tertiary-color);
+box-shadow: 10px 10px 10px var(--tertiary-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
 }
 
 .branding-group:hover {
@@ -46,13 +43,8 @@ main {
       var(--main-color) 40%,
       var(--info-color) 200%,
       var(--tertiary-color) 100%);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
 }
 
-.branding-group h3 {
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
-}
 
 /* ================== Grid Layout for Images ================== */
 .branding-grid {
@@ -104,7 +96,6 @@ main {
 }
 
 .branding-desc p {
-  color: var(--info-color);
   background: transparent;
 }
 
