@@ -28,6 +28,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     border-radius: var(--border-radius);
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
@@ -36,43 +37,31 @@ main {
 
 /* ================== Curriculum Card ================== */
 .curriculum-card {
-    width: clamp(30rem, 60vw, 80rem);
     background: var(--background-gradient);
     border-radius: var(--border-radius);
     box-shadow: 10px 10px 10px var(--tertiary-color);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.curriculum-card:hover {
-    transform: translateY(-5px);
-    box-shadow:
-        0 8px 20px rgba(0, 0, 0, 0.25),
-        0 0 15px var(--info-color),
-        0 0 30px rgba(255, 255, 255, 0.1);
-    background: linear-gradient(135deg,
-            var(--tertiary-color) 0%,
-            var(--main-color) 40%,
-            var(--info-color) 200%,
-            var(--tertiary-color) 100%);
+    width: 100%;
+    max-width: 80rem;
 }
 
 .curriculum-card p {
     background: transparent;
     padding: 1rem 2rem;
 }
-
 /* ================== Medium Screens >= 768px ================== */
 @media screen and (min-width: 768px) {
     .curriculum-grid {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 2rem;
     }
 
     .curriculum-card {
-        flex: 1 1 48%;
-        max-width: 48%;
+        flex: 1 1 50%;
+        max-width:46%;
     }
 }
