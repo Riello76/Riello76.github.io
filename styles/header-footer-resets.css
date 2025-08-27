@@ -19,16 +19,18 @@
   --background-gradient: linear-gradient(135deg, var(--tertiary-color) 0%,
       var(--main-color), var(--tertiary-color) 100%);
   --border-radius: 2.5rem;
+
   /* ==== Heading Sizes ==== */
   --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 7rem);
-  --font-size-h2: clamp(2rem, 1.2rem + 2vw, 5.5rem);
+  --font-size-h2: clamp(2rem, 1.2rem + 2vw, 5rem);
   --font-size-h3: clamp(1.7rem, 1rem + 1.5vw, 4rem);
   --font-size-h4: clamp(1.5rem, 0.9rem + 1vw, 3.5rem);
   --font-size-h5: clamp(1.25rem, 0.8rem + 0.8vw, 2.5rem);
   --font-size-h6: clamp(1.1rem, 0.7rem + 0.5vw, 2rem);
+  --font-size-nav-item: clamp(2rem, 1.5vw, 4rem);
 
   /* ==== Body Text & Links ==== */
-  --font-size-p: clamp(1.3rem, 1rem + 1vw, 3rem);
+  --font-size-p: clamp(1.3rem, 1rem + 1vw, 2.5rem);
   --font-size-a: clamp(1rem, 0.85rem + 0.4vw, 1.8rem);
 
   /* ==== Font Family ==== */
@@ -102,8 +104,23 @@ p {
   background: var(--background-gradient);
   font-weight: bolder;
   text-align: justify;
-  line-height: 1.2;
+  line-height: 1.4;
   padding: 1rem;
+}
+
+/* Ultra-wide screens: 2560px+ */
+@media screen and (min-width: 2560px) {
+  :root {
+    --font-size-h1: 8rem;
+    --font-size-h2: 6rem;
+    --font-size-h3: 5rem;
+    --font-size-h4: 4rem;
+    --font-size-h5: 3rem;
+    --font-size-h6: 2.5rem;
+    --font-size-p: 3rem;
+    --font-size-a: 2rem;
+    --font-size-nav-item: 5rem;
+  }
 }
 
 a {
@@ -653,12 +670,10 @@ picture {
 
 /* ========== Footer Headings ========== */
 .gt-footer h2 {
-  font-weight: bold;
   color: var(--info-color);
   border-radius: var(--border-radius);
   border: 1px solid var(--info-color);
   padding: 0.5rem clamp(1rem, 2vw, 2rem);
-  background: var(--background-gradient);
 }
 
 .gt-footer a:not(.gt-go-to-top) {
@@ -679,6 +694,7 @@ picture {
   color: var(--info-color);
   text-decoration: underline var(--secondary-color);
   transform: scale(0.95);
+  letter-spacing: 0.2rem;
 }
 
 .gt-footer p {
@@ -832,7 +848,7 @@ picture {
   }
 
   .gt-nav-item-text {
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-nav-item);
   }
 
   /* ========== GT Nav Link Styling ========== */

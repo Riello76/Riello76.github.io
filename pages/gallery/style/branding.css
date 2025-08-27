@@ -13,8 +13,12 @@ main {
   gap: 2rem;
   width: 100%;
   padding: 1rem;
-  background: var(--background-gradient);
+  background-image: image-set(url('/images/header-bg.svg'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 .middle-main h2 {
   color: var(--info-color);
   margin-bottom: 2rem;
@@ -22,13 +26,13 @@ main {
 
 /* ================== Branding Groups ================== */
 .branding-group {
- width: 100%;
+  width: 100%;
   max-width: 1400px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   border-radius: var(--border-radius);
-box-shadow: 10px 10px 10px var(--tertiary-color);
+  box-shadow: 10px 10px 10px var(--tertiary-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
 }
 

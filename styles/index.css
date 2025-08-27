@@ -80,7 +80,7 @@
     cursor: pointer;
     animation: CTA 3s infinite ease-in-out;
     overflow: hidden;
-    margin: 1rem 0;
+    margin: 3rem 0;
   }
 
   /* ========== CTA BUTTON TEXT LAYERS ========== */
@@ -130,6 +130,7 @@
     align-items: center;
     grid-template-rows: auto 1fr auto;
     margin: 2rem 0;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
     border: 1px solid var(--info-color);
     box-shadow: 10px 10px 10px var(--tertiary-color);
   }
@@ -142,6 +143,11 @@
     width: clamp(31rem, 48vw, 60rem);
     height: clamp(36rem, 54vw, 70rem);
     overflow: hidden;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+  }
+
+  .gt-carousel-inner:hover {
+    box-shadow: 0px 0px 10px var(--info-color);
   }
 
   /* ========== CAROUSEL ITEM ========== */
@@ -167,8 +173,9 @@
     align-items: center;
     height: clamp(30rem, 35vw, 60rem);
     margin-bottom: clamp(1rem, 15%, 10rem);
+    gap: 2rem;
   }
-  
+
   .tool-card img {
     width: clamp(6.4rem, 8vw, 12.8rem);
     height: clamp(6.4rem, 8vw, 12.8rem);
@@ -176,14 +183,12 @@
   }
 
   .tool-card h3 {
-    width: clamp(10rem, 70%, 30rem);
+    width: clamp(10rem, 70%, 40rem);
   }
 
   .tool-card p {
     flex-grow: 1;
-    margin-bottom: clamp(1rem, 1vw, 4rem);
     background: transparent;
-    line-height: 1;
   }
 
   /* ========== DOWNLOAD BUTTON ========== */
@@ -295,7 +300,7 @@
     width: 100%;
     margin: 2rem 0;
   }
-  
+
   .technical-details div {
     display: flex;
     flex-wrap: wrap;

@@ -13,7 +13,10 @@ main {
   gap: 2rem;
   width: 100%;
   padding: 1rem;
-  background: var(--background-gradient);
+  background-image: image-set(url('/images/header-bg.svg'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .middle-main h2 {
@@ -64,7 +67,7 @@ main {
 }
 
 .gallery-card p {
- background: transparent;
+  background: transparent;
 }
 
 /* ================== Media Container ================== */
