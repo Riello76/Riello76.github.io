@@ -5,19 +5,17 @@ main {
     justify-content: center;
 }
 
-/* ================== Middle Main ================== */
-.middle-main {
+  .middle-main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
     width: 100%;
-    padding: 1rem;
+    overflow: hidden;
     background-image: image-set(url('/images/header-bg.svg'));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+  }
 
 .middle-main h2 {
     color: var(--info-color);
