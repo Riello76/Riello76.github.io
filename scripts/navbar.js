@@ -52,4 +52,15 @@ document.addEventListener("DOMContentLoaded", () => {
       collapse.classList.toggle("show");
     });
   }
+
+  // ===== Sound on hover for dropdown items =====
+  const hoverSound = new Audio("/sounds/hover.mp3");
+  hoverSound.volume = 0.95; // volume soft
+
+  document.querySelectorAll(".gt-dropdown-item").forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      hoverSound.currentTime = 0; // restart sound if already playing
+      hoverSound.play().catch(() => {}); // avoids autoplay restrictions
+    });
+  });
 });
