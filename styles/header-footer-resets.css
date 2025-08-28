@@ -133,6 +133,29 @@ strong {
   color: var(--secondary-color);
 }
 
+/* ================== Divider ================== */
+.with-divider {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.with-divider::before {
+  content: "";
+  position: absolute;
+  top: clamp(-3.5rem, -2vw, -2rem);
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(30rem, 50vw, 90rem);
+  height: clamp(2rem, 3vw, 6rem);
+  background-image: url('/images/divider.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  pointer-events: none;
+  user-select: none;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
 /* ========== Body and HTML ========== */
 body,
 html {

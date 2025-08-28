@@ -1,123 +1,126 @@
-/* ================== Base Layout ================== */
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+@media screen and (min-width: 320px) {
 
-/* ================== Middle Main Section ================== */
-.middle-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
-  padding: 1rem;
-  background-image: image-set(url('/images/header-bg.svg'));
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.middle-main h2 {
-  color: var(--info-color);
-  margin-bottom: 2rem;
-}
-
-/* ================== Gallery Group wrapper ==================*/
-.gallery-group {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: var(--border-radius);
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
-}
-
-/* ================== Gallery Card ==================*/
-.gallery-card {
-  width: clamp(30rem, 60vw, 80rem);
-  background: var(--background-gradient);
-  border-radius: var(--border-radius);
-  box-shadow: 10px 10px 10px var(--tertiary-color);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-card:hover {
-  transform: translateY(-5px);
-  box-shadow:
-    0 8px 20px rgba(0, 0, 0, 0.25),
-    0 0 15px var(--info-color),
-    0 0 30px rgba(255, 255, 255, 0.1);
-  background: linear-gradient(135deg,
-      var(--tertiary-color) 0%,
-      var(--main-color) 40%,
-      var(--info-color) 200%,
-      var(--tertiary-color) 100%);
-}
-
-.gallery-card a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.gallery-card img {
-  width: clamp(12rem, 100%, 60rem);
-  margin: 1rem 0;
-  transition: transform 0.3s ease;
-}
-
-/* ================== Click hint ==================*/
-.click-hint {
-  width: clamp(10rem, 20vw, 30rem);
-  font-size: var(--font-size-p);
-  font-weight: bold;
-  color: var(--info-color);
-  background: var(--background-gradient);
-  padding: 0.3rem 0.6rem;
-  border-radius: var(--border-radius);
-  box-shadow: 0px 0px 5px var(--info-color);
-  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
-}
-
-.click-hint:hover {
-  color: var(--secondary-color);
-  animation: pulse 0.8s ease-in-out infinite alternate;
-  text-shadow: 0 0 8px var(--secondary-color), 0 0 12px var(--secondary-color);
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1.05) rotate(-1deg);
+  /* ================== Base Layout ================== */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  50% {
-    transform: scale(1.15) rotate(2deg);
+  /* ================== Middle Main Section ================== */
+  .middle-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: image-set(url('/images/header-bg.svg'));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
-  100% {
-    transform: scale(1.1) rotate(-2deg);
+  .middle-main h2 {
+    color: var(--info-color);
+    margin-bottom: 2rem;
   }
-}
 
-.gallery-card p {
-  background: transparent;
-}
-
-/* ================== Medium Screens >= 768px ================== */
-@media screen and (min-width: 768px) {
+  /* ================== Gallery Group wrapper ==================*/
   .gallery-group {
-    flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
   }
 
+  /* ================== Gallery Card ==================*/
   .gallery-card {
-    flex: 1;
-    max-width: 32%;
+    width: clamp(30rem, 60vw, 80rem);
+    background: var(--background-gradient);
+    border-radius: var(--border-radius);
+    box-shadow: 10px 10px 10px var(--tertiary-color);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+
+  .gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow:
+      0 8px 20px rgba(0, 0, 0, 0.25),
+      0 0 15px var(--info-color),
+      0 0 30px rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg,
+        var(--tertiary-color) 0%,
+        var(--main-color) 40%,
+        var(--info-color) 200%,
+        var(--tertiary-color) 100%);
+  }
+
+  .gallery-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .gallery-card img {
+    width: clamp(12rem, 100%, 60rem);
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+  }
+
+  /* ================== Click hint ==================*/
+  .click-hint {
+    width: clamp(10rem, 20vw, 30rem);
+    font-size: var(--font-size-p);
+    font-weight: bold;
+    color: var(--info-color);
+    background: var(--background-gradient);
+    padding: 0.3rem 0.6rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 5px var(--info-color);
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  .click-hint:hover {
+    color: var(--secondary-color);
+    animation: pulse 0.8s ease-in-out infinite alternate;
+    text-shadow: 0 0 8px var(--secondary-color), 0 0 12px var(--secondary-color);
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1.05) rotate(-1deg);
+    }
+
+    50% {
+      transform: scale(1.15) rotate(2deg);
+    }
+
+    100% {
+      transform: scale(1.1) rotate(-2deg);
+    }
+  }
+
+  .gallery-card p {
+    background: transparent;
+  }
+
+  /* ================== Medium Screens >= 768px ================== */
+  @media screen and (min-width: 768px) {
+    .gallery-group {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .gallery-card {
+      flex: 1;
+      max-width: 32%;
+    }
+  }
+
 }

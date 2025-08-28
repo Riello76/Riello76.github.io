@@ -299,8 +299,14 @@
     align-items: center;
     width: 100%;
     margin: 2rem 0;
+    background-image: image-set(url('/images/header-bg.svg'));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-
+  .technical-details p{
+    background: transparent;
+  }
   .technical-details div {
     display: flex;
     flex-wrap: wrap;

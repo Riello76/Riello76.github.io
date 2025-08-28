@@ -1,112 +1,135 @@
-/* ================== Base Layout ================== */
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@media screen and (min-width: 320px) {
+
+  /* ================== Base Layout ================== */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* ================== Middle Main Section ================== */
+  .middle-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: image-set(url('/images/header-bg.svg'));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .middle-main h2 {
+    color: var(--info-color);
+    margin-bottom: 2rem;
+  }
+
+  /* ================== Graphic Group Wrapper ================== */
+  .graphic-group {
+    width: clamp(30rem, 60vw, 80rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 10px 10px 10px var(--tertiary-color);
+    background: var(--background-gradient);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.35s ease;
+    will-change: transform, box-shadow, background;
+    /* padding suggerito per evitare contenuti troppo attaccati */
+    padding: 1rem;
+  }
+
+  /* Hover effect for Graphic Group */
+  .graphic-group:hover {
+    transform: translateY(-5px);
+    box-shadow:
+      0 6px 18px rgba(0, 0, 0, 0.2),
+      0 0 10px var(--info-color);
+    background: linear-gradient(135deg,
+        var(--tertiary-color) 0%,
+        var(--main-color) 35%,
+        var(--info-color) 180%,
+        var(--tertiary-color) 100%);
+  }
+
+  /* ================== Paragraph Styling ================== */
+  .graphic-group p {
+    background: transparent;
+  }
+
+  /* ================== Grid for Icons and Buttons ================== */
+  .graphic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+  }
+
+  /* ================== Icons and Buttons ================== */
+  .graphic-grid img {
+    width: clamp(4rem, 5vw, 10rem);
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: var(--border-radius);
+    transition: transform 0.25s ease;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    will-change: transform, box-shadow;
+  }
+
+  /* ================== Video Section ================== */
+  .video-grid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .video-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background: var(--background-gradient);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    will-change: transform, box-shadow;
+  }
+
+  .video-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+  }
+
+  .video-img.large {
+    display: none;
+  }
+
+  .video-card a {
+    margin: 0.5rem 0;
+    color: var(--info-color);
+    font-weight: bold;
+    font-size: var(--font-size-p);
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+  }
+
+  .video-card a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }
 }
 
-/* ================== Middle Main Section ================== */
-.middle-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
-  padding: 1rem;
-  background-image: image-set(url('/images/header-bg.svg'));
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.middle-main h2 {
-  color: var(--info-color);
-  margin-bottom: 2rem;
-}
-
-/* ================== Graphic Group Wrapper ================== */
-.graphic-group {
-  width: clamp(30rem, 60vw, 80rem);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  border-radius: var(--border-radius);
-  box-shadow: 10px 10px 10px var(--tertiary-color);
-  background: var(--background-gradient);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.35s ease;
-  will-change: transform, box-shadow, background;
-}
-
-/* Hover effect for Graphic Group */
-.graphic-group:hover {
-  transform: translateY(-5px);
-  box-shadow:
-    0 6px 18px rgba(0, 0, 0, 0.2),
-    0 0 10px var(--info-color);
-  background: linear-gradient(135deg,
-      var(--tertiary-color) 0%,
-      var(--main-color) 35%,
-      var(--info-color) 180%,
-      var(--tertiary-color) 100%);
-}
-
-/* ================== Paragraph Styling ================== */
-.graphic-group p {
-  background: transparent;
-}
-
-/* ================== Grid for Icons and Buttons ================== */
-.graphic-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-  justify-items: center;
-}
-
-/* ================== Icons and Buttons ================== */
-.graphic-grid img {
-  width: clamp(4rem, 5vw, 10rem);
-  height: auto;
-  object-fit: cover;
-  display: block;
-  border-radius: var(--border-radius);
-  transition: transform 0.25s ease;
-}
-
-/* ================== Video Section ================== */
-.video-grid {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 1rem 0;
-}
-
-.video-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  background: var(--background-gradient);
-}
-
-.video-card img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: var(--border-radius);
-}
-
-.video-img.large {
-  display: none;
-}
-
+/* ================== Video responsive breakpoint ================== */
 @media screen and (min-width: 1440px) {
-
   .video-img.large {
     display: block;
   }
@@ -114,25 +137,4 @@ main {
   .video-img.standard {
     display: none;
   }
-}
-
-.video-card a {
-  margin: 0.5rem 0;
-  color: var(--info-color);
-  font-weight: bold;
-  font-size: var(--font-size-p);
-  text-decoration: none;
-  transition: color 0.2s ease, text-decoration 0.2s ease;
-}
-
-.video-card a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
-}
-
-/* ================== GPU Optimization ================== */
-.graphic-group,
-.graphic-grid img {
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
 }
