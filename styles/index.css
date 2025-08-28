@@ -198,8 +198,9 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: clamp(1.2rem, 1vw + 0.5rem, 2.5rem);
-    padding: clamp(0.5rem, 0.7vw, 1rem);
+    padding: clamp(0.5rem, 0.7vw, 0.5rem);
     width: clamp(8rem, 12vw, 20rem);
+    height: clamp(2.5rem, 3vw, 5rem);
     background: var(--background-gradient);
     color: var(--info-color);
     border-radius: var(--border-radius);
@@ -255,7 +256,6 @@
     border-radius: var(--border-radius-bigger);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: rem;
   }
 
   .gt-carousel-control-prev-icon {
@@ -304,9 +304,11 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-  .technical-details p{
+
+  .technical-details p {
     background: transparent;
   }
+
   .technical-details div {
     display: flex;
     flex-wrap: wrap;
