@@ -137,6 +137,7 @@ strong {
 .with-divider {
   position: relative;
   margin: 2rem 0;
+  padding: 2rem;
   display: block;
 }
 
@@ -162,6 +163,7 @@ strong {
   width: clamp(10rem, 20vw, 30rem);
   font-size: var(--font-size-p);
   font-weight: bold;
+  text-align: center;
   color: var(--info-color);
   background: var(--background-gradient);
   padding: 0.3rem 0.6rem;
@@ -301,7 +303,7 @@ picture {
   flex-shrink: 0;
   font-weight: bold;
   color: #ffcc00;
-  font-size: clamp(1rem, 1vw + 1rem, 2rem);
+  font-size: clamp(1rem, 1vw + 1rem, 3rem);
 }
 
 

@@ -73,28 +73,6 @@
     background: transparent;
   }
 
-  /* ================== Click Hint / Links ================== */
-  .project-link,
-  .click-hint {
-    width: clamp(10rem, 20vw, 30rem);
-    font-size: var(--font-size-p);
-    font-weight: bold;
-    text-align: center;
-    color: var(--info-color);
-    background: var(--background-gradient);
-    padding: 0.3rem 0.6rem;
-    margin-bottom: 2rem;
-    border-radius: var(--border-radius);
-    box-shadow: 0px 0px 5px var(--info-color);
-    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
-  }
-
-  .project-link:hover,
-  .click-hint:hover {
-    color: var(--secondary-color);
-    text-shadow: 0 0 0.5rem var(--secondary-color), 0 0 0.8rem var(--secondary-color);
-    animation: pulse 0.8s ease-in-out infinite alternate;
-  }
 
   /* ================== Pulse Animation ================== */
   @keyframes pulse {
@@ -111,19 +89,6 @@
     }
   }
 
-  /* ================== Old CV Image Special ================== */
-  .old-cv-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .old-cv-moon {
-    width: clamp(20rem, 30vw, 30rem);
-    height: auto;
-    border-radius: var(--border-radius);
-  }
 }
 
 /* ================== Projects Grid Breakpoints ================== */

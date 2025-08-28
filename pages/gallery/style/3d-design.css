@@ -34,17 +34,12 @@
 
   /* ================== Card ================== */
   .gallery-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: clamp(30rem, 80%, 80rem);
-    max-width: 90rem;
-    box-shadow: 10px 10px 10px var(--tertiary-color);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    background: var(--background-gradient);
-    padding: 0.5rem;
+      width: clamp(30rem, 60vw, 80rem);
+        background: var(--background-gradient);
+        border-radius: var(--border-radius);
+        box-shadow: 10px 10px 10px var(--tertiary-color);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .gallery-card:hover {
