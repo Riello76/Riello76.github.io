@@ -320,6 +320,10 @@
 /* ========== MEDIA QUERY: TABLET / SMALL DESKTOP (768px) ========== */
 @media screen and (min-width:768px) {
 
+  /* ========== Space between About Me and Technical Details sections ========== */
+  .about-me,.technical-details{
+   gap: 4rem;
+  }
   /* ========== TECHNICAL IMAGE GRID ========== */
   .technical-img-div img {
     width: 10rem;
@@ -330,7 +334,6 @@
 
 /* ========== MEDIA QUERY: DESKTOP (1024px) ========== */
 @media screen and (min-width:1024px) {
-
 
   /* ========== ABOUT ME TEXT WIDTH ========== */
   .about-me p {

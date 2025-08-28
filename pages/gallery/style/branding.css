@@ -1,4 +1,4 @@
-/* ================== Base Layout ================== */
+/* ================== Base Layout (Mobile First: 320px) ================== */
 @media screen and (min-width: 320px) {
   main {
     display: flex;
@@ -26,10 +26,12 @@
   /* ================== Branding Groups ================== */
   .branding-group {
     width: 100%;
-    max-width: 1400px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-around;
     gap: 1rem;
+    margin-bottom: 2rem;
     border-radius: var(--border-radius);
     box-shadow: 10px 10px 10px var(--tertiary-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
@@ -48,65 +50,27 @@
         var(--tertiary-color) 100%);
   }
 
-  /* ================== Grid Layout for Images ================== */
-  .branding-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    width: 100%;
-  }
-
-  @media screen and (min-width: 768px) {
-    .branding-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media screen and (min-width: 1024px) {
-    .branding-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  /* ================== Individual Image Cards ================== */
-  .branding-item {
+  /* ================== Branding Images Container ================== */
+  .branding-images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
   }
-
-  /* Portrait Images */
-  .img-portrait {
-    max-width: clamp(30rem, 20vw, 40rem);
-    height: auto;
-    margin: 0.5rem 0;
+  
+  /* ================== Individual Images ================== */
+  .branding-images img {
+    width: clamp(20rem, 30vw, 70rem);
   }
-
-  /* Landscape Images */
-  .img-landscape {
-    max-width: clamp(30rem, 60vw, 90rem);
-    height: auto;
-    margin: 0.5rem 0;
-  }
-
   /* ================== Description Card ================== */
   .branding-desc {
     width: 100%;
   }
 
   .branding-desc p {
+    text-align: center;
     background: transparent;
-  }
-
-  /* ================== Disable AOS animations on small screens ================== */
-  @media screen and (max-width: 768px) {
-    [data-aos] {
-      opacity: 1;
-      transform: none;
-      transition: none;
-      animation: none;
-    }
   }
 }
