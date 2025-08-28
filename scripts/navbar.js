@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // ===== Audio setup =====
-  const hoverSound = new Audio("/sounds/hover.mp3"); // path dal root del server
+  const hoverSound = new Audio("/sounds/hover3.mp3"); // path dal root del server
   hoverSound.volume = 1; // più udibile
   let audioUnlocked = false;
 
