@@ -37,7 +37,6 @@ main h2 {
 
 /* Hover effect for Graphic Group */
 .graphic-group:hover {
-  transform: translateY(-5px);
   box-shadow:
     0 6px 18px rgba(0, 0, 0, 0.2),
     0 0 10px var(--info-color);
