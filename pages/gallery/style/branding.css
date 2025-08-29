@@ -61,7 +61,7 @@
   
   /* ================== Individual Images ================== */
   .branding-images img {
-    width: clamp(20rem, 30vw, 80rem);
+    width: clamp(20rem, 30vw, 70rem);
   }
   /* ================== Description Card ================== */
   .branding-desc {
