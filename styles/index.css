@@ -198,7 +198,7 @@
     transform: translateX(-50%);
     font-size: clamp(1.2rem, 1vw + 0.5rem, 3rem);
     padding: clamp(0.5rem, 0.7vw, 0.5rem);
-    width: clamp(8rem, 15vw, 30rem);
+    width: clamp(8rem, 15vw, 25rem);
     height: clamp(2.5rem, 3vw, 5.5rem);
     background: var(--background-gradient);
     color: var(--info-color);
@@ -324,7 +324,13 @@
   .technical-details {
     gap: 4rem;
   }
-
+  
+  /* ========== Paragraphs ========== */
+  
+  .about-me p,
+  .technical-details p {
+    width: 80%;
+  }
   /* ========== TECHNICAL IMAGE GRID ========== */
   .technical-img-div img {
     width: 10rem;
@@ -333,37 +339,6 @@
   }
 }
 
-/* ========== MEDIA QUERY: DESKTOP (1024px) ========== */
-@media screen and (min-width:1024px) {
-
-  /* ========== ABOUT ME TEXT WIDTH ========== */
-  .about-me p {
-    width: 100%;
-  }
-
-  /* ========== Paragraphs ========== */
-
-  .tool-card p {
-    width: 50rem;
-  }
-
-  .about-me p,
-  .technical-details p {
-    width: 80%;
-  }
-}
-
-/* ========== MEDIA QUERY: LARGE DESKTOP / WIDESCREEN (1440px) ========== */
-@media screen and (min-width:1440px) {
-
-  /* ========== MIDDLE MAIN ALIGNMENT ========== */
-  .middle-main {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-}
 
 /* ========== MEDIA QUERY: ULTRA-WIDE SCREENS (2560px) ========== */
 @media screen and (min-width:2560px) {
@@ -379,9 +354,6 @@
     height: 90rem;
   }
 
-  .tool-card p {
-    width: 60rem;
-  }
 }
 
 /* ========== DISABLE AOS ANIMATIONS ON SMALL SCREENS ========== */

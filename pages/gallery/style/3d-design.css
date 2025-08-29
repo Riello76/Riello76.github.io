@@ -87,7 +87,7 @@
     }
 
     .gallery-card {
-      width: clamp(20rem, 45%, 60rem);
+      width: clamp(20rem, 45%, 90rem);
     }
   }
 

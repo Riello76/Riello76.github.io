@@ -63,6 +63,7 @@
     .curriculum-card p {
         background: transparent;
         padding: 1rem 2rem;
+        margin: 3rem 0;
     }
 
     /* ================== Medium Screens >= 768px ================== */

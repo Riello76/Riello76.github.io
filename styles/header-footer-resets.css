@@ -137,7 +137,6 @@ strong {
 .with-divider {
   position: relative;
   margin: 2rem 0;
-  padding: 2rem;
   display: block;
 }
 
@@ -685,9 +684,10 @@ picture {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: clamp(1rem, 1vw, 2rem);
+  gap: clamp(5rem, 1vw, 2rem);
   width: 100%;
   max-width: clamp(90rem, 80vw, 120rem);
+  margin-bottom: 5rem;
 }
 
 /* ========== Footer Column ========== */
@@ -696,10 +696,7 @@ picture {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: clamp(1rem, 2vw, 3rem);
-  gap: clamp(1rem, 2vw, 2rem);
   width: 100%;
-  margin: 0 0 5rem 0;
 }
 
 .gt-footer-about {
@@ -1073,6 +1070,10 @@ picture {
     }
   }
 
+  .gt-go-to-top {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
 /* ========== DESKTOP (>= 769px) OVERRIDE ========== */
