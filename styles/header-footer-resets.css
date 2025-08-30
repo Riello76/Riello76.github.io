@@ -1003,15 +1003,7 @@ picture {
 /* ========== LARGE DESKTOP (>= 1440px) ========== */
 @media screen and (min-width: 1440px) {
 
-  @keyframes ticker {
-    0% {
-      transform: translateX(60%);
-    }
 
-    100% {
-      transform: translateX(-100%);
-    }
-  }
 
   /* ========== SYMBOL ICONS FONT SIZE & UNSELECTABLE ========== */
   .symbol.left,
