@@ -318,35 +318,18 @@ picture {
   font-size: clamp(1rem, 1vw + 1rem, 3rem);
 }
 
-
 .gt-news-container {
   flex: 1;
   overflow: hidden;
   position: relative;
 }
 
-.gt-news-container div {
-  display: flex;
-  align-items: center;
-  margin-right: 3rem;
-}
-
-.gt-news-item-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.gt-pusher {
-  width: clamp(1.5rem, 3vw, 7rem);
-  flex-shrink: 0;
-}
-
 .gt-news-ticker {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   white-space: nowrap;
   will-change: transform;
-  animation: ticker 20s linear infinite;
+  animation: ticker 30s linear infinite;
 }
 
 .gt-news-item::before {
@@ -364,7 +347,6 @@ picture {
     transform: translateX(-100%);
   }
 }
-
 /* ========== SYMBOL ICONS STYLE ========== */
 .symbol.left,
 .symbol.right {

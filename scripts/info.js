@@ -3,20 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!ticker) return;
 
   const container = ticker.parentElement;
+  let start = container.offsetWidth; // Start from the right edge
   const speed = 50; // pixels per second
-  let lastTime = null;
-  let start = container.offsetWidth;
 
   function animate(time) {
-    if (!lastTime) lastTime = time;
-    const delta = (time - lastTime) / 1000; // seconds since last frame
-    lastTime = time;
+    start -= speed / 60; // Move left based on speed (approx. 60fps)
 
-    // Move based on real elapsed time, not fixed frame count
-    start -= speed * delta;
-
+    // Reset position when ticker scrolls completely off the left
     if (start <= -ticker.scrollWidth) {
-      start = container.offsetWidth;
+      start = container.offsetWidth; // Jump back to the right
     }
 
     ticker.style.transform = `translateX(${start}px)`;
