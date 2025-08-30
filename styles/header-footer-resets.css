@@ -272,6 +272,7 @@ picture {
 /* ========== LOGO HOVER EFFECT ========== */
 .logo:hover {
   animation: glowPulse 1.5s infinite alternate;
+  transform: scale(1.05);
 }
 @keyframes glowPulse {
 
