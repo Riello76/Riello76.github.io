@@ -292,7 +292,7 @@ picture {
   align-items: center;
   color: var(--info-color);
   padding: clamp(0.3rem, 0.5vw, 1rem) clamp(0.5rem, 1vw, 2rem);
-  font-size: clamp(1rem, 1vw + 0.8rem, 1.8rem);
+  font-size: var(--font-size-p);
   font-weight: bolder;
   width: 95%;
 }
@@ -324,16 +324,17 @@ picture {
 }
 
 .gt-pusher {
-  width: clamp(2rem, 2vw + 1rem, 5rem);
+  width: clamp(1.5rem, 3vw, 7rem);
+  flex-shrink: 0;
 }
 
 .gt-news-ticker {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   white-space: nowrap;
-  animation: ticker 70s linear infinite;
-  font-size: clamp(1.2rem, 1vw + 0.5rem, 2.5rem);
+  will-change: transform;
+  animation: ticker 20s linear infinite;
 }
-
 
 .gt-news-item::before {
   content: "❖ ";
@@ -343,7 +344,7 @@ picture {
 
 @keyframes ticker {
   0% {
-    transform: translateX(20%);
+    transform: translateX(100%);
   }
 
   100% {
@@ -871,14 +872,9 @@ picture {
 /* ========== MEDIA QUERY: DESKTOP & TABLET NAVBAR STYLING ========== */
 @media screen and (min-width: 768px) {
 
-  @keyframes ticker {
-    0% {
-      transform: translateX(40%);
-    }
-
-    100% {
-      transform: translateX(-100%);
-    }
+  /* ========== GT News Ticker Animation SPEED ADJUSTMENT ========== */
+  .gt-news-ticker {
+    animation: ticker 30s linear infinite;
   }
 
   /* ========== GT Navbar Container ========== */
@@ -998,15 +994,6 @@ picture {
 
 /* ========== LARGE DESKTOP (>= 1024px) ========== */
 @media screen and (min-width: 1024px) {
-  @keyframes ticker {
-    0% {
-      transform: translateX(50%);
-    }
-
-    100% {
-      transform: translateX(-100%);
-    }
-  }
 
   .gt-footer p {
     width: 80%;
@@ -1072,16 +1059,6 @@ picture {
 
 /* ========== EXTRA LARGE DESKTOP (>= 2560px) ========== */
 @media screen and (min-width: 2560px) {
-  @keyframes ticker {
-    0% {
-      transform: translateX(90%);
-    }
-
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-
   .gt-go-to-top {
     width: 10rem;
     height: 10rem;
