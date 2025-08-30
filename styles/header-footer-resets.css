@@ -312,6 +312,21 @@ picture {
   position: relative;
 }
 
+.gt-news-container div {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.gt-news-item-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.gt-pusher {
+  width: clamp(2rem, 2vw + 1rem, 5rem);
+}
+
 .gt-news-ticker {
   display: inline-block;
   white-space: nowrap;
@@ -319,9 +334,6 @@ picture {
   font-size: clamp(1.2rem, 1vw + 0.5rem, 2.5rem);
 }
 
-.gt-news-item {
-  margin-right: clamp(2rem, 2vw + 1rem, 6rem);
-}
 
 .gt-news-item::before {
   content: "❖ ";
