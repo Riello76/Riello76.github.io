@@ -345,13 +345,13 @@
 
   .gt-carousel-inner {
     width: 70rem;
-    height: 90rem;
+    height: 80rem;
     border: 1px solid var(--info-color);
   }
 
   #gt-carousel {
     width: 70rem;
-    height: 90rem;
+    height: 80rem;
   }
 
 }
