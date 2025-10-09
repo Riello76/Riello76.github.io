@@ -22,7 +22,7 @@
     <meta property="og:url" content="https://riello76.github.io/pages/projects/projects.html" />
 
     <!-- ========== Title ========== -->
-    <title>Gaspare Tocci's Projects</title>
+    <title>Gaspare Tocci's Data Technician Projects</title>
 
     <!-- ========== Preconnect (Performance) ========== -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
@@ -34,27 +34,121 @@
 
     <!-- ========== CSS STYLES ========== -->
 
-    <link rel="stylesheet" href="/styles/projects.css" />
+    <link rel="stylesheet" href="/styles/data-techician.css" />
     <link rel="stylesheet" href="/styles/header-footer-resets.css" />
 
     <!-- ========== Favicon ========== -->
     <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
-    <!-- Header with Navigation (Empty Structure) -->
+    <!-- ========== HEADER SECTION ========== -->
     <header>
-        <!-- Placeholder for Logo and Hero Image -->
-        <!-- Example: <img src="logo.png" alt="Website Logo"> -->
-        <!-- Example: <img src="hero-image.jpg" alt="Hero Image"> -->
-        
-        <nav>
-            <!-- Navigation Links -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    
+        <!-- ========== TOP HEADER ========== -->
+        <div class="top-header">
+            <!-- ========== Logo ========== -->
+            <a href="/index.html" title="Go to Homepage">
+                <img class="logo" id="top" src="/images/logo.svg" alt="Gaspare Tocci's Logo" title="Gaspare Tocci's Logo"
+                    width="120" height="60">
+            </a>
+    
+            <!-- ========== Title ========== -->
+            <h1 class="title" title="Page's Title">
+                <span class="symbol left">❖</span>
+                Every problem has its <span class="highlight">creative solution</span>
+                <span class="symbol right">❖</span>
+            </h1>
+    
+    
+        </div>
+    
+        <!-- ========== NAVBAR CONTAINER ========== -->
+        <nav class="gt-navbar" aria-label="Main Navigation">
+            <div class="gt-container-fluid">
+    
+                <!-- ========== TOGGLER (HAMBURGER BUTTON) ========== -->
+                <button class="gt-navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="gt-navbar-toggler-icon">
+                        <span class="gt-bar"></span>
+                        <span class="gt-bar"></span>
+                        <span class="gt-bar"></span>
+                    </span>
+                </button>
+    
+                <!-- ========== MAIN MENU CONTAINER (COLLAPSIBLE) ========== -->
+                <div class="gt-navbar-collapse" id="navbarSupportedContent">
+                    <!-- ========== NAV ITEMS LIST ========== -->
+                    <ul class="gt-navbar-nav">
+    
+                        <!-- ========== HOME LINK (NO DROPDOWN) ========== -->
+                        <li class="gt-nav-item">
+                            <a class="gt-nav-link active" href="/index.html">
+                                <span class="gt-nav-item-text">HOME</span>
+                            </a>
+                        </li>
+    
+                        <!-- ========== CV DROPDOWN MENU ========== -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
+                                <span class="gt-nav-item-text">CV</span>
+                                <span class="gt-arrow"></span>
+                            </a>
+                            <!-- ========== CV DROPDOWN ITEMS ========== -->
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/curriculum/curriculum.html">Main Page</a></li>
+                                <li><a class="gt-dropdown-item" href="/files/Gaspare-Tocci-CV-IT.pdf" download>Download
+                                        -PDF-</a></li>
+                                <li><a class="gt-dropdown-item" href="/files/Gaspare-Tocci-CV-IT.doc" download>Download
+                                        -DOC-</a></li>
+                            </ul>
+                        </li>
+    
+                        <!-- ========== GALLERY DROPDOWN MENU ========== -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
+                                <span class="gt-nav-item-text">GALLERY</span>
+                                <span class="gt-arrow"></span>
+                            </a>
+                            <!-- ========== GALLERY DROPDOWN ITEMS ========== -->
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/gallery.html">Main Page</a></li>
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/branding.html">Branding</a></li>
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/graphics.html">Graphics</a></li>
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/3d-design.html">3D Design</a>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <!-- ========== PROJECTS DROPDOWN MENU ========== -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
+                                <span class="gt-nav-item-text">PROJECTS</span>
+                                <span class="gt-arrow"></span>
+                            </a>
+                            <!-- ========== PROJECTS DROPDOWN ITEMS ========== -->
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/projects/projects.html">Main Page</a></li>
+                                <li><a class="gt-dropdown-item" href="/pages/projects/pages/glastonbury/">Glastonbury</a>
+                                </li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/old-portfolio.html">Old
+                                        Portfolio</a></li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/homepages/heat-wave/index-heat-wave.html">Heat
+                                        Wave</a>
+                                </li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/homepages/streamer/index-streamer.html">Streamer</a>
+                                </li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/homepages/wada-solutions/index.html">WADA
+                                        Solutions</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     
