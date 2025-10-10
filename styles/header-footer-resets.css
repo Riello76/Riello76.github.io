@@ -259,7 +259,7 @@ picture {
 
 /* ========== LOGO STYLE ========== */
 .logo {
-  width: clamp(8rem, calc(1rem + 13vw), 35rem);
+  width: clamp(10rem, calc(1rem + 13vw), 35rem);
   height: auto;
   border-radius: 100%;
   animation: bounceInOpacity 3s ease-out, pulseShadow 2s infinite ease-in-out;

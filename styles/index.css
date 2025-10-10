@@ -130,7 +130,7 @@
     align-items: center;
     grid-template-rows: auto 1fr auto;
     margin: 5rem 0;
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    border-radius: var(--border-radius);
     border: 1px solid var(--info-color);
     box-shadow: 10px 10px 10px var(--tertiary-color);
   }
@@ -143,7 +143,7 @@
     width: clamp(31rem, 48vw, 60rem);
     height: clamp(36rem, 54vw, 70rem);
     overflow: hidden;
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    border-radius: var(--border-radius);
   }
 
   .gt-carousel-inner:hover {
@@ -156,7 +156,6 @@
     display: none;
     width: 100%;
     height: 100%;
-    position: relative;
   }
 
   .gt-carousel-item.gt-active {
@@ -184,62 +183,41 @@
   .tool-card h3 {
     width: clamp(10rem, 70%, 40rem);
   }
-
+  .tool-card a{
+    font-size: var(--h3-font-size);
+    text-decoration: none;
+    color: var(--info-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
   .tool-card p {
     flex-grow: 1;
     background: transparent;
   }
 
-  /* ========== DOWNLOAD BUTTON ========== */
-  .download-btn {
+  /* ========== CAROUSEL CONTROLS ========== */
+  .gt-carousel-controls{
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: clamp(1.2rem, 1vw + 0.5rem, 3rem);
-    padding: clamp(0.5rem, 0.7vw, 0.5rem);
-    width: clamp(8rem, 15vw, 25rem);
-    height: clamp(2.5rem, 3vw, 5.5rem);
-    background: var(--background-gradient);
-    color: var(--info-color);
-    border-radius: var(--border-radius);
-    box-shadow: 0px 1px 5px var(--info-color);
-    font-weight: bold;
-    text-align: center;
-    transition: 0.4s;
-    margin: 0.5rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: clamp(4rem, 4vw, 20rem);
   }
-
-  .download-btn:hover {
-    transform: translateX(-50%) scale(0.95);
-    box-shadow: 0px 3px 5px var(--secondary-color);
-    color: var(--secondary-color);
-  }
-
-  /* ========== CAROUSEL CONTROLS ========== */
   .gt-carousel-control-prev,
   .gt-carousel-control-next {
-    position: absolute;
-    bottom: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: clamp(3rem, 5vw, 7rem);
-    height: clamp(2.5rem, 3vw, 5rem);
+    width: clamp(4rem, 5vw, 7rem);
+    height: clamp(3rem, 3vw, 5rem);
     background: var(--background-gradient);
     border-radius: var(--border-radius);
     box-shadow: 0px 1px 5px var(--info-color);
     z-index: 1000;
     cursor: pointer;
-    margin: 0 0 0.5rem 0;
-  }
-
-  .gt-carousel-control-prev {
-    left: clamp(6rem, 12vw, 7rem);
-  }
-
-  .gt-carousel-control-next {
-    right: clamp(6rem, 12vw, 7rem);
   }
 
   .gt-carousel-control-next:hover,
@@ -250,8 +228,8 @@
 
   .gt-carousel-control-prev-icon,
   .gt-carousel-control-next-icon {
-    width: clamp(1.4rem, 1.7vw, 4rem);
-    height: clamp(1.4rem, 1.7vw, 4rem);
+    width: clamp(2rem, 1.7vw, 4rem);
+    height: clamp(2rem, 1.7vw, 4rem);
     border-radius: var(--border-radius-bigger);
     background-size: cover;
     background-repeat: no-repeat;
