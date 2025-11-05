@@ -164,13 +164,23 @@
     <main>
         <section id="section1">
             <!-- Placeholder for Section 1 Content -->
-            <h2>Section 1</h2>
+            <h2>Excel</h2>
+        <div
+            style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; padding-bottom: 40%; height: 0; overflow: hidden;margin: 5rem auto;border-radius: 2rem;">
+            <iframe
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR-SwnZbZo-Kilxrv7LbzTfh91RoT2xrErt9Z6dbjJzCUQ2g_TR8xcKQLNS5zY6g/pubhtml?widget=true&amp;headers=false"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
             <p>This is section 1 content.</p>
         </section>
 
+
+        <!-- Tableau Dashboard Section -->
         <section id="section2">
             <h2>Tableau Dashboard</h2>
-        
             <div class="tableauPlaceholder" id="viz1762361703495"
                 style="position: relative; width: 100%; max-width: 1200px; margin: 5rem auto;border-radius: 2rem;">
                 <noscript>
@@ -198,7 +208,7 @@
                     <param name="filter" value="publish=yes" />
                 </object>
             </div>
-        
+
             <script type="text/javascript">
                 var divElement = document.getElementById('viz1762361703495');
                 var vizElement = divElement.getElementsByTagName('object')[0];
@@ -210,48 +220,65 @@
                     vizElement.style.height = height + 'px';
                 }
 
-                resizeViz();
-                window.addEventListener('resize', resizeViz);
-
                 var scriptElement = document.createElement('script');
                 scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                scriptElement.onload = function () {
+                    resizeViz();
+                    window.addEventListener('resize', resizeViz);
+                };
                 vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
             </script>
-        
-            <p>This is section 2 content.</p>
+
+            <p>Discover how life expectancy, population trends, and health indicators connect worldwide through
+                interactive country
+                filters and dynamic visual insights. Use the country filter to explore trends over time, compare
+                population by
+                gender, and analyze life expectancy against BMI across continents. This Global Health Dashboard allows
+                you to
+                interactively explore multiple dimensions of health data in a single, easy-to-use view.</p>
+
+
         </section>
 
-       ction id="section3">
-        <h2>Power BI Dashboard</h2>
-    
-        <!-- Container responsive -->
-        <div id="powerbi-container"
-            style="position: relative; width: 100%; max-width: 1200px; margin: 5rem auto; padding-bottom: 40%; height: 0; overflow: hidden; border-radius: 2rem;">
-            <iframe class="sales" title="data_sales"
-                src="https://app.powerbi.com/view?r=eyJrIjoiNzBhOThjOWYtNDgxOC00NmQyLTk5MzUtMGU4MTllNmIxZTc5IiwidCI6IjNlYTdjMTI4LWM2MDEtNDQ3OS1hMDAzLWUxNGQwMGMwYjVjYiJ9&:layout=mobile"
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" frameborder="0"
-                allowFullScreen="true">
-            </iframe>
-        </div>
-    
-        <p>This is section 3 content.</p>
-    </section>
-    
-    <script>
-        // ✅ Script per adattare dinamicamente il padding
-        const powerbiDiv = document.getElementById('powerbi-container');
+        <!-- Power BI Dashboard Section -->
+        <section id="section3">
+            <h2>Power BI Dashboard</h2>
+            <!-- Container responsive -->
+            <div id="powerbi-container"
+                style="position: relative; width: 100%; max-width: 1200px; margin: 5rem auto; padding-bottom: 40%; height: 0; overflow: hidden; border-radius: 2rem;">
+                <iframe class="sales" title="data_sales"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiNzBhOThjOWYtNDgxOC00NmQyLTk5MzUtMGU4MTllNmIxZTc5IiwidCI6IjNlYTdjMTI4LWM2MDEtNDQ3OS1hMDAzLWUxNGQwMGMwYjVjYiJ9&:layout=mobile"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" frameborder="0"
+                    allowFullScreen="true">
+                </iframe>
+            </div>
+            <p>This Power BI dashboard visualizes sales data, highlighting key metrics such as total revenue, profit
+                trends, and
+                top-performing regions and products. Interactive filters allow you to drill down by region, product
+                category, or
+                time period, helping you identify patterns, track performance, and make informed, data-driven business
+                decisions.
+            </p>
 
-        function adjustPowerBI() {
-            if (window.innerWidth <= 768) {
-                powerbiDiv.style.paddingBottom = '100%';
-            } else {
-                powerbiDiv.style.paddingBottom = '40%';
+
+        </section>
+
+        <script>
+            // ✅ Script per adattare dinamicamente il padding
+            const powerbiDiv = document.getElementById('powerbi-container');
+
+            function adjustPowerBI() {
+                if (window.innerWidth <= 768) {
+                    powerbiDiv.style.paddingBottom = '100%';
+                } else {
+                    powerbiDiv.style.paddingBottom = '40%';
+                }
             }
-        }
 
-        adjustPowerBI();
-        window.addEventListener('resize', adjustPowerBI);
-    </script>
+            adjustPowerBI();
+            window.addEventListener('resize', adjustPowerBI);
+        </script>
 
 
 
