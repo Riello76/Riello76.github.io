@@ -172,7 +172,7 @@
             <h2>Tableau Dashboard</h2>
         
             <div class="tableauPlaceholder" id="viz1762361703495"
-                style="position: relative; width: 100%; max-width: 1200px; margin: 5rem auto;">
+                style="position: relative; width: 100%; max-width: 1200px; margin: 5rem auto;border-radius: 2rem;">
                 <noscript>
                     <a href="#">
                         <img alt="Global Health Insights"
@@ -221,21 +221,38 @@
             <p>This is section 2 content.</p>
         </section>
 
-        <section id="section3">
-            <h2>Power BI Dashboard</h2>
-
-            <!-- Container responsive -->
-        <div class="powerbi-container"
-            style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; padding-bottom: 40%; height: 0; overflow: hidden;margin: 5rem auto;">
+       ction id="section3">
+        <h2>Power BI Dashboard</h2>
+    
+        <!-- Container responsive -->
+        <div id="powerbi-container"
+            style="position: relative; width: 100%; max-width: 1200px; margin: 5rem auto; padding-bottom: 40%; height: 0; overflow: hidden; border-radius: 2rem;">
             <iframe class="sales" title="data_sales"
                 src="https://app.powerbi.com/view?r=eyJrIjoiNzBhOThjOWYtNDgxOC00NmQyLTk5MzUtMGU4MTllNmIxZTc5IiwidCI6IjNlYTdjMTI4LWM2MDEtNDQ3OS1hMDAzLWUxNGQwMGMwYjVjYiJ9&:layout=mobile"
                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" frameborder="0"
                 allowFullScreen="true">
             </iframe>
         </div>
+    
+        <p>This is section 3 content.</p>
+    </section>
+    
+    <script>
+        // ✅ Script per adattare dinamicamente il padding
+        const powerbiDiv = document.getElementById('powerbi-container');
 
-            <p>This is section 3 content.</p>
-        </section>
+        function adjustPowerBI() {
+            if (window.innerWidth <= 768) {
+                powerbiDiv.style.paddingBottom = '100%';
+            } else {
+                powerbiDiv.style.paddingBottom = '40%';
+            }
+        }
+
+        adjustPowerBI();
+        window.addEventListener('resize', adjustPowerBI);
+    </script>
+
 
 
     </main>
