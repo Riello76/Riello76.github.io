@@ -1,24 +1,17 @@
-/* Responsive Iframe CSS */
-/* ========================= */
-
-/* Outer wrapper */
-#Iframe-Liason-Sheet {
-  max-width: 1200px;
-  width: 100%;
-  margin: 3rem auto;
-  overflow: hidden;
-  border-radius: 1rem;
+.center-block-horiz {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-/* Inner wrapper for responsive scaling */
+/* Responsive wrapper */
 .responsive-wrapper {
   position: relative;
+  width: 100%;
   height: 0;
-  -webkit-overflow-scrolling: touch;
-  overflow: auto;
+  overflow: hidden;
 }
 
-/* Iframe itself */
+/* iframe fills wrapper */
 .responsive-wrapper iframe {
   position: absolute;
   top: 0;
@@ -28,33 +21,26 @@
   border: none;
 }
 
-/* Aspect ratios */
-/* 16:9 (typical landscape) */
-.responsive-wrapper-wxh-16x9 {
-  padding-bottom: 56.25%;
-  /* 9/16 = 0.5625 */
-}
-
-/* 4:3 (good for Google Sheets or documents) */
-.responsive-wrapper-wxh-4x3 {
-  padding-bottom: 75%;
-}
-
-/* Taller view (for dashboards or long sheets) */
+/* Aspect ratio for tall sheet (adjust as needed) */
 .responsive-wrapper-tall {
   padding-bottom: 130%;
+  /* ~1.3x width, good for tall spreadsheets */
 }
 
-/* Visual styling (optional) */
+/* Optional styling */
 .set-border {
-  border: 4px solid #e0e0e0;
+  border: 3px solid #ccc;
+  border-radius: 1rem;
 }
 
 .set-box-shadow {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.center-block-horiz {
-  margin-left: auto !important;
-  margin-right: auto !important;
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .responsive-wrapper-tall {
+    padding-bottom: 180%;
+    /* taller on smaller screens for better visibility */
+  }
 }
