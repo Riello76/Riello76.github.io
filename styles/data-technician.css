@@ -1,0 +1,60 @@
+/* Responsive Iframe CSS */
+/* ========================= */
+
+/* Outer wrapper */
+#Iframe-Liason-Sheet {
+  max-width: 1200px;
+  width: 100%;
+  margin: 3rem auto;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+/* Inner wrapper for responsive scaling */
+.responsive-wrapper {
+  position: relative;
+  height: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+
+/* Iframe itself */
+.responsive-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Aspect ratios */
+/* 16:9 (typical landscape) */
+.responsive-wrapper-wxh-16x9 {
+  padding-bottom: 56.25%;
+  /* 9/16 = 0.5625 */
+}
+
+/* 4:3 (good for Google Sheets or documents) */
+.responsive-wrapper-wxh-4x3 {
+  padding-bottom: 75%;
+}
+
+/* Taller view (for dashboards or long sheets) */
+.responsive-wrapper-tall {
+  padding-bottom: 130%;
+}
+
+/* Visual styling (optional) */
+.set-border {
+  border: 4px solid #e0e0e0;
+}
+
+.set-box-shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.center-block-horiz {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
