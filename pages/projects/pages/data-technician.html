@@ -165,81 +165,18 @@
         <section id="section1">
             <!-- Placeholder for Section 1 Content -->
             <h2>Excel</h2>
-            <div id="Iframe-Liason-Sheet"
-                style="max-width:1200px; width:100%; height:80vh; margin:3rem auto; border:3px solid #ccc; border-radius:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.15); overflow:auto;">
-                <iframe
-                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRR-SwnZbZo-Kilxrv7LbzTfh91RoT2xrErt9Z6dbjJzCUQ2g_TR8xcKQLNS5zY6g/pubhtml?widget=true&amp;headers=false"
-                    style="width:100%; height:1200px; border:none;">
-                </iframe>
-            </div>
-            <p>This is section 1 content.</p>
-        </section>
-
-        <!-- Tableau Dashboard Section -->
-        <section id="section2">
-            <h2>Tableau Dashboard</h2>
-            <div class="tableauPlaceholder" id="viz1762361703495"
-                style="position: relative; width: 100%; max-width: 1200px; margin: 5rem auto;border-radius: 2rem;">
-                <noscript>
-                    <a href="#">
-                        <img alt="Global Health Insights"
-                            src="https://public.tableau.com/static/images/Bo/Book1_2_17623616935700/GlobalHealthDashboard/1_rss.png"
-                            style="border: none; width: 100%; height: auto;" />
-                    </a>
-                </noscript>
-                <object class="tableauViz" style="display:none; width:100%; height:75vh;">
-                    <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-                    <param name="embed_code_version" value="3" />
-                    <param name="site_root" value="" />
-                    <param name="name" value="Book1_2_17623616935700/GlobalHealthDashboard" />
-                    <param name="tabs" value="no" />
-                    <param name="toolbar" value="yes" />
-                    <param name="static_image"
-                        value="https://public.tableau.com/static/images/Bo/Book1_2_17623616935700/GlobalHealthDashboard/1.png" />
-                    <param name="animate_transition" value="yes" />
-                    <param name="display_static_image" value="yes" />
-                    <param name="display_spinner" value="yes" />
-                    <param name="display_overlay" value="yes" />
-                    <param name="display_count" value="yes" />
-                    <param name="language" value="en-US" />
-                    <param name="filter" value="publish=yes" />
-                </object>
-            </div>
-
-            <script type="text/javascript">
-                var divElement = document.getElementById('viz1762361703495');
-                var vizElement = divElement.getElementsByTagName('object')[0];
-
-                function resizeViz() {
-                    var width = divElement.offsetWidth;
-                    var height = width * 0.75; // rapporto 4:3
-                    vizElement.style.width = width + 'px';
-                    vizElement.style.height = height + 'px';
-                }
-
-                var scriptElement = document.createElement('script');
-                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                scriptElement.onload = function () {
-                    resizeViz();
-                    window.addEventListener('resize', resizeViz);
-                };
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);
-
-            </script>
-
-            <p>Discover how life expectancy, population trends, and health indicators connect worldwide through
-                interactive country
-                filters and dynamic visual insights. Use the country filter to explore trends over time, compare
-                population by
-                gender, and analyze life expectancy against BMI across continents. This Global Health Dashboard allows
-                you to
-                interactively explore multiple dimensions of health data in a single, easy-to-use view.</p>
+            <iframe width="402" height="346" frameborder="0" scrolling="no"
+                src="https://1drv.ms/x/c/ff4c3421142b03b8/IQQdigcC8yeOS6WUPKKvHzMbAdSQvpuhfaMy6gKjdPKgR54?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+            <p>
+                In this project, I cleaned and formatted the dataset to improve clarity and readability.
+                I then created a PivotTable and an interactive chart to visualize sales profit by country and year,
+                making it easier to identify performance trends and key insights at a glance.
+            </p>
 
 
         </section>
-
         <!-- Power BI Dashboard Section -->
-        <section id="section3">
+        <section id="section2">
             <h2>Power BI Dashboard</h2>
             <!-- Container responsive -->
             <div id="powerbi-container"
@@ -257,28 +194,83 @@
                 time period, helping you identify patterns, track performance, and make informed, data-driven business
                 decisions.
             </p>
+            <script>
+                // ✅ Script per adattare dinamicamente il padding
+                const powerbiDiv = document.getElementById('powerbi-container');
 
-
-        </section>
-
-        <script>
-            // ✅ Script per adattare dinamicamente il padding
-            const powerbiDiv = document.getElementById('powerbi-container');
-
-            function adjustPowerBI() {
-                if (window.innerWidth <= 768) {
-                    powerbiDiv.style.paddingBottom = '100%';
-                } else {
-                    powerbiDiv.style.paddingBottom = '40%';
+                function adjustPowerBI() {
+                    if (window.innerWidth <= 768) {
+                        powerbiDiv.style.paddingBottom = '100%';
+                    } else {
+                        powerbiDiv.style.paddingBottom = '40%';
+                    }
                 }
-            }
+                adjustPowerBI();
+                window.addEventListener('resize', adjustPowerBI);
+            </script>
+            <!-- Tableau Dashboard Section -->
+            <section id="section3">
+                <h2>Tableau Dashboard</h2>
+                <div class="tableauPlaceholder" id="viz1762361703495"
+                    style="position: relative; width: 100%; max-width: 1200px; margin: 5rem auto;border-radius: 2rem;">
+                    <noscript>
+                        <a href="#">
+                            <img alt="Global Health Insights"
+                                src="https://public.tableau.com/static/images/Bo/Book1_2_17623616935700/GlobalHealthDashboard/1_rss.png"
+                                style="border: none; width: 100%; height: auto;" />
+                        </a>
+                    </noscript>
+                    <object class="tableauViz" style="display:none; width:100%; height:75vh;">
+                        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+                        <param name="embed_code_version" value="3" />
+                        <param name="site_root" value="" />
+                        <param name="name" value="Book1_2_17623616935700/GlobalHealthDashboard" />
+                        <param name="tabs" value="no" />
+                        <param name="toolbar" value="yes" />
+                        <param name="static_image"
+                            value="https://public.tableau.com/static/images/Bo/Book1_2_17623616935700/GlobalHealthDashboard/1.png" />
+                        <param name="animate_transition" value="yes" />
+                        <param name="display_static_image" value="yes" />
+                        <param name="display_spinner" value="yes" />
+                        <param name="display_overlay" value="yes" />
+                        <param name="display_count" value="yes" />
+                        <param name="language" value="en-US" />
+                        <param name="filter" value="publish=yes" />
+                    </object>
+                </div>
 
-            adjustPowerBI();
-            window.addEventListener('resize', adjustPowerBI);
-        </script>
+                <script type="text/javascript">
+                    var divElement = document.getElementById('viz1762361703495');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
 
+                    function resizeViz() {
+                        var width = divElement.offsetWidth;
+                        var height = width * 0.75; // rapporto 4:3
+                        vizElement.style.width = width + 'px';
+                        vizElement.style.height = height + 'px';
+                    }
 
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    scriptElement.onload = function () {
+                        resizeViz();
+                        window.addEventListener('resize', resizeViz);
+                    };
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
 
+                </script>
+
+                <p>Discover how life expectancy, population trends, and health indicators connect worldwide through
+                    interactive country
+                    filters and dynamic visual insights. Use the country filter to explore trends over time, compare
+                    population by
+                    gender, and analyze life expectancy against BMI across continents. This Global Health Dashboard
+                    allows
+                    you to
+                    interactively explore multiple dimensions of health data in a single, easy-to-use view.
+                </p>
+            </section>
+        </section>
     </main>
 
     <!-- ========== FOOTER SECTION ========== -->
