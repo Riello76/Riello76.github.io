@@ -165,16 +165,17 @@
         <section id="section1">
             <!-- Placeholder for Section 1 Content -->
             <h2>Excel</h2>
-            <iframe width="402" height="346" frameborder="0" scrolling="no"
-                src="https://1drv.ms/x/c/ff4c3421142b03b8/IQQdigcC8yeOS6WUPKKvHzMbAdSQvpuhfaMy6gKjdPKgR54?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
-            <p>
-                In this project, I cleaned and formatted the dataset to improve clarity and readability.
-                I then created a PivotTable and an interactive chart to visualize sales profit by country and year,
-                making it easier to identify performance trends and key insights at a glance.
-            </p>
-
-
+            <div class="excel">
+                <iframe width="402" height="346" frameborder="0" scrolling="no"
+                    src="https://1drv.ms/x/c/ff4c3421142b03b8/IQQdigcC8yeOS6WUPKKvHzMbAdSQvpuhfaMy6gKjdPKgR54?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+                </div>
+                <p class="with-divider">
+                    In this project, I cleaned and formatted the dataset to improve clarity and readability.
+                    I then created a PivotTable and an interactive chart to visualize sales profit by country and year,
+                    making it easier to identify performance trends and key insights at a glance.
+                </p>
         </section>
+
         <!-- Power BI Dashboard Section -->
         <section id="section2">
             <h2>Power BI Dashboard</h2>
@@ -187,7 +188,7 @@
                     allowFullScreen="true">
                 </iframe>
             </div>
-            <p>This Power BI dashboard visualizes sales data, highlighting key metrics such as total revenue, profit
+            <p class="with-divider">This Power BI dashboard visualizes sales data, highlighting key metrics such as total revenue, profit
                 trends, and
                 top-performing regions and products. Interactive filters allow you to drill down by region, product
                 category, or
@@ -195,9 +196,7 @@
                 decisions.
             </p>
             <script>
-                // ✅ Script per adattare dinamicamente il padding
                 const powerbiDiv = document.getElementById('powerbi-container');
-
                 function adjustPowerBI() {
                     if (window.innerWidth <= 768) {
                         powerbiDiv.style.paddingBottom = '100%';
@@ -208,6 +207,7 @@
                 adjustPowerBI();
                 window.addEventListener('resize', adjustPowerBI);
             </script>
+            
             <!-- Tableau Dashboard Section -->
             <section id="section3">
                 <h2>Tableau Dashboard</h2>
@@ -245,7 +245,7 @@
 
                     function resizeViz() {
                         var width = divElement.offsetWidth;
-                        var height = width * 0.75; // rapporto 4:3
+                        var height = width * 0.75;
                         vizElement.style.width = width + 'px';
                         vizElement.style.height = height + 'px';
                     }
@@ -260,7 +260,7 @@
 
                 </script>
 
-                <p>Discover how life expectancy, population trends, and health indicators connect worldwide through
+                <p class="with-divider">Discover how life expectancy, population trends, and health indicators connect worldwide through
                     interactive country
                     filters and dynamic visual insights. Use the country filter to explore trends over time, compare
                     population by
