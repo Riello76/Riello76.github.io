@@ -1,43 +1,56 @@
-# 🚀 Gaspare Tocci – Portfolio  
+# 🚀 Gaspare Tocci – Portfolio
 
-Welcome to my portfolio!  
-
----
-
-## 💡 About Me  
-I am a self-taught **junior web developer** passionate about building responsive, accessible, and user-friendly websites.  
-I thrive in collaborative environments and enjoy combining **clean design** with **modern front-end techniques** to deliver engaging digital experiences.  
+Welcome to my professional portfolio.
 
 ---
 
-## 🎨 Design & Graphics  
-Creative tools I use:  
-- **Inkscape** → custom logos and vector illustrations  
-- **GIMP** → professional photo editing and visual effects  
-- **Blender** → 3D models and animations  
-- **Figma** → UI/UX design and interactive prototypes  
+## 💡 About Me
+
+I’m a **self-taught web developer and data technician** passionate about creating responsive, accessible, and visually engaging digital experiences.  
+My work combines **front-end development**, **data visualization**, and **creative design**, always focused on clarity and usability.
+
+I’m currently completing a **Data Technician Bootcamp**, gaining hands-on experience with:
+- **Data visualization** → Power BI, Tableau  
+- **Data management** → Microsoft Fabric, Azure  
+- **Collaboration & workflow** → GitHub, VS Code  
 
 ---
 
-## 🔧 Development Stack  
-My core development skills include:  
-- **HTML, CSS, JavaScript** → responsive and semantic coding  
-- **Bootstrap** → streamlined layouts and components  
-- **AOS (Animate on Scroll)** → smooth scroll-based animations  
-- **VS Code** → with Live Preview, Prettier, and Snippets  
-- **AI tools** → improving workflow and productivity  
+## 🎨 Design & Graphics
+
+Creative tools I use daily:
+- 🖌 **Inkscape** → vector graphics and logo design  
+- 🎞 **GIMP** → image editing and visual effects  
+- 🧩 **Blender** → 3D modeling and animation  
+- 🧠 **Figma** → UI/UX design and interactive prototypes  
 
 ---
 
-## 📹 Multimedia & Content Creation  
-I also create visual content to enhance digital projects:  
-- **Filmora** → video editing with effects and transitions  
-- **PowerPoint** → impactful presentations with animations  
+## 🔧 Development & Data Stack
+
+**Web Development**
+- HTML, CSS, JavaScript → responsive and semantic code  
+- Bootstrap → structured, consistent layouts  
+- AOS (Animate on Scroll) → elegant motion effects  
+
+**Data Tools**
+- Power BI, Tableau, Excel → dashboards and insights  
+- Microsoft Fabric, Azure → scalable data processing  
+- VS Code & GitHub → efficient coding and version control  
 
 ---
 
-## 🌟 Career Goals  
-I am seeking an **apprenticeship or entry-level role in front-end development**.  
-My goal is to contribute to real projects, keep improving my skills, and grow into a well-rounded developer focused on **sustainable design** and **user-first solutions**.  
+## 📹 Multimedia & Content Creation
+
+Beyond code and data, I create multimedia assets that enhance storytelling:
+- 🎬 **Filmora** → video editing and transitions  
+- 📊 **PowerPoint** → engaging presentations and data visuals  
 
 ---
+
+## 🌟 Career Goals
+
+I’m seeking an **entry-level or apprenticeship role** in **web development** or **data analysis**.  
+My goal is to grow in a forward-thinking team, contributing to projects that merge **design, data, and technology** into meaningful digital solutions.
+
+
