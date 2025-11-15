@@ -4,12 +4,12 @@
   main {
     display: flex;
     flex-wrap: wrap;
-    background: var(--background-gradient);
+    background: var(--main-color);
   }
 
   /* ========== TOP MAIN SECTION ========== */
   .top-main {
-    background: var(--background-gradient);
+    background: var(--main-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,10 +30,7 @@
     align-items: center;
     width: 100%;
     overflow: hidden;
-    background-image: image-set(url('/images/header-bg.svg'));
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: var(--main-color);
   }
 
   /* ========== ABOUT ME SECTION ========== */
@@ -42,10 +39,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-image: image-set(url('/images/header-bg.svg'));
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: var(--main-color);
   }
 
   /* ========== PROFILE IMAGE ========== */
@@ -53,7 +47,7 @@
     width: clamp(15rem, 20vw, 30rem);
     height: clamp(15rem, 20vw, 30rem);
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: var(--border-radius-desktop);
     background: var(--background-gradient);
     margin: 2rem 0;
     box-shadow: 0px 0px 10px var(--info-color);
@@ -73,7 +67,7 @@
     height: clamp(3rem, 4vw, 8rem);
     background: var(--background-gradient);
     color: var(--secondary-color);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-desktop);
     border: 0.2rem solid var(--info-color);
     font-size: clamp(1.5rem, 2vw, 5rem);
     font-weight: bolder;
@@ -100,13 +94,16 @@
   .cta-btn:hover {
     box-shadow:
       0 8px 20px rgba(0, 0, 0, 0.25),
-      0 0 15px var(--info-color),
-      0 0 30px rgba(255, 255, 255, 0.1);
+      0 0 15px var(--secondary-color),
+      0 0 30px rgba(0, 194, 186, 0.2);
+
     background: linear-gradient(135deg,
-        var(--tertiary-color) 0%,
-        var(--main-color) 40%,
-        var(--info-color) 200%,
-        var(--tertiary-color) 100%);
+        var(--main-color) 0%,
+        var(--secondary-color) 60%,
+        var(--main-color) 100%);
+
+    transition: all 0.4s ease;
+    /* smooth hover */
   }
 
   .cta-btn .btn-text.default {
@@ -130,7 +127,7 @@
 
     100% {
       transform: scale(1);
-      color: var(--secondary-color);
+      color: var(--info-color);
     }
   }
 
@@ -142,9 +139,10 @@
     align-items: center;
     grid-template-rows: auto 1fr auto;
     margin: 5rem 0;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-desktop);
     border: 1px solid var(--info-color);
-    box-shadow: 10px 10px 10px var(--tertiary-color);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    /* softer shadow for depth */
   }
 
   /* ========== CAROUSEL INNER ========== */
@@ -155,11 +153,12 @@
     width: clamp(31rem, 48vw, 60rem);
     height: clamp(36rem, 54vw, 70rem);
     overflow: hidden;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-desktop);
   }
 
   .gt-carousel-inner:hover {
-    box-shadow: 0px 0px 10px var(--info-color);
+    box-shadow: 0 0 15px var(--secondary-color);
+    /* subtle tech glow on hover */
   }
 
   /* ========== CAROUSEL ITEM ========== */
@@ -173,6 +172,7 @@
   .gt-carousel-item.gt-active {
     display: grid;
     background: var(--background-gradient);
+    /* use root gradient */
   }
 
   /* ========== TOOL CARD ========== */
@@ -184,37 +184,64 @@
     height: clamp(30rem, 35vw, 60rem);
     margin-bottom: clamp(1rem, 15%, 10rem);
     gap: 2rem;
+    background: var(--main-color);
   }
 
+  /* ========== TOOL IMAGE ========== */
   .tool-card img {
     width: clamp(6.4rem, 8vw, 12.8rem);
     height: clamp(6.4rem, 8vw, 12.8rem);
     margin: 1rem 0;
   }
 
+  /* ========== TOOL TITLE ========== */
   .tool-card h3 {
     width: clamp(10rem, 70%, 40rem);
     position: relative;
+    /* needed for pseudo-element positioning */
     transition: all 0.3s ease;
+    /* smooth transition */
     cursor: pointer;
+    border-radius: var(--border-radius-desktop);
   }
 
+  /* ========== TOOL LINK ========== */
+  .tool-card h3 a {
+    font-size: var(--h3-font-size);
+    text-decoration: none;
+    color: var(--info-color);
+    /* original text color */
+    font-weight: bold;
+    display: block;
+    position: relative;
+    /* needed for pseudo-element */
+    transition: color 0.3s ease, box-shadow 0.4s ease, background 0.4s ease;
+    /* smooth transitions */
+    border-radius: var(--border-radius-desktop);
+  }
+
+  /* Hover effect: hide app name, show 'Download' */
   .tool-card h3 a:hover {
     color: transparent;
+    /* hide original text */
     box-shadow:
       0 8px 20px rgba(0, 0, 0, 0.25),
-      0 0 15px var(--info-color),
-      0 0 30px rgba(255, 255, 255, 0.1);
-    background: linear-gradient(135deg,
-        var(--tertiary-color) 0%,
-        var(--main-color) 40%,
-        var(--info-color) 200%,
-        var(--tertiary-color) 100%);
-    border-radius: var(--border-radius);
+      /* subtle depth */
+      0 0 15px var(--secondary-color),
+      /* tech accent glow */
+      0 0 30px rgba(0, 194, 186, 0.2);
+    /* soft secondary glow */
+    background: var(--background-gradient);
+    /* coherent gradient */
+    border-radius: var(--border-radius-desktop);
+    transition: all 0.4s ease;
+    /* smooth hover transition */
   }
 
-  .tool-card h3 a:hover::after {
-    content: 'Download';
+  /* Pseudo-element for 'Download' text */
+  .tool-card h3 a::after {
+    content: '';
+    /* empty by default */
     position: absolute;
     left: 0;
     top: 0;
@@ -223,21 +250,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--secondary-color);
-  }
-
-  .tool-card h3 a {
-    font-size: var(--h3-font-size);
-    text-decoration: none;
     color: var(--info-color);
-    font-weight: bold;
-    transition: color 0.3s ease;
-    display: block;
+    /* highlight text color */
+    font-weight: bolder;
+    opacity: 0;
+    /* hidden by default */
+    transition: opacity 0.3s ease;
   }
 
+  .tool-card h3 a:hover::after {
+    content: 'Download';
+    /* show 'Download' on hover */
+    opacity: 1;
+  }
+
+  /* ========== TOOL DESCRIPTION ========== */
   .tool-card p {
     flex-grow: 1;
-    background: transparent;
+    background: var(--main-color);
   }
 
   /* ========== CAROUSEL CONTROLS ========== */
@@ -259,7 +289,7 @@
     width: clamp(4rem, 5vw, 7rem);
     height: clamp(3rem, 3vw, 5rem);
     background: var(--background-gradient);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-desktop);
     box-shadow: 0px 1px 5px var(--info-color);
     z-index: 1000;
     cursor: pointer;
@@ -275,7 +305,7 @@
   .gt-carousel-control-next-icon {
     width: clamp(2rem, 1.7vw, 4rem);
     height: clamp(2rem, 1.7vw, 4rem);
-    border-radius: var(--border-radius-bigger);
+    border-radius: var(--border-radius-desktop);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -303,7 +333,7 @@
   .gt-carousel-indicators button {
     width: clamp(0.5rem, 0.7vw, 1rem);
     height: clamp(0.5rem, 0.7vw, 1rem);
-    border-radius: 50%;
+    border-radius: var(--border-radius-desktop);
     border: none;
     background: var(--tertiary-color);
     cursor: pointer;
@@ -321,10 +351,7 @@
     align-items: center;
     width: 100%;
     margin: 2rem 0;
-    background-image: image-set(url('/images/header-bg.svg'));
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: var(--main-color);
   }
 
   .technical-details p {

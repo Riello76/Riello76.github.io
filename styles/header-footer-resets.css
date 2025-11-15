@@ -11,14 +11,18 @@
 :root {
   scroll-behavior: smooth;
 
-  /* ==== Color Palette ==== */
-  --main-color: #001f3f;
-  --secondary-color: #ffb347;
-  --tertiary-color: rgb(0, 0, 0);
-  --info-color: #ffffff;
-  --background-gradient: linear-gradient(135deg, var(--tertiary-color) 0%,
-      var(--main-color), var(--tertiary-color) 100%);
-  --border-radius: 2.5rem;
+  --main-color: #0d2d57;
+  --secondary-color: #00c2ba;
+  --tertiary-color: #0a192f;
+  --info-color: #f8f9fa;
+  --background-gradient: linear-gradient(135deg,
+      #1e1e1e 0%,
+      #0d2d57 70%,
+      #0f325f 100%);
+  --border-radius-mobile: 2rem;
+  --border-radius-desktop: 50%;
+  --border-color: 1px solid rgba(0, 194, 186, 0.6);
+
 
   /* ==== Heading Sizes ==== */
   --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 7rem);
@@ -34,16 +38,10 @@
   --font-size-a: clamp(1rem, 0.85rem + 0.4vw, 1.8rem);
 
   /* ==== Font Family ==== */
-  --font-family: -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+  --font-family: 'Poppins', 'Inter',
+    -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
 }
 
 /* ========== Typography Styles ========== */
@@ -55,12 +53,13 @@ h1 {
 
 h2 {
   font-size: var(--font-size-h2);
-  color: var(--secondary-color);
-  background: var(--background-gradient);
+  color: var(--info-color);
+  background: var(--main-color);
   text-align: center;
   font-weight: bolder;
-  border-radius: var(--border-radius);
-  border: 2px solid var(--info-color);
+  border-radius: var(--border-radius-desktop);
+  ;
+  border: var(--border-color);
   box-shadow: 10px 10px 10px var(--tertiary-color);
   width: 95%;
 }
@@ -68,11 +67,11 @@ h2 {
 h3 {
   font-size: var(--font-size-h3);
   color: var(--secondary-color);
-  background: var(--background-gradient);
+  background: var(--main-color);
   text-align: center;
   font-weight: bolder;
-  border-radius: var(--border-radius);
-  border: 2px solid var(--info-color);
+  border-radius: var(--border-radius-desktop);
+  border: var(--border-color);
   box-shadow: 10px 10px 10px var(--tertiary-color);
   width: 100%;
 }
@@ -101,7 +100,7 @@ h6 {
 p {
   font-size: var(--font-size-p);
   color: var(--info-color);
-  background: var(--background-gradient);
+  background: var(--main-color);
   font-weight: bolder;
   text-align: justify;
   line-height: 1.4;
@@ -164,10 +163,10 @@ strong {
   font-weight: bold;
   text-align: center;
   color: var(--info-color);
-  background: var(--background-gradient);
+  background: var(--main-color);
   padding: 0.3rem 0.6rem;
   margin: 1rem 0;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-desktop);
   box-shadow: 0px 0px 5px var(--info-color);
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
@@ -195,7 +194,7 @@ strong {
 /* ========== Body and HTML ========== */
 body,
 html {
-  background-color: var(--background-gradient);
+  background-color: var(--main-color);
   display: flex;
   flex-direction: column;
   font-family: var(--font-family);
@@ -241,7 +240,7 @@ picture {
   body {
     display: flex;
     flex-direction: column;
-    background: var(--tertiary-color);
+    background: var(--main-color);
   }
 
 }
@@ -251,10 +250,7 @@ picture {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background-image: image-set(url('/images/header-bg.svg'));
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: var(--main-color);
 }
 
 /* ========== LOGO STYLE ========== */
@@ -315,7 +311,7 @@ picture {
   display: flex;
   flex-shrink: 0;
   font-weight: bold;
-  color: #ffcc00;
+  color: var(--secondary-color);
   font-size: clamp(1rem, 1vw + 1rem, 3rem);
 }
 
@@ -376,7 +372,7 @@ picture {
 /* ========== NAVBAR CONTAINER ========== */
 .gt-navbar {
   width: 100%;
-  background: var(--background-gradient);
+  background: var(--main-color);
   position: relative;
   z-index: 999;
   margin: 2rem 0;
@@ -508,9 +504,6 @@ picture {
   font-size: 1.5rem;
 }
 
-.gt-nav-item-text:hover {
-  text-shadow: 0 0 2rem var(--secondary-color);
-}
 
 /* ========== GRADIENT ANIMATION ON NAV LINKS ========== */
 .gt-nav-link {
@@ -547,7 +540,7 @@ picture {
   display: block;
   height: 0.1rem;
   width: 0;
-  background: var(--secondary-color);
+  background: var(--info-color);
   transition: width 0.3s ease;
   position: absolute;
   bottom: 0.2rem;
@@ -561,7 +554,7 @@ picture {
 /* ========== GLASSMORPHISM DROPDOWN MENU WITH SHINE ========== */
 .gt-dropdown-menu {
   backdrop-filter: blur(1rem);
-  background: var(--background-gradient);
+  background: var(--main-color);
   background-size: contain;
   border-radius: 1rem;
   box-shadow: 0 0 1px var(--info-color);
@@ -614,16 +607,21 @@ picture {
   color: var(--info-color);
   width: clamp(13rem, 13vw, 25rem);
   font-size: 1.5rem;
-  box-shadow: 0 0 2px var(--info-color);
-  border-radius: 0.5rem;
+  box-shadow: 0 0 2px var(--secondary-color);
+  border-radius: var(--border-radius-desktop);
 }
 
 .gt-dropdown-item:hover {
+  color: var(--info-color);
+  background: linear-gradient(135deg,
+      var(--main-color) 0%,
+      var(--secondary-color) 60%,
+      var(--main-color) 100%);
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.25),
+    0 0 10px var(--secondary-color),
+    0 0 20px rgba(0, 194, 186, 0.2);
   transform: scale(1.05);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  text-shadow: 0 0 2rem var(--secondary-color);
-  border: 1px solid var(--info-color);
 }
 
 /* ========== ACCORDION EFFECT FOR MOBILE DROPDOWN ========== */
@@ -677,7 +675,7 @@ picture {
 
 /* ========== STICKY NAVBAR SHADOW ON SCROLL ========== */
 .gt-navbar.scrolled {
-  background: var(--background-gradient);
+  background: var(--main-color);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
@@ -689,7 +687,7 @@ picture {
 
 /* ========== GT Footer Section ========== */
 .gt-footer {
-  background: var(--background-gradient);
+  background: var(--main-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -710,12 +708,24 @@ picture {
 }
 
 /* ========== Footer Column ========== */
-.gt-footer-column {
+.gt-footer-column-contacts {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
+}
+.gt-footer-column-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 60%;
+}
+
+.gt-footer-column-links a {
+  flex: 1 1 45%;
+  text-align: center;
 }
 
 .gt-footer-about {
@@ -747,19 +757,19 @@ picture {
 /* ========== Footer Headings ========== */
 .gt-footer h2 {
   color: var(--info-color);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--info-color);
+  border-radius: var(--border-radius-desktop);
+  border: var(--border-color);
   padding: 0.5rem clamp(1rem, 2vw, 2rem);
 }
 
 .gt-footer a:not(.gt-go-to-top) {
   box-shadow: 10px 10px 10px var(--tertiary-color);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--info-color);
+  border: var(--border-color);
+  border-radius: var(--border-radius-desktop);
   padding: 1rem;
-  background: var(--background-gradient);
+  background: var(--main-color);
   text-decoration: underline var(--info-color);
-  width: clamp(12rem, 15vw, 20rem);
+  width: clamp(8rem, 15vw, 20rem);
   display: inline-block;
   text-align: center;
   font-size: var(--font-size-p);
@@ -767,6 +777,7 @@ picture {
 
 .gt-footer a:hover {
   border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius-desktop);
   color: var(--info-color);
   text-decoration: underline var(--secondary-color);
   transform: scale(0.95);
@@ -792,20 +803,54 @@ picture {
   margin: 0;
 }
 
-/* ========== Footer Links ========== */
+/* ========== Footer Link Styling (CTA-style) ========== */
 .gt-footer-link {
-  display: flex;
-  flex-direction: row;
-  margin: clamp(0.5rem, 1vw, 1rem);
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 2vw, 2rem);
   font-size: clamp(1.3rem, 1.5vw, 3rem);
-  color: var(--secondary-color);
-  transition: transform 0.3s ease, color 0.3s ease;
   font-weight: bolder;
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: var(--border-radius-desktop);
+  overflow: hidden;
+  transition: all 0.4s ease;
 }
 
-.gt-footer-link a:hover {
+/* ========== Add hover gradient using pseudo-element ========== */
+.gt-footer-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg,
+      var(--main-color) 0%,
+      var(--secondary-color) 60%,
+      var(--main-color) 100%);
+  z-index: 0;
+  transition: all 0.4s ease;
+}
+
+/* ========== Text layer for proper z-index ========== */
+.gt-footer-link span {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+/* ========== Hover Effect ========== */
+.gt-footer-link:hover::before {
+  left: 0;
+}
+
+.gt-footer-link:hover span {
   color: var(--info-color);
-  transform: scale(0.95);
+  /* can be changed if needed */
+  transform: scale(1.05);
 }
 
 /* ========== Scroll to Top ========== */
@@ -819,9 +864,6 @@ picture {
   z-index: 0;
   overflow: visible;
   transition: transform 0.3s ease;
-  box-shadow: 10px 10px 10px var(--tertiary-color);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--info-color);
 }
 
 /* ========== External Glow with Box-Shadow ========== */
@@ -832,7 +874,7 @@ picture {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: var(--border-radius-desktop);
   box-shadow:
     0 0 10px var(--info-color),
     0 0 20px var(--secondary-color),
@@ -900,7 +942,7 @@ picture {
     align-items: center;
     position: relative;
     z-index: 5;
-    background: var(--background-gradient);
+    background: var(--main-color);
   }
 
   /* ========== GT Navbar Collapse / Menu Items Container ========== */
@@ -975,7 +1017,7 @@ picture {
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--background-gradient);
+    background: var(--main-color);
     padding: clamp(0.5rem, 1vw, 1.5rem) 0;
     min-width: clamp(150px, 15vw, 300px);
     z-index: 4;
@@ -997,7 +1039,7 @@ picture {
   }
 
   .gt-dropdown-item:hover {
-    color: var(--secondary-color);
+    color: var(--info-color);
     transform: scale(0.95);
   }
 
@@ -1021,9 +1063,7 @@ picture {
     }
   }
 
-  .gt-footer p {
-    width: 80%;
-  }
+
 }
 
 /* ========== LARGE DESKTOP (>= 1440px) ========== */

@@ -257,56 +257,39 @@
     </section>
   </main>
 
-  <!-- ========== FOOTER SECTION ========== -->
-  <footer class="gt-footer">
+/* ========== Footer Links CTA-Style Hover ========== */
+.gt-footer-link {
+position: relative;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+padding: 0.5rem 1rem;
+margin: clamp(0.5rem, 1vw, 1rem);
+font-size: clamp(1.3rem, 1.5vw, 3rem);
+font-weight: bolder;
+color: var(--secondary-color);
+border-radius: var(--border-radius);
+overflow: hidden;
+transition: all 0.4s ease;
+}
 
-    <!-- GT Scroll to Top -->
-    <a class="gt-go-to-top" href="#top" aria-label="Scroll to top">
-      <img src="/icons/Scroll-Up-Arrow.webp" alt="Animated up arrow to scroll to top" width="40" height="40"
-        loading="lazy">
-    </a>
+/* Gradient, pop, and shadow on hover like CTA */
+.gt-footer-link:hover span {
+color: var(--info-color);
+}
 
-    <div class="gt-footer-container">
+.gt-footer-link:hover {
+background: linear-gradient(135deg,
+var(--main-color) 0%,
+var(--secondary-color) 60%,
+var(--main-color) 100%);
+box-shadow:
+0 6px 16px rgba(0, 0, 0, 0.25),
+0 0 10px var(--secondary-color),
+0 0 20px rgba(0, 194, 186, 0.2);
+transform: scale(1.05);
+}
 
-      <!-- Contacts -->
-      <h2><span class="symbol left" aria-hidden="true">❖</span> Contacts <span class="symbol right"
-          aria-hidden="true">❖</span></h2>
-      <nav class="gt-footer-column" aria-label="Contacts">
-        <a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link" aria-label="Email Gaspare Tocci">Email</a>
-        <a href="https://github.com/Riello76" target="_blank" class="gt-footer-link"
-          aria-label="GitHub Profile">GitHub</a>
-        <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="gt-footer-link"
-          aria-label="LinkedIn Profile">LinkedIn</a>
-      </nav>
-
-      <!-- Quick Links -->
-      <h2><span class="symbol left" aria-hidden="true">❖</span> Quick Links <span class="symbol right"
-          aria-hidden="true">❖</span></h2>
-      <nav class="gt-footer-column" aria-label="Footer Navigation">
-        <a href="/index.html" class="gt-footer-link">Home</a>
-        <a href="/pages/curriculum/curriculum.html" class="gt-footer-link">CV</a>
-        <a href="/pages/projects/projects.html" class="gt-footer-link">Projects</a>
-        <a href="/pages/gallery/gallery.html" class="gt-footer-link">Gallery</a>
-      </nav>
-
-    </div>
-
-    <!-- About -->
-    <h2><span class="symbol left" aria-hidden="true">❖</span> About This Page <span class="symbol right"
-        aria-hidden="true">❖</span></h2>
-    <div class="gt-footer-column gt-footer-about">
-      <p>
-        Welcome! This page showcases a mix of my practice projects, older portfolio pieces, and the Glastonbury Festival
-        project completed during the GetSetUK bootcamp.
-        Some sites are still works in progress, but each demonstrates how I explore <strong>web design, 3D, and creative
-          problem-solving</strong>.
-        Browsing these projects gives a sense of my <strong>growth, hands-on learning, and approach to turning ideas
-          into
-          functional designs</strong>.
-      </p>
-    </div>
-
-  </footer>
 
 
   <!-- ========== Info ========== -->
