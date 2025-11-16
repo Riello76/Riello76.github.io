@@ -227,36 +227,79 @@
   </main>
 
 
-/* ========== Footer Links CTA-Style Hover ========== */
-.gt-footer-link {
-position: relative;
-display: inline-flex;
-align-items: center;
-justify-content: center;
-padding: 0.5rem 1rem;
-margin: clamp(0.5rem, 1vw, 1rem);
-font-size: clamp(1.3rem, 1.5vw, 3rem);
-font-weight: bolder;
-color: var(--secondary-color);
-border-radius: var(--border-radius);
-overflow: hidden;
-transition: all 0.4s ease;
-text-decoration: none;
-}
+<!-- ==========GT Footer Section ========== -->
+<footer class="gt-footer">
 
-/* Hover effect similar to CTA buttons */
-.gt-footer-link:hover {
-color: var(--info-color);
-background: linear-gradient(135deg,
-var(--main-color) 0%,
-var(--secondary-color) 60%,
-var(--main-color) 100%);
-box-shadow:
-0 6px 16px rgba(0, 0, 0, 0.25),
-0 0 10px var(--secondary-color),
-0 0 20px rgba(0, 194, 186, 0.2);
-transform: scale(1.05);
-}
+  <!-- Scroll to Top -->
+  <a class="gt-go-to-top" href="#top" aria-label="Scroll to top">
+    <img src="/icons/Scroll-Up-Arrow.webp" alt="" width="40" height="40" loading="lazy">
+  </a>
+
+  <div class="gt-footer-container">
+
+    <!-- Contacts -->
+    <h2>
+      <span class="symbol left" aria-hidden="true">❖</span>
+      Contacts
+      <span class="symbol right" aria-hidden="true">❖</span>
+    </h2>
+
+    <nav class="gt-footer-column-contacts" aria-label="Contacts">
+      <a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link" aria-label="Email Gaspare Tocci"
+        data-aos="fade-right" data-aos-duration="900">
+        <span>Email</span>
+      </a>
+
+      <a href="https://github.com/Riello76" target="_blank" class="gt-footer-link" aria-label="GitHub Profile"
+        data-aos="fade-up" data-aos-duration="900">
+        <span>GitHub</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="gt-footer-link"
+        aria-label="LinkedIn Profile" data-aos="fade-left" data-aos-duration="900">
+        <span>LinkedIn</span>
+      </a>
+    </nav>
+
+    <!-- Quick Links -->
+    <h2>
+      <span class="symbol left" aria-hidden="true">❖</span>
+      Quick Links
+      <span class="symbol right" aria-hidden="true">❖</span>
+    </h2>
+
+    <nav class="gt-footer-column-links" aria-label="Footer Navigation">
+      <a href="/index.html" class="gt-footer-link" data-aos="fade-left" data-aos-duration="900">
+        <span>Home</span>
+      </a>
+
+      <a href="/pages/curriculum/curriculum.html" class="gt-footer-link" data-aos="fade-up" data-aos-duration="900">
+        <span>CV</span>
+      </a>
+
+      <a href="/pages/projects/projects.html" class="gt-footer-link" data-aos="fade-right" data-aos-duration="900">
+        <span>Projects</span>
+      </a>
+
+      <a href="/pages/gallery/gallery.html" class="gt-footer-link" data-aos="fade-down" data-aos-duration="900">
+        <span>Gallery</span>
+      </a>
+    </nav>
+
+    <!-- About -->
+    <div class="gt-footer-about">
+      <h2><span class="symbol left" aria-hidden="true">❖</span> About This Portfolio <span class="symbol right"
+          aria-hidden="true">❖</span></h2>
+    <p>
+      Welcome! This page showcases my favorite <strong>icons, buttons, and video projects</strong>.
+      Each piece highlights how I tackle challenges creatively and turn ideas into <strong>clear, practical, and
+        engaging designs</strong>.
+      It gives a quick sense of the skills and attention to detail I bring to every professional project.
+    </p>
+    </div>
+  </div>
+</footer>
+
 
 
   <!-- ========== Info ========== -->

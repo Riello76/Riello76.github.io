@@ -10,7 +10,7 @@
 /* ========== Global Variables ========== */
 :root {
   scroll-behavior: smooth;
-
+  --main-background: #D6E4F0;
   --main-color: #0d2d57;
   --secondary-color: #00c2ba;
   --tertiary-color: #0a192f;
@@ -260,7 +260,7 @@ picture {
   border-radius: 100%;
   animation: bounceInOpacity 3s ease-out, pulseShadow 2s infinite ease-in-out;
   will-change: transform;
-  margin: 3rem 0 1rem 0;
+  margin: 3rem 0 0;
   box-shadow: 0px 3px 3px var(--secondary-color);
 
 }
@@ -287,7 +287,6 @@ picture {
 /* ========== TITLE STYLE ========== */
 .title {
   color: var(--info-color);
-  margin: 1.5rem 0;
 }
 
 /* ========== HIGHLIGHTED TITLE PART ========== */
@@ -375,7 +374,6 @@ picture {
   background: var(--main-color);
   position: relative;
   z-index: 999;
-  margin: 2rem 0;
 }
 
 /* ========== DROPDOWN ARROW STYLE ========== */
@@ -396,7 +394,6 @@ picture {
 
 /* ========== CONTAINER FLUID WITH PADDING & FLEX ALIGNMENT ========== */
 .gt-container-fluid {
-  padding: 1rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -708,24 +705,32 @@ picture {
 }
 
 /* ========== Footer Column ========== */
-.gt-footer-column-contacts {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
+/* Base layout for both Contacts and Links */
+.gt-footer-column-contacts,
 .gt-footer-column-links {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  width: 100%;
   gap: 1rem;
-  width: 60%;
 }
 
+/* Make all links stretch evenly */
+.gt-footer-column-contacts a,
 .gt-footer-column-links a {
-  flex: 1 1 45%;
+  flex: 1;
   text-align: center;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .gt-footer-column-contacts a,
+  .gt-footer-column-links a {
+    flex: 1 1 45%;
+    margin-bottom: 1rem;
+  }
 }
 
 .gt-footer-about {
