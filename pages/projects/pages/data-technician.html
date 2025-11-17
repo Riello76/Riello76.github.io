@@ -166,101 +166,56 @@
             <!-- Placeholder for Section 1 Content -->
             <h2>Excel</h2>
             <div class="excel">
-                <iframe width="402" height="346" frameborder="0" scrolling="no"
-                    src="https://1drv.ms/x/c/ff4c3421142b03b8/IQQdigcC8yeOS6WUPKKvHzMbAdSQvpuhfaMy6gKjdPKgR54?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
-                </div>
-                <p class="with-divider">
-                    In this project, I cleaned and formatted the dataset to improve clarity and readability.
-                    I then created a PivotTable and an interactive chart to visualize sales profit by country and year,
-                    making it easier to identify performance trends and key insights at a glance.
-                </p>
+                <img src="/images/Google Sheet.png" alt="">
+                <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRSl3RWcZtJnOJDNlV2wE1a3QZqhiSbRT9V9N6EaZPqP7H3clFpViCyg_LfRh4Q_A/pubhtml"
+                    target="_blank" rel="noopener noreferrer">
+                    <span class="click-hint">Click to view</span>
+                </a>
+            </div>
+
+            <p class="with-divider">
+                In this project, I cleaned and formatted the dataset to improve clarity and readability.
+                I then created a PivotTable and an interactive chart to visualize sales profit by country and year,
+                making it easier to identify performance trends and key insights at a glance.
+            </p>
         </section>
 
         <!-- Power BI Dashboard Section -->
         <section id="section2">
             <h2>Power BI Dashboard</h2>
             <!-- Container responsive -->
-            <div id="powerbi-container"
-                style="position: relative; width: 100%; max-width: 1200px; margin: 5rem auto; padding-bottom: 40%; height: 0; overflow: hidden; border-radius: 2rem;">
-                <iframe class="sales" title="data_sales"
-                    src="https://app.powerbi.com/view?r=eyJrIjoiNzBhOThjOWYtNDgxOC00NmQyLTk5MzUtMGU4MTllNmIxZTc5IiwidCI6IjNlYTdjMTI4LWM2MDEtNDQ3OS1hMDAzLWUxNGQwMGMwYjVjYiJ9&:layout=mobile"
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" frameborder="0"
-                    allowFullScreen="true">
-                </iframe>
+            <div class="powerbi">
+             <img src="/images/PowerBI.png" alt="">
+                <a href="https://app.powerbi.com/reportEmbed?reportId=693c9cdd-07c4-455b-9963-ee97d29a4d31&autoAuth=true&ctid=3ea7c128-c601-4479-a003-e14d00c0b5cb"
+                    target="_blank" rel="noopener noreferrer">
+                    <span class="click-hint">Click to view</span>
+                </a>
+
             </div>
-            <p class="with-divider">This Power BI dashboard visualizes sales data, highlighting key metrics such as total revenue, profit
+            <p class="with-divider">This Power BI dashboard visualizes sales data, highlighting key metrics such as
+                total revenue, profit
                 trends, and
                 top-performing regions and products. Interactive filters allow you to drill down by region, product
                 category, or
                 time period, helping you identify patterns, track performance, and make informed, data-driven business
                 decisions.
             </p>
-            <script>
-                const powerbiDiv = document.getElementById('powerbi-container');
-                function adjustPowerBI() {
-                    if (window.innerWidth <= 768) {
-                        powerbiDiv.style.paddingBottom = '100%';
-                    } else {
-                        powerbiDiv.style.paddingBottom = '40%';
-                    }
-                }
-                adjustPowerBI();
-                window.addEventListener('resize', adjustPowerBI);
-            </script>
-            
+
+
             <!-- Tableau Dashboard Section -->
-            <section id="section3">
+            <section class="section3">
                 <h2>Tableau Dashboard</h2>
-                <div class="tableauPlaceholder" id="viz1762361703495"
-                    style="position: relative; width: 100%; max-width: 1200px; margin: 5rem auto;border-radius: 2rem;">
-                    <noscript>
-                        <a href="#">
-                            <img alt="Global Health Insights"
-                                src="https://public.tableau.com/static/images/Bo/Book1_2_17623616935700/GlobalHealthDashboard/1_rss.png"
-                                style="border: none; width: 100%; height: auto;" />
-                        </a>
-                    </noscript>
-                    <object class="tableauViz" style="display:none; width:100%; height:75vh;">
-                        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-                        <param name="embed_code_version" value="3" />
-                        <param name="site_root" value="" />
-                        <param name="name" value="Book1_2_17623616935700/GlobalHealthDashboard" />
-                        <param name="tabs" value="no" />
-                        <param name="toolbar" value="yes" />
-                        <param name="static_image"
-                            value="https://public.tableau.com/static/images/Bo/Book1_2_17623616935700/GlobalHealthDashboard/1.png" />
-                        <param name="animate_transition" value="yes" />
-                        <param name="display_static_image" value="yes" />
-                        <param name="display_spinner" value="yes" />
-                        <param name="display_overlay" value="yes" />
-                        <param name="display_count" value="yes" />
-                        <param name="language" value="en-US" />
-                        <param name="filter" value="publish=yes" />
-                    </object>
+                <div class="tableau" id="viz1762361703495">
+                  
+                   <img src="/images/Tableau.png" alt="">
+                    <a href="https://public.tableau.com/views/Book1_2_17623616935700/GlobalHealthDashboard?:language=it-IT&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+                        target="_blank" rel="noopener noreferrer">
+                        <span class="click-hint">Click to view</span>
+                    </a>
                 </div>
 
-                <script type="text/javascript">
-                    var divElement = document.getElementById('viz1762361703495');
-                    var vizElement = divElement.getElementsByTagName('object')[0];
-
-                    function resizeViz() {
-                        var width = divElement.offsetWidth;
-                        var height = width * 0.75;
-                        vizElement.style.width = width + 'px';
-                        vizElement.style.height = height + 'px';
-                    }
-
-                    var scriptElement = document.createElement('script');
-                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                    scriptElement.onload = function () {
-                        resizeViz();
-                        window.addEventListener('resize', resizeViz);
-                    };
-                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-
-                </script>
-
-                <p class="with-divider">Discover how life expectancy, population trends, and health indicators connect worldwide through
+                <p class="with-divider">Discover how life expectancy, population trends, and health indicators connect
+                    worldwide through
                     interactive country
                     filters and dynamic visual insights. Use the country filter to explore trends over time, compare
                     population by
@@ -284,27 +239,32 @@
 
         <div class="gt-footer-container">
 
-            <!-- Contacts -->
-            <h2><span class="symbol left" aria-hidden="true">❖</span> Contacts <span class="symbol right"
-                    aria-hidden="true">❖</span></h2>
-            <nav class="gt-footer-column" aria-label="Contacts">
-                <a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link"
-                    aria-label="Email Gaspare Tocci">Email</a>
-                <a href="https://github.com/Riello76" target="_blank" class="gt-footer-link"
-                    aria-label="GitHub Profile">GitHub</a>
-                <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="gt-footer-link"
-                    aria-label="LinkedIn Profile">LinkedIn</a>
-            </nav>
+        <!-- Contacts -->
+        <h2><span class="symbol left" aria-hidden="true">❖</span> Contacts <span class="symbol right"
+                aria-hidden="true">❖</span></h2>
+        <nav class="gt-footer-column" aria-label="Contacts">
+            <a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link" aria-label="Email Gaspare Tocci">
+                <span>Email</span>
+            </a>
+            <a href="https://github.com/Riello76" target="_blank" class="gt-footer-link" aria-label="GitHub Profile">
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="gt-footer-link"
+                aria-label="LinkedIn Profile">
+                <span>LinkedIn</span>
+            </a>
+        </nav>
+        
+        <!-- Quick Links -->
+        <h2><span class="symbol left" aria-hidden="true">❖</span> Quick Links <span class="symbol right"
+                aria-hidden="true">❖</span></h2>
+        <nav class="gt-footer-column" aria-label="Footer Navigation">
+            <a href="/index.html" class="gt-footer-link"><span>Home</span></a>
+            <a href="/pages/curriculum/curriculum.html" class="gt-footer-link"><span>CV</span></a>
+            <a href="/pages/projects/projects.html" class="gt-footer-link"><span>Projects</span></a>
+            <a href="/pages/gallery/gallery.html" class="gt-footer-link"><span>Gallery</span></a>
+        </nav>
 
-            <!-- Quick Links -->
-            <h2><span class="symbol left" aria-hidden="true">❖</span> Quick Links <span class="symbol right"
-                    aria-hidden="true">❖</span></h2>
-            <nav class="gt-footer-column" aria-label="Footer Navigation">
-                <a href="/index.html" class="gt-footer-link">Home</a>
-                <a href="/pages/curriculum/curriculum.html" class="gt-footer-link">CV</a>
-                <a href="/pages/projects/projects.html" class="gt-footer-link">Projects</a>
-                <a href="/pages/gallery/gallery.html" class="gt-footer-link">Gallery</a>
-            </nav>
 
         </div>
 
