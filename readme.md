@@ -11,7 +11,7 @@ My work combines **front-end development**, **data visualization**, and **creati
 
 Currently completing a **Data Technician Bootcamp**, gaining hands-on experience with:
 - **Data visualization** → Power BI, Tableau  
-- **Data management** → Microsoft Fabric, Azure  
+- **Data management & analysis** → Excel, Python, Pandas, Microsoft Fabric, Azure  
 - **Collaboration & workflow** → GitHub, VS Code  
 
 ---
@@ -29,14 +29,16 @@ Creative tools I use daily:
 ## 🔧 Development & Data Stack
 
 **Web Development**  
-HTML, CSS, JavaScript → responsive, semantic code  
-Bootstrap → structured, consistent layouts  
-AOS (Animate on Scroll) → smooth motion effects  
+- HTML, CSS, JavaScript → responsive, semantic code  
+- Bootstrap → structured, consistent layouts  
+- AOS (Animate on Scroll) → smooth motion effects  
 
-**Data Tools**  
-Power BI, Tableau, Excel → dashboards and insights  
-Microsoft Fabric, Azure → scalable data processing  
-VS Code & GitHub → efficient coding and version control  
+**Data & Analytics**  
+- Excel → formulas, pivot tables, charts  
+- Python & Pandas → data analysis, processing, automation  
+- Power BI, Tableau → dashboards and insights  
+- Microsoft Fabric, Azure → scalable data processing  
+- VS Code & GitHub → efficient coding and version control  
 
 ---
 
