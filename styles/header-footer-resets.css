@@ -871,12 +871,29 @@ picture {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1000;
-}
-.gt-go-to-top img {
-  width: 100%;
-  height: auto;
+  border-radius: var(--border-radius-desktop);
 }
 
+.gt-go-to-top:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 2rem var(--secondary-color);
+}
+
+.gt-go-to-top img {
+  width: 50%;
+  height: auto;
+  border: var(--border-radius-desktop);
+}
+
+@media screen and (min-width: 320px) {
+  .gt-go-to-top {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 2rem var(--secondary-color);
+  }
+
+}
 
 /* ========== MEDIA QUERY: DESKTOP & TABLET NAVBAR STYLING ========== */
 @media screen and (min-width: 768px) {
@@ -1097,10 +1114,6 @@ picture {
     }
   }
 
-  .gt-go-to-top {
-    width: 10rem;
-    height: 10rem;
-  }
 }
 
 /* ========== DESKTOP (>= 769px) OVERRIDE ========== */
