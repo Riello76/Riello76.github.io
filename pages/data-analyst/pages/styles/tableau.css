@@ -1,0 +1,61 @@
+/* Grid layout for all projects */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+/* Project card styling */
+.project-card {
+    background: var(--main-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-desktop);
+    box-shadow: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: fit-content;
+    margin-bottom: 2rem;
+}
+
+/* Project title */
+.project-card h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Iframe inside card */
+.project-card iframe,
+.project-card .tableauPlaceholder {
+    width: 100%;
+    height: 400px;
+    /* desktop default */
+    border-radius: var(--border-radius-mobile);
+}
+
+/* Paragraph styling */
+.project-card p {
+    margin-top: 1rem;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 780px) {
+    .project-card {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .project-card iframe,
+    .project-card .tableauPlaceholder {
+        width: 100%;
+        height: auto;
+        /* altezza automatica */
+        aspect-ratio: 16 / 9;
+        /* mantiene proporzioni */
+    }
+}

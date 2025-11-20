@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ==================== Basic Configuration ==================== -->
+    <!-- Sets character encoding and viewport for proper responsive behavior -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ==================== SEO Meta Tags ==================== -->
+    <!-- Describes page content to improve search engine visibility -->
+    <meta name="description"
+        content="Explore Gaspare Tocci's Tableau skills and projects, showcasing expertise in advanced data visualization, dynamic reporting, and storytelling with data." />
+    <!-- Keywords related to the topic to reinforce discoverability -->
+    <meta name="keywords"
+        content="Gaspare Tocci, Tableau, data visualization, reporting, dashboards, storytelling with data, portfolio, tools" />
+    <meta name="author" content="Gaspare Tocci" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ==================== Open Graph (Social Media Sharing) ==================== -->
+    <!-- Defines preview content when links are shared on social platforms -->
+    <meta property="og:title" content="Gaspare Tocci | Tableau Skills" />
+    <meta property="og:description"
+        content="Discover Gaspare Tocci's expertise in Tableau, including advanced visualizations, dynamic dashboards, and storytelling with data." />
+    <meta property="og:image" content="/images/share-img.png" />
+    <meta property="og:url" content="https://riello76.github.io/data-analyst/pages/tableau.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- ==================== Page Title ==================== -->
+    <title>Gaspare Tocci | Tableau Skills</title>
+
+    <!-- ==================== Preconnect for Better Performance ==================== -->
+    <!-- Optimizes loading speed for external resources -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+
+    <!-- ==================== AOS Animation Library ==================== -->
+    <!-- Loaded in a non-blocking way to improve performance -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" media="print"
+        onload="this.onload=null;this.media='all';" crossorigin="anonymous" />
+
+    <!-- ==================== Page Stylesheets ==================== -->
+    <!-- Main Tableau page styling -->
+    <link rel="stylesheet" href="/pages/data-analyst/pages/styles/tableau.css" />
+    <!-- Shared header/footer resets and global styles -->
+    <link rel="stylesheet" href="/styles/header-footer-resets.css" />
+
+    <!-- ==================== Favicon ==================== -->
+    <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
+</head>
+
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header>
+
+        <!-- ==================== Top Header: Logo + Page Slogan ==================== -->
+        <div class="top-header">
+
+            <!-- Logo linking to homepage -->
+            <a href="/index.html" title="Go to Homepage">
+                <img class="logo" id="top" src="/images/logo.svg" alt="Gaspare Tocci's Logo"
+                    title="Gaspare Tocci's Logo" width="120" height="60">
+            </a>
+
+            <!-- Main page slogan -->
+            <h1 class="title" title="Page's Title">
+                <span class="symbol left">❖</span>
+                Every problem has its <span class="highlight">creative solution</span>
+                <span class="symbol right">❖</span>
+            </h1>
+
+        </div>
+
+        <!-- ==================== NAVIGATION BAR ==================== -->
+        <nav class="gt-navbar" aria-label="Main Navigation">
+            <div class="gt-container-fluid">
+
+                <!-- Mobile hamburger toggle -->
+                <button class="gt-navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="gt-navbar-toggler-icon">
+                        <span class="gt-bar"></span>
+                        <span class="gt-bar"></span>
+                        <span class="gt-bar"></span>
+                    </span>
+                </button>
+
+                <!-- ==================== Main Menu Container ==================== -->
+                <div class="gt-navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Main navigation list -->
+                    <ul class="gt-navbar-nav">
+
+                        <!-- Simple navigation item -->
+                        <li class="gt-nav-item">
+                            <a class="gt-nav-link active" href="/index.html">
+                                <span class="gt-nav-item-text">HOME</span>
+                            </a>
+                        </li>
+
+                        <!-- Dropdown: CV -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
+                                <span class="gt-nav-item-text">CV</span>
+                                <span class="gt-arrow"></span>
+                            </a>
+
+                            <!-- Dropdown items for CV -->
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/curriculum/curriculum.html">Main Page</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/files/Gaspare-Tocci-CV-IT.pdf" download>Download
+                                        -PDF-</a></li>
+                                <li><a class="gt-dropdown-item" href="/files/Gaspare-Tocci-CV-IT.doc" download>Download
+                                        -DOC-</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Dropdown: Gallery -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
+                                <span class="gt-nav-item-text">GALLERY</span>
+                                <span class="gt-arrow"></span>
+                            </a>
+
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/gallery.html">Main Page</a></li>
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/branding.html">Branding</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/graphics.html">Graphics</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/3d-design.html">3D Design</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Dropdown: Projects -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
+                                <span class="gt-nav-item-text">PROJECTS</span>
+                                <span class="gt-arrow"></span>
+                            </a>
+
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/projects/projects.html">Main Page</a></li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/glastonbury/">Glastonbury</a></li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/old-portfolio.html">Old Portfolio</a>
+                                </li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/homepages/heat-wave/index-heat-wave.html">Heat
+                                        Wave</a></li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/homepages/streamer/index-streamer.html">Streamer</a>
+                                </li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/homepages/wada-solutions/index.html">WADA
+                                        Solutions</a></li>
+                                <li><a class="gt-dropdown-item" href="/pages/projects/pages/data-technician.html">Data
+                                        Technician</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Dropdown: Data Analyst -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
+                                <span class="gt-nav-item-text">DATA ANALYST</span>
+                                <span class="gt-arrow"></span>
+                            </a>
+
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/data-analyst.html">Main
+                                        Page</a></li>
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/excel.html">Excel</a>
+                                </li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/data-analyst/pages/Pyton-Pandas.html">Python-Pandas</a></li>
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/mysql.html">MySQL</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/power-bi.html">Power
+                                        BI</a></li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/data-analyst/pages/tableau.html">Tableau</a></li>
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/azure.html">Azure</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+
+        <!-- Page title -->
+        <h2>Tableau Projects</h2>
+
+        <!-- Grid layout for Tableau project cards -->
+        <section class="project-grid">
+
+            <!-- ==================== Project Card 01 ==================== -->
+            <article class="project-card">
+                <h3>EMSI UK</h3>
+
+                <!-- Tableau embed container -->
+                <div class='tableauPlaceholder' id='viz1763651580392'
+                    style='position: relative; width: 100%; height: 400px;'>
+
+                    <!-- Fallback image for no-JS users -->
+                    <noscript>
+                        <a href='#'>
+                            <img alt='UK 2011-2014 Employment Dashboard'
+                                src='https://public.tableau.com/static/images/EM/EMSIUKDashboard_17636513108110/Dashboard1/1_rss.png'
+                                style='border: none' />
+                        </a>
+                    </noscript>
+
+                    <!-- Actual Tableau embed object -->
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='EMSIUKDashboard_17636513108110/Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='it-IT' />
+                    </object>
+                </div>
+
+                <!-- JS for responsive Tableau embed -->
+                <script>
+                    var divElement = document.getElementById('viz1763651580392');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = (divElement.offsetWidth * 0.6) + 'px';
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+
+                <p>
+                    <span>📊 EMSI UK Tableau Dashboard Project</span><br>
+                    This dashboard analyzes <strong>UK employment trends</strong> across industries, sub-industries, and
+                    cities.
+                    The project includes <strong>interactive charts</strong> and insights built from the original EMSI
+                    dataset.
+                </p>
+
+            </article>
+
+            <!-- ==================== Project Card 02 ==================== -->
+            <article class="project-card">
+                <h3>Global Health Insights</h3>
+
+                <div class='tableauPlaceholder tableau-card' id='viz1763652806229'
+                    style='position: relative; width: 100%;'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='Global Health Insights'
+                                src='https://public.tableau.com/static/images/Bo/Book1_2_17623616935700/GlobalHealthDashboard/1_rss.png'
+                                style='border: none' />
+                        </a>
+                    </noscript>
+
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Book1_2_17623616935700/GlobalHealthDashboard' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https://public.tableau.com/static/images/Bo/Book1_2_17623616935700/GlobalHealthDashboard/1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='it-IT' />
+                    </object>
+                </div>
+
+                <script>
+                    var divElement = document.getElementById('viz1763652806229');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+
+                <p>
+                    <span>🌍 Global Health Insights – Tableau Project</span><br>
+                    This dashboard explores <strong>global health metrics</strong> such as life expectancy, BMI,
+                    population, and gender distribution using clear and interactive data visuals.
+                </p>
+            </article>
+
+            <!-- ==================== Project Card 03 ==================== -->
+            <article class="project-card">
+                <h3>Top 10 Spotify Genres by Popularity</h3>
+
+                <div class='tableauPlaceholder tableau-card' id='viz1763653086936'
+                    style='position: relative; width: 100%;'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='Top 10 Spotify Genres by Popularity'
+                                src='https://public.tableau.com/static/images/Bo/Book2_17604504491300/Top10SpotifyGenresbyPopularity/1_rss.png'
+                                style='border: none' />
+                        </a>
+                    </noscript>
+
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Book2_17604504491300/Top10SpotifyGenresbyPopularity' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https://public.tableau.com/static/images/Bo/Book2_17604504491300/Top10SpotifyGenresbyPopularity/1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='it-IT' />
+                    </object>
+                </div>
+
+                <script>
+                    var divElement = document.getElementById('viz1763653086936');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+
+                <p>
+                    <span>🎵 Top 10 Spotify Genres – Tableau Project</span><br>
+                    An interactive dashboard analyzing the <strong>most popular music genres</strong> on Spotify,
+                    highlighting patterns in user listening behavior.
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="gt-footer">
+
+        <!-- Scroll-to-top button -->
+        <a class="gt-go-to-top" href="#top" aria-label="Scroll to top">
+            <img src="/icons/Scroll-Up-Arrow.webp" alt="Animated up arrow" width="40" height="40" loading="lazy">
+        </a>
+
+        <div class="gt-footer-container">
+
+            <!-- Contacts Column -->
+            <h2><span class="symbol left">❖</span> Contacts <span class="symbol right">❖</span></h2>
+            <nav class="gt-footer-column" aria-label="Contacts">
+                <a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link"><span>Email</span></a>
+                <a href="https://github.com/Riello76" target="_blank" class="gt-footer-link"><span>GitHub</span></a>
+                <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank"
+                    class="gt-footer-link"><span>LinkedIn</span></a>
+            </nav>
+
+            <!-- Quick Links Column -->
+            <h2><span class="symbol left">❖</span> Quick Links <span class="symbol right">❖</span></h2>
+            <nav class="gt-footer-column" aria-label="Footer Navigation">
+                <a href="/index.html" class="gt-footer-link"><span>Home</span></a>
+                <a href="/pages/curriculum/curriculum.html" class="gt-footer-link"><span>CV</span></a>
+                <a href="/pages/projects/projects.html" class="gt-footer-link"><span>Projects</span></a>
+                <a href="/pages/gallery/gallery.html" class="gt-footer-link"><span>Gallery</span></a>
+                <a href="/pages/data-analyst/data-analyst.html" class="gt-footer-link"><span>Data Analyst</span></a>
+            </nav>
+
+
+            <!-- About Section -->
+            <h2><span class="symbol left">❖</span> About This Page <span class="symbol right">❖</span></h2>
+
+            <div class="gt-footer-column gt-footer-about">
+                <!-- Updated description specifically for Tableau page -->
+                <p>
+                    This page showcases a collection of my <strong>Tableau data visualization projects</strong>.
+                    Each dashboard highlights different analytical approaches and demonstrates my ability to turn
+                    raw datasets into <strong>clear, interactive, and meaningful insights</strong>.
+                    These projects reflect my growth as a data analyst and my passion for <strong>visual
+                        storytelling</strong>.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- ==================== Scripts ==================== -->
+    <!-- Info message script (if used in the page) -->
+    <script src="/scripts/info.js"></script>
+
+    <!-- Navbar toggle and mobile behavior -->
+    <script src="/scripts/navbar.js" defer></script>
+
+    <!-- AOS animation library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+
+    <!-- Initialize AOS animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+/* Card for SQL exercises */
+.mysql-exercises {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.mysql-exercises>.sql-card,
+.mysql-exercises>.mysql-paragraph {
+    flex: 1;
+}
+
+.mysql-paragraph {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 5rem auto;
+    gap: 5rem;
+}
+.mysql-paragraph p span {
+    font-weight: bold;
+    font-size: var(--font-size-h3);
+    color: var(--secondary-color);
+}
+
+.sql-card {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: var(--main-color);
+    padding: 2rem;
+    box-shadow: var(--secondary-color);
+}
+
+/* Container scrollable for preformatted SQL */
+.sql-container {
+    max-width: 800px;
+    max-height: 500px;
+    overflow-y: auto;
+    background: var(--main-color);
+    padding: 1rem;
+    border-radius: var(--border-radius-mobile);
+    box-shadow: 0 0 2rem var(--secondary-color);
+}
+
+.sql-container pre {
+    font-size: var(--font-size-h6);
+    font-weight: 500;
+    color: var(--info-color);
+    white-space: pre-wrap;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* Custom scrollbar for .sql-container */
+.sql-container::-webkit-scrollbar {
+    width: 12px;
+    /* width of the scrollbar */
+}
+
+.sql-container::-webkit-scrollbar-track {
+    background: var(--main-color);
+    /* track background */
+    border-radius: var(--border-radius-mobile);
+}
+
+.sql-container::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    /* thumb color */
+    border-radius: var(--border-radius-mobile);
+    border: 3px solid var(--main-color);
+    /* optional padding effect */
+    box-shadow: 0 0 2rem var(--secondary-color);
+    cursor: pointer;
+}
+
+.sql-container::-webkit-scrollbar-thumb:hover {
+    background-color: var(--info-color);
+    /* hover color */
+}
+
+
+@media screen and (max-width: 768px) {
+    .mysql-exercises {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mysql-paragraph {
+        width: 100%;
+        gap: 1rem;
+        margin: 0;
+    }
+    .sql-card {
+     padding: 1rem;
+    }
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <!-- ========== Character Set & Viewport ========== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ========== SEO Meta Tags ========== -->
+    <meta name="description"
+        content="Explore Gaspare Tocci's portfolio of Data Technician projects, showcasing skills in data analysis, management, and visualization." />
+    <meta name="keywords"
+        content="data technician, data analysis, data projects, portfolio, Gaspare Tocci, Excel, SQL, Python, data visualization" />
+    <meta name="author" content="Gaspare Tocci" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ========== Open Graph Meta Tags ========== -->
+    <meta property="og:title" content="Gaspare Tocci's Data Technician Projects" />
+    <meta property="og:description"
+        content="Discover Gaspare Tocci's collection of Data Technician projects, highlighting skills in data management, analysis, and visualization using tools like Excel, SQL, and Python." />
+    <meta property="og:image" content="/images/share-img.png" />
+    <meta property="og:url" content="https://riello76.github.io/pages/projects/data-technician.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- ========== Title ========== -->
+    <title>Gaspare Tocci | Tools & Skills</title>
+
+    <!-- ========== Preconnect (Performance) ========== -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+
+    <!-- ========== AOS CSS (Animations) ========== -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" media="print"
+        onload="this.onload=null;this.media='all';" crossorigin="anonymous" />
+
+    <!-- ========== CSS STYLES ========== -->
+    <link rel="stylesheet" href="/styles/data-analyst.css" />
+    <link rel="stylesheet" href="/styles/header-footer-resets.css" />
+
+    <!-- ========== Favicon ========== -->
+    <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
+</head>
+
+<body>
+    <!-- ========== HEADER SECTION ========== -->
+    <header>
+
+        <!-- ========== TOP HEADER ========== -->
+        <div class="top-header">
+            <!-- ========== Logo ========== -->
+            <a href="/index.html" title="Go to Homepage">
+                <img class="logo" id="top" src="/images/logo.svg" alt="Gaspare Tocci's Logo"
+                    title="Gaspare Tocci's Logo" width="120" height="60">
+            </a>
+
+            <!-- ========== Title ========== -->
+            <h1 class="title" title="Page's Title">
+                <span class="symbol left">❖</span>
+                Every problem has its <span class="highlight">creative solution</span>
+                <span class="symbol right">❖</span>
+            </h1>
+
+
+        </div>
+
+        <!-- ========== NAVBAR CONTAINER ========== -->
+        <nav class="gt-navbar" aria-label="Main Navigation">
+            <div class="gt-container-fluid">
+
+                <!-- ========== TOGGLER (HAMBURGER BUTTON) ========== -->
+                <button class="gt-navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="gt-navbar-toggler-icon">
+                        <span class="gt-bar"></span>
+                        <span class="gt-bar"></span>
+                        <span class="gt-bar"></span>
+                    </span>
+                </button>
+
+                <!-- ========== MAIN MENU CONTAINER (COLLAPSIBLE) ========== -->
+                <div class="gt-navbar-collapse" id="navbarSupportedContent">
+                    <!-- ========== NAV ITEMS LIST ========== -->
+                    <ul class="gt-navbar-nav">
+
+                        <!-- ========== HOME LINK (NO DROPDOWN) ========== -->
+                        <li class="gt-nav-item">
+                            <a class="gt-nav-link active" href="/index.html">
+                                <span class="gt-nav-item-text">HOME</span>
+                            </a>
+                        </li>
+
+                        <!-- ========== CV DROPDOWN MENU ========== -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
+                                <span class="gt-nav-item-text">CV</span>
+                                <span class="gt-arrow"></span>
+                            </a>
+                            <!-- ========== CV DROPDOWN ITEMS ========== -->
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/curriculum/curriculum.html">Main Page</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/files/Gaspare-Tocci-CV-IT.pdf" download>Download
+                                        -PDF-</a></li>
+                                <li><a class="gt-dropdown-item" href="/files/Gaspare-Tocci-CV-IT.doc" download>Download
+                                        -DOC-</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- ========== GALLERY DROPDOWN MENU ========== -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
+                                <span class="gt-nav-item-text">GALLERY</span>
+                                <span class="gt-arrow"></span>
+                            </a>
+                            <!-- ========== GALLERY DROPDOWN ITEMS ========== -->
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/gallery.html">Main Page</a></li>
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/branding.html">Branding</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/graphics.html">Graphics</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/3d-design.html">3D Design</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- ========== PROJECTS DROPDOWN MENU ========== -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
+                                <span class="gt-nav-item-text">PROJECTS</span>
+                                <span class="gt-arrow"></span>
+                            </a>
+                            <!-- ========== PROJECTS DROPDOWN ITEMS ========== -->
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/projects/projects.html">Main Page</a></li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/glastonbury/">Glastonbury</a>
+                                </li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/old-portfolio.html">Old
+                                        Portfolio</a></li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/homepages/heat-wave/index-heat-wave.html">Heat
+                                        Wave</a>
+                                </li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/homepages/streamer/index-streamer.html">Streamer</a>
+                                </li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/homepages/wada-solutions/index.html">WADA
+                                        Solutions</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/projects/pages/data-technician.html">Data
+                                        Technician</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ========== DATA ANALYST DROPDOWN MENU ========== -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="gt-nav-item-text">DATA ANALYST</span>
+                                <span class="gt-arrow" aria-hidden="true"></span>
+                            </a>
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/data-analyst.html">Main
+                                        Page</a></li>
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/excel.html">Excel</a>
+                                </li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/data-analyst/pages/python-pandas.html">Python-Pandas</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/mysql.html">MySQL</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/power-bi.html">Power
+                                        BI</a></li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/data-analyst/pages/tableau.html">Tableau</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/azure.html">Azure</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content with Sections -->
+    <main>
+        <section id="section1">
+            <!-- My Tools Section -->
+            <h2>Professional Skills & Tools</h2>
+
+            <div class="skills-container">
+
+                <!-- Excel Skills Card -->
+                <div class="skill-card excel">
+                    <img src="/icons/excel.svg" alt="Excel Logo" class="skill-icon">
+                    <h3>Excel</h3>
+                    <p>Skilled in formulas, pivot tables, charts, and data analysis to turn raw information into
+                        actionable
+                        insights.</p>
+                    <a class="click-hint" href="./pages/excel.html">Click to view</a>
+                </div>
+
+                <!-- Python & Pandas Skills Card -->
+                <div class="skill-card python-pandas">
+                    <img src="/icons/python.svg" alt="Python Logo" class="skill-icon">
+                    <h3>Python & Pandas</h3>
+                    <p>Developing scripts for automation, data cleaning, and advanced analysis using libraries like
+                        Pandas and
+                        NumPy.</p>
+                    <a class="click-hint" href="/pages/data-analyst/pages/Pyton-Pandas.html">Click to view</a>
+                </div>
+
+                <!-- MySQL Database Skills Card -->
+                <div class="skill-card mysql">
+                    <img src="/icons/mysql.svg" alt="MySQL Logo" class="skill-icon">
+                    <h3>MySQL</h3>
+                    <p>Designing and managing relational databases, optimizing queries, and handling large datasets for
+                        data-driven
+                        decisions.</p>
+                    <a class="click-hint" href="./pages/mysql.html">Click to view</a>
+                </div>
+
+                <!-- Power BI Dashboard Skills Card -->
+                <div class="skill-card power-bi">
+                    <img src="/icons/powerbi.svg" alt="Power BI Logo" class="skill-icon">
+                    <h3>Power BI</h3>
+                    <p>Building interactive dashboards and visual reports to monitor KPIs and simplify data
+                        interpretation.</p>
+                    <a class="click-hint" href="./pages/power-bi.html">Click to view</a>
+                </div>
+
+                <!-- Tableau Data Visualization Skills Card -->
+                <div class="skill-card tableau">
+                    <img src="/icons/tableau.svg" alt="Tableau Logo" class="skill-icon">
+                    <h3>Tableau</h3>
+                    <p>Advanced data visualization, dynamic reporting, and storytelling with data to communicate
+                        strategic insights.
+                    </p>
+                    <a class="click-hint" href="./pages/tableau.html">Click to view</a>
+                </div>
+
+                <!-- Azure Cloud Skills Card -->
+                <div class="skill-card azure">
+                    <img src="/icons/fabric.svg" alt="Azure Logo" class="skill-icon">
+                    <h3>Azure</h3>
+                    <p>Knowledge of Microsoft cloud solutions for secure, scalable data storage, management, and
+                        analysis.</p>
+                    <a class="click-hint" href="./pages/azure.html">Click to view</a>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- ========== FOOTER SECTION ========== -->
+    <footer class="gt-footer">
+
+        <!-- GT Scroll to Top -->
+        <!-- COMMENT: Scroll-to-top button for smooth navigation -->
+        <a class="gt-go-to-top" href="#top" aria-label="Scroll to top">
+            <img src="/icons/Scroll-Up-Arrow.webp" alt="Animated up arrow to scroll to top" width="40" height="40"
+                loading="lazy">
+        </a>
+
+        <div class="gt-footer-container">
+
+            <!-- Contacts Section -->
+            <!-- COMMENT: Direct contact links for quick access to email & social profiles -->
+            <h2><span class="symbol left" aria-hidden="true">❖</span> Contacts <span class="symbol right"
+                    aria-hidden="true">❖</span></h2>
+
+            <nav class="gt-footer-column" aria-label="Contacts">
+                <a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link" aria-label="Email Gaspare Tocci">
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/Riello76" target="_blank" class="gt-footer-link"
+                    aria-label="GitHub Profile">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="gt-footer-link"
+                    aria-label="LinkedIn Profile">
+                    <span>LinkedIn</span>
+                </a>
+            </nav>
+
+            <!-- Quick Links Section -->
+            <!-- COMMENT: Useful shortcuts to main pages of the website -->
+            <h2><span class="symbol left" aria-hidden="true">❖</span> Quick Links <span class="symbol right"
+                    aria-hidden="true">❖</span></h2>
+
+            <nav class="gt-footer-column" aria-label="Footer Navigation">
+                <a href="/index.html" class="gt-footer-link" data-aos="fade-right" data-aos-duration="900">
+                    <span>Home</span>
+                </a>
+                <a href="/pages/curriculum/curriculum.html" class="gt-footer-link" data-aos="fade-up"
+                    data-aos-duration="900">
+                    <span>CV</span>
+                </a>
+                <a href="/pages/projects/projects.html" class="gt-footer-link" data-aos="fade-right"
+                    data-aos-duration="900">
+                    <span>Projects</span>
+                </a>
+                <a href="/pages/gallery/gallery.html" class="gt-footer-link" data-aos="fade-down"
+                    data-aos-duration="900">
+                    <span>Gallery</span>
+                </a>
+                <a href="/pages/data-analyst/data-analyst.html" class="gt-footer-link" data-aos="fade-left"
+                    data-aos-duration="900">
+                    <span>Data Analyst</span>
+                </a>
+            </nav>
+
+
+            <!-- About Section -->
+            <!-- COMMENT: Description tailored specifically for the Tools & Skills page -->
+            <h2><span class="symbol left" aria-hidden="true">❖</span> About This Page <span class="symbol right"
+                    aria-hidden="true">❖</span></h2>
+
+            <div class="gt-footer-column gt-footer-about">
+                <p>
+                    This page highlights the core <strong>tools</strong> and <strong>technologies</strong> I use across
+                    data analysis,
+                    automation, and digital problem-solving. Each section reflects the <strong>practical skills</strong>
+                    I apply in real
+                    projects, from <strong>Excel</strong> and <strong>SQL</strong> to <strong>Python</strong>,
+                    <strong>Power
+                        BI</strong>,
+                    and modern <strong>cloud solutions</strong>.
+                    The goal is simple: show the <strong>hands-on abilities</strong> that support my work and how each
+                    tool helps me
+                    create
+                    <strong>clear</strong>, <strong>reliable</strong>, and <strong>meaningful</strong> results.
+                </p>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- ========== SCRIPTS ========== -->
+
+    <!-- ========== Info ========== -->
+    <script src="/scripts/info.js"></script>
+
+    <!-- ========== Navbar ========== -->
+    <script src="/scripts/navbar.js" defer></script>
+
+    <!-- ========== AOS (Animate On Scroll) Library ========== -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+
+    <!-- ========== Initialize AOS Animations ========== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+        });
+    </script>
+</body>
+
+</html>

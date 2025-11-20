@@ -1,0 +1,50 @@
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 4rem 0;
+}
+
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.project-card h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.project-card iframe {
+    width: 100%;
+    height: 500px;
+    /* desktop */
+    padding: 2rem;
+    border-radius: 4rem;
+}
+
+.project-card p {
+    text-align: left;
+    padding: 0 2rem;
+}
+
+@media (max-width: 780px) {
+    .project-card {
+        width: 100%;
+    }
+    .project-card iframe {
+        width: 100%;
+        height: 400px;
+        padding: 1rem;
+    }
+
+    .project-card p {
+        padding: 0 1rem;
+    }
+}

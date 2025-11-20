@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Character Set & Viewport ========== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ========== SEO Meta Tags ========== -->
+    <meta name="description"
+        content="Explore Gaspare Tocci's MySQL skills and projects, showcasing expertise in database design, query optimization, and handling large datasets." />
+    <meta name="keywords"
+        content="Gaspare Tocci, MySQL, databases, SQL, data management, query optimization, portfolio, tools" />
+    <meta name="author" content="Gaspare Tocci" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ========== Open Graph Meta Tags ========== -->
+    <meta property="og:title" content="Gaspare Tocci | MySQL Skills" />
+    <meta property="og:description"
+        content="Discover Gaspare Tocci's expertise in MySQL, including relational database design, query optimization, and large dataset management." />
+    <meta property="og:image" content="/images/share-img.png" />
+    <meta property="og:url" content="https://riello76.github.io/data-analyst/pages/mysql.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- ========== Title ========== -->
+    <title>Gaspare Tocci | MySQL Skills</title>
+
+    <!-- ========== Preconnect (Performance) ========== -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+
+    <!-- ========== AOS CSS (Animations) ========== -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" media="print"
+        onload="this.onload=null;this.media='all';" crossorigin="anonymous" />
+
+    <!-- ========== CSS STYLES ========== -->
+    <link rel="stylesheet" href="/pages/data-analyst/pages/styles/mysql.css" />
+    <link rel="stylesheet" href="/styles/header-footer-resets.css" />
+
+    <!-- ========== Favicon ========== -->
+    <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
+</head>
+
+<body>
+    <!-- ========== HEADER SECTION ========== -->
+    <header>
+
+        <!-- ========== TOP HEADER ========== -->
+        <div class="top-header">
+            <!-- ========== Logo ========== -->
+            <a href="/index.html" title="Go to Homepage">
+                <img class="logo" id="top" src="/images/logo.svg" alt="Gaspare Tocci's Logo"
+                    title="Gaspare Tocci's Logo" width="120" height="60">
+            </a>
+
+            <!-- ========== Title ========== -->
+            <h1 class="title" title="Page's Title">
+                <span class="symbol left">❖</span>
+                Every problem has its <span class="highlight">creative solution</span>
+                <span class="symbol right">❖</span>
+            </h1>
+
+
+        </div>
+
+        <!-- ========== NAVBAR CONTAINER ========== -->
+        <nav class="gt-navbar" aria-label="Main Navigation">
+            <div class="gt-container-fluid">
+
+                <!-- ========== TOGGLER (HAMBURGER BUTTON) ========== -->
+                <button class="gt-navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="gt-navbar-toggler-icon">
+                        <span class="gt-bar"></span>
+                        <span class="gt-bar"></span>
+                        <span class="gt-bar"></span>
+                    </span>
+                </button>
+
+                <!-- ========== MAIN MENU CONTAINER (COLLAPSIBLE) ========== -->
+                <div class="gt-navbar-collapse" id="navbarSupportedContent">
+                    <!-- ========== NAV ITEMS LIST ========== -->
+                    <ul class="gt-navbar-nav">
+
+                        <!-- ========== HOME LINK (NO DROPDOWN) ========== -->
+                        <li class="gt-nav-item">
+                            <a class="gt-nav-link active" href="/index.html">
+                                <span class="gt-nav-item-text">HOME</span>
+                            </a>
+                        </li>
+
+                        <!-- ========== CV DROPDOWN MENU ========== -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
+                                <span class="gt-nav-item-text">CV</span>
+                                <span class="gt-arrow"></span>
+                            </a>
+                            <!-- ========== CV DROPDOWN ITEMS ========== -->
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/curriculum/curriculum.html">Main Page</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/files/Gaspare-Tocci-CV-IT.pdf" download>Download
+                                        -PDF-</a></li>
+                                <li><a class="gt-dropdown-item" href="/files/Gaspare-Tocci-CV-IT.doc" download>Download
+                                        -DOC-</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- ========== GALLERY DROPDOWN MENU ========== -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
+                                <span class="gt-nav-item-text">GALLERY</span>
+                                <span class="gt-arrow"></span>
+                            </a>
+                            <!-- ========== GALLERY DROPDOWN ITEMS ========== -->
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/gallery.html">Main Page</a></li>
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/branding.html">Branding</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/graphics.html">Graphics</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/3d-design.html">3D Design</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- ========== PROJECTS DROPDOWN MENU ========== -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
+                                <span class="gt-nav-item-text">PROJECTS</span>
+                                <span class="gt-arrow"></span>
+                            </a>
+                            <!-- ========== PROJECTS DROPDOWN ITEMS ========== -->
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/projects/projects.html">Main Page</a></li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/glastonbury/">Glastonbury</a>
+                                </li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/old-portfolio.html">Old
+                                        Portfolio</a></li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/homepages/heat-wave/index-heat-wave.html">Heat
+                                        Wave</a>
+                                </li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/homepages/streamer/index-streamer.html">Streamer</a>
+                                </li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/projects/pages/old-portfolio/homepages/wada-solutions/index.html">WADA
+                                        Solutions</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/projects/pages/data-technician.html">Data
+                                        Technician</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ========== DATA ANALYST DROPDOWN MENU ========== -->
+                        <li class="gt-nav-item gt-dropdown">
+                            <a class="gt-nav-link gt-dropdown-toggle" href="#" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="gt-nav-item-text">DATA ANALYST</span>
+                                <span class="gt-arrow" aria-hidden="true"></span>
+                            </a>
+                            <ul class="gt-dropdown-menu">
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/data-analyst.html">Main
+                                        Page</a></li>
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/excel.html">Excel</a>
+                                </li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/data-analyst/pages/python-pandas.html">Python-Pandas</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/mysql.html">MySQL</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/power-bi.html">Power
+                                        BI</a></li>
+                                <li><a class="gt-dropdown-item"
+                                        href="/pages/data-analyst/pages/tableau.html">Tableau</a>
+                                </li>
+                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/azure.html">Azure</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==================== MYSQL CONTENT ==================== -->
+        <h2>Northwind SQL Exercises</h2>
+
+        <section class="mysql-exercises">
+            <div class="sql-card">
+                <div class="sql-container">
+                    <pre>
+    -- Categories & Orders
+    select * from categories;
+    select * from orders;
+    
+    -- Products & Shippers
+    select * from products, shippers;
+    
+    -- Customers basic info
+    SELECT CustomerName, City, Country FROM Customers;
+    SELECT ProductID, ProductName FROM Products;
+    select country from customers;
+    
+    -- Distinct values & counts
+    SELECT DISTINCT Country FROM Customers;
+    SELECT DISTINCT city FROM Customers;
+    SELECT COUNT(DISTINCT Country) FROM Customers;
+    SELECT COUNT(DISTINCT CustomerID) FROM Customers;
+    
+    -- Customers by country
+    SELECT * FROM Customers WHERE Country = 'Mexico';
+    select * from customers where country = 'UK';
+    
+    -- Products filters
+    SELECT * FROM Products WHERE ProductID =1;
+    SELECT * FROM Products WHERE Price > 100;
+    
+    -- Orders after a date
+    SELECT * FROM Orders WHERE OrderDate > '1996-07-30';
+    
+    -- Customers by city
+    select customername, city, country from customers where city <>'Madrid';
+    select * from customers where city ="London";
+    select count(*) from customers where country="USA";
+    select * from customers where customerID >=15;
+    
+    -- Customers & Suppliers complex filters
+    SELECT * FROM Customers WHERE Country = 'Germany' AND City = 'Berlin';
+    SELECT * FROM Suppliers WHERE Country = 'Japan' AND City = 'Tokyo';
+    SELECT * FROM Customers WHERE City = 'Berlin' OR City = 'Stuttgart';
+    SELECT * FROM Customers WHERE Country = 'Germany' OR Country = 'Spain';
+    
+    -- LIKE queries
+    select * from customers where customername like "%ni%";
+    select * from customers where customername like "a_%";
+    select * from customers where customername like "a%e";
+    select * from customers where customername like "__r%";
+    
+    -- Other tables
+    select * from supplies where country like "%land%";
+    select * from employees where firstname like "_n%";
+    
+    -- IN / BETWEEN / ORDER BY / LIMIT
+    SELECT * FROM Customers WHERE Country IN ('Germany', 'France', 'UK');
+    select * from customers where city in ('Berlin','Paris','Madrid');
+    SELECT * FROM Products WHERE Price BETWEEN 10 AND 20;
+    SELECT * FROM Products WHERE Price NOT BETWEEN 10 AND 20;
+    SELECT * FROM Customers ORDER BY Country;
+    SELECT * FROM Customers LIMIT 3;
+    SELECT * FROM Products ORDER BY PRICE LIMIT 5;
+    
+    -- Aggregates
+    select max(price) from products;
+    select avg(price) from products;
+    select min(price), productname from products limit 1;
+    SELECT productname, price FROM products ORDER BY price ASC LIMIT 1;
+    
+    -- Aliases & CONCAT_WS
+    select customerid as id, customername as customers from customers;
+    select customerid as ID, Contactname as "Contact Person" from customers;
+    SELECT CustomerName, CONCAT_WS(', ', Address, PostalCode, City, Country) AS Address FROM Customers;
+    
+    -- Joins examples
+    select p.ProductName, od.Quantity, p.Price from order_details as od join products as p on od.productid = p.productid;
+    select productname, price, sum(quantity) as total from products as p join order_details as od on p.productid = od.productid group by productname, price;
+    select o.OrderID, o.OrderDate, c.CustomerName from orders as o join customers as c on o.CustomerID = c.CustomerID;
+    select p.ProductName, c.CategoryName, s.SupplierName from categories as c join products as p on c.CategoryID = p.CategoryID join suppliers as s on p.SupplierID = s.SupplierID;
+    
+    -- World database GDP example
+    select ci.name, (co.gnp*1000000/co.population) as gdp from country as co join city as ci on co.code = ci.countrycode where (co.gnp*1000000/co.population) > (select avg(gnp*1000000/population) from country);
+    use world;
+    select ci.name, (co.gnp*1000000/co.population) as gdp from country as co join city as ci on co.code = ci.countrycode where (co.gnp*1000000/co.population) > (select avg(gnp*1000000/population) from country);
+    </pre>
+                </div>
+            </div>
+            <div class="mysql-paragraph">
+                <p>
+                    <span>Northwind Database Create</span>
+                    <br>
+
+                    In this section of the Northwind Database project, the focus is on defining
+                    <strong>clear and reliable primary keys</strong> for the main tables.
+                    Primary keys are essential to guarantee that every record can be
+                    <strong>uniquely identified</strong>, making the structure of the database predictable and
+                    consistent.
+                    By establishing these keys, we strengthen <strong>referential integrity</strong>, avoid ambiguous or
+                    duplicated entries, and create a solid foundation for building relationships among tables such as
+                    <strong>Customers, Orders, Products, and Suppliers</strong>.
+                    This step is crucial to ensure <strong>accurate joins</strong>, faster queries, and a cleaner, more
+                    dependable
+                    data model.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="mysql-exercises">
+            <div class="sql-card">
+                <div class="sql-container">
+                    <pre>
+        /* Basic SQL Queries */
+        use Northwind;
+        
+        -- Return all rows and columns from customers table
+        select * 
+        From northwind.customers;
+        
+        -- Return all rows and columns from products table
+        select *
+        from products;
+        
+        select *
+        from orders;
+        
+        -- Return specific columns and all of the rows.
+        select CustomerName, City, Country
+        from customers;
+        
+        -- ProductId and ProductName
+        SELECT ProductID, ProductName 
+        FROM Products;
+        
+        -- Employee FirstName, LastName and BirthDate.
+        SELECT FirstName, LastName, BirthDate 
+        FROM employees;
+        
+        -- CustomerName, Address and City.
+        select CustomerName, Address, City from northwind.customers;
+        
+        -- Return different values
+        SELECT Country FROM Customers;
+        SELECT DISTINCT Country FROM Customers;
+        
+        -- How many different countries
+        select count(distinct country)
+        from customers;
+        
+        -- How many customers
+        SELECT COUNT(DISTINCT CustomerID) 
+        FROM Customers;
+        
+        -- Different cities from suppliers 
+        SELECT DISTINCT City FROM suppliers; 
+        
+        -- Number of cities from customers 
+        SELECT COUNT(DISTINCT City) FROM Customers;
+        
+        -- Activate Northwind Database
+        use Northwind;
+        
+        SELECT * FROM Customers
+        where Country = "Mexico";
+        
+        SELECT * from customers
+        Where CustomerID = 12;
+        
+        SELECT * from customers
+        Where CustomerID < 12;
+        
+        -- Customers from London
+        select * from customers where city = "London";
+        
+        -- Number of customers from USA
+        select count(customerID)
+        from customers
+        where country = "USA";
+        
+        -- Orders after a date
+        SELECT * FROM Orders
+        WHERE OrderDate > '1996-07-30';
+        
+        -- Products above price
+        SELECT * FROM Products
+        WHERE Price > 100;
+        
+        -- Customers not in USA
+        select *
+        from customers
+        where Country != "USA";
+        
+        -- CustomerID ≥ 15
+        SELECT * from customers where customerid >=15;
+        
+        -- Order quantity < 3
+        select * from order_details
+        where quantity < 3;
+        
+        -- Employees born after 1960
+        SELECT *
+        FROM Employees
+        WHERE BirthDate > '1960-01-01';
+        
+        -- Customers in Germany
+        select * 
+        from customers
+        where country = "Germany";
+        
+        SELECT * FROM Customers
+        WHERE Country = 'Germany' AND City = 'Berlin';
+        
+        SELECT Customername, city, country FROM Customers
+        WHERE Country = 'Germany' and NOT City = 'Berlin';
+        
+        SELECT * FROM Suppliers
+        WHERE Country = 'Japan' AND City = 'Tokyo';
+        
+        SELECT * FROM Customers
+        WHERE City = 'Berlin' OR City = 'Stuttgart';
+        
+        -- Sorting
+        SELECT * FROM Customers ORDER BY Country;
+        SELECT * FROM Customers ORDER BY City;
+        SELECT * FROM Customers ORDER BY Country DESC;
+        
+        SELECT ProductName, Price FROM Products
+        ORDER BY Price DESC;
+        
+        select * from suppliers 
+        order by city desc;
+        
+        SELECT * FROM Customers
+        ORDER BY Country, CustomerName;
+        
+        SELECT * FROM Customers
+        ORDER BY Country ASC, CustomerName DESC;
+        
+        Select * 
+        From Customers 
+        Where Country = 'USA' 
+        Order by CustomerName;
+        
+        -- Limit results
+        SELECT * FROM Customers LIMIT 9;
+        
+        -- Top 5 cheapest products
+        SELECT * FROM Products
+        ORDER BY PRICE 
+        LIMIT 5;
+        
+        SELECT * FROM Customers
+        WHERE Country='Germany'
+        LIMIT 3;
+        
+        SELECT * 
+        FROM Customers
+        WHERE Country='Germany'
+        order by City
+        LIMIT 3;
+        
+        Select *
+        From Products
+        Where price > 20
+        Limit 10;
+        
+        SELECT * FROM Customers 
+        WHERE City = 'London' 
+        LIMIT 3;
+        
+        -- Min/Max/Avg/Sum
+        select min(price) from products;
+        select max(price) from products;
+        select avg(price) from products;
+        select sum(price) from products;
+        
+        select min(CustomerName)
+        from customers;
+        
+        select max(orderdate)
+        from orders;
+        
+        select max(price), productname
+        from products;
+        
+        SELECT ProductID, ProductName, Price
+        FROM products
+        ORDER BY Price DESC
+        LIMIT 1;
+        
+        -- Exact match
+        select * from customers
+        where customername = "Food";
+        
+        -- LIKE queries
+        select * from customers where CustomerName LIKE "a%";
+        select * from customers where CustomerName LIKE "%a";
+        select * from customers where CustomerName like "%j%";
+        select * from customers where CustomerName like "_r%";
+        select * from customers where CustomerName like "a%o";
+        
+        select * from customers
+        where CustomerName not like "a%a";
+        
+        -- IN / NOT IN
+        SELECT * FROM Customers
+        WHERE Country IN ('Germany', 'France', 'UK');
+        
+        SELECT * FROM Customers
+        WHERE Country NOT IN ('Germany', 'France', 'UK');
+        
+        -- Customers in same country as suppliers
+        SELECT * FROM Customers
+        WHERE Country IN (SELECT Country FROM Suppliers);
+        
+        -- Subquery customers who have orders
+        select customerid, CustomerName
+        from customers
+        where customerid in (select customerid from orders);
+        
+        select * from orders 
+        where customerid = 32;
+        
+        -- BETWEEN
+        SELECT * FROM Products
+        WHERE Price BETWEEN 10 AND 20;
+        
+        SELECT * FROM Products
+        WHERE Price NOT BETWEEN 10 AND 20;
+        
+        SELECT * FROM Products
+        WHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'
+        ORDER BY ProductName;
+        
+        SELECT * FROM Orders
+        WHERE OrderDate BETWEEN '1996-07-01' AND '1996-07-31';
+        
+        SELECT * FROM Products
+        WHERE ProductName NOT BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'
+        ORDER BY ProductName;
+        
+        -- Aliases
+        SELECT CustomerID AS ID, CustomerName AS Customer
+        FROM Customers;
+        
+        SELECT CustomerName AS Customer, ContactName AS "Contact Person"
+        FROM Customers;
+        
+        SELECT CustomerName, CONCAT_WS(', ', Address, PostalCode, City, Country) AS Address
+        FROM Customers;
+        
+        -- Count Londoners
+        select count(*) as Londoners from customers
+        where city = "London";
+        
+        -- Category filter
+        select * from products 
+        where categoryID= '1' OR categoryid= '2' 
+        order by ProductName ASC;
+                </pre>
+
+
+                </div>
+            </div>
+            <div class="mysql-paragraph">
+                <p>
+                    <span>Northwind Database – Basic Queries</span><br>
+
+                    In this section, the focus is on exploring the <strong>core SQL operations</strong> applied within
+                    the
+                    <strong>Northwind Database</strong>.
+                    These exercises introduce the essential techniques for retrieving and manipulating data, such as
+                    <strong>selecting records</strong>,
+                    <strong>filtering rows</strong>, <strong>sorting results</strong>, and <strong>counting unique
+                        values</strong>.
+                    You will also work with text patterns, conditional logic, and <strong>subqueries</strong>, all of
+                    which are
+                    fundamental tools for real-world database analysis.
+
+                    By practising these queries, you build a strong base for more advanced topics including table
+                    relationships,
+                    joins, computed fields, and efficient data exploration.
+                    Each command is designed to strengthen your understanding of how relational databases operate,
+                    ensuring a
+                    cleaner workflow and a more structured approach to data handling.
+                </p>
+            </div>
+        </section>
+
+        <!-- ==================== MYSQL CONTENT ==================== -->
+
+
+        <section class="mysql-exercises">
+            <div class="sql-card">
+                <div class="sql-container">
+                    <pre>
+use northwind;
+
+-- Simple JOIN examples
+SELECT data FROM table1 JOIN table2 ON common_field;
+
+-- Single & Multi-line comments
+/* Multiple line comments are ignored during execution */
+-- Single line comment
+
+-- Orders and Customers
+select * from orders
+inner join customers on orders.customerid = customers.customerid;
+
+select customers.customerid, customers.customername, orders.orderid
+from orders
+inner join customers on orders.customerid = customers.customerid;
+
+-- Combine Orders and Employees
+select firstname, lastname, orders.orderid
+from employees
+inner join orders on employees.employeeid = orders.employeeid
+order by orderid;
+
+-- Products and Suppliers
+select Productname, suppliername
+from products
+inner join suppliers on products.supplierid = suppliers.supplierid
+where suppliername = "G'Day, Mate";
+
+-- Orders with Employees & Shippers
+select firstname, lastname, orders.orderid, orders.orderdate
+from employees 
+inner join orders on orders.employeeid = employees.employeeid; 
+
+SELECT * FROM orders 
+INNER JOIN shippers ON orders.shipperid = shippers.shipperid 
+WHERE ShipperName = 'United Package';
+
+-- Products and Categories
+SELECT ProductName, CategoryName 
+FROM Products 
+INNER JOIN Categories ON Products.CategoryID = Categories.CategoryID; 
+
+-- Products and Order Details
+select products.productid, products.productname, order_details.quantity 
+from products 
+inner join order_details on products.productid = order_details.productid;
+
+-- RIGHT and LEFT JOIN examples
+SELECT Orders.OrderID, Employees.LastName, Employees.FirstName
+FROM Orders
+RIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
+ORDER BY Orders.OrderID;
+
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+ORDER BY Customers.CustomerName;
+
+-- Customers without orders
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+WHERE orderid IS NULL;
+
+-- Aliasing
+SELECT c.CustomerName, o.OrderID
+FROM Customers as c
+LEFT JOIN Orders as o ON c.CustomerID = o.CustomerID
+WHERE orderid IS NULL;
+
+-- CROSS JOIN example
+SELECT count(*) FROM Customers CROSS JOIN Orders;
+
+-- Aggregates
+select avg(price), productname from products;
+
+SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country;
+
+-- Orders per Shipper
+select count(orderid) as totalorders, shippername
+from shippers as s
+inner join orders as o on s.shipperid = o.shipperid
+group by shippername;
+
+-- Total sales per product
+SELECT p.ProductName, SUM(od.Quantity * p.Price) AS TotalSales
+FROM Order_Details as od
+JOIN Products as p ON od.ProductID = p.ProductID
+GROUP BY p.ProductName
+ORDER BY TotalSales DESC;
+
+-- Customers per country
+select count(customerid) as noofcustomers, country
+from customers
+group by country;
+
+-- Total products sold per category
+select categoryname, sum(quantity) as totalquantity
+from categories as c
+join products as p on c.categoryid = p.categoryid
+join order_details as od on od.productid = p.productid
+group by categoryname;
+
+-- Orders per employee
+select firstname, lastname, count(orderid) as totalorders
+from employees as e
+join orders as o on e.employeeid = o.employeeid
+group by firstname, lastname;
+
+select concat_ws(", ", firstname, lastname) as employee,
+count(orderid) as totalorders
+from employees as e
+join orders as o on e.employeeid = o.employeeid
+group by firstname, lastname;
+            </pre>
+                </div>
+            </div>
+
+            <div class="mysql-paragraph">
+                <p>
+                    <span>Northwind Database – Joins & Aggregates</span><br>
+                    This section demonstrates the power of <strong>JOIN operations</strong> and <strong>aggregate
+                        functions</strong> within the <strong>Northwind Database</strong>. You will practice combining
+                    multiple tables such as <strong>Customers, Orders, Employees, Products, Categories,
+                        Suppliers,</strong>
+                    and <strong>Shippers</strong> to extract meaningful insights.
+                    <br>
+                    Exercises include <strong>INNER JOIN, LEFT JOIN, RIGHT JOIN, CROSS JOIN</strong>, and applying
+                    <strong>GROUP BY</strong> and aggregation functions like <strong>COUNT, SUM, AVG</strong> to
+                    calculate
+                    totals and averages.
+                    <br>
+                    Mastering these queries allows you to analyze relationships between tables, compute total sales,
+                    count orders, and understand how relational databases handle interconnected data efficiently.
+                </p>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- ========== FOOTER SECTION ========== -->
+    <footer class="gt-footer">
+
+        <!-- GT Scroll to Top -->
+        <a class="gt-go-to-top" href="#top" aria-label="Scroll to top">
+            <img src="/icons/Scroll-Up-Arrow.webp" alt="Animated up arrow to scroll to top" width="40" height="40"
+                loading="lazy">
+        </a>
+
+        <div class="gt-footer-container">
+
+            <!-- Contacts -->
+            <h2><span class="symbol left" aria-hidden="true">❖</span> Contacts <span class="symbol right"
+                    aria-hidden="true">❖</span></h2>
+            <nav class="gt-footer-column" aria-label="Contacts">
+                <a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link" aria-label="Email Gaspare Tocci">
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/Riello76" target="_blank" class="gt-footer-link"
+                    aria-label="GitHub Profile">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="gt-footer-link"
+                    aria-label="LinkedIn Profile">
+                    <span>LinkedIn</span>
+                </a>
+            </nav>
+
+            <!-- Quick Links -->
+            <h2><span class="symbol left" aria-hidden="true">❖</span> Quick Links <span class="symbol right"
+                    aria-hidden="true">❖</span></h2>
+            <nav class="gt-footer-column" aria-label="Footer Navigation">
+                <a href="/index.html" class="gt-footer-link" data-aos="fade-right"
+                    data-aos-duration="900"><span>Home</span></a>
+                <a href="/pages/curriculum/curriculum.html" class="gt-footer-link" data-aos="fade-up"
+                    data-aos-duration="900"><span>CV</span></a>
+                <a href="/pages/projects/projects.html" class="gt-footer-link" data-aos="fade-right"
+                    data-aos-duration="900"><span>Projects</span></a>
+                <a href="/pages/gallery/gallery.html" class="gt-footer-link" data-aos="fade-down"
+                    data-aos-duration="900"><span>Gallery</span></a>
+                <a href="/pages/data-analyst/data-analyst.html" class="gt-footer-link" data-aos="fade-left"
+                    data-aos-duration="900">
+                    <span>Data Analyst</span>
+                </a>
+            </nav>
+
+
+
+            <!-- About -->
+            <h2><span class="symbol left" aria-hidden="true">❖</span> About This Page <span class="symbol right"
+                    aria-hidden="true">❖</span></h2>
+            <div class="gt-footer-column gt-footer-about">
+                <p>
+                    This page collects a complete set of <strong>SQL exercises</strong> based on the
+                    <strong>Northwind</strong> and <strong>World</strong> databases.
+                    Here, I explore essential topics such as <strong>queries, filtering, sorting, joins,
+                        subqueries,</strong> and
+                    <strong>aggregate functions</strong>, building the foundations for efficient relational data
+                    analysis.
+                    These examples reflect my ability to <strong>structure data, extract insights, and write clean SQL
+                        logic</strong>
+                    applicable to real-world scenarios.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ========== Info ========== -->
+    <script src="/scripts/info.js"></script>
+
+    <!-- ========== Navbar ========== -->
+    <script src="/scripts/navbar.js" defer></script>
+
+    <!-- ========== AOS (Animate On Scroll) Library ========== -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+
+    <!-- ========== Initialize AOS Animations ========== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+        });
+    </script>
+</body>
+
+</html>
