@@ -35,7 +35,7 @@
     padding: 2rem;
     border-radius: var(--border-radius-mobile);
 }
-@media (max-width: 780px) {
+@media (max-width: 1024px) {
     .project-grid{
         padding: 0;
         gap: 0;
@@ -46,7 +46,7 @@
     }
 
     .project-card iframe {
-        height: 300px;
+        height: 500px;
     }
 
 }

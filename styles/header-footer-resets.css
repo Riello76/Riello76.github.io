@@ -12,6 +12,7 @@
   scroll-behavior: smooth;
   --main-background: #D6E4F0;
   --main-color: #0d2d57;
+  --main-color-opacity: rgba(13, 45, 87, 0.5);
   --secondary-color: #00c2ba;
   --tertiary-color: #0a192f;
   --info-color: #f8f9fa;
@@ -870,11 +871,14 @@ picture {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1000;
   border-radius: var(--border-radius-desktop);
+  border:1px solid var(--secondary-color);
+  background: var(--main-color-opacity);
 }
 
 .gt-go-to-top:hover {
   transform: scale(1.1);
   box-shadow: 0 0 2rem var(--secondary-color);
+  background-color: var(--main-color);
 }
 
 .gt-go-to-top img {
