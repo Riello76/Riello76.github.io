@@ -103,7 +103,8 @@
         var(--main-color) 100%);
 
     transition: all 0.4s ease;
-    /* smooth hover */
+    animation: cta-wiggle 3s infinite ease-in-out;
+ 
   }
 
   .cta-btn .btn-text.default {
@@ -117,7 +118,31 @@
   .cta-btn:hover .btn-text.hover {
     opacity: 1;
   }
+@keyframes cta-wiggle {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
 
+  20% {
+    transform: rotate(1deg) scale(1.03);
+  }
+
+  40% {
+    transform: rotate(-1deg) scale(1.05);
+  }
+
+  60% {
+    transform: rotate(0.6deg) scale(1.03);
+  }
+
+  80% {
+    transform: rotate(-0.6deg) scale(1.02);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
   /* ========== CTA ANIMATION ========== */
   @keyframes CTA {
     50% {
