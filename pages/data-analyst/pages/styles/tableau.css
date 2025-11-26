@@ -22,7 +22,6 @@
 }
 
 .project-card:hover {
-    transform: scale(1.02);
     box-shadow: 0 6px 25px rgba(0, 194, 186, 0.6);
 }
 
@@ -44,10 +43,6 @@
     transition: transform 0.3s ease;
 }
 
-.project-card iframe:hover,
-.project-card .tableauPlaceholder:hover {
-    transform: scale(1.02);
-}
 
 /* ========== Paragraph styling ========== */
 .project-card p {
@@ -97,15 +92,4 @@
     .project-card p {
         font-size: clamp(1rem, 3vw, 1.5rem);
     }
-}
-
-/* ========== Optional hover animation for images inside projects ========== */
-.branding-images img {
-    transition: transform 0.4s ease, box-shadow 0.3s ease;
-    border-radius: var(--border-radius-mobile);
-}
-
-.branding-images img:hover {
-    transform: scale(1.1) rotate(2deg);
-    box-shadow: 0 6px 20px rgba(0, 194, 186, 0.5);
 }
