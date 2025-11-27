@@ -862,30 +862,30 @@ picture {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  width: 7rem;
-  height: 7rem;
+  width: clamp(5rem, 5vw, 8rem);
+  height: clamp(5rem, 5vw, 8rem);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1000;
-  border-radius: var(--border-radius-desktop);
-  border:1px solid var(--secondary-color);
-  background: var(--main-color-opacity);
+  /* border-radius: var(--border-radius-desktop);
+  border: 1px solid var(--secondary-color);
+  background: var(--main-color-opacity); */
 }
 
-.gt-go-to-top:hover {
+/* .gt-go-to-top:hover {
   transform: scale(1.1);
   box-shadow: 0 0 2rem var(--secondary-color);
   background-color: var(--main-color);
-}
+} */
 
-.gt-go-to-top img {
+/* .gt-go-to-top img {
   width: 50%;
   height: auto;
   border-radius: var(--border-radius-desktop);
-}
+} */
 
 /* ========== MEDIA QUERY: DESKTOP & TABLET NAVBAR STYLING ========== */
 @media screen and (min-width: 769px) {
@@ -1014,6 +1014,7 @@ picture {
   }
 
   /* ========== GT Footer Section ========== */
+
   .gt-footer-column {
     justify-content: space-evenly;
   }
