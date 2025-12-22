@@ -66,7 +66,7 @@ main {
   background: transparent;
 }
 
-/* ================== Optional Pulse Animation for Icons ================== */
+/* ================== Smooth Pulse Animation for Icons ================== */
 @keyframes pulse {
   0% {
     transform: scale(1.05) rotate(-1deg);
@@ -77,13 +77,14 @@ main {
   }
 
   100% {
-    transform: scale(1.1) rotate(-2deg);
+    transform: scale(1.05) rotate(-1deg);
   }
 }
 
 .skill-card .skill-icon:hover {
-  animation: pulse 1.2s infinite;
+  animation: pulse 1.2s ease-in-out infinite;
 }
+
 .click-hint {
   display: block;
 }
