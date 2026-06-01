@@ -10,19 +10,39 @@
 /* ========== Global Variables ========== */
 :root {
   scroll-behavior: smooth;
-  --main-background: #D6E4F0;
-  --main-color: #0d2d57;
-  --main-color-opacity: rgba(13, 45, 87, 0.5);
-  --secondary-color: #00c2ba;
-  --tertiary-color: #0a192f;
-  --info-color: #f8f9fa;
+
+  /* Cyberpunk / Tech Color Palette (DAX Project Identity) */
+  --main-background: #0A0B10;
+  /* Deep matte cyber-noir background */
+  --main-color: #12141C;
+  /* Dark anthracite tech-slate for cards and sections */
+  --main-color-opacity: rgba(18, 20, 28, 0.5);
+  /* Semi-transparent section background */
+  --secondary-color: #00F0FF;
+  /* Electric cyber cyan (Screens / Frontend / Interfaces) */
+  --tertiary-color: #06070A;
+  /* Ultra dark background for strong contrast lines */
+  --info-color: #39FF14;
+  /* High-visibility neon green (Logic Engine / Data Tech) */
+
+  /* Additional Brand Colors & Text Resets */
+  --brand-magenta: #FF0080;
+  /* London lights / Brand action pink */
+  --text-primary: #FFFFFF;
+  /* Pure white for maximum heading readability */
+  --text-secondary: #94A3B8;
+  /* Slate grey for balanced, clean body paragraph contrast */
+
+  /* Cyberpunk Tech Gradient Override */
   --background-gradient: linear-gradient(135deg,
-      #1e1e1e 0%,
-      #0d2d57 70%,
-      #0f325f 100%);
+      #0A0B10 0%,
+      #161A24 70%,
+      #06070A 100%);
+
   --border-radius-mobile: 2rem;
   --border-radius-desktop: 50%;
-  --border-color: 1px solid rgba(0, 194, 186, 0.6);
+  --border-color: 1px solid rgba(0, 240, 255, 0.4);
+  /* Cyber cyan semi-transparent border */
 
 
   /* ==== Heading Sizes ==== */
