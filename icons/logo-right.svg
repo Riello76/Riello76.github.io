@@ -6,7 +6,7 @@
    version="1.1"
    id="svg2"
    sodipodi:docname="logo-right.svg"
-   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,11 +22,11 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="7.82"
-     inkscape:cx="15.601023"
-     inkscape:cy="35.294118"
+     inkscape:zoom="2.7647875"
+     inkscape:cx="-74.146747"
+     inkscape:cy="10.127361"
      inkscape:window-width="1920"
-     inkscape:window-height="1009"
+     inkscape:window-height="1017"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -41,6 +41,6 @@
     <path
        d="m 7.6662506,8.6714129 c 0.5406054,0.032235 0.3599606,0.4936363 0.6507849,0.644447 0.3471057,0.1787428 0.4302334,0.5682926 0.2285994,0.8366181 -0.33765,0.448691 -0.6014025,0.472434 -0.5094926,0.25251 C 8.1665522,10.092302 7.9350204,9.762301 7.4737172,9.6499024 6.8147555,9.3959541 7.1715591,9.0565805 7.1884451,8.7918449 7.1759063,8.4423503 1.2576662,0.24986923 1.9936102,0.0468979 2.7671298,-0.16772678 7.3853499,8.5787643 7.6662506,8.6714129 Z"
        id="path2-9"
-       style="fill:#f9f9f9;fill-opacity:1;stroke:#000000;stroke-width:0.052916;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill" />
+       style="fill:#00afb9;fill-opacity:1;stroke:#000000;stroke-width:0.052916;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill" />
   </g>
 </svg>

@@ -12,39 +12,38 @@
   scroll-behavior: smooth;
 
   /* Cyberpunk / Tech Color Palette (DAX Project Identity) */
-  --main-background: #0A0B10;
-  /* Deep matte cyber-noir background */
-  --main-color: #12141C;
-  /* Dark anthracite tech-slate for cards and sections */
-  --main-color-opacity: rgba(18, 20, 28, 0.5);
-  /* Semi-transparent section background */
+  --main-background: #060913;
+  /* Midnight Cyber Blue */
+  --main-color: #0E152B;
+  /* Tech Deep Navy */
+  --main-color-opacity: rgba(14, 21, 43, 0.6);
+  /* Tech Deep Navy Opacity */
   --secondary-color: #00F0FF;
-  /* Electric cyber cyan (Screens / Frontend / Interfaces) */
-  --tertiary-color: #06070A;
-  /* Ultra dark background for strong contrast lines */
-  --info-color: #39FF14;
-  /* High-visibility neon green (Logic Engine / Data Tech) */
+  /* Electric Cyber Cyan - Frontend UI, vector graphics, and web development */
+  --tertiary-color: #03050A;
+  /* Absolute Cyber Noir */
+
+  /* System Logic & Analytics Identity */
+  --info-color: #8B5CF6;
+  /* Data Violet / Electric Orchid - Logic engine and clean Data Analytics integration */
 
   /* Additional Brand Colors & Text Resets */
-  --brand-magenta: #FF0080;
-  /* London lights / Brand action pink */
+  --brand-magenta: #FF00FF;
+  /* Neon Magenta - Photo & Video Editing highlights and brand accents */
   --text-primary: #FFFFFF;
-  /* Pure white for maximum heading readability */
+  /* Pure white for maximum heading readability and crisp typography */
   --text-secondary: #94A3B8;
-  /* Slate grey for balanced, clean body paragraph contrast */
+  /* Slate Grey - Balanced tone for readable and clean body copy */
 
-  /* Cyberpunk Tech Gradient Override */
   --background-gradient: linear-gradient(135deg,
-      #0A0B10 0%,
-      #161A24 70%,
-      #06070A 100%);
+      #051329 0%,
+      #060913 50%,
+      #14081C 100%);
 
   --border-radius-mobile: 2rem;
   --border-radius-desktop: 50%;
-  --border-color: 1px solid rgba(0, 240, 255, 0.4);
-  /* Cyber cyan semi-transparent border */
-
-
+  --border-color: 1px solid rgba(0, 240, 255, 0.3);
+  /* Subtle semi-transparent cyber cyan border line */
   /* ==== Heading Sizes ==== */
   --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 7rem);
   --font-size-h2: clamp(2rem, 1.2rem + 2vw, 5rem);
@@ -70,17 +69,18 @@ h1 {
   font-size: var(--font-size-h1);
   color: var(--secondary-color);
   text-align: center;
+  font-weight: 400;
 }
 
 h2 {
   font-size: var(--font-size-h2);
-  color: var(--info-color);
-  background: var(--main-color);
+  color: var(--secondary-color);
+  background: transparent;
   text-align: center;
   font-weight: bolder;
   border-radius: var(--border-radius-desktop);
   border: var(--border-color);
-  box-shadow: 0 0 1rem var(--secondary-color);
+  box-shadow: 0 0 1rem var(--brand-magenta);
   width: 95%;
   margin: 2rem auto;
 }
@@ -106,7 +106,7 @@ h4 {
 
 h5 {
   font-size: var(--font-size-h5);
-  color: var(--info-color);
+  color: var(--brand-magenta);
   text-align: center;
   font-weight: bolder;
 }
@@ -120,12 +120,13 @@ h6 {
 
 p {
   font-size: var(--font-size-p);
-  color: var(--info-color);
-  background: var(--main-color);
-  font-weight: bolder;
+  color: var(--text-primary);
+  background: var(transparent);
+  font-weight: 400;
   text-align: justify;
   line-height: 1.4;
   padding: 1rem;
+  width: 90%;
 }
 
 /* Ultra-wide screens: 2560px+ */
@@ -145,18 +146,19 @@ p {
 
 a {
   font-size: var(--font-size-a);
-  color: var(--info-color);
+  color: var(--secondary-color);
   text-decoration: none;
+  font-weight: 300;
 }
 
 strong {
-  color: var(--secondary-color);
+  color: var(--brand-magenta);
 }
 
 /* ================== Divider ================== */
 .with-divider {
   position: relative;
-  margin: 2rem 0;
+  margin: 2rem ;
   display: block;
 }
 
@@ -264,7 +266,7 @@ picture {
     flex-direction: column;
     background: var(--main-color);
   }
-
+  
 }
 
 .top-header {
@@ -272,7 +274,7 @@ picture {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background: var(--main-color);
+  background: var(--main-background);
 }
 
 /* ========== LOGO STYLE ========== */
@@ -301,24 +303,24 @@ picture {
   }
 
   50% {
-    box-shadow: 0 0 25px var(--info-color);
+    box-shadow: 0 0 25px var(--brand-magenta);
   }
 }
 
 
 /* ========== TITLE STYLE ========== */
 .title {
-  color: var(--info-color);
+  color: var(--secondary-color);
 }
 
 /* ========== HIGHLIGHTED TITLE PART ========== */
 .title .highlight {
-  color: var(--secondary-color);
+  color: var(--brand-magenta);
   font-style: oblique;
 }
 
 /* ========== NEWS BAR ========== */
-.gt-news-bar {
+/* .gt-news-bar {
   display: flex;
   align-items: center;
   color: var(--info-color);
@@ -373,27 +375,27 @@ picture {
 
 .gt-pusher {
   width: clamp(2rem, 2vw, 4rem);
-}
+} */
 
 /* ========== SYMBOL ICONS STYLE ========== */
-.symbol.left,
+/* .symbol.left,
 .symbol.right {
   font-size: clamp(1.8rem, 1.2rem + 1vw, 4rem);
   user-select: none;
 }
 
 .symbol.left {
-  color: var(--secondary-color);
+  color: var(--brand-magenta);
 }
 
 .symbol.right {
-  color: var(--info-color);
-}
+  color: var(--secondary-color);
+} */
 
 /* ========== NAVBAR CONTAINER ========== */
 .gt-navbar {
   width: 100%;
-  background: var(--main-color);
+  background: var(--main-background);
   position: relative;
   z-index: 999;
 }
@@ -405,7 +407,7 @@ picture {
   vertical-align: middle;
   border-left: clamp(0.3rem, 0.5vw, 1.5rem) solid transparent;
   border-right: clamp(0.3rem, 0.5vw, 1.5rem) solid transparent;
-  border-top: clamp(0.4rem, 0.6vw, 1.7rem) solid var(--secondary-color);
+  border-top: clamp(0.4rem, 0.6vw, 1.7rem) solid var(--brand-magenta);
   transition: transform 0.3s ease;
 }
 
@@ -559,7 +561,7 @@ picture {
   display: block;
   height: 0.1rem;
   width: 0;
-  background: var(--info-color);
+  background: var(--secondary-color);
   transition: width 0.3s ease;
   position: absolute;
   bottom: 0.2rem;
@@ -623,7 +625,7 @@ picture {
   transition: all 0.3s ease;
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
-  color: var(--info-color);
+  color: var(--brand-magenta);
   width: clamp(13rem, 13vw, 25rem);
   font-size: 1.5rem;
   box-shadow: 0 0 2px var(--secondary-color);
@@ -631,7 +633,7 @@ picture {
 }
 
 .gt-dropdown-item:hover {
-  color: var(--info-color);
+  color: var(--brand-magenta);
   background: linear-gradient(135deg,
       var(--main-color) 0%,
       var(--secondary-color) 60%,
@@ -706,12 +708,11 @@ picture {
 
 /* ========== GT Footer Section ========== */
 .gt-footer {
-  background: var(--main-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--secondary-color);
-  margin-top: 3rem;
+    background:var(--main-background);
 }
 
 /* ========== Footer Container ========== */
@@ -723,7 +724,7 @@ picture {
   gap: clamp(5rem, 1vw, 2rem);
   width: 100%;
   max-width: clamp(90rem, 80vw, 120rem);
-  margin-bottom: 5rem;
+  margin-bottom: 15rem;
 }
 
 /* ========== Footer Column ========== */
@@ -779,7 +780,7 @@ picture {
 
 /* ========== Footer Headings ========== */
 .gt-footer h2 {
-  color: var(--info-color);
+  color: var(--secondary-color);
   border-radius: var(--border-radius-desktop);
   border: var(--border-color);
   padding: 0.5rem clamp(1rem, 2vw, 2rem);
@@ -790,8 +791,8 @@ picture {
   border: var(--border-color);
   border-radius: var(--border-radius-desktop);
   padding: 1rem;
-  background: var(--main-color);
-  text-decoration: underline var(--info-color);
+  /* background: var(--main-color); */
+  text-decoration: underline var(--brand-magenta);
   width: clamp(8rem, 15vw, 20rem);
   display: inline-block;
   text-align: center;
@@ -799,7 +800,7 @@ picture {
 }
 
 .gt-footer a:hover {
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--brand-magenta);
   border-radius: var(--border-radius-desktop);
   color: var(--info-color);
   text-decoration: underline var(--secondary-color);
@@ -873,7 +874,7 @@ picture {
 }
 
 .gt-footer-link:hover span {
-  color: var(--info-color);
+  color: var(--brand-magenta);
   transform: scale(1.05);
 }
 
@@ -911,7 +912,7 @@ picture {
 @media screen and (min-width: 769px) {
 
   /* ========== GT News Ticker Animation SPEED ADJUSTMENT ========== */
-  .gt-news-ticker {
+  /* .gt-news-ticker {
     animation: ticker 30s linear infinite;
   }
 
@@ -923,7 +924,7 @@ picture {
     100% {
       transform: translateX(-100%);
     }
-  }
+  } */
 
   /* ========== GT Navbar Container ========== */
   .gt-navbar {
@@ -932,7 +933,7 @@ picture {
     align-items: center;
     position: relative;
     z-index: 5;
-    background: var(--main-color);
+    background: var(--main-background);
   }
 
   /* ========== GT Navbar Collapse / Menu Items Container ========== */
@@ -966,8 +967,8 @@ picture {
 
   /* ========== GT Nav Link Styling ========== */
   .gt-nav-link {
-    color: var(--info-color);
-    font-weight: bold;
+    color: var(--secondary-color);
+    font-weight: 300;
     padding: clamp(0.3rem, 0.5vw, 1rem);
     display: flex;
     align-items: center;
@@ -976,8 +977,7 @@ picture {
   }
 
   .gt-nav-link:hover {
-    color: var(--secondary-color);
-    transform: scale(0.95);
+    color: var(--brand-magenta);
   }
 
   /* ========== Dropdown Toggle Styling ========== */
@@ -1023,13 +1023,13 @@ picture {
   .gt-dropdown-item {
     display: inline-block;
     padding: clamp(0.3rem, 0.5vw, 1rem) clamp(0.5rem, 1vw, 2rem);
-    color: var(--info-color);
+    color: var(--secondary-color);
     font-size: clamp(0.9rem, 0.7vw + 0.8rem, 3rem);
     transition: transform 0.3s ease;
   }
 
   .gt-dropdown-item:hover {
-    color: var(--info-color);
+    color: var(--brand-magenta);
     transform: scale(0.95);
   }
 
@@ -1043,7 +1043,7 @@ picture {
 
 /* ========== LARGE DESKTOP (>= 1024px) ========== */
 @media screen and (min-width: 1024px) {
-
+/* 
   @keyframes ticker {
     0% {
       transform: translateX(40%);
@@ -1052,7 +1052,7 @@ picture {
     100% {
       transform: translateX(-100%);
     }
-  }
+  } */
 
 
 }
@@ -1060,7 +1060,7 @@ picture {
 /* ========== LARGE DESKTOP (>= 1440px) ========== */
 @media screen and (min-width: 1440px) {
 
-  @keyframes ticker {
+  /* @keyframes ticker {
     0% {
       transform: translateX(80%);
     }
@@ -1068,7 +1068,7 @@ picture {
     100% {
       transform: translateX(-100%);
     }
-  }
+  } */
 
   /* ========== SYMBOL ICONS FONT SIZE & UNSELECTABLE ========== */
   .symbol.left,
@@ -1079,13 +1079,13 @@ picture {
 
   /* ========== LEFT SYMBOL COLOR & MARGIN ========== */
   .symbol.left {
-    color: var(--secondary-color);
+    color: var(--brand-magenta);
     margin-right: 1rem;
   }
 
   /* ========== RIGHT SYMBOL COLOR & MARGIN ========== */
   .symbol.right {
-    color: var(--info-color);
+    color: var(--secondary-color);
     margin-left: 1rem;
   }
 

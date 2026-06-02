@@ -32,7 +32,7 @@
     align-items: center;
     width: 100%;
     overflow: hidden;
-    background: var(--main-color);
+    /* background: var(--main-color); */
     /* Tech-slate background for depth separation */
   }
 
@@ -42,18 +42,19 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background: var(--main-color);
+    background: var(--main-background);
+    padding: 2rem 1rem;
   }
 
   .about-me h1,
   .about-me h2,
   .about-me h3 {
-    color: var(--text-primary);
+    color: var(--secondary-color);
     /* Pure white headers for optimal tech contrast */
   }
 
   /* ========== PROFILE IMAGE ========== */
-  .my-img {
+  /* .my-img {
     width: clamp(15rem, 20vw, 30rem);
     height: clamp(15rem, 20vw, 30rem);
     object-fit: cover;
@@ -62,399 +63,364 @@
     margin: 2rem 0;
     border: 2px solid var(--secondary-color);
     /* Added thin electric cyan border frame */
-    box-shadow: 0px 0px 2.5rem rgba(0, 240, 255, 0.4);
-    /* Enhanced tech glow with neon cyan */
+  /* box-shadow: 0px 0px 2.5rem rgba(0, 240, 255, 0.4); */
+  /* Enhanced tech glow with neon cyan */
+}
+
+.about-me p {
+  background: transparent;
+  color: var(--text-primary);
+  font-size: clamp(1rem, 0.75rem + 0.75vw, 1.75rem);
+  line-height: 1.8;
+  width: 100%;
+  margin-inline: auto;
+}
+
+/* ========== CTA BUTTON ========== */
+.cta-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(12rem, 50vw, 30rem);
+  height: clamp(3rem, 4vw, 8rem);
+  background: var(--main-background);
+  /* Dark core for a hollow glassmorphism effect */
+  border-radius: var(--border-radius-desktop);
+  border: 0.2rem solid var(--brand-magenta);
+  /* Brand magenta border for high-priority action */
+  box-shadow: 0 0 2rem rgba(255, 0, 128, 0.3);
+  /* Neon magenta soft outer glow */
+  font-size: clamp(1.5rem, 2vw, 5rem);
+  font-weight: bolder;
+  cursor: pointer;
+  animation: CTA 3s infinite ease-in-out;
+  overflow: hidden;
+  margin: 3rem 0;
+}
+
+/* ========== CTA BUTTON TEXT LAYERS ========== */
+.cta-btn .btn-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: inherit;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  z-index: 2;
+}
+
+.cta-btn .btn-text.default {
+  color: var(--secondary-color);
+  opacity: 1;
+}
+
+.cta-btn .btn-text.hover {
+  color: var(--main-background);
+  /* Dark contrast against the vibrant neon background */
+}
+
+.cta-btn:hover {
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.4),
+    0 0 20px var(--brand-magenta),
+    0 0 40px rgba(0, 240, 255, 0.3);
+  /* Cross-fading cyan and magenta glow on hover */
+
+  background: linear-gradient(135deg,
+      var(--brand-magenta) 0%,
+      var(--secondary-color) 100%);
+  /* High-impact cyberpunk gradient transition */
+
+  transition: all 0.4s ease;
+  animation: cta-wiggle 3s infinite ease-in-out;
+}
+
+.cta-btn:hover .btn-text.default {
+  opacity: 0;
+}
+
+.cta-btn:hover .btn-text.hover {
+  opacity: 1;
+}
+
+@keyframes cta-wiggle {
+  0% {
+    transform: rotate(0deg) scale(1);
   }
 
-  .about-me p {
-    background: transparent;
-    color: var(--text-secondary);
-    /* Applied slate grey for long-form readability */
+  20% {
+    transform: rotate(1deg) scale(1.03);
   }
 
-  /* ========== CTA BUTTON ========== */
-  .cta-btn {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: clamp(12rem, 50vw, 30rem);
-    height: clamp(3rem, 4vw, 8rem);
-    background: var(--main-background);
-    /* Dark core for a hollow glassmorphism effect */
-    border-radius: var(--border-radius-desktop);
-    border: 0.2rem solid var(--brand-magenta);
-    /* Brand magenta border for high-priority action */
-    box-shadow: 0 0 2rem rgba(255, 0, 128, 0.3);
-    /* Neon magenta soft outer glow */
-    font-size: clamp(1.5rem, 2vw, 5rem);
-    font-weight: bolder;
-    cursor: pointer;
-    animation: CTA 3s infinite ease-in-out;
-    overflow: hidden;
-    margin: 3rem 0;
+  40% {
+    transform: rotate(-1deg) scale(1.05);
   }
 
-  /* ========== CTA BUTTON TEXT LAYERS ========== */
-  .cta-btn .btn-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: inherit;
-    white-space: nowrap;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    text-align: center;
-    z-index: 2;
+  60% {
+    transform: rotate(0.6deg) scale(1.03);
   }
 
-  .cta-btn .btn-text.default {
-    color: var(--secondary-color);
-    opacity: 1;
+  80% {
+    transform: rotate(-0.6deg) scale(1.02);
   }
 
-  .cta-btn .btn-text.hover {
-    color: var(--main-background);
-    /* Dark contrast against the vibrant neon background */
+  100% {
+    transform: rotate(0deg) scale(1);
   }
+}
 
-  .cta-btn:hover {
-    box-shadow:
-      0 8px 20px rgba(0, 0, 0, 0.4),
-      0 0 20px var(--brand-magenta),
-      0 0 40px rgba(0, 240, 255, 0.3);
-    /* Cross-fading cyan and magenta glow on hover */
-
-    background: linear-gradient(135deg,
-        var(--brand-magenta) 0%,
-        var(--secondary-color) 100%);
-    /* High-impact cyberpunk gradient transition */
-
-    transition: all 0.4s ease;
-    animation: cta-wiggle 3s infinite ease-in-out;
-  }
-
-  .cta-btn:hover .btn-text.default {
-    opacity: 0;
-  }
-
-  .cta-btn:hover .btn-text.hover {
-    opacity: 1;
-  }
-
-  @keyframes cta-wiggle {
-    0% {
-      transform: rotate(0deg) scale(1);
-    }
-
-    20% {
-      transform: rotate(1deg) scale(1.03);
-    }
-
-    40% {
-      transform: rotate(-1deg) scale(1.05);
-    }
-
-    60% {
-      transform: rotate(0.6deg) scale(1.03);
-    }
-
-    80% {
-      transform: rotate(-0.6deg) scale(1.02);
-    }
-
-    100% {
-      transform: rotate(0deg) scale(1);
-    }
-  }
-
-  /* ========== CTA ANIMATION ========== */
-  @keyframes CTA {
-    0% {
-      transform: scale(1);
-      color: var(--text-primary);
-    }
-
-    50% {
-      transform: scale(0.95);
-      color: var(--info-color);
-      /* Pulses text into neon green logic color */
-      border-color: var(--secondary-color);
-      /* Transitions border to cyan temporarily */
-      box-shadow: 0 0 2.5rem rgba(0, 240, 255, 0.5);
-    }
-
-    100% {
-      transform: scale(1);
-      color: var(--text-primary);
-    }
-  }
-
-  /* ========== CAROUSEL CONTAINER ========== */
-  #gt-carousel {
-    position: relative;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-rows: auto 1fr auto;
-    margin: 5rem 0;
-    border-radius: var(--border-radius-desktop);
-    border: 2px solid rgba(0, 240, 255, 0.3);
-    /* Subtle electric cyan terminal framing */
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
-    /* Enhanced dark shadow drop */
-    background: var(--main-background);
-  }
-
-  /* ========== CAROUSEL INNER ========== */
-  .gt-carousel-inner {
-    display: grid;
-    grid-template: 1fr / 1fr;
-    place-items: center;
-    width: clamp(31rem, 48vw, 60rem);
-    height: clamp(36rem, 54vw, 70rem);
-    overflow: hidden;
-    border-radius: var(--border-radius-desktop);
-    background: var(--main-color);
-  }
-
-  .gt-carousel-inner:hover {
-    box-shadow: 0 0 25px rgba(0, 240, 255, 0.4);
-    /* Glowing active tech outline on hover */
-    border-color: var(--secondary-color);
-  }
-
-  /* ========== CAROUSEL ITEM ========== */
-  .gt-carousel-item {
-    grid-area: 1/1/2/2;
-    display: none;
-    width: 100%;
-    height: 100%;
-  }
-
-  .gt-carousel-item.gt-active {
-    display: grid;
-    background: var(--background-gradient);
-    /* Uses the updated rich dark gradient */
-  }
-
-  /* ========== TOOL CARD ========== */
-  .tool-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: clamp(30rem, 35vw, 60rem);
-    margin-bottom: clamp(1rem, 15%, 10rem);
-    gap: 2rem;
-    background: transparent;
-    /* Allows gradient background to bleed through beautifully */
-  }
-
-  /* ========== TOOL IMAGE ========== */
-  .tool-card img {
-    width: clamp(6.4rem, 8vw, 12.8rem);
-    height: clamp(6.4rem, 8vw, 12.8rem);
-    margin: 1rem 0;
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
-    /* Added deep shadow beneath icons */
-  }
-
-  /* ========== TOOL TITLE ========== */
-  .tool-card h3 {
-    width: clamp(10rem, 70%, 40rem);
-    position: relative;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border-radius: var(--border-radius-desktop);
-  }
-
-  /* ========== TOOL LINK ========== */
-  .tool-card h3 a {
-    font-size: var(--h3-font-size);
-    text-decoration: none;
-    color: var(--info-color);
-    /* Retained high-visibility data green text */
-    font-weight: bold;
-    display: block;
-    position: relative;
-    transition: color 0.3s ease, box-shadow 0.4s ease, background 0.4s ease;
-    border-radius: var(--border-radius-desktop);
-    text-align: center;
-    border: 1px solid rgba(57, 255, 20, 0.2);
-    /* Soft matrix-green frame default */
-  }
-
-  /* Hover effect: hide app name, show 'Download' */
-  .tool-card h3 a:hover {
-    color: transparent;
-    box-shadow:
-      0 8px 20px rgba(0, 0, 0, 0.4),
-      0 0 15px var(--secondary-color),
-      0 0 30px rgba(0, 240, 255, 0.2);
-    background: var(--main-background);
-    border-color: var(--secondary-color);
-    /* Sharp transition from logic green to web cyan */
-    transition: all 0.4s ease;
-  }
-
-  /* Pseudo-element for 'Download' text */
-  .tool-card h3 a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--secondary-color);
-    /* Swapped download overlay text to electric cyan */
-    font-weight: bolder;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  .tool-card h3 a:hover::after {
-    content: 'Download';
-    opacity: 1;
-  }
-
-  /* ========== TOOL DESCRIPTION ========== */
-  .tool-card p {
-    flex-grow: 1;
-    background: rgba(10, 11, 16, 0.6);
-    /* Translucent dark tint layer to isolate text */
-    backdrop-filter: blur(4px);
-    /* Modern glassmorphism blur */
-    color: var(--text-secondary);
-    padding: 3rem;
-    border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.03);
-  }
-
-  /* ========== CAROUSEL CONTROLS ========== */
-  .gt-carousel-controls {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: clamp(4rem, 4vw, 20rem);
-  }
-
-  .gt-carousel-control-prev,
-  .gt-carousel-control-next {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: clamp(4rem, 5vw, 7rem);
-    height: clamp(4rem, 5vw, 7rem);
-    background: var(--main-color);
-    border: 1px solid rgba(57, 255, 20, 0.3);
-    /* Precision border using green accent */
-    border-radius: var(--border-radius-desktop);
-    box-shadow: 0px 2px 8px rgba(57, 255, 20, 0.2);
-    z-index: 1000;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  .gt-carousel-control-next:hover,
-  .gt-carousel-control-prev:hover {
-    transform: scale(0.95);
-    border-color: var(--secondary-color);
-    box-shadow: 0px 0px 15px var(--secondary-color);
-    /* Snappy flash glow on interaction */
-  }
-
-  .gt-carousel-control-prev-icon,
-  .gt-carousel-control-next-icon {
-    width: 100%;
-    height: 100%;
-    border-radius: var(--border-radius-desktop);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .gt-carousel-control-prev-icon {
-    background-image: url(/icons/arrow-left.svg);
-    opacity: 0.4;
-  }
-
-  .gt-carousel-control-next-icon {
-    background-image: url(/icons/arrow-right.svg);
-    opacity: 0.4;
-  }
-
-  .gt-carousel-control-prev-icon:hover,
-  .gt-carousel-control-next-icon:hover {
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    filter: brightness(1.8) drop-shadow(0 0 5px var(--secondary-color));
-    /* Glow applied directly onto vector asset */
-  }
-
-  /* ========== CAROUSEL INDICATORS ========== */
-  .gt-carousel-indicators {
-    position: absolute;
-    display: flex;
-    bottom: clamp(5rem, 5vw, 9rem);
-    left: 50%;
-    transform: translateX(-50%);
-    gap: clamp(0.5rem, 0.7vw, 2rem);
-    z-index: 10;
-  }
-
-  .gt-carousel-indicators button {
-    width: clamp(0.5rem, 0.7vw, 1rem);
-    height: clamp(0.5rem, 0.7vw, 1rem);
-    border-radius: var(--border-radius-desktop);
-    border: 1px solid rgba(0, 240, 255, 0.2);
-    background: var(--tertiary-color);
-    /* Dark, unselected state */
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  .gt-carousel-indicators button.gt-active {
-    background: var(--info-color);
-    /* Active dot flashes terminal logic green */
-    box-shadow: 0 0 8px var(--info-color);
-    border-color: var(--info-color);
-  }
-
-  /* ========== TECHNICAL DETAILS SECTION ========== */
-  .technical-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 2rem 0;
-    background: var(--main-color);
-    border-top: 1px solid rgba(255, 255, 255, 0.02);
-  }
-
-  .technical-details h2 {
+/* ========== CTA ANIMATION ========== */
+@keyframes CTA {
+  0% {
+    transform: scale(1);
     color: var(--text-primary);
   }
 
-  .technical-details p {
-    background: transparent;
-    color: var(--text-secondary);
+  50% {
+    transform: scale(0.95);
+    color: var(--info-color);
+    /* Pulses text into neon green logic color */
+    border-color: var(--secondary-color);
+    /* Transitions border to cyan temporarily */
+    box-shadow: 0 0 2.5rem rgba(0, 240, 255, 0.5);
   }
 
-  .technical-details div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  100% {
+    transform: scale(1);
+    color: var(--text-primary);
   }
 }
+
+/* ========== DAX PRESENTATION ========== */
+/* ========== FEATURED PROJECT SECTION ========== */
+/* Featured Project Section */
+.featured-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  margin: 3rem 0;
+}
+.featured-project p {
+  background: transparent;
+  color: var(--text-primary);
+  margin: 1rem 0;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+.project-split-container {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.project-left-block,
+.project-right-block {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Responsive media wrapper */
+.media-responsive-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background: linear-gradient(135deg,
+      rgba(14, 21, 43, 0.85),
+      rgba(3, 5, 10, 0.95));
+
+  border: 1px solid rgba(0, 240, 255, 0.25);
+
+  box-shadow:
+    0 0 12px rgba(0, 240, 255, 0.12),
+    0 0 30px rgba(0, 240, 255, 0.08);
+
+  transition: all 0.35s ease;
+}
+
+/* Hover */
+.media-responsive-wrapper:hover {
+  transform: translateY(-6px);
+
+  border-color: var(--secondary-color);
+
+  box-shadow:
+    0 0 15px rgba(0, 240, 255, 0.25),
+    0 0 35px rgba(0, 240, 255, 0.15),
+    0 0 60px rgba(139, 92, 246, 0.12);
+}
+
+/* Optional cyberpunk glow line */
+.media-responsive-wrapper::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(0, 240, 255, 0.08),
+      transparent);
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* iframe */
+.media-responsive-wrapper iframe {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  z-index: 0;
+}
+/* Make iframe fill container */
+.media-responsive-wrapper iframe {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: none;
+}
+
+/* Title */
+.featured-project-section h2,
+.featured-project h2,
+h2 {
+  margin-bottom: 1.5rem;
+
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .project-split-container {
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .project-split-container {
+    flex-direction: column;
+  }
+
+  .project-left-block,
+  .project-right-block {
+    width: 100%;
+  }
+
+  .media-responsive-wrapper {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .featured-project {
+    margin: 2rem 0;
+  }
+
+  .project-split-container {
+    gap: 1rem;
+  }
+
+  .media-responsive-wrapper {
+    border-radius: 12px;
+  }
+}
+
+/* ========== MY TOOLS SECTION ========== */
+.tools{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+/* ========== TOOL ITEM CONTAINER ========== */
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Combined hover effect for the container */
+.tool-item:hover {
+  /* Combines both vertical movement and scaling into a single property */
+  transform: translateY(-5px) scale(1.05);
+}
+
+/* ========== TOOL IMAGES ========== */
+.tools img {
+  width: clamp(4rem, 4vw + 1rem, 8rem);
+  height: clamp(4rem, 4vw + 1rem, 8rem);
+}
+
+/* ========== TOOL LABELS ========== */
+.tools span {
+  color: var(--secondary-color);
+  font-size: var(--font-size-p);
+  margin-top: 0.5rem;
+  transition: color 0.3s ease;
+  /* Smooth color transition */
+}
+
+/* Triggers magenta color when user hovers ANYWHERE on the .tool-item */
+.tool-item:hover span {
+  color: var(--brand-magenta);
+}
+/* ========== TECHNICAL DETAILS SECTION ========== */
+.technical-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0;
+  /* background: var(--main-color); */
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.technical-details h2 {
+  color: var(--secondary-color);
+}
+
+.technical-details p {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.technical-details div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 /* ========== MEDIA QUERY: TABLET / SMALL DESKTOP (768px) ========== */
 @media screen and (min-width:768px) {
@@ -462,7 +428,7 @@
   /* ========== Paragraphs ========== */
   .about-me p,
   .technical-details p {
-    width: 80%;
+    width: 100%;
   }
 
   /* ========== TECHNICAL IMAGE GRID ========== */
@@ -484,18 +450,7 @@
 /* ========== MEDIA QUERY: ULTRA-WIDE SCREENS (2560px) ========== */
 @media screen and (min-width:2560px) {
 
-  .gt-carousel-inner {
-    width: 70rem;
-    height: 80rem;
-    border: 1px solid rgba(57, 255, 20, 0.2);
-  }
-
-  #gt-carousel {
-    width: 70rem;
-    height: 80rem;
-    border: 2px solid var(--secondary-color);
-    box-shadow: 0 0 40px rgba(0, 240, 255, 0.2);
-  }
+  
 }
 
 /* ========== DISABLE AOS ANIMATIONS ON SMALL SCREENS ========== */
