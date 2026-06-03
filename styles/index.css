@@ -50,7 +50,6 @@
 
   .about-me p {
     color: var(--text-primary);
-    font-size: clamp(1rem, 0.75rem + 0.75vw, 1.75rem);
     line-height: 1.8;
     width: 100%;
     margin-inline: auto;

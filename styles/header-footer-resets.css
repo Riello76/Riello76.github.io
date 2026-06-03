@@ -154,7 +154,7 @@ strong {
 /* ================== Divider ================== */
 .with-divider {
   position: relative;
-  margin: 2rem;
+  margin: rem;
   display: block;
 }
 
@@ -743,15 +743,13 @@ picture {
   max-width: 200px;
 }
 .gt-footer-tagline {
-  color: var(--text-primary);
+  color: var(--secondary-color);
   text-align: center;
-  opacity: 0.8;
   letter-spacing: 1px;
 }
 
 .gt-footer-copy {
-  color: var(--text-primary);
-  opacity: 0.6;
+  color: var(--brand-magenta);
   font-size: var(--font-size-p);
   text-align: center;
 }
