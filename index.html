@@ -202,42 +202,24 @@
     </nav>
   </header>
 
-  <!-- ========== MAIN CONTENT ========== -->
   <main>
 
-    <!-- ========== Top Main ========== -->
-    <section class="top-main">
+    <section class="hero-section" aria-label="Hero Banner">
+      <picture>
+        <source srcset="/images/hero-image-dax.webp" type="image/webp" media="(min-width: 769px)">
 
-      <!-- ========== Hero Image Responsive ========== -->
-      <section class="hero" aria-label="Hero Section - Introduction">
-        <picture>
-          <!-- 4K / 2K -->
-          <source srcset="/images/hero-image-dax.webp" type="image/webp" media="(min-width: 1440px)">
+        <source srcset="/images/hero-image-dax.webp" type="image/webp" media="(max-width: 768px)">
 
-          <!-- Normal resolution -->
-          <source srcset="/images/hero-image-dax.webp" type="image/webp">
-
-          <!-- Fallback -->
-          <img src="/images/hero-image-2.0-mobile.webp" alt="Portfolio hero banner with abstract design" loading="lazy"
-            width="600" height="400">
-        </picture>
-      </section>
-
+        <img src="/images/hero-image-dax.webp" alt="Portfolio hero banner with abstract design" loading="eager"
+          width="600" height="400">
+      </picture>
     </section>
 
-    <!-- ========== Middle Main ========== -->
     <section class="middle-main">
 
-      <!-- ========== About Me Section ========== -->
-      <div class="about-me" aria-label="About Me Section">
-
-      <!-- ========== About Me Section ========== -->
-      <div class="about-me" aria-label="About Me Section">
-      
-        <!-- Main heading -->
+      <section class="about-me" aria-label="About Me">
         <h2>About Me</h2>
-      
-        <!-- Intro paragraph -->
+
         <p data-aos="fade-right" data-aos-duration="1000">
           I’m <strong>Gaspare Tocci</strong>, a London-based aspiring
           <strong>Web Developer, Data Analyst, and Creative Editor</strong>.
@@ -245,8 +227,7 @@
           my commitment to continuous growth, self-improvement, and building a new
           professional future through dedication and hard work.
         </p>
-      
-        <!-- Skills paragraph -->
+
         <p class="with-divider" data-aos="fade-right" data-aos-duration="1000">
           Over the past years, I have focused on developing skills across
           <strong>Web Design & Development</strong>,
@@ -256,30 +237,24 @@
           content creation, I enjoy combining creativity, technology, and problem-solving
           to deliver meaningful digital experiences.
         </p>
-      
-        <!-- Career goal paragraph -->
+
         <p class="with-divider" data-aos="fade-right" data-aos-duration="1000">
           I am currently seeking opportunities where I can contribute, learn from
           experienced professionals, and continue expanding my expertise. I value
           curiosity, resilience, and continuous learning, and I am eager to bring that
           mindset to a team that believes in growth, collaboration, and innovation.
         </p>
-      
-        <!-- Call to Action Button -->
+
         <a class="cta-btn" href="mailto:gaspare_tocci@yahoo.it" aria-label="Contact Gaspare Tocci via email">
           <span class="btn-text default">Contact Me</span>
           <span class="btn-text hover">Send Email</span>
         </a>
-      
-      </div>
+      </section>
 
+      <section class="featured-project" aria-label="Featured Project - DAX Rebrand">
 
-      <!-- ======= DAX =======-->
-      <h2> DAX Rebrand</h2>
-      <div class="featured-project" aria-label="Featured Project - DAX Rebrand">
-
+        <h2>Featured Project // DAX Rebrand</h2>
         <div class="project-split-container">
-
           <div class="project-left-block" data-aos="fade-right">
             <div class="media-responsive-wrapper">
               <iframe
@@ -293,173 +268,114 @@
 
           <div class="project-right-block" data-aos="fade-left">
             <div class="media-responsive-wrapper">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/1if13YR6zF0?si=1rqF6xTLtDF_31CN"
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1if13YR6zF0?start=1"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
+              </iframe>
             </div>
           </div>
         </div>
-      <p class="project-description" data-aos="fade-up">
-        This is the core of my rebrand, developed during my <strong>Content Creator for Social Media</strong> course.
-        I wanted to show my entire workflow in one glance: on the left, you can flip through the PowerPoint to see how I
-        structured the strategy and the storyboard; on the right, you can watch the final video.
-        To bring this vision to life, I directed the execution by leveraging AI tools for custom animations, artwork, and
-        audio—taking a raw idea and turning it into a complete, dynamic release.
-      </p>
-      </div>
 
+        <p class="project-description" data-aos="fade-up">
+          This is the core of my rebrand, developed during my <strong>Content Creator for Social Media</strong> course.
+          I wanted to show my entire workflow in one glance: on the left, you can flip through the PowerPoint to see how
+          I
+          structured the strategy and the storyboard; on the right, you can watch the final video.
+          To bring this vision to life, I directed the execution by leveraging AI tools for custom animations, artwork,
+          and
+          audio—taking a raw idea and turning it into a complete, dynamic release.
+        </p>
+      </section>
 
-      <!-- ========== My Tools ========== -->
-      <h2>My Tools</h2>
-      <div class="tools">
-
-        <div class="tool-item">
-          <img src="/icons/Azure-Cosmos-DB.svg" alt="Azure Cosmos DB" width="48" height="48" loading="lazy">
-          <span>Azure Cosmos DB</span>
+      <section class="tools-section" aria-labelledby="tools-heading">
+        <h2 id="tools-heading">My Tools</h2>
+        <div class="tools">
+          <div class="tool-item">
+            <img src="/icons/Azure-Cosmos-DB.svg" alt="Azure Cosmos DB" width="48" height="48" loading="lazy">
+            <span>Azure Cosmos DB</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/Azure-Database-MySQL-Server.svg" alt="Azure Database MySQL Server" width="48" height="48"
+              loading="lazy">
+            <span>Azure MySQL</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/blender.svg" alt="Blender" width="48" height="48" loading="lazy">
+            <span>Blender</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/davinci-resolve.svg" alt="DaVinci Resolve" width="48" height="48" loading="lazy">
+            <span>DaVinci Resolve</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/excel.svg" alt="Excel" width="48" height="48" loading="lazy">
+            <span>Excel</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/fabric.svg" alt="Microsoft Fabric" width="48" height="48" loading="lazy">
+            <span>Microsoft Fabric</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/figma.svg" alt="Figma" width="48" height="48" loading="lazy">
+            <span>Figma</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/filmora.svg" alt="Filmora" width="48" height="48" loading="lazy">
+            <span>Filmora</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/gimp.svg" alt="GIMP" width="48" height="48" loading="lazy">
+            <span>GIMP</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/git.svg" alt="Git" width="48" height="48" loading="lazy">
+            <span>Git</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/github.svg" alt="GitHub" width="48" height="48" loading="lazy">
+            <span>GitHub</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/Inkscape.svg" alt="Inkscape" width="48" height="48" loading="lazy">
+            <span>Inkscape</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/mysql.svg" alt="MySQL" width="48" height="48" loading="lazy">
+            <span>MySQL</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/obs.svg" alt="OBS Studio" width="48" height="48" loading="lazy">
+            <span>OBS</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/powerbi.svg" alt="Power BI" width="48" height="48" loading="lazy">
+            <span>Power BI</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/powerpoint.svg" alt="PowerPoint" width="48" height="48" loading="lazy">
+            <span>PowerPoint</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/tableau.svg" alt="Tableau" width="48" height="48" loading="lazy">
+            <span>Tableau</span>
+          </div>
+          <div class="tool-item">
+            <img src="/icons/vs-code.svg" alt="Visual Studio Code" width="48" height="48" loading="lazy">
+            <span>VS Code</span>
+          </div>
         </div>
+      </section>
 
-        <div class="tool-item">
-          <img src="/icons/Azure-Database-MySQL-Server.svg" alt="Azure Database MySQL Server" width="48" height="48"
-            loading="lazy">
-          <span>Azure MySQL</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/blender.svg" alt="Blender" width="48" height="48" loading="lazy">
-          <span>Blender</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/davinci-resolve.svg" alt="DaVinci Resolve" width="48" height="48" loading="lazy">
-          <span>DaVinci Resolve</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/excel.svg" alt="Excel" width="48" height="48" loading="lazy">
-          <span>Excel</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/fabric.svg" alt="Microsoft Fabric" width="48" height="48" loading="lazy">
-          <span>Microsoft Fabric</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/figma.svg" alt="Figma" width="48" height="48" loading="lazy">
-          <span>Figma</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/filmora.svg" alt="Filmora" width="48" height="48" loading="lazy">
-          <span>Filmora</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/gimp.svg" alt="GIMP" width="48" height="48" loading="lazy">
-          <span>GIMP</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/git.svg" alt="Git" width="48" height="48" loading="lazy">
-          <span>Git</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/github.svg" alt="GitHub" width="48" height="48" loading="lazy">
-          <span>GitHub</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/Inkscape.svg" alt="Inkscape" width="48" height="48" loading="lazy">
-          <span>Inkscape</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/mysql.svg" alt="MySQL" width="48" height="48" loading="lazy">
-          <span>MySQL</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/obs.svg" alt="OBS Studio" width="48" height="48" loading="lazy">
-          <span>OBS</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/powerbi.svg" alt="Power BI" width="48" height="48" loading="lazy">
-          <span>Power BI</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/powerpoint.svg" alt="PowerPoint" width="48" height="48" loading="lazy">
-          <span>PowerPoint</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/tableau.svg" alt="Tableau" width="48" height="48" loading="lazy">
-          <span>Tableau</span>
-        </div>
-
-        <div class="tool-item">
-          <img src="/icons/vs-code.svg" alt="Visual Studio Code" width="48" height="48" loading="lazy">
-          <span>VS Code</span>
-        </div>
-
-      </div>
-      <!-- <div id="gt-carousel" role="region" aria-label="Image Carousel of tools" tabindex="0"> -->
-
-      <!-- ========== GT Carousel Inner ========== -->
-      <!-- <div class="gt-carousel-inner"> -->
-
-      <!-- ========== Inkscape ========== -->
-      <!-- <div class="gt-carousel-item gt-active">
-            <div class="tool-card" role="group" aria-label="Inkscape">
-              <img src="./icons/Inkscape.svg" alt="Inkscape icon for vector graphics" loading="lazy">
-              <h3>
-                <a href="https://inkscape.org/release/" target="_blank" aria-label="Download Inkscape software">
-                  Inkscape
-                </a>
-              </h3>
-              <p class="with-divider">
-                Used for creating and editing <strong>vector graphics (SVG)</strong>, ensuring scalable, high-quality
-                visuals.
-                Leveraged tracing and drawing tools to design custom logos, icons, and illustrations.
-              </p>
-            </div>
-          </div> -->
-
-      <!-- ========== GT Carousel Indicators ========== -->
-      <!-- <div class="gt-carousel-indicators">
-          <button type="button" class="gt-active" data-gt-slide="0" aria-label="Slide 1"></button>
-          <button type="button" data-gt-slide="1" aria-label="Slide 2"></button>
-          <button type="button" data-gt-slide="2" aria-label="Slide 3"></button>
-          <button type="button" data-gt-slide="3" aria-label="Slide 4"></button>
-        </div> -->
-
-      <!-- ========== GT Carousel Controls ========== -->
-      <!-- <div class="gt-carousel-controls">
-          <button class="gt-carousel-control-prev" type="button" data-gt-slide="prev" aria-label="Previous slide">
-            <span class="gt-carousel-control-icon gt-carousel-control-prev-icon" aria-hidden="true"></span>
-          </button>
-          <button class="gt-carousel-control-next" type="button" data-gt-slide="next" aria-label="Next slide">
-            <span class="gt-carousel-control-icon gt-carousel-control-next-icon" aria-hidden="true"></span>
-          </button>
-        </div> -->
-
-      <!-- </div> -->
-
-
-      <!-- ========== Technical Details ========== -->
-      <div class="technical-details" aria-label="Technical Details Section">
+      <section class="technical-details" aria-label="Technical Specifications">
         <h2>Specifications</h2>
 
         <p data-aos="zoom-out-up" data-aos-duration="1000">
-          To support the <strong>I Want Project</strong> identity, this portfolio was engineered from the ground up
-          for
+          To support the <strong>I Want Project</strong> identity, this portfolio was engineered from the ground up for
           maximum performance and zero bloat. Built using <strong>Semantic HTML5</strong>, <strong>Modular
-            CSS3</strong>, and
-          <strong>JavaScript</strong>, the architecture ensures an ultra-lightweight, dependency-free
-          environment.
+            CSS3</strong>,
+          and
+          <strong>JavaScript</strong>, the architecture ensures an ultra-lightweight, dependency-free environment.
         </p>
 
         <p class="with-divider" data-aos="zoom-out-up" data-aos-duration="1000">
@@ -468,7 +384,8 @@
           mathematical functions like <strong>clamp()</strong> for flawless responsive typography. To optimize the
           critical
           rendering path, all visual assets, including the core Hero Image, are deployed in next-gen
-          <strong>WEBP</strong> and
+          <strong>WEBP</strong>
+          and
           vector <strong>SVG</strong> formats, drastically reducing load times.
         </p>
 
@@ -479,11 +396,12 @@
           accessibility,
           speed, and high visibility across all modern devices.
         </p>
-      </div>
+      </section>
 
     </section>
-  </main>
 
+  </main>
+  
   <!-- ==========GT Footer Section ========== -->
   <footer class="gt-footer">
 
@@ -492,72 +410,70 @@
       <img src="/icons/Scroll-Up-Arrow.webp" alt="" width="40" height="40" loading="lazy">
     </a>
 
+
+    <!-- Scroll to Top -->
+    <a class="gt-go-to-top" href="#top" aria-label="Scroll to top">
+      <img src="/icons/Scroll-Up-Arrow.webp" alt="" width="40" height="40" loading="lazy">
+    </a>
+
     <div class="gt-footer-container">
 
-      <!-- Contacts -->
-      <h2>Contacts</h2>
-
-      <nav class="gt-footer-column-contacts" aria-label="Contacts">
-        <a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link" aria-label="Email Gaspare Tocci"
-          data-aos="fade-right" data-aos-duration="900">
-          <span>Email</span>
-        </a>
-
-        <a href="https://github.com/Riello76" target="_blank" class="gt-footer-link" aria-label="GitHub Profile"
-          data-aos="fade-up" data-aos-duration="900">
-          <span>GitHub</span>
-        </a>
-
-        <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="gt-footer-link"
-          aria-label="LinkedIn Profile" data-aos="fade-left" data-aos-duration="900">
-          <span>LinkedIn</span>
-        </a>
-      </nav>
-
-      <!-- Quick Links -->
-      <h2>Explore</h2>
-
+      <!-- Navigation -->
       <nav class="gt-footer-column-links" aria-label="Footer Navigation">
-        <a href="./index.html" class="gt-footer-link" data-aos="fade-right" data-aos-duration="900">
+
+        <a href="./index.html" class="gt-footer-link">
           <span>Home</span>
         </a>
 
-        <a href="./pages/curriculum/curriculum.html" class="gt-footer-link" data-aos="fade-up" data-aos-duration="900">
+        <a href="./pages/curriculum/curriculum.html" class="gt-footer-link">
           <span>CV</span>
         </a>
 
-        <a href="./pages/projects/projects.html" class="gt-footer-link" data-aos="fade-right" data-aos-duration="900">
+        <a href="./pages/projects/projects.html" class="gt-footer-link">
           <span>Projects</span>
         </a>
 
-        <a href="./pages/gallery/gallery.html" class="gt-footer-link" data-aos="fade-down" data-aos-duration="900">
+        <a href="./pages/gallery/gallery.html" class="gt-footer-link">
           <span>Gallery</span>
         </a>
-        <a href="/pages/data-analyst/data-analyst.html" class="gt-footer-link" data-aos="fade-left"
-          data-aos-duration="900">
+
+        <a href="/pages/data-analyst/data-analyst.html" class="gt-footer-link">
           <span>Data Analyst</span>
         </a>
+
       </nav>
 
-      <!-- About
-      <div class="gt-footer-about">
-        <h2><span class="symbol left" aria-hidden="true">❖</span> About Me <span class="symbol right"
-            aria-hidden="true">❖</span></h2>
-        <p>
-          This portfolio reflects my <strong>self-learning journey</strong> and experience from both the
-          <strong>GetSetUK Web Development Bootcamp</strong> and the <strong>Just IT Data Technician Skills
-            Bootcamp</strong>.
-          I have built solid skills in <strong>HTML, CSS, responsive design</strong>, as well as
-          <strong>SQL, Python (Pandas, NumPy, Matplotlib, Seaborn), Excel, Power BI, Tableau</strong>, and
-          <strong>working with data in Microsoft Azure</strong>.
-          I also enjoy <strong>video and photo editing</strong> as part of my creative work.
-          I am seeking an <strong>entry-level role in web development or data analysis</strong>, eager to contribute
-          to real projects and continue growing professionally.
-        </p>
 
-      </div> -->
+      <!-- Social / Contacts -->
+      <nav class="gt-footer-column-contacts" aria-label="Contacts">
+
+        <a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link">
+          <span>Email</span>
+        </a>
+
+        <a href="https://github.com/Riello76" target="_blank" class="gt-footer-link">
+          <span>GitHub</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="gt-footer-link">
+          <span>LinkedIn</span>
+        </a>
+
+      </nav>
+      <!-- Tagline -->
+      <p class="gt-footer-tagline">
+        Front-End Developer • Data Analyst • Creative Designer
+      </p>
+
+      <!-- Copyright -->
+      <p class="gt-footer-copy">
+        © 2026 Gaspare Tocci
+      </p>
+
     </div>
+
   </footer>
+
 
 
 

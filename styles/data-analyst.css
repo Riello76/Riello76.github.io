@@ -3,6 +3,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+    background: var(--background-gradient);
 }
 
 
@@ -28,6 +29,7 @@ main {
   gap: 1rem;
   text-align: center;
   cursor: pointer;
+
 }
 
 /* ================== Hover Effect ================== */
@@ -48,7 +50,7 @@ main {
   width: clamp(4rem, 15vw, 20rem);
   height: auto;
   border-radius: var(--border-radius-mobile);
-  margin-bottom: 1rem;
+  margin: 2rem;
   transition: transform 0.3s ease;
 }
 
@@ -56,14 +58,16 @@ main {
 .skill-card h3 {
   font-size: var(--font-size-h5);
   color: var(--secondary-color);
-  margin-bottom: 0.5rem;
+
 }
 
 /* ================== Paragraphs ================== */
 .skill-card p {
   font-size: var(--font-size-p);
-  color: var(--info-color);
+  color: var(--text-primary);
   background: transparent;
+  text-align: left;
+  padding: 0.5rem;
 }
 
 /* ================== Smooth Pulse Animation for Icons ================== */

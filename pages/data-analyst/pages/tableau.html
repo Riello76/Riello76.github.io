@@ -204,34 +204,52 @@
             <article class="project-card">
                 <h3>EMSI UK</h3>
 
-                <!-- Tableau embed container -->
-                <div class="tableauPlaceholder" id="viz1764156145476" style="position: relative"><noscript>
-                        <a href="#"><img alt="UK 2011-2014 Employment Dashboard"
-                                src="https://public.tableau.com/static/images/H7/H74FQR7CT/1_rss.png"
-                                style="border: none" />
-                        </a></noscript><object class="tableauViz" style="display:none;">
-                        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-                        <param name="embed_code_version" value="3" />
-                        <param name="path" value="shared/H74FQR7CT" />
-                        <param name="toolbar" value="yes" />
-                        <param name="static_image"
-                            value="https://public.tableau.com/static/images/H7/H74FQR7CT/1.png" />
-                        <param name="animate_transition" value="yes" />
-                        <param name="display_static_image" value="yes" />
-                        <param name="display_spinner" value="yes" />
-                        <param name="display_overlay" value="yes" />
-                        <param name="display_count" value="yes" />
-                        <param name="language" value="it-IT" />
+               - Tableau Embed Container -->
+            <div class="tableau-project-wrapper" style="width: 100%; max-width: 1200px; margin: 0 auto;">
+                <div class='tableauPlaceholder' id='viz1780474528777' style='position: relative; width: 100%;'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='UK 2011-2014 Employment Dashboard'
+                                src='https://public.tableau.com/static/images/EM/EMSIUKDashboard_17636513108110/Dashboard1/1_rss.png'
+                                style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='EMSIUKDashboard_17636513108110/Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https://public.tableau.com/static/images/EM/EMSIUKDashboard_17636513108110/Dashboard1/1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
                     </object>
                 </div>
+            </div>
+            
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1780474528777');
+                var vizElement = divElement.getElementsByTagName('object')[0];
 
-                <script type="text/javascript">                    var divElement = document.getElementById('viz1764156145476');
-                    var vizElement = divElement.getElementsByTagName('object')[0];
+                // Gestione ottimale dell'altezza per Desktop e Mobile
+                if (divElement.offsetWidth > 800) {
                     vizElement.style.width = '100%';
-                    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-                    var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                </script>
+                    vizElement.style.height = '700px'; /* Altezza fissa ideale per desktop */
+                } else {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '850px'; /* Più respiro in verticale sui display piccoli */
+                }
+
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
 
                 <p>
                     <span>📊 EMSI UK Tableau Dashboard Project</span><br>
@@ -325,51 +343,75 @@
 
     </main>
 
-    <!-- ==================== FOOTER ==================== -->
+    <!-- ==========GT Footer Section ========== -->
     <footer class="gt-footer">
-
-        <!-- Scroll-to-top button -->
+    
+        <!-- Scroll to Top -->
         <a class="gt-go-to-top" href="#top" aria-label="Scroll to top">
-            <img src="/icons/Scroll-Up-Arrow.webp" alt="Animated up arrow" width="40" height="40" loading="lazy">
+            <img src="/icons/Scroll-Up-Arrow.webp" alt="" width="40" height="40" loading="lazy">
         </a>
-
+    
+    
+        <!-- Scroll to Top -->
+        <a class="gt-go-to-top" href="#top" aria-label="Scroll to top">
+            <img src="/icons/Scroll-Up-Arrow.webp" alt="" width="40" height="40" loading="lazy">
+        </a>
+    
         <div class="gt-footer-container">
-
-            <!-- Contacts Column -->
-            <h2><span class="symbol left">❖</span> Contacts <span class="symbol right">❖</span></h2>
-            <nav class="gt-footer-column-contacts" aria-label="Contacts">
-                <a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link"><span>Email</span></a>
-                <a href="https://github.com/Riello76" target="_blank" class="gt-footer-link"><span>GitHub</span></a>
-                <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank"
-                    class="gt-footer-link"><span>LinkedIn</span></a>
-            </nav>
-
-            <!-- Quick Links Column -->
-            <h2><span class="symbol left">❖</span> Quick Links <span class="symbol right">❖</span></h2>
+    
+            <!-- Navigation -->
             <nav class="gt-footer-column-links" aria-label="Footer Navigation">
-                <a href="/index.html" class="gt-footer-link"><span>Home</span></a>
-                <a href="/pages/curriculum/curriculum.html" class="gt-footer-link"><span>CV</span></a>
-                <a href="/pages/projects/projects.html" class="gt-footer-link"><span>Projects</span></a>
-                <a href="/pages/gallery/gallery.html" class="gt-footer-link"><span>Gallery</span></a>
-                <a href="/pages/data-analyst/data-analyst.html" class="gt-footer-link"><span>Data Analyst</span></a>
+    
+                <a href="/index.html" class="gt-footer-link">
+                    <span>Home</span>
+                </a>
+    
+                <a href="/pages/curriculum/curriculum.html" class="gt-footer-link">
+                    <span>CV</span>
+                </a>
+    
+                <a href="/pages/projects/projects.html" class="gt-footer-link">
+                    <span>Projects</span>
+                </a>
+    
+                <a href="/pages/gallery/gallery.html" class="gt-footer-link">
+                    <span>Gallery</span>
+                </a>
+    
+                <a href="/pages/data-analyst/data-analyst.html" class="gt-footer-link">
+                    <span>Data Analyst</span>
+                </a>
+    
             </nav>
-
-
-            <!-- About Section -->
-            <h2><span class="symbol left">❖</span> About This Page <span class="symbol right">❖</span></h2>
-
-            <div class="gt-footer-column gt-footer-about">
-                <!-- Updated description specifically for Tableau page -->
-                <p>
-                    This page showcases a collection of my <strong>Tableau data visualization projects</strong>.
-                    Each dashboard highlights different analytical approaches and demonstrates my ability to turn
-                    raw datasets into <strong>clear, interactive, and meaningful insights</strong>.
-                    These projects reflect my growth as a data analyst and my passion for <strong>visual
-                        storytelling</strong>.
-                </p>
-            </div>
+    
+    
+            <!-- Social / Contacts -->
+            <nav class="gt-footer-column-contacts" aria-label="Contacts">
+    
+                <a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link">
+                    <span>Email</span>
+                </a>
+    
+                <a href="https://github.com/Riello76" target="_blank" class="gt-footer-link">
+                    <span>GitHub</span>
+                </a>
+    
+                <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="gt-footer-link">
+                    <span>LinkedIn</span>
+                </a>
+    
+            </nav>
+            <!-- Tagline -->
+            <p class="gt-footer-tagline">
+                Front-End Developer • Data Analyst • Creative Designer
+            </p>
+    
+            <!-- Copyright -->
+            <p class="gt-footer-copy">
+                © 2026 Gaspare Tocci
+            </p>
         </div>
-
+    
     </footer>
 
     <!-- ==================== Scripts ==================== -->

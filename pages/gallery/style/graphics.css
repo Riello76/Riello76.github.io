@@ -4,6 +4,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 5rem;
+    background: var(--background-gradient);
 }
 
 /* ================== Graphic Group Wrapper ================== */
@@ -17,6 +18,7 @@ main {
   background: var(--main-color);
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.35s ease;
   will-change: transform, box-shadow, background;
+  margin: 2rem;
 }
 
 /* Hover effect for Graphic Group */

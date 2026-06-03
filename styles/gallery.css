@@ -5,6 +5,7 @@ main {
   align-items: center;
   width: 100%;
   padding: 1rem;
+  background: var(--background-gradient);
 }
 
 /* ================== Gallery Group wrapper ================== */
@@ -73,7 +74,7 @@ main {
 
 .gallery-card p {
   background: transparent;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 /* ================== Tablet & Desktop (768px+) ================== */

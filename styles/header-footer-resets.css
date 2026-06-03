@@ -88,12 +88,8 @@ h2 {
 h3 {
   font-size: var(--font-size-h3);
   color: var(--secondary-color);
-  background: var(--main-color);
   text-align: center;
   font-weight: bolder;
-  border-radius: var(--border-radius-desktop);
-  border: var(--border-color);
-  box-shadow: 10px 10px 10px var(--tertiary-color);
   width: 100%;
 }
 
@@ -158,7 +154,7 @@ strong {
 /* ================== Divider ================== */
 .with-divider {
   position: relative;
-  margin: 2rem ;
+  margin: 2rem;
   display: block;
 }
 
@@ -185,12 +181,12 @@ strong {
   font-size: var(--font-size-p);
   font-weight: bold;
   text-align: center;
-  color: var(--info-color);
+  color: var(--brand-magenta);
   background: var(--main-color);
   padding: 0.3rem 0.6rem;
   margin: 1rem 0;
   border-radius: var(--border-radius-desktop);
-  box-shadow: 0px 0px 5px var(--info-color);
+  box-shadow: 0px 0px 5px var(--brand-magenta);
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
   cursor: pointer;
 }
@@ -199,6 +195,7 @@ strong {
   color: var(--secondary-color);
   animation: pulse 0.8s ease-in-out infinite alternate;
   text-shadow: 0 0 8px var(--secondary-color), 0 0 12px var(--secondary-color);
+  box-shadow: 0px 0px 5px var(--secondary-color);
 }
 
 @keyframes pulse {
@@ -218,7 +215,7 @@ strong {
 /* ========== Body and HTML ========== */
 body,
 html {
-  background-color: var(--main-color);
+  background-color: var(--background-gradient);
   display: flex;
   flex-direction: column;
   font-family: var(--font-family);
@@ -264,9 +261,8 @@ picture {
   body {
     display: flex;
     flex-direction: column;
-    background: var(--main-color);
   }
-  
+
 }
 
 .top-header {
@@ -274,7 +270,7 @@ picture {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background: var(--main-background);
+  background: var(--background-gradient);
 }
 
 /* ========== LOGO STYLE ========== */
@@ -395,7 +391,7 @@ picture {
 /* ========== NAVBAR CONTAINER ========== */
 .gt-navbar {
   width: 100%;
-  background: var(--main-background);
+  background: var(--background-gradient);
   position: relative;
   z-index: 999;
 }
@@ -712,7 +708,7 @@ picture {
   flex-direction: column;
   align-items: center;
   color: var(--secondary-color);
-    background:var(--main-background);
+  background: var(--background-gradient);
 }
 
 /* ========== Footer Container ========== */
@@ -721,10 +717,9 @@ picture {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: clamp(5rem, 1vw, 2rem);
   width: 100%;
   max-width: clamp(90rem, 80vw, 120rem);
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
 }
 
 /* ========== Footer Column ========== */
@@ -737,6 +732,7 @@ picture {
   align-items: center;
   width: 100%;
   gap: 1rem;
+  margin:2rem
 }
 
 /* Make all links stretch evenly */
@@ -746,7 +742,19 @@ picture {
   text-align: center;
   max-width: 200px;
 }
+.gt-footer-tagline {
+  color: var(--text-primary);
+  text-align: center;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
 
+.gt-footer-copy {
+  color: var(--text-primary);
+  opacity: 0.6;
+  font-size: var(--font-size-p);
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
 
   .gt-footer-column-contacts a,
@@ -791,7 +799,7 @@ picture {
   border: var(--border-color);
   border-radius: var(--border-radius-desktop);
   padding: 1rem;
-  /* background: var(--main-color); */
+  background: var(--main-color);
   text-decoration: underline var(--brand-magenta);
   width: clamp(8rem, 15vw, 20rem);
   display: inline-block;
@@ -806,10 +814,6 @@ picture {
   text-decoration: underline var(--secondary-color);
   transform: scale(0.95);
   letter-spacing: 0.1rem;
-}
-
-.gt-footer p {
-  background: transparent;
 }
 
 /* ========== Footer Lists ========== */
@@ -933,7 +937,7 @@ picture {
     align-items: center;
     position: relative;
     z-index: 5;
-    background: var(--main-background);
+    background: var(--background-gradient);
   }
 
   /* ========== GT Navbar Collapse / Menu Items Container ========== */
@@ -1043,7 +1047,7 @@ picture {
 
 /* ========== LARGE DESKTOP (>= 1024px) ========== */
 @media screen and (min-width: 1024px) {
-/* 
+  /* 
   @keyframes ticker {
     0% {
       transform: translateX(40%);
