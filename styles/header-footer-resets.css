@@ -639,6 +639,7 @@ picture {
     0 0 10px var(--secondary-color),
     0 0 20px rgba(0, 194, 186, 0.2);
   transform: scale(1.05);
+  font-weight: bolder;
 }
 
 /* ========== ACCORDION EFFECT FOR MOBILE DROPDOWN ========== */
