@@ -1,89 +1,129 @@
-# 🚀 Gaspare Tocci – [Portfolio]
+# ⚡ I Want Project
 
-🌐 [Visit Project / Portfolio](https://riello76.github.io/)  <!-- sostituire con il link del progetto -->
+### Personal Portfolio by Gaspare Tocci
 
----
-
-## 💡 About Me
-
-I’m a **self-taught Web Developer & Data Technician** passionate about creating **responsive, accessible, and visually engaging digital experiences**.  
-My work combines **front-end development**, **data visualization**, and **creative design**, always focused on **clarity and usability**.
-
-Currently completing a **Data Technician Bootcamp**, gaining hands-on experience with:
-
-- 📊 **Data visualization:** Power BI, Tableau  
-- 🗃 **Data management & analysis:** Excel, Python, Pandas, Microsoft Fabric, Azure  
-- 🔗 **Collaboration & workflow:** GitHub, VS Code  
+🌐 **Live Portfolio**
+https://riello76.github.io/
 
 ---
 
-## 🎨 Design & Graphics
+## 🌐 About This Project
 
-Tools I use daily:
+**I Want Project** is my personal portfolio and ongoing digital journey.
 
-- 🖌 **Inkscape** → vector graphics & logos  
-- 🎞 **GIMP** → image editing & visual effects  
-- 🧩 **Blender** → 3D modeling & animation  
-- 🧠 **Figma** → UI/UX design & interactive prototypes  
+The project was born from a simple idea:
 
----
+> Growth begins the moment you decide to start again.
 
-## 🔧 Development & Data Stack
+It represents a commitment to continuous learning, personal development, and professional reinvention through technology, creativity, and discipline.
 
-**Web Development:**  
-- 💻 HTML, CSS, JavaScript → responsive & semantic code  
-- ⚡ Bootstrap → structured, consistent layouts  
-- ✨ AOS (Animate on Scroll) → smooth motion effects  
-
-**Data & Analytics:**  
-- 📊 Excel → formulas, pivot tables, charts  
-- 🐍 Python & Pandas → data analysis, processing, automation  
-- 📈 Power BI & Tableau → dashboards & insights  
-- ☁️ Microsoft Fabric & Azure → scalable data processing  
-- 🖥 VS Code & GitHub → efficient coding & version control  
+Through this portfolio, I showcase my work in web development, design, multimedia production, and digital creativity while documenting the evolution of my skills and projects.
 
 ---
 
-## 📹 Multimedia & Content Creation
+## 🚀 The Vision Behind I Want Project
 
-Beyond code and data, I create multimedia assets:
+I Want Project is more than a portfolio.
 
-- 🎬 **Filmora** → video editing & transitions  
-- 📊 **PowerPoint** → engaging presentations & visuals  
+It is a personal initiative inspired by the idea that meaningful change is possible at any stage of life.
 
----
+The project reflects the process of rebuilding, learning new skills, embracing challenges, and creating opportunities through determination and consistent effort.
 
-## ✨ Personal Notes
-
-I quit smoking over a year ago and practice indoor fitness regularly – building **discipline, focus, and a healthier mindset**. 💪  
+Whether the goal is improving technical skills, developing creative abilities, building a stronger mindset, or pursuing a new professional direction, every project featured here represents another step forward.
 
 ---
 
-## 🌟 Career Goals
+## 🎬 DAX – The Reboot Project
 
-I aim for an **entry-level Data Analyst or Web Developer role**, where I can:
+One of the creative concepts connected to I Want Project is **DAX**.
 
-- Contribute value from day one  
-- Continue **learning and improving skills**  
-- Blend **creativity, data, and technology** in real projects  
+DAX is a symbolic digital persona representing transformation, adaptation, and professional evolution.
 
----
+Created as a visual storytelling project, DAX explores the idea of restarting, upgrading, and redefining oneself through technology, creativity, and resilience.
 
-## 📂 Portfolio & Projects
-
-- 🌐 [Portfolio / Project Link](https://riello76.github.io/)  
-- 💻 [GitHub Repository](https://github.com/Riello76) → all project files & documentation  
+Rather than a character, DAX serves as a creative metaphor for personal and professional growth.
 
 ---
 
-## 💬 Let’s Connect
+## 💻 Web Development
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gaspare-tocci/)  
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Riello76)  
-📧 Email: [gaspare_tocci@yahoo.it](mailto:gaspare_tocci@yahoo.it) 
+Technologies and tools used throughout my projects:
+
+* HTML5
+* CSS3
+* JavaScript
+* Bootstrap
+* Responsive Design
+* Git & GitHub
+* VS Code
 
 ---
 
-⭐ Thanks for visiting!
+## 🎨 Design & Creative Tools
 
-I’m aiming for an **entry-level role** in **Data Analysis** or **Web Development**, contributing from day one to projects that merge **design, data, and technology** into meaningful solutions.
+* Figma
+* Inkscape
+* GIMP
+* Blender
+
+---
+
+## 🎬 Multimedia Production
+
+* DaVinci Resolve
+* Filmora
+* OBS Studio
+* Photo Editing
+* Video Editing
+* Motion Graphics
+* Visual Storytelling
+
+---
+
+## 📂 Portfolio Highlights
+
+🔹 Responsive Web Development
+
+🔹 Front-End Design
+
+🔹 UI / UX Concepts
+
+🔹 Graphic Design & Branding
+
+🔹 Video Production
+
+🔹 Creative Digital Projects
+
+---
+
+## 🎯 Current Focus
+
+* Designing and developing responsive websites
+
+* Improving front-end development and UI design skills
+
+* Creating digital content through video editing, graphic design, and visual storytelling
+
+* Expanding my portfolio with projects that combine creativity and technology
+
+---
+
+## 🤝 Connect With Me
+
+🔗 LinkedIn
+https://www.linkedin.com/in/gaspare-tocci-928496112
+
+🌐 Portfolio
+https://riello76.github.io/
+
+💻 GitHub
+https://github.com/Riello76
+
+📧 Email
+[gaspare_tocci@yahoo.it](mailto:gaspare_tocci@yahoo.it)
+
+---
+
+### ⚡ Building Digital Experiences Through Development, Design & Creativity
+
+*"Every project starts with a decision: I Want."*
