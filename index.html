@@ -40,6 +40,11 @@
   <link rel="preconnect" href="https://www.youtube.com" crossorigin>
   <link rel="preconnect" href="https://www.google.com" crossorigin>
 
+  <!-- Preload per la Hero Image Mobile -->
+  <link rel="preload" href="/images/hero-image-dax-mobile.webp" as="image" media="(max-width: 768px)">
+
+  <!-- Preload per la Hero Image Desktop -->
+  <link rel="preload" href="/images/hero-image-dax-desktop.webp" as="image" media="(min-width: 769px)">
 
   <!-- ========== CSS Stylesheets ========== -->
 
@@ -205,21 +210,21 @@
   <main>
 
     <!-- ========== Hero Section ========== -->
-  <section class="hero-section" aria-label="Hero Banner">
-    <picture>
+    <section class="hero-section" aria-label="Hero Banner">
+      <picture>
 
-      <!-- Hero Image for Mobile -->
-      <source media="(max-width: 768px)" srcset="/images/hero-image-dax-mobile.webp" width="320" height="569">
+        <!-- Hero Image for Mobile -->
+        <source media="(max-width: 768px)" srcset="/images/hero-image-dax-mobile.webp" width="320" height="569">
 
-      <!-- Hero Image for Tablet/desktop -->
-      <source media="(min-width: 769px)" srcset="/images/hero-image-dax-desktop.webp" width="1672" height="941">
+        <!-- Hero Image for Tablet/desktop -->
+        <source media="(min-width: 769px)" srcset="/images/hero-image-dax-desktop.webp" width="1672" height="941">
 
-      <!-- Fallback Hero Image -->
-      <img src="/images/hero-image-dax-desktop.webp" alt="Creative portfolio hero banner" width="1672" height="941"
-        loading="eager" fetchpriority="high" decoding="async">
-    </picture>
-    
-  </section>
+        <!-- Fallback Hero Image -->
+        <img src="/images/hero-image-dax-desktop.webp" alt="Creative portfolio hero banner" width="1672" height="941"
+          loading="eager" fetchpriority="high" decoding="async">
+      </picture>
+
+    </section>
 
 
     <section class="middle-main">
