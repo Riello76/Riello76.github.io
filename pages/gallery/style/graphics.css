@@ -33,11 +33,6 @@ main {
       var(--tertiary-color) 100%);
 }
 
-/* ================== Paragraph Styling ================== */
-.graphic-group p {
-  background: transparent;
-}
-
 /* ================== Grid for Icons and Buttons ================== */
 .graphic-grid {
   display: grid;

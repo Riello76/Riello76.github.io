@@ -46,13 +46,13 @@
   /* Subtle semi-transparent cyber cyan border line */
   /* ==== Heading Sizes ==== */
   --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 7rem);
-  --font-size-h2: clamp(2rem, 1.2rem + 2vw, 5rem);
+  --font-size-h2: clamp(1rem, 1.1rem + 1vw, 5rem);
   --font-size-h3: clamp(1.7rem, 1rem + 1.5vw, 4rem);
   --font-size-h4: clamp(1.5rem, 0.9rem + 1vw, 3.5rem);
   --font-size-h5: clamp(1.25rem, 0.8rem + 0.8vw, 2.5rem);
   --font-size-h6: clamp(1.1rem, 0.7rem + 0.5vw, 2rem);
   --font-size-nav-item: clamp(2rem, 1.5vw, 4rem);
-
+  --font-size-p:clamp(1rem, 0.95rem + 0.3vw, 1.15rem);
   /* ==== Body Text & Links ==== */
   --font-size-p: clamp(1.3rem, 1rem + 1vw, 2.5rem);
   --font-size-a: clamp(1rem, 0.85rem + 0.4vw, 1.8rem);
@@ -117,12 +117,12 @@ h6 {
 p {
   font-size: var(--font-size-p);
   color: var(--text-primary);
-  background: var(transparent);
+  background: transparent;
   font-weight: 400;
-  text-align: justify;
-  line-height: 1.4;
-  padding: 1rem;
-  width: 90%;
+  text-align: left;
+  line-height: 1.7;
+  margin: 1rem 0;
+  width: 100%;
 }
 
 /* Ultra-wide screens: 2560px+ */
@@ -149,30 +149,6 @@ a {
 
 strong {
   color: var(--brand-magenta);
-}
-
-/* ================== Divider ================== */
-.with-divider {
-  position: relative;
-  margin: rem;
-  display: block;
-}
-
-.with-divider::before {
-  content: "";
-  position: absolute;
-  top: clamp(-3rem, -2vw, -2rem);
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: clamp(2rem, 3vw, 6rem);
-  background-image: url('/images/divider.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  pointer-events: none;
-  user-select: none;
-  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 /* ================== Click hint ==================*/
@@ -254,7 +230,7 @@ picture {
 
 /* ========== Media Queries ========== */
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
 
   /* ========== Base layout flex for mobile ========== */
   html,
@@ -314,79 +290,6 @@ picture {
   color: var(--brand-magenta);
   font-style: oblique;
 }
-
-/* ========== NEWS BAR ========== */
-/* .gt-news-bar {
-  display: flex;
-  align-items: center;
-  color: var(--info-color);
-  padding: clamp(0.3rem, 0.5vw, 1rem) clamp(0.5rem, 1vw, 2rem);
-  font-size: var(--font-size-p);
-  font-weight: bolder;
-  width: 95%;
-}
-
-.gt-news-label {
-  display: flex;
-  flex-shrink: 0;
-  font-weight: bold;
-  color: var(--secondary-color);
-  font-size: clamp(1rem, 1vw + 1rem, 3rem);
-}
-
-.gt-news-container {
-  flex: 1;
-  overflow: hidden;
-  position: relative;
-}
-
-.gt-news-ticker {
-  display: inline-flex;
-  align-items: center;
-  white-space: nowrap;
-  will-change: transform;
-  animation: ticker 30s linear infinite;
-}
-
-.gt-news-item::before {
-  content: "❖ ";
-  margin-right: 0.5rem;
-  color: var(--secondary-color);
-}
-
-@keyframes ticker {
-  0% {
-    transform: translateX(20%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.gt-news-item-wrapper {
-  display: inline-flex;
-  margin-right: 3rem;
-}
-
-.gt-pusher {
-  width: clamp(2rem, 2vw, 4rem);
-} */
-
-/* ========== SYMBOL ICONS STYLE ========== */
-/* .symbol.left,
-.symbol.right {
-  font-size: clamp(1.8rem, 1.2rem + 1vw, 4rem);
-  user-select: none;
-}
-
-.symbol.left {
-  color: var(--brand-magenta);
-}
-
-.symbol.right {
-  color: var(--secondary-color);
-} */
 
 /* ========== NAVBAR CONTAINER ========== */
 .gt-navbar {
@@ -725,6 +628,7 @@ picture {
 }
 
 /* ========== Footer Column ========== */
+
 /* Base layout for both Contacts and Links */
 .gt-footer-column-contacts,
 .gt-footer-column-links {
@@ -742,7 +646,7 @@ picture {
 .gt-footer-column-links a {
   flex: 1;
   text-align: center;
-  max-width: 200px;
+  max-width: 250px;
 }
 
 .gt-footer-tagline {
@@ -766,27 +670,6 @@ picture {
   }
 }
 
-/* ========== Footer Icons ========== */
-.gt-footer-icon-div {
-  display: flex;
-  flex-direction: row;
-  gap: clamp(0.5rem, 1vw, 2rem);
-}
-
-.gt-footer-icon {
-  width: clamp(3rem, 2.5vw, 6rem);
-  margin: clamp(0.5rem, 0.5vw, 1rem);
-}
-
-/* ========== Footer About Section ========== */
-.gt-footer-about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: clamp(1.5rem, 2vw, 3rem);
-  margin-bottom: clamp(1.5rem, 3vw, 4rem);
-}
 
 /* ========== Footer Headings ========== */
 .gt-footer h2 {
@@ -818,20 +701,6 @@ picture {
   letter-spacing: 0.1rem;
 }
 
-/* ========== Footer Lists ========== */
-.gt-footer-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: clamp(1rem, 1.5vw, 3rem);
-}
-
-.gt-footer-list li {
-  margin: 0;
-}
 
 /* ========== Footer Link Styling (CTA-style) ========== */
 .gt-footer-link {
@@ -889,6 +758,7 @@ picture {
 
   bottom: 2rem;
   right: 2rem;
+  margin-top: 2rem;
   width: clamp(5rem, 5vw, 8rem);
   height: clamp(5rem, 5vw, 8rem);
   display: flex;
@@ -910,12 +780,6 @@ picture {
   background-color: var(--main-color);
   border-radius: 100%;
 }
-
-/* .gt-go-to-top img {
-  width: 50%;
-  height: auto;
-  border-radius: var(--border-radius-desktop);
-} */
 
 /* ========== MEDIA QUERY: DESKTOP & TABLET NAVBAR STYLING ========== */
 @media screen and (min-width: 769px) {
@@ -1159,4 +1023,7 @@ picture {
     top: 100%;
     left: 0;
   }
+    .gt-go-to-top {
+      display: none
+    }
 }

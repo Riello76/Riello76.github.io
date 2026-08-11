@@ -29,19 +29,23 @@
     }
 
     /* ================== Curriculum Card ================== */
-    .curriculum-card {
-        background: var(--main-color);
-        border-radius: var(--border-radius-mobile);
-        box-shadow: 10px 10px 10px var(--tertiary-color);
-        text-align: center;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        width: 100%;
-        max-width: 80rem;
-        min-height: 200px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+        .curriculum-card {
+            background: var(--main-color);
+            border-radius: var(--border-radius-mobile);
+            box-shadow: 10px 10px 10px var(--tertiary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+            width: 100%;
+            max-width: 80rem;
+            min-height: 200px;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+    
+            padding: 2rem;
+        }
 
     .curriculum-card:hover {
         box-shadow:
@@ -55,7 +59,22 @@
                 var(--tertiary-color) 100%);
     }
 
-    .curriculum-card p {}
+    .curriculum-card h3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .curriculum-card p {
+        width: 100%;
+        text-align: left;
+        line-height: 1.7;
+        margin: 1rem 0;
+    }
+
+    .curriculum-card p:first-of-type {
+        margin-top: 0;
+    }
 }
 
 /* ================== Medium Screens >= 768px ================== */

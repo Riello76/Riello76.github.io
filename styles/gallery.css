@@ -73,8 +73,11 @@ main {
 }
 
 .gallery-card p {
+  width: 100%;
   background: transparent;
-  padding: 1rem;
+  text-align: center;
+  line-height: 1.7;
+  margin-top: 2rem;
 }
 
 /* ================== Tablet & Desktop (768px+) ================== */

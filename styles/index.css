@@ -7,15 +7,6 @@
     background: var(--background-gradient);
   }
 
-  /* ========== TOP MAIN SECTION ========== */
-  .top-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 1rem;
-  }
-
   /* ========== HERO SECTION ========== */
   .hero-section {
     width: 100%;
@@ -41,18 +32,39 @@
     padding: 2rem 1rem;
   }
 
-  .about-me h1,
-  .about-me h2,
-  .about-me h3 {
-    color: var(--secondary-color);
-    /* Pure white headers for optimal tech contrast */
+  /* ========== ABOUT ME GRID ========== */
+  .about-grid {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2rem;
   }
 
-  .about-me p {
-    color: var(--text-primary);
-    line-height: 1.8;
+  /* Mobile: single column */
+  .about-block {
     width: 100%;
-    margin-inline: auto;
+    padding: 1.5rem;
+    border-top: 2px solid rgba(0, 240, 255, 0.25);
+    background: rgba(0, 10, 30, 0.25);
+    border-radius: 1rem;
+  }
+
+  .about-block h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .about-block p {
+    margin: 0;
+    text-align: left;
+  }
+
+  /* Desktop: three columns */
+  @media screen and (min-width: 992px) {
+    .about-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   /* ========== CTA BUTTON ========== */
@@ -186,13 +198,6 @@
     margin: 3rem 0;
   }
 
-  .featured-project p {
-    color: var(--text-primary);
-    margin: 1rem 0;
-    text-align: center;
-    padding: 1rem;
-    width: 100%;
-  }
 
   .project-split-container {
     display: flex;
@@ -257,16 +262,27 @@
     border: none;
   }
 
-  /* Title */
-  .featured-project-section h2,
-  .featured-project h2{
-    margin-bottom: 1.5rem;
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
-    font-weight: 700;
-    text-align: center;
+  /* ========== Featured Project Info Grid ========== */
+  .project-info-grid {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2rem;
   }
 
+  .project-info-block {
+    width: 100%;
+    padding: 1.5rem;
+    border-top: 2px solid rgba(0, 240, 255, 0.25);
+    background: rgba(0, 10, 30, 0.25);
+    border-radius: 1rem;
+  }
 
+  @media screen and (min-width: 992px) {
+    .project-info-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 
   /* ========== MY TOOLS SECTION ========== */
   .tools {
@@ -276,6 +292,41 @@
     align-items: center;
     width: 100%;
     margin: 2rem 0;
+    gap: 2rem;
+  }
+
+  /* ========== TOOLS SECTION ========== */
+
+  /* Intro text */
+  .tools-intro {
+    max-width: 70ch;
+    text-align: center;
+    margin: 0 auto 2rem;
+  }
+
+  /* Groups wrapper */
+  .tools-groups {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  /* Single category block */
+  .tool-group {
+    width: 100%;
+    padding: 1.5rem;
+    border-top: 2px solid rgba(0, 240, 255, 0.25);
+    background: rgba(0, 10, 30, 0.25);
+    border-radius: 1rem;
+  }
+
+  /* Existing tools layout */
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
   }
 
@@ -290,7 +341,6 @@
 
   /* Combined hover effect for the container */
   .tool-item:hover {
-    /* Combines both vertical movement and scaling into a single property */
     transform: translateY(-5px) scale(1.05);
   }
 
@@ -306,12 +356,18 @@
     font-size: var(--font-size-p);
     margin-top: 0.5rem;
     transition: color 0.3s ease;
-    /* Smooth color transition */
   }
 
-  /* Triggers magenta color when user hovers ANYWHERE on the .tool-item */
+  /* Hover label color */
   .tool-item:hover span {
     color: var(--brand-magenta);
+  }
+
+  /* Desktop layout: 2 columns */
+  @media screen and (min-width: 992px) {
+    .tools-groups {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   /* ========== TECHNICAL DETAILS SECTION ========== */
@@ -325,99 +381,107 @@
     border-top: 1px solid rgba(255, 255, 255, 0.02);
   }
 
-  .technical-details h2 {
-    color: var(--secondary-color);
-  }
-
-  .technical-details p {
-    color: var(--text-primary);
-  }
-
-  .technical-details div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-}
-
-/* ========== MEDIA QUERY: TABLET / SMALL DESKTOP (768px) ========== */
-@media screen and (min-width:768px) {
-
-  /* ========== Paragraphs ========== */
-  .about-me p,
-  .technical-details p {
+  /* ========== SPECIFICATIONS GRID ========== */
+  .spec-grid {
+    display: grid;
+    gap: 2rem;
     width: 100%;
+    margin-top: 2rem;
   }
 
-  /* ========== TECHNICAL IMAGE GRID ========== */
-  .technical-img-div img {
-    width: 10rem;
-    height: 10rem;
-    margin: 2rem;
-    filter: grayscale(20%) drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.4));
-    transition: transform 0.3s ease, filter 0.3s ease;
-  }
-
-  .technical-img-div img:hover {
-    transform: scale(1.08);
-    filter: grayscale(0%) drop-shadow(0px 0px 15px var(--secondary-color));
-    /* Dynamic neon frame glow on hover */
-  }
-}
-
-/* ========== MEDIA QUERY: ULTRA-WIDE SCREENS (2560px) ========== */
-@media screen and (min-width:2560px) {}
-
-/* ========== DISABLE AOS ANIMATIONS ON SMALL SCREENS ========== */
-@media (max-width:768px),
-(prefers-reduced-motion: reduce) {
-  [data-aos] {
-    opacity: 1;
-    transform: none;
-    transition: none;
-    animation: none;
-    will-change: auto;
-  }
-}
-
-/* Tablet */
-@media (max-width: 992px) {
-  .project-split-container {
-    gap: 1.5rem;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .project-split-container {
-    flex-direction: column;
-  }
-
-  .project-left-block,
-  .project-right-block {
+  /* Mobile: single column */
+  .spec-block {
     width: 100%;
+    padding: 1.5rem;
+    border-top: 2px solid rgba(0, 240, 255, 0.25);
+    background: rgba(0, 10, 30, 0.25);
+    border-radius: 1rem;
   }
 
-}
-
-/* Small phones */
-@media (max-width: 480px) {
-  .featured-project {
-    margin: 2rem 0;
+  /* Desktop: three columns */
+  @media screen and (min-width: 992px) {
+    .spec-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
-  .project-left-block .media-responsive-wrapper {
-    padding-bottom: 75%;
-    /* Standard height/width ratio for 4:3 */
+  /* ========== MEDIA QUERY: TABLET / SMALL DESKTOP (768px) ========== */
+  @media screen and (min-width:768px) {
+
+    /* ========== Paragraphs ========== */
+    .about-me p,
+    .technical-details p {
+      width: 100%;
+    }
+
+    /* ========== TECHNICAL IMAGE GRID ========== */
+    .technical-img-div img {
+      width: 10rem;
+      height: 10rem;
+      margin: 2rem;
+      filter: grayscale(20%) drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.4));
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .technical-img-div img:hover {
+      transform: scale(1.08);
+      filter: grayscale(0%) drop-shadow(0px 0px 15px var(--secondary-color));
+      /* Dynamic neon frame glow on hover */
+    }
   }
 
-  .project-split-container {
-    gap: 1rem;
+  /* ========== MEDIA QUERY: ULTRA-WIDE SCREENS (2560px) ========== */
+  @media screen and (min-width:2560px) {}
+
+  /* ========== DISABLE AOS ANIMATIONS ON SMALL SCREENS ========== */
+  @media (max-width:768px),
+  (prefers-reduced-motion: reduce) {
+    [data-aos] {
+      opacity: 1;
+      transform: none;
+      transition: none;
+      animation: none;
+      will-change: auto;
+    }
   }
 
-  .media-responsive-wrapper {
-    border-radius: 12px;
+  /* Tablet */
+  @media (max-width: 992px) {
+    .project-split-container {
+      gap: 1.5rem;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .project-split-container {
+      flex-direction: column;
+    }
+
+    .project-left-block,
+    .project-right-block {
+      width: 100%;
+    }
+
+  }
+
+  /* Small phones */
+  @media (max-width: 480px) {
+    .featured-project {
+      margin: 2rem 0;
+    }
+
+    .project-left-block .media-responsive-wrapper {
+      padding-bottom: 75%;
+      /* Standard height/width ratio for 4:3 */
+    }
+
+    .project-split-container {
+      gap: 1rem;
+    }
+
+    .media-responsive-wrapper {
+      border-radius: 12px;
+    }
   }
 }
