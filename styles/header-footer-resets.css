@@ -52,7 +52,7 @@
   --font-size-h5: clamp(1.25rem, 0.8rem + 0.8vw, 2.5rem);
   --font-size-h6: clamp(1.1rem, 0.7rem + 0.5vw, 2rem);
   --font-size-nav-item: clamp(2rem, 1.5vw, 4rem);
-  --font-size-p:clamp(1rem, 0.95rem + 0.3vw, 1.15rem);
+  --font-size-p: clamp(1rem, 0.95rem + 0.3vw, 1.15rem);
   /* ==== Body Text & Links ==== */
   --font-size-p: clamp(1.3rem, 1rem + 1vw, 2.5rem);
   --font-size-a: clamp(1rem, 0.85rem + 0.4vw, 1.8rem);
@@ -124,24 +124,26 @@ p {
   margin: 1rem 0;
   width: 100%;
 }
-    /* ========== SYMBOL ICONS FONT SIZE & UNSELECTABLE ========== */
-    .symbol.left,
-    .symbol.right {
-      font-size: clamp(1.8rem, 1.2rem + 1vw,rem);
-      user-select: none;
-    }
-  
-    /* ========== LEFT SYMBOL COLOR & MARGIN ========== */
-    .symbol.left {
-      color: var(--brand-magenta);
-      margin-right: 1rem;
-    }
-  
-    /* ========== RIGHT SYMBOL COLOR & MARGIN ========== */
-    .symbol.right {
-      color: var(--secondary-color);
-      margin-left: 1rem;
-    }
+
+/* ========== SYMBOL ICONS FONT SIZE & UNSELECTABLE ========== */
+.symbol.left,
+.symbol.right {
+  font-size: clamp(1.8rem, 1.2rem + 1vw, rem);
+  user-select: none;
+}
+
+/* ========== LEFT SYMBOL COLOR & MARGIN ========== */
+.symbol.left {
+  color: var(--brand-magenta);
+  margin-right: 1rem;
+}
+
+/* ========== RIGHT SYMBOL COLOR & MARGIN ========== */
+.symbol.right {
+  color: var(--secondary-color);
+  margin-left: 1rem;
+}
+
 /* Ultra-wide screens: 2560px+ */
 @media screen and (min-width: 2560px) {
   :root {
@@ -801,20 +803,6 @@ picture {
 /* ========== MEDIA QUERY: DESKTOP & TABLET NAVBAR STYLING ========== */
 @media screen and (min-width: 769px) {
 
-  /* ========== GT News Ticker Animation SPEED ADJUSTMENT ========== */
-  /* .gt-news-ticker {
-    animation: ticker 30s linear infinite;
-  }
-
-  @keyframes ticker {
-    0% {
-      transform: translateX(30%);
-    }
-
-    100% {
-      transform: translateX(-100%);
-    }
-  } */
 
   /* ========== GT Navbar Container ========== */
   .gt-navbar {
@@ -923,43 +911,10 @@ picture {
     transform: scale(0.95);
   }
 
-  /* ========== GT Footer Section ========== */
-
-  .gt-footer-column {
-    justify-content: space-evenly;
-  }
-
-}
-
-/* ========== LARGE DESKTOP (>= 1024px) ========== */
-@media screen and (min-width: 1024px) {
-  /* 
-  @keyframes ticker {
-    0% {
-      transform: translateX(40%);
-    }
-
-    100% {
-      transform: translateX(-100%);
-    }
-  } */
-
-
 }
 
 /* ========== LARGE DESKTOP (>= 1440px) ========== */
 @media screen and (min-width: 1440px) {
-
-  /* @keyframes ticker {
-    0% {
-      transform: translateX(80%);
-    }
-
-    100% {
-      transform: translateX(-100%);
-    }
-  } */
-
 
 
   /* ========== HIGHLIGHT COLOR ========== */
@@ -1023,7 +978,8 @@ picture {
     top: 100%;
     left: 0;
   }
-    .gt-go-to-top {
-      display: none
-    }
+
+  .gt-go-to-top {
+    display: none
+  }
 }
