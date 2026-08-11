@@ -124,7 +124,24 @@ p {
   margin: 1rem 0;
   width: 100%;
 }
-
+    /* ========== SYMBOL ICONS FONT SIZE & UNSELECTABLE ========== */
+    .symbol.left,
+    .symbol.right {
+      font-size: clamp(1.8rem, 1.2rem + 1vw,rem);
+      user-select: none;
+    }
+  
+    /* ========== LEFT SYMBOL COLOR & MARGIN ========== */
+    .symbol.left {
+      color: var(--brand-magenta);
+      margin-right: 1rem;
+    }
+  
+    /* ========== RIGHT SYMBOL COLOR & MARGIN ========== */
+    .symbol.right {
+      color: var(--secondary-color);
+      margin-left: 1rem;
+    }
 /* Ultra-wide screens: 2560px+ */
 @media screen and (min-width: 2560px) {
   :root {
@@ -943,24 +960,7 @@ picture {
     }
   } */
 
-  /* ========== SYMBOL ICONS FONT SIZE & UNSELECTABLE ========== */
-  .symbol.left,
-  .symbol.right {
-    font-size: clamp(1.8rem, 1.2rem + 1vw, 4rem);
-    user-select: none;
-  }
 
-  /* ========== LEFT SYMBOL COLOR & MARGIN ========== */
-  .symbol.left {
-    color: var(--brand-magenta);
-    margin-right: 1rem;
-  }
-
-  /* ========== RIGHT SYMBOL COLOR & MARGIN ========== */
-  .symbol.right {
-    color: var(--secondary-color);
-    margin-left: 1rem;
-  }
 
   /* ========== HIGHLIGHT COLOR ========== */
   .highlight {
