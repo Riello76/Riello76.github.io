@@ -162,68 +162,106 @@
 
   <!-- ========== MAIN CONTENT ========== -->
   <main>
-
-    <!-- ========== Middle Main ========== -->
-    <h2>Branding</h2>
+    <h1>Branding</h1>
 
     <!-- ================== Logos ================== -->
-    <div class="branding-group">
-      <h3>Logos</h3>
+    <section class="card">
+      <h2>Logo Design</h2>
+
       <div class="branding-images">
-        <img src="../images/branding-images/logos/logo-wada-solution.svg" alt="Wada Solution Logo" loading="lazy"
-          width="150" height="150">
-        <img src="../images/branding-images/logos/logo.svg" alt="Portfolio Logo" loading="lazy" width="150"
-          height="150">
-        <img src="../images/branding-images/logos/logo-glastonbury.svg" alt="Glastonbury Logo" loading="lazy"
-          width="150" height="150">
+        <figure class="card">
+          <img src="../images/branding-images/logos/logo-wada-solution.svg" alt="Wada Solution logo" loading="lazy"
+            width="150" height="150">
+          <h3>Wada Solution</h3>
+        </figure>
+
+        <figure class="card">
+          <img src="../images/branding-images/logos/logo.svg" alt="Gaspare Tocci portfolio logo" loading="lazy"
+            width="150" height="150">
+          <h3>Personal Portfolio</h3>
+        </figure>
+
+        <figure class="card">
+          <img src="../images/branding-images/logos/logo-glastonbury.svg" alt="Glastonbury inspired logo" loading="lazy"
+            width="150" height="150">
+          <h3>Glastonbury</h3>
+        </figure>
       </div>
+
       <div class="branding-desc">
         <p>
-          Selected <strong>logo designs</strong> showcasing distinct brand identities and visual impact, highlighting
-          creativity and professional design skills.
+          A selection of <strong>logo design projects</strong> created to build clear, memorable, and visually
+          consistent
+          brand identities.
+          Each concept focuses on <strong>simplicity, recognition, and adaptability across digital and print
+            media</strong>.
         </p>
       </div>
-    </div>
+    </section>
 
     <!-- ================== Business Cards ================== -->
-    <div class="branding-group">
-      <h3>Business Cards</h3>
+    <section class="card">
+      <h2>Business Card Design</h2>
+
       <div class="branding-images">
-        <img src="../images/branding-images/business cards/business-card-wada.svg" alt="Wada Solution Business Card"
-          loading="lazy" width="200" height="120">
-        <img src="../images/branding-images/business cards/business-card-gaspare.svg" alt="Gaspare Tocci Business Card"
-          loading="lazy" width="200" height="120">
+        <figure class="card">
+          <img src="../images/branding-images/business cards/business-card-wada.svg" alt="Wada Solution business card"
+            loading="lazy" width="200" height="120">
+          <h3>Wada Solution</h3>
+        </figure>
+
+        <figure class="card">
+          <img src="../images/branding-images/business cards/business-card-gaspare.svg"
+            alt="Gaspare Tocci business card" loading="lazy" width="200" height="120">
+          <h3>Gaspare Tocci</h3>
+        </figure>
       </div>
+
       <div class="branding-desc">
         <p>
-          <strong>Business card</strong> designs showcasing compact, impactful branding, emphasizing clarity,
-          aesthetics, and effective communication of key information.
+          A selection of <strong>business card designs</strong> focused on clean layout, strong visual identity, and
+          clear
+          presentation of essential contact information.
+          Each design balances <strong>professional aesthetics, readability, and brand consistency</strong>.
         </p>
       </div>
-    </div>
+    </section>
 
     <!-- ================== Calendars ================== -->
-    <div class="branding-group">
-      <h3>Calendars</h3>
-      <div class="branding-images">
-        <picture>
-          <source srcset="../images/branding-images/calendars/calendar-wada.svg" media="(min-width: 1024px)">
-          <img class="calendar-portrait" src="../images/branding-images/calendars/calendar-wada.svg"
-            alt="Wada Solution Calendar" loading="lazy" width="150" height="200">
-        </picture>
-        <picture>
-          <source srcset="../images/branding-images/calendars/calendar-gaspare.svg" media="(min-width: 1024px)">
-          <img class="calendar-landscape" src="../images/branding-images/calendars/calendar-gaspare.svg"
-            alt="Gaspare Tocci Calendar" loading="lazy" width="200" height="150">
-        </picture>
+    <section class="card">
+      <h2>Calendar Design</h2>
+
+      <div class="branding-images calendars-grid">
+
+        <figure class="card">
+          <picture>
+            <source srcset="../images/branding-images/calendars/calendar-wada.svg" media="(min-width: 1024px)">
+            <img src="../images/branding-images/calendars/calendar-wada.svg" alt="Wada Solution calendar design"
+              loading="lazy" width="150" height="200">
+          </picture>
+          <h3>Wada Solution</h3>
+        </figure>
+
+        <figure class="card">
+          <picture>
+            <source srcset="../images/branding-images/calendars/calendar-gaspare.svg" media="(min-width: 1024px)">
+            <img src="../images/branding-images/calendars/calendar-gaspare.svg" alt="Gaspare Tocci calendar design"
+              loading="lazy" width="200" height="150">
+          </picture>
+          <h3>Gaspare Tocci</h3>
+        </figure>
+
       </div>
+
       <div class="branding-desc">
         <p>
-          <strong>Calendar</strong> designs combining functionality and visual appeal, highlighting organization,
-          creativity, and cohesive brand presentation.
+          A selection of <strong>calendar design projects</strong> that combine practical usability with strong visual
+          identity.
+          The layouts are designed to enhance <strong>readability, organization, and brand consistency throughout the
+            year</strong>.
         </p>
       </div>
-    </div>
+    </section>
 
   </main>
 
@@ -305,6 +343,14 @@
   <script>
     AOS.init();
   </script>
+
+  <!-- ========== Branding Lightbox Script ========== -->
+  <script src="/scripts/lightbox.js" defer></script>
 </body>
+
+<!-- ========== Image Lightbox ========== -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <img id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+</div>
 
 </html>

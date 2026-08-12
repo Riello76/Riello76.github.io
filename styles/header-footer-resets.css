@@ -46,15 +46,15 @@
   /* Subtle semi-transparent cyber cyan border line */
   /* ==== Heading Sizes ==== */
   --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 7rem);
-  --font-size-h2: clamp(1rem, 1.1rem + 1vw, 5rem);
-  --font-size-h3: clamp(1.7rem, 1rem + 1.5vw, 4rem);
+  --font-size-h2: clamp(1rem, 1.1rem + 1vw, 6rem);
+  --font-size-h3: clamp(1.7rem, 1rem + 1.5vw, 3.7rem);
   --font-size-h4: clamp(1.5rem, 0.9rem + 1vw, 3.5rem);
   --font-size-h5: clamp(1.25rem, 0.8rem + 0.8vw, 2.5rem);
   --font-size-h6: clamp(1.1rem, 0.7rem + 0.5vw, 2rem);
   --font-size-nav-item: clamp(2rem, 1.5vw, 4rem);
-  --font-size-p: clamp(1rem, 0.95rem + 0.3vw, 1.15rem);
+  --font-size-p: clamp(1.3rem, 1rem + 1vw, 2rem);
+
   /* ==== Body Text & Links ==== */
-  --font-size-p: clamp(1.3rem, 1rem + 1vw, 2.5rem);
   --font-size-a: clamp(1rem, 0.85rem + 0.4vw, 1.8rem);
 
   /* ==== Font Family ==== */
@@ -91,6 +91,7 @@ h3 {
   text-align: center;
   font-weight: bolder;
   width: 100%;
+  margin: auto
 }
 
 h4 {
@@ -120,9 +121,10 @@ p {
   background: transparent;
   font-weight: 400;
   text-align: left;
-  line-height: 1.7;
-  margin: 1rem 0;
+  line-height: 1.3;
+  margin: auto 0 1rem;
   width: 100%;
+  flex-grow: 1;
 }
 
 /* ========== SYMBOL ICONS FONT SIZE & UNSELECTABLE ========== */
@@ -142,6 +144,58 @@ p {
 .symbol.right {
   color: var(--secondary-color);
   margin-left: 1rem;
+}
+
+/* ================== Generic List Style ================== */
+.list {
+  width: 90%;
+  margin: 1.5rem auto;
+  padding-left: 1.5rem;
+}
+
+.list li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+  font-size: var(--font-size-p);
+  /* Same size as paragraphs */
+  text-align: left;
+}
+
+.list li::marker {
+  color: var(--secondary-color);
+  /* Cyan marker */
+  font-size: 1.1em;
+}
+
+.card {
+  background: var(--main-color);
+  border-radius: var(--border-radius-mobile);
+  box-shadow: 10px 10px 10px var(--tertiary-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  width: 100%;
+  max-width: clamp(30rem, 100vw, 80rem);
+  min-height: clamp(20rem, 28vw, 26rem);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: clamp(1.25rem, 2vw, 2rem);
+
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.25),
+    0 0 15px var(--info-color),
+    0 0 30px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg,
+      var(--tertiary-color) 0%,
+      var(--main-color) 40%,
+      var(--info-color) 200%,
+      var(--tertiary-color) 100%);
 }
 
 /* Ultra-wide screens: 2560px+ */
@@ -164,25 +218,49 @@ a {
   color: var(--secondary-color);
   text-decoration: none;
   font-weight: 300;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 strong {
   color: var(--brand-magenta);
 }
 
-/* ================== Click hint ==================*/
+/* ================== Click hint ================== */
 .click-hint {
-  width: clamp(10rem, 20vw, 30rem);
-  font-size: var(--font-size-p);
-  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 18rem;
+
+  font-size: var(--font-size-h6);
+  font-weight: 700;
   text-align: center;
+  text-decoration: none;
+
   color: var(--brand-magenta);
-  background: var(--main-color);
-  padding: 0.3rem 0.6rem;
-  margin: 1rem 0;
-  border-radius: var(--border-radius-desktop);
-  box-shadow: 0px 0px 5px var(--brand-magenta);
-  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  background: rgba(0, 10, 30, 0.65);
+
+  padding: 0.65rem 1rem;
+  margin: 1.5rem;
+
+  border: 0.12rem solid rgba(255, 0, 128, 0.7);
+  border-radius: 999px;
+
+  box-shadow:
+    0 0 6px rgba(255, 0, 128, 0.35),
+    inset 0 0 6px rgba(255, 0, 128, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease,
+    text-shadow 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+
   cursor: pointer;
 }
 
@@ -191,6 +269,7 @@ strong {
   animation: pulse 0.8s ease-in-out infinite alternate;
   text-shadow: 0 0 8px var(--secondary-color), 0 0 12px var(--secondary-color);
   box-shadow: 0px 0px 5px var(--secondary-color);
+  border: 0.12rem solid var(--secondary-color);
 }
 
 @keyframes pulse {

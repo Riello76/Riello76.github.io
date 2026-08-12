@@ -23,6 +23,12 @@
     overflow: hidden;
   }
 
+  h2 {
+    font-size: var(--font-size-h1);
+    box-shadow: none;
+    border: none;
+  }
+
   /* ========== ABOUT ME SECTION ========== */
   .about-me {
     display: flex;
@@ -38,26 +44,6 @@
     gap: 2rem;
     width: 100%;
     margin-top: 2rem;
-  }
-
-  /* Mobile: single column */
-  .about-block {
-    width: 100%;
-    padding: 1.5rem;
-    border-top: 2px solid rgba(0, 240, 255, 0.25);
-    background: rgba(0, 10, 30, 0.25);
-    border-radius: 1rem;
-  }
-
-  .about-block h3 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  .about-block p {
-    margin: 0;
-    text-align: left;
   }
 
   /* Desktop: three columns */
@@ -188,16 +174,15 @@
   }
 
   /* ========== DAX PRESENTATION ========== */
+
   /* ========== FEATURED PROJECT SECTION ========== */
-  /* Featured Project Section */
+
   .featured-project {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    margin: 3rem 0;
   }
-
 
   .project-split-container {
     display: flex;
@@ -268,31 +253,13 @@
     gap: 2rem;
     width: 100%;
     margin-top: 2rem;
-  }
-
-  .project-info-block {
-    width: 100%;
-    padding: 1.5rem;
-    border-top: 2px solid rgba(0, 240, 255, 0.25);
-    background: rgba(0, 10, 30, 0.25);
-    border-radius: 1rem;
+    justify-items: center;
   }
 
   @media screen and (min-width: 992px) {
     .project-info-grid {
       grid-template-columns: repeat(3, 1fr);
     }
-  }
-
-  /* ========== MY TOOLS SECTION ========== */
-  .tools {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 2rem 0;
-    gap: 2rem;
   }
 
   /* ========== TOOLS SECTION ========== */
@@ -310,33 +277,27 @@
     gap: 2rem;
     width: 100%;
     margin-top: 2rem;
-  }
-
-  /* Single category block */
-  .tool-group {
-    width: 100%;
-    padding: 1.5rem;
-    border-top: 2px solid rgba(0, 240, 255, 0.25);
-    background: rgba(0, 10, 30, 0.25);
-    border-radius: 1rem;
+    justify-items: center;
   }
 
   /* Existing tools layout */
   .tools {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     gap: 2rem;
   }
 
   /* ========== TOOL ITEM CONTAINER ========== */
   .tool-item {
+    width: 7rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    justify-content: flex-start;
+
+    text-align: center;
   }
 
   /* Combined hover effect for the container */
@@ -344,10 +305,12 @@
     transform: translateY(-5px) scale(1.05);
   }
 
-  /* ========== TOOL IMAGES ========== */
-  .tools img {
-    width: clamp(4rem, 4vw + 1rem, 8rem);
-    height: clamp(4rem, 4vw + 1rem, 8rem);
+  /* ================== Tool Icon ================== */
+  .tool-item img {
+    width: clamp(3.5rem, 5vw, 5rem);
+    height: clamp(3.5rem, 5vw, 5rem);
+    object-fit: contain;
+    margin-bottom: 0.5rem;
   }
 
   /* ========== TOOL LABELS ========== */
@@ -356,6 +319,7 @@
     font-size: var(--font-size-p);
     margin-top: 0.5rem;
     transition: color 0.3s ease;
+    line-height: 1.2;
   }
 
   /* Hover label color */
@@ -387,15 +351,7 @@
     gap: 2rem;
     width: 100%;
     margin-top: 2rem;
-  }
-
-  /* Mobile: single column */
-  .spec-block {
-    width: 100%;
-    padding: 1.5rem;
-    border-top: 2px solid rgba(0, 240, 255, 0.25);
-    background: rgba(0, 10, 30, 0.25);
-    border-radius: 1rem;
+    justify-items: center;
   }
 
   /* Desktop: three columns */
@@ -407,12 +363,6 @@
 
   /* ========== MEDIA QUERY: TABLET / SMALL DESKTOP (768px) ========== */
   @media screen and (min-width:768px) {
-
-    /* ========== Paragraphs ========== */
-    .about-me p,
-    .technical-details p {
-      width: 100%;
-    }
 
     /* ========== TECHNICAL IMAGE GRID ========== */
     .technical-img-div img {

@@ -27,54 +27,7 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
         gap: 2rem;
     }
-
-    /* ================== Curriculum Card ================== */
-        .curriculum-card {
-            background: var(--main-color);
-            border-radius: var(--border-radius-mobile);
-            box-shadow: 10px 10px 10px var(--tertiary-color);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-            width: 100%;
-            max-width: 80rem;
-            min-height: 200px;
-    
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-    
-            padding: 2rem;
-        }
-
-    .curriculum-card:hover {
-        box-shadow:
-            0 8px 20px rgba(0, 0, 0, 0.25),
-            0 0 15px var(--info-color),
-            0 0 30px rgba(255, 255, 255, 0.1);
-        background: linear-gradient(135deg,
-                var(--tertiary-color) 0%,
-                var(--main-color) 40%,
-                var(--info-color) 200%,
-                var(--tertiary-color) 100%);
-    }
-
-    .curriculum-card h3 {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 1.5rem;
-    }
-
-    .curriculum-card p {
-        width: 100%;
-        text-align: left;
-        line-height: 1.7;
-        margin: 1rem 0;
-    }
-
-    .curriculum-card p:first-of-type {
-        margin-top: 0;
-    }
+       
 }
 
 /* ================== Medium Screens >= 768px ================== */

@@ -3,41 +3,67 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-    background: var(--background-gradient);
+  background: var(--background-gradient);
 }
 
-
-/* ================== Skills Card ================== */
-.skills-container {
+/* ================== Skills Section ================== */
+.skills-section {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  gap: clamp(1rem, 2vw, 2rem);
-  justify-content: center;
-  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
 }
 
+/* Section intro */
+.section-intro {
+  max-width: 70ch;
+  text-align: center;
+  margin: 0 auto 2rem;
+}
+
+/* ================== Skills Grid ================== */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(22rem, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  align-items: stretch;
+}
+
+/* ================== Skill Card ================== */
 .skill-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+
   background: var(--main-color);
   border-radius: var(--border-radius-mobile);
   box-shadow: 10px 10px 10px var(--tertiary-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
-  width: clamp(30rem, 20vw, 50rem);
-  gap: 1rem;
-  text-align: center;
-  cursor: pointer;
 
+  padding: 2rem;
+  min-height: 32rem;
+
+  text-align: center;
+
+  transition: transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.5s ease;
 }
 
 /* ================== Hover Effect ================== */
 .skill-card:hover {
+  transform: translateY(-6px);
+
   box-shadow:
     0 12px 25px rgba(0, 0, 0, 0.35),
     0 0 15px var(--info-color),
     0 0 30px rgba(255, 255, 255, 0.1);
+
   background: linear-gradient(135deg,
       var(--tertiary-color) 0%,
       var(--main-color) 40%,
@@ -47,37 +73,23 @@ main {
 
 /* ================== Skill Icons ================== */
 .skill-card .skill-icon {
-  width: clamp(4rem, 15vw, 20rem);
+  width: clamp(6rem, 10vw, 12rem);
   height: auto;
+
   border-radius: var(--border-radius-mobile);
-  margin: 2rem;
+  margin: 1rem 0 1.5rem;
+
   transition: transform 0.3s ease;
 }
 
-/* ================== Titles ================== */
-.skill-card h3 {
-  font-size: var(--font-size-h5);
-  color: var(--secondary-color);
-
-}
-
-/* ================== Paragraphs ================== */
-.skill-card p {
-  font-size: var(--font-size-p);
-  color: var(--text-primary);
-  background: transparent;
-  text-align: left;
-  padding: 0.5rem;
-}
-
-/* ================== Smooth Pulse Animation for Icons ================== */
+/* ================== Smooth Pulse Animation ================== */
 @keyframes pulse {
   0% {
     transform: scale(1.05) rotate(-1deg);
   }
 
   50% {
-    transform: scale(1.15) rotate(2deg);
+    transform: scale(1.12) rotate(2deg);
   }
 
   100% {
@@ -89,6 +101,25 @@ main {
   animation: pulse 1.2s ease-in-out infinite;
 }
 
-.click-hint {
-  display: block;
+/* ================== Tablet ================== */
+@media screen and (max-width: 1100px) {
+  .skills-container {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  }
+}
+
+/* ================== Mobile ================== */
+@media screen and (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .skill-card {
+    min-height: auto;
+  }
+
+  .skill-card h3 {
+    min-height: auto;
+  }
 }
