@@ -246,36 +246,29 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   width: 100%;
-  max-width: 18rem;
-
+  max-width: 25rem;
   font-size: var(--font-size-h6);
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-
   color: var(--brand-magenta);
   background: rgba(0, 10, 30, 0.65);
-
   padding: 0.65rem 1rem;
-  margin: 1.5rem;
-
+  margin: 1.5rem 0 0;
   border: 0.12rem solid rgba(255, 0, 128, 0.7);
   border-radius: 999px;
-
   box-shadow:
     0 0 6px rgba(255, 0, 128, 0.35),
     inset 0 0 6px rgba(255, 0, 128, 0.08);
-
   transition:
     transform 0.3s ease,
     color 0.3s ease,
     text-shadow 0.3s ease,
     box-shadow 0.3s ease,
     background 0.3s ease;
-
   cursor: pointer;
+  
 }
 
 .click-hint:hover {

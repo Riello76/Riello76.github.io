@@ -38,7 +38,7 @@
     content="Explore Gaspare Tocci's portfolio featuring responsive websites, UI design, graphic design, and creative digital projects.">
   <meta name="twitter:image" content="https://riello76.github.io/images/share-img.png">
 
-  <!-- ========== Performance Optimisation ========== -->
+  <!-- ========== Performance Optimization ========== -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://unpkg.com" crossorigin>
   <link rel="preconnect" href="https://www.youtube.com" crossorigin>
@@ -197,7 +197,7 @@
     </section>
 
 
-    <section class="middle-main">
+    <section >
 
       <!-- ========== About Me Section ========== -->
       <section class="about-me" aria-label="About Me">
@@ -330,12 +330,14 @@
 
           <div class="dax-video" data-aos="fade-up">
             <div class="media-responsive-wrapper">
-              <iframe src="https://www.youtube.com/embed/1if13YR6zF0?start=1" title="DAX Rebrand video"
+              <iframe src="https://www.youtube.com/embed/1if13YR6zF0?start=1&vq=hd1080&rel=0&modestbranding=1"
+                title="DAX Rebrand video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
               </iframe>
             </div>
           </div>
+          
         </div>
 
         <div class="project-info-grid" data-aos="fade-up">
@@ -343,8 +345,9 @@
           <article class="card">
             <h3>Planning</h3>
             <p>
-              The PowerPoint presentation outlines the project concept, storyboard,
-              target audience, and overall creative direction developed during the planning stage.
+              The PowerPoint presentation outlines the <strong>project concept, storyboard,
+                target audience, and overall creative direction</strong> developed during
+              the planning stage.
             </p>
           </article>
 
@@ -360,19 +363,43 @@
           <article class="card">
             <h3>Delivery</h3>
             <p>
-              I managed the workflow from concept to final release, using AI-assisted tools
-              for artwork, animation, audio enhancement, and visual refinement to produce
-              a polished digital presentation.
+              I managed the workflow from <strong>concept to final release</strong>, using
+              <strong>AI-assisted tools</strong> for artwork, animation, audio enhancement,
+              and visual refinement to produce a polished digital presentation.
             </p>
           </article>
-          <div class="dax-presentation-cta" data-aos="fade-up">
-            <a class="click-hint"
-              href="https://1drv.ms/p/c/205c6b7ce813c9ee/IQSEy7UjUYByS4U2qNZ5z3_CAbDI4u8HvgnytX3my-xAAq0?wdAr=1.3343108504398826&amp;wdEaaCheck=1"
-              target="_blank" rel="noopener noreferrer">
-              View Full Presentation ↗
-            </a>
+        </div>
+
+
+        <!-- Modal -->
+        <div id="ppt-modal" class="modal" aria-hidden="true">
+          <div class="modal-box modal-box--pdf">
+            <button id="close-ppt-btn" class="close-btn" aria-label="Close modal">
+              &times;
+            </button>
+
+            <iframe src="docs/dax_presentation.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" class="pdf-iframe"
+              title="DAX Presentation PDF"></iframe>
+
+            <div class="modal-actions">
+              <a href="docs/dax_presentation.pdf" target="_blank" rel="noopener" class="btn">
+                Open in New Tab
+              </a>
+
+              <a href="docs/dax_presentation.pdf" download class="btn btn-secondary">
+                Download PDF
+              </a>
+            </div>
           </div>
         </div>
+
+        <!-- Open presentation button -->
+        <div class="btn_dax">
+          <button id="open-ppt-btn" class="click-hint">
+            Open Presentation
+          </button>
+        </div>
+
       </section>
 
       <!-- ========== Tools & Technologies Section ========== -->
@@ -613,6 +640,8 @@
   <!-- ========== Navbar ========== -->
   <script src="/scripts/navbar.js" defer></script>
 
+  <!-- ========== Dax Script ========== -->
+  <script src="/scripts/dax.js" defer></script>
 
   <!-- ========== AOS (Animate On Scroll) Library ========== -->
   <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
