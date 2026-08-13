@@ -325,24 +325,12 @@
       <section class="featured-project" aria-label="Featured Project - DAX Rebrand">
 
         <h2>DAX Rebrand</h2>
-        <div class="project-split-container">
-          <!-- Left Block: PowerPoint Presentation Embed -->
-          <div class="project-left-block" data-aos="fade-right">
-            <div class="media-responsive-wrapper">
-              <iframe
-                src="https://1drv.ms/p/c/205c6b7ce813c9ee/IQSEy7UjUYByS4U2qNZ5z3_CAbDI4u8HvgnytX3my-xAAq0?wdAr=1.3343108504398826&amp;wdEaaCheck=1"
-                width="476px" height="288px" frameborder="0" title="PowerPoint Viewer">This is an embedded
-                <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by
-                <a target="_blank" href="https://office.com/webapps">Office</a>.
-              </iframe>
-            </div>
-          </div>
 
-          <!-- Right Block: YouTube Video Embed -->
-          <div class="project-right-block" data-aos="fade-left">
+        <div class="project-split-container">
+
+          <div class="dax-video" data-aos="fade-up">
             <div class="media-responsive-wrapper">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1if13YR6zF0?start=1"
-                title="YouTube video player" frameborder="0"
+              <iframe src="https://www.youtube.com/embed/1if13YR6zF0?start=1" title="DAX Rebrand video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
               </iframe>
@@ -351,7 +339,7 @@
         </div>
 
         <div class="project-info-grid" data-aos="fade-up">
-        
+
           <article class="card">
             <h3>Planning</h3>
             <p>
@@ -359,7 +347,7 @@
               target audience, and overall creative direction developed during the planning stage.
             </p>
           </article>
-        
+
           <article class="card">
             <h3>Production</h3>
             <p>
@@ -368,7 +356,7 @@
               and social media content techniques.
             </p>
           </article>
-        
+
           <article class="card">
             <h3>Delivery</h3>
             <p>
@@ -377,19 +365,20 @@
               a polished digital presentation.
             </p>
           </article>
-        
+          <div class="dax-presentation-cta" data-aos="fade-up">
+            <a class="click-hint"
+              href="https://1drv.ms/p/c/205c6b7ce813c9ee/IQSEy7UjUYByS4U2qNZ5z3_CAbDI4u8HvgnytX3my-xAAq0?wdAr=1.3343108504398826&amp;wdEaaCheck=1"
+              target="_blank" rel="noopener noreferrer">
+              View Full Presentation ↗
+            </a>
+          </div>
         </div>
       </section>
 
       <!-- ========== Tools & Technologies Section ========== -->
       <section class="tools-section" aria-labelledby="tools-heading">
 
-        <h2 id="tools-heading">My Tools</h2>
-
-        <p class="tools-intro">
-          Technologies and creative tools I use across web development, data analytics,
-          cloud services, UI/UX design, and digital content production.
-        </p>
+        <h2>My Tools</h2>
 
         <div class="tools-groups">
 
@@ -615,7 +604,7 @@
 
 
   <!-- ========== Info ========== -->
-  <script src="/scripts/info.js"></script>
+  <!-- <script src="/scripts/info.js"></script> -->
 
 
   <!-- ========== Carousel ========== -->
@@ -632,9 +621,9 @@
   <script>
     window.addEventListener('load', function () {
       AOS.init({
-        once: true, // evita ripetizioni multiple
-        duration: 800, // opzionale: regola la durata
-        easing: 'ease-out-cubic' // opzionale: migliora fluidità
+        once: true,
+        duration: 800,
+        easing: 'ease-out-cubic'
       });
     });
   </script>

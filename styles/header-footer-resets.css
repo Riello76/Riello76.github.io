@@ -91,7 +91,6 @@ h3 {
   text-align: center;
   font-weight: bolder;
   width: 100%;
-  margin: auto
 }
 
 h4 {
@@ -122,7 +121,6 @@ p {
   font-weight: 400;
   text-align: left;
   line-height: 1.3;
-  margin: auto 0 1rem;
   width: 100%;
   flex-grow: 1;
 }
@@ -186,6 +184,7 @@ p {
 
   cursor: pointer;
 }
+
 .card:hover {
   box-shadow:
     0 8px 20px rgba(0, 0, 0, 0.25),
@@ -198,33 +197,48 @@ p {
       var(--tertiary-color) 100%);
 }
 
-/* Ultra-wide screens: 2560px+ */
-@media screen and (min-width: 2560px) {
-  :root {
-    --font-size-h1: 8rem;
-    --font-size-h2: 6rem;
-    --font-size-h3: 5rem;
-    --font-size-h4: 4rem;
-    --font-size-h5: 3rem;
-    --font-size-h6: 2.5rem;
-    --font-size-p: 3.5rem;
-    --font-size-a: 2rem;
-    --font-size-nav-item: 5rem;
-  }
-}
+
 
 a {
   font-size: var(--font-size-a);
   color: var(--secondary-color);
   text-decoration: none;
   font-weight: 300;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 strong {
   color: var(--brand-magenta);
+}
+
+/* Cyberpunk scrollbar — Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07000d;
+  border-left: 1px solid #2b0a45;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00f5ff, #cb5fff, #ff2a6d);
+  border: 3px solid #07000d;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00f5ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff2a6d, #cb5fff, #00f5ff);
+  box-shadow: 0 0 16px #ff2a6d;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #cb5fff #07000d;
 }
 
 /* ================== Click hint ================== */
@@ -639,7 +653,6 @@ picture {
     0 6px 16px rgba(0, 0, 0, 0.25),
     0 0 10px var(--secondary-color),
     0 0 20px rgba(0, 194, 186, 0.2);
-  transform: scale(1.05);
   font-weight: bolder;
 }
 
@@ -757,6 +770,7 @@ picture {
   color: var(--brand-magenta);
   font-size: var(--font-size-p);
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) {
