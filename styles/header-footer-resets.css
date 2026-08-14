@@ -296,12 +296,14 @@ html {
 /* ========== Body and HTML ========== */
 body,
 html {
-  background-color: var(--background-gradient);
+  background: var(--background-gradient);
   display: flex;
   flex-direction: column;
   font-family: var(--font-family);
   overflow-x: hidden;
   font-size: 62.5%;
+  background-attachment: scroll;
+  
 }
 
 img,
