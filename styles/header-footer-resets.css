@@ -1,4 +1,7 @@
-/* ========== Reset and Box-Sizing ========== */
+/* ========================================================================== */
+/*                         RESET AND BOX-SIZING                               */
+/* ========================================================================== */
+
 *,
 *::before,
 *::after {
@@ -7,70 +10,110 @@
   box-sizing: border-box;
 }
 
-/* ========== Global Variables ========== */
+
+/* ========================================================================== */
+/*                           GLOBAL VARIABLES                                 */
+/* ========================================================================== */
+
 :root {
   scroll-behavior: smooth;
 
   /* Cyberpunk / Tech Color Palette (DAX Project Identity) */
   --main-background: #060913;
   /* Midnight Cyber Blue */
+
   --main-color: #0E152B;
   /* Tech Deep Navy */
+
   --main-color-opacity: rgba(14, 21, 43, 0.6);
   /* Tech Deep Navy Opacity */
+
   --secondary-color: #00F0FF;
   /* Electric Cyber Cyan - Frontend UI, vector graphics, and web development */
+
   --tertiary-color: #03050A;
   /* Absolute Cyber Noir */
+
 
   /* System Logic & Analytics Identity */
   --info-color: #8B5CF6;
   /* Data Violet / Electric Orchid - Logic engine and clean Data Analytics integration */
 
+
   /* Additional Brand Colors & Text Resets */
   --brand-magenta: #FF00FF;
   /* Neon Magenta - Photo & Video Editing highlights and brand accents */
+
   --text-primary: #FFFFFF;
   /* Pure white for maximum heading readability and crisp typography */
+
   --text-secondary: #94A3B8;
   /* Slate Grey - Balanced tone for readable and clean body copy */
 
+
+  /* Background Gradient */
   --background-gradient: linear-gradient(135deg,
       #051329 0%,
       #060913 50%,
       #14081C 100%);
 
-  --border-radius-mobile: 2rem;
+
+  /* Border Radius & Borders */
+  --border-radius-mobile: 3rem;
   --border-radius-desktop: 50%;
+
   --border-color: 1px solid rgba(0, 240, 255, 0.3);
   /* Subtle semi-transparent cyber cyan border line */
-  /* ==== Heading Sizes ==== */
+
+
+  /* Heading Sizes */
   --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 7rem);
   --font-size-h2: clamp(1rem, 1.1rem + 1vw, 6rem);
   --font-size-h3: clamp(1.7rem, 1rem + 1.5vw, 3.7rem);
   --font-size-h4: clamp(1.5rem, 0.9rem + 1vw, 3.5rem);
   --font-size-h5: clamp(1.25rem, 0.8rem + 0.8vw, 2.5rem);
   --font-size-h6: clamp(1.1rem, 0.7rem + 0.5vw, 2rem);
-  --font-size-nav-item: clamp(2rem, 1.5vw, 4rem);
+
+  --font-size-nav-item: clamp(2rem, 1.2vw, 4rem);
   --font-size-p: clamp(1.3rem, 1rem + 1vw, 2rem);
 
-  /* ==== Body Text & Links ==== */
+
+  /* Body Text & Links */
   --font-size-a: clamp(1rem, 0.85rem + 0.4vw, 1.8rem);
 
-  /* ==== Font Family ==== */
-  --font-family: 'Poppins', 'Inter',
-    -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
+
+  /* Font Family */
+  --font-family:
+    'Poppins',
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
-/* ========== Typography Styles ========== */
+
+/* ========================================================================== */
+/*                              TYPOGRAPHY                                    */
+/* ========================================================================== */
+
+/* ========== Heading 1 ========== */
+
 h1 {
   font-size: var(--font-size-h1);
   color: var(--secondary-color);
   text-align: center;
   font-weight: 400;
 }
+
+
+/* ========== Heading 2 ========== */
 
 h2 {
   font-size: var(--font-size-h2);
@@ -85,6 +128,9 @@ h2 {
   margin: 2rem auto;
 }
 
+
+/* ========== Heading 3 ========== */
+
 h3 {
   font-size: var(--font-size-h3);
   color: var(--secondary-color);
@@ -93,12 +139,18 @@ h3 {
   width: 100%;
 }
 
+
+/* ========== Heading 4 ========== */
+
 h4 {
   font-size: var(--font-size-h4);
   color: var(--secondary-color);
   text-align: center;
   font-weight: bolder;
 }
+
+
+/* ========== Heading 5 ========== */
 
 h5 {
   font-size: var(--font-size-h5);
@@ -107,12 +159,18 @@ h5 {
   font-weight: bolder;
 }
 
+
+/* ========== Heading 6 ========== */
+
 h6 {
   font-size: var(--font-size-h6);
   color: var(--secondary-color);
   text-align: center;
   font-weight: bolder;
 }
+
+
+/* ========== Paragraphs ========== */
 
 p {
   font-size: var(--font-size-p);
@@ -125,26 +183,61 @@ p {
   flex-grow: 1;
 }
 
-/* ========== SYMBOL ICONS FONT SIZE & UNSELECTABLE ========== */
+
+/* ========== Links ========== */
+
+a {
+  font-size: var(--font-size-a);
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* ========== Strong Text ========== */
+
+strong {
+  color: var(--brand-magenta);
+}
+
+
+/* ========================================================================== */
+/*                           SYMBOLS & ICONS                                  */
+/* ========================================================================== */
+
+/* ========== Symbol Icons Font Size & Unselectable ========== */
+
 .symbol.left,
 .symbol.right {
-  font-size: clamp(1.8rem, 1.2rem + 1vw, rem);
   user-select: none;
 }
 
-/* ========== LEFT SYMBOL COLOR & MARGIN ========== */
+
+/* ========== Left Symbol Color & Margin ========== */
+
 .symbol.left {
   color: var(--brand-magenta);
   margin-right: 1rem;
 }
 
-/* ========== RIGHT SYMBOL COLOR & MARGIN ========== */
+
+/* ========== Right Symbol Color & Margin ========== */
+
 .symbol.right {
   color: var(--secondary-color);
   margin-left: 1rem;
 }
 
-/* ================== Generic List Style ================== */
+
+/* ========================================================================== */
+/*                         GENERIC COMPONENTS                                 */
+/* ========================================================================== */
+
+/* ========== Generic List Style ========== */
+
 .list {
   width: 90%;
   margin: 1.5rem auto;
@@ -166,11 +259,16 @@ p {
   font-size: 1.1em;
 }
 
+
+/* ========== Card ========== */
+
 .card {
   background: var(--main-color);
   border-radius: var(--border-radius-mobile);
   box-shadow: 10px 10px 10px var(--tertiary-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 
   width: 100%;
   max-width: clamp(30rem, 100vw, 80rem);
@@ -185,11 +283,15 @@ p {
   cursor: pointer;
 }
 
+
+/* ========== Card Hover ========== */
+
 .card:hover {
   box-shadow:
     0 8px 20px rgba(0, 0, 0, 0.25),
     0 0 15px var(--info-color),
     0 0 30px rgba(255, 255, 255, 0.1);
+
   background: linear-gradient(135deg,
       var(--tertiary-color) 0%,
       var(--main-color) 40%,
@@ -198,22 +300,66 @@ p {
 }
 
 
+/* ========== Click Hint ========== */
 
-a {
-  font-size: var(--font-size-a);
-  color: var(--secondary-color);
-  text-decoration: none;
-  font-weight: 300;
-  display: flex;
-  flex-wrap: wrap;
+.click-hint {
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-}
 
-strong {
+  width: 100%;
+  max-width: 25rem;
+
+  font-size: var(--font-size-h6);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+
   color: var(--brand-magenta);
+  background: rgba(0, 10, 30, 0.65);
+
+  padding: 0.65rem 1rem;
+  margin: 1.5rem 0 0;
+
+  border: 0.12rem solid rgba(255, 0, 128, 0.7);
+  border-radius: 999px;
+
+  box-shadow:
+    0 0 6px rgba(255, 0, 128, 0.35),
+    inset 0 0 6px rgba(255, 0, 128, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease,
+    text-shadow 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+
+  cursor: pointer;
 }
 
-/* Cyberpunk scrollbar — Chrome, Edge, Safari */
+
+/* ========== Click Hint Hover ========== */
+
+.click-hint:hover {
+  color: var(--secondary-color);
+  animation: pulse 0.8s ease-in-out infinite alternate;
+
+  text-shadow:
+    0 0 8px var(--secondary-color),
+    0 0 12px var(--secondary-color);
+
+  box-shadow: 0 0 5px var(--secondary-color);
+  border: 0.12rem solid var(--secondary-color);
+}
+
+
+/* ========================================================================== */
+/*                              SCROLLBAR                                     */
+/* ========================================================================== */
+
+/* ========== Cyberpunk Scrollbar - Chrome, Edge, Safari ========== */
+
 ::-webkit-scrollbar {
   width: 14px;
 }
@@ -224,60 +370,65 @@ strong {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #00f5ff, #cb5fff, #ff2a6d);
+  background: linear-gradient(180deg,
+      #00f5ff,
+      #cb5fff,
+      #ff2a6d);
+
   border: 3px solid #07000d;
   border-radius: 10px;
   box-shadow: 0 0 10px #00f5ff;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #ff2a6d, #cb5fff, #00f5ff);
+  background: linear-gradient(180deg,
+      #ff2a6d,
+      #cb5fff,
+      #00f5ff);
+
   box-shadow: 0 0 16px #ff2a6d;
 }
 
-/* Firefox */
+
+/* ========== Firefox Scrollbar ========== */
+
 html {
   scrollbar-width: thin;
   scrollbar-color: #cb5fff #07000d;
 }
 
-/* ================== Click hint ================== */
-.click-hint {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 25rem;
-  font-size: var(--font-size-h6);
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  color: var(--brand-magenta);
-  background: rgba(0, 10, 30, 0.65);
-  padding: 0.65rem 1rem;
-  margin: 1.5rem 0 0;
-  border: 0.12rem solid rgba(255, 0, 128, 0.7);
-  border-radius: 999px;
-  box-shadow:
-    0 0 6px rgba(255, 0, 128, 0.35),
-    inset 0 0 6px rgba(255, 0, 128, 0.08);
-  transition:
-    transform 0.3s ease,
-    color 0.3s ease,
-    text-shadow 0.3s ease,
-    box-shadow 0.3s ease,
-    background 0.3s ease;
-  cursor: pointer;
-  
+
+/* ========================================================================== */
+/*                           BODY & HTML                                      */
+/* ========================================================================== */
+
+body,
+html {
+  background: var(--background-gradient);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  overflow-x: hidden;
+  font-size: 62.5%;
+  background-attachment: scroll;
 }
 
-.click-hint:hover {
-  color: var(--secondary-color);
-  animation: pulse 0.8s ease-in-out infinite alternate;
-  text-shadow: 0 0 8px var(--secondary-color), 0 0 12px var(--secondary-color);
-  box-shadow: 0px 0px 5px var(--secondary-color);
-  border: 0.12rem solid var(--secondary-color);
+
+/* ========== Images ========== */
+
+img,
+picture {
+  display: block;
+  width: 100%;
+  height: auto;
 }
+
+
+/* ========================================================================== */
+/*                              ANIMATIONS                                    */
+/* ========================================================================== */
+
+/* ========== Click Hint Pulse ========== */
 
 @keyframes pulse {
   0% {
@@ -293,27 +444,8 @@ html {
   }
 }
 
-/* ========== Body and HTML ========== */
-body,
-html {
-  background: var(--background-gradient);
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-family);
-  overflow-x: hidden;
-  font-size: 62.5%;
-  background-attachment: scroll;
-  
-}
 
-img,
-picture {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* ========== Keyframes ========== */
+/* ========== Logo Bounce In / Opacity ========== */
 
 @keyframes bounceInOpacity {
   0% {
@@ -325,54 +457,18 @@ picture {
   50% {
     transform: scale(1.1);
     opacity: 0.5;
-    box-shadow: 0px 6px 12px var(--info-color);
+    box-shadow: 0 6px 12px var(--info-color);
   }
 
   100% {
     transform: scale(1);
-    box-shadow: 0px 3px 3px var(--secondary-color);
+    box-shadow: 0 3px 3px var(--secondary-color);
     opacity: 1;
   }
 }
 
-/* ========== Media Queries ========== */
 
-@media screen and (max-width: 768px) {
-
-  /* ========== Base layout flex for mobile ========== */
-  html,
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-
-}
-
-.top-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  background: var(--background-gradient);
-}
-
-/* ========== LOGO STYLE ========== */
-.logo {
-  width: clamp(10rem, calc(1rem + 13vw), 35rem);
-  height: auto;
-  border-radius: 100%;
-  animation: bounceInOpacity 3s ease-out, pulseShadow 2s infinite ease-in-out;
-  will-change: transform;
-  margin: 3rem 0 0;
-  box-shadow: 0px 3px 3px var(--secondary-color);
-
-}
-
-/* ========== LOGO HOVER EFFECT ========== */
-.logo:hover {
-  animation: glowPulse 1.5s infinite alternate;
-  transform: scale(1.05);
-}
+/* ========== Logo Glow Pulse ========== */
 
 @keyframes glowPulse {
 
@@ -387,18 +483,68 @@ picture {
 }
 
 
-/* ========== TITLE STYLE ========== */
+/* ========================================================================== */
+/*                              HEADER                                        */
+/* ========================================================================== */
+
+/* ========== Top Header ========== */
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: var(--background-gradient);
+}
+
+
+/* ========== Logo Style ========== */
+
+.logo {
+  width: clamp(10rem, calc(1rem + 13vw), 35rem);
+  height: auto;
+  border-radius: 100%;
+
+  animation:
+    bounceInOpacity 3s ease-out,
+    pulseShadow 2s infinite ease-in-out;
+
+  will-change: transform;
+  margin: 3rem 0 0;
+
+  box-shadow: 0 3px 3px var(--secondary-color);
+}
+
+
+/* ========== Logo Hover Effect ========== */
+
+.logo:hover {
+  animation: glowPulse 1.5s infinite alternate;
+  transform: scale(1.05);
+}
+
+
+/* ========== Header Title ========== */
+
 .title {
   color: var(--secondary-color);
 }
 
-/* ========== HIGHLIGHTED TITLE PART ========== */
+
+/* ========== Highlighted Title Part ========== */
+
 .title .highlight {
   color: var(--brand-magenta);
   font-style: oblique;
 }
 
-/* ========== NAVBAR CONTAINER ========== */
+
+/* ========================================================================== */
+/*                              NAVBAR                                        */
+/* ========================================================================== */
+
+/* ========== Navbar Container ========== */
+
 .gt-navbar {
   width: 100%;
   background: var(--background-gradient);
@@ -406,29 +552,43 @@ picture {
   z-index: 999;
 }
 
-/* ========== DROPDOWN ARROW STYLE ========== */
+
+/* ========== Dropdown Arrow Style ========== */
+
 .gt-arrow {
   display: inline-block;
-  margin-left: 0.5rem;
-  vertical-align: middle;
+  width: 0;
+  height: 0;
+
+  margin: 0.7rem 0.5rem;
+
   border-left: clamp(0.3rem, 0.5vw, 1.5rem) solid transparent;
   border-right: clamp(0.3rem, 0.5vw, 1.5rem) solid transparent;
   border-top: clamp(0.4rem, 0.6vw, 1.7rem) solid var(--brand-magenta);
+
+  vertical-align: middle;
+  transform-origin: 50% 50%;
   transition: transform 0.3s ease;
 }
 
-/* ========== ROTATE ARROW WHEN DROPDOWN OPEN ========== */
+
+/* ========== Rotate Arrow When Dropdown Is Open ========== */
+
 .gt-dropdown.show .gt-arrow {
   transform: rotate(180deg);
 }
 
-/* ========== CONTAINER FLUID WITH PADDING & FLEX ALIGNMENT ========== */
+
+/* ========== Container Fluid With Padding & Flex Alignment ========== */
+
 .gt-container-fluid {
   align-items: center;
   justify-content: space-between;
 }
 
-/* ========== HAMBURGER BUTTON STYLES ========== */
+
+/* ========== Hamburger Button ========== */
+
 .gt-navbar-toggler {
   border: none;
   background: none;
@@ -437,7 +597,9 @@ picture {
   padding: 0.5rem;
 }
 
-/* ========== HAMBURGER ICON WRAPPER ========== */
+
+/* ========== Hamburger Icon Wrapper ========== */
+
 .gt-navbar-toggler-icon {
   display: flex;
   flex-direction: column;
@@ -447,21 +609,28 @@ picture {
   position: relative;
 }
 
-/* ========== SINGLE BARS INSIDE HAMBURGER ICON ========== */
+
+/* ========== Single Bars Inside Hamburger Icon ========== */
+
 .gt-navbar-toggler-icon .gt-bar {
   position: absolute;
   left: 0;
   width: 100%;
   height: 0.30rem;
+
   background-color: var(--secondary-color);
   border-radius: 0.4rem;
+
   transition: all 0.3s ease;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-/* ========== POSITION EACH BAR NORMAL STATE ========== */
+
+/* ========== Position Each Bar - Normal State ========== */
+
 .gt-navbar-toggler-icon .gt-bar:nth-child(1) {
   top: 0;
 }
@@ -476,13 +645,17 @@ picture {
   bottom: 0;
 }
 
-/* ========== HAMBURGER MORPH TO X SHAPE WHEN OPEN ========== */
+
+/* ========== Hamburger Morph To X - Open State ========== */
+
 .gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(1) {
   top: 50%;
   left: -20%;
   transform: translateY(-50%) rotate(120deg);
+
   background-image: url('/icons/logo-left.svg');
   background-color: transparent;
+
   width: 3rem;
   height: 3rem;
 }
@@ -495,24 +668,32 @@ picture {
   top: 50%;
   left: -30%;
   transform: translateY(-50%) rotate(70deg);
+
   background-image: url('/icons/logo-right.svg');
   background-color: transparent;
+
   width: 3rem;
   height: 3rem;
 }
 
-/* ========== NAV MENU HIDDEN BY DEFAULT ON MOBILE ========== */
+
+/* ========== Navbar Collapse - Hidden By Default ========== */
+
 .gt-navbar-collapse {
   display: none;
   flex-direction: column;
 }
 
-/* ========== NAV MENU SHOW WHEN ACTIVE ========== */
+
+/* ========== Navbar Collapse - Visible State ========== */
+
 .gt-navbar-collapse.show {
   display: flex;
 }
 
-/* ========== NAV LIST FLEX DIRECTION COLUMN ON MOBILE ========== */
+
+/* ========== Navbar List - Mobile ========== */
+
 .gt-navbar-nav {
   list-style: none;
   display: flex;
@@ -520,11 +701,16 @@ picture {
   gap: 1rem;
 }
 
-/* ========== NAV ITEM RELATIVE POSITIONING FOR DROPDOWNS ========== */
+
+/* ========== Navigation Item ========== */
+
 .gt-nav-item {
   position: relative;
   font-weight: bolder;
 }
+
+
+/* ========== Navigation Item Text ========== */
 
 .gt-nav-item-text {
   font-weight: bolder;
@@ -532,166 +718,228 @@ picture {
 }
 
 
-/* ========== GRADIENT ANIMATION ON NAV LINKS ========== */
+/* ========== Navigation Link ========== */
+
 .gt-nav-link {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  transition: transform 0.3s ease, color 0.3s ease;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
+
+
+/* ========== Navigation Link Gradient ========== */
 
 .gt-nav-link::before {
   content: "";
+
   position: absolute;
   top: 0;
   left: -100%;
+
   width: 100%;
   height: 100%;
-  background: linear-gradient(120deg, var(--secondary-color), var(--tertiary-gradient));
+
+  background: linear-gradient(120deg,
+      var(--secondary-color),
+      var(--tertiary-gradient));
+
   transition: all 0.4s ease;
   z-index: 0;
 }
+
+
+/* ========== Navigation Link Text Layer ========== */
 
 .gt-nav-link span {
   position: relative;
   z-index: 1;
 }
 
+
+/* ========== Navigation Link Gradient Hover ========== */
+
 .gt-nav-link:hover::before {
   left: 0;
 }
 
-/* ========== MICRO-UNDERLINE ON HOVER ========== */
+
+/* ========== Navigation Micro-Underline ========== */
+
 .gt-nav-link::after {
   content: "";
   display: block;
+
   height: 0.1rem;
   width: 0;
-  background: var(--secondary-color);
+
+  background: transparent;
+
   transition: width 0.3s ease;
+
   position: absolute;
   bottom: 0.2rem;
   left: 0;
 }
 
+
+/* ========== Navigation Micro-Underline Hover ========== */
+
 .gt-nav-link:hover::after {
   width: 100%;
 }
 
-/* ========== GLASSMORPHISM DROPDOWN MENU WITH SHINE ========== */
+
+/* ========================================================================== */
+/*                           DROPDOWN MENU                                    */
+/* ========================================================================== */
+
+/* ========== Glassmorphism Dropdown Menu ========== */
+
 .gt-dropdown-menu {
-  backdrop-filter: blur(1rem);
-  background: var(--main-color);
-  background-size: contain;
-  border-radius: 1rem;
-  box-shadow: 0 0 1px var(--info-color);
-  transition: all 0.3s ease, transform 0.3s ease;
-  transform: translateY(-1rem);
-  opacity: 0;
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
+
   overflow: hidden;
+
+  background: var(--main-color);
+  backdrop-filter: blur(1rem);
+
+  border-radius: 1rem;
+  box-shadow: 0 0 1px var(--info-color);
+
+  opacity: 0;
+  transform: translateY(-1rem);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
-/* Shine overlay */
+
+/* ========== Dropdown Shine Effect ========== */
+
 .gt-dropdown-menu::after {
   content: "";
+
   position: absolute;
-  top: -50%;
-  left: -75%;
-  width: 50%;
-  height: 200%;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
-  transform: rotate(25deg);
-  animation: shine 2.5s forwards;
-  z-index: -1;
+  top: -100%;
+  left: -60%;
+
+  width: 35%;
+  height: 300%;
+
+  background: linear-gradient(120deg,
+      transparent 0%,
+      rgba(0, 245, 255, 0.08) 45%,
+      rgba(0, 245, 255, 0.18) 50%,
+      rgba(0, 245, 255, 0.08) 55%,
+      transparent 100%);
+
+  transform: translateX(-100%) rotate(25deg);
+
+  pointer-events: none;
+  z-index: 1;
 }
 
-/* Shine animation */
-@keyframes shine {
+
+/* ========== Run Shine When Dropdown Is Open ========== */
+
+.gt-dropdown.show .gt-dropdown-menu::after {
+  animation: dropdown-shine 1.2s ease-out forwards;
+}
+
+
+/* ========== Shine Animation ========== */
+
+@keyframes dropdown-shine {
   0% {
     transform: translateX(-100%) rotate(25deg);
   }
 
   100% {
-    transform: translateX(300%) rotate(25deg);
+    transform: translateX(500%) rotate(25deg);
   }
 }
+
+
+/* ========== Dropdown Open State ========== */
 
 .gt-dropdown.show .gt-dropdown-menu {
   transform: translateY(0);
   opacity: 1;
-  transition: all 0.3s ease, transform 0.3s ease;
+
+  transition:
+    all 0.3s ease,
+    transform 0.3s ease;
 }
 
-/* ========== DROPDOWN ITEM HOVER EFFECTS ========== */
+
+/* ========== Dropdown Items ========== */
+
 .gt-dropdown-item {
   display: inline-block;
+
   transition: all 0.3s ease;
+
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
+
   color: var(--brand-magenta);
+
   width: clamp(13rem, 13vw, 25rem);
   font-size: 1.5rem;
+
   box-shadow: 0 0 2px var(--secondary-color);
   border-radius: var(--border-radius-desktop);
 }
 
+
+/* ========== Dropdown Item Hover ========== */
+
 .gt-dropdown-item:hover {
   color: var(--brand-magenta);
+
   background: linear-gradient(135deg,
       var(--main-color) 0%,
       var(--secondary-color) 60%,
       var(--main-color) 100%);
+
   box-shadow:
     0 6px 16px rgba(0, 0, 0, 0.25),
     0 0 10px var(--secondary-color),
     0 0 20px rgba(0, 194, 186, 0.2);
+
   font-weight: bolder;
 }
 
-/* ========== ACCORDION EFFECT FOR MOBILE DROPDOWN ========== */
+
+/* ========== Mobile Accordion Effect ========== */
+
 .gt-dropdown-menu {
   max-height: 0;
   overflow: hidden;
+
   transition: max-height 0.4s ease;
+
   text-align: center;
   padding: 1rem;
 }
+
+
+/* ========== Mobile Dropdown Open State ========== */
 
 .gt-dropdown.show .gt-dropdown-menu {
   max-height: 50rem;
 }
 
-/* ========== HAMBURGER MORPH WITH ICONS ========== */
-.gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(1) {
-  top: 50%;
-  left: -20%;
-  transform: translateY(-50%) rotate(120deg);
-  background-image: url('/icons/logo-left.svg');
-  background-color: transparent;
-  width: 3rem;
-  height: 3rem;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
 
-.gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(2) {
-  opacity: 0;
-}
+/* ========== Dropdown Item Icon Hover Effect ========== */
 
-.gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(3) {
-  top: 50%;
-  left: -30%;
-  transform: translateY(-50%) rotate(70deg);
-  background-image: url('/icons/logo-right.svg');
-  background-color: transparent;
-  width: 3rem;
-  height: 3rem;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-
-/* ========== DROPDOWN ITEM ICON HOVER EFFECT ========== */
 .gt-dropdown-item img {
   transition: transform 0.3s ease;
 }
@@ -700,54 +948,124 @@ picture {
   transform: scale(1.2) rotate(10deg);
 }
 
-/* ========== STICKY NAVBAR SHADOW ON SCROLL ========== */
-.gt-navbar.scrolled {
-  background: var(--main-color);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+
+/* ========================================================================== */
+/*                         HAMBURGER ANIMATIONS                               */
+/* ========================================================================== */
+
+/* ========== Hamburger Morph With Icons ========== */
+
+.gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(1) {
+  top: 50%;
+  left: -20%;
+
+  transform: translateY(-50%) rotate(120deg);
+
+  background-image: url('/icons/logo-left.svg');
+  background-color: transparent;
+
+  width: 3rem;
+  height: 3rem;
+
+  transition:
+    all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-/* ========== MAIN NAV LINK SCALE ON HOVER ========== */
+
+.gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(2) {
+  opacity: 0;
+}
+
+
+.gt-navbar-toggler[aria-expanded="true"] .gt-bar:nth-child(3) {
+  top: 50%;
+  left: -30%;
+
+  transform: translateY(-50%) rotate(70deg);
+
+  background-image: url('/icons/logo-right.svg');
+  background-color: transparent;
+
+  width: 3rem;
+  height: 3rem;
+
+  transition:
+    all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+
+/* ========== Main Navigation Link Scale ========== */
+
 .gt-nav-link:hover {
   transform: scale(1.05);
 }
 
-/* ========== GT Footer Section ========== */
+
+/* ========================================================================== */
+/*                         STICKY NAVBAR                                      */
+/* ========================================================================== */
+
+/* ========== Sticky Navbar Shadow On Scroll ========== */
+
+.gt-navbar.scrolled {
+  background: var(--main-color);
+
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.3);
+
+  transition: all 0.3s ease;
+}
+
+
+/* ========================================================================== */
+/*                              FOOTER                                        */
+/* ========================================================================== */
+
+/* ========== Footer Section ========== */
+
 .gt-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+
   color: var(--secondary-color);
   background: var(--background-gradient);
 }
 
+
 /* ========== Footer Container ========== */
+
 .gt-footer-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+
   width: 100%;
   max-width: clamp(90rem, 80vw, 120rem);
+
   margin-bottom: 5rem;
 }
 
-/* ========== Footer Column ========== */
 
-/* Base layout for both Contacts and Links */
+/* ========== Footer Columns ========== */
+
 .gt-footer-column-contacts,
 .gt-footer-column-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
   width: 100%;
   gap: 1rem;
-  margin: 2rem
+  margin: 2rem;
 }
 
-/* Make all links stretch evenly */
+
+/* ========== Footer Column Links ========== */
+
 .gt-footer-column-contacts a,
 .gt-footer-column-links a {
   flex: 1;
@@ -755,11 +1073,17 @@ picture {
   max-width: 250px;
 }
 
+
+/* ========== Footer Tagline ========== */
+
 .gt-footer-tagline {
   color: var(--secondary-color);
   text-align: center;
   letter-spacing: 1px;
 }
+
+
+/* ========== Footer Copyright ========== */
 
 .gt-footer-copy {
   color: var(--brand-magenta);
@@ -768,17 +1092,9 @@ picture {
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-
-  .gt-footer-column-contacts a,
-  .gt-footer-column-links a {
-    flex: 1 1 45%;
-    margin-bottom: 1rem;
-  }
-}
-
 
 /* ========== Footer Headings ========== */
+
 .gt-footer h2 {
   color: var(--secondary-color);
   border-radius: var(--border-radius-desktop);
@@ -786,71 +1102,108 @@ picture {
   padding: 0.5rem clamp(1rem, 2vw, 2rem);
 }
 
+
+/* ========== Footer General Links ========== */
+
 .gt-footer a:not(.gt-go-to-top) {
   box-shadow: 10px 10px 10px var(--tertiary-color);
+
   border: var(--border-color);
   border-radius: var(--border-radius-desktop);
+
   padding: 1rem;
+
   background: var(--main-color);
+
   text-decoration: underline var(--brand-magenta);
+
   width: clamp(8rem, 15vw, 20rem);
+
   display: inline-block;
   text-align: center;
+
   font-size: var(--font-size-p);
 }
+
+
+/* ========== Footer Link Hover ========== */
 
 .gt-footer a:hover {
   border: 1px solid var(--brand-magenta);
   border-radius: var(--border-radius-desktop);
+
   color: var(--info-color);
+
   text-decoration: underline var(--secondary-color);
+
   transform: scale(0.95);
   letter-spacing: 0.1rem;
 }
 
 
-/* ========== Footer Link Styling (CTA-style) ========== */
+/* ========== Footer Link CTA Styling ========== */
+
 .gt-footer-link {
   position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 2vw, 2rem);
+
+  padding:
+    clamp(0.5rem, 1vw, 1rem) clamp(1rem, 2vw, 2rem);
+
   font-size: clamp(1.3rem, 1.5vw, 3rem);
   font-weight: bolder;
+
   color: var(--secondary-color);
   text-decoration: none;
+
   border-radius: var(--border-radius-desktop);
+
   overflow: hidden;
+
   transition: all 0.4s ease;
+
   flex: 1 1 auto;
 }
 
-/* ========== Add hover gradient using pseudo-element ========== */
+
+/* ========== Footer Link Hover Gradient ========== */
+
 .gt-footer-link::before {
   content: '';
+
   position: absolute;
   top: 0;
   left: -100%;
+
   width: 100%;
   height: 100%;
+
   background: linear-gradient(135deg,
       var(--main-color) 0%,
       var(--secondary-color) 60%,
       var(--main-color) 100%);
+
   z-index: 0;
+
   transition: all 0.4s ease;
 }
 
-/* ========== Text layer for proper z-index ========== */
+
+/* ========== Footer Link Text Layer ========== */
+
 .gt-footer-link span {
   position: relative;
   z-index: 1;
   transition: color 0.3s ease;
 }
 
-/* ========== Hover Effect ========== */
+
+/* ========== Footer Link Hover Effect ========== */
+
 .gt-footer-link:hover::before {
   left: 0;
 }
@@ -860,139 +1213,253 @@ picture {
   transform: scale(1.05);
 }
 
-/* ========== Scroll to Top ========== */
-.gt-go-to-top {
 
+/* ========== Scroll To Top ========== */
+
+.gt-go-to-top {
   bottom: 2rem;
   right: 2rem;
+
   margin-top: 2rem;
+
   width: clamp(5rem, 5vw, 8rem);
   height: clamp(5rem, 5vw, 8rem);
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
   z-index: 1000;
+
   border-radius: 100%;
+
   animation: CTA 3s infinite ease-in-out;
-  /* border-radius: var(--border-radius-desktop);
+
+  /*
+  border-radius: var(--border-radius-desktop);
   border: 1px solid var(--secondary-color);
-  background: var(--main-color-opacity); */
+  background: var(--main-color-opacity);
+  */
 }
+
+
+/* ========== Scroll To Top Hover ========== */
 
 .gt-go-to-top:hover {
   transform: scale(1.1);
+
   box-shadow: 0 0 2rem var(--secondary-color);
+
   background-color: var(--main-color);
   border-radius: 100%;
 }
 
-/* ========== MEDIA QUERY: DESKTOP & TABLET NAVBAR STYLING ========== */
+
+/* ========================================================================== */
+/*                         RESPONSIVE DESIGN                                  */
+/* ========================================================================== */
+
+/* ========================================================================== */
+/*                              MOBILE                                        */
+/*                              <= 768px                                      */
+/* ========================================================================== */
+
+@media screen and (max-width: 768px) {
+
+  /* ========== Base Layout Flex For Mobile ========== */
+
+  html,
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /* ========== Mobile Footer Links ========== */
+
+  .gt-footer-column-contacts a,
+  .gt-footer-column-links a {
+    flex: 1 1 45%;
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* ========================================================================== */
+/*                           DESKTOP & TABLET                                 */
+/*                              >= 769px                                      */
+/* ========================================================================== */
+
 @media screen and (min-width: 769px) {
 
-
   /* ========== GT Navbar Container ========== */
+
   .gt-navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+
     position: relative;
     z-index: 5;
+
     background: var(--background-gradient);
   }
 
-  /* ========== GT Navbar Collapse / Menu Items Container ========== */
+
+  /* ========== GT Navbar Collapse ========== */
+
   .gt-navbar-collapse {
     display: flex;
     flex-direction: row;
+
     gap: clamp(1rem, 1vw + 1rem, 3rem);
   }
 
-  /* ========== GT Navbar Toggler (Hamburger) HIDDEN ON DESKTOP ========== */
+
+  /* ========== GT Navbar Toggler Hidden ========== */
+
   .gt-navbar-toggler {
     display: none;
   }
 
+
   /* ========== GT Navbar List ========== */
+
   .gt-navbar-nav {
     display: flex;
     flex-direction: row;
+
     gap: clamp(0.5rem, 0.8vw, 2rem);
+
     list-style: none;
   }
 
-  /* ========== Individual Nav Item Styling ========== */
+
+  /* ========== Individual Nav Item ========== */
+
   .gt-nav-item {
     position: relative;
   }
+
+
+  /* ========== Navigation Item Text ========== */
 
   .gt-nav-item-text {
     font-size: var(--font-size-nav-item);
   }
 
-  /* ========== GT Nav Link Styling ========== */
+
+  /* ========== Desktop Navigation Link ========== */
+
   .gt-nav-link {
     color: var(--secondary-color);
     font-weight: 300;
+
     padding: clamp(0.3rem, 0.5vw, 1rem);
+
     display: flex;
     align-items: center;
+
     font-size: clamp(1rem, 0.8vw + 0.8rem, 3rem);
+
     transition: transform 0.3s ease;
   }
+
+
+  /* ========== Desktop Navigation Link Hover ========== */
 
   .gt-nav-link:hover {
     color: var(--brand-magenta);
   }
 
-  /* ========== Dropdown Toggle Styling ========== */
+
+  /* ========== Dropdown Toggle ========== */
+
   .gt-dropdown-toggle {
     cursor: pointer;
   }
 
-  /* ========== Dropdown Arrow Icon ========== */
+
+  /* ========== Desktop Dropdown Arrow ========== */
+
   .gt-arrow {
     display: inline-block;
+
     margin-left: clamp(0.2rem, 0.5vw, 1rem);
+
     vertical-align: middle;
+
     border-left: clamp(0.2rem, 0.5vw, 0.5rem) solid transparent;
     border-right: clamp(0.2rem, 0.5vw, 0.5rem) solid transparent;
     border-top: clamp(0.25rem, 0.6vw, 0.8rem) solid var(--secondary-color);
+
     transition: transform 0.3s ease;
   }
+
+
+  /* ========== Desktop Dropdown Arrow Open ========== */
 
   .gt-dropdown.show .gt-arrow {
     transform: rotate(180deg);
   }
 
-  /* ========== Dropdown Menu Styling ========== */
+
+  /* ========== Desktop Dropdown Menu ========== */
+
   .gt-dropdown-menu {
     display: none;
     flex-direction: column;
+
     position: absolute;
+
     top: 100%;
     left: 0;
+
     background: var(--main-color);
-    padding: clamp(0.5rem, 1vw, 1.5rem) 0;
+
+    padding:
+      clamp(0.5rem, 1vw, 1.5rem) 0;
+
     min-width: clamp(150px, 15vw, 300px);
+
     z-index: 4;
+
     font-weight: bolder;
+
     margin-top: clamp(0.5rem, 1vw, 1rem);
   }
+
+
+  /* ========== Desktop Dropdown Open ========== */
 
   .gt-dropdown.show .gt-dropdown-menu {
     display: flex;
   }
 
-  /* ========== Dropdown Item Styling ========== */
+
+  /* ========== Desktop Dropdown Item ========== */
+
   .gt-dropdown-item {
     display: inline-block;
-    padding: clamp(0.3rem, 0.5vw, 1rem) clamp(0.5rem, 1vw, 2rem);
+
+    padding:
+      clamp(0.3rem, 0.5vw, 1rem) clamp(0.5rem, 1vw, 2rem);
+
     color: var(--secondary-color);
-    font-size: clamp(0.9rem, 0.7vw + 0.8rem, 3rem);
+
+    font-size: clamp(0.9rem, 0.4vw + 0.8rem, 2rem);
+
     transition: transform 0.3s ease;
   }
+
+
+  /* ========== Desktop Dropdown Item Hover ========== */
 
   .gt-dropdown-item:hover {
     color: var(--brand-magenta);
@@ -1001,28 +1468,39 @@ picture {
 
 }
 
-/* ========== LARGE DESKTOP (>= 1440px) ========== */
+
+/* ========================================================================== */
+/*                           LARGE DESKTOP                                    */
+/*                              >= 1440px                                     */
+/* ========================================================================== */
+
 @media screen and (min-width: 1440px) {
 
+  /* ========== Highlight Color ========== */
 
-  /* ========== HIGHLIGHT COLOR ========== */
   .highlight {
     color: var(--secondary-color);
   }
 
-  /* ========== CONTACTS SECTION FLEX LAYOUT ========== */
+
+  /* ========== Contacts Section Flex Layout ========== */
+
   .contacts {
     display: flex;
   }
 
-  /* ========== CONTACTS LINKS STYLE ========== */
+
+  /* ========== Contacts Links Style ========== */
+
   .contacts a {
     font-size: clamp(1.2rem, 1rem + 2vw, 3rem);
     font-weight: bolder;
     margin: 1rem;
   }
 
-  /* ========== CONTACTS LINKS HOVER EFFECT ========== */
+
+  /* ========== Contacts Links Hover Effect ========== */
+
   .contacts a:hover {
     color: var(--secondary-color);
     transform: scale(0.95);
@@ -1030,8 +1508,15 @@ picture {
 
 }
 
-/* ========== EXTRA LARGE DESKTOP (>= 2560px) ========== */
+
+/* ========================================================================== */
+/*                          EXTRA LARGE DESKTOP                               */
+/*                              >= 2560px                                     */
+/* ========================================================================== */
+
 @media screen and (min-width: 2560px) {
+
+  /* ========== Ticker Animation ========== */
 
   @keyframes ticker {
     0% {
@@ -1045,8 +1530,16 @@ picture {
 
 }
 
-/* ========== DESKTOP (>= 769px) OVERRIDE ========== */
+
+/* ========================================================================== */
+/*                       DESKTOP OVERRIDE                                     */
+/*                              >= 769px                                      */
+/* ========================================================================== */
+
 @media (min-width: 769px) {
+
+  /* ========== Navbar Collapse Override ========== */
+
   .gt-navbar-collapse {
     display: flex;
     flex-direction: row;
@@ -1054,20 +1547,33 @@ picture {
     gap: 2rem;
   }
 
+
+  /* ========== Navbar Toggler Hidden ========== */
+
   .gt-navbar-toggler {
     display: none;
   }
 
+
+  /* ========== Navbar List Direction ========== */
+
   .gt-navbar-nav {
     flex-direction: row;
   }
+
+
+  /* ========== Dropdown Position Override ========== */
 
   .gt-dropdown-menu {
     top: 100%;
     left: 0;
   }
 
+
+  /* ========== Scroll To Top Hidden On Desktop ========== */
+
   .gt-go-to-top {
-    display: none
+    display: none;
   }
+
 }

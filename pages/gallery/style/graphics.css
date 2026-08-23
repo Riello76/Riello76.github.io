@@ -1,32 +1,62 @@
-/* ================== Base Layout ================== */
+/* ====================================================================================================
+   BASE LAYOUT
+==================================================================================================== */
+
 main {
   display: flex;
   flex-direction: column;
+
   align-items: center;
+
   width: 100%;
   padding: 1rem;
+
   background: var(--background-gradient);
 }
 
-/* ================== Graphic Group Wrapper ================== */
+
+/* ====================================================================================================
+   GRAPHIC GROUP WRAPPER
+==================================================================================================== */
+
 .graphic-group {
   width: clamp(30rem, 60vw, 80rem);
+
   display: flex;
   flex-direction: column;
+
   gap: 1rem;
+
   border-radius: var(--border-radius-mobile);
-  box-shadow: 10px 10px 10px var(--tertiary-color);
+
+  box-shadow:
+    10px 10px 10px var(--tertiary-color);
+
   background: var(--main-color);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.35s ease;
-  will-change: transform, box-shadow, background;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.35s ease;
+
+  will-change:
+    transform,
+    box-shadow,
+    background;
+
   margin: 2rem;
 }
 
-/* Hover effect for Graphic Group */
+
+/* ====================================================================================================
+   GRAPHIC GROUP HOVER EFFECT
+==================================================================================================== */
+
 .graphic-group:hover {
   box-shadow:
     0 6px 18px rgba(0, 0, 0, 0.2),
     0 0 10px var(--info-color);
+
   background: linear-gradient(135deg,
       var(--tertiary-color) 0%,
       var(--main-color) 35%,
@@ -34,62 +64,122 @@ main {
       var(--tertiary-color) 100%);
 }
 
-/* ================== Grid for Icons and Buttons ================== */
+
+/* ====================================================================================================
+   GRAPHIC GRID — ICONS & BUTTONS
+==================================================================================================== */
+
 .graphic-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(80px, 1fr));
+
   gap: 1rem;
+
   padding: 1rem;
+
   justify-items: center;
 }
 
-/* ================== Icons and Buttons ================== */
+
+/* ====================================================================================================
+   GRAPHIC GRID IMAGES
+==================================================================================================== */
+
 .graphic-grid img {
   width: clamp(4rem, 5vw, 10rem);
+
   height: auto;
+
   object-fit: cover;
+
   display: block;
+
   border-radius: var(--border-radius);
-  transition: transform 0.25s ease;
+
+  transition:
+    transform 0.25s ease;
 }
 
-/* ================== Video Section ================== */
+
+/* ====================================================================================================
+   VIDEO SECTION
+==================================================================================================== */
+
 .video-grid {
   display: flex;
+
   justify-content: center;
+
   width: 100%;
+
   margin: 1rem 0;
 }
+
+
+/* ====================================================================================================
+   VIDEO CARD
+==================================================================================================== */
 
 .video-card {
   display: flex;
   flex-direction: column;
+
   align-items: center;
+
   text-align: center;
+
   width: 100%;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
+  box-shadow:
+    10px 10px 10px rgba(0, 0, 0, 0.3);
+
   border-radius: var(--border-radius-mobile);
+
   overflow: hidden;
+
   background: var(--main-color);
 }
 
+
+/* ====================================================================================================
+   VIDEO CARD IMAGE
+==================================================================================================== */
+
 .video-card img {
   width: 100%;
+
   height: auto;
+
   object-fit: cover;
+
   border-radius: var(--border-radius);
 }
+
+
+/* ====================================================================================================
+   STANDARD VIDEO IMAGE
+==================================================================================================== */
 
 .video-img.large {
   display: none;
 }
 
+
+/* ====================================================================================================
+   LARGE DESKTOP VIDEO LAYOUT (1440px+)
+==================================================================================================== */
+
 @media screen and (min-width: 1440px) {
 
   .middle-main {
     flex-direction: row;
+
     align-items: flex-start;
+
     padding: 0 1rem;
+
     gap: 1rem;
   }
 
@@ -100,11 +190,17 @@ main {
   .video-img.standard {
     display: none;
   }
+
 }
 
-/* ================== GPU Optimization ================== */
+
+/* ====================================================================================================
+   GPU OPTIMIZATION
+==================================================================================================== */
+
 .graphic-group,
 .graphic-grid img {
   backface-visibility: hidden;
+
   transform-style: preserve-3d;
 }

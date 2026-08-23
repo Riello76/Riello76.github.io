@@ -1,28 +1,45 @@
+/* ====================================================================================================
+   MAIN RESPONSIVE LAYOUT
+==================================================================================================== */
+
 @media screen and (min-width: 320px) {
 
-  /* ========== MAIN CONTAINER ========== */
+  /* ==================================================================================================
+     MAIN CONTAINER
+  ================================================================================================== */
+
   main {
     display: flex;
     flex-wrap: wrap;
     background: var(--background-gradient);
   }
 
-  /* ========== HERO SECTION ========== */
+
+  /* ==================================================================================================
+     HERO SECTION
+  ================================================================================================== */
+
   .hero-section {
     position: relative;
     width: 100%;
   }
 
-  /* ========== MIDDLE MAIN SECTION ========== */
+
+  /* ==================================================================================================
+     MIDDLE MAIN SECTION
+  ================================================================================================== */
 
   h2 {
     font-size: var(--font-size-h1);
     border: none;
     box-shadow: none;
-
   }
 
-  /* ========== ABOUT ME SECTION ========== */
+
+  /* ==================================================================================================
+     ABOUT ME SECTION
+  ================================================================================================== */
+
   .about-me {
     display: flex;
     flex-direction: column;
@@ -37,44 +54,67 @@
     gap: 2rem;
     width: 100%;
     margin-top: 2rem;
-
   }
 
-  /* ========== CTA BUTTON ========== */
+
+  /* ==================================================================================================
+     CTA BUTTON
+  ================================================================================================== */
+
   .cta-btn {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: clamp(12rem, 50vw, 30rem);
     height: clamp(3rem, 4vw, 8rem);
+
     margin: 3rem 0;
+    margin-top: 5rem;
+
     overflow: hidden;
     cursor: pointer;
-    margin-top: 5rem;
+
     background: var(--main-background);
+
     border: 0.2rem solid var(--brand-magenta);
     border-radius: var(--border-radius-desktop);
+
     box-shadow: 0 0 2rem rgba(255, 0, 128, 0.3);
 
     font-size: clamp(1.5rem, 2vw, 5rem);
     font-weight: bolder;
 
     animation: CTA 3s infinite ease-in-out;
-    transition: background 0.4s ease, box-shadow 0.4s ease;
+
+    transition:
+      background 0.4s ease,
+      box-shadow 0.4s ease;
   }
+
+
+  /* ==================================================================================================
+     CTA BUTTON TEXT
+  ================================================================================================== */
 
   .cta-btn .btn-text {
     position: absolute;
     top: 50%;
     left: 50%;
+
     z-index: 2;
+
     transform: translate(-50%, -50%);
+
     pointer-events: none;
     white-space: nowrap;
     text-align: center;
+
     font-size: inherit;
+
     opacity: 0;
+
     transition: opacity 0.3s ease;
   }
 
@@ -87,14 +127,21 @@
     color: var(--main-background);
   }
 
+
+  /* ==================================================================================================
+     CTA BUTTON HOVER
+  ================================================================================================== */
+
   .cta-btn:hover {
     background: linear-gradient(135deg,
         var(--brand-magenta) 0%,
         var(--secondary-color) 100%);
+
     box-shadow:
       0 8px 20px rgba(0, 0, 0, 0.4),
       0 0 20px var(--brand-magenta),
       0 0 40px rgba(0, 240, 255, 0.3);
+
     animation: cta-wiggle 3s infinite ease-in-out;
   }
 
@@ -105,6 +152,11 @@
   .cta-btn:hover .btn-text.hover {
     opacity: 1;
   }
+
+
+  /* ==================================================================================================
+     CTA WIGGLE ANIMATION
+  ================================================================================================== */
 
   @keyframes cta-wiggle {
 
@@ -130,6 +182,11 @@
     }
   }
 
+
+  /* ==================================================================================================
+     CTA PULSE ANIMATION
+  ================================================================================================== */
+
   @keyframes CTA {
 
     0%,
@@ -146,20 +203,33 @@
     }
   }
 
-  /* ========== FEATURED PROJECT SECTION ========== */
+
+  /* ==================================================================================================
+     FEATURED PROJECT SECTION
+  ================================================================================================== */
+
   .featured-project {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-
   }
+
+
+  /* ==================================================================================================
+     PROJECT SPLIT CONTAINER
+  ================================================================================================== */
 
   .project-split-container {
     display: flex;
     align-items: stretch;
     gap: 2rem;
   }
+
+
+  /* ==================================================================================================
+     PROJECT INFORMATION GRID
+  ================================================================================================== */
 
   .project-info-grid {
     display: grid;
@@ -169,86 +239,139 @@
     margin-top: 2rem;
   }
 
+
+  /* ==================================================================================================
+     DAX VIDEO
+  ================================================================================================== */
+
   .dax-video {
     width: min(100%, 75rem);
     margin: 2rem auto 3rem;
   }
 
-  /* DAX button wrapper */
-  /* Firefox mobile fix for DAX button */
+
+  /* ==================================================================================================
+     DAX BUTTON WRAPPER
+  ================================================================================================== */
+
   .btn_dax {
     display: flex;
     justify-content: center;
     align-items: center;
-  width: fit-content;
-  margin: 1.5rem auto 0;
+    width: fit-content;
+    margin: 1.5rem auto 0;
   }
+
+
+  /* ==================================================================================================
+     DAX CLICK HINT
+  ================================================================================================== */
 
   .btn_dax .click-hint {
     width: fit-content;
     max-width: fit-content;
+
     display: inline-flex;
     justify-content: center;
     align-items: center;
+
     margin: 0 auto;
     padding: 1rem 2rem;
+
     text-align: center;
     white-space: nowrap;
+
     flex: 0 0 auto;
   }
 
-  /* ========== RESPONSIVE MEDIA ========== */
+
+  /* ==================================================================================================
+     RESPONSIVE MEDIA
+  ================================================================================================== */
+
   .media-responsive-wrapper {
     position: relative;
+
     width: 100%;
     aspect-ratio: 16 / 9;
+
     overflow: hidden;
 
     background: linear-gradient(135deg,
         rgba(14, 21, 43, 0.85),
         rgba(3, 5, 10, 0.95));
+
     border: 1px solid rgba(0, 240, 255, 0.25);
     border-radius: 16px;
+
     box-shadow:
       0 0 12px rgba(0, 240, 255, 0.12),
       0 0 30px rgba(0, 240, 255, 0.08);
+
     transition: all 0.35s ease;
   }
 
+
+  /* ==================================================================================================
+     RESPONSIVE MEDIA HOVER
+  ================================================================================================== */
+
   .media-responsive-wrapper:hover {
     border-color: var(--secondary-color);
+
     box-shadow:
       0 0 15px rgba(0, 240, 255, 0.25),
       0 0 35px rgba(0, 240, 255, 0.15),
       0 0 60px rgba(139, 92, 246, 0.12);
   }
 
+
+  /* ==================================================================================================
+     RESPONSIVE MEDIA SHINE
+  ================================================================================================== */
+
   .media-responsive-wrapper::before {
     position: absolute;
     inset: 0;
+
     z-index: 1;
+
     content: "";
     pointer-events: none;
+
     background: linear-gradient(90deg,
         transparent,
         rgba(0, 240, 255, 0.08),
         transparent);
   }
 
+
+  /* ==================================================================================================
+     RESPONSIVE MEDIA IFRAME
+  ================================================================================================== */
+
   .media-responsive-wrapper iframe {
     position: absolute;
     inset: 0;
+
     width: 100%;
     height: 100%;
+
     border: none;
   }
 
-  /* ========== TOOLS SECTION ========== */
+
+  /* ==================================================================================================
+     TOOLS SECTION
+  ================================================================================================== */
+
   .tools-groups {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     gap: 2rem;
+
     width: 100%;
     margin-top: 2rem;
   }
@@ -258,16 +381,25 @@
     flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-around;
+
     gap: 2rem;
   }
+
+
+  /* ==================================================================================================
+     TOOL ITEM
+  ================================================================================================== */
 
   .tool-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+
     width: 7rem;
+
     text-align: center;
+
     transition: transform 0.3s ease;
   }
 
@@ -275,18 +407,33 @@
     transform: translateY(-5px) scale(1.05);
   }
 
+
+  /* ==================================================================================================
+     TOOL ICON
+  ================================================================================================== */
+
   .tool-item img {
     width: clamp(3.5rem, 5vw, 5rem);
     height: clamp(3.5rem, 5vw, 5rem);
+
     margin-bottom: 0.5rem;
+
     object-fit: contain;
   }
 
+
+  /* ==================================================================================================
+     TOOL LABEL
+  ================================================================================================== */
+
   .tools span {
     margin-top: 0.5rem;
+
     color: var(--secondary-color);
+
     font-size: var(--font-size-p);
     line-height: 1.2;
+
     transition: color 0.3s ease;
   }
 
@@ -294,25 +441,42 @@
     color: var(--brand-magenta);
   }
 
-  /* ========== TECHNICAL DETAILS ========== */
+
+  /* ==================================================================================================
+     TECHNICAL DETAILS
+  ================================================================================================== */
+
   .technical-details {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 100%;
     margin: 2rem 0;
+
     border-top: 1px solid rgba(255, 255, 255, 0.02);
   }
+
+
+  /* ==================================================================================================
+     SPECIFICATION GRID
+  ================================================================================================== */
 
   .spec-grid {
     display: grid;
     justify-items: center;
+
     gap: 2rem;
+
     width: 100%;
     margin-top: 2rem;
   }
 
-  /* ========== DESKTOP ========== */
+
+  /* ==================================================================================================
+     DESKTOP
+  ================================================================================================== */
+
   @media screen and (min-width: 992px) {
 
     .about-grid,
@@ -326,25 +490,43 @@
     }
   }
 
-  /* ========== TABLET ========== */
+
+  /* ==================================================================================================
+     TABLET
+  ================================================================================================== */
+
   @media screen and (min-width: 768px) {
+
     .technical-img-div img {
       width: 10rem;
       height: 10rem;
+
       margin: 2rem;
-      filter: grayscale(20%) drop-shadow(0 5px 15px rgba(0, 0, 0, 0.4));
-      transition: transform 0.3s ease, filter 0.3s ease;
+
+      filter:
+        grayscale(20%) drop-shadow(0 5px 15px rgba(0, 0, 0, 0.4));
+
+      transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
     }
 
     .technical-img-div img:hover {
       transform: scale(1.08);
-      filter: grayscale(0%) drop-shadow(0 0 15px var(--secondary-color));
+
+      filter:
+        grayscale(0%) drop-shadow(0 0 15px var(--secondary-color));
     }
   }
 
-  /* ========== ACCESSIBILITY / MOBILE ========== */
+
+  /* ==================================================================================================
+     ACCESSIBILITY / MOBILE
+  ================================================================================================== */
+
   @media (max-width: 768px),
   (prefers-reduced-motion: reduce) {
+
     [data-aos] {
       opacity: 1;
       transform: none;
@@ -354,34 +536,48 @@
     }
   }
 
+
+  /* ==================================================================================================
+     TABLET PROJECT SPACING
+  ================================================================================================== */
+
   @media (max-width: 992px) {
+
     .project-split-container {
       gap: 1.5rem;
     }
   }
 
+
+  /* ==================================================================================================
+     MOBILE PROJECT LAYOUT
+  ================================================================================================== */
+
   @media (max-width: 768px) {
+
     .project-split-container {
       flex-direction: column;
     }
-
   }
 
+
+  /* ==================================================================================================
+     SMALL MOBILE
+  ================================================================================================== */
+
   @media (max-width: 480px) {
+
     .featured-project {
       margin: 2rem 0;
     }
 
     .media-responsive-wrapper {
       aspect-ratio: 4 / 3;
+      border-radius: 12px;
     }
 
     .project-split-container {
       gap: 1rem;
-    }
-
-    .media-responsive-wrapper {
-      border-radius: 12px;
     }
   }
 }

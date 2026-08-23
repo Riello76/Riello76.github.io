@@ -1,43 +1,82 @@
-/* ================== Base Layout ================== */
+/* ====================================================================================================
+   BASE LAYOUT
+==================================================================================================== */
+
 @media screen and (min-width: 320px) {
+
   main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-      background: var(--background-gradient);
+
+    background: var(--background-gradient);
   }
 
-  /* ================== Gallery Group ================== */
+
+  /* ==================================================================================================
+     GALLERY GROUP
+  ================================================================================================== */
+
   .gallery-group {
     display: flex;
     flex-wrap: wrap;
+
     justify-content: center;
+
     gap: 2rem;
+
     width: 100%;
   }
 
-  /* ================== Card ================== */
+
+  /* ==================================================================================================
+     GALLERY CARD
+  ================================================================================================== */
+
   .gallery-card {
     width: clamp(30rem, 60vw, 80rem);
+
     background: var(--main-color);
+
     border-radius: var(--border-radius-mobile);
-    box-shadow: 10px 10px 10px var(--tertiary-color);
+
+    box-shadow:
+      10px 10px 10px var(--tertiary-color);
+
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
   }
+
+
+  /* ==================================================================================================
+     GALLERY CARD HOVER EFFECT
+  ================================================================================================== */
 
   .gallery-card:hover {
     box-shadow:
       0 8px 20px rgba(0, 0, 0, 0.25),
       0 0 15px var(--info-color),
       0 0 30px rgba(255, 255, 255, 0.1);
+
     background: linear-gradient(135deg,
         var(--tertiary-color) 0%,
         var(--main-color) 40%,
         var(--info-color) 200%,
         var(--tertiary-color) 100%);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      background 0.5s ease;
   }
+
+
+  /* ==================================================================================================
+     GALLERY CARD TYPOGRAPHY
+  ================================================================================================== */
 
   .gallery-card h3 {
     color: var(--secondary-color);
@@ -47,24 +86,44 @@
     background: transparent;
   }
 
-  /* ================== Media Container ================== */
+
+  /* ==================================================================================================
+     GALLERY MEDIA CONTAINER
+  ================================================================================================== */
+
   .gallery-media {
     display: flex;
     flex-wrap: wrap;
+
     justify-content: center;
+
     gap: 1rem;
   }
 
+
+  /* ==================================================================================================
+     GALLERY MEDIA IMAGES
+  ================================================================================================== */
+
   .gallery-media img {
     flex: 1 1 45%;
+
     max-width: 100%;
+
     border-radius: var(--border-radius-mobile);
+
     object-fit: cover;
+
     transition: transform 0.3s ease;
   }
 
-  /* ================== Responsive: Grid on Desktop ================== */
+
+  /* ==================================================================================================
+     RESPONSIVE — DESKTOP GRID
+  ================================================================================================== */
+
   @media screen and (min-width: 1024px) {
+
     .gallery-group {
       justify-content: space-evenly;
     }
@@ -74,13 +133,22 @@
     }
   }
 
-  /* ================== Disable AOS animations on small screens ================== */
+
+  /* ==================================================================================================
+     ACCESSIBILITY — DISABLE AOS ON SMALL SCREENS
+  ================================================================================================== */
+
   @media (max-width: 768px) {
+
     [data-aos] {
       opacity: 1;
+
       transform: none;
+
       transition: none;
+
       animation: none;
     }
   }
+
 }

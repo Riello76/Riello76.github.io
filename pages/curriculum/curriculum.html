@@ -2,30 +2,43 @@
 <html lang="en">
 
 <head>
-  <!-- Character Set -->
+
+  <!-- ========== Character Set ========== -->
   <meta charset="UTF-8">
 
-  <!-- Viewport for Responsive Design -->
+  <!-- ========== Viewport for Responsive Design ========== -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO Meta Tags -->
+  <!-- ========== SEO Meta Tags ========== -->
   <meta name="description"
-    content="Gaspare Tocci's curriculum page. Explore my detailed resume showcasing my skills and experience in web design and development.">
+    content="Gaspare Tocci's online CV. Web Developer focused on front-end development, CMS, Wix, responsive web design, website administration, and digital technologies.">
+
   <meta name="keywords"
-    content="web design, web development, curriculum, resume, HTML, CSS, JavaScript, Inkscape, Figma, Filmora, Gimp, UI/UX, responsive design, Gaspare Tocci">
+    content="Gaspare Tocci, Web Developer, Front-End Developer, CMS, Wix, Website Administration, HTML5, CSS3, JavaScript, Responsive Web Design, Git, GitHub, VS Code">
+
   <meta name="author" content="Gaspare Tocci">
   <meta name="robots" content="index, follow">
 
-  <!-- Open Graph for Social Sharing -->
-  <meta property="og:title" content="Gaspare Tocci's Curriculum">
+  <!-- ========== Canonical URL ========== -->
+  <link rel="canonical" href="https://riello76.github.io/pages/curriculum/curriculum.html">
+
+  <!-- ========== Theme Color ========== -->
+  <meta name="theme-color" content="#001f3f">
+
+  <!-- ========== Open Graph for Social Sharing ========== -->
+  <meta property="og:title" content="Gaspare Tocci | Web Developer CV">
   <meta property="og:description"
-    content="View Gaspare Tocci's resume highlighting his skills in design and development.">
-  <meta property="og:image" content="/images/share-img.png">
-  <meta property="og:url" content="https://riello76.github.io/pages/cv.html">
+    content="View Gaspare Tocci's online CV, featuring experience and skills in web development, front-end development, CMS, Wix, website administration, and digital technologies.">
+  <meta property="og:image" content="https://riello76.github.io/images/share-img.png">
+  <meta property="og:url" content="https://riello76.github.io/pages/curriculum/curriculum.html">
   <meta property="og:type" content="website">
 
-  <!-- Title -->
-  <title>Gaspare Tocci's Curriculum</title>
+  <!-- ========== Twitter Card ========== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gaspare Tocci | Web Developer CV">
+  <meta name="twitter:description"
+    content="View Gaspare Tocci's online CV, featuring experience and skills in web development, front-end development, CMS, Wix, website administration, and digital technologies.">
+  <meta name="twitter:image" content="https://riello76.github.io/images/share-img.png">
 
   <!-- ========== Preconnect for Performance ========== -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -33,28 +46,34 @@
   <link rel="preconnect" href="https://www.youtube.com" crossorigin>
   <link rel="preconnect" href="https://www.google.com" crossorigin>
 
-
   <!-- ========== CSS Stylesheets ========== -->
   <link rel="stylesheet" href="/styles/curriculum.css">
   <link rel="stylesheet" href="/styles/header-footer-resets.css">
 
   <!-- ========== AOS (Animate On Scroll) CSS ========== -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'">
+
   <noscript>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   </noscript>
 
   <!-- ========== Favicon ========== -->
   <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- ========== Title ========== -->
+  <title>Gaspare Tocci | Web Developer CV</title>
+
 </head>
 
 
 <body>
+
   <!-- ========== HEADER SECTION ========== -->
   <header>
 
     <!-- ========== TOP HEADER ========== -->
     <div class="top-header">
+
       <!-- ========== Logo ========== -->
       <a href="/index.html" title="Go to Homepage">
         <img class="logo" id="top" src="/images/logo.svg" alt="Gaspare Tocci's Logo" title="Gaspare Tocci's Logo"
@@ -63,106 +82,231 @@
 
       <!-- ========== Title ========== -->
       <h1 class="title" title="Page's Title">
+
         <span class="symbol left">❖</span>
-        Every problem has its <span class="highlight">creative solution</span>
+
+        Every problem has its
+        <span class="highlight">creative solution</span>
+
         <span class="symbol right">❖</span>
+
       </h1>
+
     </div>
+
 
     <!-- ========== NAVBAR CONTAINER ========== -->
     <nav class="gt-navbar" aria-label="Main Navigation">
+
       <div class="gt-container-fluid">
 
         <!-- ========== TOGGLER (HAMBURGER BUTTON) ========== -->
-        <button class="gt-navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="gt-navbar-toggler" aria-expanded="false" aria-controls="navbarSupportedContent"
+          aria-label="Toggle navigation">
+
           <span class="gt-navbar-toggler-icon">
             <span class="gt-bar"></span>
             <span class="gt-bar"></span>
             <span class="gt-bar"></span>
           </span>
+
         </button>
+
 
         <!-- ========== MAIN MENU CONTAINER (COLLAPSIBLE) ========== -->
         <div class="gt-navbar-collapse" id="navbarSupportedContent">
+
           <!-- ========== NAV ITEMS LIST ========== -->
           <ul class="gt-navbar-nav">
 
             <!-- ========== HOME LINK (NO DROPDOWN) ========== -->
             <li class="gt-nav-item">
+
               <a class="gt-nav-link active" href="/index.html">
                 <span class="gt-nav-item-text">HOME</span>
               </a>
+
             </li>
 
-            <!-- ========== CVLINK (NO DROPDOWN) ========== -->
+
+            <!-- ========== CV LINK (NO DROPDOWN) ========== -->
             <li class="gt-nav-item">
+
               <a class="gt-nav-link" href="/pages/curriculum/curriculum.html">
                 <span class="gt-nav-item-text">CV</span>
               </a>
+
             </li>
+
 
             <!-- ========== GALLERY DROPDOWN MENU ========== -->
             <li class="gt-nav-item gt-dropdown">
-              <a class="gt-nav-link gt-dropdown-toggle" href="#">
+
+              <a class="gt-nav-link gt-dropdown-toggle" href="#" aria-haspopup="true" aria-expanded="false">
+
                 <span class="gt-nav-item-text">GALLERY</span>
-                <span class="gt-arrow"></span>
+                <span class="gt-arrow" aria-hidden="true"></span>
+
               </a>
+
+
               <!-- ========== GALLERY DROPDOWN ITEMS ========== -->
               <ul class="gt-dropdown-menu">
-                <li><a class="gt-dropdown-item" href="/pages/gallery/gallery.html">Main Page</a></li>
-                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/branding.html">Branding</a></li>
-                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/graphics.html">Graphics</a></li>
-                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/3d-design.html">3D Design</a></li>
+
+                <li>
+                  <a class="gt-dropdown-item" href="/pages/gallery/gallery.html">
+                    Main Page
+                  </a>
+                </li>
+
+                <li>
+                  <a class="gt-dropdown-item" href="/pages/gallery/pages/branding.html">
+                    Branding
+                  </a>
+                </li>
+
+                <li>
+                  <a class="gt-dropdown-item" href="/pages/gallery/pages/graphics.html">
+                    Graphics
+                  </a>
+                </li>
+
+                <li>
+                  <a class="gt-dropdown-item" href="/pages/gallery/pages/3d-design.html">
+                    3D Design
+                  </a>
+                </li>
+
               </ul>
+
             </li>
+
 
             <!-- ========== PROJECTS DROPDOWN MENU ========== -->
             <li class="gt-nav-item gt-dropdown">
-              <a class="gt-nav-link gt-dropdown-toggle" href="#">
+
+              <a class="gt-nav-link gt-dropdown-toggle" href="#" aria-haspopup="true" aria-expanded="false">
+
                 <span class="gt-nav-item-text">PROJECTS</span>
-                <span class="gt-arrow"></span>
+                <span class="gt-arrow" aria-hidden="true"></span>
+
               </a>
+
+
               <!-- ========== PROJECTS DROPDOWN ITEMS ========== -->
               <ul class="gt-dropdown-menu">
-                <li><a class="gt-dropdown-item" href="/pages/projects/projects.html">Main Page</a></li>
-                <li><a class="gt-dropdown-item" href="/pages/projects/pages/glastonbury/">Glastonbury</a></li>
-                <li><a class="gt-dropdown-item" href="/pages/projects/pages/old-portfolio/old-portfolio.html">Old
-                    Portfolio</a></li>
-                <li><a class="gt-dropdown-item"
-                    href="/pages/projects/pages/old-portfolio/homepages/heat-wave/index-heat-wave.html">Heat Wave</a>
+
+                <li>
+                  <a class="gt-dropdown-item" href="/pages/projects/projects.html">
+                    Main Page
+                  </a>
                 </li>
-                <li><a class="gt-dropdown-item"
-                    href="/pages/projects/pages/old-portfolio/homepages/streamer/index-streamer.html">Streamer</a></li>
-                <li><a class="gt-dropdown-item"
-                    href="/pages/projects/pages/old-portfolio/homepages/wada-solutions/index.html">WADA Solutions</a>
+
+                <li>
+                  <a class="gt-dropdown-item" href="/pages/projects/pages/glastonbury/">
+                    Glastonbury
+                  </a>
                 </li>
+
+                <li>
+                  <a class="gt-dropdown-item" href="/pages/projects/pages/old-portfolio/old-portfolio.html">
+                    Old Portfolio
+                  </a>
+                </li>
+
+                <li>
+                  <a class="gt-dropdown-item"
+                    href="/pages/projects/pages/old-portfolio/homepages/heat-wave/index-heat-wave.html">
+                    Heat Wave
+                  </a>
+                </li>
+
+                <li>
+                  <a class="gt-dropdown-item"
+                    href="/pages/projects/pages/old-portfolio/homepages/streamer/index-streamer.html">
+                    Streamer
+                  </a>
+                </li>
+
+                <li>
+                  <a class="gt-dropdown-item"
+                    href="/pages/projects/pages/old-portfolio/homepages/wada-solutions/index.html">
+                    WADA Solutions
+                  </a>
+                </li>
+
               </ul>
 
-              <!-- ========== DATA ANALYST DROPDOWN MENU ========== -->
+            </li>
+
+
+            <!-- ========== DATA ANALYST DROPDOWN MENU ========== -->
             <li class="gt-nav-item gt-dropdown">
+
               <a class="gt-nav-link gt-dropdown-toggle" href="#" aria-haspopup="true" aria-expanded="false">
+
                 <span class="gt-nav-item-text">DATA ANALYST</span>
                 <span class="gt-arrow" aria-hidden="true"></span>
+
               </a>
+
+
               <ul class="gt-dropdown-menu">
-                <li><a class="gt-dropdown-item" href="/pages/data-analyst/data-analyst.html">Main Page</a></li>
-                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/excel.html">Excel</a></li>
-                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/python-pandas.html">Python-Pandas</a>
+
+                <li>
+                  <a class="gt-dropdown-item" href="/pages/data-analyst/data-analyst.html">
+                    Main Page
+                  </a>
                 </li>
-                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/mysql.html">MySQL</a>
+
+                <li>
+                  <a class="gt-dropdown-item" href="/pages/data-analyst/pages/excel.html">
+                    Excel
+                  </a>
                 </li>
-                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/power-bi.html">Power BI</a></li>
-                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/tableau.html">Tableau</a>
+
+                <li>
+                  <a class="gt-dropdown-item" href="/pages/data-analyst/pages/python-pandas.html">
+                    Python-Pandas
+                  </a>
                 </li>
-                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/azure.html">Azure</a>
+
+                <li>
+                  <a class="gt-dropdown-item" href="/pages/data-analyst/pages/mysql.html">
+                    MySQL
+                  </a>
                 </li>
+
+                <li>
+                  <a class="gt-dropdown-item" href="/pages/data-analyst/pages/power-bi.html">
+                    Power BI
+                  </a>
+                </li>
+
+                <li>
+                  <a class="gt-dropdown-item" href="/pages/data-analyst/pages/tableau.html">
+                    Tableau
+                  </a>
+                </li>
+
+                <li>
+                  <a class="gt-dropdown-item" href="/pages/data-analyst/pages/azure.html">
+                    Azure
+                  </a>
+                </li>
+
               </ul>
+
             </li>
-            </li>
+
           </ul>
+
         </div>
+
       </div>
+
     </nav>
+
   </header>
 
 
@@ -171,7 +315,9 @@
 
     <h1>Curriculum</h1>
 
+
     <div class="curriculum-grid">
+
 
       <!-- ================== Profile Card ================== -->
       <div class="card" data-aos="fade-right" data-aos-duration="1000">
@@ -179,63 +325,82 @@
         <h2>Profile</h2>
 
         <p>
-          I am a disciplined and analytical professional currently transitioning from
-          <strong>military service, security, and high-pressure operational environments</strong>
-          into the fields of <strong>data analytics and web technology</strong>.
-          My background strengthened strategic thinking, situational awareness, and the ability
-          to make effective decisions under pressure.
+          I am a <strong>Web Developer</strong> with practical experience in
+          <strong>front-end development, CMS management, responsive web design,
+            and website administration</strong>.
+          My background in military service, security, hospitality, and structured
+          operational environments has strengthened my problem-solving, adaptability,
+          attention to detail, and ability to work effectively under pressure.
         </p>
 
         <ul class="list">
 
           <li>
-            <strong>Technical foundation:</strong> Completed the
-            <strong>Just IT Data Technician Skills Bootcamp</strong> with hands-on experience in
-            <strong>SQL, Python (Pandas, NumPy, Matplotlib), Power BI, Tableau, and cloud-based workflows</strong>.
+            <strong>Web development foundation:</strong>
+            Completed the <strong>GetSetUK Web Development Bootcamp</strong>,
+            developing projects with <strong>Semantic HTML5, CSS3, JavaScript,
+              responsive design, and UI/UX principles</strong>.
           </li>
 
           <li>
-            <strong>Web development skills:</strong> Completed the
-            <strong>GetSetUK Web Development Bootcamp</strong>, developing projects with
-            <strong>Semantic HTML5, CSS3, JavaScript, responsive design, and UX/UI principles</strong>.
+            <strong>Practical web experience:</strong>
+            Experience working with <strong>CMS platforms, dynamic pages,
+              website content, responsive layouts, website administration,
+              Git, GitHub, and Visual Studio Code</strong>.
           </li>
 
           <li>
-            <strong>Professional strengths:</strong> Strong problem-solving mindset, attention to detail,
-            adaptability, and a structured approach to technical and operational challenges.
+            <strong>Data technology background:</strong>
+            Completed the <strong>Just IT Data Technician Skills Bootcamp</strong>
+            with practical experience in <strong>SQL, Python, Power BI, Tableau,
+              Excel, and data workflows</strong>.
           </li>
 
           <li>
-            <strong>Growth mindset:</strong> Continuously improving both technical and personal performance through
-            self-study, portfolio development, healthier lifestyle habits, and long-term career reinvention.
+            <strong>Professional strengths:</strong>
+            Strong problem-solving mindset, attention to detail, adaptability,
+            and a structured approach to technical and operational challenges.
           </li>
 
         </ul>
 
         <p>
-          I am seeking an <strong>entry-level remote </strong> where I can contribute,
-          continue learning, and grow within a collaborative technology-focused team.
+          I am seeking a
+          <strong>fully remote entry-level opportunity in Web Development,
+            Front-End Development, CMS, or Website Administration</strong>
+          where I can contribute, continue learning, and grow within a
+          collaborative technology-focused team.
         </p>
 
       </div>
 
 
+      <!-- ================== Experience Card ================== -->
       <div class="card" data-aos="fade-left" data-aos-duration="1000">
 
         <h2>Experience</h2>
 
         <p>
-          My professional background combines hospitality, security, and military experience,
-          with a strong focus on responsibility, operational discipline, and working effectively
+          My professional background combines hospitality, security, military experience,
+          and practical technology work, with a strong focus on responsibility,
+          operational discipline, problem-solving, and working effectively
           in demanding environments.
         </p>
 
         <ul class="list">
 
           <li>
+            <strong>Web Development & Website Administration:</strong>
+            Practical experience supporting website development, CMS management,
+            dynamic pages, content updates, website maintenance, and ongoing
+            website improvements in a real-world environment.
+          </li>
+
+          <li>
             <strong>2009–2022 | Hospitality & Security (Italy & London):</strong>
-            Delivered customer service in busy 4- and 5-star environments while supporting daily
-            operations, handling time-sensitive situations, and maintaining high professional standards.
+            Delivered customer service in busy 4- and 5-star environments while supporting
+            daily operations, handling time-sensitive situations, and maintaining
+            high professional standards.
           </li>
 
           <li>
@@ -246,16 +411,17 @@
 
           <li>
             <strong>2004–2005 | Military Service – Genius Sapper Corps:</strong>
-            Served as a volunteer soldier and Corporal at Ettore Manes Barracks, contributing to surveillance,
-            operational coordination, and team activities within a structured and high-responsibility environment.
+            Served as a volunteer soldier and Corporal at Ettore Manes Barracks,
+            contributing to surveillance, operational coordination, and team activities
+            within a structured and high-responsibility environment.
           </li>
 
         </ul>
 
         <p>
-          These experiences strengthened my <strong>discipline, reliability, communication skills,
-            adaptability, and ability to remain effective under pressure</strong>, qualities that I now bring
-          into data and technology projects.
+          These experiences strengthened my <strong>discipline, reliability,
+            communication skills, adaptability, and ability to remain effective under pressure</strong>,
+          qualities that I now bring into technology and digital projects.
         </p>
 
       </div>
@@ -267,90 +433,114 @@
         <h2>Certifications & Training</h2>
 
         <p>
-          My training pathway combines <strong>data analytics, web development, digital design,
-            and professional licensing</strong>, supporting my transition into technology-focused roles.
+          My training pathway combines <strong>web development, data technologies,
+            digital design, and professional development</strong>, supporting my continued
+          growth in technology-focused roles.
         </p>
 
         <ul class="list">
 
           <li>
-            <strong>Creative Content for Social Media</strong> — Big Creative Education, London (May 2026)<br>
+            <strong>Creative Content for Social Media</strong> —
+            Big Creative Education, London (May 2026)<br>
             Intensive training in content strategy, storyboarding, social media production,
             and cross-platform publishing workflows.
           </li>
 
           <li>
-            <strong>Data Technician Skills Bootcamp</strong> — Just IT, London (Oct–Dec 2025)<br>
-            Practical training in SQL, Python, Power BI, Tableau, Excel, and cloud-based data workflows.
+            <strong>Data Technician Skills Bootcamp</strong> —
+            Just IT, London (Oct–Dec 2025)<br>
+            Practical training in SQL, Python, Power BI, Tableau, Excel,
+            and cloud-based data workflows.
           </li>
 
           <li>
-            <strong>Graphic Design Essentials</strong> — Canva Design School (Jul 2025)
+            <strong>Graphic Design Essentials</strong> —
+            Canva Design School (Jul 2025)
           </li>
 
           <li>
-            <strong>Web Development Bootcamp</strong> — GetSetUK (Jul 2024)
+            <strong>Web Development Bootcamp</strong> —
+            GetSetUK (Jul 2024)
           </li>
 
           <li>
-            <strong>SIA Door Supervisor Licence</strong> — Lewisham College (Mar 2024)
+            <strong>SIA Door Supervisor Licence</strong> —
+            Lewisham College (Mar 2024)
           </li>
 
           <li>
-            <strong>Functional Skills Mathematics Level 3</strong> — Strive Training, Croydon (2023)
+            <strong>Functional Skills Mathematics Level 3</strong> —
+            Strive Training, Croydon (2023)
           </li>
 
           <li>
-            <strong>Functional Skills English Level 2</strong> — Strive Training, Croydon (2023)
+            <strong>Functional Skills English Level 2</strong> —
+            Strive Training, Croydon (2023)
           </li>
 
           <li>
-            <strong>Gateway Qualifications Level 2 Award in Digital & IT Skills</strong> — ELATT, London (2021)
+            <strong>Gateway Qualifications Level 2 Award in Digital & IT Skills</strong> —
+            ELATT, London (2021)
           </li>
 
           <li>
-            <strong>Functional Skills ICT Level 1 (Excel & Word)</strong> — MI Comput Solution Training, London (2021)
+            <strong>Functional Skills ICT Level 1 (Excel & Word)</strong> —
+            MI Comput Solution Training, London (2021)
           </li>
 
           <li>
-            <strong>ESOL Skills for Life – Entry Level 1</strong> — MI Comput Solution Training, London (2021)
+            <strong>ESOL Skills for Life – Entry Level 1</strong> —
+            MI Comput Solution Training, London (2021)
           </li>
 
         </ul>
 
         <p>
-          This continuous learning journey reflects my commitment to <strong>professional development,
-            technical upskilling, and long-term career growth in data and digital technology</strong>.
+          This continuous learning journey reflects my commitment to
+          <strong>professional development, technical upskilling, and long-term
+            growth in web and digital technology</strong>.
         </p>
 
       </div>
+
+
       <!-- ================== Technical Skills Card ================== -->
       <div class="card" data-aos="fade-left" data-aos-duration="1000">
 
         <h2>Technical Skills</h2>
 
         <p>
-          Practical skills developed through bootcamps, portfolio projects, and hands-on technical work
-          across data analytics, web development, and digital content creation.
+          Practical skills developed through bootcamps, portfolio projects,
+          hands-on technical work, and real-world digital projects.
         </p>
 
         <ul class="list">
 
           <li>
-            <strong>Programming & Data:</strong>
-            Python, Pandas, NumPy, Matplotlib, Seaborn, SQL, data analysis, data cleaning,
-            data visualization, Excel, Power BI, Tableau, and Microsoft Azure fundamentals.
+            <strong>Web Development & CMS:</strong>
+            Semantic HTML5, CSS3, JavaScript, responsive design, Flexbox,
+            CSS Grid, CMS management, dynamic pages, website administration,
+            Wix, Git, GitHub, and Visual Studio Code.
           </li>
 
           <li>
-            <strong>Web Development:</strong>
-            Semantic HTML5, CSS3, responsive design, Flexbox, CSS Grid, and JavaScript fundamentals.
+            <strong>Development Workflow:</strong>
+            Visual Studio Code, Git, GitHub, version control basics,
+            project organization, browser developer tools, and documentation practices.
+          </li>
+
+          <li>
+            <strong>Data & Analytics:</strong>
+            Python, Pandas, NumPy, Matplotlib, Seaborn, SQL, data analysis,
+            data cleaning, data visualization, Excel, Power BI, Tableau,
+            and Microsoft Azure fundamentals.
           </li>
 
           <li>
             <strong>Data & Reporting:</strong>
-            Dashboard creation, KPI reporting, data transformation, spreadsheet analysis,
-            and business insight communication.
+            Dashboard creation, KPI reporting, data transformation,
+            spreadsheet analysis, and business insight communication.
           </li>
 
           <li>
@@ -365,12 +555,6 @@
           </li>
 
           <li>
-            <strong>Development Workflow:</strong>
-            Visual Studio Code, Git, GitHub, version control basics,
-            project organization, and documentation practices.
-          </li>
-
-          <li>
             <strong>Practical Experience:</strong>
             Extracting, processing, analyzing, and visualizing datasets;
             building dashboards; working with APIs; and using Python scripts
@@ -380,63 +564,71 @@
         </ul>
 
         <p>
-          I continue to expand these skills through portfolio development, self-directed learning,
-          and real-world digital projects.
+          I continue to expand these skills through portfolio development,
+          self-directed learning, and real-world digital projects.
         </p>
 
       </div>
 
+
       <!-- ================== Hobbies & Personal Growth Card ================== -->
       <div class="card" data-aos="fade-right" data-aos-duration="1000">
-      
+
         <h2>Hobbies & Personal Growth</h2>
-      
+
         <p>
-          Personal interests that support creativity, discipline, continuous learning,
-          and long-term professional development.
+          Personal interests that support creativity, discipline,
+          continuous learning, and long-term professional development.
         </p>
-      
+
         <ul class="list">
-      
+
           <li>
             <strong>Creative & Digital Interests:</strong>
-            Web design, branding, visual storytelling, video editing, and exploring
-            emerging creative technologies through personal projects and continuous experimentation.
+            Web design, branding, visual storytelling, video editing,
+            and exploring emerging creative technologies through personal
+            projects and continuous experimentation.
           </li>
-      
-          <li>
-            <strong>Health & Discipline:</strong>
-            Actively focused on long-term lifestyle improvement, including smoking cessation,
-            fitness goals, strength training, and regular walking. This ongoing journey has strengthened
-            consistency, resilience, and a goal-oriented mindset.
-          </li>
-      
+
           <li>
             <strong>Strategy & Analytical Thinking:</strong>
-            Enjoy strategy games, role-playing adventures, and chess, activities that encourage planning,
-            logical reasoning, problem-solving, and decision-making.
+            Enjoy strategy games, role-playing adventures, and chess,
+            activities that encourage planning, logical reasoning,
+            problem-solving, and decision-making.
           </li>
-      
+
+          <li>
+            <strong>Continuous Learning:</strong>
+            Interested in exploring new technologies, improving technical skills,
+            and applying new knowledge through practical projects.
+          </li>
+
         </ul>
-      
+
         <p>
           I believe that personal growth and professional growth are closely connected,
           and I apply the same mindset of curiosity, persistence, and continuous improvement
           to both areas.
         </p>
-      
+
       </div>
 
+
     </div>
+
   </main>
 
-  <!-- ==========GT Footer Section ========== -->
+
+  <!-- ========== GT Footer Section ========== -->
   <footer class="gt-footer">
 
     <!-- Scroll to Top -->
     <a class="gt-go-to-top" href="#top" aria-label="Scroll to top">
+
       <img src="/icons/Scroll-Up-Arrow.webp" alt="" width="40" height="40" loading="lazy">
+
     </a>
+
 
     <div class="gt-footer-container">
 
@@ -470,46 +662,65 @@
       <nav class="gt-footer-column-contacts" aria-label="Contacts">
 
         <a href="mailto:gaspare_tocci@yahoo.it" class="gt-footer-link">
+
           <span>Email</span>
+
         </a>
 
-        <a href="https://github.com/Riello76" target="_blank" class="gt-footer-link">
+        <a href="https://github.com/Riello76" target="_blank" rel="noopener noreferrer" class="gt-footer-link">
+
           <span>GitHub</span>
+
         </a>
 
-        <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" class="gt-footer-link">
+        <a href="https://www.linkedin.com/in/gaspare-tocci-928496112/" target="_blank" rel="noopener noreferrer"
+          class="gt-footer-link">
+
           <span>LinkedIn</span>
+
         </a>
 
       </nav>
-      <!-- Tagline -->
-      <p class="gt-footer-tagline">
-        Front-End Developer • Data Analyst • Creative Designer
-      </p>
-
-      <!-- Copyright -->
-      <p class="gt-footer-copy">
-        © 2026 Gaspare Tocci
-      </p>
 
     </div>
+
+
+    <!-- Tagline -->
+    <p class="gt-footer-tagline">
+      Web Developer • Front-End • CMS & Website Administration
+    </p>
+
+
+    <!-- Copyright -->
+    <p class="gt-footer-copy">
+      © 2026 Gaspare Tocci
+    </p>
+
   </footer>
 
 
   <!-- ========== Info ========== -->
   <script src="/scripts/info.js"></script>
 
+
   <!-- ========== NAVBAR ========== -->
   <script src="/scripts/navbar.js" defer></script>
 
+
   <!-- ========== AOS (Animate On Scroll) Library ========== -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js" defer>
+  </script>
+
 
   <!-- ========== Initialize AOS Animations ========== -->
   <script>
+
     document.addEventListener('DOMContentLoaded', function () {
+
       AOS.init();
+
     });
+
   </script>
 
 </body>
