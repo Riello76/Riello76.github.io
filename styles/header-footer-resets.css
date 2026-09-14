@@ -708,6 +708,7 @@ picture {
   margin: 0;
   padding: 0;
 }
+
 /* ========== Navigation Item Text ========== */
 
 .gt-nav-item-text {
@@ -1361,17 +1362,24 @@ picture {
   /* ========== Desktop Navigation Link ========== */
 
   .gt-nav-link {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+
     color: var(--secondary-color);
     font-weight: 300;
 
     padding: clamp(0.3rem, 0.5vw, 1rem);
 
-    display: flex;
-    align-items: center;
-
     font-size: clamp(1rem, 0.8vw + 0.8rem, 3rem);
 
-    transition: transform 0.3s ease;
+    white-space: nowrap;
+
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
   }
 
 
