@@ -1,0 +1,130 @@
+/* ====================================================================================================
+   PRIVACY POLICY
+==================================================================================================== */
+
+@media screen and (min-width: 320px) {
+
+    /* ==================================================================================================
+     MAIN
+  ================================================================================================== */
+
+    main {
+        min-height: 100vh;
+
+        display: flex;
+        justify-content: center;
+
+        padding: clamp(3rem, 7vw, 7rem) 1rem;
+
+        background: var(--background-gradient);
+    }
+
+
+    /* ==================================================================================================
+     PRIVACY CONTAINER
+  ================================================================================================== */
+    .privacy-page {
+        width: 100%;
+        max-width: 70rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0 auto;
+    }
+
+    .privacy-content {
+        width: min(100%, 70rem);
+
+        padding: clamp(1.5rem, 4vw, 4rem);
+
+        background: linear-gradient(135deg,
+                rgba(14, 21, 43, 0.85),
+                rgba(3, 5, 10, 0.95));
+
+        border: 1px solid rgba(0, 240, 255, 0.25);
+        border-radius: var(--border-radius-desktop);
+
+        box-shadow:
+            0 0 12px rgba(0, 240, 255, 0.12),
+            0 0 30px rgba(0, 240, 255, 0.08);
+    }
+
+
+
+    /* ==================================================================================================
+     LINKS
+  ================================================================================================== */
+
+    .privacy-content a {
+        color: var(--secondary-color);
+        margin-top: 3rem;
+        text-decoration: none;
+
+        transition:
+            color 0.3s ease,
+            text-shadow 0.3s ease;
+    }
+
+    .privacy-content a:hover {
+        color: var(--brand-magenta);
+
+        text-shadow:
+            0 0 10px rgba(255, 0, 255, 0.45);
+    }
+
+
+
+
+    /* ==================================================================================================
+     MOBILE
+  ================================================================================================== */
+
+    @media screen and (max-width: 480px) {
+
+        main {
+            padding: 2rem 0.75rem;
+        }
+
+        .privacy-content {
+            padding: 1.5rem;
+
+            border-radius: 12px;
+        }
+
+    }
+
+    /* ====================================================================================================
+       TABLET / DESKTOP - PRIVACY CLEAN LAYOUT
+    ==================================================================================================== */
+
+    @media screen and (min-width: 768px) {
+
+        .privacy-content {
+            width: min(90%, 70rem);
+
+            margin: 0 auto;
+            padding: 3rem 4rem;
+
+            background: linear-gradient(135deg,
+                    rgba(14, 21, 43, 0.85),
+                    rgba(3, 5, 10, 0.95));
+
+            border: 1px solid rgba(0, 240, 255, 0.25);
+            border-radius: 16px;
+
+            box-shadow:
+                0 0 12px rgba(0, 240, 255, 0.12),
+                0 0 30px rgba(0, 240, 255, 0.08);
+
+            overflow: hidden;
+        }
+
+        .privacy-content::before,
+        .privacy-content::after {
+            display: none;
+            content: none;
+        }
+    }
+}
