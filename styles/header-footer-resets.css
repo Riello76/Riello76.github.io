@@ -68,14 +68,14 @@
 
   /* Heading Sizes */
   --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 7rem);
-  --font-size-h2: clamp(1rem, 1.1rem + 1vw, 6rem);
-  --font-size-h3: clamp(1.7rem, 1rem + 1.5vw, 3.7rem);
+  --font-size-h2: clamp(2rem, 1.3rem + 1vw, 6rem);
+  --font-size-h3: clamp(1.8rem, 1.2rem + 1.5vw, 3.7rem);
   --font-size-h4: clamp(1.5rem, 0.9rem + 1vw, 3.5rem);
   --font-size-h5: clamp(1.25rem, 0.8rem + 0.8vw, 2.5rem);
   --font-size-h6: clamp(1.1rem, 0.7rem + 0.5vw, 2rem);
 
   --font-size-nav-item: clamp(2rem, 1.2vw, 4rem);
-  --font-size-p: clamp(1.3rem, 1rem + 1vw, 2rem);
+  --font-size-p: clamp(1rem, 1rem + 1vw, 2rem);
 
 
   /* Body Text & Links */
@@ -137,6 +137,7 @@ h3 {
   text-align: center;
   font-weight: bolder;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 
@@ -269,17 +270,11 @@ strong {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-
   width: 100%;
-  max-width: clamp(30rem, 100vw, 80rem);
-  min-height: clamp(20rem, 28vw, 26rem);
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   padding: clamp(1.25rem, 2vw, 2rem);
-
   cursor: pointer;
 }
 

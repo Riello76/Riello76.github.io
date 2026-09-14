@@ -29,12 +29,6 @@
      MIDDLE MAIN SECTION
   ================================================================================================== */
 
-  h2 {
-    font-size: var(--font-size-h1);
-    border: none;
-    box-shadow: none;
-  }
-
 
   /* ==================================================================================================
      ABOUT ME SECTION
@@ -45,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
   }
 
   .about-grid {
@@ -53,7 +47,7 @@
     justify-items: center;
     gap: 2rem;
     width: 100%;
-    margin-top: 2rem;
+
   }
 
 
@@ -66,28 +60,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: clamp(12rem, 50vw, 30rem);
     height: clamp(3rem, 4vw, 8rem);
-
-    margin: 3rem 0;
-    margin-top: 5rem;
-
+    margin: 2rem 0;
     overflow: hidden;
     cursor: pointer;
-
     background: var(--main-background);
-
     border: 0.2rem solid var(--brand-magenta);
     border-radius: var(--border-radius-desktop);
-
     box-shadow: 0 0 2rem rgba(255, 0, 128, 0.3);
-
     font-size: clamp(1.5rem, 2vw, 5rem);
     font-weight: bolder;
-
     animation: CTA 3s infinite ease-in-out;
-
     transition:
       background 0.4s ease,
       box-shadow 0.4s ease;
@@ -369,20 +353,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     gap: 2rem;
-
     width: 100%;
     margin-top: 2rem;
   }
 
   .tools {
     display: flex;
-    flex-grow: 1;
     flex-wrap: wrap;
-    justify-content: space-around;
-
     gap: 2rem;
+    flex-grow: 1;
+    justify-content: center;
   }
 
 
@@ -395,11 +376,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-
-    width: 7rem;
-
+    width: 5rem;
     text-align: center;
-
     transition: transform 0.3s ease;
   }
 
@@ -567,10 +545,7 @@
 
   @media (max-width: 480px) {
 
-    .featured-project {
-      margin: 2rem 0;
-    }
-
+    
     .media-responsive-wrapper {
       aspect-ratio: 4 / 3;
       border-radius: 12px;
