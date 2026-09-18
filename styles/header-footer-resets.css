@@ -15,58 +15,39 @@
 /*                           GLOBAL VARIABLES                                 */
 /* ========================================================================== */
 
+/* ==========================================================================
+   GLOBAL VARIABLES
+========================================================================== */
+
 :root {
   scroll-behavior: smooth;
 
-  /* Cyberpunk / Tech Color Palette (DAX Project Identity) */
+  /* DAX / Cyberpunk Brand Colours */
   --main-background: #060913;
-  /* Midnight Cyber Blue */
-
-  --main-color: #0E152B;
-  /* Tech Deep Navy */
-
+  --main-color: #0e152b;
   --main-color-opacity: rgba(14, 21, 43, 0.6);
-  /* Tech Deep Navy Opacity */
 
-  --secondary-color: #00F0FF;
-  /* Electric Cyber Cyan - Frontend UI, vector graphics, and web development */
+  --secondary-color: #00f0ff;
+  --tertiary-color: #03050a;
+  --info-color: #8b5cf6;
+  --brand-magenta: #ff00ff;
 
-  --tertiary-color: #03050A;
-  /* Absolute Cyber Noir */
+  /* Text Colours */
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
 
-
-  /* System Logic & Analytics Identity */
-  --info-color: #8B5CF6;
-  /* Data Violet / Electric Orchid - Logic engine and clean Data Analytics integration */
-
-
-  /* Additional Brand Colors & Text Resets */
-  --brand-magenta: #FF00FF;
-  /* Neon Magenta - Photo & Video Editing highlights and brand accents */
-
-  --text-primary: #FFFFFF;
-  /* Pure white for maximum heading readability and crisp typography */
-
-  --text-secondary: #94A3B8;
-  /* Slate Grey - Balanced tone for readable and clean body copy */
-
-
-  /* Background Gradient */
+  /* Background */
   --background-gradient: linear-gradient(135deg,
       #051329 0%,
       #060913 50%,
-      #14081C 100%);
+      #14081c 100%);
 
-
-  /* Border Radius & Borders */
+  /* Borders */
   --border-radius-mobile: 3rem;
   --border-radius-desktop: 50%;
-
   --border-color: 1px solid rgba(0, 240, 255, 0.3);
-  /* Subtle semi-transparent cyber cyan border line */
 
-
-  /* Heading Sizes */
+  /* Typography Scale */
   --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 7rem);
   --font-size-h2: clamp(2rem, 1.3rem + 1vw, 6rem);
   --font-size-h3: clamp(1.8rem, 1.2rem + 1.5vw, 3.7rem);
@@ -76,16 +57,12 @@
 
   --font-size-nav-item: clamp(2rem, 1.2vw, 4rem);
   --font-size-p: clamp(1rem, 1rem + 1vw, 2rem);
-
-
-  /* Body Text & Links */
   --font-size-a: clamp(1rem, 0.85rem + 0.4vw, 1.8rem);
-
 
   /* Font Family */
   --font-family:
-    'Poppins',
-    'Inter',
+    "Poppins",
+    "Inter",
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
@@ -99,111 +76,105 @@
 }
 
 
-/* ========================================================================== */
-/*                              TYPOGRAPHY                                    */
-/* ========================================================================== */
+/* ==========================================================================
+   TYPOGRAPHY
+========================================================================== */
 
-/* ========== Heading 1 ========== */
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
 
 h1 {
   font-size: var(--font-size-h1);
   color: var(--secondary-color);
-  text-align: center;
   font-weight: 400;
 }
 
-
-/* ========== Heading 2 ========== */
-
 h2 {
-  font-size: var(--font-size-h2);
-  color: var(--secondary-color);
-  background: transparent;
-  text-align: center;
-  font-weight: bolder;
-  border-radius: var(--border-radius-desktop);
-  border: var(--border-color);
-  box-shadow: 0 0 1rem var(--brand-magenta);
   width: 95%;
   margin: 2rem auto;
+
+  font-size: var(--font-size-h2);
+  color: var(--secondary-color);
+  font-weight: bolder;
+
+  border: var(--border-color);
+  border-radius: var(--border-radius-desktop);
+
+  box-shadow: 0 0 1rem var(--brand-magenta);
 }
-
-
-/* ========== Heading 3 ========== */
 
 h3 {
-  font-size: var(--font-size-h3);
-  color: var(--secondary-color);
-  text-align: center;
-  font-weight: bolder;
   width: 100%;
   margin-bottom: 1rem;
+
+  font-size: var(--font-size-h3);
+  color: var(--secondary-color);
+  font-weight: bolder;
 }
-
-
-/* ========== Heading 4 ========== */
 
 h4 {
   font-size: var(--font-size-h4);
   color: var(--secondary-color);
-  text-align: center;
   font-weight: bolder;
 }
-
-
-/* ========== Heading 5 ========== */
 
 h5 {
   font-size: var(--font-size-h5);
   color: var(--brand-magenta);
-  text-align: center;
   font-weight: bolder;
 }
-
-
-/* ========== Heading 6 ========== */
 
 h6 {
   font-size: var(--font-size-h6);
   color: var(--secondary-color);
-  text-align: center;
   font-weight: bolder;
 }
 
 
-/* ========== Paragraphs ========== */
+/* Paragraphs */
 
 p {
-  font-size: var(--font-size-p);
-  color: var(--text-primary);
-  background: transparent;
-  font-weight: 400;
-  text-align: left;
-  line-height: 1.3;
   width: 100%;
+
   flex-grow: 1;
+
+  font-size: var(--font-size-p);
+  font-weight: 400;
+  line-height: 1.3;
+
+  color: var(--text-primary);
+  text-align: left;
 }
 
 
-/* ========== Links ========== */
+/* Links */
 
 a {
-  font-size: var(--font-size-a);
-  color: var(--secondary-color);
-  text-decoration: none;
-  font-weight: 300;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  font-size: var(--font-size-a);
+  font-weight: 300;
+
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 
-/* ========== Strong Text ========== */
+/* Strong Text */
 
 strong {
   color: var(--brand-magenta);
 }
-
 
 /* ========================================================================== */
 /*                           SYMBOLS & ICONS                                  */
