@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("componentsLoaded", () => {
   // ===== Elements =====
   const navbar = document.querySelector(".gt-navbar");
   const toggler = document.querySelector(".gt-navbar-toggler");
