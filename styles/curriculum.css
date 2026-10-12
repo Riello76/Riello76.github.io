@@ -1,42 +1,91 @@
-@media screen and (min-width: 320px) {
-
-    /* ================== Base Layout ================== */
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        background: var(--background-gradient);
-    }
-
-
-    /* ================== Curriculum Grid ================== */
-    .curriculum-grid {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
-        gap: 2rem;
-        margin-top:5rem;
-    }
-       
+/* CV: clear reading order and comfortable line lengths. */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 1.6rem 4rem;
+  background: var(--background-gradient);
 }
 
-/* ================== Medium Screens >= 768px ================== */
-@media screen and (min-width: 768px) {
-    .curriculum-grid {
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: stretch;
-        margin-bottom: 2rem;
-    }
+main > h1 { font-size: clamp(3rem, 4vw, 4.8rem); }
 
-    .curriculum-card {
-        flex: 1 1 50%;
-        max-width: 45%;
-    }
+.cv-subtitle {
+  width: auto;
+  flex-grow: 0;
+  color: var(--text-secondary);
+  text-align: center;
+  font-size: clamp(1.6rem, 2vw, 2rem);
+}
 
+.curriculum-grid {
+  width: min(100%, 94rem);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.curriculum-grid .card {
+  display: block;
+  padding: clamp(2rem, 4vw, 4rem);
+  cursor: default;
+}
+
+.curriculum-grid h2 {
+  margin-top: 0;
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
+  scroll-margin-top: 2rem;
+}
+
+.curriculum-grid p,
+.curriculum-grid .list {
+  width: 100%;
+  max-width: 75ch;
+  margin-inline: auto;
+}
+
+.curriculum-grid p,
+.curriculum-grid .list li {
+  font-size: clamp(1.6rem, 1.3vw, 1.8rem);
+  line-height: 1.65;
+}
+
+.curriculum-grid p { flex-grow: 0; }
+.curriculum-grid p + p { margin-top: 1.2rem; }
+
+.curriculum-grid .list {
+  padding-left: 2rem;
+  margin-bottom: 0;
+}
+
+.cv-download {
+  min-height: 4.8rem;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1.2rem 2rem;
+  color: var(--main-background);
+  background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 1rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.cv-download:focus-visible {
+  outline: 3px solid var(--brand-magenta);
+  outline-offset: 4px;
+}
+
+@media print {
+  #site-header, #site-footer, .cv-download { display: none; }
+  main, .curriculum-grid .card {
+    color: #000;
+    background: #fff;
+    box-shadow: none;
+  }
+  .curriculum-grid p, .curriculum-grid .list li,
+  .curriculum-grid strong, .curriculum-grid h2,
+  main > h1, .cv-subtitle { color: #000; }
+  .curriculum-grid h2 { border: none; box-shadow: none; }
 }
