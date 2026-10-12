@@ -76,41 +76,35 @@
   <!-- ================== MAIN CONTENT ================== -->
   <main>
 
-    <h1>Curriculum Vitae</h1>
+    <h1>Gaspare Tocci — CV</h1>
+    <p class="cv-subtitle">Junior Web Developer | CMS &amp; Dynamic Websites</p>
 
 
     <div class="curriculum-grid">
 
       <!-- ================== Profile Card ================== -->
-      <div class="card" data-aos="fade-right" data-aos-duration="1000">
+      <div class="card">
 
         <h2>Profile</h2>
-
         <p>
-          I am a <strong>Junior Web Developer</strong> with hands-on experience building and
-          maintaining <strong>CMS-driven Wix websites</strong> for an international health NGO.
-          My work covers responsive design, structured content, dynamic pages, website
-          administration, troubleshooting and practical JavaScript/Velo enhancements.
+          London-based <strong>Junior Web Developer</strong> with practical experience in
+          responsive pages, structured content and website maintenance. At IDA, I use
+          <strong>Wix CMS and JavaScript/Velo</strong> to support dynamic pages, search,
+          filters and content publishing.
         </p>
-
         <p>
-          I am strongest in roles that combine <strong>front-end development, CMS support,
-          website maintenance, content operations and usability improvements</strong>. I am
-          currently developing WordPress experience through a real project in progress.
-        </p>
-
-        <p>
-          Based in London, I am seeking a <strong>fully remote junior opportunity</strong> in
-          Web Development, Web/CMS Support, Website Administration or Digital Content Operations.
+          Currently building a WordPress website for Talentum Consulting. Seeking a
+          <strong>fully remote junior role</strong> in web development, CMS support or
+          digital content operations.
         </p>
 
       </div>
 
 
       <!-- ================== IDA Experience Card ================== -->
-      <div class="card" data-aos="fade-left" data-aos-duration="1000">
+      <div class="card">
 
-        <h2>Web Experience</h2>
+        <h2 id="ida-experience">Web Experience — IDA</h2>
 
         <p>
           <strong>Web Developer & Web Services Administrator</strong><br>
@@ -140,8 +134,8 @@
             documenting changes for future maintenance.
           </li>
           <li>
-            Created more than 25 mobile-ready page structures and coordinated updates with
-            communications, HR, design and leadership stakeholders.
+            Prepared more than 25 mobile-ready page structures for a redesign awaiting final
+            content, and coordinated updates with communications, HR, design and leadership.
           </li>
         </ul>
 
@@ -149,7 +143,7 @@
 
 
       <!-- ================== Key Skills Card ================== -->
-      <div class="card" data-aos="fade-right" data-aos-duration="1000">
+      <div class="card">
 
         <h2>Key Skills</h2>
 
@@ -184,32 +178,31 @@
 
 
       <!-- ================== Current Project Card ================== -->
-      <div class="card" data-aos="fade-left" data-aos-duration="1000">
+      <div class="card">
 
         <h2>Current WordPress Project</h2>
 
         <p>
-          I am building a new website for <strong>Talentum Consulting</strong> while learning
-          WordPress through practical work on a real project.
+          I am building a new <strong>WordPress</strong> website for <strong>Talentum Consulting</strong>,
+          developing hands-on experience with theme customisation and responsive layouts.
         </p>
 
         <ul class="list">
           <li>Using and customising the Kadence theme.</li>
           <li>Applying custom CSS to responsive header and navigation components.</li>
           <li>Preparing and integrating SVG visual assets.</li>
-          <li>Working with staging/live workflows and early ACF content-sync tasks.</li>
+          <li>Working on staging and introductory ACF content workflows.</li>
         </ul>
 
         <p>
-          <strong>Status:</strong> in progress. WordPress is a developing skill and is not
-          presented as advanced professional experience.
+          <strong>Status:</strong> project in progress. Current focus: header, homepage hero and footer.
         </p>
 
       </div>
 
 
       <!-- ================== Earlier Experience Card ================== -->
-      <div class="card" data-aos="fade-right" data-aos-duration="1000">
+      <div class="card">
 
         <h2>Earlier Experience</h2>
 
@@ -235,26 +228,24 @@
 
 
       <!-- ================== Training Card ================== -->
-      <div class="card" data-aos="fade-left" data-aos-duration="1000">
+      <div class="card">
 
-        <h2>Training & Education</h2>
-
+        <h2>Training &amp; Education</h2>
         <ul class="list">
+          <li>
+            <strong>Web Development Bootcamp</strong> — GetSetUK · July 2024:
+            semantic HTML5, CSS3, JavaScript, responsive design and UI/UX principles.
+          </li>
+          <li>
+            <strong>Graphic Design Essentials</strong> — Canva Design School · July 2025.
+          </li>
           <li>
             <strong>Creative Content for Social Media</strong> — Big Creative Education,
             London · May 2026: content strategy, storyboarding and cross-platform publishing.
           </li>
           <li>
             <strong>Data Technician Skills Bootcamp</strong> — Just IT, London · October–December 2025:
-            SQL, Python, Power BI, Tableau and Excel. These are supporting training skills,
-            not commercial data experience.
-          </li>
-          <li>
-            <strong>Graphic Design Essentials</strong> — Canva Design School · July 2025.
-          </li>
-          <li>
-            <strong>Web Development Bootcamp</strong> — GetSetUK · July 2024:
-            semantic HTML5, CSS3, JavaScript, responsive design and UI/UX principles.
+            supporting training in SQL, Python, Power BI, Tableau and Excel.
           </li>
         </ul>
 
@@ -267,10 +258,8 @@
 
     </div>
 
-    <a class="cta-btn" href="/docs/Gaspare_Tocci_CV.pdf" target="_blank" rel="noopener noreferrer"
-      aria-label="Open Gaspare Tocci's CV as a PDF">
-      <span class="btn-text default">Download CV</span>
-      <span class="btn-text hover">Open PDF</span>
+    <a class="cv-download" href="/docs/Gaspare_Tocci_CV.pdf" target="_blank" rel="noopener noreferrer">
+      Download CV (PDF)
     </a>
 
   </main>
@@ -299,7 +288,7 @@
 
     document.addEventListener('DOMContentLoaded', function () {
 
-      AOS.init();
+      if (window.AOS) AOS.init();
 
     });
 
