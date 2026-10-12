@@ -201,6 +201,54 @@
 
 
 /* ====================================================================================================
+   MOBILE TEXT AND CARD REFINEMENTS
+==================================================================================================== */
+
+@media screen and (max-width: 767px) {
+
+  .projects-grid {
+    gap: 2.4rem;
+    padding: 1.2rem;
+  }
+
+  .projects-grid .card {
+    padding: 1.8rem;
+    border-radius: 2.4rem;
+  }
+
+  .projects-grid .project-image {
+    margin-bottom: 0.8rem;
+  }
+
+  .projects-grid .card > h2 {
+    width: 100%;
+    margin: 1rem auto 1.6rem;
+    padding: 0.85rem 1.2rem;
+
+    font-size: clamp(1.85rem, 6.4vw, 2.35rem);
+    line-height: 1.15;
+    text-wrap: balance;
+
+    border-radius: 1.8rem;
+  }
+
+  .projects-grid .card > p {
+    margin: 0;
+
+    font-size: clamp(1.55rem, 4.4vw, 1.75rem);
+    line-height: 1.55;
+    text-wrap: pretty;
+  }
+
+  .projects-grid .click-hint {
+    margin-top: 1.8rem;
+    min-height: 4.6rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+
+/* ====================================================================================================
    TABLET
 ==================================================================================================== */
 
