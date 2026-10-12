@@ -494,6 +494,19 @@ picture {
 
 .title {
   color: var(--secondary-color);
+  width: auto;
+  flex-grow: 0;
+  padding: 1rem 1.5rem;
+  font-size: clamp(1.8rem, 1.4rem + 1vw, 2.8rem);
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: center;
+}
+
+/* Leave room for the page's main heading below the shared brand. */
+.top-header .logo {
+  width: clamp(7rem, 9vw, 12rem);
+  margin-top: 1.5rem;
 }
 
 
