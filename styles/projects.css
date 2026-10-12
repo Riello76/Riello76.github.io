@@ -18,6 +18,17 @@
 
 
   /* ==================================================================================================
+     PROJECTS INTRODUCTION
+  ================================================================================================== */
+
+  .projects-intro {
+    width: min(100% - 2rem, 52rem);
+    margin: 0 auto 1rem;
+    text-align: center;
+  }
+
+
+  /* ==================================================================================================
      MIDDLE MAIN
   ================================================================================================== */
 
@@ -92,11 +103,42 @@
 
     object-fit: contain;
 
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-mobile);
 
     margin-bottom: 1rem;
 
     transition: transform 0.3s ease;
+  }
+
+
+  /* ==================================================================================================
+     TEXT-BASED PROJECT VISUAL
+  ================================================================================================== */
+
+  .project-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+
+    color: var(--text-primary);
+    background: var(--background-gradient);
+    border: var(--border-color);
+    text-align: center;
+  }
+
+  .project-summary span {
+    font-size: clamp(1.4rem, 4vw, 2.2rem);
+    font-weight: 700;
+  }
+
+  .project-summary small {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  }
+
+  .status-hint {
+    cursor: default;
   }
 
 
