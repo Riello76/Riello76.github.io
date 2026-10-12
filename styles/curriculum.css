@@ -46,6 +46,7 @@ main > h1 { font-size: clamp(3rem, 4vw, 4.8rem); }
 }
 
 .curriculum-grid p,
+.curriculum-grid .list,
 .curriculum-grid .list li {
   font-size: clamp(1.6rem, 1.3vw, 1.8rem);
   line-height: 1.65;
