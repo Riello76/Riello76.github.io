@@ -1,129 +1,72 @@
-# ⚡ I Want Project
+# Gaspare Tocci — Web Development Portfolio
 
-### Personal Portfolio by Gaspare Tocci
+Personal portfolio for **Gaspare Tocci**, a London-based Junior Web Developer focused on responsive front-end development, CMS-driven websites, website administration and digital content operations.
 
-🌐 **Live Portfolio**
-https://riello76.github.io/
+🌐 **Live site:** https://riello76.github.io/
 
----
+## Purpose
 
-## 🌐 About This Project
+This portfolio presents my practical web work, technical training and continuing professional development. It is designed to show how I organise, build, maintain and improve responsive websites rather than simply list tools.
 
-**I Want Project** is my personal portfolio and ongoing digital journey.
+## Current Practical Experience
 
-The project was born from a simple idea:
+### Infectious Disease Alliance (IDA)
 
-> Growth begins the moment you decide to start again.
+Since July 2026, I have supported an international health NGO as a volunteer Web Developer and Web Services Administrator. The work includes:
 
-It represents a commitment to continuous learning, personal development, and professional reinvention through technology, creativity, and discipline.
+- Wix CMS, Collections, referenced content, repeaters and dynamic pages.
+- A 12-page committee system connected to approximately 600 member records.
+- Live search, filters, carousels, CMS-driven navigation and mobile behaviour using JavaScript/Velo.
+- Reworked Team, Alumni, Events and Careers pages.
+- Website maintenance, troubleshooting, content-quality checks and cross-device review.
+- Remote collaboration with communications, HR, design and leadership stakeholders.
 
-Through this portfolio, I showcase my work in web development, design, multimedia production, and digital creativity while documenting the evolution of my skills and projects.
+### Talentum Consulting — In Progress
 
----
+I am currently building a new WordPress website for Talentum Consulting while developing practical WordPress experience. The work includes the Kadence theme, custom CSS, responsive header and navigation, SVG assets and early ACF/content-sync workflows.
 
-## 🚀 The Vision Behind I Want Project
+WordPress is an active learning area and is not presented here as an advanced specialism.
 
-I Want Project is more than a portfolio.
+## Portfolio Structure
 
-It is a personal initiative inspired by the idea that meaningful change is possible at any stage of life.
+| Path | Purpose |
+| --- | --- |
+| `index.html` | Homepage and professional positioning |
+| `components/` | Shared header and footer components |
+| `styles/` | Global and page-specific CSS |
+| `scripts/` | Navigation, component loading and interactive behaviour |
+| `pages/curriculum/` | Online CV aligned with the current Master CV |
+| `pages/projects/` | Professional, current and training projects |
+| `pages/gallery/` | Selected design and visual work |
+| `pages/data-analyst/` | Secondary data-training portfolio |
+| `docs/` | Downloadable CV and project documents |
 
-The project reflects the process of rebuilding, learning new skills, embracing challenges, and creating opportunities through determination and consistent effort.
+## Core Technologies
 
-Whether the goal is improving technical skills, developing creative abilities, building a stronger mindset, or pursuing a new professional direction, every project featured here represents another step forward.
+- Semantic HTML5
+- CSS3, Flexbox, Grid and responsive layouts
+- JavaScript ES6+
+- Git and GitHub
+- Modular shared components
+- Accessibility and cross-device review
 
----
+## CMS & Website Support
 
-## 🎬 DAX – The Reboot Project
+- Wix CMS and Velo
+- Dynamic pages and structured content
+- Website administration and maintenance
+- Content publishing workflows and data validation
+- WordPress learning through a live project in progress
 
-One of the creative concepts connected to I Want Project is **DAX**.
+## Selected Training Projects
 
-DAX is a symbolic digital persona representing transformation, adaptation, and professional evolution.
+- **Glastonbury Festival:** multi-page responsive bootcamp project with wireframes and Figma planning.
+- **Heat Wave:** early client website and visual identity project.
+- **I Want Project / DAX:** storyboarding, digital content and multimedia production completed with Filmora.
 
-Created as a visual storytelling project, DAX explores the idea of restarting, upgrading, and redefining oneself through technology, creativity, and resilience.
+## Contact
 
-Rather than a character, DAX serves as a creative metaphor for personal and professional growth.
-
----
-
-## 💻 Web Development
-
-Technologies and tools used throughout my projects:
-
-* HTML5
-* CSS3
-* JavaScript
-* Bootstrap
-* Responsive Design
-* Git & GitHub
-* VS Code
-
----
-
-## 🎨 Design & Creative Tools
-
-* Figma
-* Inkscape
-* GIMP
-* Blender
-
----
-
-## 🎬 Multimedia Production
-
-* DaVinci Resolve
-* Filmora
-* OBS Studio
-* Photo Editing
-* Video Editing
-* Motion Graphics
-* Visual Storytelling
-
----
-
-## 📂 Portfolio Highlights
-
-🔹 Responsive Web Development
-
-🔹 Front-End Design
-
-🔹 UI / UX Concepts
-
-🔹 Graphic Design & Branding
-
-🔹 Video Production
-
-🔹 Creative Digital Projects
-
----
-
-## 🎯 Current Focus
-
-* Designing and developing responsive websites
-
-* Improving front-end development and UI design skills
-
-* Creating digital content through video editing, graphic design, and visual storytelling
-
-* Expanding my portfolio with projects that combine creativity and technology
-
----
-
-## 🤝 Connect With Me
-
-🔗 LinkedIn
-https://www.linkedin.com/in/gaspare-tocci-928496112
-
-🌐 Portfolio
-https://riello76.github.io/
-
-💻 GitHub
-https://github.com/Riello76
-
-📧 Email
-[gaspare_tocci@yahoo.it](mailto:gaspare_tocci@yahoo.it)
-
----
-
-### ⚡ Building Digital Experiences Through Development, Design & Creativity
-
-*"Every project starts with a decision: I Want."*
+- **Portfolio:** https://riello76.github.io/
+- **LinkedIn:** https://www.linkedin.com/in/gaspare-tocci-928496112/
+- **GitHub:** https://github.com/Riello76
+- **Email:** [gaspare_tocci@yahoo.it](mailto:gaspare_tocci@yahoo.it)
