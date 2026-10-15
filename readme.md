@@ -12,7 +12,7 @@ This portfolio presents my practical web work, technical training and continuing
 
 ### Infectious Disease Alliance (IDA)
 
-Since July 2026, I have supported an international health NGO as a volunteer Web Developer and Web Services Administrator. The work includes:
+Since July 2026, I have supported an international health NGO in a voluntary role, initially as Web Developer and Web Services Administrator and now as Web Developer Leader. The practical work includes:
 
 - Wix CMS, Collections, referenced content, repeaters and dynamic pages.
 - A 12-page committee system connected to approximately 600 member records.
@@ -21,9 +21,9 @@ Since July 2026, I have supported an international health NGO as a volunteer Web
 - Website maintenance, troubleshooting, content-quality checks and cross-device review.
 - Remote collaboration with communications, HR, design and leadership stakeholders.
 
-### Talentum Consulting — In Progress
+### WordPress Website Project — In Development
 
-I am currently building a new WordPress website for Talentum Consulting while developing practical WordPress experience. The work includes the Kadence theme, custom CSS, responsive header and navigation, SVG assets and early ACF/content-sync workflows.
+I am currently developing an anonymous WordPress website project while building practical platform experience. The work includes the Kadence theme, custom CSS, responsive header and navigation, SVG assets and early ACF/content-sync workflows.
 
 WordPress is an active learning area and is not presented here as an advanced specialism.
 
@@ -56,7 +56,7 @@ WordPress is an active learning area and is not presented here as an advanced sp
 - Dynamic pages and structured content
 - Website administration and maintenance
 - Content publishing workflows and data validation
-- WordPress learning through a live project in progress
+- WordPress learning through a website project in development
 
 ## Selected Training Projects
 
