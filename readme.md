@@ -8,6 +8,8 @@ Personal portfolio for **Gaspare Tocci**, a London-based Junior Web Developer fo
 
 This portfolio presents my practical web work, technical training and continuing professional development. It is designed to show how I organise, build, maintain and improve responsive websites rather than simply list tools.
 
+I built this portfolio from scratch, writing all HTML pages and sections myself and publishing it on GitHub Pages.
+
 ## Current Practical Experience
 
 ### Infectious Disease Alliance (IDA)
