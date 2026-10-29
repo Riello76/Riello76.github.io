@@ -1,0 +1,23 @@
+/* Responsive containment for the original demos and exported training notebooks.
+   Keep each example's own design and confine wide media/code to its container. */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { min-width: 0; max-width: 100%; }
+:where(main, section, article, figure, div) { min-width: 0; }
+:where(img, video, iframe, object, embed, canvas, svg) { max-width: 100%; }
+img { height: auto; }
+:where(p, li, a, h1, h2, h3, figcaption) { overflow-wrap: anywhere; }
+iframe { min-width: 0; }
+.central-cv-div iframe { width: 100%; }
+
+/* Jupyter exports keep code and data tables scrollable within the cell. */
+.jp-Cell, .jp-Cell-inputWrapper, .jp-Cell-outputWrapper,
+.jp-InputArea, .jp-OutputArea, .jp-OutputArea-child,
+.jp-OutputArea-output, .jp-RenderedHTMLCommon { min-width: 0; max-width: 100%; }
+.jp-InputArea-editor, .jp-RenderedText, .jp-OutputArea-output,
+.jp-RenderedHTMLCommon { overflow-x: auto; }
+pre { max-width: 100%; overflow-x: auto; }
+
+/* Scale the rem-based original demo layouts for high-resolution screens. */
+html:has(body[data-portfolio-demo]) {
+  font-size: clamp(62.5%, 0.520833vw, 250%);
+}

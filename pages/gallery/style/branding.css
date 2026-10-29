@@ -1,8 +1,8 @@
 /* ====================================================================================================
-   BASE LAYOUT — MOBILE FIRST (320px)
+   BASE LAYOUT — MOBILE FIRST (32rem)
 ==================================================================================================== */
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 32rem) {
 
   main {
     display: flex;
@@ -38,8 +38,8 @@
 
   .branding-images figure {
     width: 100%;
-    max-width: 340px;
-    min-height: 320px;
+    max-width: 34rem;
+    min-height: 32rem;
 
     display: flex;
     flex-direction: column;
@@ -82,8 +82,8 @@
 
   .branding-images figure img {
     width: 100%;
-    max-width: 260px;
-    max-height: 220px;
+    max-width: 26rem;
+    max-height: 22rem;
 
     height: auto;
 
@@ -115,7 +115,7 @@
 
     text-align: center;
 
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 600;
 
     color: var(--text-color, #fff);
@@ -140,12 +140,12 @@
 @media screen and (min-width: 768px) {
 
   .branding-images {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .branding-images figure {
-    flex: 1 1 0;
-    max-width: 360px;
+    flex: 1 1 24rem;
+    max-width: 36rem;
   }
 
 }
@@ -182,7 +182,7 @@
 
   .branding-images figure {
     width: 100%;
-    max-width: 320px;
+    max-width: 32rem;
   }
 
   .branding-images img {
@@ -301,13 +301,13 @@
   }
 
   .branding-images figure {
-    max-width: 420px;
-    min-height: 360px;
+    max-width: 42rem;
+    min-height: 36rem;
   }
 
   .branding-images figure img {
-    max-width: 320px;
-    max-height: 260px;
+    max-width: 32rem;
+    max-height: 26rem;
   }
 
 }

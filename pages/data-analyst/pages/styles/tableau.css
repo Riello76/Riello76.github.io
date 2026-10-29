@@ -101,3 +101,23 @@ main {
         font-size: clamp(1rem, 3vw, 1.5rem);
     }
 }
+
+/* Tableau injects pixel widths after loading: contain the dashboard rather
+   than letting its intrinsic size widen the surrounding flex layout. */
+.project-grid {
+  width: 100%;
+  min-width: 0;
+}
+.project-card {
+  width: min(100%, 120rem);
+  min-width: 0;
+  padding: 1rem;
+}
+.tableau-project-wrapper,
+.project-card .tableauPlaceholder {
+  width: 100% !important;
+  max-width: 100%;
+  min-width: 0;
+  overflow: auto;
+}
+.project-card .tableauPlaceholder iframe { max-width: 100%; }

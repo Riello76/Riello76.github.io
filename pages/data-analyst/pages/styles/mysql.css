@@ -32,7 +32,7 @@ main {
 }
 
 .sql-card {
-    max-width: 1000px;
+    max-width: 100rem;
     margin: 2rem auto;
     background: var(--main-color);
     padding: 2rem;
@@ -41,7 +41,7 @@ main {
 
 /* Container scrollable for preformatted SQL */
 .sql-container {
-    max-width: 800px;
+    max-width: 80rem;
     max-height: 500px;
     overflow-y: auto;
     background: var(--main-color);

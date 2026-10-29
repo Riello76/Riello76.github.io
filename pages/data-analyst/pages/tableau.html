@@ -36,14 +36,14 @@
 
     <!-- ==================== AOS Animation Library ==================== -->
     <!-- Loaded in a non-blocking way to improve performance -->
-    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" media="print"
+    <link href="https://unpkg.com/aos@next/dist/aos.css?v=20261029-responsive" rel="stylesheet" media="print"
         onload="this.onload=null;this.media='all';" crossorigin="anonymous" />
 
     <!-- ==================== Page Stylesheets ==================== -->
     <!-- Main Tableau page styling -->
-    <link rel="stylesheet" href="/pages/data-analyst/pages/styles/tableau.css" />
+    <link rel="stylesheet" href="/pages/data-analyst/pages/styles/tableau.css?v=20261029-responsive" />
     <!-- Shared header/footer resets and global styles -->
-    <link rel="stylesheet" href="/styles/header-footer-resets.css?v=20261015-eyes" />
+    <link rel="stylesheet" href="/styles/header-footer-resets.css?v=20261029-responsive" />
 
     <!-- ==================== Favicon ==================== -->
     <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
@@ -52,144 +52,7 @@
 <body>
 
     <!-- ==================== HEADER ==================== -->
-    <header>
-
-        <!-- ==================== Top Header: Logo + Page Slogan ==================== -->
-        <div class="top-header">
-
-            <!-- Logo linking to homepage -->
-            <a href="/index.html" title="Go to Homepage">
-                <img class="logo" id="top" src="/images/logo.svg" alt="Gaspare Tocci's Logo"
-                    title="Gaspare Tocci's Logo" width="120" height="60">
-            </a>
-
-            <!-- Main page slogan -->
-            <h1 class="title" title="Page's Title">
-                <span class="symbol left">❖</span>
-                Every problem has its <span class="highlight">creative solution</span>
-                <span class="symbol right">❖</span>
-            </h1>
-
-        </div>
-
-        <!-- ==================== NAVIGATION BAR ==================== -->
-        <nav class="gt-navbar" aria-label="Main Navigation">
-            <div class="gt-container-fluid">
-
-                <!-- Mobile hamburger toggle -->
-                <button class="gt-navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="gt-navbar-toggler-icon">
-                        <span class="gt-bar"></span>
-                        <span class="gt-bar"></span>
-                        <span class="gt-bar"></span>
-                    </span>
-                </button>
-
-                <!-- ==================== Main Menu Container ==================== -->
-                <div class="gt-navbar-collapse" id="navbarSupportedContent">
-
-                    <!-- Main navigation list -->
-                    <ul class="gt-navbar-nav">
-
-                        <!-- Simple navigation item -->
-                        <li class="gt-nav-item">
-                            <a class="gt-nav-link active" href="/index.html">
-                                <span class="gt-nav-item-text">HOME</span>
-                            </a>
-                        </li>
-
-                        <!-- Dropdown: CV -->
-                        <li class="gt-nav-item gt-dropdown">
-                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
-                                <span class="gt-nav-item-text">CV</span>
-                                <span class="gt-arrow"></span>
-                            </a>
-
-                            <!-- Dropdown items for CV -->
-                            <ul class="gt-dropdown-menu">
-                                <li><a class="gt-dropdown-item" href="/pages/curriculum/curriculum.html">Main Page</a>
-                                </li>
-                                <li><a class="gt-dropdown-item" href="/files/Gaspare-Tocci-CV-IT.pdf" download>Download
-                                        -PDF-</a></li>
-                                <li><a class="gt-dropdown-item" href="/files/Gaspare-Tocci-CV-IT.doc" download>Download
-                                        -DOC-</a></li>
-                            </ul>
-                        </li>
-
-                        <!-- Dropdown: Gallery -->
-                        <li class="gt-nav-item gt-dropdown">
-                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
-                                <span class="gt-nav-item-text">GALLERY</span>
-                                <span class="gt-arrow"></span>
-                            </a>
-
-                            <ul class="gt-dropdown-menu">
-                                <li><a class="gt-dropdown-item" href="/pages/gallery/gallery.html">Main Page</a></li>
-                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/branding.html">Branding</a>
-                                </li>
-                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/graphics.html">Graphics</a>
-                                </li>
-                                <li><a class="gt-dropdown-item" href="/pages/gallery/pages/3d-design.html">3D Design</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <!-- Dropdown: Projects -->
-                        <li class="gt-nav-item gt-dropdown">
-                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
-                                <span class="gt-nav-item-text">PROJECTS</span>
-                                <span class="gt-arrow"></span>
-                            </a>
-
-                            <ul class="gt-dropdown-menu">
-                                <li><a class="gt-dropdown-item" href="/pages/projects/projects.html">Main Page</a></li>
-                                <li><a class="gt-dropdown-item"
-                                        href="/pages/projects/pages/glastonbury/">Glastonbury</a></li>
-                                <li><a class="gt-dropdown-item"
-                                        href="/pages/projects/pages/old-portfolio/old-portfolio.html">Old Portfolio</a>
-                                </li>
-                                <li><a class="gt-dropdown-item"
-                                        href="/pages/projects/pages/old-portfolio/homepages/heat-wave/index-heat-wave.html">Heat
-                                        Wave</a></li>
-                                <li><a class="gt-dropdown-item"
-                                        href="/pages/projects/pages/old-portfolio/homepages/streamer/index-streamer.html">Streamer</a>
-                                </li>
-                                <li><a class="gt-dropdown-item"
-                                        href="/pages/projects/pages/old-portfolio/homepages/wada-solutions/index.html">WADA
-                                        Solutions</a></li>
-                            </ul>
-                        </li>
-
-                        <!-- Dropdown: Data Analyst -->
-                        <li class="gt-nav-item gt-dropdown">
-                            <a class="gt-nav-link gt-dropdown-toggle" href="#">
-                                <span class="gt-nav-item-text">DATA ANALYST</span>
-                                <span class="gt-arrow"></span>
-                            </a>
-
-                            <ul class="gt-dropdown-menu">
-                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/data-analyst.html">Main
-                                        Page</a></li>
-                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/excel.html">Excel</a>
-                                </li>
-                                <li><a class="gt-dropdown-item"
-                                        href="/pages/data-analyst/pages/Pyton-Pandas.html">Python-Pandas</a></li>
-                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/mysql.html">MySQL</a>
-                                </li>
-                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/power-bi.html">Power
-                                        BI</a></li>
-                                <li><a class="gt-dropdown-item"
-                                        href="/pages/data-analyst/pages/tableau.html">Tableau</a></li>
-                                <li><a class="gt-dropdown-item" href="/pages/data-analyst/pages/azure.html">Azure</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <div id="site-header"></div>
 
     <!-- ==================== MAIN CONTENT ==================== -->
     <main>
@@ -204,7 +67,7 @@
             <article class="project-card">
                 <h2>EMSI UK</h2>
 
-                - Tableau Embed Container -->
+                <!-- Tableau Embed Container -->
                 <div class="tableau-project-wrapper" style="width: 100%; max-width: 1200px; margin: 0 auto;">
                     <div class='tableauPlaceholder' id='viz1780474528777' style='position: relative; width: 100%;'>
                         <noscript>
