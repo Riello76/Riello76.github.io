@@ -1273,10 +1273,10 @@ picture {
 
 /* ========================================================================== */
 /*                              MOBILE                                        */
-/*                              <= 1023px                                      */
+/*                              <= 768px                                      */
 /* ========================================================================== */
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
 
   /* ========== Base Layout Flex For Mobile ========== */
 
@@ -1299,10 +1299,10 @@ picture {
 
 /* ========================================================================== */
 /*                           DESKTOP & TABLET                                 */
-/*                              >= 1024px                                      */
+/*                              >= 769px                                      */
 /* ========================================================================== */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 769px) {
 
   /* ========== GT Navbar Container ========== */
 
@@ -1546,10 +1546,10 @@ picture {
 
 /* ========================================================================== */
 /*                       DESKTOP OVERRIDE                                     */
-/*                              >= 1024px                                      */
+/*                              >= 769px                                      */
 /* ========================================================================== */
 
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
 
   /* ========== Navbar Collapse Override ========== */
 
@@ -1625,7 +1625,7 @@ picture {
   outline-offset: 0.3rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 768px) {
   .gt-navbar-nav { padding: 1rem; }
   .gt-nav-link { max-width: 100%; min-height: 4.4rem; }
   .gt-dropdown-item { min-height: 4.4rem; align-content: center; }

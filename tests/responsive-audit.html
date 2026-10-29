@@ -7,7 +7,7 @@
 <div class="controls"><button id="navigation">Test navigation</button><button id="run">Run responsive audit</button><select id="page"></select><select id="size"></select><button id="show">Show page</button><button id="fit">Fit preview</button><span id="status">Ready</span></div><pre id="results"></pre><div id="stage"><iframe id="view" title="Portfolio test viewport"></iframe></div>
 <script>
 const files=["index.html", "pages/curriculum/curriculum.html", "pages/projects/projects.html", "pages/gallery/gallery.html", "pages/gallery/pages/branding.html", "pages/gallery/pages/graphics.html", "pages/gallery/pages/3d-design.html", "pages/data-analyst/data-analyst.html", "pages/data-analyst/pages/azure.html", "pages/data-analyst/pages/excel.html", "pages/data-analyst/pages/mysql.html", "pages/data-analyst/pages/power-bi.html", "pages/data-analyst/pages/Pyton-Pandas.html", "pages/data-analyst/pages/tableau.html", "privacy.html", "pages/projects/pages/glastonbury/index.html", "pages/projects/pages/old-portfolio/old-portfolio.html", "pages/projects/pages/glastonbury/pages/line-up.html", "pages/projects/pages/glastonbury/pages/news.html", "pages/projects/pages/glastonbury/pages/info.html", "pages/projects/pages/glastonbury/pages/areas.html", "pages/projects/pages/glastonbury/pages/gallery.html", "pages/projects/pages/glastonbury/pages/shop.html", "pages/projects/pages/old-portfolio/homepages/projects.html", "pages/projects/pages/old-portfolio/homepages/wada-solutions/index.html", "pages/projects/pages/old-portfolio/homepages/heat-wave/index-heat-wave.html", "pages/projects/pages/old-portfolio/homepages/streamer/index-streamer.html", "pages/projects/pages/old-portfolio/homepages/curriculum/index-cv.html", "pages/projects/pages/old-portfolio/homepages/streamer/pages/trovo.html", "pages/projects/pages/old-portfolio/homepages/streamer/pages/youtube.html", "pages/projects/pages/old-portfolio/homepages/streamer/pages/instagram.html", "pages/projects/pages/old-portfolio/homepages/streamer/pages/tiktok.html", "pages/projects/pages/old-portfolio/homepages/streamer/pages/twitch.html", "pages/projects/pages/old-portfolio/homepages/streamer/pages/discord.html", "pages/projects/pages/old-portfolio/homepages/streamer/pages/facebook.html", "pages/projects/pages/old-portfolio/homepages/curriculum/pages/Profile.html", "pages/projects/pages/old-portfolio/homepages/curriculum/pages/Curriculum.html", "pages/projects/pages/old-portfolio/homepages/curriculum/pages/Key Skills.html", "pages/projects/pages/old-portfolio/homepages/curriculum/pages/Education.html", "pages/projects/pages/old-portfolio/homepages/curriculum/pages/Work Exerience.html", "pages/projects/pages/old-portfolio/homepages/curriculum/pages/Hobbies.html", "pages/projects/pages/old-portfolio/homepages/curriculum/pages/More Abou Me.html", "pages/data-analyst/pages/PandasDataFrames_01.html", "pages/data-analyst/pages/Python_Day_2_Exercises_Master.html", "pages/data-analyst/pages/Python_Day_1_Exercises_Master.html", "pages/data-analyst/pages/PandasDataFrames_02.html"];
-const widths=[280,320,375,480,768,769,820,1024,1280,1920,2560,3840,7680];
+const widths=[280,320,375,480,768,769,820,960,1024,1280,1920,2560,3840,7680];
 const frame=document.querySelector('#view'),result=document.querySelector('#results'),status=document.querySelector('#status'),page=document.querySelector('#page'),size=document.querySelector('#size');
 files.forEach(f=>page.add(new Option(f,f)));widths.forEach(w=>size.add(new Option(w,w)));
 const pause=ms=>new Promise(r=>setTimeout(r,ms));
@@ -25,19 +25,21 @@ document.querySelector('#navigation').onclick=async()=>{
  const checks=[];
  for(const file of ['index.html','pages/data-analyst/pages/Pyton-Pandas.html','pages/data-analyst/pages/tableau.html']){
   await load(file);
-  for(const width of [320,375,768,769,820,1023,1024,1280,1920,3840,7680]){
+  for(const width of [320,375,768,769,820,960,1023,1024,1280,1920,3840,7680]){
    await measure(width);
    const d=frame.contentDocument,w=frame.contentWindow,t=d.querySelector('.gt-navbar-toggler'),c=d.querySelector('.gt-navbar-collapse');
    const mobile=w.getComputedStyle(t).display!=='none';
-   if(mobile)t.click();
-   const toggle=d.querySelector('.gt-dropdown-toggle');toggle.click();
-   const menu=toggle.closest('.gt-dropdown').querySelector('.gt-dropdown-menu');
-   const mr=menu.getBoundingClientRect();
-   const opened=w.getComputedStyle(menu).display!=='none'&&mr.height>0&&toggle.getAttribute('aria-expanded')==='true';
-   const fits=mr.left>=-1&&mr.right<=d.documentElement.clientWidth+1;
-   toggle.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
-   const escaped=toggle.getAttribute('aria-expanded')==='false'&&(!mobile||t.getAttribute('aria-expanded')==='false');
-   checks.push({file,width,mobile,opened,fits,escaped});
+   for(const toggle of d.querySelectorAll('.gt-dropdown-toggle')){
+    if(mobile&&t.getAttribute('aria-expanded')!=='true')t.click();
+    toggle.click();
+    const menu=toggle.closest('.gt-dropdown').querySelector('.gt-dropdown-menu');
+    const mr=menu.getBoundingClientRect();
+    const opened=w.getComputedStyle(menu).display!=='none'&&mr.height>0&&toggle.getAttribute('aria-expanded')==='true';
+    const fits=mr.left>=-1&&mr.right<=d.documentElement.clientWidth+1;
+    toggle.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
+    const escaped=toggle.getAttribute('aria-expanded')==='false'&&(!mobile||t.getAttribute('aria-expanded')==='false');
+    checks.push({file,width,dropdown:toggle.textContent.trim(),mobile,opened,fits,escaped});
+   }
   }
  }
  result.textContent=JSON.stringify({navigation:checks,failed:checks.filter(r=>!r.opened||!r.fits||!r.escaped)});status.textContent='Navigation complete';

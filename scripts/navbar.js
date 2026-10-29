@@ -5,7 +5,7 @@ document.addEventListener("componentsLoaded", () => {
   const collapse = document.querySelector(".gt-navbar-collapse");
   const dropdowns = document.querySelectorAll(".gt-dropdown");
   const dropdownToggles = document.querySelectorAll(".gt-dropdown-toggle");
-  const isDesktop = window.matchMedia("(min-width: 1024px)");
+  const isDesktop = window.matchMedia("(min-width: 769px)");
 
   // ===== Stop if navbar elements are missing =====
   if (!navbar || !toggler || !collapse) {
