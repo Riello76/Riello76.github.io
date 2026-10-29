@@ -2,7 +2,7 @@
    MAIN RESPONSIVE LAYOUT
 ==================================================================================================== */
 
-@media screen and (min-width: 320px) {
+@media screen {
 
   /* ==================================================================================================
      MAIN CONTAINER
@@ -544,7 +544,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 5rem;
+    flex: 0 1 9rem;
+    width: 9rem;
+    max-width: 100%;
     text-align: center;
     transition: transform 0.3s ease;
   }
@@ -577,8 +579,8 @@
 
     color: var(--secondary-color);
 
-    font-size: var(--font-size-p);
-    line-height: 1.2;
+    font-size: 1.4rem;
+    line-height: 1.35;
 
     transition: color 0.3s ease;
   }
@@ -638,7 +640,7 @@
     .about-grid,
     .project-info-grid,
     .spec-grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .tools-groups {

@@ -143,3 +143,5 @@
         margin-bottom: 50rem;
     }
 }
+/* Allow long names and URLs to wrap instead of widening the info panel. */
+.info-p { overflow-wrap: anywhere; min-width: 0; }

@@ -2,7 +2,7 @@
    BASE LAYOUT
 ==================================================================================================== */
 
-@media screen and (min-width: 320px) {
+@media screen {
 
   main {
     display: flex;
@@ -35,6 +35,7 @@
 
   .gallery-card {
     width: clamp(30rem, 60vw, 80rem);
+    max-width: 100%;
 
     background: var(--main-color);
 

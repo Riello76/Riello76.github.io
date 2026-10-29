@@ -232,6 +232,18 @@ document.addEventListener("componentsLoaded", () => {
 
   isDesktop.addEventListener("change", handleViewportChange);
 
+  // Escape also works with keyboard navigation and TV remotes.
+  navbar.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    const openToggle = navbar.querySelector('.gt-dropdown.show .gt-dropdown-toggle');
+    const menuWasOpen = toggler.getAttribute("aria-expanded") === "true";
+    closeAllDropdowns();
+    collapse.classList.remove("show");
+    toggler.setAttribute("aria-expanded", "false");
+    if (openToggle && isDesktop.matches) openToggle.focus();
+    else if (menuWasOpen) toggler.focus();
+  });
+
   // ==============================================================
   // Initial state
   // ==============================================================
