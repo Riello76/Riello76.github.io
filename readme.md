@@ -71,4 +71,4 @@ WordPress is an active learning area and is not presented here as an advanced sp
 - **Portfolio:** https://riello76.github.io/
 - **LinkedIn:** https://www.linkedin.com/in/gaspare-tocci-928496112/
 - **GitHub:** https://github.com/Riello76
-- **Email:** [gaspare_tocci@yahoo.it](mailto:gaspare_tocci@yahoo.it)
+- **Email:** [gaspare.digitalprojects@gmail.com](mailto:gaspare.digitalprojects@gmail.com)

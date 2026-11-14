@@ -25,7 +25,7 @@ Contributions of any kind are welcome. Please open an issue or pull request to d
 
 ## Contact
 
-For more information, contact me at [gaspare_tocci@yahoo.it](mailto:gaspare_tocci@yahoo.it).
+For more information, contact me at [gaspare.digitalprojects@gmail.com](mailto:gaspare.digitalprojects@gmail.com).
 
 ## Credits
 
