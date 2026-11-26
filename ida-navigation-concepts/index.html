@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#142f50">
+<meta name="description" content="Six interactive navigation concepts for the Infectious Disease Alliance.">
+<title>IDA | Interactive Navigation Concepts</title>
+<style>
+:root{color-scheme:light;--navy:#142f50;--blue:#2e59bd;--light:#eef3fc;--ink:#24364f;--muted:#677991;--stroke:#dce5f1}
+*{box-sizing:border-box}
+body{margin:0;background:#f4f7fc;color:var(--ink);font:14px/1.5 system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+button,input{font:inherit}button{cursor:pointer}
+button:focus-visible,input:focus-visible{outline:3px solid #77a7ff;outline-offset:2px}
+header{background:linear-gradient(110deg,#142f50,#214e86);color:white;padding:30px max(18px,calc((100vw - 1180px)/2))}
+header .eyebrow{font-size:12px;letter-spacing:.17em;text-transform:uppercase;opacity:.72;font-weight:700}
+header h1{font-size:clamp(23px,3.5vw,37px);line-height:1.15;margin:9px 0 10px;letter-spacing:-.04em}
+header p{max-width:740px;opacity:.86;margin:0;font-size:14px}
+main{max-width:1180px;margin:auto;padding:24px 16px 45px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.topbar strong{font-size:17px}.muted{color:#6c7b91;font-size:12px}
+.view{display:flex;gap:5px;padding:4px;background:white;border:1px solid var(--stroke);border-radius:10px}
+.view button{background:transparent;border:0;border-radius:7px;padding:7px 12px;color:#53657c}
+.view button[aria-pressed=true]{background:var(--navy);color:white}
+.variants{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;margin-bottom:18px}
+.variants button{text-align:left;border:1px solid var(--stroke);background:white;border-radius:10px;padding:12px 10px;min-width:0;color:var(--ink);transition:.15s}
+.variants button:hover{border-color:#6386c9;transform:translateY(-1px)}
+.variants button[aria-pressed=true]{border-color:#3766b7;box-shadow:0 0 0 2px #3766b72a;background:#f3f7ff}
+.variants b{font-size:13px;display:block;line-height:1.2}.variants small{color:var(--muted);font-size:11px;display:block;margin-top:5px}
+.number{font-size:11px;color:#5574a5;display:block;margin-bottom:8px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 282px;gap:20px;align-items:start}
+.browser{border:1px solid #cbd8e8;border-radius:13px;overflow:hidden;background:white;box-shadow:0 15px 40px #19365b10;max-width:100%;transition:max-width .25s;margin:0 auto}
+.browser.mobile{max-width:390px}
+.browserbar{height:31px;background:#e9eef6;border-bottom:1px solid #d6deea;display:flex;align-items:center;gap:12px;padding:0 12px}
+.dots{display:flex;gap:4px}.dots i{width:7px;height:7px;background:#b7c4d7;border-radius:50%}
+.address{background:white;padding:2px 16px;border-radius:5px;margin:auto;font-size:10px;color:#6f819b}
+.sitebar{height:59px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;border-bottom:1px solid #e9edf3}
+.logo{display:flex;align-items:center;gap:10px;color:#193e70;font-weight:800;font-size:13px}
+.logo em{background:#204e90;color:white;font-size:14px;font-style:normal;padding:7px 8px;border-radius:8px}
+.working{position:relative;min-height:540px;background:linear-gradient(115deg,#f7faff 0%,#fff 73%);overflow:hidden}
+.leftcopy{position:absolute;left:5%;top:62px;width:45%;pointer-events:none}
+.leftcopy .kicker{font-size:10px;letter-spacing:.14em;color:#4569a6;font-weight:800}
+.leftcopy h2{font-size:clamp(23px,2.7vw,35px);line-height:1.14;color:#173558;letter-spacing:-.04em;margin:15px 0 11px;overflow-wrap:anywhere}
+.leftcopy p{font-size:12px;color:#6d7f95}
+.pill{border:1px solid #d8e2f0;color:#3e659e;background:#edf3ff;display:inline-block;padding:5px 11px;border-radius:20px;font-size:10px;margin-top:15px}
+.fakecard{position:absolute;left:5%;bottom:32px;width:40%;height:120px;border-radius:13px;background:white;border:1px solid #e4eaf3;padding:16px;box-shadow:0 10px 25px #22395a09;pointer-events:none}
+.fakecard b{font-size:12px;color:#405572}.fakecard i{display:block;height:8px;background:#e8edf5;border-radius:6px;margin-top:13px}.fakecard i:nth-child(3){width:76%}.fakecard i:nth-child(4){width:56%}
+.stage{position:absolute;top:14px;bottom:14px;right:14px;width:min(47%,310px);z-index:4}
+.panel{background:#fff;border:1px solid #d9e3f1;border-radius:11px;box-shadow:0 12px 35px #1632521b;padding:12px;height:100%;display:flex;flex-direction:column;min-height:0}
+.panelname{font-weight:800;color:#8a9ab0;letter-spacing:.12em;text-transform:uppercase;font-size:10px;padding:7px 7px 13px}
+.scroll{overflow-y:auto;scrollbar-width:thin;min-height:0}
+.item{border:0;background:transparent;color:#536985;width:100%;display:flex;gap:8px;text-align:left;align-items:center;border-radius:7px;padding:9px 7px;font-size:11px}
+.item:hover,.item:focus-visible{background:#eef4ff;color:#2255ad}
+.item.active{background:#ebf2ff;color:#2454b3;font-weight:800}
+.bar{flex-shrink:0;width:3px;height:19px;border-radius:3px;background:transparent}
+.item.active .bar{background:#315ec5}
+.dot{flex-shrink:0;margin-left:auto;width:7px;height:7px;border:1px solid #abbbd5;border-radius:50%}
+.item.active .dot{background:#315ec5;border-color:#315ec5}
+.primary{background:#224f96;color:white;border:0;border-radius:9px;padding:12px 15px;box-shadow:0 8px 24px #16375a30;font-weight:750;font-size:12px}
+.drawer{height:100%;display:flex;flex-direction:column;align-items:stretch;gap:9px}
+.drawer.closed{align-items:flex-end}.drawer .panel{min-height:0;flex:1}
+.timeline{overflow:auto}.timeline button{border:0;background:transparent;display:flex;width:100%;gap:10px;text-align:left;align-items:stretch;color:#63758c;font-size:11px;min-height:41px}
+.rail{display:flex;flex-direction:column;align-items:center;width:13px;flex-shrink:0}
+.rail-dot{width:11px;height:11px;border:2px solid #b7c5db;border-radius:50%;background:white;flex:none;margin-top:9px}
+.rail-line{width:1px;flex:1;background:#dae3f1}
+.timeline button.active{color:#2856b6;font-weight:800}.timeline button.active .rail-dot{border-color:#315ec5;background:#315ec5;box-shadow:0 0 0 4px #e5edff}
+.timeline .tlabel{padding:5px 0 12px}
+.grouphead{width:100%;display:flex;justify-content:space-between;gap:8px;align-items:center;background:white;border:0;border-top:1px solid #e7edf5;padding:13px 6px;text-align:left;color:#416386;font-size:11px;font-weight:800}
+.grouphead:hover{color:#244ea6}.groupitem{display:block;width:100%;padding:8px 12px;border:0;background:white;color:#5a708d;border-radius:6px;text-align:left;font-size:11px}
+.groupitem:hover,.groupitem.active{background:#ebf2ff;color:#2253b4}
+.dock{position:absolute;z-index:5;bottom:18px;right:15px;max-width:calc(100% - 30px);display:flex;align-items:flex-end;gap:9px;flex-direction:column}
+.dockstrip{background:#fff;border:1px solid #d6e0ef;border-radius:13px;display:flex;padding:6px;box-shadow:0 14px 33px #193a6028;max-width:100%}
+.dockstrip button{border:0;border-radius:9px;background:transparent;color:#617691;display:flex;flex-direction:column;align-items:center;font-size:10px;padding:7px 11px;gap:2px}
+.dockstrip button span{font-size:19px}.dockstrip button.active{background:#eaf1ff;color:#2457b7}
+.dockpopup{background:#fff;border:1px solid #d8e2f0;border-radius:12px;box-shadow:0 15px 33px #17335b30;padding:10px;max-height:280px;overflow:auto;width:min(310px,100%)}
+.dockpopup b{color:#6d7f98;font-size:10px;letter-spacing:.1em;display:block;padding:6px}
+.dockpopup button{border:0;background:transparent;color:#425e80;text-align:left;width:100%;display:block;padding:9px 8px;border-radius:6px;font-size:11px}
+.dockpopup button:hover{background:#edf3ff}
+.searchopen{position:absolute;right:14px;top:15px;background:#fff;border:1px solid #d7e2f0;border-radius:9px;padding:10px 13px;font-size:12px;color:#2b589c;z-index:5;box-shadow:0 7px 20px #1a406019}
+.veil{position:absolute;inset:0;background:#112f5080;z-index:6;padding:64px 13px 12px;display:flex;justify-content:center;align-items:flex-start}
+.modal{background:white;border-radius:12px;width:min(440px,100%);box-shadow:0 20px 60px #0b204a55;overflow:hidden}
+.findrow{display:flex;align-items:center;gap:8px;border-bottom:1px solid #e3ebf6;padding:13px}
+.findrow input{border:0;outline:0;flex:1;min-width:0;color:#233e60;background:transparent;font-size:13px}
+.findrow button{background:#f1f5fa;border:1px solid #dbe4ef;border-radius:5px;padding:4px 7px;color:#536987}
+.results{max-height:320px;overflow:auto;padding:8px}
+.results button{width:100%;display:flex;justify-content:space-between;gap:10px;text-align:left;background:white;border:0;padding:10px;border-radius:7px;color:#425d80;font-size:11px}
+.results button:hover{background:#ecf2ff}.results small{color:#8496ad;font-size:10px}
+.side{background:white;border:1px solid var(--stroke);border-radius:12px;padding:18px}
+.side h3{margin:0 0 12px;color:#183e6d;font-size:17px}
+.side p{font-size:13px;color:#677991}
+.side .meta{padding:11px 0;border-top:1px solid #e7edf5;color:#45617f;font-size:12px}
+.side .callout{border-radius:10px;background:#f0f5fd;padding:12px;margin-top:15px}
+.side button{width:100%;padding:11px 12px;border-radius:8px;border:1px solid #3159aa;background:#2c58a4;color:white;font-weight:700;margin-top:10px}
+.side button.secondary{background:white;color:#2856a5}
+.side label{display:block;font-weight:750;font-size:11px;margin-top:10px;color:#5a708d}
+.side textarea{font:inherit;width:100%;resize:vertical;min-height:78px;border:1px solid #cfdae9;border-radius:8px;padding:9px;margin-top:5px}
+.feedback{font-size:12px;color:#31634b;min-height:18px}
+footer{max-width:1180px;margin:auto;border-top:1px solid #e0e6ee;padding:22px 16px 35px;color:#7d8da3;font-size:12px}
+.browser.mobile .sitebar{padding:0 12px}.browser.mobile .sitebar .secondarynav{display:none}
+.browser.mobile .working{min-height:590px}.browser.mobile .leftcopy{left:16px;top:24px;width:80%}.browser.mobile .leftcopy h2{font-size:24px}.browser.mobile .fakecard{top:245px;bottom:auto;left:16px;width:70%}
+.browser.mobile .stage{right:8px;top:10px;bottom:10px;width:67%}
+.browser.mobile .dockstrip button{padding:6px 7px}.browser.mobile .dock{right:7px;max-width:calc(100% - 14px)}
+@media(max-width:980px){.variants{grid-template-columns:repeat(3,minmax(0,1fr))}.layout{grid-template-columns:1fr}.side{max-width:none}}
+@media(max-width:500px){.variants{grid-template-columns:repeat(2,minmax(0,1fr))}.working{min-height:525px}.stage{width:60%;right:7px}.leftcopy{width:40%;left:12px;top:24px}.leftcopy h2{font-size:21px}.fakecard{left:12px;width:38%}.item{padding:8px 5px;font-size:10px}.sitebar{padding:0 10px}.secondarynav{display:none}}
+</style>
+</head>
+<body>
+<header>
+ <div class="eyebrow">IDA · Design exploration</div>
+ <h1>Interactive navigation concepts</h1>
+ <p>Explore six different ways to navigate the Alliance's teams, departments and programmes. Test the controls, compare desktop and mobile, then share your preferred option.</p>
+</header>
+<main>
+ <div class="topbar"><div><strong>Explore the six concepts</strong><div class="muted">This is an independent demonstration, not the live IDA website.</div></div>
+ <div class="view" aria-label="Preview device"><button id="desktop" aria-pressed="true">Desktop</button><button id="mobile" aria-pressed="false">Mobile</button></div></div>
+ <div class="variants" id="variants" aria-label="Navigation variants"></div>
+ <div class="layout">
+  <section class="browser" id="browser" aria-label="Interactive website demonstration">
+   <div class="browserbar"><span class="dots"><i></i><i></i><i></i></span><span class="address">IDA · Website preview</span></div>
+   <div class="sitebar"><span class="logo"><em>IDA</em> Infectious Disease Alliance</span><span class="secondarynav muted">About us &nbsp; · &nbsp; Our Team &nbsp; · &nbsp; Contact</span></div>
+   <div class="working" id="working">
+    <div class="leftcopy"><div class="kicker">OUR ORGANISATION</div><h2 id="heading">Communication</h2><p id="description">Discover the departments and people behind IDA.</p><span class="pill" id="category">Departments</span></div>
+    <div class="fakecard"><b>Meet the team</b><i></i><i></i><i></i></div>
+    <div class="stage" id="stage"></div>
+   </div>
+  </section>
+  <aside class="side"><h3 id="variantName">01 · Active sidebar</h3><p id="variantDescription"></p>
+   <div class="meta"><strong>Try it:</strong> <span id="instructions"></span></div>
+   <div class="meta">Currently selected: <strong id="current">Communication</strong></div>
+   <div class="callout"><strong>Which design do you prefer?</strong><p>Choose one of the six concepts and share your choice. You can also include a comment.</p>
+    <label for="comments">Optional feedback</label><textarea id="comments" placeholder="What works well? What would you change?"></textarea>
+    <button id="copyChoice" type="button">Copy my selection</button>
+    <button id="shareChoice" class="secondary" type="button">Share my selection</button>
+    <p class="feedback" id="feedback" aria-live="polite"></p>
+    <small class="muted">No personal information is collected or stored on this page. Share your copied choice using Slack, email or another app.</small>
+   </div>
+  </aside>
+ </div>
+</main>
+<footer>IDA navigation proposals · Interactive design study · Built for review on desktop and mobile. Not an official published IDA page.</footer>
+<script>
+(function(){
+'use strict';
+const names=['Board of Directors','Management','Committees','Advisors','Global Health Finance Coalition (GHFC)','HealthFund Hub','Primary Healthcare Coalition (PHCC)','Communication','Journal','Webdesign','Fundraising & Grants','Human Resources (HR)','Policy','Google Maps'];
+const groups=[{name:'Leadership',short:'Leaders',symbol:'◇',items:[0,1,3]},{name:'Programmes & Coalitions',short:'Projects',symbol:'◎',items:[2,4,5,6]},{name:'Departments',short:'Teams',symbol:'▦',items:[7,8,9,10,11,12]},{name:'Resources',short:'Places',symbol:'⌖',items:[13]}];
+const variants=[
+{name:'Active sidebar',desc:'A permanent, structured list with a clear active indicator. Familiar and straightforward.',hint:'Select a department; the active highlight moves.'},
+{name:'Expandable drawer',desc:'A compact side button that opens the full navigation only when required.',hint:'Toggle Explore IDA, then select a department.'},
+{name:'Vertical timeline',desc:'A connected list of navigation points with a clear sense of progression.',hint:'Select one of the timeline points.'},
+{name:'Grouped categories',desc:'All 14 items grouped into Leadership, Programmes, Departments and Resources.',hint:'Expand category headings, then choose a section.'},
+{name:'Floating dock',desc:'A compact floating navigation bar with a category-based popover.',hint:'Choose an icon in the dock, then a section.'},
+{name:'Quick search',desc:'A fast search panel for finding any section without browsing a long list.',hint:'Open Search and type a section name, e.g. Journal.'}
+];
+let variant=0,active=7,drawer=true,expanded=new Set([2]),dock=2,searchOpen=false;
+const byId=id=>document.getElementById(id);
+const escapeHtml=value=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+function btn(index,style){
+ const name=escapeHtml(names[index]);
+ if(style==='group')return '<button class="groupitem '+(active===index?'active':'')+'" data-go="'+index+'">'+name+'</button>';
+ return '<button class="item '+(active===index?'active':'')+'" data-go="'+index+'"><span class="bar"></span><span>'+name+'</span><span class="dot"></span></button>';
+}
+function choose(index){active=index;drawer=variant===1?false:drawer;if(variant===4)dock=-1;if(variant===5)searchOpen=false;expanded.add(groups.findIndex(g=>g.items.includes(index)));byId('heading').textContent=names[index];byId('current').textContent=names[index];byId('category').textContent=groups.find(g=>g.items.includes(index)).name;byId('description').textContent='Explore the people, activities and responsibilities within this part of the Alliance.';draw();}
+function draw(){
+ const stage=byId('stage'),working=byId('working');
+ working.querySelectorAll('.dock,.searchopen,.veil').forEach(n=>n.remove());stage.style.display='';stage.innerHTML='';
+ if(variant===0)stage.innerHTML='<div class="panel"><div class="panelname">Explore IDA</div><div class="scroll">'+names.map((n,i)=>btn(i)).join('')+'</div></div>';
+ if(variant===1)stage.innerHTML='<div class="drawer '+(drawer?'':'closed')+'"><button class="primary" data-action="drawer">'+(drawer?'× Close menu':'☰ Explore IDA')+'</button>'+(drawer?'<div class="panel"><div class="panelname">Departments & Teams</div><div class="scroll">'+names.map((n,i)=>btn(i)).join('')+'</div></div>':'')+'</div>';
+ if(variant===2)stage.innerHTML='<div class="panel timeline"><div class="panelname">Sections · 14</div><div class="scroll">'+names.map((n,i)=>'<button class="'+(i===active?'active':'')+'" data-go="'+i+'"><span class="rail"><span class="rail-dot"></span><span class="rail-line"></span></span><span class="tlabel">'+escapeHtml(n)+'</span></button>').join('')+'</div></div>';
+ if(variant===3)stage.innerHTML='<div class="panel"><div class="panelname">Explore IDA</div><div class="scroll">'+groups.map((g,i)=>'<button class="grouphead" data-group="'+i+'" aria-expanded="'+expanded.has(i)+'">'+escapeHtml(g.name)+' <span>'+(expanded.has(i)?'−':'+')+'</span></button>'+(expanded.has(i)?g.items.map(idx=>btn(idx,'group')).join(''):'')).join('')+'</div></div>';
+ if(variant===4){
+  stage.style.display='none';const panel=document.createElement('div');panel.className='dock';panel.innerHTML=(dock>=0?'<div class="dockpopup"><b>'+escapeHtml(groups[dock].name).toUpperCase()+'</b>'+groups[dock].items.map(i=>'<button data-go="'+i+'">'+escapeHtml(names[i])+(i===active?' ✓':'')+'</button>').join('')+'</div>':'')+'<div class="dockstrip">'+groups.map((g,i)=>'<button class="'+(dock===i?'active':'')+'" data-dock="'+i+'"><span>'+g.symbol+'</span>'+g.short+'</button>').join('')+'</div>';working.appendChild(panel);
+ }
+ if(variant===5){
+  stage.style.display='none';const b=document.createElement('button');b.className='searchopen';b.dataset.action='search';b.textContent='⌕ Search sections';working.appendChild(b);
+  if(searchOpen){const veil=document.createElement('div');veil.className='veil';veil.innerHTML='<div class="modal"><div class="findrow"><span>⌕</span><input id="query" aria-label="Search sections" placeholder="Search departments, teams or coalitions…"><button data-action="search">Esc</button></div><div id="results" class="results"></div></div>';working.appendChild(veil);updateResults('');byId('query').focus();}
+ }
+}
+function updateResults(value){const el=byId('results');if(!el)return;let hits=names.map((name,i)=>({name,i})).filter(x=>x.name.toLowerCase().includes(value.toLowerCase().trim()));el.innerHTML=hits.length?hits.map(x=>'<button data-go="'+x.i+'"><span>'+escapeHtml(x.name)+'</span><small>'+escapeHtml(groups.find(g=>g.items.includes(x.i)).name)+'</small></button>').join(''):'<div class="muted" style="padding:14px">No matching section.</div>';}
+function setVariant(index){variant=index;drawer=true;expanded=new Set([2]);dock=2;searchOpen=index===5;byId('variants').querySelectorAll('button').forEach((b,i)=>b.setAttribute('aria-pressed',String(i===index)));byId('variantName').textContent=String(index+1).padStart(2,'0')+' · '+variants[index].name;byId('variantDescription').textContent=variants[index].desc;byId('instructions').textContent=variants[index].hint;byId('feedback').textContent='';draw();}
+function selectionText(){let txt='IDA navigation design preference\nSelected concept: '+String(variant+1).padStart(2,'0')+' — '+variants[variant].name;const comment=byId('comments').value.trim();if(comment)txt+='\nFeedback: '+comment;txt+='\nDemo: '+location.href.split('?')[0].split('#')[0];return txt;}
+document.addEventListener('click',e=>{
+ const b=e.target.closest('button');if(!b)return;
+ if(b.dataset.variant!==undefined){setVariant(Number(b.dataset.variant));return;}
+ if(b.dataset.go!==undefined){choose(Number(b.dataset.go));return;}
+ if(b.dataset.action==='drawer'){drawer=!drawer;draw();return;}
+ if(b.dataset.group!==undefined){const i=Number(b.dataset.group);expanded.has(i)?expanded.delete(i):expanded.add(i);draw();return;}
+ if(b.dataset.dock!==undefined){const i=Number(b.dataset.dock);dock=dock===i?-1:i;draw();return;}
+ if(b.dataset.action==='search'){searchOpen=!searchOpen;draw();return;}
+});
+document.addEventListener('input',e=>{if(e.target.id==='query')updateResults(e.target.value);});
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&variant===5&&searchOpen){searchOpen=false;draw();}
+ if(e.key==='Enter'&&e.target.id==='query'){const b=byId('results')?.querySelector('button');if(b){e.preventDefault();choose(Number(b.dataset.go));}}
+});
+byId('variants').innerHTML=variants.map((v,i)=>'<button data-variant="'+i+'" aria-pressed="false"><span class="number">CONCEPT '+String(i+1).padStart(2,'0')+'</span><b>'+escapeHtml(v.name)+'</b><small>'+['Always visible','Hide / reveal','Connected steps','Organised groups','Compact floating','Find by name'][i]+'</small></button>').join('');
+byId('desktop').addEventListener('click',()=>{byId('browser').classList.remove('mobile');byId('desktop').setAttribute('aria-pressed','true');byId('mobile').setAttribute('aria-pressed','false');});
+byId('mobile').addEventListener('click',()=>{byId('browser').classList.add('mobile');byId('desktop').setAttribute('aria-pressed','false');byId('mobile').setAttribute('aria-pressed','true');});
+byId('copyChoice').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(selectionText());byId('feedback').textContent='Selection copied. Paste it into Slack or an email.';}catch{byId('feedback').textContent='Copy unavailable in this browser. You can share your selection using the button below.';}});
+byId('shareChoice').addEventListener('click',async()=>{const txt=selectionText();if(navigator.share){try{await navigator.share({title:'IDA navigation preference',text:txt});byId('feedback').textContent='Share dialog opened.';}catch{byId('feedback').textContent='Sharing cancelled.';}}else{try{await navigator.clipboard.writeText(txt);byId('feedback').textContent='Selection copied to clipboard for sharing.';}catch{byId('feedback').textContent='Use the Copy button from a secure browser.';}}});
+setVariant(0);
+})();
+</script>
+</body>
+</html>
