@@ -757,3 +757,31 @@
     }
   }
 }
+
+/* Align card headings and content consistently across each home-page grid. */
+@media screen {
+  .about-grid > .card,
+  .experience-grid > .card,
+  .project-info-grid > .card,
+  .spec-grid > .card,
+  .tools-groups > .card {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .card > h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 6.4rem;
+    margin: 0 0 1.6rem;
+  }
+
+  .tools-groups > .card .tools {
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+}
